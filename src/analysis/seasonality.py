@@ -66,9 +66,17 @@ def load_jvs() -> pd.DataFrame:
             continue
         rows.extend(rec["rows"])
     df = pd.DataFrame(rows)
+    # Defensive: a re-run of the collector on the same day used to append, which duplicated every
+    # observation and silently emptied the seasonal index (one sector-quarter must appear once).
+    before = len(df)
+    df = df.drop_duplicates(subset=["nace_r2", "time"], keep="last")
+    if len(df) < before:
+        print(f"[seasonality] dropped {before - len(df)} duplicate observations from the raw file")
     df["year"] = df.time.str[:4].astype(int)
     df["quarter"] = df.time.str[-1].astype(int)
     df["value"] = pd.to_numeric(df.value)
+    if df.empty:
+        raise SystemExit("Eurostat raw file contains no JOBVAC observations")
     return df.sort_values(["nace_r2", "year", "quarter"]).reset_index(drop=True)
 
 
@@ -226,6 +234,9 @@ def main() -> None:
     df = load_jvs()
 
     s01 = pd.concat([seasonal_table(df, s) for s in ("full", "excl_covid", "from_2015")], ignore_index=True)
+    # fail loudly rather than writing a table of NaNs (see the duplicate-observation bug above)
+    if s01.empty or s01.n_years.max() == 0:
+        raise SystemExit("no complete calendar year in the Eurostat series; refusing to write an empty seasonal index")
     s01.to_csv(TAB / "S01_seasonal_index.csv", index=False)
 
     per_year = []

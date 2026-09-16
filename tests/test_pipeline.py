@@ -300,3 +300,27 @@ def test_seasonality_tables_consistent():
     # Q4 must be the weakest quarter in every sector (the documented headline finding)
     for sector, g in full.groupby("sector"):
         assert g.sort_values("index_a_own_year_mean").iloc[0].quarter == "Q4", sector
+
+
+def test_seasonality_is_robust_to_duplicated_raw_observations(tmp_path, monkeypatch):
+    """Regression: re-running the collector on the same day used to append, duplicating every
+    observation, which silently produced an empty seasonal index (caught by the clean-clone check)."""
+    import seasonality as S
+    raw = json.load(open(ROOT / "outputs" / "seasonality.json", encoding="utf-8")) if (ROOT / "outputs" / "seasonality.json").exists() else None
+    if raw is None:
+        pytest.skip("seasonality outputs not present")
+    files = sorted((ROOT / "data" / "raw" / "eurostat_jvs").glob("*/jvs_q_nace2_at.jsonl")) if (ROOT / "data" / "raw" / "eurostat_jvs").exists() else []
+    if not files:
+        pytest.skip("eurostat raw file not present")
+    src = files[-1]
+    dup_dir = tmp_path / "eurostat_jvs" / "2026-01-01"
+    dup_dir.mkdir(parents=True)
+    content = src.read_text(encoding="utf-8")
+    (dup_dir / "jvs_q_nace2_at.jsonl").write_text(content + content, encoding="utf-8")  # every record twice
+    monkeypatch.setattr(S, "RAW", tmp_path / "eurostat_jvs")
+    df = S.load_jvs()
+    assert df.groupby(["nace_r2", "time"]).size().max() == 1
+    t = S.seasonal_table(df, "full")
+    assert not t.empty and t.n_years.max() >= 10
+    for sector, g in t.groupby("sector"):
+        assert g.sort_values("index_a_own_year_mean").iloc[0].quarter == "Q4", sector

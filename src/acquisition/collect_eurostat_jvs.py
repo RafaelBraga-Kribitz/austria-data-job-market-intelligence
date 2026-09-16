@@ -66,6 +66,12 @@ def decode(doc: dict) -> list[dict]:
 
 def main() -> None:
     w = RawWriter("eurostat_jvs")
+    # This dataset is fetched whole on every run, not paged like the posting collectors, so the
+    # append-only RawWriter would duplicate every observation when the collector runs twice on the
+    # same day. Start from a clean file instead.
+    stale = w.dir / "jvs_q_nace2_at.jsonl"
+    if stale.exists():
+        stale.unlink()
     total = 0
     for ind in INDICATORS:
         doc, url = fetch(ind)
