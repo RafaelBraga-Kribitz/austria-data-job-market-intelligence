@@ -14,6 +14,7 @@ Status as tested on 2026-09-16 from a plain HTTP client (no login). "Blocked" me
 | AMS Gehaltskompass / Berufslexikon | Reference only | HTML | Collective-agreement entry salary ranges per occupation | Stand 2025 | Not posting evidence; cited in docs/salary-context.md |
 | Statistik Austria Offene-Stellen-Erhebung; Eurostat JVS; WKO Fachkräfteradar; Cedefop Skills-OVATE | Reference only | see docs/research-landscape.md | Vacancy rates, AMS-registered vacancies by occupation group, EU online-ad statistics (NUTS-2) | quarterly / 2025 | Coarse occupation classes; Skills-OVATE has no download |
 | **ESCO** (ec.europa.eu/esco/api) | Yes (taxonomy lookup) | public API / CSV (CC BY 4.0) | occupation & skill taxonomy | v1.2 | used to read AMS-assigned occupation codes |
+| **Eurostat Job Vacancy Statistics** `jvs_q_nace2` (Statistik Austria Offene-Stellen-Erhebung) | Yes (seasonality) | documented public REST API, no key, no restriction on automated access; reusable with attribution (Decision 2011/833/EU) | quarterly open-vacancy counts for Austria by NACE aggregate, non-seasonally-adjusted, 2009-Q1…2025-Q4 | 2025-Q4, fetched 2026-09-16 | Stock of vacancies under active recruitment, not new postings; **no occupation detail and no NUTS-2**, so neither data roles nor Styria are separable; the ICT-containing aggregate G-N also contains tourism and retail. The only collector in this project that anyone may re-run (docs/seasonality.md) |
 
 ## Tier 2 · job platforms
 

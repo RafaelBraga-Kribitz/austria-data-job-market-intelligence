@@ -1,0 +1,5 @@
+sector,seasonal_spread_pct,between_year_spread_pct,ratio,sd_seasonal_index,cv_year_means,min_year,max_year,min_val,max_val
+G-N,6.4,308.9,48.6,0.025,0.431,2009,2022,33680,137704
+B-F,12.0,567.4,47.2,0.043,0.572,2009,2022,9134,60964
+O-S,13.8,256.3,18.6,0.047,0.482,2013,2023,9604,34215
+B-S,5.4,254.7,47.5,0.02,0.446,2013,2022,64950,230380

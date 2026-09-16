@@ -62,6 +62,14 @@ def main():
     c = pd.read_csv(TAB / "JB04_competencies.csv"); print(c[c.beruf.str.contains("Data Scientist")].to_string(index=False))
     sec("Decision matrix", "D01/D02/D04"); print(pd.read_csv(TAB / "D01_decision_matrix.csv")[["role_family", "V1_postings_at", "V2_postings_styria", "V3_english_posting_share", "V4_german_required_share", "V5_profile_overlap_top15", "V6_structural_gap_top15", "V7_median_min_salary", "V8_remote_or_hybrid_share", "V9_senior_entry_openness", "V10_degree_required_share", "score_default", "rank_default", "small_sample_flag"]].to_string(index=False)); print(pd.read_csv(TAB / "D02_sensitivity.csv").to_string(index=False)); print(pd.read_csv(TAB / "D04_learning_priorities.csv")[["skill", "share", "styria_share", "families_where_top(>=15%)", "profile_status", "priority"]].head(45).to_string(index=False))
     sec("Data quality", "Q02/Q03a/Q04/Q05a"); print(pd.read_csv(TAB / "Q02_coverage_by_source_core.csv").to_string(index=False)); print(pd.read_csv(TAB / "Q03a_normalization_confidence.csv").to_string(index=False)); print(pd.read_csv(TAB / "Q04_duplicates.csv").to_string(index=False)); print(pd.read_csv(TAB / "Q05a_stale.csv").to_string(index=False))
+    if (TAB / "S01_seasonal_index.csv").exists():
+        sec("Seasonality (Eurostat JVS, quarterly 2009-2025)", "S01/S03/S06")
+        s1 = pd.read_csv(TAB / "S01_seasonal_index.csv")
+        print(s1[s1["sample"] == "full"][["sector", "quarter", "n_years", "index_a_own_year_mean", "ci_low", "ci_high", "index_b_moving_average", "years_above_average"]].to_string(index=False))
+        print(pd.read_csv(TAB / "S03_sensitivity_samples.csv").to_string(index=False))
+        print(pd.read_csv(TAB / "S06_season_vs_cycle.csv").to_string(index=False))
+        if (TAB / "S05_snapshot_age_distribution.csv").exists():
+            print("-- why not from our own snapshot (S05)"); print(pd.read_csv(TAB / "S05_snapshot_age_distribution.csv").to_string(index=False))
 
 
 if __name__ == "__main__":

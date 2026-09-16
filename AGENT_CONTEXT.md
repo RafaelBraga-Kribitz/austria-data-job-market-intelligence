@@ -75,6 +75,13 @@ Titles: unlabelled 57.5 %, senior 19 %, lead/head 13.5 %, intern 6 %, junior 4 %
 
 "Data Scientist (m/w)" class, online ads per year: Austria 3,049 (2020) → 5,032 (2022) → 3,471 → 2,680 → 2,207 (2025), −28 % vs 2020; Vienna 811 → 1,809 → 935; Upper Austria 336 → 885 → 299; **Styria 224 → 423 → 300 (+34 % vs 2020)**. Related classes 2025: Datenbankentwickler 1,198 (−40 %), Wirtschaftsinformatiker 1,307 (−35 %), Systemanalytiker 731 (+84 %). AMS 2026–28 outlook "positiv" everywhere; fastest-growing competencies: programming languages (+2.1 pp), communication (+1.2 pp). Unit = AMS occupation class per year, not our titles.
 
+## 11b. Seasonality (S01–S06, seasonality.json, docs/seasonality.md)
+
+External series, added 2026-09-16: Eurostat Job Vacancy Statistics `jvs_q_nace2` (Statistik Austria Offene-Stellen-Erhebung), Austria, quarterly, non-seasonally-adjusted, 2009-Q1…2025-Q4, NACE aggregates only. **Our own snapshot cannot measure seasonality** (one day; 52 % of core ads first published in the collection month, 90 % within 90 days = survival decay, S05) and no seasonal claim may be made from it.
+Seasonal index (1.00 = average quarter; ratio to own-year mean, cross-checked with a 2×4 centred moving average): market services G-N Q1 1.007 / Q2 0.979 / **Q3 1.038** / Q4 0.976; industry B-F **Q1 1.072** / Q2 0.993 / Q3 0.978 / Q4 0.957; public O-S Q1 0.989 / **Q2 1.058** / Q3 1.023 / Q4 0.930; total B-S Q1 1.014 / Q2 0.995 / Q3 1.022 / Q4 0.970.
+**Robust:** Q4 is the weakest quarter in every aggregate, both methods, all samples, and the modal weakest quarter in 8–10 of 16–17 years. **Q1** is the most frequent annual peak in industry and in the total economy. **Confounded:** the G-N Q3 peak includes tourism/retail (NACE I and G sit inside G-N); it is not evidence about ICT or data roles. **Amplitude:** best-vs-worst quarter 5–14 % versus best-vs-worst year 255–567 % (19–49×) — the cycle dominates the calendar.
+Advising rule: never recommend timing applications by month on this evidence; Oct–Dec is the defensible build/study block and January the defensible readiness target. No occupation grain, no regional grain (Styria not separable).
+
 ## 12. Adjacent demand (T16, EURES full-text sweep)
 
 In Styria's AMS feed, Python appears in 53 ads (83 % under non-data titles), SQL in 81 (88 % non-data), Power BI in 21 (100 % non-data), Excel in 182. Data skills are demanded far more widely than data titles — entry channels through controlling, engineering and marketing roles exist (AMS feed only, three regions).

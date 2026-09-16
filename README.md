@@ -8,7 +8,7 @@ It is a labour-market intelligence and decision-support project, not a portfolio
 
 | Public (this repository) | Private (retained by the author, not redistributed) |
 |---|---|
-| Pipeline, analysis, reporting and publication code (`src/pipeline`, `src/analysis`, `src/reporting`, `src/publish`), the AMS JobBarometer collector | The six posting collectors (EURES, karriere.at, LinkedIn, willhaben, jobs.at, EURES regional sweep) |
+| Pipeline, analysis, reporting and publication code (`src/pipeline`, `src/analysis`, `src/reporting`, `src/publish`), the AMS JobBarometer and Eurostat collectors, **and the Eurostat raw data** (openly licensed, so the seasonality layer is fully reproducible) | The six posting collectors (EURES, karriere.at, LinkedIn, willhaben, jobs.at, EURES regional sweep) |
 | Rule configurations (`config/`): role taxonomy, skill vocabulary, geography, queries, profile | Raw source records (`data/raw`, 1.3 GB), processed posting files (`data/processed`), fetched third-party reference pages (`data/external`), run logs |
 | Methodology, source inventory, data-quality, limitations, legal/publication audit, specification audit, decision framework (`docs/`) | Per-posting tables that carry advertisement text, contact data or source URLs |
 | Aggregated tables (`outputs/tables`, 140+ CSVs, with every text/URL column removed), figures, JSON summaries, the digest of every quoted number | The git history of the private repository |
@@ -35,6 +35,7 @@ Postings collected on **2026-09-16** (17:00–18:40 UTC), Austria-wide, 45 title
 * SQL (40 %) and Python (35 %) lead; the stack is Microsoft-centred (Azure 19 %, Power BI 18 %; Tableau 3 %); SQL and Python co-occur in 24 % of ads; Python libraries and statistical methods are rarely named; specific certifications ≤ 3 % each; PhD 2 %.
 * 40 % of ads state a German requirement, mostly with "sehr gut"/C1-equivalent wording; 24 % are written in English (data science 44 %), but 19 % of those still state a German requirement. In Styria 8 of 58 ads are English-written without a stated German requirement.
 * Advertised salary figures are collective-agreement minimums in 81 % of cases (medians by family €42k–€55k; senior ≈ €60k floors); actual pay cannot be estimated from ads. Hybrid is the norm in ads that say anything; fully remote 2 %.
+* Seasonality (Eurostat vacancy series, 17 years, quarterly): Q4 is the weakest quarter in every sector aggregate and Q1 the most frequent peak, but the amplitude is only 5–14 % against 255–567 % between years — the cycle dominates the calendar. The project's own one-day snapshot cannot measure seasonality, and `docs/seasonality.md` shows why.
 
 ## Limitations (docs/limitations.md)
 
@@ -49,39 +50,40 @@ DECISION_LOG.md             why each analytical and publication decision was mad
 PUBLICATION_DECISION.md     publication-readiness conclusion and public/private boundary
 docs/                       methodology · data-sources · research-landscape · role-taxonomy · posting-bias · salary-context
                             market-guide (findings) · data-quality · limitations · career-map · decision-framework
-                            legal-and-publication-audit · original-specification-audit
+                            seasonality · legal-and-publication-audit · original-specification-audit
 config/                     queries.json · role_taxonomy.json · skills_taxonomy.json · geo.json · profile.json
-src/acquisition/            common.py · collect_jobbarometer.py   (posting collectors: private)
+src/acquisition/            common.py · collect_jobbarometer.py · collect_eurostat_jvs.py   (posting collectors: private)
 src/pipeline/               build_interim.py → normalize.py → dedupe.py · patch_configs_2026-09-16_audit.py
 src/analysis/               run_analysis.py · cluster_requirements.py · jobbarometer_analysis.py · adjacent_demand.py
-                            data_quality.py · build_decision_matrix.py · make_figures.py · export_agent_json.py · precision_audit.py
+                            data_quality.py · build_decision_matrix.py · make_figures.py · export_agent_json.py · precision_audit.py · seasonality.py
 src/reporting/digest.py     prints every figure quoted in the documents (outputs/reports/digest.txt)
 src/publish/export_public.py builds the sanitised public tree and refuses to export personal data or free text
-outputs/tables/             T* posting tables · JB* JobBarometer · D* decision matrix · Q* quality (incl. Q03c precision audit)
-outputs/figures/            F01–F12 charts (title, n, source, period on each)
-outputs/*.json              market_summary · skills · roles · locations · languages · salaries · career_paths · jobbarometer · adjacent_demand · clusters · data_quality
+outputs/tables/             T* posting tables · JB* JobBarometer · S* seasonality · D* decision matrix · Q* quality (incl. Q03c precision audit)
+outputs/figures/            F01–F13 charts (title, n, source, period on each)
+outputs/*.json              market_summary · skills · roles · locations · languages · salaries · career_paths · jobbarometer · adjacent_demand · clusters · data_quality · seasonality
 schemas/postings_schema.md  field dictionary of the (private) processed posting file
 tests/test_pipeline.py      67 tests: rule behaviour on known inputs + integrity of processed outputs (skipped when data is absent)
-data/                       empty in the public repository (see PUBLICATION_DECISION.md)
+data/raw/eurostat_jvs/      Eurostat vacancy series (public; the rest of data/ is private, see PUBLICATION_DECISION.md)
 ```
 
 ## Reproduction
 
 Environment: Python 3.12 (any OS); `pip install -r requirements.txt`.
 
-What an outside reader can reproduce from this repository: every rule (run the unit tests), every aggregation step (read `src/analysis`), the consistency of the quoted numbers with the tables (`python src/reporting/digest.py` prints the digest from `outputs/`; `python -m pytest tests -q` checks table internal consistency), and the JobBarometer series (`python src/acquisition/collect_jobbarometer.py` then `python src/analysis/jobbarometer_analysis.py`).
+What an outside reader can reproduce from this repository: every rule (run the unit tests), every aggregation step (read `src/analysis`), the consistency of the quoted numbers with the tables (`python src/reporting/digest.py` prints the digest from `outputs/`; `python -m pytest tests -q` checks table internal consistency), the JobBarometer series (`python src/acquisition/collect_jobbarometer.py` then `python src/analysis/jobbarometer_analysis.py`), and **the entire seasonality analysis end to end** (`python src/acquisition/collect_eurostat_jvs.py` then `python src/analysis/seasonality.py`), because the Eurostat API is open and its raw response is in the repository.
 
 What requires the private data: steps 2–4 below, which are deterministic given `data/raw`.
 
 ```bash
-# 1. acquisition (private repository only; see DECISION_LOG D-013 before re-running any posting collector)
-python src/acquisition/collect_jobbarometer.py
+# 1. acquisition (posting collectors are private; see DECISION_LOG D-013 before re-running any of them)
+python src/acquisition/collect_jobbarometer.py    # public body statistics, permitted
+python src/acquisition/collect_eurostat_jvs.py    # open Eurostat API, permitted, runnable by anyone
 # 2. pipeline (deterministic given data/raw; ~5 min)
 python src/pipeline/build_interim.py && python src/pipeline/normalize.py && python src/pipeline/dedupe.py
 # 3. analysis
 python src/analysis/run_analysis.py && python src/analysis/cluster_requirements.py && python src/analysis/data_quality.py
 python src/analysis/jobbarometer_analysis.py && python src/analysis/adjacent_demand.py && python src/analysis/build_decision_matrix.py
-python src/analysis/make_figures.py && python src/analysis/export_agent_json.py
+python src/analysis/make_figures.py && python src/analysis/export_agent_json.py && python src/analysis/seasonality.py
 python src/reporting/digest.py > outputs/reports/digest.txt
 # 4. validation and publication
 python -m pytest tests -q

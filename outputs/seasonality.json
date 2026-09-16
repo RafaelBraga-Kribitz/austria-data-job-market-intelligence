@@ -1,0 +1,210 @@
+{
+ "question": "In which part of the year are most job vacancies open in Austria?",
+ "source": "Eurostat Job Vacancy Statistics jvs_q_nace2 (Statistik Austria Offene-Stellen-Erhebung), geo=AT, non-seasonally-adjusted, 2009-Q1..2025-Q4",
+ "unit": "stock of open vacancies reported for the quarter; NOT the number of new postings and NOT hires",
+ "grain": "quarter x NACE aggregate; no occupation detail, no regional detail (Styria not separable)",
+ "method": "seasonal index = quarter value / own-year mean, averaged across years (95% t-CI); cross-checked with ratio to centred 4-term moving average",
+ "years": 17,
+ "sectors": {
+  "G-N": {
+   "label": "Market services incl. ICT, finance, professional (NACE G-N)",
+   "strongest_quarter": "Q3",
+   "strongest_index": 1.038,
+   "weakest_quarter": "Q4",
+   "weakest_index": 0.976,
+   "spread_pct": 6.4,
+   "by_quarter": {
+    "Q1": {
+     "index": 1.007,
+     "ci": [
+      0.947,
+      1.068
+     ],
+     "moving_average_index": 1.016,
+     "years_above_average": "10/17"
+    },
+    "Q2": {
+     "index": 0.979,
+     "ci": [
+      0.942,
+      1.015
+     ],
+     "moving_average_index": 0.99,
+     "years_above_average": "8/17"
+    },
+    "Q3": {
+     "index": 1.038,
+     "ci": [
+      1.005,
+      1.07
+     ],
+     "moving_average_index": 1.031,
+     "years_above_average": "12/17"
+    },
+    "Q4": {
+     "index": 0.976,
+     "ci": [
+      0.929,
+      1.023
+     ],
+     "moving_average_index": 0.959,
+     "years_above_average": "5/17"
+    }
+   }
+  },
+  "B-F": {
+   "label": "Industry & construction (NACE B-F)",
+   "strongest_quarter": "Q1",
+   "strongest_index": 1.072,
+   "weakest_quarter": "Q4",
+   "weakest_index": 0.957,
+   "spread_pct": 12.0,
+   "by_quarter": {
+    "Q1": {
+     "index": 1.072,
+     "ci": [
+      0.993,
+      1.151
+     ],
+     "moving_average_index": 1.084,
+     "years_above_average": "10/17"
+    },
+    "Q2": {
+     "index": 0.993,
+     "ci": [
+      0.944,
+      1.042
+     ],
+     "moving_average_index": 0.997,
+     "years_above_average": "8/17"
+    },
+    "Q3": {
+     "index": 0.978,
+     "ci": [
+      0.933,
+      1.022
+     ],
+     "moving_average_index": 0.97,
+     "years_above_average": "4/17"
+    },
+    "Q4": {
+     "index": 0.957,
+     "ci": [
+      0.876,
+      1.039
+     ],
+     "moving_average_index": 0.93,
+     "years_above_average": "6/17"
+    }
+   }
+  },
+  "O-S": {
+   "label": "Public sector, education, health (NACE O-S)",
+   "strongest_quarter": "Q2",
+   "strongest_index": 1.058,
+   "weakest_quarter": "Q4",
+   "weakest_index": 0.93,
+   "spread_pct": 13.8,
+   "by_quarter": {
+    "Q1": {
+     "index": 0.989,
+     "ci": [
+      0.925,
+      1.053
+     ],
+     "moving_average_index": 1.0,
+     "years_above_average": "7/17"
+    },
+    "Q2": {
+     "index": 1.058,
+     "ci": [
+      1.004,
+      1.112
+     ],
+     "moving_average_index": 1.058,
+     "years_above_average": "12/17"
+    },
+    "Q3": {
+     "index": 1.023,
+     "ci": [
+      0.971,
+      1.074
+     ],
+     "moving_average_index": 1.016,
+     "years_above_average": "10/17"
+    },
+    "Q4": {
+     "index": 0.93,
+     "ci": [
+      0.847,
+      1.013
+     ],
+     "moving_average_index": 0.915,
+     "years_above_average": "5/17"
+    }
+   }
+  },
+  "B-S": {
+   "label": "Total economy (NACE B-S)",
+   "strongest_quarter": "Q3",
+   "strongest_index": 1.022,
+   "weakest_quarter": "Q4",
+   "weakest_index": 0.97,
+   "spread_pct": 5.4,
+   "by_quarter": {
+    "Q1": {
+     "index": 1.014,
+     "ci": [
+      0.955,
+      1.072
+     ],
+     "moving_average_index": 1.032,
+     "years_above_average": "10/16"
+    },
+    "Q2": {
+     "index": 0.995,
+     "ci": [
+      0.96,
+      1.03
+     ],
+     "moving_average_index": 1.003,
+     "years_above_average": "10/16"
+    },
+    "Q3": {
+     "index": 1.022,
+     "ci": [
+      0.994,
+      1.05
+     ],
+     "moving_average_index": 1.015,
+     "years_above_average": "9/16"
+    },
+    "Q4": {
+     "index": 0.97,
+     "ci": [
+      0.916,
+      1.023
+     ],
+     "moving_average_index": 0.952,
+     "years_above_average": "4/16"
+    }
+   }
+  }
+ },
+ "why_not_from_our_postings": {
+  "snapshot_date": "2026-09-16",
+  "core_postings": 720,
+  "posted_in_collection_month": 376,
+  "share_posted_in_collection_month": 0.522,
+  "share_within_90_days": 0.903,
+  "median_age_days_by_source": {
+   "eures": 41.0,
+   "jobsat": 19.0,
+   "karriere": 5.0,
+   "linkedin": 14.0,
+   "willhaben": 34.5
+  },
+  "conclusion": "The month distribution of first-publish dates in a one-day snapshot is the product of posting volume and the probability that an advertisement is still open. With 90% of the core set published within 90 days of collection, the observed pattern is survival decay; seasonality is not identifiable from it."
+ },
+ "generated_from": "src/analysis/seasonality.py"
+}

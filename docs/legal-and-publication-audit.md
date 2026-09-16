@@ -151,6 +151,7 @@ The public repository will be read by recruiters, hiring managers and possibly t
 | willhaben | No | Yes (LOW; 27 core postings) | No | **No** (robots header, AGB Pkt 8, § 42h(6) reservation) | HIGH | MEDIUM | HIGH in raw (`contact` objects) | **PUBLIC AGGREGATES ONLY** |
 | AMS JobBarometer | No (stored HTML pages are AMS works; not needed publicly) | Yes (LOW; AMS publishes these figures openly) | No | **Yes** (public body statistics page, no terms found, no robots directives) | LOW | LOW | none | **PUBLIC (code + aggregates)** |
 | ESCO | n/a (CC BY 4.0 taxonomy lookups only) | Yes | n/a | Yes | LOW | LOW | none | PUBLIC |
+| Eurostat JVS (added 2026-09-16) | **Yes** (48 KB JSON, openly licensed, published) | Yes | n/a | **Yes** | LOW (documented open API, no restriction found) | LOW (official statistics, reuse permitted with attribution) | none (aggregate statistics only) | **PUBLIC (code + raw + aggregates)** |
 | Salary reference pages (`data/external`) | No (third-party HTML pages) | Cited figures only | No | n/a | LOW | LOW | none | PUBLIC METHODOLOGY ONLY (citations) |
 
 ## 7. What the public export contains and excludes (implemented in `src/publish/export_public.py`)

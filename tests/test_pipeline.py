@@ -214,3 +214,89 @@ def test_table_shares_consistent():
     assert abs(t.share.sum() - 1) < 0.02 and (t["count"].sum() == t.n.iloc[0])
     st = pd.read_csv(TAB / "T05_skills_all_tech.csv")
     assert (st["count"] <= st.n).all() and ((st.share - st["count"] / st.n).abs() < 0.001).all()
+
+
+# ---------------- seasonality (D-015): the index must recover a known seasonal pattern
+sys.path.insert(0, str(ROOT / "src" / "analysis"))
+
+
+def _synthetic_quarterly(mult, years=12, base=1000.0, q_growth=1.0, y_growth=1.0):
+    """Series with a known multiplicative seasonal pattern on a trend.
+
+    q_growth compounds every quarter (a smooth trend); y_growth compounds once per year
+    (a step trend that only moves in January). The two methods behave differently on them,
+    which is what the tests below pin down.
+    """
+    rows = []
+    t = 0
+    for i, y in enumerate(range(2010, 2010 + years)):
+        for q in (1, 2, 3, 4):
+            rows.append({"year": y, "quarter": q,
+                         "value": base * (y_growth ** i) * (q_growth ** t) * mult[q - 1]})
+            t += 1
+    return pd.DataFrame(rows)
+
+
+MULT = [1.20, 0.95, 0.95, 0.90]  # mean exactly 1.0
+
+
+def test_seasonal_index_recovers_known_pattern_smooth_trend():
+    """On a smooth trend both methods recover the pattern; the moving average is the more accurate."""
+    import seasonality as S
+    df = _synthetic_quarterly(MULT, q_growth=1.015)  # +1.5% per quarter, ~6% per year
+    a = S.ratio_own_year(df)
+    got_a = [a[a.quarter == q].ratio_a.mean() for q in (1, 2, 3, 4)]
+    b = S.ratio_moving_average(df)
+    got_b = [b[b.quarter == q].ratio_b.mean() for q in (1, 2, 3, 4)]
+    for g, m in zip(got_a, MULT):
+        assert abs(g - m) < 0.03, ("method A", got_a, MULT)
+    for g, m in zip(got_b, MULT):
+        assert abs(g - m) < 0.01, ("method B", got_b, MULT)
+    err_a = sum(abs(g - m) for g, m in zip(got_a, MULT))
+    err_b = sum(abs(g - m) for g, m in zip(got_b, MULT))
+    assert err_b < err_a, (err_a, err_b)
+
+
+def test_seasonal_index_exact_when_trend_is_a_yearly_step():
+    """Method A is exact when the level only changes between years (its design property)."""
+    import seasonality as S
+    df = _synthetic_quarterly(MULT, y_growth=1.08)
+    a = S.ratio_own_year(df)
+    got = [a[a.quarter == q].ratio_a.mean() for q in (1, 2, 3, 4)]
+    for g, m in zip(got, MULT):
+        assert abs(g - m) < 1e-9, (got, MULT)
+
+
+def test_seasonal_index_is_flat_without_seasonality():
+    import seasonality as S
+    df = _synthetic_quarterly([1.0, 1.0, 1.0, 1.0])
+    a = S.ratio_own_year(df)
+    assert all(abs(a[a.quarter == q].ratio_a.mean() - 1) < 0.02 for q in (1, 2, 3, 4))
+
+
+def test_centred_moving_average_weights():
+    """CMA_t must equal (0.5x-2 + x-1 + x0 + x+1 + 0.5x+2)/4 and be NaN at the edges."""
+    import seasonality as S
+    df = pd.DataFrame([{"year": 2010 + i // 4, "quarter": i % 4 + 1, "value": float(v)}
+                       for i, v in enumerate([10, 20, 30, 40, 50, 60, 70, 80])])
+    out = S.ratio_moving_average(df).sort_values(["year", "quarter"]).reset_index(drop=True)
+    x = df.value.tolist()
+    expected = (0.5 * x[0] + x[1] + x[2] + x[3] + 0.5 * x[4]) / 4
+    assert abs(out.cma.iloc[2] - expected) < 1e-9
+    assert pd.isna(out.cma.iloc[0]) and pd.isna(out.cma.iloc[-1])
+
+
+def test_seasonality_tables_consistent():
+    p = TAB / "S01_seasonal_index.csv"
+    if not p.exists():
+        pytest.skip("seasonality tables not present")
+    s = pd.read_csv(p)
+    full = s[s["sample"] == "full"]
+    # the four quarterly indices of a sector must average to ~1 by construction
+    for sector, g in full.groupby("sector"):
+        assert len(g) == 4
+        assert abs(g.index_a_own_year_mean.mean() - 1) < 0.01, (sector, g.index_a_own_year_mean.tolist())
+        assert (g.ci_low <= g.index_a_own_year_mean).all() and (g.index_a_own_year_mean <= g.ci_high).all()
+    # Q4 must be the weakest quarter in every sector (the documented headline finding)
+    for sector, g in full.groupby("sector"):
+        assert g.sort_values("index_a_own_year_mean").iloc[0].quarter == "Q4", sector

@@ -51,6 +51,16 @@ Degree wording is *required* in 32 % of ads, *preferred* in 2.5 %, merely mentio
 
 Hybrid or home-office mentioned in 53 % (explicit hybrid pattern 27 %), on-site 5 %, **fully remote 2 %**, 40 % silent (T10). Data engineering 62 %, data science 55 %, analysts 43 %, marketing analytics 80 % (n 24). Styria 32 of 58. Days per week almost never stated (6 ads). Robust for "hybrid is the norm, remote is rare".
 
+## WHEN IN THE YEAR SHOULD I APPLY, AND WHEN IS IT QUIET?
+
+Answered from Eurostat's Austrian Job Vacancy Statistics (quarterly, 2009–2025, 17 years), **not** from our snapshot: a one-day snapshot cannot measure seasonality, and `docs/seasonality.md` §1 shows why (52 % of the 720 core ads were first published in the collection month; 90 % within 90 days — that is survival decay, not a calendar).
+
+* **Q4 (Oct–Dec) is the reliably thinnest quarter**, in all four sector aggregates, under both estimation methods and in every sub-sample: index 0.93–0.98 against an average quarter, and the weakest quarter in 8–10 of the 16–17 years (S01, S02). Robust as a direction.
+* **Q1 (Jan–Mar) is most often the strongest single quarter** — 9 of 17 years in industry & construction (index 1.072), 7 of 16 in the total economy. That is the aggregate Styria's industrial employers sit in.
+* **The Q3 peak in market services (1.038) must not be read as data-job demand:** the NACE G-N aggregate also contains accommodation, food service and retail, and Austria does not report ICT separately here. Summer is, however, clearly not a dead period (Q3 above average in 12 of 17 years).
+* **Amplitude is small and the cycle dominates:** best-vs-worst quarter is 5–14 %, best-vs-worst *year* is 255–567 % — a factor of 19–49 (S06). Market-services vacancies ran at ~33,700 per quarter in 2009, peaked at ~137,700 in 2022 and were ~82,200 in 2025.
+* **Practical reading:** do not time applications by month; use **Oct–Dec as the build/study block** and be **application-ready in January**; keep applying continuously, because half of the open ads in the snapshot were under 14 days old (median 5 days on karriere.at). No occupation or regional grain, so nothing here is Styria- or data-role-specific (docs/seasonality.md §7).
+
 ## WHAT DO I ALREADY HAVE?
 
 Stakeholder/business/communication wording is the most universal requirement (55–63 %); finance/controlling, sales, consulting and marketing contexts frame most analyst ads; Excel and dashboards remain the analyst baseline (47 % / 64 %); seniority is expected (57.5 % unlabelled ads, "senior" ≈ 5 years); experimentation is a rare, credible edge (A/B testing 3 % overall, 4 of 24 marketing-analytics ads) (career-map §1).
@@ -115,6 +125,7 @@ For every recommendation above the supporting table, denominator and assumption 
 | Technology demand shifts (Fabric/Databricks share, GenAI wording, Tableau/Looker reappearing, Analytics-Engineer titles growing beyond 5) | the learning roadmap and project list |
 | Advertised floors moving (e.g. analyst floors converging with engineering floors) or third-party survey data with methodology | the salary section and the V7 weight |
 | New role categories in Austrian titles (e.g. "Analytics Engineer", "AI Product Analyst") | the taxonomy and the family ranking |
+| A quarterly re-run of the Eurostat vacancy series showing Austrian vacancies turning back up after the 2022–2025 decline, or falling further | the urgency of applying now versus building first; the cycle moves 19–49× more than the season (docs/seasonality.md §5) |
 | Actual interview/hiring outcomes for this profile (applications sent, responses, offers by family and language) | everything above — this is the only observation that can turn requirement patterns into evidence about hiring |
 | JobBarometer 2026 reversing Styria's relative resilience | the geographic conclusion |
 | A manual extraction audit showing precision below ~90 % for language or salary fields | the language and salary sections |

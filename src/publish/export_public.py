@@ -31,7 +31,9 @@ INCLUDE_FILES = [
     "LICENSE", "CITATION.cff", "requirements.txt", ".gitignore",
 ]
 INCLUDE_DIRS = ["docs", "config", "schemas", "tests", "outputs/figures", "src/pipeline", "src/analysis", "src/reporting", "src/publish"]
-INCLUDE_ACQUISITION = ["common.py", "collect_jobbarometer.py"]  # public-body statistics pages, no terms restriction found
+INCLUDE_ACQUISITION = ["common.py", "collect_jobbarometer.py", "collect_eurostat_jvs.py"]  # public-body statistics / open API, no terms restriction found
+# raw data that may be published: Eurostat is an openly licensed, documented API (docs/seasonality.md §2)
+INCLUDE_RAW_DIRS = ["data/raw/eurostat_jvs"]
 EXCLUDE_ACQUISITION = ["collect_eures.py", "collect_eures_styria_text.py", "collect_karriere.py", "collect_jobsat.py", "collect_linkedin.py", "collect_willhaben.py"]
 # kept private: every posting source restricts automated extraction in its terms (docs/legal-and-publication-audit.md §2, §6)
 EXCLUDE_TABLES = {
@@ -153,6 +155,11 @@ def main(target: Path) -> int:
     for d in ["data/raw", "data/processed", "data/external"]:
         (target / d).mkdir(parents=True, exist_ok=True)
         (target / d / ".gitkeep").write_text("private in the public repository; see PUBLICATION_DECISION.md\n", encoding="utf-8")
+    # openly licensed raw data that IS published, so the seasonality layer is reproducible end to end
+    for d in INCLUDE_RAW_DIRS:
+        for p in (ROOT / d).rglob("*"):
+            if p.is_file():
+                copy_file(p, target / p.relative_to(ROOT))
     problems += scan_tree(target)
     (target / "outputs" / "PUBLIC_EXPORT_MANIFEST.txt").write_text(
         "Built by src/publish/export_public.py\n"
