@@ -1,0 +1,17 @@
+normalized_title,n,min_p25,min_median,min_p75,max_median,n_with_max,mean_min
+Analytics Engineer,3.0,51950.0,53900.0,56950.0,,0.0,54633.0
+BI Analyst,25.0,39200.0,47547.0,53000.0,49500.0,6.0,47562.0
+BI Consultant / Analytics Consultant,14.0,39666.0,47500.0,60000.0,70000.0,7.0,50244.0
+BI Developer / BI Engineer,28.0,45500.0,56500.0,60000.0,76500.0,2.0,54902.0
+Business Analyst,93.0,45738.0,55000.0,58982.0,60000.0,12.0,52172.0
+Data Analyst,62.0,42034.0,47810.0,58604.0,65000.0,13.0,49664.0
+Data Architect / Data Platform,17.0,55356.0,60000.0,70000.0,80000.0,3.0,62027.0
+Data Engineer,112.0,47744.0,54450.0,61700.0,65000.0,21.0,54397.0
+Data Governance / Data Steward / Data Manager,21.0,36676.0,47810.0,58479.0,84000.0,1.0,48552.0
+Data Scientist,66.0,42329.0,52220.0,61000.0,61600.0,17.0,53314.0
+Financial / Risk / Controlling Analyst (data-heavy),21.0,36676.0,45856.0,55889.0,55307.0,3.0,45866.0
+Machine Learning / AI Engineer,56.0,53682.0,56700.0,69259.0,74852.0,14.0,60010.0
+Marketing Data Scientist,2.0,60000.0,60000.0,60000.0,,0.0,60000.0
+Marketing/Growth/CRM Analyst,19.0,35243.0,42000.0,44946.0,75000.0,3.0,43184.0
+Master / Product Data Management (operational),29.0,37380.0,44800.0,54506.0,55307.0,7.0,48496.0
+Product Analyst,1.0,63000.0,63000.0,63000.0,,0.0,63000.0

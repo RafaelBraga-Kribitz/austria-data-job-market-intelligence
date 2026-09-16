@@ -1,0 +1,9 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,Cloud (generic),182,661,0.275,0.243,0.311
+Rest of Austria,Azure,119,661,0.18,0.153,0.211
+Rest of Austria,AWS,55,661,0.083,0.064,0.107
+Rest of Austria,GCP,31,661,0.047,0.033,0.066
+Styria,Cloud (generic),24,58,0.414,0.296,0.542
+Styria,Azure,20,58,0.345,0.236,0.473
+Styria,GCP,10,58,0.172,0.096,0.289
+Styria,AWS,7,58,0.121,0.06,0.229

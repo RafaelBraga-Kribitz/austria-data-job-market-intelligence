@@ -1,0 +1,1589 @@
+{
+ "vintage": {
+  "min": "2026-09-16 17:00:34+00:00",
+  "max": "2026-09-16 18:39:42+00:00"
+ },
+ "posted_date_range": {
+  "min": "2023-08-17",
+  "max": "2026-09-16"
+ },
+ "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
+ "summary": [
+  {
+   "metric": "core_postings",
+   "count": 720
+  },
+  {
+   "metric": "styria",
+   "count": 58
+  },
+  {
+   "metric": "graz_area",
+   "count": 52
+  },
+  {
+   "metric": "graz_city",
+   "count": 34
+  },
+  {
+   "metric": "vienna",
+   "count": 350
+  },
+  {
+   "metric": "austria_wide_flag",
+   "count": 13
+  },
+  {
+   "metric": "multi_location",
+   "count": 61
+  },
+  {
+   "metric": "location_unspecified",
+   "count": 22
+  }
+ ],
+ "states": [
+  {
+   "state": "Wien",
+   "count": 343,
+   "n": 720,
+   "share": 0.476
+  },
+  {
+   "state": "Oberösterreich",
+   "count": 122,
+   "n": 720,
+   "share": 0.169
+  },
+  {
+   "state": "Steiermark",
+   "count": 54,
+   "n": 720,
+   "share": 0.075
+  },
+  {
+   "state": "Vorarlberg",
+   "count": 46,
+   "n": 720,
+   "share": 0.064
+  },
+  {
+   "state": "Niederösterreich",
+   "count": 44,
+   "n": 720,
+   "share": 0.061
+  },
+  {
+   "state": "Salzburg",
+   "count": 37,
+   "n": 720,
+   "share": 0.051
+  },
+  {
+   "state": "Tirol",
+   "count": 30,
+   "n": 720,
+   "share": 0.042
+  },
+  {
+   "state": "Kärnten",
+   "count": 22,
+   "n": 720,
+   "share": 0.031
+  },
+  {
+   "state": "unspecified",
+   "count": 22,
+   "n": 720,
+   "share": 0.031
+  }
+ ],
+ "geo_scope": [
+  {
+   "geo_scope": "Vienna",
+   "count": 345,
+   "share": 0.479
+  },
+  {
+   "geo_scope": "Other Austria / unspecified",
+   "count": 317,
+   "share": 0.44
+  },
+  {
+   "geo_scope": "Graz area",
+   "count": 52,
+   "share": 0.072
+  },
+  {
+   "geo_scope": "Styria (other)",
+   "count": 6,
+   "share": 0.008
+  }
+ ],
+ "family_by_state": [
+  {
+   "role_family": "bi",
+   "Kärnten": 5,
+   "Niederösterreich": 7,
+   "Oberösterreich": 18,
+   "Salzburg": 4,
+   "Steiermark": 4,
+   "Tirol": 0,
+   "Vorarlberg": 8,
+   "Wien": 34,
+   "unspecified": 5,
+   "All": 85
+  },
+  {
+   "role_family": "business_analysis",
+   "Kärnten": 1,
+   "Niederösterreich": 10,
+   "Oberösterreich": 13,
+   "Salzburg": 2,
+   "Steiermark": 4,
+   "Tirol": 1,
+   "Vorarlberg": 12,
+   "Wien": 74,
+   "unspecified": 3,
+   "All": 120
+  },
+  {
+   "role_family": "data_analytics",
+   "Kärnten": 5,
+   "Niederösterreich": 4,
+   "Oberösterreich": 21,
+   "Salzburg": 8,
+   "Steiermark": 11,
+   "Tirol": 7,
+   "Vorarlberg": 7,
+   "Wien": 41,
+   "unspecified": 3,
+   "All": 107
+  },
+  {
+   "role_family": "data_engineering",
+   "Kärnten": 3,
+   "Niederösterreich": 8,
+   "Oberösterreich": 32,
+   "Salzburg": 6,
+   "Steiermark": 17,
+   "Tirol": 7,
+   "Vorarlberg": 7,
+   "Wien": 78,
+   "unspecified": 2,
+   "All": 160
+  },
+  {
+   "role_family": "data_governance",
+   "Kärnten": 0,
+   "Niederösterreich": 6,
+   "Oberösterreich": 10,
+   "Salzburg": 6,
+   "Steiermark": 5,
+   "Tirol": 9,
+   "Vorarlberg": 5,
+   "Wien": 22,
+   "unspecified": 2,
+   "All": 65
+  },
+  {
+   "role_family": "data_science",
+   "Kärnten": 7,
+   "Niederösterreich": 9,
+   "Oberösterreich": 25,
+   "Salzburg": 9,
+   "Steiermark": 13,
+   "Tirol": 6,
+   "Vorarlberg": 3,
+   "Wien": 80,
+   "unspecified": 6,
+   "All": 158
+  },
+  {
+   "role_family": "marketing_analytics",
+   "Kärnten": 1,
+   "Niederösterreich": 0,
+   "Oberösterreich": 3,
+   "Salzburg": 2,
+   "Steiermark": 0,
+   "Tirol": 0,
+   "Vorarlberg": 4,
+   "Wien": 13,
+   "unspecified": 1,
+   "All": 24
+  },
+  {
+   "role_family": "product_analytics",
+   "Kärnten": 0,
+   "Niederösterreich": 0,
+   "Oberösterreich": 0,
+   "Salzburg": 0,
+   "Steiermark": 0,
+   "Tirol": 0,
+   "Vorarlberg": 0,
+   "Wien": 1,
+   "unspecified": 0,
+   "All": 1
+  },
+  {
+   "role_family": "All",
+   "Kärnten": 22,
+   "Niederösterreich": 44,
+   "Oberösterreich": 122,
+   "Salzburg": 37,
+   "Steiermark": 54,
+   "Tirol": 30,
+   "Vorarlberg": 46,
+   "Wien": 343,
+   "unspecified": 22,
+   "All": 720
+  }
+ ],
+ "styria_cities": [
+  {
+   "city": "Graz",
+   "count": 34
+  },
+  {
+   "city": "Hart Bei Graz",
+   "count": 6
+  },
+  {
+   "city": "unspecified",
+   "count": 3
+  },
+  {
+   "city": "Weiz",
+   "count": 3
+  },
+  {
+   "city": "Dornbirn",
+   "count": 2
+  },
+  {
+   "city": "Lieboch",
+   "count": 1
+  },
+  {
+   "city": "Liezen",
+   "count": 1
+  },
+  {
+   "city": "Raaba-Grambach",
+   "count": 1
+  },
+  {
+   "city": "Wien",
+   "count": 1
+  },
+  {
+   "city": "Leibnitz",
+   "count": 1
+  },
+  {
+   "city": "Premstätten",
+   "count": 1
+  },
+  {
+   "city": "Leoben",
+   "count": 1
+  },
+  {
+   "city": "Gleisdorf",
+   "count": 1
+  },
+  {
+   "city": "Feldkirchen Bei Graz",
+   "count": 1
+  },
+  {
+   "city": "Raaba",
+   "count": 1
+  }
+ ],
+ "employers_styria_top": [
+  {
+   "company_norm": "knapp",
+   "postings": 7,
+   "families": "business_analysis,data_analytics,data_engineering,data_science",
+   "states": "Steiermark",
+   "styria": 7,
+   "graz_area": 6,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "KNAPP"
+  },
+  {
+   "company_norm": "adesso",
+   "postings": 4,
+   "families": "data_engineering,data_science",
+   "states": "Steiermark",
+   "styria": 4,
+   "graz_area": 4,
+   "is_agency": false,
+   "sources": "eures,linkedin",
+   "example_company": "adesso Austria"
+  },
+  {
+   "company_norm": "tieto",
+   "postings": 4,
+   "families": "data_engineering,data_science",
+   "states": "Steiermark,Wien",
+   "styria": 3,
+   "graz_area": 3,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Tieto Austria"
+  },
+  {
+   "company_norm": "cancom",
+   "postings": 4,
+   "families": "bi,data_engineering",
+   "states": "Vorarlberg,Wien",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "eures,karriere",
+   "example_company": "CANCOM Austria AG"
+  },
+  {
+   "company_norm": "niceshops",
+   "postings": 2,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "karriere,willhaben",
+   "example_company": "niceshops GmbH"
+  },
+  {
+   "company_norm": "anton paar",
+   "postings": 2,
+   "families": "data_science",
+   "states": "Steiermark",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Anton Paar"
+  },
+  {
+   "company_norm": "mercedes-benz g",
+   "postings": 2,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "jobsat,linkedin",
+   "example_company": "Mercedes-Benz G GmbH"
+  },
+  {
+   "company_norm": "magna",
+   "postings": 2,
+   "families": "bi,data_engineering",
+   "states": "Steiermark",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Magna International"
+  },
+  {
+   "company_norm": "netconomy",
+   "postings": 2,
+   "families": "data_engineering,data_science",
+   "states": "Kärnten,Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Netconomy"
+  },
+  {
+   "company_norm": "kern engineering careers",
+   "postings": 6,
+   "families": "bi,data_engineering,data_science",
+   "states": "Oberösterreich,Steiermark,Wien",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "karriere,willhaben",
+   "example_company": "KERN engineering careers GmbH"
+  },
+  {
+   "company_norm": "österreichische gesundheitskasse",
+   "postings": 2,
+   "families": "data_governance",
+   "states": "Steiermark,Wien",
+   "styria": 1,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Österreichische Gesundheitskasse"
+  },
+  {
+   "company_norm": "ase services süd",
+   "postings": 1,
+   "families": "data_science",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "willhaben",
+   "example_company": "ASE Services Süd GmbH"
+  },
+  {
+   "company_norm": "ams osram",
+   "postings": 1,
+   "families": "data_science",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "ams OSRAM"
+  },
+  {
+   "company_norm": "all for one",
+   "postings": 1,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "All for One"
+  },
+  {
+   "company_norm": "epig",
+   "postings": 1,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "willhaben",
+   "example_company": "EPIG GmbH"
+  },
+  {
+   "company_norm": "easelink",
+   "postings": 1,
+   "families": "business_analysis",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "eures",
+   "example_company": "Easelink"
+  },
+  {
+   "company_norm": "kapsch aktiengesellschaft",
+   "postings": 1,
+   "families": "data_engineering",
+   "states": "Wien",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "jobsat",
+   "example_company": "Kapsch Aktiengesellschaft"
+  },
+  {
+   "company_norm": "maco produktions",
+   "postings": 1,
+   "families": "data_engineering",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "eures",
+   "example_company": "Maco Produktions"
+  },
+  {
+   "company_norm": "omninet",
+   "postings": 1,
+   "families": "bi",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "OMNINET"
+  },
+  {
+   "company_norm": "merkur versicherung",
+   "postings": 1,
+   "families": "data_science",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "jobsat",
+   "example_company": "Merkur Versicherung AG"
+  },
+  {
+   "company_norm": "personalservice plus",
+   "postings": 1,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": true,
+   "sources": "eures",
+   "example_company": "Personalservice Plus"
+  },
+  {
+   "company_norm": "professionals4you",
+   "postings": 1,
+   "families": "data_governance",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "willhaben",
+   "example_company": "Professionals4you"
+  },
+  {
+   "company_norm": "rosendahl nextrom",
+   "postings": 1,
+   "families": "data_governance",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "Rosendahl Nextrom GmbH"
+  },
+  {
+   "company_norm": "bbmri-eric",
+   "postings": 1,
+   "families": "data_governance",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "BBMRI-ERIC"
+  },
+  {
+   "company_norm": "siemens energy",
+   "postings": 1,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Siemens Energy"
+  },
+  {
+   "company_norm": "trenkwalder personaldienste",
+   "postings": 1,
+   "families": "data_governance",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": true,
+   "sources": "eures",
+   "example_company": "Trenkwalder Personaldienste"
+  },
+  {
+   "company_norm": "telus digital ai data solutions",
+   "postings": 1,
+   "families": "data_analytics",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "TELUS Digital AI Data Solutions"
+  },
+  {
+   "company_norm": "teccon consulting",
+   "postings": 1,
+   "families": "bi",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "eures",
+   "example_company": "TECCON Consulting"
+  },
+  {
+   "company_norm": "vusion",
+   "postings": 1,
+   "families": "data_engineering",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Vusion"
+  },
+  {
+   "company_norm": "at&s",
+   "postings": 1,
+   "families": "data_engineering",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "AT&S"
+  },
+  {
+   "company_norm": "zeta",
+   "postings": 1,
+   "families": "data_engineering",
+   "states": "Wien",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "ZETA GmbH"
+  },
+  {
+   "company_norm": "agfa healthcare",
+   "postings": 1,
+   "families": "bi",
+   "states": "Steiermark",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "jobsat",
+   "example_company": "Agfa HealthCare GesmbH"
+  }
+ ],
+ "employers_top": [
+  {
+   "company_norm": "red bull",
+   "postings": 10,
+   "families": "data_analytics,data_governance,data_science",
+   "states": "Salzburg",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Red Bull"
+  },
+  {
+   "company_norm": "qualysoft",
+   "postings": 7,
+   "families": "business_analysis,data_engineering,data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Qualysoft"
+  },
+  {
+   "company_norm": "liebherr",
+   "postings": 7,
+   "families": "bi,business_analysis,data_analytics,data_engineering,data_governance",
+   "states": "Vorarlberg",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Liebherr Group"
+  },
+  {
+   "company_norm": "knapp",
+   "postings": 7,
+   "families": "business_analysis,data_analytics,data_engineering,data_science",
+   "states": "Steiermark",
+   "styria": 7,
+   "graz_area": 6,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "KNAPP"
+  },
+  {
+   "company_norm": "hirebuddy flexco",
+   "postings": 6,
+   "families": "bi,business_analysis,data_engineering",
+   "states": "Niederösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "willhaben",
+   "example_company": "Hirebuddy FlexCo"
+  },
+  {
+   "company_norm": "kern engineering careers",
+   "postings": 6,
+   "families": "bi,data_engineering,data_science",
+   "states": "Oberösterreich,Steiermark,Wien",
+   "styria": 1,
+   "graz_area": 1,
+   "is_agency": false,
+   "sources": "karriere,willhaben",
+   "example_company": "KERN engineering careers GmbH"
+  },
+  {
+   "company_norm": "pwc",
+   "postings": 5,
+   "families": "business_analysis,data_analytics,data_governance",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "PwC Österreich"
+  },
+  {
+   "company_norm": "öbb",
+   "postings": 5,
+   "families": "business_analysis,data_governance",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "ÖBB"
+  },
+  {
+   "company_norm": "öbb-konzern",
+   "postings": 5,
+   "families": "business_analysis,data_governance",
+   "states": "Niederösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat,karriere",
+   "example_company": "ÖBB-Konzern"
+  },
+  {
+   "company_norm": "accenture dach",
+   "postings": 5,
+   "families": "data_analytics,data_engineering,data_science",
+   "states": "Tirol,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Accenture DACH"
+  },
+  {
+   "company_norm": "msg",
+   "postings": 4,
+   "families": "bi,data_science",
+   "states": "Oberösterreich",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "msg"
+  },
+  {
+   "company_norm": "tieto",
+   "postings": 4,
+   "families": "data_engineering,data_science",
+   "states": "Steiermark,Wien",
+   "styria": 3,
+   "graz_area": 3,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Tieto Austria"
+  },
+  {
+   "company_norm": "smart energy services",
+   "postings": 4,
+   "families": "bi,business_analysis,data_engineering",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "eures,karriere,linkedin",
+   "example_company": "smart Energy Services"
+  },
+  {
+   "company_norm": "towa the digital growth company",
+   "postings": 4,
+   "families": "marketing_analytics",
+   "states": "Vorarlberg,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "TOWA. the digital growth company"
+  },
+  {
+   "company_norm": "rhi magnesita",
+   "postings": 4,
+   "families": "bi,data_engineering,data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "RHI Magnesita"
+  },
+  {
+   "company_norm": "cancom",
+   "postings": 4,
+   "families": "bi,data_engineering",
+   "states": "Vorarlberg,Wien",
+   "styria": 2,
+   "graz_area": 2,
+   "is_agency": false,
+   "sources": "eures,karriere",
+   "example_company": "CANCOM Austria AG"
+  },
+  {
+   "company_norm": "adesso",
+   "postings": 4,
+   "families": "data_engineering,data_science",
+   "states": "Steiermark",
+   "styria": 4,
+   "graz_area": 4,
+   "is_agency": false,
+   "sources": "eures,linkedin",
+   "example_company": "adesso Austria"
+  },
+  {
+   "company_norm": "fronius",
+   "postings": 4,
+   "families": "data_engineering,data_science",
+   "states": "Oberösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Fronius"
+  },
+  {
+   "company_norm": "liebherr-werk nenzing",
+   "postings": 4,
+   "families": "bi,business_analysis,data_analytics,data_engineering",
+   "states": "Vorarlberg",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "eures",
+   "example_company": "LIEBHERR-WERK NENZING"
+  },
+  {
+   "company_norm": "rewe",
+   "postings": 3,
+   "families": "business_analysis,data_analytics",
+   "states": "Niederösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "REWE International AG"
+  },
+  {
+   "company_norm": "machine learning reply",
+   "postings": 3,
+   "families": "data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Machine Learning Reply GmbH"
+  },
+  {
+   "company_norm": "bundesrechenzentrum",
+   "postings": 3,
+   "families": "data_governance,data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "Bundesrechenzentrum GmbH"
+  },
+  {
+   "company_norm": "magenta telekom",
+   "postings": 3,
+   "families": "business_analysis,marketing_analytics",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "eures,karriere,linkedin",
+   "example_company": "Magenta Telekom"
+  },
+  {
+   "company_norm": "doppelmayr seilbahnen",
+   "postings": 3,
+   "families": "business_analysis,data_science",
+   "states": "Vorarlberg",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "eures",
+   "example_company": "Doppelmayr Seilbahnen"
+  },
+  {
+   "company_norm": "bcg x",
+   "postings": 3,
+   "families": "data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "BCG X"
+  },
+  {
+   "company_norm": "b telligent",
+   "postings": 3,
+   "families": "bi,data_engineering",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "b.telligent"
+  },
+  {
+   "company_norm": "österreichische post aktiengesellschaft",
+   "postings": 3,
+   "families": "business_analysis,data_engineering",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "willhaben",
+   "example_company": "Österreichische Post Aktiengesellschaft"
+  },
+  {
+   "company_norm": "österreichische post",
+   "postings": 3,
+   "families": "business_analysis,data_engineering",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat,linkedin",
+   "example_company": "Österreichische Post AG"
+  },
+  {
+   "company_norm": "xxxldigital",
+   "postings": 3,
+   "families": "business_analysis,data_analytics,marketing_analytics",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat",
+   "example_company": "xxxldigital"
+  },
+  {
+   "company_norm": "coolpeople technology",
+   "postings": 3,
+   "families": "business_analysis",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "CoolPeople Technology"
+  },
+  {
+   "company_norm": "heron innovations factory",
+   "postings": 3,
+   "families": "business_analysis,data_science",
+   "states": "Vorarlberg",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "Heron Innovations Factory GmbH"
+  },
+  {
+   "company_norm": "fivesquare",
+   "postings": 3,
+   "families": "data_science",
+   "states": "Oberösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat,linkedin",
+   "example_company": "FiveSquare"
+  },
+  {
+   "company_norm": "michael page",
+   "postings": 3,
+   "families": "bi,data_engineering",
+   "states": "Salzburg,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": true,
+   "sources": "karriere",
+   "example_company": "Michael Page International Austria GmbH"
+  },
+  {
+   "company_norm": "deloitte",
+   "postings": 3,
+   "families": "bi,data_analytics",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "Deloitte"
+  },
+  {
+   "company_norm": "volksbank wien",
+   "postings": 3,
+   "families": "data_engineering,data_governance",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat,karriere",
+   "example_company": "VOLKSBANK WIEN AG"
+  },
+  {
+   "company_norm": "wienerberger",
+   "postings": 3,
+   "families": "bi,data_science",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "linkedin",
+   "example_company": "wienerberger"
+  },
+  {
+   "company_norm": "vienna insurance wiener versicherung",
+   "postings": 3,
+   "families": "data_engineering,data_governance",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "Vienna Insurance Group AG Wiener Versicherung Gruppe"
+  },
+  {
+   "company_norm": "sportsbook software",
+   "postings": 3,
+   "families": "data_engineering",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere",
+   "example_company": "Sportsbook Software GmbH"
+  },
+  {
+   "company_norm": "voestalpine",
+   "postings": 3,
+   "families": "business_analysis,data_science",
+   "states": "Niederösterreich,Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "karriere,linkedin",
+   "example_company": "voestalpine AG"
+  },
+  {
+   "company_norm": "uniqa versicherungen",
+   "postings": 2,
+   "families": "bi,data_analytics",
+   "states": "Wien",
+   "styria": 0,
+   "graz_area": 0,
+   "is_agency": false,
+   "sources": "jobsat",
+   "example_company": "UNIQA Österreich Versicherungen AG"
+  }
+ ],
+ "employer_concentration": [
+  {
+   "metric": "core_postings_total",
+   "value": 720.0
+  },
+  {
+   "metric": "postings_with_named_employer",
+   "value": 580.0
+  },
+  {
+   "metric": "postings_without_named_employer",
+   "value": 140.0
+  },
+  {
+   "metric": "unique_named_employers_austria",
+   "value": 387.0
+  },
+  {
+   "metric": "unique_named_employers_styria",
+   "value": 32.0
+  },
+  {
+   "metric": "unique_named_employers_graz_area",
+   "value": 28.0
+  },
+  {
+   "metric": "top10_share_of_named",
+   "value": 0.109
+  },
+  {
+   "metric": "top25_share_of_named",
+   "value": 0.202
+  },
+  {
+   "metric": "agency_share_of_named_postings",
+   "value": 0.045
+  },
+  {
+   "metric": "eures_anonymised_employer_rows",
+   "value": 140.0
+  },
+  {
+   "metric": "styria_postings_without_named_employer",
+   "value": 10.0
+  }
+ ],
+ "remote_overall": [
+  {
+   "remote_type": "unknown",
+   "count": 285,
+   "n": 719,
+   "share": 0.396,
+   "ci_low": 0.361,
+   "ci_high": 0.433
+  },
+  {
+   "remote_type": "hybrid",
+   "count": 197,
+   "n": 719,
+   "share": 0.274,
+   "ci_low": 0.243,
+   "ci_high": 0.308
+  },
+  {
+   "remote_type": "hybrid_or_flexible",
+   "count": 184,
+   "n": 719,
+   "share": 0.256,
+   "ci_low": 0.225,
+   "ci_high": 0.289
+  },
+  {
+   "remote_type": "on_site",
+   "count": 39,
+   "n": 719,
+   "share": 0.054,
+   "ci_low": 0.04,
+   "ci_high": 0.073
+  },
+  {
+   "remote_type": "remote",
+   "count": 14,
+   "n": 719,
+   "share": 0.019,
+   "ci_low": 0.012,
+   "ci_high": 0.032
+  }
+ ],
+ "remote_by_family": [
+  {
+   "role_family": "bi",
+   "remote_type": "unknown",
+   "count": 36,
+   "n": 85,
+   "share": 0.424,
+   "ci_low": 0.324,
+   "ci_high": 0.53
+  },
+  {
+   "role_family": "bi",
+   "remote_type": "hybrid_or_flexible",
+   "count": 25,
+   "n": 85,
+   "share": 0.294,
+   "ci_low": 0.208,
+   "ci_high": 0.398
+  },
+  {
+   "role_family": "bi",
+   "remote_type": "hybrid",
+   "count": 20,
+   "n": 85,
+   "share": 0.235,
+   "ci_low": 0.158,
+   "ci_high": 0.336
+  },
+  {
+   "role_family": "bi",
+   "remote_type": "on_site",
+   "count": 3,
+   "n": 85,
+   "share": 0.035,
+   "ci_low": 0.012,
+   "ci_high": 0.099
+  },
+  {
+   "role_family": "bi",
+   "remote_type": "remote",
+   "count": 1,
+   "n": 85,
+   "share": 0.012,
+   "ci_low": 0.002,
+   "ci_high": 0.064
+  },
+  {
+   "role_family": "business_analysis",
+   "remote_type": "unknown",
+   "count": 47,
+   "n": 120,
+   "share": 0.392,
+   "ci_low": 0.309,
+   "ci_high": 0.481
+  },
+  {
+   "role_family": "business_analysis",
+   "remote_type": "hybrid",
+   "count": 31,
+   "n": 120,
+   "share": 0.258,
+   "ci_low": 0.188,
+   "ci_high": 0.343
+  },
+  {
+   "role_family": "business_analysis",
+   "remote_type": "hybrid_or_flexible",
+   "count": 30,
+   "n": 120,
+   "share": 0.25,
+   "ci_low": 0.181,
+   "ci_high": 0.334
+  },
+  {
+   "role_family": "business_analysis",
+   "remote_type": "on_site",
+   "count": 10,
+   "n": 120,
+   "share": 0.083,
+   "ci_low": 0.046,
+   "ci_high": 0.147
+  },
+  {
+   "role_family": "business_analysis",
+   "remote_type": "remote",
+   "count": 2,
+   "n": 120,
+   "share": 0.017,
+   "ci_low": 0.005,
+   "ci_high": 0.059
+  },
+  {
+   "role_family": "data_analytics",
+   "remote_type": "unknown",
+   "count": 56,
+   "n": 107,
+   "share": 0.523,
+   "ci_low": 0.43,
+   "ci_high": 0.616
+  },
+  {
+   "role_family": "data_analytics",
+   "remote_type": "hybrid",
+   "count": 23,
+   "n": 107,
+   "share": 0.215,
+   "ci_low": 0.148,
+   "ci_high": 0.302
+  },
+  {
+   "role_family": "data_analytics",
+   "remote_type": "hybrid_or_flexible",
+   "count": 22,
+   "n": 107,
+   "share": 0.206,
+   "ci_low": 0.14,
+   "ci_high": 0.292
+  },
+  {
+   "role_family": "data_analytics",
+   "remote_type": "on_site",
+   "count": 4,
+   "n": 107,
+   "share": 0.037,
+   "ci_low": 0.015,
+   "ci_high": 0.092
+  },
+  {
+   "role_family": "data_analytics",
+   "remote_type": "remote",
+   "count": 2,
+   "n": 107,
+   "share": 0.019,
+   "ci_low": 0.005,
+   "ci_high": 0.066
+  },
+  {
+   "role_family": "data_engineering",
+   "remote_type": "unknown",
+   "count": 54,
+   "n": 160,
+   "share": 0.338,
+   "ci_low": 0.269,
+   "ci_high": 0.414
+  },
+  {
+   "role_family": "data_engineering",
+   "remote_type": "hybrid",
+   "count": 52,
+   "n": 160,
+   "share": 0.325,
+   "ci_low": 0.257,
+   "ci_high": 0.401
+  },
+  {
+   "role_family": "data_engineering",
+   "remote_type": "hybrid_or_flexible",
+   "count": 48,
+   "n": 160,
+   "share": 0.3,
+   "ci_low": 0.234,
+   "ci_high": 0.375
+  },
+  {
+   "role_family": "data_engineering",
+   "remote_type": "on_site",
+   "count": 3,
+   "n": 160,
+   "share": 0.019,
+   "ci_low": 0.006,
+   "ci_high": 0.054
+  },
+  {
+   "role_family": "data_engineering",
+   "remote_type": "remote",
+   "count": 3,
+   "n": 160,
+   "share": 0.019,
+   "ci_low": 0.006,
+   "ci_high": 0.054
+  },
+  {
+   "role_family": "data_governance",
+   "remote_type": "unknown",
+   "count": 29,
+   "n": 65,
+   "share": 0.446,
+   "ci_low": 0.332,
+   "ci_high": 0.567
+  },
+  {
+   "role_family": "data_governance",
+   "remote_type": "hybrid",
+   "count": 13,
+   "n": 65,
+   "share": 0.2,
+   "ci_low": 0.121,
+   "ci_high": 0.313
+  },
+  {
+   "role_family": "data_governance",
+   "remote_type": "on_site",
+   "count": 11,
+   "n": 65,
+   "share": 0.169,
+   "ci_low": 0.097,
+   "ci_high": 0.278
+  },
+  {
+   "role_family": "data_governance",
+   "remote_type": "hybrid_or_flexible",
+   "count": 11,
+   "n": 65,
+   "share": 0.169,
+   "ci_low": 0.097,
+   "ci_high": 0.278
+  },
+  {
+   "role_family": "data_governance",
+   "remote_type": "remote",
+   "count": 1,
+   "n": 65,
+   "share": 0.015,
+   "ci_low": 0.003,
+   "ci_high": 0.082
+  },
+  {
+   "role_family": "data_science",
+   "remote_type": "unknown",
+   "count": 60,
+   "n": 157,
+   "share": 0.382,
+   "ci_low": 0.31,
+   "ci_high": 0.46
+  },
+  {
+   "role_family": "data_science",
+   "remote_type": "hybrid",
+   "count": 47,
+   "n": 157,
+   "share": 0.299,
+   "ci_low": 0.233,
+   "ci_high": 0.375
+  },
+  {
+   "role_family": "data_science",
+   "remote_type": "hybrid_or_flexible",
+   "count": 39,
+   "n": 157,
+   "share": 0.248,
+   "ci_low": 0.187,
+   "ci_high": 0.321
+  },
+  {
+   "role_family": "data_science",
+   "remote_type": "on_site",
+   "count": 8,
+   "n": 157,
+   "share": 0.051,
+   "ci_low": 0.026,
+   "ci_high": 0.097
+  },
+  {
+   "role_family": "data_science",
+   "remote_type": "remote",
+   "count": 3,
+   "n": 157,
+   "share": 0.019,
+   "ci_low": 0.007,
+   "ci_high": 0.055
+  },
+  {
+   "role_family": "marketing_analytics",
+   "remote_type": "hybrid",
+   "count": 10,
+   "n": 24,
+   "share": 0.417,
+   "ci_low": 0.245,
+   "ci_high": 0.612
+  },
+  {
+   "role_family": "marketing_analytics",
+   "remote_type": "hybrid_or_flexible",
+   "count": 9,
+   "n": 24,
+   "share": 0.375,
+   "ci_low": 0.212,
+   "ci_high": 0.573
+  },
+  {
+   "role_family": "marketing_analytics",
+   "remote_type": "unknown",
+   "count": 3,
+   "n": 24,
+   "share": 0.125,
+   "ci_low": 0.043,
+   "ci_high": 0.31
+  },
+  {
+   "role_family": "marketing_analytics",
+   "remote_type": "remote",
+   "count": 2,
+   "n": 24,
+   "share": 0.083,
+   "ci_low": 0.023,
+   "ci_high": 0.258
+  },
+  {
+   "role_family": "product_analytics",
+   "remote_type": "hybrid",
+   "count": 1,
+   "n": 1,
+   "share": 1.0,
+   "ci_low": 0.207,
+   "ci_high": 1.0
+  }
+ ],
+ "remote_by_styria": [
+  {
+   "styria_flag": "Rest of Austria",
+   "remote_type": "unknown",
+   "count": 260,
+   "n": 661,
+   "share": 0.393,
+   "ci_low": 0.357,
+   "ci_high": 0.431
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "remote_type": "hybrid",
+   "count": 181,
+   "n": 661,
+   "share": 0.274,
+   "ci_low": 0.241,
+   "ci_high": 0.309
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "remote_type": "hybrid_or_flexible",
+   "count": 168,
+   "n": 661,
+   "share": 0.254,
+   "ci_low": 0.222,
+   "ci_high": 0.289
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "remote_type": "on_site",
+   "count": 38,
+   "n": 661,
+   "share": 0.057,
+   "ci_low": 0.042,
+   "ci_high": 0.078
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "remote_type": "remote",
+   "count": 14,
+   "n": 661,
+   "share": 0.021,
+   "ci_low": 0.013,
+   "ci_high": 0.035
+  },
+  {
+   "styria_flag": "Styria",
+   "remote_type": "unknown",
+   "count": 25,
+   "n": 58,
+   "share": 0.431,
+   "ci_low": 0.312,
+   "ci_high": 0.559
+  },
+  {
+   "styria_flag": "Styria",
+   "remote_type": "hybrid_or_flexible",
+   "count": 16,
+   "n": 58,
+   "share": 0.276,
+   "ci_low": 0.178,
+   "ci_high": 0.402
+  },
+  {
+   "styria_flag": "Styria",
+   "remote_type": "hybrid",
+   "count": 16,
+   "n": 58,
+   "share": 0.276,
+   "ci_low": 0.178,
+   "ci_high": 0.402
+  },
+  {
+   "styria_flag": "Styria",
+   "remote_type": "on_site",
+   "count": 1,
+   "n": 58,
+   "share": 0.017,
+   "ci_low": 0.003,
+   "ci_high": 0.091
+  }
+ ]
+}

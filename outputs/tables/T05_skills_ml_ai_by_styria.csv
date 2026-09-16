@@ -1,0 +1,21 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,AI (generic),251,661,0.38,0.344,0.417
+Rest of Austria,Machine Learning,110,661,0.166,0.14,0.197
+Rest of Austria,Generative AI / LLM,110,661,0.166,0.14,0.197
+Rest of Austria,Forecasting,39,661,0.059,0.043,0.08
+Rest of Austria,Predictive Analytics,22,661,0.033,0.022,0.05
+Rest of Austria,Deep Learning,14,661,0.021,0.013,0.035
+Rest of Austria,NLP,13,661,0.02,0.012,0.033
+Rest of Austria,Computer Vision,12,661,0.018,0.01,0.031
+Rest of Austria,Anomaly Detection,11,661,0.017,0.009,0.03
+Rest of Austria,Time Series,5,661,0.008,0.003,0.018
+Rest of Austria,Reinforcement Learning,4,661,0.006,0.002,0.015
+Rest of Austria,Recommender Systems,1,661,0.002,0.0,0.009
+Styria,AI (generic),25,58,0.431,0.312,0.559
+Styria,Machine Learning,8,58,0.138,0.072,0.249
+Styria,Generative AI / LLM,7,58,0.121,0.06,0.229
+Styria,Predictive Analytics,3,58,0.052,0.018,0.141
+Styria,Deep Learning,2,58,0.034,0.01,0.117
+Styria,Forecasting,2,58,0.034,0.01,0.117
+Styria,Anomaly Detection,2,58,0.034,0.01,0.117
+Styria,Reinforcement Learning,1,58,0.017,0.003,0.091

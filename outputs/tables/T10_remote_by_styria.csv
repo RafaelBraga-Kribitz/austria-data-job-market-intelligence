@@ -1,0 +1,10 @@
+styria_flag,remote_type,count,n,share,ci_low,ci_high
+Rest of Austria,unknown,260,661,0.393,0.357,0.431
+Rest of Austria,hybrid,181,661,0.274,0.241,0.309
+Rest of Austria,hybrid_or_flexible,168,661,0.254,0.222,0.289
+Rest of Austria,on_site,38,661,0.057,0.042,0.078
+Rest of Austria,remote,14,661,0.021,0.013,0.035
+Styria,unknown,25,58,0.431,0.312,0.559
+Styria,hybrid_or_flexible,16,58,0.276,0.178,0.402
+Styria,hybrid,16,58,0.276,0.178,0.402
+Styria,on_site,1,58,0.017,0.003,0.091

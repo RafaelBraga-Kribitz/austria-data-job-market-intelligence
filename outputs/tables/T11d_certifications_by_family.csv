@@ -1,0 +1,22 @@
+role_family,certification,count,n,share,ci_low,ci_high
+bi,Certification (any mention),10,85,0.118,0.065,0.203
+bi,ITIL,2,85,0.024,0.006,0.082
+bi,Azure cert,1,85,0.012,0.002,0.064
+bi,Google cert,1,85,0.012,0.002,0.064
+business_analysis,Certification (any mention),20,120,0.167,0.111,0.243
+business_analysis,Requirements/BA cert (IREB/IIBA/CBAP),18,120,0.15,0.097,0.225
+business_analysis,Scrum/PM cert,8,120,0.067,0.034,0.126
+business_analysis,ITIL,2,120,0.017,0.005,0.059
+data_analytics,Certification (any mention),8,107,0.075,0.038,0.141
+data_analytics,ITIL,1,107,0.009,0.002,0.051
+data_engineering,Certification (any mention),19,160,0.119,0.077,0.178
+data_engineering,Google cert,1,160,0.006,0.001,0.035
+data_governance,Certification (any mention),7,65,0.108,0.053,0.206
+data_governance,Data-management cert (CDMP/DAMA),3,65,0.046,0.016,0.127
+data_governance,Requirements/BA cert (IREB/IIBA/CBAP),1,65,0.015,0.003,0.082
+data_science,Certification (any mention),23,157,0.146,0.1,0.21
+data_science,ITIL,2,157,0.013,0.004,0.045
+data_science,Scrum/PM cert,1,157,0.006,0.001,0.035
+data_science,Azure cert,1,157,0.006,0.001,0.035
+data_science,Requirements/BA cert (IREB/IIBA/CBAP),1,157,0.006,0.001,0.035
+marketing_analytics,Certification (any mention),5,24,0.208,0.092,0.405

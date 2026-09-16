@@ -1,0 +1,69 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Data Warehouse (generic),15,85,0.176,0.11,0.271
+bi,SQL Server,9,85,0.106,0.057,0.189
+bi,Oracle,9,85,0.106,0.057,0.189
+bi,Databricks,8,85,0.094,0.048,0.175
+bi,SAP HANA,7,85,0.082,0.04,0.16
+bi,Snowflake,5,85,0.059,0.025,0.13
+bi,PostgreSQL,5,85,0.059,0.025,0.13
+bi,Microsoft Fabric,4,85,0.047,0.018,0.115
+bi,Data Lake/Lakehouse,3,85,0.035,0.012,0.099
+bi,BigQuery,1,85,0.012,0.002,0.064
+bi,MySQL/MariaDB,1,85,0.012,0.002,0.064
+bi,Elasticsearch,1,85,0.012,0.002,0.064
+business_analysis,SAP HANA,4,120,0.033,0.013,0.083
+business_analysis,Data Warehouse (generic),2,120,0.017,0.005,0.059
+business_analysis,PostgreSQL,2,120,0.017,0.005,0.059
+business_analysis,Oracle,1,120,0.008,0.001,0.046
+business_analysis,SQL Server,1,120,0.008,0.001,0.046
+business_analysis,Redshift,1,120,0.008,0.001,0.046
+business_analysis,Data Lake/Lakehouse,1,120,0.008,0.001,0.046
+business_analysis,MySQL/MariaDB,1,120,0.008,0.001,0.046
+business_analysis,MongoDB,1,120,0.008,0.001,0.046
+data_analytics,Snowflake,8,107,0.075,0.038,0.141
+data_analytics,Databricks,8,107,0.075,0.038,0.141
+data_analytics,BigQuery,3,107,0.028,0.01,0.079
+data_analytics,SAP HANA,3,107,0.028,0.01,0.079
+data_analytics,SQL Server,1,107,0.009,0.002,0.051
+data_analytics,Microsoft Fabric,1,107,0.009,0.002,0.051
+data_analytics,Data Lake/Lakehouse,1,107,0.009,0.002,0.051
+data_analytics,Oracle,1,107,0.009,0.002,0.051
+data_analytics,Data Warehouse (generic),1,107,0.009,0.002,0.051
+data_engineering,Databricks,46,160,0.287,0.223,0.362
+data_engineering,Data Warehouse (generic),44,160,0.275,0.212,0.349
+data_engineering,Data Lake/Lakehouse,39,160,0.244,0.184,0.316
+data_engineering,Microsoft Fabric,29,160,0.181,0.129,0.248
+data_engineering,Oracle,28,160,0.175,0.124,0.241
+data_engineering,SQL Server,22,160,0.138,0.093,0.199
+data_engineering,PostgreSQL,21,160,0.131,0.087,0.192
+data_engineering,Azure Synapse,17,160,0.106,0.067,0.164
+data_engineering,Snowflake,17,160,0.106,0.067,0.164
+data_engineering,BigQuery,10,160,0.062,0.034,0.111
+data_engineering,MySQL/MariaDB,9,160,0.056,0.03,0.103
+data_engineering,MongoDB,8,160,0.05,0.026,0.096
+data_engineering,Hadoop,5,160,0.031,0.013,0.071
+data_engineering,SAP HANA,4,160,0.025,0.01,0.063
+data_engineering,Cassandra,4,160,0.025,0.01,0.063
+data_engineering,Redshift,3,160,0.019,0.006,0.054
+data_engineering,Elasticsearch,1,160,0.006,0.001,0.035
+data_engineering,Neo4j,1,160,0.006,0.001,0.035
+data_engineering,ClickHouse,1,160,0.006,0.001,0.035
+data_governance,Data Warehouse (generic),3,65,0.046,0.016,0.127
+data_governance,Snowflake,2,65,0.031,0.008,0.105
+data_governance,Databricks,2,65,0.031,0.008,0.105
+data_governance,SQL Server,1,65,0.015,0.003,0.082
+data_science,Databricks,19,157,0.121,0.079,0.181
+data_science,Snowflake,9,157,0.057,0.03,0.105
+data_science,Microsoft Fabric,7,157,0.045,0.022,0.089
+data_science,Data Warehouse (generic),7,157,0.045,0.022,0.089
+data_science,Neo4j,7,157,0.045,0.022,0.089
+data_science,Data Lake/Lakehouse,7,157,0.045,0.022,0.089
+data_science,BigQuery,5,157,0.032,0.014,0.072
+data_science,PostgreSQL,5,157,0.032,0.014,0.072
+data_science,SQL Server,4,157,0.025,0.01,0.064
+data_science,Azure Synapse,4,157,0.025,0.01,0.064
+data_science,MongoDB,3,157,0.019,0.007,0.055
+data_science,SAP HANA,2,157,0.013,0.004,0.045
+data_science,Oracle,2,157,0.013,0.004,0.045
+data_science,Hadoop,1,157,0.006,0.001,0.035
+marketing_analytics,BigQuery,6,24,0.25,0.12,0.449

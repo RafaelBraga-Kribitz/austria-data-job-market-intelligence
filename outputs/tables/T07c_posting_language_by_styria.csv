@@ -1,0 +1,7 @@
+styria_flag,posting_language,count,n,share,ci_low,ci_high
+Rest of Austria,de,498,661,0.753,0.719,0.785
+Rest of Austria,en,161,661,0.244,0.212,0.278
+Rest of Austria,mixed,2,661,0.003,0.001,0.011
+Styria,de,44,58,0.759,0.635,0.85
+Styria,en,13,58,0.224,0.136,0.347
+Styria,mixed,1,58,0.017,0.003,0.091

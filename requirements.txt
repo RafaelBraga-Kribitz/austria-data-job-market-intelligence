@@ -1,0 +1,11 @@
+# Python 3.12 (tested with 3.12.10 on Windows 11). Versions pinned to those used for the 2026-09-16 run.
+requests>=2.32
+pandas==2.3.3
+numpy==2.5.1
+scikit-learn==1.9.0
+scipy>=1.14
+matplotlib>=3.9
+pyarrow>=17
+lxml>=5
+beautifulsoup4>=4.12
+pytest>=8

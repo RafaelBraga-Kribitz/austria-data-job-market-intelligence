@@ -1,0 +1,5 @@
+metric,count
+core_with_date,1014
+older_than_60d,153
+older_than_180d,34
+older_than_365d,6

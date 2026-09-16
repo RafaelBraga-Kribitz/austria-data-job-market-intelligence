@@ -1,0 +1,12 @@
+metric,count
+canonical_rows,10945
+core,720
+other_data (data-ish but unmatched),235
+ai_software_engineering,311
+out_of_scope,9679
+out_of_scope_no_rule,4410
+out_of_scope_soft_override,235
+out_of_scope_hard_override,54
+location_confidence_high_core,716
+location_confidence_none_core,3
+seniority_unspecified_core,414

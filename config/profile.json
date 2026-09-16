@@ -1,0 +1,22 @@
+{
+  "_comment": "The user's profile as stated in the project brief (2026-09-16). Used ONLY by build_decision_matrix.py to compute skill overlap / gap per role family. Skill names must match canonical names in config/skills_taxonomy.json. 'have' = demonstrable now; 'developing' = actively learning, partially demonstrable; 'structural' = would need substantial time/education to demonstrate credibly. Update this file when the profile changes.",
+  "summary": "≈20 years marketing/growth/performance marketing/CRO/experimentation/analytics/automation; English fluent; Portuguese native; German A2-B1; based Greater Graz; developing Python, SQL, R, statistics, ML, visualization.",
+  "german_level": "A2-B1",
+  "have": [
+    "Marketing", "Digital/Online Marketing", "CRM", "Customer Analytics", "Product Analytics", "Web/Digital Analytics", "E-Commerce", "Sales/Commercial",
+    "A/B Testing / Experimentation", "Segmentation/Clustering", "Data Visualization", "Google Analytics", "Adobe Analytics", "Matomo", "Excel",
+    "Communication", "Analytical Thinking", "Stakeholder Management", "Business Acumen", "Leadership", "Project Management", "Self-organisation", "Customer Orientation",
+    "Pricing/Revenue", "Forecasting", "Requirements/Business Analysis", "Consulting"
+  ],
+  "developing": [
+    "Python", "SQL", "R", "pandas", "NumPy", "scikit-learn", "matplotlib/seaborn", "Jupyter", "Statistics (general)", "Regression", "Hypothesis Testing",
+    "Machine Learning", "Predictive Analytics", "Classification", "Time Series", "Causal Inference", "Power BI", "Tableau", "Looker", "Git", "Plotly/Dash", "Streamlit",
+    "Exploratory Analysis", "Data Mining", "statsmodels", "SciPy", "XGBoost/LightGBM", "Bayesian", "DAX/M", "Data Modeling", "PostgreSQL", "MySQL/MariaDB", "BigQuery", "Snowflake", "Cloud (generic)", "AI (generic)", "Generative AI / LLM", "REST APIs", "ETL/ELT", "Data Governance/Quality", "Finance/Controlling"
+  ],
+  "structural": [
+    "Java", "Scala", "C#", "C/C++", "Rust", "Go", "Spark", "Kafka", "Kubernetes", "Docker", "Airflow", "dbt", "Databricks", "Azure Synapse", "Microsoft Fabric", "Azure Data Factory", "Terraform/IaC", "CI/CD", "MLOps",
+    "Deep Learning", "PyTorch", "TensorFlow/Keras", "Computer Vision", "NLP", "Hugging Face/Transformers", "SAP BW/BO", "SAP HANA", "SAP (ERP)", "Oracle", "SQL Server", "Hadoop", "Cassandra", "Elasticsearch", "Neo4j", "Teradata",
+    "Operations/Manufacturing", "Automotive/Mobility", "Healthcare/Pharma/Bio", "Risk/Actuarial", "Banking/Insurance", "Energy", "Supply Chain/Logistics", "Optimization/OR", "Simulation", "Mathematics", "Bash/Shell", "MATLAB", "SAS", "Streaming", "Talend/Informatica", "Fivetran/Airbyte", "Azure", "AWS", "GCP", "Redshift", "Data Lake/Lakehouse", "Data Warehouse (generic)", "Qlik", "MicroStrategy", "Cognos", "SSRS"
+  ],
+  "_notes": "Azure/AWS/GCP are placed under structural because credible demonstration needs hands-on platform work; move to 'developing' once a cloud project exists. Docker/Git basics are learnable quickly but are listed conservatively."
+}

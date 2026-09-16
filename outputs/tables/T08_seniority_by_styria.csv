@@ -1,0 +1,11 @@
+styria_flag,seniority,count,n,share,ci_low,ci_high
+Rest of Austria,unspecified,383,662,0.579,0.541,0.616
+Rest of Austria,senior,124,662,0.187,0.159,0.219
+Rest of Austria,lead_head,93,662,0.14,0.116,0.169
+Rest of Austria,intern_student,37,662,0.056,0.041,0.076
+Rest of Austria,trainee_junior,25,662,0.038,0.026,0.055
+Styria,unspecified,31,58,0.534,0.408,0.657
+Styria,senior,12,58,0.207,0.123,0.328
+Styria,trainee_junior,6,58,0.103,0.048,0.208
+Styria,intern_student,5,58,0.086,0.037,0.186
+Styria,lead_head,4,58,0.069,0.027,0.164

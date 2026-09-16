@@ -1,0 +1,151 @@
+title_clean,role_family,count
+data engineer,data_engineering,22
+senior data engineer,data_engineering,16
+ai engineer,data_science,13
+senior ai engineer,data_science,10
+data scientist,data_science,10
+requirements engineer,business_analysis,10
+business analyst,business_analysis,9
+data architect,data_engineering,6
+it business analyst mit fokus sap,business_analysis,5
+senior data scientist,data_science,5
+data scientist supply chain management,data_science,5
+business analyst schwerpunkt hr,business_analysis,4
+database administrator,data_engineering,4
+lead data engineer,data_engineering,4
+supply chain analyst,data_analytics,3
+it business consultant für fahrplandatenmanagement,data_governance,3
+sap data engineer,data_engineering,3
+senior ai expert,data_science,3
+business analyst / produktmanager transaktionskommunikation,business_analysis,3
+business intelligence specialist,bi,3
+senior data platform engineer,data_engineering,3
+senior data engineer azure,data_engineering,3
+senior data engineer databricks,data_engineering,3
+senior datenbankadministrator,data_engineering,3
+sales analyst,data_analytics,3
+data analyst,data_analytics,3
+it business analyst mit fokus produktion schienenpersonenverkehr,business_analysis,3
+power bi specialist,bi,3
+bi & dwh developer,data_engineering,2
+business analyst produktion mit bi expertise,bi,2
+business analyst logistik,business_analysis,2
+technische : r business analyst voll oder / woche,business_analysis,2
+ai engineer / it project engineer ai,data_science,2
+ai / ml developer,data_science,2
+bi und dwh entwickler,data_engineering,2
+studentenjob business analyst,business_analysis,2
+tool & cam data engineer,data_engineering,2
+technical business analyst,business_analysis,2
+senior workflow automation engineer post business solutions gmbh,business_analysis,2
+spezialist sortimentsdaten & analysen,data_analytics,2
+research analyst sustainable it / greenops,data_analytics,2
+business analyst / requirements engineer,business_analysis,2
+qa data analyst,data_analytics,2
+projektleitung datenmanagement & data governance,data_governance,2
+sap bi consultant,bi,2
+senior consultant im bereich sap data & analytics,bi,2
+senior consultant human planung mit ibm planning analytics tm1,data_analytics,2
+senior ai data engineer post business solutions gmbh,data_engineering,2
+senior consultant digital analytics,marketing_analytics,2
+system data engineer,data_engineering,2
+senior controller fokus data analysis,data_analytics,2
+senior backend developer with ai expertise,data_science,2
+senior business analyst,business_analysis,2
+ma support business analysis,business_analysis,2
+ot industrial iot & data engineer,data_engineering,2
+principal ai engineer,data_science,2
+business data analyst,data_analytics,2
+business analytics consultant,bi,2
+commercial pricing analyst,data_analytics,2
+clinical data manager,data_governance,2
+junior data engineer,data_engineering,2
+marketing data engineer,data_engineering,2
+media channels automation & ai specialist,data_science,2
+lead analytics & business intelligence,bi,2
+it analyst,business_analysis,2
+industriepraktikum datenanalyse produktmessdaten,data_analytics,2
+manufacturing engineer / cam data engineer,data_engineering,2
+manager power bi,bi,2
+mitarbeiter produktdatenmanagement & datenanalyse,data_governance,2
+mlops / platform engineer,data_science,2
+online data analyst,data_analytics,2
+product data manager,data_governance,2
+functional analyst human ressources,business_analysis,2
+full stack data scientist,data_science,2
+it business analyst retail applications,business_analysis,2
+it business analyst,business_analysis,2
+it business analyst / requirements engineer,business_analysis,2
+junior marketing analyst,marketing_analytics,2
+business process manager all gender,business_analysis,2
+controller der zukunft business intelligence & data analytics,bi,2
+database administrator oracle,data_engineering,2
+database engineer,data_engineering,2
+digital analytics engineer,marketing_analytics,2
+demand planner,data_analytics,2
+business process manager process excellence,business_analysis,2
+head of pim productdatenmanagement,data_governance,2
+engineering data manager cad & plm,data_governance,2
+controlling business analyst,data_analytics,2
+data platform architect,data_engineering,2
+data scientist mit schwerpunkt investment data und analytics,data_science,2
+data & analytics data engineering lead,data_engineering,2
+data scientist / ai engineer,data_science,2
+data platform specialist,data_engineering,2
+data engineer focus apache flink,data_engineering,2
+data platform engineer bi & integration,data_engineering,2
+data platform engineer,data_engineering,2
+data analyst im meldewesen,data_analytics,2
+data engineer for databricks platform all humans,data_engineering,2
+data analyst risikomanager,data_analytics,2
+data consultant,bi,2
+crm & marketing automation data engineer,data_engineering,2
+ai & data science consultant,data_science,2
+advanced ai & data architect / engineer,data_science,2
+working student bi,bi,2
+technical business analyst bss & digital solutions,business_analysis,1
+"accounting , tax and data expert",data_analytics,1
+administrative support master data,data_governance,1
+stammdatenmanagement im technischen einkauf,data_governance,1
+student consultant data analytics & business intelligence,bi,1
+student job cib ai & data team 20 / week,data_science,1
+student job data & ai automation 20 / week,data_science,1
+student job it delivery customer onboarding and master data management 20 / week,data_governance,1
+student job market data governance 20 / week,data_governance,1
+student support corporate credit analysis / week,data_analytics,1
+bi application support specialist,bi,1
+bi projektleiter finance,bi,1
+bi projektleiter finance job id 82777,bi,1
+biostatistics director for evidence generation,data_science,1
+"business & data analyst in sales , marketing und distribution controlling",marketing_analytics,1
+business & data analytics project specialist,data_analytics,1
+ai data governance consultant,data_governance,1
+ai engineer & architect,data_science,1
+ai engineer .,data_science,1
+credit risk analysis coordinator,data_analytics,1
+data & ai architekt,data_science,1
+data & ai engineer,data_science,1
+data & ai platform architect,data_science,1
+data & ai solutions architect,data_science,1
+data & ai solutions engineer,data_science,1
+web tracking & analytics din consultant,bi,1
+werkstudent business intelligence reporting & data analytics,bi,1
+werkstudent data analyst,data_analytics,1
+werkstudent esource testing & data analytics,data_analytics,1
+werkstudent für data analytics,data_analytics,1
+wissenschaftliche : r mitarbeiter für den bereich datenanalytik und modellierung,data_analytics,1
+ai / ml engineer python,data_science,1
+team lead sap ic business processes edi,business_analysis,1
+team lead software requirements engineering,business_analysis,1
+teamlead global hr systems & analytics,data_analytics,1
+data engineer telemetry data,data_engineering,1
+data engineering consultant,data_engineering,1
+data governance consultant,data_governance,1
+data governance expert,data_governance,1
+data / machine learning engineer,data_science,1
+data analyst / scientist,data_analytics,1
+"data analyst / scientist , . / woche",data_analytics,1
+data analyst internal audit,data_analytics,1
+data analyst logistik,data_analytics,1
+data analyst marketing,marketing_analytics,1
+data architect energiewirtschaft,data_engineering,1

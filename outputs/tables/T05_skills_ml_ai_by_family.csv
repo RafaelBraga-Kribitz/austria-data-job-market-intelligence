@@ -1,0 +1,46 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,AI (generic),26,85,0.306,0.218,0.41
+bi,Forecasting,8,85,0.094,0.048,0.175
+bi,Generative AI / LLM,7,85,0.082,0.04,0.16
+bi,Machine Learning,4,85,0.047,0.018,0.115
+bi,Predictive Analytics,2,85,0.024,0.006,0.082
+bi,NLP,1,85,0.012,0.002,0.064
+business_analysis,AI (generic),29,120,0.242,0.174,0.326
+business_analysis,Generative AI / LLM,6,120,0.05,0.023,0.105
+business_analysis,Machine Learning,1,120,0.008,0.001,0.046
+business_analysis,Forecasting,1,120,0.008,0.001,0.046
+data_analytics,AI (generic),22,107,0.206,0.14,0.292
+data_analytics,Forecasting,19,107,0.178,0.117,0.261
+data_analytics,Machine Learning,9,107,0.084,0.045,0.152
+data_analytics,Predictive Analytics,6,107,0.056,0.026,0.117
+data_analytics,Generative AI / LLM,5,107,0.047,0.02,0.105
+data_engineering,AI (generic),44,160,0.275,0.212,0.349
+data_engineering,Machine Learning,15,160,0.094,0.058,0.149
+data_engineering,Generative AI / LLM,7,160,0.044,0.021,0.088
+data_engineering,Anomaly Detection,4,160,0.025,0.01,0.063
+data_engineering,Forecasting,3,160,0.019,0.006,0.054
+data_engineering,Time Series,1,160,0.006,0.001,0.035
+data_governance,AI (generic),15,65,0.231,0.145,0.346
+data_governance,Generative AI / LLM,3,65,0.046,0.016,0.127
+data_governance,Anomaly Detection,1,65,0.015,0.003,0.082
+data_governance,NLP,1,65,0.015,0.003,0.082
+data_governance,Computer Vision,1,65,0.015,0.003,0.082
+data_governance,Machine Learning,1,65,0.015,0.003,0.082
+data_science,AI (generic),129,157,0.822,0.754,0.874
+data_science,Machine Learning,87,157,0.554,0.476,0.63
+data_science,Generative AI / LLM,83,157,0.529,0.451,0.605
+data_science,Deep Learning,16,157,0.102,0.064,0.159
+data_science,Predictive Analytics,15,157,0.096,0.059,0.152
+data_science,NLP,11,157,0.07,0.04,0.121
+data_science,Computer Vision,11,157,0.07,0.04,0.121
+data_science,Forecasting,10,157,0.064,0.035,0.113
+data_science,Anomaly Detection,7,157,0.045,0.022,0.089
+data_science,Reinforcement Learning,5,157,0.032,0.014,0.072
+data_science,Time Series,4,157,0.025,0.01,0.064
+data_science,Recommender Systems,1,157,0.006,0.001,0.035
+marketing_analytics,AI (generic),10,24,0.417,0.245,0.612
+marketing_analytics,Generative AI / LLM,6,24,0.25,0.12,0.449
+marketing_analytics,Predictive Analytics,2,24,0.083,0.023,0.258
+marketing_analytics,Anomaly Detection,1,24,0.042,0.007,0.202
+product_analytics,Machine Learning,1,1,1.0,0.207,1.0
+product_analytics,AI (generic),1,1,1.0,0.207,1.0

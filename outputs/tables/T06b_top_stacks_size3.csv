@@ -1,0 +1,41 @@
+stack,count,n,share
+ETL/ELT + Python + SQL,87,719,0.121
+Cloud (generic) + Python + SQL,84,719,0.117
+AI (generic) + Generative AI / LLM + Python,77,719,0.107
+AI (generic) + Machine Learning + Python,76,719,0.106
+Azure + Cloud (generic) + Python,74,719,0.103
+Data Visualization + Python + SQL,74,719,0.103
+Data Visualization + Power BI + SQL,72,719,0.1
+AI (generic) + Python + SQL,72,719,0.1
+Azure + Python + SQL,71,719,0.099
+AI (generic) + Cloud (generic) + Python,70,719,0.097
+Data Governance/Quality + Python + SQL,66,719,0.092
+Cloud (generic) + ETL/ELT + Python,65,719,0.09
+AI (generic) + Azure + Cloud (generic),65,719,0.09
+CI/CD + Cloud (generic) + Python,64,719,0.089
+AI (generic) + Cloud (generic) + Generative AI / LLM,63,719,0.088
+Data Governance/Quality + ETL/ELT + SQL,63,719,0.088
+Cloud (generic) + ETL/ELT + SQL,63,719,0.088
+Azure + Cloud (generic) + SQL,58,719,0.081
+AI (generic) + Cloud (generic) + SQL,57,719,0.079
+AI (generic) + Azure + Python,57,719,0.079
+AI (generic) + Generative AI / LLM + Machine Learning,56,719,0.078
+AI (generic) + Cloud (generic) + Machine Learning,56,719,0.078
+Data Governance/Quality + Data Visualization + SQL,55,719,0.076
+Data Modeling + Python + SQL,55,719,0.076
+Azure + CI/CD + Cloud (generic),54,719,0.075
+Data Governance/Quality + ETL/ELT + Python,53,719,0.074
+AI (generic) + CI/CD + Python,53,719,0.074
+Azure + CI/CD + Python,52,719,0.072
+Cloud (generic) + Machine Learning + Python,52,719,0.072
+AI (generic) + Data Visualization + SQL,52,719,0.072
+Data Modeling + ETL/ELT + SQL,52,719,0.072
+Python + SQL + Statistics (general),51,719,0.071
+Azure + ETL/ELT + Python,51,719,0.071
+Azure + ETL/ELT + SQL,51,719,0.071
+CI/CD + Python + SQL,50,719,0.07
+AI (generic) + ETL/ELT + Python,50,719,0.07
+Data Visualization + ETL/ELT + SQL,50,719,0.07
+Azure + Cloud (generic) + ETL/ELT,49,719,0.068
+AI (generic) + Cloud (generic) + ETL/ELT,48,719,0.067
+Generative AI / LLM + Machine Learning + Python,48,719,0.067

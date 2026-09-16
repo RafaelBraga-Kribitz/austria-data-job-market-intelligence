@@ -1,0 +1,4 @@
+posting_language,count,n,share,ci_low,ci_high
+de,542,719,0.754,0.721,0.784
+en,174,719,0.242,0.212,0.275
+mixed,3,719,0.004,0.001,0.012

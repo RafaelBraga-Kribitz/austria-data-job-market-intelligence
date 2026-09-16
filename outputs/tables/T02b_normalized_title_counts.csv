@@ -1,0 +1,18 @@
+role_family,normalized_title,count,styria
+data_engineering,Data Engineer,134,18
+business_analysis,Business Analyst,120,4
+data_science,Data Scientist,79,5
+data_analytics,Data Analyst,77,11
+data_science,Machine Learning / AI Engineer,76,8
+data_governance,Master / Product Data Management (operational),34,3
+bi,BI Developer / BI Engineer,33,2
+bi,BI Analyst,32,1
+data_governance,Data Governance / Data Steward / Data Manager,31,2
+data_analytics,Financial / Risk / Controlling Analyst (data-heavy),30,0
+marketing_analytics,Marketing/Growth/CRM Analyst,22,0
+data_engineering,Data Architect / Data Platform,21,2
+bi,BI Consultant / Analytics Consultant,20,2
+data_engineering,Analytics Engineer,5,0
+data_science,Statistician / Biostatistician,3,0
+marketing_analytics,Marketing Data Scientist,2,0
+product_analytics,Product Analyst,1,0

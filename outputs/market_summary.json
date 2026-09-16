@@ -1,0 +1,100 @@
+{
+ "generated_from": "data/processed/postings_dedup.jsonl",
+ "analysis_set_definition": "canonical rows with role_family in CORE_FAMILIES",
+ "core_families": [
+  "data_analytics",
+  "bi",
+  "data_science",
+  "data_engineering",
+  "data_governance",
+  "marketing_analytics",
+  "product_analytics",
+  "business_analysis"
+ ],
+ "adjacent_families": [
+  "ai_software_engineering",
+  "other_data"
+ ],
+ "counts": {
+  "raw_rows_all_sources": 12429,
+  "canonical_groups_all": 10945,
+  "core_canonical": 720,
+  "core_with_description": 719,
+  "adjacent_canonical": 546,
+  "styria_core": 58,
+  "graz_area_core": 52,
+  "vienna_core": 350,
+  "unique_employers_core": 387,
+  "unique_employers_styria": 32
+ },
+ "posted_date_range": {
+  "min": "2023-08-17",
+  "max": "2026-09-16"
+ },
+ "collected_at_range": {
+  "min": "2026-09-16 17:00:34+00:00",
+  "max": "2026-09-16 18:39:42+00:00"
+ },
+ "sources": [
+  {
+   "source": "eures",
+   "rows": "4569",
+   "in_scope_rows": "223",
+   "adjacent_rows": "134",
+   "with_description": "4569",
+   "first_posted": "2022-07-29 00:00:00+00:00",
+   "last_posted": "2026-09-15 00:00:00+00:00",
+   "collected_from": "2026-09-16 17:00:34+00:00",
+   "collected_to": "2026-09-16 17:12:40+00:00",
+   "in_scope_canonical": "202"
+  },
+  {
+   "source": "jobsat",
+   "rows": "105",
+   "in_scope_rows": "65",
+   "adjacent_rows": "12",
+   "with_description": "105",
+   "first_posted": "2026-01-23 00:00:00+00:00",
+   "last_posted": "2026-09-16 00:00:00+00:00",
+   "collected_from": "2026-09-16 17:01:31+00:00",
+   "collected_to": "2026-09-16 17:02:04+00:00",
+   "in_scope_canonical": "58"
+  },
+  {
+   "source": "karriere",
+   "rows": "2114",
+   "in_scope_rows": "200",
+   "adjacent_rows": "126",
+   "with_description": "2114",
+   "first_posted": "2026-08-14 00:00:00+00:00",
+   "last_posted": "2026-09-16 00:00:00+00:00",
+   "collected_from": "2026-09-16 17:00:41+00:00",
+   "collected_to": "2026-09-16 17:09:03+00:00",
+   "in_scope_canonical": "134"
+  },
+  {
+   "source": "linkedin",
+   "rows": "4133",
+   "in_scope_rows": "486",
+   "adjacent_rows": "363",
+   "with_description": "4129",
+   "first_posted": "2024-03-25 00:00:00+00:00",
+   "last_posted": "2026-09-16 00:00:00+00:00",
+   "collected_from": "2026-09-16 17:00:47+00:00",
+   "collected_to": "2026-09-16 18:39:42+00:00",
+   "in_scope_canonical": "300"
+  },
+  {
+   "source": "willhaben",
+   "rows": "1508",
+   "in_scope_rows": "40",
+   "adjacent_rows": "21",
+   "with_description": "1508",
+   "first_posted": "2021-08-04 00:00:00+00:00",
+   "last_posted": "2026-09-16 00:00:00+00:00",
+   "collected_from": "2026-09-16 17:01:07+00:00",
+   "collected_to": "2026-09-16 17:02:47+00:00",
+   "in_scope_canonical": "26"
+  }
+ ]
+}

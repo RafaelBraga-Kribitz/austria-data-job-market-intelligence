@@ -1,0 +1,12 @@
+metric,value
+core_postings_total,720.0
+postings_with_named_employer,580.0
+postings_without_named_employer,140.0
+unique_named_employers_austria,387.0
+unique_named_employers_styria,32.0
+unique_named_employers_graz_area,28.0
+top10_share_of_named,0.109
+top25_share_of_named,0.202
+agency_share_of_named_postings,0.045
+eures_anonymised_employer_rows,140.0
+styria_postings_without_named_employer,10.0

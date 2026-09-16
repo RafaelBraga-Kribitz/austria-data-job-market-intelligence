@@ -1,0 +1,25 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,SQL,264,661,0.399,0.363,0.437
+Rest of Austria,Python,224,661,0.339,0.304,0.376
+Rest of Austria,R,47,661,0.071,0.054,0.093
+Rest of Austria,Java,46,661,0.07,0.053,0.092
+Rest of Austria,Bash/Shell,33,661,0.05,0.036,0.069
+Rest of Austria,C#,32,661,0.048,0.034,0.068
+Rest of Austria,JavaScript,28,661,0.042,0.029,0.061
+Rest of Austria,DAX/M,19,661,0.029,0.018,0.044
+Rest of Austria,Scala,14,661,0.021,0.013,0.035
+Rest of Austria,VBA,6,661,0.009,0.004,0.02
+Rest of Austria,Rust,5,661,0.008,0.003,0.018
+Rest of Austria,Julia,4,661,0.006,0.002,0.015
+Rest of Austria,SAS,3,661,0.005,0.002,0.013
+Rest of Austria,MATLAB,2,661,0.003,0.001,0.011
+Rest of Austria,C/C++,2,661,0.003,0.001,0.011
+Styria,Python,29,58,0.5,0.375,0.625
+Styria,SQL,27,58,0.466,0.343,0.592
+Styria,Java,5,58,0.086,0.037,0.186
+Styria,Scala,4,58,0.069,0.027,0.164
+Styria,R,4,58,0.069,0.027,0.164
+Styria,Bash/Shell,2,58,0.034,0.01,0.117
+Styria,JavaScript,2,58,0.034,0.01,0.117
+Styria,C#,2,58,0.034,0.01,0.117
+Styria,DAX/M,2,58,0.034,0.01,0.117

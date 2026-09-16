@@ -1,0 +1,1026 @@
+{
+ "vintage": {
+  "min": "2026-09-16 17:00:34+00:00",
+  "max": "2026-09-16 18:39:42+00:00"
+ },
+ "posted_date_range": {
+  "min": "2023-08-17",
+  "max": "2026-09-16"
+ },
+ "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
+ "families": [
+  {
+   "role_family": "data_engineering",
+   "count": 160,
+   "n": 720,
+   "share": 0.222,
+   "styria_count": 20,
+   "graz_area_count": 16,
+   "vienna_count": 80
+  },
+  {
+   "role_family": "data_science",
+   "count": 158,
+   "n": 720,
+   "share": 0.219,
+   "styria_count": 13,
+   "graz_area_count": 13,
+   "vienna_count": 81
+  },
+  {
+   "role_family": "business_analysis",
+   "count": 120,
+   "n": 720,
+   "share": 0.167,
+   "styria_count": 4,
+   "graz_area_count": 3,
+   "vienna_count": 75
+  },
+  {
+   "role_family": "data_analytics",
+   "count": 107,
+   "n": 720,
+   "share": 0.149,
+   "styria_count": 11,
+   "graz_area_count": 11,
+   "vienna_count": 42
+  },
+  {
+   "role_family": "bi",
+   "count": 85,
+   "n": 720,
+   "share": 0.118,
+   "styria_count": 5,
+   "graz_area_count": 5,
+   "vienna_count": 35
+  },
+  {
+   "role_family": "data_governance",
+   "count": 65,
+   "n": 720,
+   "share": 0.09,
+   "styria_count": 5,
+   "graz_area_count": 4,
+   "vienna_count": 23
+  },
+  {
+   "role_family": "marketing_analytics",
+   "count": 24,
+   "n": 720,
+   "share": 0.033,
+   "styria_count": 0,
+   "graz_area_count": 0,
+   "vienna_count": 13
+  },
+  {
+   "role_family": "product_analytics",
+   "count": 1,
+   "n": 720,
+   "share": 0.001,
+   "styria_count": 0,
+   "graz_area_count": 0,
+   "vienna_count": 1
+  }
+ ],
+ "adjacent_families": [
+  {
+   "role_family": "ai_software_engineering",
+   "count": 311
+  },
+  {
+   "role_family": "other_data",
+   "count": 235
+  }
+ ],
+ "normalized_titles": [
+  {
+   "role_family": "data_engineering",
+   "normalized_title": "Data Engineer",
+   "count": 134,
+   "styria": 18
+  },
+  {
+   "role_family": "business_analysis",
+   "normalized_title": "Business Analyst",
+   "count": 120,
+   "styria": 4
+  },
+  {
+   "role_family": "data_science",
+   "normalized_title": "Data Scientist",
+   "count": 79,
+   "styria": 5
+  },
+  {
+   "role_family": "data_analytics",
+   "normalized_title": "Data Analyst",
+   "count": 77,
+   "styria": 11
+  },
+  {
+   "role_family": "data_science",
+   "normalized_title": "Machine Learning / AI Engineer",
+   "count": 76,
+   "styria": 8
+  },
+  {
+   "role_family": "data_governance",
+   "normalized_title": "Master / Product Data Management (operational)",
+   "count": 34,
+   "styria": 3
+  },
+  {
+   "role_family": "bi",
+   "normalized_title": "BI Developer / BI Engineer",
+   "count": 33,
+   "styria": 2
+  },
+  {
+   "role_family": "bi",
+   "normalized_title": "BI Analyst",
+   "count": 32,
+   "styria": 1
+  },
+  {
+   "role_family": "data_governance",
+   "normalized_title": "Data Governance / Data Steward / Data Manager",
+   "count": 31,
+   "styria": 2
+  },
+  {
+   "role_family": "data_analytics",
+   "normalized_title": "Financial / Risk / Controlling Analyst (data-heavy)",
+   "count": 30,
+   "styria": 0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "normalized_title": "Marketing/Growth/CRM Analyst",
+   "count": 22,
+   "styria": 0
+  },
+  {
+   "role_family": "data_engineering",
+   "normalized_title": "Data Architect / Data Platform",
+   "count": 21,
+   "styria": 2
+  },
+  {
+   "role_family": "bi",
+   "normalized_title": "BI Consultant / Analytics Consultant",
+   "count": 20,
+   "styria": 2
+  },
+  {
+   "role_family": "data_engineering",
+   "normalized_title": "Analytics Engineer",
+   "count": 5,
+   "styria": 0
+  },
+  {
+   "role_family": "data_science",
+   "normalized_title": "Statistician / Biostatistician",
+   "count": 3,
+   "styria": 0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "normalized_title": "Marketing Data Scientist",
+   "count": 2,
+   "styria": 0
+  },
+  {
+   "role_family": "product_analytics",
+   "normalized_title": "Product Analyst",
+   "count": 1,
+   "styria": 0
+  }
+ ],
+ "top_raw_titles": [
+  {
+   "title_clean": "data engineer",
+   "role_family": "data_engineering",
+   "count": 22
+  },
+  {
+   "title_clean": "senior data engineer",
+   "role_family": "data_engineering",
+   "count": 16
+  },
+  {
+   "title_clean": "ai engineer",
+   "role_family": "data_science",
+   "count": 13
+  },
+  {
+   "title_clean": "senior ai engineer",
+   "role_family": "data_science",
+   "count": 10
+  },
+  {
+   "title_clean": "data scientist",
+   "role_family": "data_science",
+   "count": 10
+  },
+  {
+   "title_clean": "requirements engineer",
+   "role_family": "business_analysis",
+   "count": 10
+  },
+  {
+   "title_clean": "business analyst",
+   "role_family": "business_analysis",
+   "count": 9
+  },
+  {
+   "title_clean": "data architect",
+   "role_family": "data_engineering",
+   "count": 6
+  },
+  {
+   "title_clean": "it business analyst mit fokus sap",
+   "role_family": "business_analysis",
+   "count": 5
+  },
+  {
+   "title_clean": "senior data scientist",
+   "role_family": "data_science",
+   "count": 5
+  },
+  {
+   "title_clean": "data scientist supply chain management",
+   "role_family": "data_science",
+   "count": 5
+  },
+  {
+   "title_clean": "business analyst schwerpunkt hr",
+   "role_family": "business_analysis",
+   "count": 4
+  },
+  {
+   "title_clean": "database administrator",
+   "role_family": "data_engineering",
+   "count": 4
+  },
+  {
+   "title_clean": "lead data engineer",
+   "role_family": "data_engineering",
+   "count": 4
+  },
+  {
+   "title_clean": "supply chain analyst",
+   "role_family": "data_analytics",
+   "count": 3
+  },
+  {
+   "title_clean": "it business consultant für fahrplandatenmanagement",
+   "role_family": "data_governance",
+   "count": 3
+  },
+  {
+   "title_clean": "sap data engineer",
+   "role_family": "data_engineering",
+   "count": 3
+  },
+  {
+   "title_clean": "senior ai expert",
+   "role_family": "data_science",
+   "count": 3
+  },
+  {
+   "title_clean": "business analyst / produktmanager transaktionskommunikation",
+   "role_family": "business_analysis",
+   "count": 3
+  },
+  {
+   "title_clean": "business intelligence specialist",
+   "role_family": "bi",
+   "count": 3
+  },
+  {
+   "title_clean": "senior data platform engineer",
+   "role_family": "data_engineering",
+   "count": 3
+  },
+  {
+   "title_clean": "senior data engineer azure",
+   "role_family": "data_engineering",
+   "count": 3
+  },
+  {
+   "title_clean": "senior data engineer databricks",
+   "role_family": "data_engineering",
+   "count": 3
+  },
+  {
+   "title_clean": "senior datenbankadministrator",
+   "role_family": "data_engineering",
+   "count": 3
+  },
+  {
+   "title_clean": "sales analyst",
+   "role_family": "data_analytics",
+   "count": 3
+  },
+  {
+   "title_clean": "data analyst",
+   "role_family": "data_analytics",
+   "count": 3
+  },
+  {
+   "title_clean": "it business analyst mit fokus produktion schienenpersonenverkehr",
+   "role_family": "business_analysis",
+   "count": 3
+  },
+  {
+   "title_clean": "power bi specialist",
+   "role_family": "bi",
+   "count": 3
+  },
+  {
+   "title_clean": "bi & dwh developer",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "business analyst produktion mit bi expertise",
+   "role_family": "bi",
+   "count": 2
+  },
+  {
+   "title_clean": "business analyst logistik",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "technische : r business analyst voll oder / woche",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "ai engineer / it project engineer ai",
+   "role_family": "data_science",
+   "count": 2
+  },
+  {
+   "title_clean": "ai / ml developer",
+   "role_family": "data_science",
+   "count": 2
+  },
+  {
+   "title_clean": "bi und dwh entwickler",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "studentenjob business analyst",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "tool & cam data engineer",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "technical business analyst",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "senior workflow automation engineer post business solutions gmbh",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "spezialist sortimentsdaten & analysen",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "research analyst sustainable it / greenops",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "business analyst / requirements engineer",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "qa data analyst",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "projektleitung datenmanagement & data governance",
+   "role_family": "data_governance",
+   "count": 2
+  },
+  {
+   "title_clean": "sap bi consultant",
+   "role_family": "bi",
+   "count": 2
+  },
+  {
+   "title_clean": "senior consultant im bereich sap data & analytics",
+   "role_family": "bi",
+   "count": 2
+  },
+  {
+   "title_clean": "senior consultant human planung mit ibm planning analytics tm1",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "senior ai data engineer post business solutions gmbh",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "senior consultant digital analytics",
+   "role_family": "marketing_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "system data engineer",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "senior controller fokus data analysis",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "senior backend developer with ai expertise",
+   "role_family": "data_science",
+   "count": 2
+  },
+  {
+   "title_clean": "senior business analyst",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "ma support business analysis",
+   "role_family": "business_analysis",
+   "count": 2
+  },
+  {
+   "title_clean": "ot industrial iot & data engineer",
+   "role_family": "data_engineering",
+   "count": 2
+  },
+  {
+   "title_clean": "principal ai engineer",
+   "role_family": "data_science",
+   "count": 2
+  },
+  {
+   "title_clean": "business data analyst",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "business analytics consultant",
+   "role_family": "bi",
+   "count": 2
+  },
+  {
+   "title_clean": "commercial pricing analyst",
+   "role_family": "data_analytics",
+   "count": 2
+  },
+  {
+   "title_clean": "clinical data manager",
+   "role_family": "data_governance",
+   "count": 2
+  }
+ ],
+ "family_profiles": [
+  {
+   "role_family": "bi",
+   "n_with_description": 85,
+   "top_tech_skills": "Data Visualization (86%); SQL (52%); Power BI (51%); Data Modeling (33%); AI (generic) (31%); SAP BW/BO (28%); Cloud (generic) (26%); Excel (20%); Data Warehouse (generic) (18%); Data Governance/Quality (18%); ETL/ELT (16%); Azure (14%); Python (11%); Statistics (general) (11%); SQL Server (11%)",
+   "top_business": "Consulting (55%); Finance/Controlling (45%); SAP (ERP) (38%); Sales/Commercial (18%); Requirements/Business Analysis (16%); Banking/Insurance (15%); Operations/Manufacturing (13%); Project Management (13%)",
+   "top_soft": "Communication (68%); Self-organisation (67%); Analytical Thinking (61%); Teamwork (60%); Stakeholder Management (58%); Curiosity/Learning (56%)",
+   "german_required_share": 0.51,
+   "english_posting_share": 0.08,
+   "degree_required_share": 0.34,
+   "median_min_salary": 52648.0,
+   "n_salary": 67,
+   "styria_share": 0.06,
+   "senior_or_lead_share": 0.31
+  },
+  {
+   "role_family": "business_analysis",
+   "n_with_description": 120,
+   "top_tech_skills": "AI (generic) (24%); Data Visualization (17%); Excel (14%); SQL (13%); Data Governance/Quality (9%); REST APIs (7%); Cloud (generic) (6%); R (6%); Bash/Shell (5%); Generative AI / LLM (5%); C# (4%); CI/CD (4%); Mathematics (4%); Java (4%); Statistics (general) (3%)",
+   "top_business": "Requirements/Business Analysis (82%); Project Management (51%); Consulting (37%); SAP (ERP) (27%); Public Sector/Research (25%); Finance/Controlling (24%); Supply Chain/Logistics (21%); Operations/Manufacturing (18%)",
+   "top_soft": "Communication (77%); Stakeholder Management (75%); Self-organisation (72%); Teamwork (62%); Analytical Thinking (59%); Curiosity/Learning (46%)",
+   "german_required_share": 0.44,
+   "english_posting_share": 0.17,
+   "degree_required_share": 0.32,
+   "median_min_salary": 55000.0,
+   "n_salary": 93,
+   "styria_share": 0.03,
+   "senior_or_lead_share": 0.26
+  },
+  {
+   "role_family": "data_analytics",
+   "n_with_description": 107,
+   "top_tech_skills": "Data Visualization (64%); Excel (47%); SQL (38%); Power BI (34%); Data Governance/Quality (28%); Python (26%); AI (generic) (21%); Statistics (general) (19%); Forecasting (18%); Cloud (generic) (17%); Mathematics (16%); Data Modeling (14%); Exploratory Analysis (12%); Segmentation/Clustering (10%); R (10%)",
+   "top_business": "Finance/Controlling (55%); Sales/Commercial (33%); Consulting (27%); Banking/Insurance (22%); SAP (ERP) (21%); Operations/Manufacturing (21%); Risk/Actuarial (21%); Supply Chain/Logistics (18%)",
+   "top_soft": "Analytical Thinking (82%); Communication (75%); Self-organisation (70%); Teamwork (68%); Stakeholder Management (50%); Curiosity/Learning (36%)",
+   "german_required_share": 0.42,
+   "english_posting_share": 0.23,
+   "degree_required_share": 0.4,
+   "median_min_salary": 47810.0,
+   "n_salary": 83,
+   "styria_share": 0.1,
+   "senior_or_lead_share": 0.23
+  },
+  {
+   "role_family": "data_engineering",
+   "n_with_description": 160,
+   "top_tech_skills": "SQL (69%); ETL/ELT (60%); Python (55%); Cloud (generic) (45%); Data Governance/Quality (44%); Azure (38%); Data Modeling (38%); CI/CD (34%); Data Visualization (32%); Databricks (29%); AI (generic) (28%); Data Warehouse (generic) (28%); Data Lake/Lakehouse (24%); Power BI (19%); Microsoft Fabric (18%)",
+   "top_business": "Consulting (24%); Operations/Manufacturing (22%); Public Sector/Research (19%); Finance/Controlling (14%); Requirements/Business Analysis (14%); Risk/Actuarial (12%); SAP (ERP) (11%); Banking/Insurance (11%)",
+   "top_soft": "Teamwork (69%); Self-organisation (62%); Curiosity/Learning (52%); Stakeholder Management (51%); Communication (48%); Analytical Thinking (38%)",
+   "german_required_share": 0.36,
+   "english_posting_share": 0.22,
+   "degree_required_share": 0.26,
+   "median_min_salary": 55356.0,
+   "n_salary": 132,
+   "styria_share": 0.12,
+   "senior_or_lead_share": 0.38
+  },
+  {
+   "role_family": "data_governance",
+   "n_with_description": 65,
+   "top_tech_skills": "Data Governance/Quality (82%); Excel (26%); AI (generic) (23%); Data Visualization (18%); SQL (14%); Statistics (general) (12%); Python (9%); Mathematics (9%); Cloud (generic) (8%); Power BI (8%); Classification (5%); Data Modeling (5%); Data Warehouse (generic) (5%); Streaming (5%); Generative AI / LLM (5%)",
+   "top_business": "SAP (ERP) (29%); Banking/Insurance (26%); Consulting (22%); Requirements/Business Analysis (20%); Public Sector/Research (20%); Operations/Manufacturing (18%); Finance/Controlling (18%); Marketing (17%)",
+   "top_soft": "Teamwork (77%); Self-organisation (74%); Communication (68%); Stakeholder Management (57%); Analytical Thinking (52%); Curiosity/Learning (43%)",
+   "german_required_share": 0.4,
+   "english_posting_share": 0.2,
+   "degree_required_share": 0.34,
+   "median_min_salary": 45500.0,
+   "n_salary": 50,
+   "styria_share": 0.08,
+   "senior_or_lead_share": 0.37
+  },
+  {
+   "role_family": "data_science",
+   "n_with_description": 157,
+   "top_tech_skills": "AI (generic) (82%); Python (73%); Machine Learning (55%); Generative AI / LLM (53%); Cloud (generic) (48%); SQL (36%); Azure (34%); CI/CD (31%); Statistics (general) (29%); REST APIs (29%); AWS (24%); Git (23%); MLOps (23%); Docker (23%); Mathematics (22%)",
+   "top_business": "Requirements/Business Analysis (27%); Consulting (25%); Public Sector/Research (24%); Project Management (23%); Operations/Manufacturing (22%); Banking/Insurance (19%); Risk/Actuarial (13%); Sales/Commercial (12%)",
+   "top_soft": "Teamwork (66%); Communication (57%); Analytical Thinking (48%); Self-organisation (48%); Stakeholder Management (43%); Curiosity/Learning (38%)",
+   "german_required_share": 0.33,
+   "english_posting_share": 0.44,
+   "degree_required_share": 0.34,
+   "median_min_salary": 55356.0,
+   "n_salary": 122,
+   "styria_share": 0.08,
+   "senior_or_lead_share": 0.38
+  },
+  {
+   "role_family": "marketing_analytics",
+   "n_with_description": 24,
+   "top_tech_skills": "SQL (54%); Data Visualization (50%); Data Governance/Quality (50%); Google Analytics (46%); AI (generic) (42%); Excel (38%); Power BI (33%); Cloud (generic) (29%); BigQuery (25%); Generative AI / LLM (25%); Matomo (25%); Statistics (general) (25%); Segmentation/Clustering (21%); JavaScript (21%); Mathematics (17%)",
+   "top_business": "Marketing (100%); Digital/Online Marketing (71%); Web/Digital Analytics (54%); Consulting (50%); CRM (46%); Sales/Commercial (42%); Customer Analytics (42%); Product Analytics (38%)",
+   "top_soft": "Curiosity/Learning (67%); Self-organisation (58%); Analytical Thinking (58%); Stakeholder Management (54%); Teamwork (50%); Communication (46%)",
+   "german_required_share": 0.33,
+   "english_posting_share": 0.17,
+   "degree_required_share": 0.21,
+   "median_min_salary": 42000.0,
+   "n_salary": 21,
+   "styria_share": 0.0,
+   "senior_or_lead_share": 0.29
+  },
+  {
+   "role_family": "product_analytics",
+   "n_with_description": 1,
+   "top_tech_skills": "A/B Testing / Experimentation (100%); AI (generic) (100%); Data Governance/Quality (100%); Data Visualization (100%); ETL/ELT (100%); Hypothesis Testing (100%); Machine Learning (100%); Python (100%); SQL (100%); Segmentation/Clustering (100%); Statistics (general) (100%)",
+   "top_business": "Marketing (100%); Customer Analytics (100%); Product Analytics (100%); Web/Digital Analytics (100%); Public Sector/Research (100%)",
+   "top_soft": "Communication (100%); Analytical Thinking (100%); Leadership (100%)",
+   "german_required_share": 0.0,
+   "english_posting_share": 1.0,
+   "degree_required_share": 1.0,
+   "median_min_salary": 63000.0,
+   "n_salary": 1,
+   "styria_share": 0.0,
+   "senior_or_lead_share": 0.0
+  }
+ ],
+ "seniority": [
+  {
+   "seniority": "unspecified",
+   "count": 414,
+   "n": 720,
+   "share": 0.575,
+   "ci_low": 0.539,
+   "ci_high": 0.611
+  },
+  {
+   "seniority": "senior",
+   "count": 136,
+   "n": 720,
+   "share": 0.189,
+   "ci_low": 0.162,
+   "ci_high": 0.219
+  },
+  {
+   "seniority": "lead_head",
+   "count": 97,
+   "n": 720,
+   "share": 0.135,
+   "ci_low": 0.112,
+   "ci_high": 0.162
+  },
+  {
+   "seniority": "intern_student",
+   "count": 42,
+   "n": 720,
+   "share": 0.058,
+   "ci_low": 0.043,
+   "ci_high": 0.078
+  },
+  {
+   "seniority": "trainee_junior",
+   "count": 31,
+   "n": 720,
+   "share": 0.043,
+   "ci_low": 0.03,
+   "ci_high": 0.06
+  }
+ ],
+ "seniority_by_family": [
+  {
+   "role_family": "bi",
+   "seniority": "unspecified",
+   "count": 48,
+   "n": 85,
+   "share": 0.565,
+   "ci_low": 0.459,
+   "ci_high": 0.665
+  },
+  {
+   "role_family": "bi",
+   "seniority": "senior",
+   "count": 20,
+   "n": 85,
+   "share": 0.235,
+   "ci_low": 0.158,
+   "ci_high": 0.336
+  },
+  {
+   "role_family": "bi",
+   "seniority": "lead_head",
+   "count": 6,
+   "n": 85,
+   "share": 0.071,
+   "ci_low": 0.033,
+   "ci_high": 0.146
+  },
+  {
+   "role_family": "bi",
+   "seniority": "intern_student",
+   "count": 6,
+   "n": 85,
+   "share": 0.071,
+   "ci_low": 0.033,
+   "ci_high": 0.146
+  },
+  {
+   "role_family": "bi",
+   "seniority": "trainee_junior",
+   "count": 5,
+   "n": 85,
+   "share": 0.059,
+   "ci_low": 0.025,
+   "ci_high": 0.13
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "unspecified",
+   "count": 83,
+   "n": 120,
+   "share": 0.692,
+   "ci_low": 0.604,
+   "ci_high": 0.767
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "lead_head",
+   "count": 19,
+   "n": 120,
+   "share": 0.158,
+   "ci_low": 0.104,
+   "ci_high": 0.234
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "senior",
+   "count": 12,
+   "n": 120,
+   "share": 0.1,
+   "ci_low": 0.058,
+   "ci_high": 0.167
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "intern_student",
+   "count": 4,
+   "n": 120,
+   "share": 0.033,
+   "ci_low": 0.013,
+   "ci_high": 0.083
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "trainee_junior",
+   "count": 2,
+   "n": 120,
+   "share": 0.017,
+   "ci_low": 0.005,
+   "ci_high": 0.059
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "unspecified",
+   "count": 63,
+   "n": 107,
+   "share": 0.589,
+   "ci_low": 0.494,
+   "ci_high": 0.677
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "intern_student",
+   "count": 14,
+   "n": 107,
+   "share": 0.131,
+   "ci_low": 0.08,
+   "ci_high": 0.208
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "senior",
+   "count": 14,
+   "n": 107,
+   "share": 0.131,
+   "ci_low": 0.08,
+   "ci_high": 0.208
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "lead_head",
+   "count": 11,
+   "n": 107,
+   "share": 0.103,
+   "ci_low": 0.058,
+   "ci_high": 0.175
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "trainee_junior",
+   "count": 5,
+   "n": 107,
+   "share": 0.047,
+   "ci_low": 0.02,
+   "ci_high": 0.105
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "unspecified",
+   "count": 92,
+   "n": 160,
+   "share": 0.575,
+   "ci_low": 0.498,
+   "ci_high": 0.649
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "senior",
+   "count": 46,
+   "n": 160,
+   "share": 0.287,
+   "ci_low": 0.223,
+   "ci_high": 0.362
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "lead_head",
+   "count": 15,
+   "n": 160,
+   "share": 0.094,
+   "ci_low": 0.058,
+   "ci_high": 0.149
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "trainee_junior",
+   "count": 6,
+   "n": 160,
+   "share": 0.037,
+   "ci_low": 0.017,
+   "ci_high": 0.079
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "intern_student",
+   "count": 1,
+   "n": 160,
+   "share": 0.006,
+   "ci_low": 0.001,
+   "ci_high": 0.035
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "unspecified",
+   "count": 33,
+   "n": 65,
+   "share": 0.508,
+   "ci_low": 0.389,
+   "ci_high": 0.625
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "lead_head",
+   "count": 20,
+   "n": 65,
+   "share": 0.308,
+   "ci_low": 0.209,
+   "ci_high": 0.428
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "intern_student",
+   "count": 6,
+   "n": 65,
+   "share": 0.092,
+   "ci_low": 0.043,
+   "ci_high": 0.187
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "senior",
+   "count": 4,
+   "n": 65,
+   "share": 0.062,
+   "ci_low": 0.024,
+   "ci_high": 0.148
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "trainee_junior",
+   "count": 2,
+   "n": 65,
+   "share": 0.031,
+   "ci_low": 0.008,
+   "ci_high": 0.105
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "unspecified",
+   "count": 85,
+   "n": 158,
+   "share": 0.538,
+   "ci_low": 0.46,
+   "ci_high": 0.614
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "senior",
+   "count": 35,
+   "n": 158,
+   "share": 0.222,
+   "ci_low": 0.164,
+   "ci_high": 0.292
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "lead_head",
+   "count": 24,
+   "n": 158,
+   "share": 0.152,
+   "ci_low": 0.104,
+   "ci_high": 0.216
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "intern_student",
+   "count": 8,
+   "n": 158,
+   "share": 0.051,
+   "ci_low": 0.026,
+   "ci_high": 0.097
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "trainee_junior",
+   "count": 6,
+   "n": 158,
+   "share": 0.038,
+   "ci_low": 0.018,
+   "ci_high": 0.08
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "unspecified",
+   "count": 9,
+   "n": 24,
+   "share": 0.375,
+   "ci_low": 0.212,
+   "ci_high": 0.573
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "trainee_junior",
+   "count": 5,
+   "n": 24,
+   "share": 0.208,
+   "ci_low": 0.092,
+   "ci_high": 0.405
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "senior",
+   "count": 5,
+   "n": 24,
+   "share": 0.208,
+   "ci_low": 0.092,
+   "ci_high": 0.405
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "intern_student",
+   "count": 3,
+   "n": 24,
+   "share": 0.125,
+   "ci_low": 0.043,
+   "ci_high": 0.31
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "lead_head",
+   "count": 2,
+   "n": 24,
+   "share": 0.083,
+   "ci_low": 0.023,
+   "ci_high": 0.258
+  },
+  {
+   "role_family": "product_analytics",
+   "seniority": "unspecified",
+   "count": 1,
+   "n": 1,
+   "share": 1.0,
+   "ci_low": 0.207,
+   "ci_high": 1.0
+  }
+ ],
+ "experience_years_by_seniority": [
+  {
+   "seniority": "intern_student",
+   "count": 2.0,
+   "mean": 5.0,
+   "25%": 5.0,
+   "50%": 5.0,
+   "75%": 5.0
+  },
+  {
+   "seniority": "lead_head",
+   "count": 26.0,
+   "mean": 4.2,
+   "25%": 3.0,
+   "50%": 4.0,
+   "75%": 5.0
+  },
+  {
+   "seniority": "senior",
+   "count": 29.0,
+   "mean": 4.4,
+   "25%": 4.0,
+   "50%": 5.0,
+   "75%": 5.0
+  },
+  {
+   "seniority": "trainee_junior",
+   "count": 5.0,
+   "mean": 2.2,
+   "25%": 2.0,
+   "50%": 2.0,
+   "75%": 3.0
+  },
+  {
+   "seniority": "unspecified",
+   "count": 75.0,
+   "mean": 3.7,
+   "25%": 2.0,
+   "50%": 3.0,
+   "75%": 5.0
+  }
+ ]
+}

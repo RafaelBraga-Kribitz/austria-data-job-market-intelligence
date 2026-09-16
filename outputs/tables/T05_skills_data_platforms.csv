@@ -1,0 +1,20 @@
+skill,count,n,share,ci_low,ci_high
+Databricks,83,719,0.115,0.094,0.141
+Data Warehouse (generic),72,719,0.1,0.08,0.124
+Data Lake/Lakehouse,51,719,0.071,0.054,0.092
+Microsoft Fabric,41,719,0.057,0.042,0.076
+Snowflake,41,719,0.057,0.042,0.076
+Oracle,41,719,0.057,0.042,0.076
+SQL Server,38,719,0.053,0.039,0.072
+PostgreSQL,33,719,0.046,0.033,0.064
+BigQuery,25,719,0.035,0.024,0.051
+Azure Synapse,21,719,0.029,0.019,0.044
+SAP HANA,20,719,0.028,0.018,0.043
+MongoDB,12,719,0.017,0.01,0.029
+MySQL/MariaDB,11,719,0.015,0.009,0.027
+Neo4j,8,719,0.011,0.006,0.022
+Hadoop,6,719,0.008,0.004,0.018
+Redshift,4,719,0.006,0.002,0.014
+Cassandra,4,719,0.006,0.002,0.014
+Elasticsearch,2,719,0.003,0.001,0.01
+ClickHouse,1,719,0.001,0.0,0.008

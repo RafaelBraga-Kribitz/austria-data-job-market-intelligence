@@ -1,0 +1,8 @@
+german_requirement,count,n,share,ci_low,ci_high
+not_mentioned,298,719,0.414,0.379,0.451
+required_implied,224,719,0.312,0.279,0.346
+preferred,88,719,0.122,0.1,0.148
+required,61,719,0.085,0.067,0.107
+mentioned,42,719,0.058,0.044,0.078
+german_or_english,4,719,0.006,0.002,0.014
+explicitly_not_required,2,719,0.003,0.001,0.01

@@ -1,0 +1,1081 @@
+{
+  "_comment": "Controlled vocabulary for skill/technology extraction. Each entry: canonical name -> list of regex patterns (case-insensitive, matched on word boundaries against title+description). Patterns are written to work on German and English postings. Categories are analytical groupings, not employer categories. 'ambiguous' marks terms whose plain-word match is unreliable (e.g. 'R', 'Go') and which use stricter patterns.",
+  "programming_languages": {
+    "Python": [
+      "python"
+    ],
+    "SQL": [
+      "t-sql",
+      "pl/sql",
+      "postgresql",
+      "mysql",
+      "\\bsql\\b",
+      "sql ?server"
+    ],
+    "R": [
+      "(?<![:*/_.-])\\b(?-i:R)\\b(?=[ ,/&)]|$)(?![ -]?(?:&|und|and)\\s*d\\b)",
+      "r-studio",
+      "rstudio",
+      "\\bR\\s*(?:/|,|und|and|oder|or)\\s*Python",
+      "Python\\s*(?:/|,|und|and|oder|or)\\s*R\\b",
+      "programmiersprache[n]?\\s+(?:wie\\s+)?r\\b",
+      "\\br\\s*\\(statistik"
+    ],
+    "Java": [
+      "\\bjava\\b(?!script)"
+    ],
+    "Scala": [
+      "\\bscala\\b"
+    ],
+    "JavaScript": [
+      "javascript",
+      "\\bjs\\b",
+      "typescript",
+      "node\\.?js"
+    ],
+    "C#": [
+      "c#",
+      "\\.net\\b",
+      "csharp"
+    ],
+    "C/C++": [
+      "\\bc\\+\\+",
+      "\\bc/c\\+\\+"
+    ],
+    "Julia": [
+      "\\bjulia\\b"
+    ],
+    "MATLAB": [
+      "matlab"
+    ],
+    "SAS": [
+      "\\bsas\\b"
+    ],
+    "VBA": [
+      "\\bvba\\b"
+    ],
+    "Bash/Shell": [
+      "\\bbash\\b",
+      "shell[- ]script",
+      "\\blinux\\b",
+      "\\bunix\\b"
+    ],
+    "DAX/M": [
+      "\\bdax\\b",
+      "power query",
+      "\\bm-sprache\\b"
+    ],
+    "Go": [
+      "\\bgolang\\b",
+      "\\bgo\\s+\\(programm"
+    ],
+    "Rust": [
+      "\\brust\\b"
+    ]
+  },
+  "bi_tools": {
+    "Power BI": [
+      "power ?bi",
+      "powerbi",
+      "microsoft power ?bi",
+      "power ?query"
+    ],
+    "Tableau": [
+      "tableau"
+    ],
+    "Qlik": [
+      "qlik(?:view|sense|\\b)"
+    ],
+    "Looker": [
+      "\\blooker\\b",
+      "looker studio",
+      "google data studio",
+      "data studio"
+    ],
+    "Excel": [
+      "\\bexcel\\b",
+      "ms[- ]office",
+      "microsoft office",
+      "pivot"
+    ],
+    "SAP BW/BO": [
+      "sap ?bw",
+      "sap ?bo\\b",
+      "businessobjects",
+      "sap analytics cloud",
+      "\\bsac\\b",
+      "sap ?bi\\b"
+    ],
+    "MicroStrategy": [
+      "microstrategy"
+    ],
+    "Cognos": [
+      "cognos"
+    ],
+    "SSRS": [
+      "\\bssrs\\b",
+      "reporting services"
+    ],
+    "Metabase": [
+      "metabase"
+    ],
+    "Grafana": [
+      "grafana"
+    ],
+    "Superset": [
+      "superset"
+    ],
+    "Google Analytics": [
+      "google analytics",
+      "\\bga4\\b",
+      "\\bga ?360\\b"
+    ],
+    "Adobe Analytics": [
+      "adobe analytics"
+    ],
+    "Matomo": [
+      "matomo",
+      "piwik"
+    ]
+  },
+  "cloud_platforms": {
+    "Azure": [
+      "\\bazure\\b",
+      "microsoft cloud",
+      "\\bfabric\\b"
+    ],
+    "AWS": [
+      "\\baws\\b",
+      "amazon web services"
+    ],
+    "GCP": [
+      "\\bgcp\\b",
+      "google cloud"
+    ],
+    "Cloud (generic)": [
+      "\\bcloud\\b"
+    ]
+  },
+  "data_platforms": {
+    "BigQuery": [
+      "bigquery",
+      "big query"
+    ],
+    "Snowflake": [
+      "snowflake"
+    ],
+    "Databricks": [
+      "databricks"
+    ],
+    "Redshift": [
+      "redshift"
+    ],
+    "Azure Synapse": [
+      "synapse"
+    ],
+    "Microsoft Fabric": [
+      "microsoft fabric",
+      "\\bms fabric\\b"
+    ],
+    "SQL Server": [
+      "sql ?server",
+      "\\bmssql\\b",
+      "\\bssis\\b",
+      "\\bssas\\b",
+      "\\bms sql\\b",
+      "microsoft sql"
+    ],
+    "PostgreSQL": [
+      "postgres(?:ql)?"
+    ],
+    "MySQL/MariaDB": [
+      "mysql",
+      "mariadb"
+    ],
+    "Oracle": [
+      "\\boracle\\b"
+    ],
+    "SAP HANA": [
+      "sap ?hana",
+      "\\bhana\\b"
+    ],
+    "MongoDB": [
+      "mongodb",
+      "mongo\\b"
+    ],
+    "Elasticsearch": [
+      "elastic(?:search)?\\b"
+    ],
+    "Cassandra": [
+      "cassandra"
+    ],
+    "Neo4j": [
+      "neo4j",
+      "graph ?datenbank",
+      "graph database"
+    ],
+    "Teradata": [
+      "teradata"
+    ],
+    "ClickHouse": [
+      "clickhouse"
+    ],
+    "DuckDB": [
+      "duckdb"
+    ],
+    "Data Warehouse (generic)": [
+      "data ?warehouse",
+      "\\bdwh\\b",
+      "datawarehouse"
+    ],
+    "Data Lake/Lakehouse": [
+      "data ?lake",
+      "lakehouse",
+      "delta lake"
+    ],
+    "Hadoop": [
+      "hadoop",
+      "\\bhive\\b",
+      "\\bhdfs\\b"
+    ]
+  },
+  "python_ecosystem": {
+    "pandas": [
+      "\\bpandas\\b"
+    ],
+    "NumPy": [
+      "numpy"
+    ],
+    "scikit-learn": [
+      "scikit[- ]?learn",
+      "sklearn"
+    ],
+    "XGBoost/LightGBM": [
+      "xgboost",
+      "lightgbm",
+      "catboost",
+      "gradient boosting"
+    ],
+    "PyTorch": [
+      "pytorch",
+      "\\btorch\\b"
+    ],
+    "TensorFlow/Keras": [
+      "tensorflow",
+      "\\bkeras\\b"
+    ],
+    "matplotlib/seaborn": [
+      "matplotlib",
+      "seaborn"
+    ],
+    "Plotly/Dash": [
+      "plotly",
+      "\\bdash\\b"
+    ],
+    "statsmodels": [
+      "statsmodels"
+    ],
+    "SciPy": [
+      "\\bscipy\\b"
+    ],
+    "Jupyter": [
+      "jupyter",
+      "notebooks?\\b"
+    ],
+    "Streamlit": [
+      "streamlit"
+    ],
+    "FastAPI/Flask": [
+      "fastapi",
+      "\\bflask\\b",
+      "\\bdjango\\b"
+    ],
+    "Polars": [
+      "\\bpolars\\b"
+    ],
+    "Hugging Face/Transformers": [
+      "hugging ?face",
+      "transformers"
+    ],
+    "LangChain/LLM frameworks": [
+      "langchain",
+      "llamaindex",
+      "llama-index"
+    ]
+  },
+  "data_engineering": {
+    "dbt": [
+      "\\bdbt\\b"
+    ],
+    "Airflow": [
+      "airflow"
+    ],
+    "Spark": [
+      "\\bspark\\b",
+      "pyspark"
+    ],
+    "Kafka": [
+      "kafka"
+    ],
+    "ETL/ELT": [
+      "\\betl\\b",
+      "\\belt\\b",
+      "data ?pipeline",
+      "datenpipeline"
+    ],
+    "Docker": [
+      "docker"
+    ],
+    "Kubernetes": [
+      "kubernetes",
+      "\\bk8s\\b",
+      "openshift"
+    ],
+    "Git": [
+      "\\bgit\\b",
+      "github",
+      "gitlab",
+      "bitbucket",
+      "versionskontrolle",
+      "version control"
+    ],
+    "CI/CD": [
+      "ci/cd",
+      "\\bci\\b/\\bcd\\b",
+      "continuous integration",
+      "jenkins",
+      "azure devops",
+      "\\bdevops\\b"
+    ],
+    "Terraform/IaC": [
+      "terraform",
+      "infrastructure as code"
+    ],
+    "Azure Data Factory": [
+      "data factory",
+      "\\badf\\b"
+    ],
+    "Talend/Informatica": [
+      "talend",
+      "informatica"
+    ],
+    "Fivetran/Airbyte": [
+      "fivetran",
+      "airbyte"
+    ],
+    "REST APIs": [
+      "rest[- ]?api",
+      "restful",
+      "\\bapis?\\b(?![- ]?key)",
+      "schnittstellenentwicklung",
+      "api[- ]integration"
+    ],
+    "MLOps": [
+      "mlops",
+      "mlflow",
+      "model deployment",
+      "kubeflow",
+      "sagemaker",
+      "vertex ai",
+      "azure ml"
+    ],
+    "Data Modeling": [
+      "data ?model(?:l)?ing",
+      "datenmodellierung",
+      "dimensional model",
+      "star schema",
+      "kimball",
+      "data vault"
+    ],
+    "Data Governance/Quality": [
+      "data governance",
+      "data quality",
+      "datenqualität",
+      "master data",
+      "stammdaten",
+      "data catalog",
+      "metadata",
+      "data lineage",
+      "data steward"
+    ],
+    "Streaming": [
+      "streaming",
+      "real[- ]time",
+      "echtzeit"
+    ]
+  },
+  "ml_ai": {
+    "Machine Learning": [
+      "machine ?learning",
+      "maschinelles lernen",
+      "\\bml\\b"
+    ],
+    "Deep Learning": [
+      "deep ?learning",
+      "neural network",
+      "neuronale netz"
+    ],
+    "NLP": [
+      "\\bnlp\\b",
+      "natural language processing",
+      "text mining",
+      "sprachverarbeitung"
+    ],
+    "Computer Vision": [
+      "computer vision",
+      "bildverarbeitung",
+      "image processing",
+      "\\bopencv\\b"
+    ],
+    "Generative AI / LLM": [
+      "generative ai",
+      "\\bgenai\\b",
+      "\\bllms?\\b",
+      "large language model",
+      "chatgpt",
+      "\\bgpt\\b",
+      "\\brag\\b",
+      "prompt engineering",
+      "foundation model",
+      "copilot"
+    ],
+    "AI (generic)": [
+      "\\bai\\b",
+      "\\bki\\b",
+      "künstliche intelligenz",
+      "artificial intelligence"
+    ],
+    "Recommender Systems": [
+      "recommend(?:er|ation) ?system",
+      "empfehlungssystem"
+    ],
+    "Reinforcement Learning": [
+      "reinforcement learning"
+    ],
+    "Predictive Analytics": [
+      "predictive",
+      "prädiktiv",
+      "vorhersagemodell",
+      "prediction"
+    ],
+    "Anomaly Detection": [
+      "anomal(?:y|ie)"
+    ],
+    "Time Series": [
+      "time ?series",
+      "zeitreihen"
+    ],
+    "Forecasting": [
+      "forecast",
+      "prognose"
+    ]
+  },
+  "statistics_methods": {
+    "Statistics (general)": [
+      "statisti(?:cs|k|cal|sch)"
+    ],
+    "Regression": [
+      "regression"
+    ],
+    "Hypothesis Testing": [
+      "hypothes[ei]s",
+      "signifikanz",
+      "statistical test",
+      "statistische tests?"
+    ],
+    "A/B Testing / Experimentation": [
+      "a/b[- ]?test",
+      "ab[- ]test",
+      "experiment(?:ation|s|e)?\\b",
+      "split test",
+      "multivariate test"
+    ],
+    "Causal Inference": [
+      "causal",
+      "kausal",
+      "uplift",
+      "incrementality",
+      "difference-in-differences",
+      "propensity"
+    ],
+    "Bayesian": [
+      "bayes"
+    ],
+    "Segmentation/Clustering": [
+      "segment",
+      "cluster"
+    ],
+    "Classification": [
+      "classification",
+      "klassifikation"
+    ],
+    "Data Mining": [
+      "data ?mining"
+    ],
+    "Data Visualization": [
+      "visuali[sz]",
+      "dashboard",
+      "reporting",
+      "berichtswesen"
+    ],
+    "Exploratory Analysis": [
+      "explorative",
+      "exploratory",
+      "\\beda\\b",
+      "ad[- ]hoc[- ]analys"
+    ],
+    "Sampling/Survey": [
+      "stichprobe",
+      "survey",
+      "umfrage",
+      "befragung"
+    ],
+    "Mathematics": [
+      "mathemati"
+    ]
+  },
+  "business_domain": {
+    "Marketing": [
+      "marketing"
+    ],
+    "Digital/Online Marketing": [
+      "online[- ]marketing",
+      "digital[- ]marketing",
+      "performance[- ]marketing",
+      "\\bsea\\b",
+      "\\bseo\\b",
+      "google ads",
+      "meta ads",
+      "paid (?:social|search|media)",
+      "kampagne",
+      "campaign"
+    ],
+    "CRM": [
+      "\\bcrm\\b",
+      "salesforce",
+      "hubspot",
+      "dynamics 365",
+      "customer relationship"
+    ],
+    "Customer Analytics": [
+      "customer (?:analytics|insights|data|journey|lifetime|segmentation)",
+      "kunden(?:analyse|daten|segment|verhalten)",
+      "churn",
+      "\\bclv\\b",
+      "\\bltv\\b",
+      "retention"
+    ],
+    "Product Analytics": [
+      "product analytics",
+      "produktanalyse",
+      "user behavio(?:u)?r",
+      "nutzerverhalten",
+      "\\bfunnel",
+      "conversion",
+      "mixpanel",
+      "amplitude",
+      "a/b",
+      "product metrics",
+      "produktkennzahlen",
+      "app analytics"
+    ],
+    "Web/Digital Analytics": [
+      "web ?analytics",
+      "webanalyse",
+      "google tag manager",
+      "\\bgtm\\b",
+      "tracking",
+      "clickstream"
+    ],
+    "E-Commerce": [
+      "e-?commerce",
+      "online[- ]shop",
+      "webshop"
+    ],
+    "Pricing/Revenue": [
+      "pricing",
+      "preis(?:gestaltung|strategie|analyse)",
+      "revenue management",
+      "yield"
+    ],
+    "Finance/Controlling": [
+      "controlling",
+      "\\bfinance\\b",
+      "financial",
+      "\\bfp&a\\b",
+      "accounting",
+      "buchhaltung",
+      "finanz(?:wesen|bereich|abteilung|daten|analy|planung|controlling|dienstleist|markt)",
+      "treasury",
+      "kennzahlen"
+    ],
+    "Risk/Actuarial": [
+      "\\brisk\\b",
+      "risiko",
+      "aktuar",
+      "actuar",
+      "solvency",
+      "basel",
+      "credit scoring",
+      "fraud",
+      "betrug",
+      "compliance"
+    ],
+    "Sales/Commercial": [
+      "\\bsales\\b(?! ?manager)",
+      "vertrieb(?!smitarbeiter)",
+      "commercial"
+    ],
+    "Supply Chain/Logistics": [
+      "supply chain",
+      "logisti",
+      "lieferkette",
+      "warehouse management",
+      "intralogisti"
+    ],
+    "Operations/Manufacturing": [
+      "produktion",
+      "manufacturing",
+      "fertigung",
+      "industrie ?4\\.0",
+      "\\biot\\b",
+      "shopfloor",
+      "prozessdaten",
+      "process data",
+      "sensor",
+      "predictive maintenance",
+      "quality (?:data|engineering)",
+      "qualitätsdaten"
+    ],
+    "Healthcare/Pharma/Bio": [
+      "healthcare",
+      "health care",
+      "gesundheitswesen",
+      "clinical",
+      "klinisch",
+      "\\bpharma",
+      "medizin(?!produkt)",
+      "\\bmedical\\b",
+      "patient",
+      "hospital",
+      "krankenhaus",
+      "krankenanstalt",
+      "bioinformati",
+      "biostatisti",
+      "life science"
+    ],
+    "Energy": [
+      "energiewirtschaft",
+      "energieversorg",
+      "energiemarkt",
+      "energy (?:sector|industry|market|trading|data|transition|management)",
+      "strom(?:markt|netz|handel|versorg)",
+      "photovoltaik",
+      "smart meter",
+      "\\bgrid\\b",
+      "erneuerbare",
+      "renewable"
+    ],
+    "Automotive/Mobility": [
+      "automotive",
+      "fahrzeug",
+      "vehicle",
+      "mobility",
+      "\\badas\\b",
+      "autonomous"
+    ],
+    "Banking/Insurance": [
+      "\\bbank\\b",
+      "banking",
+      "versicherung",
+      "insurance",
+      "fintech",
+      "kredit",
+      "credit"
+    ],
+    "Telecom": [
+      "telekom",
+      "telco",
+      "telecommunication",
+      "mobilfunk"
+    ],
+    "Public Sector/Research": [
+      "öffentlicher dienst",
+      "öffentliche verwaltung",
+      "public sector",
+      "public administration",
+      "behörde",
+      "ministerium",
+      "universität",
+      "university",
+      "forschungsinstitut",
+      "research institute",
+      "forschungseinrichtung",
+      "wissenschaftlich",
+      "academic",
+      "hochschule"
+    ],
+    "HR/People Analytics": [
+      "people analytics",
+      "hr[- ]analytics",
+      "personal(?:daten|controlling)",
+      "workforce"
+    ],
+    "Real Estate/Retail": [
+      "einzelhandel",
+      "\\bretail\\b",
+      "\\bfmcg\\b",
+      "immobilien",
+      "real estate",
+      "lebensmittelhandel",
+      "onlinehandel",
+      "großhandel",
+      "wholesale"
+    ],
+    "SAP (ERP)": [
+      "\\bsap\\b"
+    ],
+    "Project Management": [
+      "projektmanagement",
+      "project management",
+      "\\bagile?\\b",
+      "\\bscrum\\b",
+      "kanban",
+      "\\bjira\\b",
+      "confluence"
+    ],
+    "Requirements/Business Analysis": [
+      "requirements? engineering",
+      "anforderungsanalyse",
+      "anforderungsmanagement",
+      "anforderungserhebung",
+      "business analys",
+      "prozessanalyse",
+      "process (?:analysis|mining)",
+      "\\bbpmn\\b",
+      "use cases?",
+      "fachkonzept",
+      "lastenheft",
+      "pflichtenheft"
+    ],
+    "Consulting": [
+      "consulting",
+      "beratung",
+      "consultant",
+      "berater"
+    ],
+    "Optimization/OR": [
+      "operations research",
+      "linear programming",
+      "mathematical optimi[sz]ation",
+      "mathematische optimierung",
+      "\\bsolver\\b",
+      "gurobi",
+      "cplex",
+      "or-tools",
+      "mixed[- ]integer",
+      "heuristi(?:c|k)"
+    ]
+  },
+  "soft_skills": {
+    "Communication": [
+      "kommunikation",
+      "communicat",
+      "präsentation",
+      "presentation",
+      "storytelling"
+    ],
+    "Analytical Thinking": [
+      "analytisch",
+      "analytical",
+      "problemlösung",
+      "problem[- ]solving",
+      "zahlenaffin",
+      "logisch"
+    ],
+    "Teamwork": [
+      "\\bteam(?:work|fähig|player|arbeit)",
+      "zusammenarbeit",
+      "collaborat"
+    ],
+    "Self-organisation": [
+      "selbstständig",
+      "eigenverantwort",
+      "eigeninitiativ",
+      "self[- ](?:driven|motivated|starter)",
+      "proaktiv",
+      "proactive",
+      "strukturiert",
+      "organis(?:iert|ed)"
+    ],
+    "Curiosity/Learning": [
+      "lernbereit",
+      "neugier",
+      "curio",
+      "wissbegierig",
+      "continuous learning",
+      "weiterbildung"
+    ],
+    "Business Acumen": [
+      "unternehmerisch",
+      "business (?:acumen|understanding|sense)",
+      "wirtschaftliches (?:denken|verständnis)",
+      "geschäftsverständnis"
+    ],
+    "Stakeholder Management": [
+      "stakeholder",
+      "fachbereich",
+      "business partner",
+      "schnittstelle zwischen",
+      "schnittstellenfunktion"
+    ],
+    "Leadership": [
+      "führung(?:skompetenz|serfahrung|squalität|sstärke|skraft|sverantwortung)",
+      "leadership",
+      "mentoring",
+      "people management",
+      "team(?:führung| leiten| lead\\b)"
+    ],
+    "Customer Orientation": [
+      "kundenorientier",
+      "customer[- ](?:focus|oriented|centric)",
+      "serviceorientier"
+    ],
+    "Flexibility/Resilience": [
+      "belastbar",
+      "resilien",
+      "stressresist"
+    ],
+    "Attention to Detail": [
+      "genauigkeit",
+      "sorgfältig",
+      "detail[- ]?(?:orient|genau)",
+      "accuracy",
+      "gewissenhaft"
+    ]
+  },
+  "certifications": {
+    "Microsoft cert (generic)": [
+      "microsoft[- ]certif",
+      "\\b(?:dp|pl|az|ai)-?\\d{3}\\b",
+      "microsoft zertifi"
+    ],
+    "Azure cert": [
+      "azure (?:data|ai|fundamentals|administrator|solutions).{0,30}(?:certif|zertifi)",
+      "(?:certif|zertifi).{0,40}azure",
+      "\\b(?:dp|az|ai)-\\d{3}\\b",
+      "pl-?300"
+    ],
+    "AWS cert": [
+      "aws (?:certified|certification|zertifi)",
+      "(?:certif|zertifi).{0,40}aws",
+      "aws certified"
+    ],
+    "Google cert": [
+      "google (?:cloud|data|analytics).{0,30}(?:certif|zertifi)",
+      "(?:certif|zertifi).{0,40}google",
+      "google (?:cloud|professional) (?:data|certif)",
+      "google (?:data analytics|advanced data analytics) (?:professional )?certif"
+    ],
+    "Databricks cert": [
+      "databricks.{0,20}(?:certif|zertifi)",
+      "databricks certified"
+    ],
+    "Tableau cert": [
+      "tableau.{0,20}(?:certif|zertifi)"
+    ],
+    "Power BI cert": [
+      "power ?bi.{0,20}(?:certif|zertifi)",
+      "pl-?300"
+    ],
+    "SAP cert": [
+      "sap.{0,20}(?:certif|zertifi)"
+    ],
+    "Scrum/PM cert": [
+      "scrum master",
+      "\\bpmp\\b",
+      "prince2",
+      "\\bpsm\\b",
+      "\\bcspo\\b",
+      "ipma",
+      "\\bpma\\b(?=.{0,60}zertif)",
+      "scrum[- ]?(?:certif|zertifi)",
+      "\\bsafe\\b.{0,20}(?:certif|zertifi)"
+    ],
+    "ITIL": [
+      "\\bitil\\b"
+    ],
+    "Certification (any mention)": [
+      "zertifizierung",
+      "zertifikat",
+      "certification",
+      "certificate",
+      "certified"
+    ],
+    "Data-management cert (CDMP/DAMA)": [
+      "\\bcdmp\\b",
+      "dama[- ]?dmbok",
+      "\\bdmbok\\b"
+    ],
+    "Requirements/BA cert (IREB/IIBA/CBAP)": [
+      "\\bireb\\b",
+      "\\biiba\\b",
+      "\\bcbap\\b",
+      "\\bcpre\\b",
+      "\\bccba\\b"
+    ]
+  },
+  "education": {
+    "Bachelor": [
+      "bachelor",
+      "\\bbsc\\b",
+      "\\bb\\.sc\\b",
+      "\\bba\\b(?!\\s*(?:test|/))"
+    ],
+    "Master": [
+      "master",
+      "\\bmsc\\b",
+      "\\bm\\.sc\\b",
+      "diplom",
+      "magister",
+      "\\bdi\\b/\\bmag\\b",
+      "\\bdipl"
+    ],
+    "PhD": [
+      "\\bphd\\b",
+      "doktor",
+      "promotion",
+      "dissertation",
+      "\\bdr\\.\\b"
+    ],
+    "Degree (generic)": [
+      "studium",
+      "studienabschluss",
+      "abgeschlossenes? (?:studium|hochschul)",
+      "hochschulabschluss",
+      "university degree",
+      "degree in",
+      "\\bfh\\b",
+      "universit",
+      "akademisch"
+    ],
+    "HTL/Matura": [
+      "\\bhtl\\b",
+      "\\bhak\\b",
+      "matura",
+      "\\bhbla\\b",
+      "höhere technische"
+    ],
+    "Field: Computer Science/Informatics": [
+      "informatik",
+      "computer science",
+      "software engineering",
+      "wirtschaftsinformatik",
+      "business informatics",
+      "information systems"
+    ],
+    "Field: Statistics/Mathematics": [
+      "statistik",
+      "mathematik",
+      "mathematics",
+      "statistics",
+      "technische mathematik"
+    ],
+    "Field: Data Science": [
+      "data science",
+      "datenwissenschaft"
+    ],
+    "Field: Economics/Business": [
+      "wirtschaftswissenschaft",
+      "betriebswirtschaft",
+      "\\bbwl\\b",
+      "economics",
+      "ökonom",
+      "volkswirtschaft",
+      "business administration",
+      "management"
+    ],
+    "Field: Engineering/Physics": [
+      "physik",
+      "physics",
+      "engineering",
+      "ingenieur",
+      "elektrotechnik",
+      "maschinenbau",
+      "mechatronik",
+      "technische"
+    ],
+    "Field: Marketing/Communication": [
+      "marketing",
+      "kommunikationswissenschaft",
+      "medien"
+    ],
+    "Field: Natural/Life Sciences": [
+      "naturwissenschaft",
+      "natural science",
+      "chemie",
+      "biologie",
+      "bioinformatik",
+      "life science"
+    ],
+    "Field: Social Sciences/Psychology": [
+      "sozialwissenschaft",
+      "social science",
+      "psychologie",
+      "psychology",
+      "soziologie"
+    ],
+    "MINT/STEM": [
+      "\\bmint\\b",
+      "\\bstem\\b"
+    ]
+  },
+  "work_model": {
+    "Home office / remote mention": [
+      "home[- ]?office",
+      "remote",
+      "mobiles arbeiten",
+      "mobile work",
+      "telearbeit",
+      "hybrid",
+      "work from home",
+      "\\bwfh\\b",
+      "ortsunabhängig"
+    ],
+    "Flexible hours": [
+      "gleitzeit",
+      "flexible (?:arbeitszeit|working|hours|zeiteinteilung)",
+      "flextime",
+      "flexitime",
+      "vertrauensarbeitszeit"
+    ],
+    "4-day week": [
+      "4[- ]tage[- ]woche",
+      "4[- ]day[- ]week",
+      "viertagewoche"
+    ],
+    "Part-time": [
+      "teilzeit",
+      "part[- ]time"
+    ],
+    "Full-time": [
+      "vollzeit",
+      "full[- ]time"
+    ],
+    "Internship/Student": [
+      "praktik",
+      "intern(?:ship)?\\b",
+      "werkstudent",
+      "working student",
+      "studentische",
+      "trainee",
+      "ferialjob",
+      "studierende",
+      "abschlussarbeit",
+      "masterarbeit",
+      "bachelorarbeit",
+      "diplomarbeit"
+    ]
+  },
+  "_audit_note": "2026-09-16 audit (D-012): SQL now counts SQL Server mentions; 'MS SQL' alias; certification exam codes and DAMA/IREB/IIBA added."
+}

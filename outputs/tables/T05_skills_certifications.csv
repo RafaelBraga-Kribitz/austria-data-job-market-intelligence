@@ -1,0 +1,8 @@
+skill,count,n,share,ci_low,ci_high
+Certification (any mention),92,719,0.128,0.106,0.154
+Requirements/BA cert (IREB/IIBA/CBAP),20,719,0.028,0.018,0.043
+Scrum/PM cert,9,719,0.013,0.007,0.024
+ITIL,7,719,0.01,0.005,0.02
+Data-management cert (CDMP/DAMA),3,719,0.004,0.001,0.012
+Azure cert,2,719,0.003,0.001,0.01
+Google cert,2,719,0.003,0.001,0.01

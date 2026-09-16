@@ -1,0 +1,19 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,Power BI,124,661,0.188,0.16,0.219
+Rest of Austria,Excel,121,661,0.183,0.155,0.214
+Rest of Austria,SAP BW/BO,35,661,0.053,0.038,0.073
+Rest of Austria,Qlik,22,661,0.033,0.022,0.05
+Rest of Austria,Tableau,21,661,0.032,0.021,0.048
+Rest of Austria,Google Analytics,16,661,0.024,0.015,0.039
+Rest of Austria,Matomo,8,661,0.012,0.006,0.024
+Rest of Austria,Looker,8,661,0.012,0.006,0.024
+Rest of Austria,Grafana,8,661,0.012,0.006,0.024
+Rest of Austria,MicroStrategy,4,661,0.006,0.002,0.015
+Rest of Austria,SSRS,3,661,0.005,0.002,0.013
+Rest of Austria,Metabase,1,661,0.002,0.0,0.009
+Rest of Austria,Cognos,1,661,0.002,0.0,0.009
+Styria,Power BI,8,58,0.138,0.072,0.249
+Styria,Excel,7,58,0.121,0.06,0.229
+Styria,SAP BW/BO,3,58,0.052,0.018,0.141
+Styria,Tableau,3,58,0.052,0.018,0.141
+Styria,Looker,3,58,0.052,0.018,0.141

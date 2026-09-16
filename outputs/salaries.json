@@ -1,0 +1,891 @@
+{
+ "vintage": {
+  "min": "2026-09-16 17:00:34+00:00",
+  "max": "2026-09-16 18:39:42+00:00"
+ },
+ "posted_date_range": {
+  "min": "2023-08-17",
+  "max": "2026-09-16"
+ },
+ "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
+ "coverage": [
+  {
+   "metric": "core_postings",
+   "count": 720
+  },
+  {
+   "metric": "with_salary_figure",
+   "count": 569
+  },
+  {
+   "metric": "with_range",
+   "count": 109
+  },
+  {
+   "metric": "kv_minimum_mention",
+   "count": 424
+  },
+  {
+   "metric": "overpay_mention",
+   "count": 385
+  },
+  {
+   "metric": "structured_source",
+   "count": 39
+  },
+  {
+   "metric": "text_parsed",
+   "count": 530
+  },
+  {
+   "metric": "all_in_mention",
+   "count": 73
+  },
+  {
+   "metric": "bonus_or_variable_mention",
+   "count": 67
+  },
+  {
+   "metric": "part_time_basis_risk_among_figures",
+   "count": 8
+  },
+  {
+   "metric": "minimum_only_figures",
+   "count": 460
+  }
+ ],
+ "basis_by_source": [
+  {
+   "source": "eures",
+   "implausible": 1,
+   "minimum_only": 146,
+   "none": 11,
+   "range": 44
+  },
+  {
+   "source": "jobsat",
+   "implausible": 0,
+   "minimum_only": 44,
+   "none": 3,
+   "range": 11
+  },
+  {
+   "source": "karriere",
+   "implausible": 0,
+   "minimum_only": 97,
+   "none": 10,
+   "range": 27
+  },
+  {
+   "source": "linkedin",
+   "implausible": 3,
+   "minimum_only": 150,
+   "none": 121,
+   "range": 26
+  },
+  {
+   "source": "willhaben",
+   "implausible": 0,
+   "minimum_only": 23,
+   "none": 2,
+   "range": 1
+  }
+ ],
+ "by_family": [
+  {
+   "role_family": "bi",
+   "n": 67.0,
+   "min_p25": 43269.0,
+   "min_median": 52648.0,
+   "min_p75": 60000.0,
+   "max_median": 58000.0,
+   "n_with_max": 15.0,
+   "mean_min": 51190.0
+  },
+  {
+   "role_family": "business_analysis",
+   "n": 93.0,
+   "min_p25": 45738.0,
+   "min_median": 55000.0,
+   "min_p75": 58982.0,
+   "max_median": 60000.0,
+   "n_with_max": 12.0,
+   "mean_min": 52172.0
+  },
+  {
+   "role_family": "data_analytics",
+   "n": 83.0,
+   "min_p25": 40803.0,
+   "min_median": 47810.0,
+   "min_p75": 56000.0,
+   "max_median": 65000.0,
+   "n_with_max": 16.0,
+   "mean_min": 48703.0
+  },
+  {
+   "role_family": "data_engineering",
+   "n": 132.0,
+   "min_p25": 48287.0,
+   "min_median": 55356.0,
+   "min_p75": 62145.0,
+   "max_median": 67452.0,
+   "n_with_max": 24.0,
+   "mean_min": 55385.0
+  },
+  {
+   "role_family": "data_governance",
+   "n": 50.0,
+   "min_p25": 37370.0,
+   "min_median": 45500.0,
+   "min_p75": 55130.0,
+   "max_median": 55794.0,
+   "n_with_max": 8.0,
+   "mean_min": 48520.0
+  },
+  {
+   "role_family": "data_science",
+   "n": 122.0,
+   "min_p25": 45999.0,
+   "min_median": 55356.0,
+   "min_p75": 65000.0,
+   "max_median": 65226.0,
+   "n_with_max": 31.0,
+   "mean_min": 56387.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "n": 21.0,
+   "min_p25": 35486.0,
+   "min_median": 42000.0,
+   "min_p75": 60000.0,
+   "max_median": 75000.0,
+   "n_with_max": 3.0,
+   "mean_min": 44785.0
+  },
+  {
+   "role_family": "product_analytics",
+   "n": 1.0,
+   "min_p25": 63000.0,
+   "min_median": 63000.0,
+   "min_p75": 63000.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 63000.0
+  }
+ ],
+ "by_seniority": [
+  {
+   "seniority": "intern_student",
+   "n": 38.0,
+   "min_p25": 31146.0,
+   "min_median": 35726.0,
+   "min_p75": 38452.0,
+   "max_median": 37380.0,
+   "n_with_max": 5.0,
+   "mean_min": 36644.0
+  },
+  {
+   "seniority": "lead_head",
+   "n": 68.0,
+   "min_p25": 51238.0,
+   "min_median": 60098.0,
+   "min_p75": 75000.0,
+   "max_median": 95000.0,
+   "n_with_max": 11.0,
+   "mean_min": 61557.0
+  },
+  {
+   "seniority": "senior",
+   "n": 105.0,
+   "min_p25": 55000.0,
+   "min_median": 60000.0,
+   "min_p75": 65000.0,
+   "max_median": 70000.0,
+   "n_with_max": 21.0,
+   "mean_min": 58842.0
+  },
+  {
+   "seniority": "trainee_junior",
+   "n": 22.0,
+   "min_p25": 35578.0,
+   "min_median": 42000.0,
+   "min_p75": 45738.0,
+   "max_median": 54390.0,
+   "n_with_max": 3.0,
+   "mean_min": 42057.0
+  },
+  {
+   "seniority": "unspecified",
+   "n": 336.0,
+   "min_p25": 44973.0,
+   "min_median": 52220.0,
+   "min_p75": 57100.0,
+   "max_median": 61600.0,
+   "n_with_max": 69.0,
+   "mean_min": 51374.0
+  }
+ ],
+ "by_state": [
+  {
+   "state": "Kärnten",
+   "n": 17.0,
+   "min_p25": 48287.0,
+   "min_median": 53000.0,
+   "min_p75": 54439.0,
+   "max_median": 74094.0,
+   "n_with_max": 2.0,
+   "mean_min": 51650.0
+  },
+  {
+   "state": "Niederösterreich",
+   "n": 40.0,
+   "min_p25": 36154.0,
+   "min_median": 48974.0,
+   "min_p75": 55480.0,
+   "max_median": 53900.0,
+   "n_with_max": 9.0,
+   "mean_min": 46718.0
+  },
+  {
+   "state": "Oberösterreich",
+   "n": 106.0,
+   "min_p25": 45500.0,
+   "min_median": 53221.0,
+   "min_p75": 58695.0,
+   "max_median": 64400.0,
+   "n_with_max": 27.0,
+   "mean_min": 52277.0
+  },
+  {
+   "state": "Salzburg",
+   "n": 34.0,
+   "min_p25": 34464.0,
+   "min_median": 41377.0,
+   "min_p75": 57500.0,
+   "max_median": 63100.0,
+   "n_with_max": 4.0,
+   "mean_min": 45807.0
+  },
+  {
+   "state": "Steiermark",
+   "n": 49.0,
+   "min_p25": 45738.0,
+   "min_median": 53200.0,
+   "min_p75": 57400.0,
+   "max_median": 60970.0,
+   "n_with_max": 9.0,
+   "mean_min": 51953.0
+  },
+  {
+   "state": "Tirol",
+   "n": 24.0,
+   "min_p25": 46084.0,
+   "min_median": 47810.0,
+   "min_p75": 52800.0,
+   "max_median": 84394.0,
+   "n_with_max": 2.0,
+   "mean_min": 48840.0
+  },
+  {
+   "state": "Vorarlberg",
+   "n": 22.0,
+   "min_p25": 43664.0,
+   "min_median": 48978.0,
+   "min_p75": 54320.0,
+   "max_median": 67500.0,
+   "n_with_max": 6.0,
+   "mean_min": 52886.0
+  },
+  {
+   "state": "Wien",
+   "n": 272.0,
+   "min_p25": 45010.0,
+   "min_median": 55356.0,
+   "min_p75": 63000.0,
+   "max_median": 64024.0,
+   "n_with_max": 50.0,
+   "mean_min": 54738.0
+  }
+ ],
+ "by_family_seniority": [
+  {
+   "role_family": "bi",
+   "seniority": "intern_student",
+   "n": 6.0,
+   "min_p25": 31010.0,
+   "min_median": 35482.0,
+   "min_p75": 37026.0,
+   "max_median": 30292.0,
+   "n_with_max": 2.0,
+   "mean_min": 33204.0
+  },
+  {
+   "role_family": "bi",
+   "seniority": "lead_head",
+   "n": 5.0,
+   "min_p25": 60000.0,
+   "min_median": 74200.0,
+   "min_p75": 74200.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 60676.0
+  },
+  {
+   "role_family": "bi",
+   "seniority": "senior",
+   "n": 14.0,
+   "min_p25": 56500.0,
+   "min_median": 60000.0,
+   "min_p75": 68500.0,
+   "max_median": 82500.0,
+   "n_with_max": 2.0,
+   "mean_min": 62066.0
+  },
+  {
+   "role_family": "bi",
+   "seniority": "trainee_junior",
+   "n": 4.0,
+   "min_p25": 35018.0,
+   "min_median": 37745.0,
+   "min_p75": 41012.0,
+   "max_median": 50000.0,
+   "n_with_max": 1.0,
+   "mean_min": 38284.0
+  },
+  {
+   "role_family": "bi",
+   "seniority": "unspecified",
+   "n": 38.0,
+   "min_p25": 43748.0,
+   "min_median": 48416.0,
+   "min_p75": 56750.0,
+   "max_median": 58500.0,
+   "n_with_max": 10.0,
+   "mean_min": 50133.0
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "intern_student",
+   "n": 4.0,
+   "min_p25": 33068.0,
+   "min_median": 33068.0,
+   "min_p75": 38551.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 38551.0
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "lead_head",
+   "n": 12.0,
+   "min_p25": 52780.0,
+   "min_median": 55500.0,
+   "min_p75": 64666.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 56868.0
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "senior",
+   "n": 10.0,
+   "min_p25": 54102.0,
+   "min_median": 57678.0,
+   "min_p75": 63000.0,
+   "max_median": 70500.0,
+   "n_with_max": 2.0,
+   "mean_min": 56866.0
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "trainee_junior",
+   "n": 2.0,
+   "min_p25": 48313.0,
+   "min_median": 50888.0,
+   "min_p75": 53464.0,
+   "max_median": 63049.0,
+   "n_with_max": 1.0,
+   "mean_min": 50888.0
+  },
+  {
+   "role_family": "business_analysis",
+   "seniority": "unspecified",
+   "n": 65.0,
+   "min_p25": 45738.0,
+   "min_median": 53900.0,
+   "min_p75": 56100.0,
+   "max_median": 55307.0,
+   "n_with_max": 9.0,
+   "mean_min": 51461.0
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "intern_student",
+   "n": 10.0,
+   "min_p25": 30950.0,
+   "min_median": 35868.0,
+   "min_p75": 40590.0,
+   "max_median": 43054.0,
+   "n_with_max": 2.0,
+   "mean_min": 35156.0
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "lead_head",
+   "n": 9.0,
+   "min_p25": 60000.0,
+   "min_median": 61600.0,
+   "min_p75": 70000.0,
+   "max_median": 104400.0,
+   "n_with_max": 1.0,
+   "mean_min": 63833.0
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "senior",
+   "n": 12.0,
+   "min_p25": 46358.0,
+   "min_median": 50000.0,
+   "min_p75": 54269.0,
+   "max_median": 65000.0,
+   "n_with_max": 3.0,
+   "mean_min": 49402.0
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "trainee_junior",
+   "n": 4.0,
+   "min_p25": 35147.0,
+   "min_median": 38920.0,
+   "min_p75": 43400.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 39627.0
+  },
+  {
+   "role_family": "data_analytics",
+   "seniority": "unspecified",
+   "n": 48.0,
+   "min_p25": 44614.0,
+   "min_median": 48405.0,
+   "min_p75": 55917.0,
+   "max_median": 62985.0,
+   "n_with_max": 10.0,
+   "mean_min": 49270.0
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "intern_student",
+   "n": 1.0,
+   "min_p25": 65000.0,
+   "min_median": 65000.0,
+   "min_p75": 65000.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 65000.0
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "lead_head",
+   "n": 14.0,
+   "min_p25": 54751.0,
+   "min_median": 58798.0,
+   "min_p75": 73675.0,
+   "max_median": 76216.0,
+   "n_with_max": 1.0,
+   "mean_min": 60832.0
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "senior",
+   "n": 34.0,
+   "min_p25": 57400.0,
+   "min_median": 60000.0,
+   "min_p75": 64166.0,
+   "max_median": 70000.0,
+   "n_with_max": 3.0,
+   "mean_min": 58527.0
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "trainee_junior",
+   "n": 2.0,
+   "min_p25": 46190.0,
+   "min_median": 46642.0,
+   "min_p75": 47095.0,
+   "max_median": 54390.0,
+   "n_with_max": 1.0,
+   "mean_min": 46642.0
+  },
+  {
+   "role_family": "data_engineering",
+   "seniority": "unspecified",
+   "n": 81.0,
+   "min_p25": 47547.0,
+   "min_median": 53200.0,
+   "min_p75": 56000.0,
+   "max_median": 65000.0,
+   "n_with_max": 19.0,
+   "mean_min": 53222.0
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "intern_student",
+   "n": 6.0,
+   "min_p25": 32647.0,
+   "min_median": 36676.0,
+   "min_p75": 37994.0,
+   "max_median": 56280.0,
+   "n_with_max": 1.0,
+   "mean_min": 36854.0
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "lead_head",
+   "n": 14.0,
+   "min_p25": 46602.0,
+   "min_median": 51158.0,
+   "min_p75": 79670.0,
+   "max_median": 64400.0,
+   "n_with_max": 1.0,
+   "mean_min": 59960.0
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "senior",
+   "n": 3.0,
+   "min_p25": 61250.0,
+   "min_median": 61600.0,
+   "min_p75": 70800.0,
+   "max_median": 75600.0,
+   "n_with_max": 2.0,
+   "mean_min": 67500.0
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "trainee_junior",
+   "n": 2.0,
+   "min_p25": 39232.0,
+   "min_median": 40709.0,
+   "min_p75": 42186.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 40709.0
+  },
+  {
+   "role_family": "data_governance",
+   "seniority": "unspecified",
+   "n": 25.0,
+   "min_p25": 36470.0,
+   "min_median": 41270.0,
+   "min_p75": 53241.0,
+   "max_median": 50106.0,
+   "n_with_max": 4.0,
+   "mean_min": 43260.0
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "intern_student",
+   "n": 8.0,
+   "min_p25": 34391.0,
+   "min_median": 36320.0,
+   "min_p75": 41257.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 39624.0
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "lead_head",
+   "n": 13.0,
+   "min_p25": 53241.0,
+   "min_median": 75000.0,
+   "min_p75": 79000.0,
+   "max_median": 95000.0,
+   "n_with_max": 7.0,
+   "mean_min": 69153.0
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "senior",
+   "n": 28.0,
+   "min_p25": 57850.0,
+   "min_median": 64000.0,
+   "min_p75": 70000.0,
+   "max_median": 79800.0,
+   "n_with_max": 7.0,
+   "mean_min": 62655.0
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "trainee_junior",
+   "n": 3.0,
+   "min_p25": 43134.0,
+   "min_median": 53200.0,
+   "min_p75": 54992.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 47684.0
+  },
+  {
+   "role_family": "data_science",
+   "seniority": "unspecified",
+   "n": 70.0,
+   "min_p25": 45999.0,
+   "min_median": 54439.0,
+   "min_p75": 60800.0,
+   "max_median": 65226.0,
+   "n_with_max": 17.0,
+   "mean_min": 53798.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "intern_student",
+   "n": 3.0,
+   "min_p25": 25200.0,
+   "min_median": 25200.0,
+   "min_p75": 29574.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 28116.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "lead_head",
+   "n": 1.0,
+   "min_p25": 35486.0,
+   "min_median": 35486.0,
+   "min_p75": 35486.0,
+   "max_median": 70280.0,
+   "n_with_max": 1.0,
+   "mean_min": 35486.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "senior",
+   "n": 4.0,
+   "min_p25": 41300.0,
+   "min_median": 51000.0,
+   "min_p75": 60000.0,
+   "max_median": 75000.0,
+   "n_with_max": 2.0,
+   "mean_min": 50300.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "trainee_junior",
+   "n": 5.0,
+   "min_p25": 35000.0,
+   "min_median": 42000.0,
+   "min_p75": 42000.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 38814.0
+  },
+  {
+   "role_family": "marketing_analytics",
+   "seniority": "unspecified",
+   "n": 8.0,
+   "min_p25": 44893.0,
+   "min_median": 52500.0,
+   "min_p75": 60000.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 53173.0
+  },
+  {
+   "role_family": "product_analytics",
+   "seniority": "unspecified",
+   "n": 1.0,
+   "min_p25": 63000.0,
+   "min_median": 63000.0,
+   "min_p75": 63000.0,
+   "max_median": null,
+   "n_with_max": 0.0,
+   "mean_min": 63000.0
+  }
+ ],
+ "by_skill": [
+  {
+   "skill": "SQL",
+   "n": 240,
+   "min_median": 53851.0,
+   "min_p25": 45000.0,
+   "min_p75": 61000.0
+  },
+  {
+   "skill": "AI (generic)",
+   "n": 207,
+   "min_median": 55356.0,
+   "min_p25": 46239.0,
+   "min_p75": 65000.0
+  },
+  {
+   "skill": "Data Visualization",
+   "n": 220,
+   "min_median": 49852.0,
+   "min_p25": 41825.0,
+   "min_p75": 60000.0
+  },
+  {
+   "skill": "Python",
+   "n": 203,
+   "min_median": 55356.0,
+   "min_p25": 45738.0,
+   "min_p75": 63000.0
+  },
+  {
+   "skill": "Data Governance/Quality",
+   "n": 175,
+   "min_median": 51380.0,
+   "min_p25": 43664.0,
+   "min_p75": 60542.0
+  },
+  {
+   "skill": "Cloud (generic)",
+   "n": 165,
+   "min_median": 58000.0,
+   "min_p25": 50000.0,
+   "min_p75": 64000.0
+  },
+  {
+   "skill": "ETL/ELT",
+   "n": 135,
+   "min_median": 55356.0,
+   "min_p25": 47810.0,
+   "min_p75": 61485.0
+  },
+  {
+   "skill": "Azure",
+   "n": 114,
+   "min_median": 57400.0,
+   "min_p25": 50098.0,
+   "min_p75": 65000.0
+  },
+  {
+   "skill": "Power BI",
+   "n": 109,
+   "min_median": 49000.0,
+   "min_p25": 38473.0,
+   "min_p75": 60000.0
+  },
+  {
+   "skill": "Excel",
+   "n": 107,
+   "min_median": 43664.0,
+   "min_p25": 36029.0,
+   "min_p75": 52010.0
+  },
+  {
+   "skill": "Data Modeling",
+   "n": 99,
+   "min_median": 55356.0,
+   "min_p25": 48405.0,
+   "min_p75": 60965.0
+  },
+  {
+   "skill": "Machine Learning",
+   "n": 86,
+   "min_median": 57392.0,
+   "min_p25": 50534.0,
+   "min_p75": 64500.0
+  },
+  {
+   "skill": "Generative AI / LLM",
+   "n": 95,
+   "min_median": 60000.0,
+   "min_p25": 49581.0,
+   "min_p75": 68106.0
+  },
+  {
+   "skill": "CI/CD",
+   "n": 86,
+   "min_median": 55356.0,
+   "min_p25": 52163.0,
+   "min_p75": 63000.0
+  },
+  {
+   "skill": "Statistics (general)",
+   "n": 81,
+   "min_median": 52220.0,
+   "min_p25": 43466.0,
+   "min_p75": 58954.0
+  },
+  {
+   "skill": "Databricks",
+   "n": 68,
+   "min_median": 60000.0,
+   "min_p25": 52934.0,
+   "min_p75": 68500.0
+  },
+  {
+   "skill": "REST APIs",
+   "n": 61,
+   "min_median": 55356.0,
+   "min_p25": 45000.0,
+   "min_p75": 61000.0
+  },
+  {
+   "skill": "Mathematics",
+   "n": 61,
+   "min_median": 52220.0,
+   "min_p25": 42137.0,
+   "min_p75": 56000.0
+  },
+  {
+   "skill": "Data Warehouse (generic)",
+   "n": 63,
+   "min_median": 58800.0,
+   "min_p25": 47926.0,
+   "min_p75": 65000.0
+  },
+  {
+   "skill": "Git",
+   "n": 58,
+   "min_median": 55356.0,
+   "min_p25": 49000.0,
+   "min_p75": 61750.0
+  },
+  {
+   "skill": "AWS",
+   "n": 47,
+   "min_median": 56000.0,
+   "min_p25": 50568.0,
+   "min_p75": 62500.0
+  },
+  {
+   "skill": "R",
+   "n": 44,
+   "min_median": 52220.0,
+   "min_p25": 41791.0,
+   "min_p75": 60000.0
+  },
+  {
+   "skill": "Streaming",
+   "n": 36,
+   "min_median": 55356.0,
+   "min_p25": 45738.0,
+   "min_p75": 62638.0
+  },
+  {
+   "skill": "Data Lake/Lakehouse",
+   "n": 42,
+   "min_median": 60000.0,
+   "min_p25": 52136.0,
+   "min_p75": 68000.0
+  },
+  {
+   "skill": "Java",
+   "n": 43,
+   "min_median": 57400.0,
+   "min_p25": 52982.0,
+   "min_p75": 62000.0
+  }
+ ],
+ "definitions": {
+  "salary_min_annual_eur": "advertised MINIMUM gross annual salary in EUR; monthly figures ×14 (Austrian convention); mostly collective-agreement floors, not offers",
+  "salary_max_annual_eur": "upper end when a range was advertised",
+  "third_party_surveys": "NOT included here; see docs/salary-context.md"
+ }
+}

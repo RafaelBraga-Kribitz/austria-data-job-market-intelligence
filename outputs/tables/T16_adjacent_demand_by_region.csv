@@ -1,0 +1,37 @@
+region,tool,postings_mentioning,in_core_data_title,in_non_data_title,share_non_data_title,top_non_data_families,sweep_postings_region
+Oberösterreich,Python,57,13,44,0.772,out_of_scope 36; ai_software_engineering 7; other_data 1,4811
+Oberösterreich,SQL,79,24,55,0.696,out_of_scope 49; ai_software_engineering 3; other_data 3,4811
+Oberösterreich,Power BI,29,10,19,0.655,out_of_scope 19,4811
+Oberösterreich,Tableau,1,1,0,0.0,,4811
+Oberösterreich,Excel,356,9,347,0.975,out_of_scope 344; other_data 3,4811
+Oberösterreich,Machine Learning,10,4,6,0.6,out_of_scope 6,4811
+Oberösterreich,Statistics,67,5,62,0.925,out_of_scope 61; ai_software_engineering 1,4811
+Oberösterreich,Data analytics (word),35,9,26,0.743,out_of_scope 26,4811
+Oberösterreich,Dashboard/Reporting,48,17,31,0.646,out_of_scope 30; other_data 1,4811
+Oberösterreich,Business Intelligence,60,18,42,0.7,out_of_scope 42,4811
+Oberösterreich,Data Science (word),34,14,20,0.588,out_of_scope 18; ai_software_engineering 2,4811
+Oberösterreich,R (language),4,1,3,0.75,out_of_scope 3,4811
+Steiermark,Python,53,9,44,0.83,out_of_scope 36; ai_software_engineering 6; other_data 2,3867
+Steiermark,SQL,81,10,71,0.877,out_of_scope 58; other_data 11; ai_software_engineering 2,3867
+Steiermark,Power BI,21,0,21,1.0,out_of_scope 19; other_data 2,3867
+Steiermark,Tableau,1,1,0,0.0,,3867
+Steiermark,Excel,182,0,182,1.0,out_of_scope 181; other_data 1,3867
+Steiermark,Machine Learning,8,2,6,0.75,ai_software_engineering 5; other_data 1,3867
+Steiermark,Statistics,23,2,21,0.913,out_of_scope 21,3867
+Steiermark,Data analytics (word),33,4,29,0.879,out_of_scope 27; other_data 2,3867
+Steiermark,Dashboard/Reporting,19,5,14,0.737,out_of_scope 9; other_data 3; ai_software_engineering 2,3867
+Steiermark,Business Intelligence,43,4,39,0.907,out_of_scope 36; other_data 3,3867
+Steiermark,Data Science (word),15,8,7,0.467,ai_software_engineering 4; out_of_scope 2; other_data 1,3867
+Steiermark,R (language),4,2,2,0.5,out_of_scope 2,3867
+Wien,Python,102,24,78,0.765,out_of_scope 66; ai_software_engineering 9; other_data 3,3419
+Wien,SQL,91,23,68,0.747,out_of_scope 61; other_data 7,3419
+Wien,Power BI,54,21,33,0.611,out_of_scope 31; other_data 2,3419
+Wien,Tableau,2,1,1,0.5,out_of_scope 1,3419
+Wien,Excel,279,5,274,0.982,out_of_scope 271; other_data 3,3419
+Wien,Machine Learning,15,3,12,0.8,out_of_scope 6; ai_software_engineering 3; other_data 3,3419
+Wien,Statistics,43,4,39,0.907,out_of_scope 38; other_data 1,3419
+Wien,Data analytics (word),57,9,48,0.842,out_of_scope 46; other_data 1; ai_software_engineering 1,3419
+Wien,Dashboard/Reporting,23,6,17,0.739,out_of_scope 15; other_data 2,3419
+Wien,Business Intelligence,69,24,45,0.652,out_of_scope 42; other_data 2; ai_software_engineering 1,3419
+Wien,Data Science (word),29,11,18,0.621,out_of_scope 13; ai_software_engineering 4; other_data 1,3419
+Wien,R (language),14,2,12,0.857,out_of_scope 12,3419

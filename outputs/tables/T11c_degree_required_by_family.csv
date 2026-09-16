@@ -1,0 +1,16 @@
+role_family,degree_required,count,n,share,ci_low,ci_high
+bi,False,56,85,0.659,0.553,0.751
+bi,True,29,85,0.341,0.249,0.447
+business_analysis,False,81,120,0.675,0.587,0.752
+business_analysis,True,39,120,0.325,0.248,0.413
+data_analytics,False,64,107,0.598,0.503,0.686
+data_analytics,True,43,107,0.402,0.314,0.497
+data_engineering,False,119,160,0.744,0.671,0.805
+data_engineering,True,41,160,0.256,0.195,0.329
+data_governance,False,43,65,0.662,0.54,0.765
+data_governance,True,22,65,0.338,0.235,0.46
+data_science,False,103,157,0.656,0.579,0.726
+data_science,True,54,157,0.344,0.274,0.421
+marketing_analytics,False,19,24,0.792,0.595,0.908
+marketing_analytics,True,5,24,0.208,0.092,0.405
+product_analytics,True,1,1,1.0,0.207,1.0

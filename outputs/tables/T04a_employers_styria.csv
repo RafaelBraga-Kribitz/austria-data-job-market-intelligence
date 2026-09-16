@@ -1,0 +1,33 @@
+company_norm,postings,families,states,styria,graz_area,is_agency,sources,example_company
+knapp,7,"business_analysis,data_analytics,data_engineering,data_science",Steiermark,7,6,False,karriere,KNAPP
+adesso,4,"data_engineering,data_science",Steiermark,4,4,False,"eures,linkedin",adesso Austria
+tieto,4,"data_engineering,data_science","Steiermark,Wien",3,3,False,"karriere,linkedin",Tieto Austria
+cancom,4,"bi,data_engineering","Vorarlberg,Wien",2,2,False,"eures,karriere",CANCOM Austria AG
+niceshops,2,data_analytics,Steiermark,2,2,False,"karriere,willhaben",niceshops GmbH
+anton paar,2,data_science,Steiermark,2,2,False,linkedin,Anton Paar
+mercedes-benz g,2,data_analytics,Steiermark,2,2,False,"jobsat,linkedin",Mercedes-Benz G GmbH
+magna,2,"bi,data_engineering",Steiermark,2,2,False,linkedin,Magna International
+netconomy,2,"data_engineering,data_science","Kärnten,Steiermark",1,1,False,linkedin,Netconomy
+kern engineering careers,6,"bi,data_engineering,data_science","Oberösterreich,Steiermark,Wien",1,1,False,"karriere,willhaben",KERN engineering careers GmbH
+österreichische gesundheitskasse,2,data_governance,"Steiermark,Wien",1,0,False,"karriere,linkedin",Österreichische Gesundheitskasse
+ase services süd,1,data_science,Steiermark,1,1,False,willhaben,ASE Services Süd GmbH
+ams osram,1,data_science,Steiermark,1,1,False,linkedin,ams OSRAM
+all for one,1,data_analytics,Steiermark,1,1,False,linkedin,All for One
+epig,1,data_analytics,Steiermark,1,1,False,willhaben,EPIG GmbH
+easelink,1,business_analysis,Steiermark,1,1,False,eures,Easelink
+kapsch aktiengesellschaft,1,data_engineering,Wien,1,1,False,jobsat,Kapsch Aktiengesellschaft
+maco produktions,1,data_engineering,Steiermark,1,0,False,eures,Maco Produktions
+omninet,1,bi,Steiermark,1,1,False,linkedin,OMNINET
+merkur versicherung,1,data_science,Steiermark,1,1,False,jobsat,Merkur Versicherung AG
+personalservice plus,1,data_analytics,Steiermark,1,1,True,eures,Personalservice Plus
+professionals4you,1,data_governance,Steiermark,1,1,False,willhaben,Professionals4you
+rosendahl nextrom,1,data_governance,Steiermark,1,1,False,karriere,Rosendahl Nextrom GmbH
+bbmri-eric,1,data_governance,Steiermark,1,1,False,linkedin,BBMRI-ERIC
+siemens energy,1,data_analytics,Steiermark,1,1,False,linkedin,Siemens Energy
+trenkwalder personaldienste,1,data_governance,Steiermark,1,1,True,eures,Trenkwalder Personaldienste
+telus digital ai data solutions,1,data_analytics,Steiermark,1,1,False,linkedin,TELUS Digital AI Data Solutions
+teccon consulting,1,bi,Steiermark,1,1,False,eures,TECCON Consulting
+vusion,1,data_engineering,Steiermark,1,0,False,linkedin,Vusion
+at&s,1,data_engineering,Steiermark,1,0,False,linkedin,AT&S
+zeta,1,data_engineering,Wien,1,1,False,karriere,ZETA GmbH
+agfa healthcare,1,bi,Steiermark,1,1,False,jobsat,Agfa HealthCare GesmbH

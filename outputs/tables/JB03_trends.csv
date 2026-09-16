@@ -1,0 +1,591 @@
+beruf,bl,bundesland,trend_3y,trend_window,share_label,count_year,count_latest,group_id,beruf_id
+BankangestellteR im Zahlungsverkehr,AT,Österreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,137.0,282,1306
+BankangestellteR im Zahlungsverkehr,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT13,Wien,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,32.0,282,1306
+BankangestellteR im Zahlungsverkehr,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT22,Steiermark,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT31,Oberösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT32,Salzburg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,41.0,282,1306
+BankangestellteR im Zahlungsverkehr,AT33,Tirol,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1306
+BankangestellteR im Zahlungsverkehr,AT34,Vorarlberg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1306
+Bankkaufmann/-frau,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1261.0,282,245
+Bankkaufmann/-frau,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,282,245
+Bankkaufmann/-frau,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,114.0,282,245
+Bankkaufmann/-frau,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,317.0,282,245
+Bankkaufmann/-frau,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,41.0,282,245
+Bankkaufmann/-frau,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,136.0,282,245
+Bankkaufmann/-frau,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,297.0,282,245
+Bankkaufmann/-frau,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,126.0,282,245
+Bankkaufmann/-frau,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,66.0,282,245
+Bankkaufmann/-frau,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,71.0,282,245
+Finanz- und AnlageberaterIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2239.0,282,1189
+Finanz- und AnlageberaterIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,40.0,282,1189
+Finanz- und AnlageberaterIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,272.0,282,1189
+Finanz- und AnlageberaterIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,532.0,282,1189
+Finanz- und AnlageberaterIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,139.0,282,1189
+Finanz- und AnlageberaterIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,174.0,282,1189
+Finanz- und AnlageberaterIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,471.0,282,1189
+Finanz- und AnlageberaterIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,194.0,282,1189
+Finanz- und AnlageberaterIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,174.0,282,1189
+Finanz- und AnlageberaterIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,124.0,282,1189
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT,Österreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,446.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT11,Burgenland,gleichbleibend,2026-2028,30% - geringer Anteil,,,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT12,Niederösterreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,48.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT13,Wien,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,184.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT21,Kärnten,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT22,Steiermark,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,35.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT31,Oberösterreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,27.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,61.0,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT33,Tirol,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1302
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,AT34,Vorarlberg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1302
+MitarbeiterIn in der Kreditabteilung,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,617.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,21.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,66.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,157.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,46.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,38.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT31,Oberösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,87.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT32,Salzburg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,33.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT33,Tirol,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,41.0,282,1303
+MitarbeiterIn in der Kreditabteilung,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,45.0,282,1303
+RisikomanagerIn im Finanz- und Bankwesen,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1506.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,101.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,650.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,40.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,117.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,227.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,101.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,79.0,282,1249
+RisikomanagerIn im Finanz- und Bankwesen,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,60.0,282,1249
+Treasurer (m/w),AT,Österreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,258.0,282,1304
+Treasurer (m/w),AT11,Burgenland,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,282,1304
+Treasurer (m/w),AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,20.0,282,1304
+Treasurer (m/w),AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,104.0,282,1304
+Treasurer (m/w),AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,,,282,1304
+Treasurer (m/w),AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,,,282,1304
+Treasurer (m/w),AT31,Oberösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,35.0,282,1304
+Treasurer (m/w),AT32,Salzburg,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,28.0,282,1304
+Treasurer (m/w),AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,20.0,282,1304
+Treasurer (m/w),AT34,Vorarlberg,positiv,2026-2028,0% - sehr geringer Anteil,,,282,1304
+VersicherungsberaterIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1409.0,282,1190
+VersicherungsberaterIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,30.0,282,1190
+VersicherungsberaterIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,272.0,282,1190
+VersicherungsberaterIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,180.0,282,1190
+VersicherungsberaterIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,86.0,282,1190
+VersicherungsberaterIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,223.0,282,1190
+VersicherungsberaterIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,257.0,282,1190
+VersicherungsberaterIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,110.0,282,1190
+VersicherungsberaterIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,111.0,282,1190
+VersicherungsberaterIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,58.0,282,1190
+Versicherungskaufmann/-frau,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1837.0,282,545
+Versicherungskaufmann/-frau,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,33.0,282,545
+Versicherungskaufmann/-frau,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,179.0,282,545
+Versicherungskaufmann/-frau,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,545.0,282,545
+Versicherungskaufmann/-frau,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,81.0,282,545
+Versicherungskaufmann/-frau,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,214.0,282,545
+Versicherungskaufmann/-frau,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,289.0,282,545
+Versicherungskaufmann/-frau,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,156.0,282,545
+Versicherungskaufmann/-frau,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,161.0,282,545
+Versicherungskaufmann/-frau,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,63.0,282,545
+Betriebs- und UnternehmensleiterIn,AT,Österreich,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,6318.0,285,269
+Betriebs- und UnternehmensleiterIn,AT11,Burgenland,gleichbleibend,2026-2028,74% - hoher Anteil,2025.0,175.0,285,269
+Betriebs- und UnternehmensleiterIn,AT12,Niederösterreich,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,655.0,285,269
+Betriebs- und UnternehmensleiterIn,AT13,Wien,gleichbleibend,2026-2028,74% - hoher Anteil,2025.0,1694.0,285,269
+Betriebs- und UnternehmensleiterIn,AT21,Kärnten,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,278.0,285,269
+Betriebs- und UnternehmensleiterIn,AT22,Steiermark,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,648.0,285,269
+Betriebs- und UnternehmensleiterIn,AT31,Oberösterreich,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,939.0,285,269
+Betriebs- und UnternehmensleiterIn,AT32,Salzburg,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,600.0,285,269
+Betriebs- und UnternehmensleiterIn,AT33,Tirol,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,642.0,285,269
+Betriebs- und UnternehmensleiterIn,AT34,Vorarlberg,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,275.0,285,269
+BetriebswirtIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,3912.0,285,872
+BetriebswirtIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,2025.0,36.0,285,872
+BetriebswirtIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,549.0,285,872
+BetriebswirtIn,AT13,Wien,positiv,2026-2028,50% - mittlerer Anteil,2025.0,761.0,285,872
+BetriebswirtIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,205.0,285,872
+BetriebswirtIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,459.0,285,872
+BetriebswirtIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,666.0,285,872
+BetriebswirtIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,339.0,285,872
+BetriebswirtIn,AT33,Tirol,positiv,2026-2028,50% - mittlerer Anteil,2025.0,468.0,285,872
+BetriebswirtIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,179.0,285,872
+Business-Development-ManagerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,2086.0,285,1278
+Business-Development-ManagerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,,,285,1278
+Business-Development-ManagerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,163.0,285,1278
+Business-Development-ManagerIn,AT13,Wien,positiv,2026-2028,50% - mittlerer Anteil,2025.0,821.0,285,1278
+Business-Development-ManagerIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,54.0,285,1278
+Business-Development-ManagerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,210.0,285,1278
+Business-Development-ManagerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,278.0,285,1278
+Business-Development-ManagerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,149.0,285,1278
+Business-Development-ManagerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,126.0,285,1278
+Business-Development-ManagerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,73.0,285,1278
+Compliance-ManagerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1053.0,285,1250
+Compliance-ManagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,285,1250
+Compliance-ManagerIn,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,71.0,285,1250
+Compliance-ManagerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,462.0,285,1250
+Compliance-ManagerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,25.0,285,1250
+Compliance-ManagerIn,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,74.0,285,1250
+Compliance-ManagerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,148.0,285,1250
+Compliance-ManagerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,65.0,285,1250
+Compliance-ManagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,91.0,285,1250
+Compliance-ManagerIn,AT34,Vorarlberg,tendenziell,2026-2028,0% - sehr geringer Anteil,,,285,1250
+FinanzmanagerIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,2608.0,285,1239
+FinanzmanagerIn,AT11,Burgenland,gleichbleibend,2026-2028,30% - geringer Anteil,,,285,1239
+FinanzmanagerIn,AT12,Niederösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,180.0,285,1239
+FinanzmanagerIn,AT13,Wien,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,1017.0,285,1239
+FinanzmanagerIn,AT21,Kärnten,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,83.0,285,1239
+FinanzmanagerIn,AT22,Steiermark,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,252.0,285,1239
+FinanzmanagerIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,317.0,285,1239
+FinanzmanagerIn,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,210.0,285,1239
+FinanzmanagerIn,AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,228.0,285,1239
+FinanzmanagerIn,AT34,Vorarlberg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,82.0,285,1239
+Human-Resources-ManagerIn,AT,Österreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,8326.0,285,1191
+Human-Resources-ManagerIn,AT11,Burgenland,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,99.0,285,1191
+Human-Resources-ManagerIn,AT12,Niederösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,873.0,285,1191
+Human-Resources-ManagerIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,2426.0,285,1191
+Human-Resources-ManagerIn,AT21,Kärnten,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,287.0,285,1191
+Human-Resources-ManagerIn,AT22,Steiermark,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,875.0,285,1191
+Human-Resources-ManagerIn,AT31,Oberösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,1507.0,285,1191
+Human-Resources-ManagerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,606.0,285,1191
+Human-Resources-ManagerIn,AT33,Tirol,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,545.0,285,1191
+Human-Resources-ManagerIn,AT34,Vorarlberg,tendenziell,2026-2028,74% - hoher Anteil,2025.0,359.0,285,1191
+Kultur- und EventmanagerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1166.0,285,1192
+Kultur- und EventmanagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,26.0,285,1192
+Kultur- und EventmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,99.0,285,1192
+Kultur- und EventmanagerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,331.0,285,1192
+Kultur- und EventmanagerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,28.0,285,1192
+Kultur- und EventmanagerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,104.0,285,1192
+Kultur- und EventmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,124.0,285,1192
+Kultur- und EventmanagerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,179.0,285,1192
+Kultur- und EventmanagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,117.0,285,1192
+Kultur- und EventmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,55.0,285,1192
+Operations ManagerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1368.0,285,1296
+Operations ManagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,22.0,285,1296
+Operations ManagerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,154.0,285,1296
+Operations ManagerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,416.0,285,1296
+Operations ManagerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,34.0,285,1296
+Operations ManagerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,91.0,285,1296
+Operations ManagerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,201.0,285,1296
+Operations ManagerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,133.0,285,1296
+Operations ManagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,121.0,285,1296
+Operations ManagerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,73.0,285,1296
+ProjektassistentIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,824.0,285,1242
+ProjektassistentIn,AT11,Burgenland,gleichbleibend,2026-2028,30% - geringer Anteil,,,285,1242
+ProjektassistentIn,AT12,Niederösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,82.0,285,1242
+ProjektassistentIn,AT13,Wien,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,243.0,285,1242
+ProjektassistentIn,AT21,Kärnten,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,28.0,285,1242
+ProjektassistentIn,AT22,Steiermark,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,110.0,285,1242
+ProjektassistentIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,126.0,285,1242
+ProjektassistentIn,AT32,Salzburg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,26.0,285,1242
+ProjektassistentIn,AT33,Tirol,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,47.0,285,1242
+ProjektassistentIn,AT34,Vorarlberg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,285,1242
+ProjektmanagerIn,AT,Österreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,8220.0,285,1194
+ProjektmanagerIn,AT11,Burgenland,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,76.0,285,1194
+ProjektmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,899.0,285,1194
+ProjektmanagerIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,2277.0,285,1194
+ProjektmanagerIn,AT21,Kärnten,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,337.0,285,1194
+ProjektmanagerIn,AT22,Steiermark,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1094.0,285,1194
+ProjektmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,1459.0,285,1194
+ProjektmanagerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,605.0,285,1194
+ProjektmanagerIn,AT33,Tirol,positiv,2026-2028,50% - mittlerer Anteil,2025.0,471.0,285,1194
+ProjektmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,272.0,285,1194
+SalesmanagerIn,AT,Österreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,11334.0,285,873
+SalesmanagerIn,AT11,Burgenland,tendenziell,2026-2028,74% - hoher Anteil,2025.0,145.0,285,873
+SalesmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1449.0,285,873
+SalesmanagerIn,AT13,Wien,tendenziell,2026-2028,95% - sehr hoher Anteil,2025.0,2902.0,285,873
+SalesmanagerIn,AT21,Kärnten,tendenziell,2026-2028,74% - hoher Anteil,2025.0,546.0,285,873
+SalesmanagerIn,AT22,Steiermark,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1165.0,285,873
+SalesmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1837.0,285,873
+SalesmanagerIn,AT32,Salzburg,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1016.0,285,873
+SalesmanagerIn,AT33,Tirol,tendenziell,2026-2028,74% - hoher Anteil,2025.0,889.0,285,873
+SalesmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,74% - hoher Anteil,2025.0,398.0,285,873
+VerwaltungsmanagerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2086.0,285,1245
+VerwaltungsmanagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,285,1245
+VerwaltungsmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,219.0,285,1245
+VerwaltungsmanagerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,540.0,285,1245
+VerwaltungsmanagerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,75.0,285,1245
+VerwaltungsmanagerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,186.0,285,1245
+VerwaltungsmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,326.0,285,1245
+VerwaltungsmanagerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,136.0,285,1245
+VerwaltungsmanagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,183.0,285,1245
+VerwaltungsmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,116.0,285,1245
+Customer-Relationship-ManagerIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,3313.0,286,637
+Customer-Relationship-ManagerIn,AT11,Burgenland,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,39.0,286,637
+Customer-Relationship-ManagerIn,AT12,Niederösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,415.0,286,637
+Customer-Relationship-ManagerIn,AT13,Wien,gleichbleibend,2026-2028,50% - mittlerer Anteil,2025.0,1094.0,286,637
+Customer-Relationship-ManagerIn,AT21,Kärnten,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,154.0,286,637
+Customer-Relationship-ManagerIn,AT22,Steiermark,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,321.0,286,637
+Customer-Relationship-ManagerIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,477.0,286,637
+Customer-Relationship-ManagerIn,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,239.0,286,637
+Customer-Relationship-ManagerIn,AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,213.0,286,637
+Customer-Relationship-ManagerIn,AT34,Vorarlberg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,127.0,286,637
+MarketingassistentIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,3934.0,286,862
+MarketingassistentIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,61.0,286,862
+MarketingassistentIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,416.0,286,862
+MarketingassistentIn,AT13,Wien,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,957.0,286,862
+MarketingassistentIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,213.0,286,862
+MarketingassistentIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,431.0,286,862
+MarketingassistentIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,643.0,286,862
+MarketingassistentIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,385.0,286,862
+MarketingassistentIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,360.0,286,862
+MarketingassistentIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,128.0,286,862
+MarketingmanagerIn,AT,Österreich,positiv,2026-2028,50% - mittlerer Anteil,2025.0,5470.0,286,1240
+MarketingmanagerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,2025.0,64.0,286,1240
+MarketingmanagerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,464.0,286,1240
+MarketingmanagerIn,AT13,Wien,positiv,2026-2028,74% - hoher Anteil,2025.0,1885.0,286,1240
+MarketingmanagerIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,213.0,286,1240
+MarketingmanagerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,432.0,286,1240
+MarketingmanagerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,747.0,286,1240
+MarketingmanagerIn,AT32,Salzburg,positiv,2026-2028,50% - mittlerer Anteil,2025.0,614.0,286,1240
+MarketingmanagerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,381.0,286,1240
+MarketingmanagerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,169.0,286,1240
+PR-BeraterIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1645.0,286,863
+PR-BeraterIn,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,286,863
+PR-BeraterIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,122.0,286,863
+PR-BeraterIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,642.0,286,863
+PR-BeraterIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,51.0,286,863
+PR-BeraterIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,123.0,286,863
+PR-BeraterIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,181.0,286,863
+PR-BeraterIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,170.0,286,863
+PR-BeraterIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,126.0,286,863
+PR-BeraterIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,62.0,286,863
+ProduktmanagerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,3714.0,286,1195
+ProduktmanagerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,2025.0,32.0,286,1195
+ProduktmanagerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,328.0,286,1195
+ProduktmanagerIn,AT13,Wien,positiv,2026-2028,50% - mittlerer Anteil,2025.0,1098.0,286,1195
+ProduktmanagerIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,112.0,286,1195
+ProduktmanagerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,426.0,286,1195
+ProduktmanagerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,638.0,286,1195
+ProduktmanagerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,292.0,286,1195
+ProduktmanagerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,398.0,286,1195
+ProduktmanagerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,111.0,286,1195
+Social-Media-ManagerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,1535.0,286,1260
+Social-Media-ManagerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,2025.0,22.0,286,1260
+Social-Media-ManagerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,99.0,286,1260
+Social-Media-ManagerIn,AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,536.0,286,1260
+Social-Media-ManagerIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,67.0,286,1260
+Social-Media-ManagerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,121.0,286,1260
+Social-Media-ManagerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,221.0,286,1260
+Social-Media-ManagerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,199.0,286,1260
+Social-Media-ManagerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,104.0,286,1260
+Social-Media-ManagerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,45.0,286,1260
+Visual Merchandiser (m/w),AT,Österreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,435.0,286,705
+Visual Merchandiser (m/w),AT11,Burgenland,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,286,705
+Visual Merchandiser (m/w),AT12,Niederösterreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,50.0,286,705
+Visual Merchandiser (m/w),AT13,Wien,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,77.0,286,705
+Visual Merchandiser (m/w),AT21,Kärnten,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,22.0,286,705
+Visual Merchandiser (m/w),AT22,Steiermark,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,50.0,286,705
+Visual Merchandiser (m/w),AT31,Oberösterreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,84.0,286,705
+Visual Merchandiser (m/w),AT32,Salzburg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,39.0,286,705
+Visual Merchandiser (m/w),AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,70.0,286,705
+Visual Merchandiser (m/w),AT34,Vorarlberg,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,286,705
+BetriebstechnikerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2088.0,290,874
+BetriebstechnikerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,27.0,290,874
+BetriebstechnikerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,189.0,290,874
+BetriebstechnikerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,331.0,290,874
+BetriebstechnikerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,130.0,290,874
+BetriebstechnikerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,276.0,290,874
+BetriebstechnikerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,502.0,290,874
+BetriebstechnikerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,173.0,290,874
+BetriebstechnikerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,155.0,290,874
+BetriebstechnikerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,114.0,290,874
+QualitätssicherungstechnikerIn,AT,Österreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,8482.0,290,710
+QualitätssicherungstechnikerIn,AT11,Burgenland,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,103.0,290,710
+QualitätssicherungstechnikerIn,AT12,Niederösterreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1155.0,290,710
+QualitätssicherungstechnikerIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1304.0,290,710
+QualitätssicherungstechnikerIn,AT21,Kärnten,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,429.0,290,710
+QualitätssicherungstechnikerIn,AT22,Steiermark,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1302.0,290,710
+QualitätssicherungstechnikerIn,AT31,Oberösterreich,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1951.0,290,710
+QualitätssicherungstechnikerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,463.0,290,710
+QualitätssicherungstechnikerIn,AT33,Tirol,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,682.0,290,710
+QualitätssicherungstechnikerIn,AT34,Vorarlberg,tendenziell,2026-2028,74% - hoher Anteil,2025.0,380.0,290,710
+TechnischeR SachbearbeiterIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,2215.0,290,1198
+TechnischeR SachbearbeiterIn,AT11,Burgenland,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,28.0,290,1198
+TechnischeR SachbearbeiterIn,AT12,Niederösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,328.0,290,1198
+TechnischeR SachbearbeiterIn,AT13,Wien,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,333.0,290,1198
+TechnischeR SachbearbeiterIn,AT21,Kärnten,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,120.0,290,1198
+TechnischeR SachbearbeiterIn,AT22,Steiermark,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,243.0,290,1198
+TechnischeR SachbearbeiterIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,489.0,290,1198
+TechnischeR SachbearbeiterIn,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,217.0,290,1198
+TechnischeR SachbearbeiterIn,AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,129.0,290,1198
+TechnischeR SachbearbeiterIn,AT34,Vorarlberg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,130.0,290,1198
+VertriebstechnikerIn,AT,Österreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,4742.0,290,855
+VertriebstechnikerIn,AT11,Burgenland,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,77.0,290,855
+VertriebstechnikerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,531.0,290,855
+VertriebstechnikerIn,AT13,Wien,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,1170.0,290,855
+VertriebstechnikerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,177.0,290,855
+VertriebstechnikerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,468.0,290,855
+VertriebstechnikerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,808.0,290,855
+VertriebstechnikerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,425.0,290,855
+VertriebstechnikerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,386.0,290,855
+VertriebstechnikerIn,AT34,Vorarlberg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,300.0,290,855
+WirtschaftsingenieurIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2083.0,290,923
+WirtschaftsingenieurIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,22.0,290,923
+WirtschaftsingenieurIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,256.0,290,923
+WirtschaftsingenieurIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,456.0,290,923
+WirtschaftsingenieurIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,64.0,290,923
+WirtschaftsingenieurIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,251.0,290,923
+WirtschaftsingenieurIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,435.0,290,923
+WirtschaftsingenieurIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,134.0,290,923
+WirtschaftsingenieurIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,201.0,290,923
+WirtschaftsingenieurIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,86.0,290,923
+ControllerIn,AT,Österreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,6600.0,291,400
+ControllerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,63.0,291,400
+ControllerIn,AT12,Niederösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,754.0,291,400
+ControllerIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1767.0,291,400
+ControllerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,243.0,291,400
+ControllerIn,AT22,Steiermark,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,858.0,291,400
+ControllerIn,AT31,Oberösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,1268.0,291,400
+ControllerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,497.0,291,400
+ControllerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,394.0,291,400
+ControllerIn,AT34,Vorarlberg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,258.0,291,400
+KalkulantIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1437.0,291,1011
+KalkulantIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,26.0,291,1011
+KalkulantIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,208.0,291,1011
+KalkulantIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,284.0,291,1011
+KalkulantIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,61.0,291,1011
+KalkulantIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,185.0,291,1011
+KalkulantIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,359.0,291,1011
+KalkulantIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,80.0,291,1011
+KalkulantIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,57.0,291,1011
+KalkulantIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,65.0,291,1011
+PersonalberaterIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,1684.0,291,1113
+PersonalberaterIn,AT11,Burgenland,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,291,1113
+PersonalberaterIn,AT12,Niederösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,163.0,291,1113
+PersonalberaterIn,AT13,Wien,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,461.0,291,1113
+PersonalberaterIn,AT21,Kärnten,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,82.0,291,1113
+PersonalberaterIn,AT22,Steiermark,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,206.0,291,1113
+PersonalberaterIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,314.0,291,1113
+PersonalberaterIn,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,119.0,291,1113
+PersonalberaterIn,AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,119.0,291,1113
+PersonalberaterIn,AT34,Vorarlberg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,64.0,291,1113
+SteuerassistentIn,AT,Österreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,534.0,291,1244
+SteuerassistentIn,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,1244
+SteuerassistentIn,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,69.0,291,1244
+SteuerassistentIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,153.0,291,1244
+SteuerassistentIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,1244
+SteuerassistentIn,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,52.0,291,1244
+SteuerassistentIn,AT31,Oberösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,104.0,291,1244
+SteuerassistentIn,AT32,Salzburg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,40.0,291,1244
+SteuerassistentIn,AT33,Tirol,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,52.0,291,1244
+SteuerassistentIn,AT34,Vorarlberg,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,1244
+TranslatorIn,AT,Österreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,278.0,291,992
+TranslatorIn,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,992
+TranslatorIn,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,35.0,291,992
+TranslatorIn,AT13,Wien,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,81.0,291,992
+TranslatorIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,992
+TranslatorIn,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,32.0,291,992
+TranslatorIn,AT31,Oberösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,30.0,291,992
+TranslatorIn,AT32,Salzburg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,20.0,291,992
+TranslatorIn,AT33,Tirol,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,38.0,291,992
+TranslatorIn,AT34,Vorarlberg,tendenziell,2026-2028,0% - sehr geringer Anteil,,,291,992
+UnternehmensberaterIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2095.0,291,548
+UnternehmensberaterIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,31.0,291,548
+UnternehmensberaterIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,161.0,291,548
+UnternehmensberaterIn,AT13,Wien,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,870.0,291,548
+UnternehmensberaterIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,71.0,291,548
+UnternehmensberaterIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,205.0,291,548
+UnternehmensberaterIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,241.0,291,548
+UnternehmensberaterIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,176.0,291,548
+UnternehmensberaterIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,91.0,291,548
+UnternehmensberaterIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,61.0,291,548
+WirtschaftstreuhänderIn,AT,Österreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,4901.0,291,798
+WirtschaftstreuhänderIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,39.0,291,798
+WirtschaftstreuhänderIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,401.0,291,798
+WirtschaftstreuhänderIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,1878.0,291,798
+WirtschaftstreuhänderIn,AT21,Kärnten,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,346.0,291,798
+WirtschaftstreuhänderIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,490.0,291,798
+WirtschaftstreuhänderIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,686.0,291,798
+WirtschaftstreuhänderIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,396.0,291,798
+WirtschaftstreuhänderIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,208.0,291,798
+WirtschaftstreuhänderIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,166.0,291,798
+Data Scientist (m/w),AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,2207.0,295,1268
+Data Scientist (m/w),AT11,Burgenland,positiv,2026-2028,0% - sehr geringer Anteil,,,295,1268
+Data Scientist (m/w),AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,109.0,295,1268
+Data Scientist (m/w),AT13,Wien,positiv,2026-2028,50% - mittlerer Anteil,2025.0,935.0,295,1268
+Data Scientist (m/w),AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,59.0,295,1268
+Data Scientist (m/w),AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,300.0,295,1268
+Data Scientist (m/w),AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,299.0,295,1268
+Data Scientist (m/w),AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,151.0,295,1268
+Data Scientist (m/w),AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,89.0,295,1268
+Data Scientist (m/w),AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,66.0,295,1268
+Data-Warehouse-ManagerIn,AT,Österreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,505.0,295,602
+Data-Warehouse-ManagerIn,AT11,Burgenland,positiv,2026-2028,0% - sehr geringer Anteil,,,295,602
+Data-Warehouse-ManagerIn,AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,43.0,295,602
+Data-Warehouse-ManagerIn,AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,200.0,295,602
+Data-Warehouse-ManagerIn,AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,30.0,295,602
+Data-Warehouse-ManagerIn,AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,51.0,295,602
+Data-Warehouse-ManagerIn,AT31,Oberösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,72.0,295,602
+Data-Warehouse-ManagerIn,AT32,Salzburg,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,32.0,295,602
+Data-Warehouse-ManagerIn,AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,,,295,602
+Data-Warehouse-ManagerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,24.0,295,602
+DatenbankadministratorIn,AT,Österreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,1011.0,295,589
+DatenbankadministratorIn,AT11,Burgenland,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,295,589
+DatenbankadministratorIn,AT12,Niederösterreich,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,59.0,295,589
+DatenbankadministratorIn,AT13,Wien,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,435.0,295,589
+DatenbankadministratorIn,AT21,Kärnten,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,34.0,295,589
+DatenbankadministratorIn,AT22,Steiermark,gleichbleibend,2026-2028,0% - sehr geringer Anteil,2025.0,75.0,295,589
+DatenbankadministratorIn,AT31,Oberösterreich,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,124.0,295,589
+DatenbankadministratorIn,AT32,Salzburg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,51.0,295,589
+DatenbankadministratorIn,AT33,Tirol,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,105.0,295,589
+DatenbankadministratorIn,AT34,Vorarlberg,gleichbleibend,2026-2028,30% - geringer Anteil,2025.0,33.0,295,589
+DatenbankentwicklerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,1198.0,295,590
+DatenbankentwicklerIn,AT11,Burgenland,positiv,2026-2028,0% - sehr geringer Anteil,,,295,590
+DatenbankentwicklerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,102.0,295,590
+DatenbankentwicklerIn,AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,521.0,295,590
+DatenbankentwicklerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,25.0,295,590
+DatenbankentwicklerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,137.0,295,590
+DatenbankentwicklerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,205.0,295,590
+DatenbankentwicklerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,58.0,295,590
+DatenbankentwicklerIn,AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,,,295,590
+DatenbankentwicklerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,40.0,295,590
+Datensicherheitsexperte/-expertin,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,4066.0,301,593
+Datensicherheitsexperte/-expertin,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,2025.0,32.0,301,593
+Datensicherheitsexperte/-expertin,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,295.0,301,593
+Datensicherheitsexperte/-expertin,AT13,Wien,positiv,2026-2028,74% - hoher Anteil,2025.0,1663.0,301,593
+Datensicherheitsexperte/-expertin,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,139.0,301,593
+Datensicherheitsexperte/-expertin,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,453.0,301,593
+Datensicherheitsexperte/-expertin,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,682.0,301,593
+Datensicherheitsexperte/-expertin,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,220.0,301,593
+Datensicherheitsexperte/-expertin,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,211.0,301,593
+Datensicherheitsexperte/-expertin,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,102.0,301,593
+IT-ProjektmanagerIn,AT,Österreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,5823.0,301,635
+IT-ProjektmanagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,39.0,301,635
+IT-ProjektmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,471.0,301,635
+IT-ProjektmanagerIn,AT13,Wien,tendenziell,2026-2028,74% - hoher Anteil,2025.0,2077.0,301,635
+IT-ProjektmanagerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,178.0,301,635
+IT-ProjektmanagerIn,AT22,Steiermark,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,618.0,301,635
+IT-ProjektmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,1017.0,301,635
+IT-ProjektmanagerIn,AT32,Salzburg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,453.0,301,635
+IT-ProjektmanagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,337.0,301,635
+IT-ProjektmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,257.0,301,635
+IT-QualitätsmanagerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,2438.0,301,619
+IT-QualitätsmanagerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,21.0,301,619
+IT-QualitätsmanagerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,158.0,301,619
+IT-QualitätsmanagerIn,AT13,Wien,tendenziell,2026-2028,50% - mittlerer Anteil,2025.0,906.0,301,619
+IT-QualitätsmanagerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,84.0,301,619
+IT-QualitätsmanagerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,349.0,301,619
+IT-QualitätsmanagerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,407.0,301,619
+IT-QualitätsmanagerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,149.0,301,619
+IT-QualitätsmanagerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,122.0,301,619
+IT-QualitätsmanagerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,69.0,301,619
+Requirements Engineer (m/w),AT,Österreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,564.0,301,1289
+Requirements Engineer (m/w),AT11,Burgenland,positiv,2026-2028,0% - sehr geringer Anteil,,,301,1289
+Requirements Engineer (m/w),AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,66.0,301,1289
+Requirements Engineer (m/w),AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,233.0,301,1289
+Requirements Engineer (m/w),AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,27.0,301,1289
+Requirements Engineer (m/w),AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,72.0,301,1289
+Requirements Engineer (m/w),AT31,Oberösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,59.0,301,1289
+Requirements Engineer (m/w),AT32,Salzburg,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,31.0,301,1289
+Requirements Engineer (m/w),AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,42.0,301,1289
+Requirements Engineer (m/w),AT34,Vorarlberg,positiv,2026-2028,0% - sehr geringer Anteil,,,301,1289
+SystemanalytikerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,731.0,301,388
+SystemanalytikerIn,AT11,Burgenland,tendenziell,2026-2028,0% - sehr geringer Anteil,,,301,388
+SystemanalytikerIn,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,46.0,301,388
+SystemanalytikerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,308.0,301,388
+SystemanalytikerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,34.0,301,388
+SystemanalytikerIn,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,65.0,301,388
+SystemanalytikerIn,AT31,Oberösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,98.0,301,388
+SystemanalytikerIn,AT32,Salzburg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,39.0,301,388
+SystemanalytikerIn,AT33,Tirol,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,35.0,301,388
+SystemanalytikerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,41.0,301,388
+WirtschaftsinformatikerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,1307.0,301,760
+WirtschaftsinformatikerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,,,301,760
+WirtschaftsinformatikerIn,AT12,Niederösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,87.0,301,760
+WirtschaftsinformatikerIn,AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,577.0,301,760
+WirtschaftsinformatikerIn,AT21,Kärnten,positiv,2026-2028,30% - geringer Anteil,2025.0,35.0,301,760
+WirtschaftsinformatikerIn,AT22,Steiermark,positiv,2026-2028,30% - geringer Anteil,2025.0,91.0,301,760
+WirtschaftsinformatikerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,150.0,301,760
+WirtschaftsinformatikerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,101.0,301,760
+WirtschaftsinformatikerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,62.0,301,760
+WirtschaftsinformatikerIn,AT34,Vorarlberg,positiv,2026-2028,30% - geringer Anteil,2025.0,75.0,301,760
+Game Producer (m/w),AT,Österreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,332.0,303,1307
+Game Producer (m/w),AT11,Burgenland,gleichbleibend,2026-2028,0% - sehr geringer Anteil,,,303,1307
+Game Producer (m/w),AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,,,303,1307
+Game Producer (m/w),AT13,Wien,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,85.0,303,1307
+Game Producer (m/w),AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,32.0,303,1307
+Game Producer (m/w),AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,57.0,303,1307
+Game Producer (m/w),AT31,Oberösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,62.0,303,1307
+Game Producer (m/w),AT32,Salzburg,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,28.0,303,1307
+Game Producer (m/w),AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,,,303,1307
+Game Producer (m/w),AT34,Vorarlberg,positiv,2026-2028,0% - sehr geringer Anteil,,,303,1307
+InformatikerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1518.0,303,425
+InformatikerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,303,425
+InformatikerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,154.0,303,425
+InformatikerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,419.0,303,425
+InformatikerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,77.0,303,425
+InformatikerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,207.0,303,425
+InformatikerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,265.0,303,425
+InformatikerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,113.0,303,425
+InformatikerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,102.0,303,425
+InformatikerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,60.0,303,425
+SoftwareentwicklerIn,AT,Österreich,positiv,2026-2028,95% - sehr hoher Anteil,2025.0,20948.0,303,622
+SoftwareentwicklerIn,AT11,Burgenland,positiv,2026-2028,50% - mittlerer Anteil,2025.0,126.0,303,622
+SoftwareentwicklerIn,AT12,Niederösterreich,positiv,2026-2028,74% - hoher Anteil,2025.0,1226.0,303,622
+SoftwareentwicklerIn,AT13,Wien,positiv,2026-2028,95% - sehr hoher Anteil,2025.0,7413.0,303,622
+SoftwareentwicklerIn,AT21,Kärnten,positiv,2026-2028,74% - hoher Anteil,2025.0,835.0,303,622
+SoftwareentwicklerIn,AT22,Steiermark,positiv,2026-2028,95% - sehr hoher Anteil,2025.0,3077.0,303,622
+SoftwareentwicklerIn,AT31,Oberösterreich,positiv,2026-2028,95% - sehr hoher Anteil,2025.0,3795.0,303,622
+SoftwareentwicklerIn,AT32,Salzburg,positiv,2026-2028,74% - hoher Anteil,2025.0,1326.0,303,622
+SoftwareentwicklerIn,AT33,Tirol,positiv,2026-2028,74% - hoher Anteil,2025.0,999.0,303,622
+SoftwareentwicklerIn,AT34,Vorarlberg,positiv,2026-2028,95% - sehr hoher Anteil,2025.0,781.0,303,622
+WebmasterIn,AT,Österreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,121.0,303,686
+WebmasterIn,AT11,Burgenland,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT13,Wien,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,30.0,303,686
+WebmasterIn,AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,28.0,303,686
+WebmasterIn,AT31,Oberösterreich,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT32,Salzburg,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT33,Tirol,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+WebmasterIn,AT34,Vorarlberg,positiv,2026-2028,0% - sehr geringer Anteil,,,303,686
+BaumarktverkäuferIn,AT,Österreich,negativ,2026-2028,30% - geringer Anteil,2025.0,1355.0,308,853
+BaumarktverkäuferIn,AT11,Burgenland,negativ,2026-2028,30% - geringer Anteil,2025.0,36.0,308,853
+BaumarktverkäuferIn,AT12,Niederösterreich,negativ,2026-2028,30% - geringer Anteil,2025.0,374.0,308,853
+BaumarktverkäuferIn,AT13,Wien,negativ,2026-2028,0% - sehr geringer Anteil,2025.0,82.0,308,853
+BaumarktverkäuferIn,AT21,Kärnten,negativ,2026-2028,30% - geringer Anteil,2025.0,80.0,308,853
+BaumarktverkäuferIn,AT22,Steiermark,negativ,2026-2028,30% - geringer Anteil,2025.0,227.0,308,853
+BaumarktverkäuferIn,AT31,Oberösterreich,negativ,2026-2028,30% - geringer Anteil,2025.0,218.0,308,853
+BaumarktverkäuferIn,AT32,Salzburg,negativ,2026-2028,30% - geringer Anteil,2025.0,107.0,308,853
+BaumarktverkäuferIn,AT33,Tirol,negativ,2026-2028,30% - geringer Anteil,2025.0,133.0,308,853
+BaumarktverkäuferIn,AT34,Vorarlberg,negativ,2026-2028,30% - geringer Anteil,2025.0,49.0,308,853
+E-Commerce-ManagerIn,AT,Österreich,positiv,2026-2028,30% - geringer Anteil,2025.0,722.0,308,1282
+E-Commerce-ManagerIn,AT11,Burgenland,positiv,2026-2028,30% - geringer Anteil,,,308,1282
+E-Commerce-ManagerIn,AT12,Niederösterreich,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,69.0,308,1282
+E-Commerce-ManagerIn,AT13,Wien,positiv,2026-2028,30% - geringer Anteil,2025.0,181.0,308,1282
+E-Commerce-ManagerIn,AT21,Kärnten,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,27.0,308,1282
+E-Commerce-ManagerIn,AT22,Steiermark,positiv,2026-2028,0% - sehr geringer Anteil,2025.0,62.0,308,1282
+E-Commerce-ManagerIn,AT31,Oberösterreich,positiv,2026-2028,30% - geringer Anteil,2025.0,168.0,308,1282
+E-Commerce-ManagerIn,AT32,Salzburg,positiv,2026-2028,30% - geringer Anteil,2025.0,60.0,308,1282
+E-Commerce-ManagerIn,AT33,Tirol,positiv,2026-2028,30% - geringer Anteil,2025.0,62.0,308,1282
+E-Commerce-ManagerIn,AT34,Vorarlberg,positiv,2026-2028,0% - sehr geringer Anteil,,,308,1282
+WebdesignerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,737.0,328,1213
+WebdesignerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,328,1213
+WebdesignerIn,AT12,Niederösterreich,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,35.0,328,1213
+WebdesignerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,248.0,328,1213
+WebdesignerIn,AT21,Kärnten,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,21.0,328,1213
+WebdesignerIn,AT22,Steiermark,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,75.0,328,1213
+WebdesignerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,133.0,328,1213
+WebdesignerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,64.0,328,1213
+WebdesignerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,59.0,328,1213
+WebdesignerIn,AT34,Vorarlberg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,22.0,328,1213
+WebentwicklerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1587.0,328,675
+WebentwicklerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,,,328,675
+WebentwicklerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,93.0,328,675
+WebentwicklerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,602.0,328,675
+WebentwicklerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,59.0,328,675
+WebentwicklerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,195.0,328,675
+WebentwicklerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,287.0,328,675
+WebentwicklerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,102.0,328,675
+WebentwicklerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,67.0,328,675
+WebentwicklerIn,AT34,Vorarlberg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,59.0,328,675
+BiomedizinischeR AnalytikerIn,AT,Österreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,1151.0,334,226
+BiomedizinischeR AnalytikerIn,AT11,Burgenland,tendenziell,2026-2028,30% - geringer Anteil,2025.0,25.0,334,226
+BiomedizinischeR AnalytikerIn,AT12,Niederösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,137.0,334,226
+BiomedizinischeR AnalytikerIn,AT13,Wien,tendenziell,2026-2028,30% - geringer Anteil,2025.0,340.0,334,226
+BiomedizinischeR AnalytikerIn,AT21,Kärnten,tendenziell,2026-2028,30% - geringer Anteil,2025.0,47.0,334,226
+BiomedizinischeR AnalytikerIn,AT22,Steiermark,tendenziell,2026-2028,30% - geringer Anteil,2025.0,100.0,334,226
+BiomedizinischeR AnalytikerIn,AT31,Oberösterreich,tendenziell,2026-2028,30% - geringer Anteil,2025.0,182.0,334,226
+BiomedizinischeR AnalytikerIn,AT32,Salzburg,tendenziell,2026-2028,30% - geringer Anteil,2025.0,73.0,334,226
+BiomedizinischeR AnalytikerIn,AT33,Tirol,tendenziell,2026-2028,30% - geringer Anteil,2025.0,92.0,334,226
+BiomedizinischeR AnalytikerIn,AT34,Vorarlberg,tendenziell,2026-2028,0% - sehr geringer Anteil,2025.0,21.0,334,226

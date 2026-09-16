@@ -1,0 +1,81 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Communication,58,85,0.682,0.577,0.772
+bi,Self-organisation,57,85,0.671,0.565,0.761
+bi,Analytical Thinking,52,85,0.612,0.505,0.708
+bi,Teamwork,51,85,0.6,0.494,0.698
+bi,Stakeholder Management,49,85,0.576,0.47,0.676
+bi,Curiosity/Learning,48,85,0.565,0.459,0.665
+bi,Leadership,23,85,0.271,0.188,0.373
+bi,Customer Orientation,10,85,0.118,0.065,0.203
+bi,Attention to Detail,9,85,0.106,0.057,0.189
+bi,Business Acumen,5,85,0.059,0.025,0.13
+bi,Flexibility/Resilience,3,85,0.035,0.012,0.099
+business_analysis,Communication,92,120,0.767,0.683,0.833
+business_analysis,Stakeholder Management,90,120,0.75,0.666,0.819
+business_analysis,Self-organisation,87,120,0.725,0.639,0.797
+business_analysis,Teamwork,75,120,0.625,0.536,0.706
+business_analysis,Analytical Thinking,71,120,0.592,0.502,0.675
+business_analysis,Curiosity/Learning,55,120,0.458,0.372,0.547
+business_analysis,Customer Orientation,14,120,0.117,0.071,0.186
+business_analysis,Leadership,12,120,0.1,0.058,0.167
+business_analysis,Attention to Detail,7,120,0.058,0.029,0.116
+business_analysis,Flexibility/Resilience,4,120,0.033,0.013,0.083
+business_analysis,Business Acumen,4,120,0.033,0.013,0.083
+data_analytics,Analytical Thinking,88,107,0.822,0.739,0.883
+data_analytics,Communication,80,107,0.748,0.658,0.82
+data_analytics,Self-organisation,75,107,0.701,0.608,0.779
+data_analytics,Teamwork,73,107,0.682,0.589,0.763
+data_analytics,Stakeholder Management,54,107,0.505,0.411,0.598
+data_analytics,Curiosity/Learning,39,107,0.364,0.279,0.459
+data_analytics,Attention to Detail,21,107,0.196,0.132,0.281
+data_analytics,Leadership,14,107,0.131,0.08,0.208
+data_analytics,Customer Orientation,10,107,0.093,0.052,0.164
+data_analytics,Business Acumen,8,107,0.075,0.038,0.141
+data_analytics,Flexibility/Resilience,8,107,0.075,0.038,0.141
+data_engineering,Teamwork,110,160,0.688,0.612,0.754
+data_engineering,Self-organisation,99,160,0.619,0.542,0.69
+data_engineering,Curiosity/Learning,83,160,0.519,0.442,0.595
+data_engineering,Stakeholder Management,82,160,0.512,0.436,0.589
+data_engineering,Communication,77,160,0.481,0.405,0.558
+data_engineering,Analytical Thinking,60,160,0.375,0.304,0.452
+data_engineering,Flexibility/Resilience,14,160,0.087,0.053,0.142
+data_engineering,Leadership,13,160,0.081,0.048,0.134
+data_engineering,Attention to Detail,6,160,0.037,0.017,0.079
+data_engineering,Customer Orientation,6,160,0.037,0.017,0.079
+data_engineering,Business Acumen,4,160,0.025,0.01,0.063
+data_governance,Teamwork,50,65,0.769,0.654,0.855
+data_governance,Self-organisation,48,65,0.738,0.62,0.83
+data_governance,Communication,44,65,0.677,0.556,0.778
+data_governance,Stakeholder Management,37,65,0.569,0.448,0.682
+data_governance,Analytical Thinking,34,65,0.523,0.404,0.64
+data_governance,Curiosity/Learning,28,65,0.431,0.318,0.552
+data_governance,Attention to Detail,15,65,0.231,0.145,0.346
+data_governance,Leadership,8,65,0.123,0.064,0.225
+data_governance,Customer Orientation,7,65,0.108,0.053,0.206
+data_governance,Flexibility/Resilience,4,65,0.062,0.024,0.148
+data_governance,Business Acumen,3,65,0.046,0.016,0.127
+data_science,Teamwork,103,157,0.656,0.579,0.726
+data_science,Communication,90,157,0.573,0.495,0.648
+data_science,Analytical Thinking,76,157,0.484,0.407,0.562
+data_science,Self-organisation,76,157,0.484,0.407,0.562
+data_science,Stakeholder Management,67,157,0.427,0.352,0.505
+data_science,Curiosity/Learning,59,157,0.376,0.304,0.454
+data_science,Leadership,28,157,0.178,0.126,0.246
+data_science,Attention to Detail,7,157,0.045,0.022,0.089
+data_science,Customer Orientation,6,157,0.038,0.018,0.081
+data_science,Flexibility/Resilience,5,157,0.032,0.014,0.072
+data_science,Business Acumen,4,157,0.025,0.01,0.064
+marketing_analytics,Curiosity/Learning,16,24,0.667,0.467,0.82
+marketing_analytics,Self-organisation,14,24,0.583,0.388,0.755
+marketing_analytics,Analytical Thinking,14,24,0.583,0.388,0.755
+marketing_analytics,Stakeholder Management,13,24,0.542,0.351,0.721
+marketing_analytics,Teamwork,12,24,0.5,0.314,0.686
+marketing_analytics,Communication,11,24,0.458,0.279,0.649
+marketing_analytics,Leadership,7,24,0.292,0.149,0.492
+marketing_analytics,Business Acumen,5,24,0.208,0.092,0.405
+marketing_analytics,Flexibility/Resilience,4,24,0.167,0.067,0.359
+marketing_analytics,Attention to Detail,3,24,0.125,0.043,0.31
+marketing_analytics,Customer Orientation,2,24,0.083,0.023,0.258
+product_analytics,Communication,1,1,1.0,0.207,1.0
+product_analytics,Analytical Thinking,1,1,1.0,0.207,1.0
+product_analytics,Leadership,1,1,1.0,0.207,1.0

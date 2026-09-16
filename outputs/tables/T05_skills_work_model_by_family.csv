@@ -1,0 +1,38 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Home office / remote mention,58,85,0.682,0.577,0.772
+bi,Full-time,55,85,0.647,0.541,0.74
+bi,Flexible hours,49,85,0.576,0.47,0.676
+bi,Part-time,8,85,0.094,0.048,0.175
+bi,Internship/Student,7,85,0.082,0.04,0.16
+business_analysis,Home office / remote mention,78,120,0.65,0.561,0.729
+business_analysis,Full-time,71,120,0.592,0.502,0.675
+business_analysis,Flexible hours,68,120,0.567,0.477,0.652
+business_analysis,Part-time,10,120,0.083,0.046,0.147
+business_analysis,Internship/Student,5,120,0.042,0.018,0.094
+data_analytics,Full-time,75,107,0.701,0.608,0.779
+data_analytics,Home office / remote mention,61,107,0.57,0.475,0.66
+data_analytics,Flexible hours,55,107,0.514,0.42,0.607
+data_analytics,Internship/Student,18,107,0.168,0.109,0.25
+data_analytics,Part-time,18,107,0.168,0.109,0.25
+data_engineering,Home office / remote mention,124,160,0.775,0.704,0.833
+data_engineering,Full-time,114,160,0.713,0.638,0.777
+data_engineering,Flexible hours,99,160,0.619,0.542,0.69
+data_engineering,Internship/Student,10,160,0.062,0.034,0.111
+data_engineering,Part-time,2,160,0.013,0.003,0.044
+data_governance,Full-time,49,65,0.754,0.637,0.842
+data_governance,Flexible hours,40,65,0.615,0.494,0.724
+data_governance,Home office / remote mention,30,65,0.462,0.346,0.581
+data_governance,Part-time,8,65,0.123,0.064,0.225
+data_governance,Internship/Student,7,65,0.108,0.053,0.206
+data_science,Home office / remote mention,98,157,0.624,0.546,0.696
+data_science,Full-time,90,157,0.573,0.495,0.648
+data_science,Flexible hours,78,157,0.497,0.42,0.574
+data_science,Internship/Student,11,157,0.07,0.04,0.121
+data_science,Part-time,6,157,0.038,0.018,0.081
+marketing_analytics,Home office / remote mention,21,24,0.875,0.69,0.957
+marketing_analytics,Full-time,19,24,0.792,0.595,0.908
+marketing_analytics,Flexible hours,16,24,0.667,0.467,0.82
+marketing_analytics,Part-time,6,24,0.25,0.12,0.449
+marketing_analytics,Internship/Student,4,24,0.167,0.067,0.359
+product_analytics,Home office / remote mention,1,1,1.0,0.207,1.0
+product_analytics,Flexible hours,1,1,1.0,0.207,1.0

@@ -1,0 +1,22 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,PyTorch,29,661,0.044,0.031,0.062
+Rest of Austria,scikit-learn,24,661,0.036,0.025,0.053
+Rest of Austria,LangChain/LLM frameworks,23,661,0.035,0.023,0.052
+Rest of Austria,pandas,20,661,0.03,0.02,0.046
+Rest of Austria,Jupyter,20,661,0.03,0.02,0.046
+Rest of Austria,TensorFlow/Keras,19,661,0.029,0.018,0.044
+Rest of Austria,NumPy,11,661,0.017,0.009,0.03
+Rest of Austria,Hugging Face/Transformers,5,661,0.008,0.003,0.018
+Rest of Austria,matplotlib/seaborn,3,661,0.005,0.002,0.013
+Rest of Austria,Plotly/Dash,3,661,0.005,0.002,0.013
+Rest of Austria,FastAPI/Flask,3,661,0.005,0.002,0.013
+Rest of Austria,XGBoost/LightGBM,2,661,0.003,0.001,0.011
+Rest of Austria,Streamlit,1,661,0.002,0.0,0.009
+Rest of Austria,statsmodels,1,661,0.002,0.0,0.009
+Styria,Jupyter,9,58,0.155,0.084,0.269
+Styria,PyTorch,3,58,0.052,0.018,0.141
+Styria,TensorFlow/Keras,3,58,0.052,0.018,0.141
+Styria,Hugging Face/Transformers,1,58,0.017,0.003,0.091
+Styria,pandas,1,58,0.017,0.003,0.091
+Styria,scikit-learn,1,58,0.017,0.003,0.091
+Styria,LangChain/LLM frameworks,1,58,0.017,0.003,0.091

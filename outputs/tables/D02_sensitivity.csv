@@ -1,0 +1,8 @@
+role_family,score_default,rank_default,score_geography_first,rank_geography_first,score_language_first,rank_language_first,score_equal,rank_equal
+data_analytics,0.595,3,0.549,3,0.529,3,0.514,3
+bi,0.327,7,0.287,7,0.259,7,0.347,7
+marketing_analytics,0.446,4,0.355,4,0.478,4,0.505,4
+business_analysis,0.413,5,0.355,5,0.413,6,0.443,5
+data_science,0.612,2,0.651,2,0.73,1,0.613,2
+data_engineering,0.635,1,0.735,1,0.655,2,0.649,1
+data_governance,0.403,6,0.352,6,0.419,5,0.38,6

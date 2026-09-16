@@ -1,0 +1,10 @@
+role_family,Kärnten,Niederösterreich,Oberösterreich,Salzburg,Steiermark,Tirol,Vorarlberg,Wien,unspecified,All
+bi,5,7,18,4,4,0,8,34,5,85
+business_analysis,1,10,13,2,4,1,12,74,3,120
+data_analytics,5,4,21,8,11,7,7,41,3,107
+data_engineering,3,8,32,6,17,7,7,78,2,160
+data_governance,0,6,10,6,5,9,5,22,2,65
+data_science,7,9,25,9,13,6,3,80,6,158
+marketing_analytics,1,0,3,2,0,0,4,13,1,24
+product_analytics,0,0,0,0,0,0,0,1,0,1
+All,22,44,122,37,54,30,46,343,22,720

@@ -1,0 +1,23 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Cloud (generic),22,85,0.259,0.178,0.361
+bi,Azure,12,85,0.141,0.083,0.231
+bi,AWS,1,85,0.012,0.002,0.064
+business_analysis,Cloud (generic),7,120,0.058,0.029,0.116
+business_analysis,Azure,2,120,0.017,0.005,0.059
+business_analysis,GCP,1,120,0.008,0.001,0.046
+business_analysis,AWS,1,120,0.008,0.001,0.046
+data_analytics,Cloud (generic),18,107,0.168,0.109,0.25
+data_analytics,Azure,8,107,0.075,0.038,0.141
+data_analytics,GCP,3,107,0.028,0.01,0.079
+data_analytics,AWS,2,107,0.019,0.005,0.066
+data_engineering,Cloud (generic),72,160,0.45,0.375,0.527
+data_engineering,Azure,61,160,0.381,0.31,0.458
+data_engineering,AWS,21,160,0.131,0.087,0.192
+data_engineering,GCP,19,160,0.119,0.077,0.178
+data_governance,Cloud (generic),5,65,0.077,0.033,0.168
+data_governance,Azure,3,65,0.046,0.016,0.127
+data_science,Cloud (generic),75,157,0.478,0.401,0.555
+data_science,Azure,53,157,0.338,0.268,0.415
+data_science,AWS,37,157,0.236,0.176,0.308
+data_science,GCP,18,157,0.115,0.074,0.174
+marketing_analytics,Cloud (generic),7,24,0.292,0.149,0.492

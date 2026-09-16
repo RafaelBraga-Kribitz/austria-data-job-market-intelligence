@@ -1,0 +1,60 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Data Visualization,73,85,0.859,0.769,0.917
+bi,Statistics (general),9,85,0.106,0.057,0.189
+bi,Mathematics,5,85,0.059,0.025,0.13
+bi,Exploratory Analysis,2,85,0.024,0.006,0.082
+bi,Sampling/Survey,1,85,0.012,0.002,0.064
+bi,Segmentation/Clustering,1,85,0.012,0.002,0.064
+bi,Classification,1,85,0.012,0.002,0.064
+business_analysis,Data Visualization,20,120,0.167,0.111,0.243
+business_analysis,Mathematics,5,120,0.042,0.018,0.094
+business_analysis,Statistics (general),4,120,0.033,0.013,0.083
+business_analysis,Exploratory Analysis,4,120,0.033,0.013,0.083
+business_analysis,Segmentation/Clustering,1,120,0.008,0.001,0.046
+business_analysis,Sampling/Survey,1,120,0.008,0.001,0.046
+data_analytics,Data Visualization,69,107,0.645,0.551,0.729
+data_analytics,Statistics (general),20,107,0.187,0.124,0.271
+data_analytics,Mathematics,17,107,0.159,0.102,0.24
+data_analytics,Exploratory Analysis,13,107,0.121,0.072,0.197
+data_analytics,Segmentation/Clustering,11,107,0.103,0.058,0.175
+data_analytics,A/B Testing / Experimentation,2,107,0.019,0.005,0.066
+data_analytics,Causal Inference,2,107,0.019,0.005,0.066
+data_analytics,Sampling/Survey,1,107,0.009,0.002,0.051
+data_engineering,Data Visualization,52,160,0.325,0.257,0.401
+data_engineering,Segmentation/Clustering,10,160,0.062,0.034,0.111
+data_engineering,Mathematics,5,160,0.031,0.013,0.071
+data_engineering,Statistics (general),4,160,0.025,0.01,0.063
+data_engineering,Exploratory Analysis,3,160,0.019,0.006,0.054
+data_engineering,A/B Testing / Experimentation,2,160,0.013,0.003,0.044
+data_engineering,Data Mining,1,160,0.006,0.001,0.035
+data_engineering,Regression,1,160,0.006,0.001,0.035
+data_engineering,Sampling/Survey,1,160,0.006,0.001,0.035
+data_governance,Data Visualization,12,65,0.185,0.109,0.296
+data_governance,Statistics (general),8,65,0.123,0.064,0.225
+data_governance,Mathematics,6,65,0.092,0.043,0.187
+data_governance,Classification,3,65,0.046,0.016,0.127
+data_governance,Sampling/Survey,1,65,0.015,0.003,0.082
+data_governance,Regression,1,65,0.015,0.003,0.082
+data_science,Statistics (general),46,157,0.293,0.227,0.368
+data_science,Mathematics,35,157,0.223,0.165,0.294
+data_science,Data Visualization,35,157,0.223,0.165,0.294
+data_science,A/B Testing / Experimentation,13,157,0.083,0.049,0.137
+data_science,Segmentation/Clustering,11,157,0.07,0.04,0.121
+data_science,Exploratory Analysis,8,157,0.051,0.026,0.097
+data_science,Classification,5,157,0.032,0.014,0.072
+data_science,Regression,4,157,0.025,0.01,0.064
+data_science,Bayesian,3,157,0.019,0.007,0.055
+data_science,Hypothesis Testing,3,157,0.019,0.007,0.055
+data_science,Causal Inference,3,157,0.019,0.007,0.055
+data_science,Data Mining,1,157,0.006,0.001,0.035
+data_science,Sampling/Survey,1,157,0.006,0.001,0.035
+marketing_analytics,Data Visualization,12,24,0.5,0.314,0.686
+marketing_analytics,Statistics (general),6,24,0.25,0.12,0.449
+marketing_analytics,Segmentation/Clustering,5,24,0.208,0.092,0.405
+marketing_analytics,Mathematics,4,24,0.167,0.067,0.359
+marketing_analytics,A/B Testing / Experimentation,4,24,0.167,0.067,0.359
+product_analytics,Statistics (general),1,1,1.0,0.207,1.0
+product_analytics,Hypothesis Testing,1,1,1.0,0.207,1.0
+product_analytics,A/B Testing / Experimentation,1,1,1.0,0.207,1.0
+product_analytics,Segmentation/Clustering,1,1,1.0,0.207,1.0
+product_analytics,Data Visualization,1,1,1.0,0.207,1.0

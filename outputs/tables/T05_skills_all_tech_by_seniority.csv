@@ -1,0 +1,380 @@
+seniority,skill,count,n,share,ci_low,ci_high
+intern_student,Data Visualization,24,42,0.571,0.422,0.709
+intern_student,Excel,22,42,0.524,0.377,0.666
+intern_student,SQL,20,42,0.476,0.334,0.623
+intern_student,Power BI,17,42,0.405,0.27,0.555
+intern_student,AI (generic),15,42,0.357,0.23,0.508
+intern_student,Python,13,42,0.31,0.191,0.46
+intern_student,Data Governance/Quality,11,42,0.262,0.153,0.411
+intern_student,Statistics (general),9,42,0.214,0.117,0.359
+intern_student,Mathematics,7,42,0.167,0.083,0.306
+intern_student,Databricks,6,42,0.143,0.067,0.278
+intern_student,Generative AI / LLM,6,42,0.143,0.067,0.278
+intern_student,R,5,42,0.119,0.052,0.25
+intern_student,Machine Learning,5,42,0.119,0.052,0.25
+intern_student,Git,4,42,0.095,0.038,0.221
+intern_student,Exploratory Analysis,4,42,0.095,0.038,0.221
+intern_student,Data Modeling,4,42,0.095,0.038,0.221
+intern_student,Segmentation/Clustering,4,42,0.095,0.038,0.221
+intern_student,SAP HANA,3,42,0.071,0.025,0.19
+intern_student,Qlik,3,42,0.071,0.025,0.19
+intern_student,SAP BW/BO,3,42,0.071,0.025,0.19
+intern_student,Spark,3,42,0.071,0.025,0.19
+intern_student,dbt,3,42,0.071,0.025,0.19
+intern_student,Cloud (generic),3,42,0.071,0.025,0.19
+intern_student,AWS,3,42,0.071,0.025,0.19
+intern_student,Tableau,3,42,0.071,0.025,0.19
+intern_student,Snowflake,3,42,0.071,0.025,0.19
+intern_student,REST APIs,2,42,0.048,0.013,0.158
+intern_student,ETL/ELT,2,42,0.048,0.013,0.158
+intern_student,Google Analytics,2,42,0.048,0.013,0.158
+intern_student,MATLAB,2,42,0.048,0.013,0.158
+intern_student,CI/CD,2,42,0.048,0.013,0.158
+intern_student,scikit-learn,2,42,0.048,0.013,0.158
+intern_student,pandas,2,42,0.048,0.013,0.158
+intern_student,NumPy,2,42,0.048,0.013,0.158
+intern_student,MLOps,2,42,0.048,0.013,0.158
+intern_student,A/B Testing / Experimentation,2,42,0.048,0.013,0.158
+intern_student,Azure,2,42,0.048,0.013,0.158
+intern_student,Java,1,42,0.024,0.004,0.123
+intern_student,Kubernetes,1,42,0.024,0.004,0.123
+intern_student,Kafka,1,42,0.024,0.004,0.123
+intern_student,Oracle,1,42,0.024,0.004,0.123
+intern_student,MySQL/MariaDB,1,42,0.024,0.004,0.123
+intern_student,Streaming,1,42,0.024,0.004,0.123
+intern_student,PostgreSQL,1,42,0.024,0.004,0.123
+intern_student,VBA,1,42,0.024,0.004,0.123
+intern_student,LangChain/LLM frameworks,1,42,0.024,0.004,0.123
+intern_student,Fivetran/Airbyte,1,42,0.024,0.004,0.123
+intern_student,GCP,1,42,0.024,0.004,0.123
+intern_student,BigQuery,1,42,0.024,0.004,0.123
+intern_student,Hugging Face/Transformers,1,42,0.024,0.004,0.123
+intern_student,TensorFlow/Keras,1,42,0.024,0.004,0.123
+intern_student,PyTorch,1,42,0.024,0.004,0.123
+intern_student,Data Warehouse (generic),1,42,0.024,0.004,0.123
+intern_student,DAX/M,1,42,0.024,0.004,0.123
+intern_student,Microsoft Fabric,1,42,0.024,0.004,0.123
+intern_student,Predictive Analytics,1,42,0.024,0.004,0.123
+intern_student,Forecasting,1,42,0.024,0.004,0.123
+intern_student,SQL Server,1,42,0.024,0.004,0.123
+intern_student,Regression,1,42,0.024,0.004,0.123
+intern_student,SAS,1,42,0.024,0.004,0.123
+lead_head,AI (generic),44,97,0.454,0.358,0.553
+lead_head,Cloud (generic),33,97,0.34,0.254,0.439
+lead_head,Data Governance/Quality,33,97,0.34,0.254,0.439
+lead_head,SQL,29,97,0.299,0.217,0.396
+lead_head,Azure,26,97,0.268,0.19,0.364
+lead_head,Python,25,97,0.258,0.181,0.353
+lead_head,Generative AI / LLM,24,97,0.247,0.172,0.342
+lead_head,Data Visualization,20,97,0.206,0.138,0.297
+lead_head,Data Modeling,18,97,0.186,0.121,0.274
+lead_head,Statistics (general),16,97,0.165,0.104,0.251
+lead_head,Databricks,15,97,0.155,0.096,0.24
+lead_head,Machine Learning,14,97,0.144,0.088,0.228
+lead_head,AWS,14,97,0.144,0.088,0.228
+lead_head,ETL/ELT,13,97,0.134,0.08,0.216
+lead_head,Data Warehouse (generic),12,97,0.124,0.072,0.204
+lead_head,CI/CD,11,97,0.113,0.065,0.192
+lead_head,Power BI,10,97,0.103,0.057,0.179
+lead_head,Data Lake/Lakehouse,9,97,0.093,0.05,0.167
+lead_head,Excel,9,97,0.093,0.05,0.167
+lead_head,Git,9,97,0.093,0.05,0.167
+lead_head,REST APIs,8,97,0.082,0.042,0.154
+lead_head,Mathematics,8,97,0.082,0.042,0.154
+lead_head,Spark,7,97,0.072,0.035,0.142
+lead_head,Docker,7,97,0.072,0.035,0.142
+lead_head,Kubernetes,7,97,0.072,0.035,0.142
+lead_head,JavaScript,7,97,0.072,0.035,0.142
+lead_head,Snowflake,6,97,0.062,0.029,0.128
+lead_head,Microsoft Fabric,6,97,0.062,0.029,0.128
+lead_head,GCP,6,97,0.062,0.029,0.128
+lead_head,Java,6,97,0.062,0.029,0.128
+lead_head,C#,5,97,0.052,0.022,0.115
+lead_head,Segmentation/Clustering,5,97,0.052,0.022,0.115
+lead_head,Jupyter,5,97,0.052,0.022,0.115
+lead_head,Streaming,5,97,0.052,0.022,0.115
+lead_head,Azure Data Factory,4,97,0.041,0.016,0.101
+lead_head,Azure Synapse,4,97,0.041,0.016,0.101
+lead_head,Scala,4,97,0.041,0.016,0.101
+lead_head,LangChain/LLM frameworks,4,97,0.041,0.016,0.101
+lead_head,R,4,97,0.041,0.016,0.101
+lead_head,PostgreSQL,3,97,0.031,0.011,0.087
+lead_head,PyTorch,3,97,0.031,0.011,0.087
+lead_head,Oracle,3,97,0.031,0.011,0.087
+lead_head,NLP,3,97,0.031,0.011,0.087
+lead_head,MLOps,3,97,0.031,0.011,0.087
+lead_head,DAX/M,3,97,0.031,0.011,0.087
+lead_head,A/B Testing / Experimentation,3,97,0.031,0.011,0.087
+lead_head,Deep Learning,2,97,0.021,0.006,0.072
+lead_head,Forecasting,2,97,0.021,0.006,0.072
+lead_head,Classification,2,97,0.021,0.006,0.072
+lead_head,Qlik,2,97,0.021,0.006,0.072
+lead_head,Terraform/IaC,2,97,0.021,0.006,0.072
+lead_head,Computer Vision,2,97,0.021,0.006,0.072
+lead_head,SQL Server,2,97,0.021,0.006,0.072
+lead_head,Bash/Shell,2,97,0.021,0.006,0.072
+lead_head,Sampling/Survey,2,97,0.021,0.006,0.072
+lead_head,TensorFlow/Keras,2,97,0.021,0.006,0.072
+lead_head,Grafana,1,97,0.01,0.002,0.056
+lead_head,Rust,1,97,0.01,0.002,0.056
+lead_head,Google Analytics,1,97,0.01,0.002,0.056
+lead_head,VBA,1,97,0.01,0.002,0.056
+lead_head,SAS,1,97,0.01,0.002,0.056
+lead_head,Anomaly Detection,1,97,0.01,0.002,0.056
+lead_head,Tableau,1,97,0.01,0.002,0.056
+lead_head,Hypothesis Testing,1,97,0.01,0.002,0.056
+lead_head,Airflow,1,97,0.01,0.002,0.056
+lead_head,Predictive Analytics,1,97,0.01,0.002,0.056
+lead_head,C/C++,1,97,0.01,0.002,0.056
+lead_head,dbt,1,97,0.01,0.002,0.056
+lead_head,MySQL/MariaDB,1,97,0.01,0.002,0.056
+lead_head,Exploratory Analysis,1,97,0.01,0.002,0.056
+senior,Python,69,136,0.507,0.424,0.59
+senior,SQL,67,136,0.493,0.41,0.576
+senior,Cloud (generic),64,136,0.471,0.389,0.554
+senior,AI (generic),61,136,0.449,0.367,0.532
+senior,Data Visualization,57,136,0.419,0.34,0.503
+senior,ETL/ELT,48,136,0.353,0.278,0.436
+senior,CI/CD,45,136,0.331,0.257,0.414
+senior,Azure,45,136,0.331,0.257,0.414
+senior,Data Governance/Quality,42,136,0.309,0.237,0.391
+senior,Generative AI / LLM,37,136,0.272,0.204,0.352
+senior,Machine Learning,33,136,0.243,0.178,0.321
+senior,Data Modeling,32,136,0.235,0.172,0.313
+senior,Power BI,31,136,0.228,0.165,0.305
+senior,Databricks,27,136,0.199,0.14,0.273
+senior,REST APIs,26,136,0.191,0.134,0.265
+senior,Git,24,136,0.176,0.122,0.249
+senior,AWS,22,136,0.162,0.109,0.233
+senior,Data Lake/Lakehouse,19,136,0.14,0.091,0.208
+senior,Java,18,136,0.132,0.085,0.2
+senior,Statistics (general),17,136,0.125,0.08,0.191
+senior,Data Warehouse (generic),17,136,0.125,0.08,0.191
+senior,Spark,16,136,0.118,0.074,0.183
+senior,Microsoft Fabric,16,136,0.118,0.074,0.183
+senior,Jupyter,15,136,0.11,0.068,0.174
+senior,GCP,15,136,0.11,0.068,0.174
+senior,Excel,13,136,0.096,0.057,0.157
+senior,Streaming,12,136,0.088,0.051,0.148
+senior,BigQuery,12,136,0.088,0.051,0.148
+senior,Terraform/IaC,12,136,0.088,0.051,0.148
+senior,C#,12,136,0.088,0.051,0.148
+senior,Bash/Shell,12,136,0.088,0.051,0.148
+senior,Azure Synapse,11,136,0.081,0.046,0.139
+senior,Mathematics,11,136,0.081,0.046,0.139
+senior,SQL Server,10,136,0.074,0.04,0.13
+senior,Forecasting,10,136,0.074,0.04,0.13
+senior,Kubernetes,10,136,0.074,0.04,0.13
+senior,PyTorch,10,136,0.074,0.04,0.13
+senior,dbt,10,136,0.074,0.04,0.13
+senior,SAP BW/BO,10,136,0.074,0.04,0.13
+senior,MongoDB,10,136,0.074,0.04,0.13
+senior,Docker,10,136,0.074,0.04,0.13
+senior,Snowflake,9,136,0.066,0.035,0.121
+senior,MLOps,9,136,0.066,0.035,0.121
+senior,scikit-learn,9,136,0.066,0.035,0.121
+senior,Azure Data Factory,8,136,0.059,0.03,0.112
+senior,JavaScript,8,136,0.059,0.03,0.112
+senior,Oracle,7,136,0.051,0.025,0.102
+senior,R,7,136,0.051,0.025,0.102
+senior,NLP,7,136,0.051,0.025,0.102
+senior,MySQL/MariaDB,7,136,0.051,0.025,0.102
+senior,Predictive Analytics,7,136,0.051,0.025,0.102
+senior,Scala,7,136,0.051,0.025,0.102
+senior,TensorFlow/Keras,7,136,0.051,0.025,0.102
+senior,Segmentation/Clustering,7,136,0.051,0.025,0.102
+senior,A/B Testing / Experimentation,7,136,0.051,0.025,0.102
+senior,PostgreSQL,6,136,0.044,0.02,0.093
+senior,LangChain/LLM frameworks,6,136,0.044,0.02,0.093
+senior,DAX/M,6,136,0.044,0.02,0.093
+senior,SAP HANA,5,136,0.037,0.016,0.083
+senior,Deep Learning,5,136,0.037,0.016,0.083
+senior,Computer Vision,5,136,0.037,0.016,0.083
+senior,Google Analytics,5,136,0.037,0.016,0.083
+senior,NumPy,4,136,0.029,0.011,0.073
+senior,Kafka,4,136,0.029,0.011,0.073
+senior,Matomo,4,136,0.029,0.011,0.073
+senior,Cassandra,4,136,0.029,0.011,0.073
+senior,Anomaly Detection,4,136,0.029,0.011,0.073
+senior,pandas,4,136,0.029,0.011,0.073
+senior,Neo4j,4,136,0.029,0.011,0.073
+senior,Looker,4,136,0.029,0.011,0.073
+senior,Causal Inference,3,136,0.022,0.008,0.063
+senior,Exploratory Analysis,3,136,0.022,0.008,0.063
+senior,Airflow,3,136,0.022,0.008,0.063
+senior,Rust,3,136,0.022,0.008,0.063
+senior,Redshift,3,136,0.022,0.008,0.063
+senior,Time Series,3,136,0.022,0.008,0.063
+senior,Tableau,3,136,0.022,0.008,0.063
+senior,Classification,3,136,0.022,0.008,0.063
+senior,MicroStrategy,2,136,0.015,0.004,0.052
+senior,Hadoop,2,136,0.015,0.004,0.052
+senior,Hugging Face/Transformers,2,136,0.015,0.004,0.052
+senior,Qlik,2,136,0.015,0.004,0.052
+senior,Elasticsearch,2,136,0.015,0.004,0.052
+senior,XGBoost/LightGBM,2,136,0.015,0.004,0.052
+senior,Regression,2,136,0.015,0.004,0.052
+senior,SSRS,1,136,0.007,0.001,0.04
+senior,Cognos,1,136,0.007,0.001,0.04
+senior,Julia,1,136,0.007,0.001,0.04
+senior,matplotlib/seaborn,1,136,0.007,0.001,0.04
+senior,Hypothesis Testing,1,136,0.007,0.001,0.04
+senior,Bayesian,1,136,0.007,0.001,0.04
+senior,Reinforcement Learning,1,136,0.007,0.001,0.04
+senior,Recommender Systems,1,136,0.007,0.001,0.04
+senior,ClickHouse,1,136,0.007,0.001,0.04
+senior,FastAPI/Flask,1,136,0.007,0.001,0.04
+senior,Sampling/Survey,1,136,0.007,0.001,0.04
+trainee_junior,AI (generic),16,31,0.516,0.348,0.68
+trainee_junior,Data Governance/Quality,14,31,0.452,0.292,0.622
+trainee_junior,Data Visualization,14,31,0.452,0.292,0.622
+trainee_junior,SQL,12,31,0.387,0.237,0.562
+trainee_junior,Excel,10,31,0.323,0.186,0.499
+trainee_junior,Python,10,31,0.323,0.186,0.499
+trainee_junior,ETL/ELT,7,31,0.226,0.114,0.398
+trainee_junior,Mathematics,6,31,0.194,0.092,0.363
+trainee_junior,Cloud (generic),6,31,0.194,0.092,0.363
+trainee_junior,REST APIs,5,31,0.161,0.071,0.326
+trainee_junior,Generative AI / LLM,5,31,0.161,0.071,0.326
+trainee_junior,Machine Learning,4,31,0.129,0.051,0.289
+trainee_junior,Power BI,4,31,0.129,0.051,0.289
+trainee_junior,Statistics (general),4,31,0.129,0.051,0.289
+trainee_junior,Qlik,3,31,0.097,0.033,0.249
+trainee_junior,Git,3,31,0.097,0.033,0.249
+trainee_junior,Azure,3,31,0.097,0.033,0.249
+trainee_junior,Data Warehouse (generic),3,31,0.097,0.033,0.249
+trainee_junior,Streaming,3,31,0.097,0.033,0.249
+trainee_junior,Data Modeling,3,31,0.097,0.033,0.249
+trainee_junior,Tableau,2,31,0.065,0.018,0.207
+trainee_junior,SAP BW/BO,2,31,0.065,0.018,0.207
+trainee_junior,SQL Server,2,31,0.065,0.018,0.207
+trainee_junior,C#,2,31,0.065,0.018,0.207
+trainee_junior,PyTorch,2,31,0.065,0.018,0.207
+trainee_junior,A/B Testing / Experimentation,2,31,0.065,0.018,0.207
+trainee_junior,TensorFlow/Keras,2,31,0.065,0.018,0.207
+trainee_junior,Exploratory Analysis,2,31,0.065,0.018,0.207
+trainee_junior,Forecasting,2,31,0.065,0.018,0.207
+trainee_junior,SAP HANA,2,31,0.065,0.018,0.207
+trainee_junior,Snowflake,2,31,0.065,0.018,0.207
+trainee_junior,CI/CD,2,31,0.065,0.018,0.207
+trainee_junior,Predictive Analytics,2,31,0.065,0.018,0.207
+trainee_junior,PostgreSQL,2,31,0.065,0.018,0.207
+trainee_junior,Reinforcement Learning,1,31,0.032,0.006,0.162
+trainee_junior,Deep Learning,1,31,0.032,0.006,0.162
+trainee_junior,Hugging Face/Transformers,1,31,0.032,0.006,0.162
+trainee_junior,JavaScript,1,31,0.032,0.006,0.162
+trainee_junior,R,1,31,0.032,0.006,0.162
+trainee_junior,VBA,1,31,0.032,0.006,0.162
+trainee_junior,Airflow,1,31,0.032,0.006,0.162
+trainee_junior,Azure Data Factory,1,31,0.032,0.006,0.162
+trainee_junior,dbt,1,31,0.032,0.006,0.162
+trainee_junior,Anomaly Detection,1,31,0.032,0.006,0.162
+trainee_junior,Docker,1,31,0.032,0.006,0.162
+trainee_junior,Kafka,1,31,0.032,0.006,0.162
+trainee_junior,Kubernetes,1,31,0.032,0.006,0.162
+trainee_junior,MLOps,1,31,0.032,0.006,0.162
+trainee_junior,Java,1,31,0.032,0.006,0.162
+trainee_junior,Segmentation/Clustering,1,31,0.032,0.006,0.162
+trainee_junior,Databricks,1,31,0.032,0.006,0.162
+trainee_junior,Bash/Shell,1,31,0.032,0.006,0.162
+trainee_junior,Oracle,1,31,0.032,0.006,0.162
+unspecified,SQL,163,413,0.395,0.349,0.443
+unspecified,Data Visualization,159,413,0.385,0.339,0.433
+unspecified,AI (generic),140,413,0.339,0.295,0.386
+unspecified,Python,136,413,0.329,0.286,0.376
+unspecified,Data Governance/Quality,120,413,0.291,0.249,0.336
+unspecified,Cloud (generic),100,413,0.242,0.203,0.286
+unspecified,ETL/ELT,89,413,0.215,0.179,0.258
+unspecified,Excel,74,413,0.179,0.145,0.219
+unspecified,Power BI,70,413,0.169,0.136,0.209
+unspecified,Azure,63,413,0.153,0.121,0.19
+unspecified,Machine Learning,62,413,0.15,0.119,0.188
+unspecified,Data Modeling,61,413,0.148,0.117,0.185
+unspecified,Statistics (general),52,413,0.126,0.097,0.161
+unspecified,CI/CD,49,413,0.119,0.091,0.153
+unspecified,Generative AI / LLM,45,413,0.109,0.082,0.143
+unspecified,Mathematics,45,413,0.109,0.082,0.143
+unspecified,REST APIs,42,413,0.102,0.076,0.135
+unspecified,Data Warehouse (generic),39,413,0.094,0.07,0.126
+unspecified,R,34,413,0.082,0.06,0.113
+unspecified,Databricks,34,413,0.082,0.06,0.113
+unspecified,Git,31,413,0.075,0.053,0.105
+unspecified,MLOps,31,413,0.075,0.053,0.105
+unspecified,Streaming,30,413,0.073,0.051,0.102
+unspecified,Oracle,29,413,0.07,0.049,0.099
+unspecified,Docker,26,413,0.063,0.043,0.091
+unspecified,Forecasting,26,413,0.063,0.043,0.091
+unspecified,Java,25,413,0.061,0.041,0.088
+unspecified,Data Lake/Lakehouse,23,413,0.056,0.037,0.082
+unspecified,SQL Server,23,413,0.056,0.037,0.082
+unspecified,AWS,23,413,0.056,0.037,0.082
+unspecified,Segmentation/Clustering,23,413,0.056,0.037,0.082
+unspecified,SAP BW/BO,23,413,0.056,0.037,0.082
+unspecified,Snowflake,21,413,0.051,0.033,0.076
+unspecified,Kubernetes,21,413,0.051,0.033,0.076
+unspecified,Spark,21,413,0.051,0.033,0.076
+unspecified,PostgreSQL,21,413,0.051,0.033,0.076
+unspecified,Bash/Shell,20,413,0.048,0.032,0.074
+unspecified,Exploratory Analysis,20,413,0.048,0.032,0.074
+unspecified,GCP,19,413,0.046,0.03,0.071
+unspecified,Microsoft Fabric,18,413,0.044,0.028,0.068
+unspecified,PyTorch,16,413,0.039,0.024,0.062
+unspecified,pandas,15,413,0.036,0.022,0.059
+unspecified,C#,15,413,0.036,0.022,0.059
+unspecified,Tableau,15,413,0.036,0.022,0.059
+unspecified,JavaScript,14,413,0.034,0.02,0.056
+unspecified,Predictive Analytics,14,413,0.034,0.02,0.056
+unspecified,scikit-learn,14,413,0.034,0.02,0.056
+unspecified,LangChain/LLM frameworks,13,413,0.031,0.018,0.053
+unspecified,BigQuery,12,413,0.029,0.017,0.05
+unspecified,Kafka,12,413,0.029,0.017,0.05
+unspecified,Terraform/IaC,12,413,0.029,0.017,0.05
+unspecified,Qlik,12,413,0.029,0.017,0.05
+unspecified,DAX/M,11,413,0.027,0.015,0.047
+unspecified,TensorFlow/Keras,10,413,0.024,0.013,0.044
+unspecified,SAP HANA,10,413,0.024,0.013,0.044
+unspecified,dbt,10,413,0.024,0.013,0.044
+unspecified,Jupyter,9,413,0.022,0.012,0.041
+unspecified,Azure Data Factory,9,413,0.022,0.012,0.041
+unspecified,Google Analytics,8,413,0.019,0.01,0.038
+unspecified,Deep Learning,8,413,0.019,0.01,0.038
+unspecified,A/B Testing / Experimentation,8,413,0.019,0.01,0.038
+unspecified,Airflow,7,413,0.017,0.008,0.035
+unspecified,Anomaly Detection,7,413,0.017,0.008,0.035
+unspecified,Grafana,7,413,0.017,0.008,0.035
+unspecified,Looker,7,413,0.017,0.008,0.035
+unspecified,Scala,7,413,0.017,0.008,0.035
+unspecified,Azure Synapse,6,413,0.015,0.007,0.031
+unspecified,NumPy,5,413,0.012,0.005,0.028
+unspecified,Computer Vision,5,413,0.012,0.005,0.028
+unspecified,Neo4j,4,413,0.01,0.004,0.025
+unspecified,Classification,4,413,0.01,0.004,0.025
+unspecified,Matomo,4,413,0.01,0.004,0.025
+unspecified,Hadoop,4,413,0.01,0.004,0.025
+unspecified,Julia,3,413,0.007,0.002,0.021
+unspecified,VBA,3,413,0.007,0.002,0.021
+unspecified,Plotly/Dash,3,413,0.007,0.002,0.021
+unspecified,Sampling/Survey,3,413,0.007,0.002,0.021
+unspecified,NLP,3,413,0.007,0.002,0.021
+unspecified,Regression,3,413,0.007,0.002,0.021
+unspecified,Reinforcement Learning,3,413,0.007,0.002,0.021
+unspecified,Hugging Face/Transformers,2,413,0.005,0.001,0.017
+unspecified,Time Series,2,413,0.005,0.001,0.017
+unspecified,Bayesian,2,413,0.005,0.001,0.017
+unspecified,SSRS,2,413,0.005,0.001,0.017
+unspecified,MongoDB,2,413,0.005,0.001,0.017
+unspecified,Data Mining,2,413,0.005,0.001,0.017
+unspecified,Hypothesis Testing,2,413,0.005,0.001,0.017
+unspecified,MicroStrategy,2,413,0.005,0.001,0.017
+unspecified,matplotlib/seaborn,2,413,0.005,0.001,0.017
+unspecified,FastAPI/Flask,2,413,0.005,0.001,0.017
+unspecified,MySQL/MariaDB,2,413,0.005,0.001,0.017
+unspecified,Causal Inference,2,413,0.005,0.001,0.017
+unspecified,SAS,1,413,0.002,0.0,0.014
+unspecified,Rust,1,413,0.002,0.0,0.014
+unspecified,statsmodels,1,413,0.002,0.0,0.014
+unspecified,Metabase,1,413,0.002,0.0,0.014
+unspecified,Fivetran/Airbyte,1,413,0.002,0.0,0.014
+unspecified,Streamlit,1,413,0.002,0.0,0.014
+unspecified,C/C++,1,413,0.002,0.0,0.014
+unspecified,Redshift,1,413,0.002,0.0,0.014

@@ -1,0 +1,6 @@
+seniority,count,n,share,ci_low,ci_high
+unspecified,414,720,0.575,0.539,0.611
+senior,136,720,0.189,0.162,0.219
+lead_head,97,720,0.135,0.112,0.162
+intern_student,42,720,0.058,0.043,0.078
+trainee_junior,31,720,0.043,0.03,0.06

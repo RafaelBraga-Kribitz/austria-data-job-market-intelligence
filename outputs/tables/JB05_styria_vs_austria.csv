@@ -1,0 +1,60 @@
+beruf,austria,styria,vienna,upper_austria,styria_share,vienna_share,is_data_occupation,austria_2020,growth_2020_to_latest,styria_2020,styria_growth_2020_to_latest
+SoftwareentwicklerIn,20948.0,3077.0,7413.0,3795.0,0.147,0.354,False,42419.0,-0.51,4772.0,-0.36
+SalesmanagerIn,11334.0,1165.0,2902.0,1837.0,0.103,0.256,False,11090.0,0.02,756.0,0.54
+QualitätssicherungstechnikerIn,8482.0,1302.0,1304.0,1951.0,0.154,0.154,False,8721.0,-0.03,1036.0,0.26
+Human-Resources-ManagerIn,8326.0,875.0,2426.0,1507.0,0.105,0.291,False,7515.0,0.11,540.0,0.62
+ProjektmanagerIn,8220.0,1094.0,2277.0,1459.0,0.133,0.277,False,9079.0,-0.09,954.0,0.15
+ControllerIn,6600.0,858.0,1767.0,1268.0,0.13,0.268,False,7098.0,-0.07,623.0,0.38
+Betriebs- und UnternehmensleiterIn,6318.0,648.0,1694.0,939.0,0.103,0.268,False,7263.0,-0.13,453.0,0.43
+IT-ProjektmanagerIn,5823.0,618.0,2077.0,1017.0,0.106,0.357,False,6515.0,-0.11,504.0,0.23
+MarketingmanagerIn,5470.0,432.0,1885.0,747.0,0.079,0.345,False,7228.0,-0.24,363.0,0.19
+WirtschaftstreuhänderIn,4901.0,490.0,1878.0,686.0,0.1,0.383,False,3708.0,0.32,215.0,1.28
+VertriebstechnikerIn,4742.0,468.0,1170.0,808.0,0.099,0.247,False,4222.0,0.12,379.0,0.23
+Datensicherheitsexperte/-expertin,4066.0,453.0,1663.0,682.0,0.111,0.409,False,4433.0,-0.08,345.0,0.31
+MarketingassistentIn,3934.0,431.0,957.0,643.0,0.11,0.243,False,4136.0,-0.05,376.0,0.15
+BetriebswirtIn,3912.0,459.0,761.0,666.0,0.117,0.195,False,5006.0,-0.22,452.0,0.02
+ProduktmanagerIn,3714.0,426.0,1098.0,638.0,0.115,0.296,False,4711.0,-0.21,347.0,0.23
+Customer-Relationship-ManagerIn,3313.0,321.0,1094.0,477.0,0.097,0.33,False,3128.0,0.06,170.0,0.89
+FinanzmanagerIn,2608.0,252.0,1017.0,317.0,0.097,0.39,False,2868.0,-0.09,166.0,0.52
+IT-QualitätsmanagerIn,2438.0,349.0,906.0,407.0,0.143,0.372,False,4022.0,-0.39,437.0,-0.2
+Finanz- und AnlageberaterIn,2239.0,174.0,532.0,471.0,0.078,0.238,False,1535.0,0.46,81.0,1.15
+TechnischeR SachbearbeiterIn,2215.0,243.0,333.0,489.0,0.11,0.15,False,2200.0,0.01,210.0,0.16
+Data Scientist (m/w),2207.0,300.0,935.0,299.0,0.136,0.424,True,3049.0,-0.28,224.0,0.34
+UnternehmensberaterIn,2095.0,205.0,870.0,241.0,0.098,0.415,False,2479.0,-0.15,139.0,0.47
+BetriebstechnikerIn,2088.0,276.0,331.0,502.0,0.132,0.159,False,2449.0,-0.15,290.0,-0.05
+Business-Development-ManagerIn,2086.0,210.0,821.0,278.0,0.101,0.394,False,2889.0,-0.28,179.0,0.17
+VerwaltungsmanagerIn,2086.0,186.0,540.0,326.0,0.089,0.259,False,2631.0,-0.21,313.0,-0.41
+WirtschaftsingenieurIn,2083.0,251.0,456.0,435.0,0.12,0.219,False,2400.0,-0.13,220.0,0.14
+Versicherungskaufmann/-frau,1837.0,214.0,545.0,289.0,0.116,0.297,False,1874.0,-0.02,126.0,0.7
+PersonalberaterIn,1684.0,206.0,461.0,314.0,0.122,0.274,False,1648.0,0.02,146.0,0.41
+PR-BeraterIn,1645.0,123.0,642.0,181.0,0.075,0.39,False,2878.0,-0.43,110.0,0.12
+WebentwicklerIn,1587.0,195.0,602.0,287.0,0.123,0.379,False,6003.0,-0.74,508.0,-0.62
+Social-Media-ManagerIn,1535.0,121.0,536.0,221.0,0.079,0.349,False,1300.0,0.18,85.0,0.42
+InformatikerIn,1518.0,207.0,419.0,265.0,0.136,0.276,True,2498.0,-0.39,159.0,0.3
+RisikomanagerIn im Finanz- und Bankwesen,1506.0,117.0,650.0,227.0,0.078,0.432,False,1668.0,-0.1,37.0,2.16
+KalkulantIn,1437.0,185.0,284.0,359.0,0.129,0.198,False,1941.0,-0.26,210.0,-0.12
+VersicherungsberaterIn,1409.0,223.0,180.0,257.0,0.158,0.128,False,909.0,0.55,143.0,0.56
+Operations ManagerIn,1368.0,91.0,416.0,201.0,0.067,0.304,False,1528.0,-0.1,69.0,0.32
+BaumarktverkäuferIn,1355.0,227.0,82.0,218.0,0.168,0.061,False,1044.0,0.3,126.0,0.8
+WirtschaftsinformatikerIn,1307.0,91.0,577.0,150.0,0.07,0.441,True,2025.0,-0.35,81.0,0.12
+Bankkaufmann/-frau,1261.0,136.0,317.0,297.0,0.108,0.251,False,1965.0,-0.36,157.0,-0.13
+DatenbankentwicklerIn,1198.0,137.0,521.0,205.0,0.114,0.435,True,1993.0,-0.4,169.0,-0.19
+Kultur- und EventmanagerIn,1166.0,104.0,331.0,124.0,0.089,0.284,False,665.0,0.75,34.0,2.06
+BiomedizinischeR AnalytikerIn,1151.0,100.0,340.0,182.0,0.087,0.295,False,1024.0,0.12,95.0,0.05
+Compliance-ManagerIn,1053.0,74.0,462.0,148.0,0.07,0.439,False,1206.0,-0.13,27.0,1.74
+DatenbankadministratorIn,1011.0,75.0,435.0,124.0,0.074,0.43,True,1661.0,-0.39,122.0,-0.39
+ProjektassistentIn,824.0,110.0,243.0,126.0,0.133,0.295,False,1115.0,-0.26,127.0,-0.13
+WebdesignerIn,737.0,75.0,248.0,133.0,0.102,0.336,False,1528.0,-0.52,111.0,-0.32
+SystemanalytikerIn,731.0,65.0,308.0,98.0,0.089,0.421,True,398.0,0.84,39.0,0.67
+E-Commerce-ManagerIn,722.0,62.0,181.0,168.0,0.086,0.251,False,1614.0,-0.55,143.0,-0.57
+MitarbeiterIn in der Kreditabteilung,617.0,38.0,157.0,87.0,0.062,0.254,False,465.0,0.33,22.0,0.73
+Requirements Engineer (m/w),564.0,72.0,233.0,59.0,0.128,0.413,False,448.0,0.26,21.0,2.43
+SteuerassistentIn,534.0,52.0,153.0,104.0,0.097,0.287,False,485.0,0.1,20.0,1.6
+Data-Warehouse-ManagerIn,505.0,51.0,200.0,72.0,0.101,0.396,True,990.0,-0.49,81.0,-0.37
+MitarbeiterIn im Handels- und Kapitalmarktgeschäft,446.0,35.0,184.0,27.0,0.078,0.413,False,834.0,-0.47,59.0,-0.41
+Visual Merchandiser (m/w),435.0,50.0,77.0,84.0,0.115,0.177,False,423.0,0.03,36.0,0.39
+Game Producer (m/w),332.0,57.0,85.0,62.0,0.172,0.256,False,716.0,-0.54,64.0,-0.11
+TranslatorIn,278.0,32.0,81.0,30.0,0.115,0.291,False,247.0,0.13,,
+Treasurer (m/w),258.0,,104.0,35.0,,0.403,False,377.0,-0.32,55.0,
+BankangestellteR im Zahlungsverkehr,137.0,,32.0,,,0.234,False,100.0,0.37,,
+WebmasterIn,121.0,28.0,30.0,,0.231,0.248,False,371.0,-0.67,21.0,0.33

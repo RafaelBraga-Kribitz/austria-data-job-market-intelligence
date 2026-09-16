@@ -1,0 +1,177 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,SQL,264,661,0.399,0.363,0.437
+Rest of Austria,Data Visualization,254,661,0.384,0.348,0.422
+Rest of Austria,AI (generic),251,661,0.38,0.344,0.417
+Rest of Austria,Python,224,661,0.339,0.304,0.376
+Rest of Austria,Data Governance/Quality,199,661,0.301,0.267,0.337
+Rest of Austria,Cloud (generic),182,661,0.275,0.243,0.311
+Rest of Austria,ETL/ELT,139,661,0.21,0.181,0.243
+Rest of Austria,Power BI,124,661,0.188,0.16,0.219
+Rest of Austria,Excel,121,661,0.183,0.155,0.214
+Rest of Austria,Azure,119,661,0.18,0.153,0.211
+Rest of Austria,Generative AI / LLM,110,661,0.166,0.14,0.197
+Rest of Austria,Machine Learning,110,661,0.166,0.14,0.197
+Rest of Austria,Data Modeling,110,661,0.166,0.14,0.197
+Rest of Austria,CI/CD,96,661,0.145,0.12,0.174
+Rest of Austria,Statistics (general),95,661,0.144,0.119,0.173
+Rest of Austria,REST APIs,75,661,0.113,0.091,0.14
+Rest of Austria,Databricks,72,661,0.109,0.087,0.135
+Rest of Austria,Mathematics,71,661,0.107,0.086,0.133
+Rest of Austria,Data Warehouse (generic),62,661,0.094,0.074,0.118
+Rest of Austria,Git,60,661,0.091,0.071,0.115
+Rest of Austria,AWS,55,661,0.083,0.064,0.107
+Rest of Austria,Streaming,48,661,0.073,0.055,0.095
+Rest of Austria,R,47,661,0.071,0.054,0.093
+Rest of Austria,Data Lake/Lakehouse,47,661,0.071,0.054,0.093
+Rest of Austria,Java,46,661,0.07,0.053,0.092
+Rest of Austria,Spark,44,661,0.067,0.05,0.088
+Rest of Austria,Docker,42,661,0.064,0.047,0.085
+Rest of Austria,MLOps,42,661,0.064,0.047,0.085
+Rest of Austria,Oracle,39,661,0.059,0.043,0.08
+Rest of Austria,Forecasting,39,661,0.059,0.043,0.08
+Rest of Austria,Snowflake,39,661,0.059,0.043,0.08
+Rest of Austria,Segmentation/Clustering,38,661,0.057,0.042,0.078
+Rest of Austria,Kubernetes,38,661,0.057,0.042,0.078
+Rest of Austria,SAP BW/BO,35,661,0.053,0.038,0.073
+Rest of Austria,Microsoft Fabric,35,661,0.053,0.038,0.073
+Rest of Austria,Bash/Shell,33,661,0.05,0.036,0.069
+Rest of Austria,C#,32,661,0.048,0.034,0.068
+Rest of Austria,SQL Server,32,661,0.048,0.034,0.068
+Rest of Austria,GCP,31,661,0.047,0.033,0.066
+Rest of Austria,PyTorch,29,661,0.044,0.031,0.062
+Rest of Austria,PostgreSQL,29,661,0.044,0.031,0.062
+Rest of Austria,JavaScript,28,661,0.042,0.029,0.061
+Rest of Austria,Exploratory Analysis,25,661,0.038,0.026,0.055
+Rest of Austria,scikit-learn,24,661,0.036,0.025,0.053
+Rest of Austria,dbt,24,661,0.036,0.025,0.053
+Rest of Austria,LangChain/LLM frameworks,23,661,0.035,0.023,0.052
+Rest of Austria,Qlik,22,661,0.033,0.022,0.05
+Rest of Austria,Predictive Analytics,22,661,0.033,0.022,0.05
+Rest of Austria,BigQuery,22,661,0.033,0.022,0.05
+Rest of Austria,A/B Testing / Experimentation,21,661,0.032,0.021,0.048
+Rest of Austria,Terraform/IaC,21,661,0.032,0.021,0.048
+Rest of Austria,Tableau,21,661,0.032,0.021,0.048
+Rest of Austria,Jupyter,20,661,0.03,0.02,0.046
+Rest of Austria,pandas,20,661,0.03,0.02,0.046
+Rest of Austria,TensorFlow/Keras,19,661,0.029,0.018,0.044
+Rest of Austria,DAX/M,19,661,0.029,0.018,0.044
+Rest of Austria,SAP HANA,18,661,0.027,0.017,0.043
+Rest of Austria,Azure Data Factory,18,661,0.027,0.017,0.043
+Rest of Austria,Kafka,16,661,0.024,0.015,0.039
+Rest of Austria,Azure Synapse,16,661,0.024,0.015,0.039
+Rest of Austria,Google Analytics,16,661,0.024,0.015,0.039
+Rest of Austria,Deep Learning,14,661,0.021,0.013,0.035
+Rest of Austria,Scala,14,661,0.021,0.013,0.035
+Rest of Austria,NLP,13,661,0.02,0.012,0.033
+Rest of Austria,Computer Vision,12,661,0.018,0.01,0.031
+Rest of Austria,Airflow,11,661,0.017,0.009,0.03
+Rest of Austria,NumPy,11,661,0.017,0.009,0.03
+Rest of Austria,Anomaly Detection,11,661,0.017,0.009,0.03
+Rest of Austria,MySQL/MariaDB,10,661,0.015,0.008,0.028
+Rest of Austria,MongoDB,10,661,0.015,0.008,0.028
+Rest of Austria,Classification,9,661,0.014,0.007,0.026
+Rest of Austria,Neo4j,8,661,0.012,0.006,0.024
+Rest of Austria,Grafana,8,661,0.012,0.006,0.024
+Rest of Austria,Matomo,8,661,0.012,0.006,0.024
+Rest of Austria,Looker,8,661,0.012,0.006,0.024
+Rest of Austria,VBA,6,661,0.009,0.004,0.02
+Rest of Austria,Hadoop,6,661,0.009,0.004,0.02
+Rest of Austria,Regression,6,661,0.009,0.004,0.02
+Rest of Austria,Sampling/Survey,5,661,0.008,0.003,0.018
+Rest of Austria,Hugging Face/Transformers,5,661,0.008,0.003,0.018
+Rest of Austria,Time Series,5,661,0.008,0.003,0.018
+Rest of Austria,Rust,5,661,0.008,0.003,0.018
+Rest of Austria,Causal Inference,5,661,0.008,0.003,0.018
+Rest of Austria,Julia,4,661,0.006,0.002,0.015
+Rest of Austria,Redshift,4,661,0.006,0.002,0.015
+Rest of Austria,Reinforcement Learning,4,661,0.006,0.002,0.015
+Rest of Austria,MicroStrategy,4,661,0.006,0.002,0.015
+Rest of Austria,Cassandra,4,661,0.006,0.002,0.015
+Rest of Austria,Hypothesis Testing,4,661,0.006,0.002,0.015
+Rest of Austria,SSRS,3,661,0.005,0.002,0.013
+Rest of Austria,Bayesian,3,661,0.005,0.002,0.013
+Rest of Austria,SAS,3,661,0.005,0.002,0.013
+Rest of Austria,FastAPI/Flask,3,661,0.005,0.002,0.013
+Rest of Austria,matplotlib/seaborn,3,661,0.005,0.002,0.013
+Rest of Austria,Plotly/Dash,3,661,0.005,0.002,0.013
+Rest of Austria,Fivetran/Airbyte,2,661,0.003,0.001,0.011
+Rest of Austria,MATLAB,2,661,0.003,0.001,0.011
+Rest of Austria,Elasticsearch,2,661,0.003,0.001,0.011
+Rest of Austria,Data Mining,2,661,0.003,0.001,0.011
+Rest of Austria,C/C++,2,661,0.003,0.001,0.011
+Rest of Austria,XGBoost/LightGBM,2,661,0.003,0.001,0.011
+Rest of Austria,statsmodels,1,661,0.002,0.0,0.009
+Rest of Austria,Metabase,1,661,0.002,0.0,0.009
+Rest of Austria,Streamlit,1,661,0.002,0.0,0.009
+Rest of Austria,Cognos,1,661,0.002,0.0,0.009
+Rest of Austria,Recommender Systems,1,661,0.002,0.0,0.009
+Rest of Austria,ClickHouse,1,661,0.002,0.0,0.009
+Styria,Python,29,58,0.5,0.375,0.625
+Styria,SQL,27,58,0.466,0.343,0.592
+Styria,AI (generic),25,58,0.431,0.312,0.559
+Styria,Cloud (generic),24,58,0.414,0.296,0.542
+Styria,Data Governance/Quality,21,58,0.362,0.251,0.491
+Styria,Data Visualization,20,58,0.345,0.236,0.473
+Styria,ETL/ELT,20,58,0.345,0.236,0.473
+Styria,Azure,20,58,0.345,0.236,0.473
+Styria,CI/CD,13,58,0.224,0.136,0.347
+Styria,Git,11,58,0.19,0.109,0.309
+Styria,Databricks,11,58,0.19,0.109,0.309
+Styria,Data Warehouse (generic),10,58,0.172,0.096,0.289
+Styria,GCP,10,58,0.172,0.096,0.289
+Styria,Jupyter,9,58,0.155,0.084,0.269
+Styria,REST APIs,8,58,0.138,0.072,0.249
+Styria,Power BI,8,58,0.138,0.072,0.249
+Styria,Machine Learning,8,58,0.138,0.072,0.249
+Styria,Data Modeling,8,58,0.138,0.072,0.249
+Styria,AWS,7,58,0.121,0.06,0.229
+Styria,Generative AI / LLM,7,58,0.121,0.06,0.229
+Styria,Excel,7,58,0.121,0.06,0.229
+Styria,Mathematics,6,58,0.103,0.048,0.208
+Styria,SQL Server,6,58,0.103,0.048,0.208
+Styria,Microsoft Fabric,6,58,0.103,0.048,0.208
+Styria,Java,5,58,0.086,0.037,0.186
+Styria,Azure Synapse,5,58,0.086,0.037,0.186
+Styria,Exploratory Analysis,5,58,0.086,0.037,0.186
+Styria,Terraform/IaC,5,58,0.086,0.037,0.186
+Styria,Azure Data Factory,4,58,0.069,0.027,0.164
+Styria,Data Lake/Lakehouse,4,58,0.069,0.027,0.164
+Styria,Scala,4,58,0.069,0.027,0.164
+Styria,MLOps,4,58,0.069,0.027,0.164
+Styria,R,4,58,0.069,0.027,0.164
+Styria,PostgreSQL,4,58,0.069,0.027,0.164
+Styria,SAP BW/BO,3,58,0.052,0.018,0.141
+Styria,Looker,3,58,0.052,0.018,0.141
+Styria,Spark,3,58,0.052,0.018,0.141
+Styria,Statistics (general),3,58,0.052,0.018,0.141
+Styria,BigQuery,3,58,0.052,0.018,0.141
+Styria,Streaming,3,58,0.052,0.018,0.141
+Styria,PyTorch,3,58,0.052,0.018,0.141
+Styria,Predictive Analytics,3,58,0.052,0.018,0.141
+Styria,Tableau,3,58,0.052,0.018,0.141
+Styria,TensorFlow/Keras,3,58,0.052,0.018,0.141
+Styria,SAP HANA,2,58,0.034,0.01,0.117
+Styria,Segmentation/Clustering,2,58,0.034,0.01,0.117
+Styria,DAX/M,2,58,0.034,0.01,0.117
+Styria,Deep Learning,2,58,0.034,0.01,0.117
+Styria,MongoDB,2,58,0.034,0.01,0.117
+Styria,Bash/Shell,2,58,0.034,0.01,0.117
+Styria,Kafka,2,58,0.034,0.01,0.117
+Styria,Snowflake,2,58,0.034,0.01,0.117
+Styria,Forecasting,2,58,0.034,0.01,0.117
+Styria,Anomaly Detection,2,58,0.034,0.01,0.117
+Styria,Oracle,2,58,0.034,0.01,0.117
+Styria,Docker,2,58,0.034,0.01,0.117
+Styria,Kubernetes,2,58,0.034,0.01,0.117
+Styria,C#,2,58,0.034,0.01,0.117
+Styria,JavaScript,2,58,0.034,0.01,0.117
+Styria,Hugging Face/Transformers,1,58,0.017,0.003,0.091
+Styria,A/B Testing / Experimentation,1,58,0.017,0.003,0.091
+Styria,dbt,1,58,0.017,0.003,0.091
+Styria,Sampling/Survey,1,58,0.017,0.003,0.091
+Styria,Reinforcement Learning,1,58,0.017,0.003,0.091
+Styria,MySQL/MariaDB,1,58,0.017,0.003,0.091
+Styria,Airflow,1,58,0.017,0.003,0.091
+Styria,pandas,1,58,0.017,0.003,0.091
+Styria,scikit-learn,1,58,0.017,0.003,0.091
+Styria,LangChain/LLM frameworks,1,58,0.017,0.003,0.091

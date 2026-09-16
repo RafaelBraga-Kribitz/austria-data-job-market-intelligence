@@ -1,0 +1,163 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Consulting,47,85,0.553,0.447,0.654
+bi,Finance/Controlling,38,85,0.447,0.346,0.553
+bi,SAP (ERP),32,85,0.376,0.281,0.483
+bi,Sales/Commercial,15,85,0.176,0.11,0.271
+bi,Requirements/Business Analysis,14,85,0.165,0.101,0.258
+bi,Banking/Insurance,13,85,0.153,0.092,0.244
+bi,Operations/Manufacturing,11,85,0.129,0.074,0.217
+bi,Project Management,11,85,0.129,0.074,0.217
+bi,Public Sector/Research,7,85,0.082,0.04,0.16
+bi,CRM,5,85,0.059,0.025,0.13
+bi,Marketing,5,85,0.059,0.025,0.13
+bi,Supply Chain/Logistics,5,85,0.059,0.025,0.13
+bi,Web/Digital Analytics,4,85,0.047,0.018,0.115
+bi,Automotive/Mobility,3,85,0.035,0.012,0.099
+bi,Healthcare/Pharma/Bio,3,85,0.035,0.012,0.099
+bi,Risk/Actuarial,3,85,0.035,0.012,0.099
+bi,Digital/Online Marketing,2,85,0.024,0.006,0.082
+bi,Energy,2,85,0.024,0.006,0.082
+bi,Telecom,1,85,0.012,0.002,0.064
+bi,E-Commerce,1,85,0.012,0.002,0.064
+bi,HR/People Analytics,1,85,0.012,0.002,0.064
+business_analysis,Requirements/Business Analysis,99,120,0.825,0.747,0.883
+business_analysis,Project Management,61,120,0.508,0.42,0.596
+business_analysis,Consulting,44,120,0.367,0.286,0.456
+business_analysis,SAP (ERP),32,120,0.267,0.196,0.352
+business_analysis,Public Sector/Research,30,120,0.25,0.181,0.334
+business_analysis,Finance/Controlling,29,120,0.242,0.174,0.326
+business_analysis,Supply Chain/Logistics,25,120,0.208,0.145,0.289
+business_analysis,Operations/Manufacturing,22,120,0.183,0.124,0.262
+business_analysis,Banking/Insurance,20,120,0.167,0.111,0.243
+business_analysis,Sales/Commercial,14,120,0.117,0.071,0.186
+business_analysis,Risk/Actuarial,14,120,0.117,0.071,0.186
+business_analysis,Automotive/Mobility,11,120,0.092,0.052,0.157
+business_analysis,Telecom,9,120,0.075,0.04,0.136
+business_analysis,Healthcare/Pharma/Bio,7,120,0.058,0.029,0.116
+business_analysis,Customer Analytics,6,120,0.05,0.023,0.105
+business_analysis,CRM,6,120,0.05,0.023,0.105
+business_analysis,Real Estate/Retail,6,120,0.05,0.023,0.105
+business_analysis,E-Commerce,5,120,0.042,0.018,0.094
+business_analysis,Marketing,5,120,0.042,0.018,0.094
+business_analysis,Web/Digital Analytics,3,120,0.025,0.009,0.071
+business_analysis,Energy,2,120,0.017,0.005,0.059
+business_analysis,Optimization/OR,1,120,0.008,0.001,0.046
+business_analysis,Product Analytics,1,120,0.008,0.001,0.046
+business_analysis,Pricing/Revenue,1,120,0.008,0.001,0.046
+data_analytics,Finance/Controlling,59,107,0.551,0.457,0.642
+data_analytics,Sales/Commercial,35,107,0.327,0.246,0.421
+data_analytics,Consulting,29,107,0.271,0.196,0.362
+data_analytics,Banking/Insurance,24,107,0.224,0.156,0.312
+data_analytics,SAP (ERP),23,107,0.215,0.148,0.302
+data_analytics,Operations/Manufacturing,23,107,0.215,0.148,0.302
+data_analytics,Risk/Actuarial,22,107,0.206,0.14,0.292
+data_analytics,Supply Chain/Logistics,19,107,0.178,0.117,0.261
+data_analytics,Public Sector/Research,19,107,0.178,0.117,0.261
+data_analytics,Requirements/Business Analysis,16,107,0.15,0.094,0.229
+data_analytics,Healthcare/Pharma/Bio,16,107,0.15,0.094,0.229
+data_analytics,Project Management,12,107,0.112,0.065,0.186
+data_analytics,Pricing/Revenue,11,107,0.103,0.058,0.175
+data_analytics,Automotive/Mobility,9,107,0.084,0.045,0.152
+data_analytics,Marketing,8,107,0.075,0.038,0.141
+data_analytics,Customer Analytics,8,107,0.075,0.038,0.141
+data_analytics,Real Estate/Retail,8,107,0.075,0.038,0.141
+data_analytics,CRM,7,107,0.065,0.032,0.129
+data_analytics,E-Commerce,6,107,0.056,0.026,0.117
+data_analytics,HR/People Analytics,6,107,0.056,0.026,0.117
+data_analytics,Energy,5,107,0.047,0.02,0.105
+data_analytics,Web/Digital Analytics,5,107,0.047,0.02,0.105
+data_analytics,Product Analytics,3,107,0.028,0.01,0.079
+data_analytics,Digital/Online Marketing,3,107,0.028,0.01,0.079
+data_engineering,Consulting,39,160,0.244,0.184,0.316
+data_engineering,Operations/Manufacturing,35,160,0.219,0.162,0.289
+data_engineering,Public Sector/Research,30,160,0.188,0.135,0.255
+data_engineering,Finance/Controlling,23,160,0.144,0.098,0.206
+data_engineering,Requirements/Business Analysis,22,160,0.138,0.093,0.199
+data_engineering,Risk/Actuarial,19,160,0.119,0.077,0.178
+data_engineering,SAP (ERP),18,160,0.113,0.072,0.171
+data_engineering,Banking/Insurance,18,160,0.113,0.072,0.171
+data_engineering,Automotive/Mobility,18,160,0.113,0.072,0.171
+data_engineering,Project Management,18,160,0.113,0.072,0.171
+data_engineering,Healthcare/Pharma/Bio,17,160,0.106,0.067,0.164
+data_engineering,CRM,12,160,0.075,0.043,0.127
+data_engineering,Sales/Commercial,9,160,0.056,0.03,0.103
+data_engineering,Digital/Online Marketing,6,160,0.037,0.017,0.079
+data_engineering,Customer Analytics,6,160,0.037,0.017,0.079
+data_engineering,Marketing,6,160,0.037,0.017,0.079
+data_engineering,Energy,5,160,0.031,0.013,0.071
+data_engineering,Supply Chain/Logistics,5,160,0.031,0.013,0.071
+data_engineering,Web/Digital Analytics,3,160,0.019,0.006,0.054
+data_engineering,Telecom,2,160,0.013,0.003,0.044
+data_engineering,HR/People Analytics,2,160,0.013,0.003,0.044
+data_engineering,Real Estate/Retail,2,160,0.013,0.003,0.044
+data_engineering,Product Analytics,1,160,0.006,0.001,0.035
+data_engineering,Optimization/OR,1,160,0.006,0.001,0.035
+data_governance,SAP (ERP),19,65,0.292,0.196,0.412
+data_governance,Banking/Insurance,17,65,0.262,0.17,0.38
+data_governance,Consulting,14,65,0.215,0.133,0.33
+data_governance,Requirements/Business Analysis,13,65,0.2,0.121,0.313
+data_governance,Public Sector/Research,13,65,0.2,0.121,0.313
+data_governance,Operations/Manufacturing,12,65,0.185,0.109,0.296
+data_governance,Finance/Controlling,12,65,0.185,0.109,0.296
+data_governance,Marketing,11,65,0.169,0.097,0.278
+data_governance,Sales/Commercial,11,65,0.169,0.097,0.278
+data_governance,Project Management,10,65,0.154,0.086,0.261
+data_governance,Supply Chain/Logistics,8,65,0.123,0.064,0.225
+data_governance,Risk/Actuarial,7,65,0.108,0.053,0.206
+data_governance,Healthcare/Pharma/Bio,6,65,0.092,0.043,0.187
+data_governance,Automotive/Mobility,5,65,0.077,0.033,0.168
+data_governance,E-Commerce,4,65,0.062,0.024,0.148
+data_governance,Digital/Online Marketing,3,65,0.046,0.016,0.127
+data_governance,CRM,3,65,0.046,0.016,0.127
+data_governance,HR/People Analytics,2,65,0.031,0.008,0.105
+data_governance,Energy,2,65,0.031,0.008,0.105
+data_governance,Customer Analytics,2,65,0.031,0.008,0.105
+data_governance,Real Estate/Retail,2,65,0.031,0.008,0.105
+data_governance,Product Analytics,1,65,0.015,0.003,0.082
+data_governance,Telecom,1,65,0.015,0.003,0.082
+data_science,Requirements/Business Analysis,43,157,0.274,0.21,0.348
+data_science,Consulting,40,157,0.255,0.193,0.328
+data_science,Public Sector/Research,37,157,0.236,0.176,0.308
+data_science,Project Management,36,157,0.229,0.17,0.301
+data_science,Operations/Manufacturing,34,157,0.217,0.159,0.287
+data_science,Banking/Insurance,30,157,0.191,0.137,0.26
+data_science,Risk/Actuarial,20,157,0.127,0.084,0.189
+data_science,Sales/Commercial,19,157,0.121,0.079,0.181
+data_science,Finance/Controlling,17,157,0.108,0.069,0.167
+data_science,Healthcare/Pharma/Bio,13,157,0.083,0.049,0.137
+data_science,Supply Chain/Logistics,13,157,0.083,0.049,0.137
+data_science,SAP (ERP),12,157,0.076,0.044,0.129
+data_science,Automotive/Mobility,11,157,0.07,0.04,0.121
+data_science,Marketing,11,157,0.07,0.04,0.121
+data_science,HR/People Analytics,10,157,0.064,0.035,0.113
+data_science,Real Estate/Retail,9,157,0.057,0.03,0.105
+data_science,Optimization/OR,6,157,0.038,0.018,0.081
+data_science,Digital/Online Marketing,4,157,0.025,0.01,0.064
+data_science,CRM,4,157,0.025,0.01,0.064
+data_science,Web/Digital Analytics,4,157,0.025,0.01,0.064
+data_science,Product Analytics,3,157,0.019,0.007,0.055
+data_science,Customer Analytics,3,157,0.019,0.007,0.055
+data_science,Pricing/Revenue,3,157,0.019,0.007,0.055
+data_science,Telecom,1,157,0.006,0.001,0.035
+marketing_analytics,Marketing,24,24,1.0,0.862,1.0
+marketing_analytics,Digital/Online Marketing,17,24,0.708,0.508,0.851
+marketing_analytics,Web/Digital Analytics,13,24,0.542,0.351,0.721
+marketing_analytics,Consulting,12,24,0.5,0.314,0.686
+marketing_analytics,CRM,11,24,0.458,0.279,0.649
+marketing_analytics,Sales/Commercial,10,24,0.417,0.245,0.612
+marketing_analytics,Customer Analytics,10,24,0.417,0.245,0.612
+marketing_analytics,Product Analytics,9,24,0.375,0.212,0.573
+marketing_analytics,E-Commerce,7,24,0.292,0.149,0.492
+marketing_analytics,Automotive/Mobility,5,24,0.208,0.092,0.405
+marketing_analytics,Real Estate/Retail,4,24,0.167,0.067,0.359
+marketing_analytics,Project Management,3,24,0.125,0.043,0.31
+marketing_analytics,Operations/Manufacturing,3,24,0.125,0.043,0.31
+marketing_analytics,Finance/Controlling,2,24,0.083,0.023,0.258
+marketing_analytics,Telecom,2,24,0.083,0.023,0.258
+marketing_analytics,Requirements/Business Analysis,2,24,0.083,0.023,0.258
+marketing_analytics,SAP (ERP),1,24,0.042,0.007,0.202
+product_analytics,Marketing,1,1,1.0,0.207,1.0
+product_analytics,Customer Analytics,1,1,1.0,0.207,1.0
+product_analytics,Product Analytics,1,1,1.0,0.207,1.0
+product_analytics,Web/Digital Analytics,1,1,1.0,0.207,1.0
+product_analytics,Public Sector/Research,1,1,1.0,0.207,1.0

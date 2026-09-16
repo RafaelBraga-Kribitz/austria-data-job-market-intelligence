@@ -1,0 +1,15 @@
+skill,count,n,share,ci_low,ci_high
+PyTorch,32,719,0.045,0.032,0.062
+Jupyter,29,719,0.04,0.028,0.057
+scikit-learn,25,719,0.035,0.024,0.051
+LangChain/LLM frameworks,24,719,0.033,0.023,0.049
+TensorFlow/Keras,22,719,0.031,0.02,0.046
+pandas,21,719,0.029,0.019,0.044
+NumPy,11,719,0.015,0.009,0.027
+Hugging Face/Transformers,6,719,0.008,0.004,0.018
+matplotlib/seaborn,3,719,0.004,0.001,0.012
+Plotly/Dash,3,719,0.004,0.001,0.012
+FastAPI/Flask,3,719,0.004,0.001,0.012
+XGBoost/LightGBM,2,719,0.003,0.001,0.01
+Streamlit,1,719,0.001,0.0,0.008
+statsmodels,1,719,0.001,0.0,0.008

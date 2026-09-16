@@ -1,0 +1,52 @@
+role_family,degree_field,count,n,share,ci_low,ci_high
+bi,Economics/Business,34,85,0.4,0.302,0.506
+bi,Computer Science/Informatics,27,85,0.318,0.228,0.423
+bi,Engineering/Physics,23,85,0.271,0.188,0.373
+bi,Data Science,9,85,0.106,0.057,0.189
+bi,Statistics/Mathematics,6,85,0.071,0.033,0.146
+bi,Marketing/Communication,2,85,0.024,0.006,0.082
+bi,Natural/Life Sciences,1,85,0.012,0.002,0.064
+business_analysis,Computer Science/Informatics,41,120,0.342,0.263,0.43
+business_analysis,Engineering/Physics,38,120,0.317,0.24,0.404
+business_analysis,Economics/Business,29,120,0.242,0.174,0.326
+business_analysis,Statistics/Mathematics,3,120,0.025,0.009,0.071
+business_analysis,Data Science,2,120,0.017,0.005,0.059
+business_analysis,Marketing/Communication,2,120,0.017,0.005,0.059
+business_analysis,Natural/Life Sciences,1,120,0.008,0.001,0.046
+data_analytics,Economics/Business,48,107,0.449,0.358,0.543
+data_analytics,Engineering/Physics,33,107,0.308,0.229,0.401
+data_analytics,Computer Science/Informatics,32,107,0.299,0.221,0.392
+data_analytics,Statistics/Mathematics,20,107,0.187,0.124,0.271
+data_analytics,Data Science,17,107,0.159,0.102,0.24
+data_analytics,Social Sciences/Psychology,2,107,0.019,0.005,0.066
+data_analytics,Marketing/Communication,1,107,0.009,0.002,0.051
+data_analytics,Natural/Life Sciences,1,107,0.009,0.002,0.051
+data_engineering,Computer Science/Informatics,73,160,0.456,0.381,0.534
+data_engineering,Engineering/Physics,69,160,0.431,0.357,0.509
+data_engineering,Data Science,30,160,0.188,0.135,0.255
+data_engineering,Economics/Business,18,160,0.113,0.072,0.171
+data_engineering,Statistics/Mathematics,6,160,0.037,0.017,0.079
+data_engineering,Natural/Life Sciences,2,160,0.013,0.003,0.044
+data_engineering,Marketing/Communication,1,160,0.006,0.001,0.035
+data_governance,Economics/Business,28,65,0.431,0.318,0.552
+data_governance,Engineering/Physics,21,65,0.323,0.222,0.444
+data_governance,Computer Science/Informatics,15,65,0.231,0.145,0.346
+data_governance,Statistics/Mathematics,9,65,0.138,0.075,0.243
+data_governance,Data Science,7,65,0.108,0.053,0.206
+data_governance,Natural/Life Sciences,5,65,0.077,0.033,0.168
+data_governance,Marketing/Communication,3,65,0.046,0.016,0.127
+data_governance,Social Sciences/Psychology,1,65,0.015,0.003,0.082
+data_science,Computer Science/Informatics,78,157,0.497,0.42,0.574
+data_science,Data Science,57,157,0.363,0.292,0.441
+data_science,Engineering/Physics,53,157,0.338,0.268,0.415
+data_science,Statistics/Mathematics,42,157,0.268,0.204,0.342
+data_science,Economics/Business,29,157,0.185,0.132,0.253
+data_science,Social Sciences/Psychology,1,157,0.006,0.001,0.035
+data_science,Natural/Life Sciences,1,157,0.006,0.001,0.035
+marketing_analytics,Marketing/Communication,5,24,0.208,0.092,0.405
+marketing_analytics,Computer Science/Informatics,4,24,0.167,0.067,0.359
+marketing_analytics,Statistics/Mathematics,4,24,0.167,0.067,0.359
+marketing_analytics,Data Science,4,24,0.167,0.067,0.359
+marketing_analytics,Economics/Business,3,24,0.125,0.043,0.31
+marketing_analytics,Engineering/Physics,1,24,0.042,0.007,0.202
+product_analytics,Computer Science/Informatics,1,1,1.0,0.207,1.0

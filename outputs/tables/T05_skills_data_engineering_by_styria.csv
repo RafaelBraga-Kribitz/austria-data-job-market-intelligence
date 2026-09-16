@@ -1,0 +1,34 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,Data Governance/Quality,199,661,0.301,0.267,0.337
+Rest of Austria,ETL/ELT,139,661,0.21,0.181,0.243
+Rest of Austria,Data Modeling,110,661,0.166,0.14,0.197
+Rest of Austria,CI/CD,96,661,0.145,0.12,0.174
+Rest of Austria,REST APIs,75,661,0.113,0.091,0.14
+Rest of Austria,Git,60,661,0.091,0.071,0.115
+Rest of Austria,Streaming,48,661,0.073,0.055,0.095
+Rest of Austria,Spark,44,661,0.067,0.05,0.088
+Rest of Austria,Docker,42,661,0.064,0.047,0.085
+Rest of Austria,MLOps,42,661,0.064,0.047,0.085
+Rest of Austria,Kubernetes,38,661,0.057,0.042,0.078
+Rest of Austria,dbt,24,661,0.036,0.025,0.053
+Rest of Austria,Terraform/IaC,21,661,0.032,0.021,0.048
+Rest of Austria,Azure Data Factory,18,661,0.027,0.017,0.043
+Rest of Austria,Kafka,16,661,0.024,0.015,0.039
+Rest of Austria,Airflow,11,661,0.017,0.009,0.03
+Rest of Austria,Fivetran/Airbyte,2,661,0.003,0.001,0.011
+Styria,Data Governance/Quality,21,58,0.362,0.251,0.491
+Styria,ETL/ELT,20,58,0.345,0.236,0.473
+Styria,CI/CD,13,58,0.224,0.136,0.347
+Styria,Git,11,58,0.19,0.109,0.309
+Styria,Data Modeling,8,58,0.138,0.072,0.249
+Styria,REST APIs,8,58,0.138,0.072,0.249
+Styria,Terraform/IaC,5,58,0.086,0.037,0.186
+Styria,Azure Data Factory,4,58,0.069,0.027,0.164
+Styria,MLOps,4,58,0.069,0.027,0.164
+Styria,Spark,3,58,0.052,0.018,0.141
+Styria,Streaming,3,58,0.052,0.018,0.141
+Styria,Kafka,2,58,0.034,0.01,0.117
+Styria,Docker,2,58,0.034,0.01,0.117
+Styria,Kubernetes,2,58,0.034,0.01,0.117
+Styria,dbt,1,58,0.017,0.003,0.091
+Styria,Airflow,1,58,0.017,0.003,0.091

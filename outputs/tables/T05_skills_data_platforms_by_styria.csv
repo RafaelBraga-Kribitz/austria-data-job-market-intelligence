@@ -1,0 +1,33 @@
+styria_flag,skill,count,n,share,ci_low,ci_high
+Rest of Austria,Databricks,72,661,0.109,0.087,0.135
+Rest of Austria,Data Warehouse (generic),62,661,0.094,0.074,0.118
+Rest of Austria,Data Lake/Lakehouse,47,661,0.071,0.054,0.093
+Rest of Austria,Oracle,39,661,0.059,0.043,0.08
+Rest of Austria,Snowflake,39,661,0.059,0.043,0.08
+Rest of Austria,Microsoft Fabric,35,661,0.053,0.038,0.073
+Rest of Austria,SQL Server,32,661,0.048,0.034,0.068
+Rest of Austria,PostgreSQL,29,661,0.044,0.031,0.062
+Rest of Austria,BigQuery,22,661,0.033,0.022,0.05
+Rest of Austria,SAP HANA,18,661,0.027,0.017,0.043
+Rest of Austria,Azure Synapse,16,661,0.024,0.015,0.039
+Rest of Austria,MySQL/MariaDB,10,661,0.015,0.008,0.028
+Rest of Austria,MongoDB,10,661,0.015,0.008,0.028
+Rest of Austria,Neo4j,8,661,0.012,0.006,0.024
+Rest of Austria,Hadoop,6,661,0.009,0.004,0.02
+Rest of Austria,Redshift,4,661,0.006,0.002,0.015
+Rest of Austria,Cassandra,4,661,0.006,0.002,0.015
+Rest of Austria,Elasticsearch,2,661,0.003,0.001,0.011
+Rest of Austria,ClickHouse,1,661,0.002,0.0,0.009
+Styria,Databricks,11,58,0.19,0.109,0.309
+Styria,Data Warehouse (generic),10,58,0.172,0.096,0.289
+Styria,SQL Server,6,58,0.103,0.048,0.208
+Styria,Microsoft Fabric,6,58,0.103,0.048,0.208
+Styria,Azure Synapse,5,58,0.086,0.037,0.186
+Styria,PostgreSQL,4,58,0.069,0.027,0.164
+Styria,Data Lake/Lakehouse,4,58,0.069,0.027,0.164
+Styria,BigQuery,3,58,0.052,0.018,0.141
+Styria,SAP HANA,2,58,0.034,0.01,0.117
+Styria,MongoDB,2,58,0.034,0.01,0.117
+Styria,Snowflake,2,58,0.034,0.01,0.117
+Styria,Oracle,2,58,0.034,0.01,0.117
+Styria,MySQL/MariaDB,1,58,0.017,0.003,0.091

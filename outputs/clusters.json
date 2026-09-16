@@ -1,0 +1,112 @@
+{
+ "k": 8,
+ "silhouette": 0.073,
+ "n_postings": 678,
+ "n_skills": 93,
+ "clusters": [
+  {
+   "cluster": 0,
+   "n": 78,
+   "share": 0.115,
+   "defining_skills": "Marketing (62%, lift 5.9); Digital/Online Marketing (29%, lift 5.7); Data Governance/Quality (77%, lift 2.4); Sales/Commercial (36%, lift 2.2); Excel (29%, lift 1.6)",
+   "family_mix": "data_governance 29; marketing_analytics 21; data_analytics 9; data_science 7",
+   "styria_share": 0.03,
+   "english_posting_share": 0.23,
+   "german_required_share": 0.41,
+   "median_min_salary": 45192.0,
+   "n_salary": 61,
+   "example_titles": "Controller der Zukunft - Business Intelligence & Data Analytics (m/w/d) | Business Process & Data Management (w/m/d) | VCR_12609 Clinical Data Manager (m/w/d) VIBRANT Innsbruck | Junior Product Data Specialist (w/m/d) | Teamleitung Customer Insights & Data Analytics (w/m/x)"
+  },
+  {
+   "cluster": 1,
+   "n": 73,
+   "share": 0.108,
+   "defining_skills": "Oracle (40%, lift 6.7); SQL Server (29%, lift 5.1); Data Warehouse (generic) (48%, lift 4.5); SQL (89%, lift 2.1); ETL/ELT (40%, lift 1.7); Public Sector/Research (33%, lift 1.6); Power BI (27%, lift 1.4)",
+   "family_mix": "data_engineering 40; bi 23; business_analysis 7; data_science 1",
+   "styria_share": 0.07,
+   "english_posting_share": 0.04,
+   "german_required_share": 0.45,
+   "median_min_salary": 57400.0,
+   "n_salary": 63,
+   "example_titles": "Database Engineer (w/m/*) | IT-Analyst | IT-Analyst | Business Intelligence Analyst / Reporting (w/m/d) \n | SAP Data Engineer (m/w/d)"
+  },
+  {
+   "cluster": 2,
+   "n": 91,
+   "share": 0.134,
+   "defining_skills": "Forecasting (25%, lift 4.2); Excel (76%, lift 4.1); Finance/Controlling (73%, lift 2.7); Banking/Insurance (38%, lift 2.1); Power BI (37%, lift 1.9); Public Sector/Research (30%, lift 1.5); SQL (27%, lift 0.6)",
+   "family_mix": "data_analytics 45; bi 25; data_science 8; business_analysis 7",
+   "styria_share": 0.07,
+   "english_posting_share": 0.2,
+   "german_required_share": 0.35,
+   "median_min_salary": 46944.0,
+   "n_salary": 75,
+   "example_titles": "Business Analyst Produktion mit BI-Expertise (m/w/d) (Business-Analyst/in) | Research Analyst Sustainable IT / GreenOps (w/m/d) | Student Job (f/m/x) - CIB AI & Data Team (20-25h/week) | Data Scientist Supply Chain Management (m/w/d) | Data Scientist Supply Chain Management (m/w/d)\n"
+  },
+  {
+   "cluster": 3,
+   "n": 84,
+   "share": 0.124,
+   "defining_skills": "Azure Data Factory (26%, lift 8.1); Microsoft Fabric (42%, lift 6.9); Data Lake/Lakehouse (44%, lift 5.9); Databricks (64%, lift 5.3); Azure (95%, lift 4.6); Spark (27%, lift 3.9); Data Modeling (58%, lift 3.4); ETL/ELT (67%, lift 2.8); CI/CD (40%, lift 2.5); Power BI (42%, lift 2.1); Python (62%, lift 1.7); SQL (68%, lift 1.6)",
+   "family_mix": "data_engineering 57; bi 12; data_science 8; data_analytics 6",
+   "styria_share": 0.17,
+   "english_posting_share": 0.2,
+   "german_required_share": 0.5,
+   "median_min_salary": 57400.0,
+   "n_salary": 71,
+   "example_titles": "DATA ENGINEER - STREAMING & ANALYTICS | Senior Data Engineer (all genders) | Data Scientist / Data Engineer im Bereich der Energieerzeugung (m./w.) | (Senior) Data Engineer Databricks (all genders) | Senior Data Engineer Azure (all genders)"
+  },
+  {
+   "cluster": 4,
+   "n": 112,
+   "share": 0.165,
+   "defining_skills": "PyTorch (26%, lift 5.5); Docker (29%, lift 4.4); Kubernetes (25%, lift 4.2); Generative AI / LLM (71%, lift 4.2); Machine Learning (69%, lift 4.0); MLOps (27%, lift 3.9); AWS (30%, lift 3.3); REST APIs (39%, lift 3.2); CI/CD (46%, lift 2.8); Git (29%, lift 2.7); Python (82%, lift 2.2); Azure (41%, lift 2.0)",
+   "family_mix": "data_science 96; data_engineering 12; data_analytics 2; data_governance 1",
+   "styria_share": 0.09,
+   "english_posting_share": 0.47,
+   "german_required_share": 0.39,
+   "median_min_salary": 58000.0,
+   "n_salary": 84,
+   "example_titles": "Lead Engineer - Applied AI & Data Products | DATA SCIENTIST / ML ENGINEER (M/W/D) | Data Platform Engineer (w/m/d) | Senior Data Engineer (m/w/d) | Senior Data Platform Engineer (f/m/x)"
+  },
+  {
+   "cluster": 5,
+   "n": 88,
+   "share": 0.13,
+   "defining_skills": "Requirements/Business Analysis (100%, lift 3.5); Banking/Insurance (33%, lift 1.8); Finance/Controlling (31%, lift 1.2)",
+   "family_mix": "business_analysis 61; data_governance 8; data_science 7; bi 7",
+   "styria_share": 0.08,
+   "english_posting_share": 0.14,
+   "german_required_share": 0.44,
+   "median_min_salary": 55000.0,
+   "n_salary": 72,
+   "example_titles": "Business Analyst/ Produktmanager*in (w/m/d) Transaktionskommunikation | Data Scientist / AI Engineer (m/w/d) | Technische:r Business Analyst:in | Business Analyst (m/w/x) | Studentenjob Business Analyst (m/w/d)"
+  },
+  {
+   "cluster": 6,
+   "n": 90,
+   "share": 0.133,
+   "defining_skills": "Python (96%, lift 2.6); SQL (99%, lift 2.3); ETL/ELT (47%, lift 2.0); Data Modeling (31%, lift 1.8); Public Sector/Research (30%, lift 1.5); Banking/Insurance (26%, lift 1.4); Data Governance/Quality (43%, lift 1.4); Finance/Controlling (29%, lift 1.1)",
+   "family_mix": "data_engineering 30; data_science 24; data_analytics 18; bi 8",
+   "styria_share": 0.11,
+   "english_posting_share": 0.42,
+   "german_required_share": 0.23,
+   "median_min_salary": 53000.0,
+   "n_salary": 69,
+   "example_titles": "DATA SCIENTIST (M/W/X) | Data Analyst:in im Meldewesen | Data Engineer (m/w/x) | Data Engineer (f/m/x) | Data Engineer - Focus Apache Flink (m/f/x)"
+  },
+  {
+   "cluster": 7,
+   "n": 62,
+   "share": 0.091,
+   "defining_skills": "Operations/Manufacturing (97%, lift 4.8); Supply Chain/Logistics (29%, lift 2.6); Excel (26%, lift 1.4); Requirements/Business Analysis (34%, lift 1.2); Data Governance/Quality (29%, lift 0.9)",
+   "family_mix": "business_analysis 22; data_analytics 16; data_engineering 8; data_governance 7",
+   "styria_share": 0.02,
+   "english_posting_share": 0.13,
+   "german_required_share": 0.29,
+   "median_min_salary": 48287.0,
+   "n_salary": 47,
+   "example_titles": "System Data Engineer (m/w/d) | IT-Business Analyst:in mit Fokus Produktion Schienenpersonenverkehr | Supply Chain Analyst:in | Process Data Engineer, Wels, AT (Data-Warehouse-Analyst/in) | Commercial Pricing Analyst (w/m/d)"
+  }
+ ]
+}

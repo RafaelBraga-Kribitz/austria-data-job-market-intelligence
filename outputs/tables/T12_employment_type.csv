@@ -1,0 +1,5 @@
+employment_type,count,n,share,ci_low,ci_high
+full_time,615,720,0.854,0.827,0.878
+full_or_part_time,66,720,0.092,0.073,0.115
+unknown,32,720,0.044,0.032,0.062
+part_time,7,720,0.01,0.005,0.02

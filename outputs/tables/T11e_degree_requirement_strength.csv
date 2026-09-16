@@ -1,0 +1,5 @@
+degree_requirement,count,n,share,ci_low,ci_high
+none,253,719,0.352,0.318,0.387
+required,229,719,0.318,0.285,0.353
+mentioned,219,719,0.305,0.272,0.339
+preferred,18,719,0.025,0.016,0.039

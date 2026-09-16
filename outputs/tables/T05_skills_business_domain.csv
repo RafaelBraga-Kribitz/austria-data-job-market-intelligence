@@ -1,0 +1,27 @@
+skill,count,n,share,ci_low,ci_high
+Consulting,225,719,0.313,0.28,0.348
+Requirements/Business Analysis,209,719,0.291,0.259,0.325
+Finance/Controlling,180,719,0.25,0.22,0.283
+Project Management,151,719,0.21,0.182,0.241
+Operations/Manufacturing,140,719,0.195,0.167,0.225
+Public Sector/Research,137,719,0.191,0.164,0.221
+SAP (ERP),137,719,0.191,0.164,0.221
+Banking/Insurance,122,719,0.17,0.144,0.199
+Sales/Commercial,113,719,0.157,0.132,0.186
+Risk/Actuarial,85,719,0.118,0.097,0.144
+Supply Chain/Logistics,75,719,0.104,0.084,0.129
+Marketing,71,719,0.099,0.079,0.123
+Healthcare/Pharma/Bio,62,719,0.086,0.068,0.109
+Automotive/Mobility,62,719,0.086,0.068,0.109
+CRM,48,719,0.067,0.051,0.087
+Customer Analytics,36,719,0.05,0.036,0.069
+Digital/Online Marketing,35,719,0.049,0.035,0.067
+Web/Digital Analytics,33,719,0.046,0.033,0.064
+Real Estate/Retail,31,719,0.043,0.031,0.061
+E-Commerce,23,719,0.032,0.021,0.048
+HR/People Analytics,21,719,0.029,0.019,0.044
+Product Analytics,19,719,0.026,0.017,0.041
+Telecom,16,719,0.022,0.014,0.036
+Energy,16,719,0.022,0.014,0.036
+Pricing/Revenue,15,719,0.021,0.013,0.034
+Optimization/OR,8,719,0.011,0.006,0.022

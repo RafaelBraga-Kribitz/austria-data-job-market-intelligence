@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+data/raw/_probe/
+*.tmp
+
+# private audit trail (pre-D-012 processed snapshot), too large for git
+data/processed/_pre_D012/

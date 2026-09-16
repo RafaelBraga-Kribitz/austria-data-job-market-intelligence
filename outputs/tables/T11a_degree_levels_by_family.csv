@@ -1,0 +1,36 @@
+role_family,degree_level,count,n,share,ci_low,ci_high
+bi,Degree (generic),54,85,0.635,0.529,0.73
+bi,HTL/Matura,20,85,0.235,0.158,0.336
+bi,Bachelor,7,85,0.082,0.04,0.16
+bi,Master,6,85,0.071,0.033,0.146
+bi,MINT/STEM,2,85,0.024,0.006,0.082
+bi,PhD,1,85,0.012,0.002,0.064
+business_analysis,Degree (generic),74,120,0.617,0.527,0.699
+business_analysis,HTL/Matura,34,120,0.283,0.21,0.37
+business_analysis,Master,7,120,0.058,0.029,0.116
+business_analysis,Bachelor,5,120,0.042,0.018,0.094
+data_analytics,Degree (generic),64,107,0.598,0.503,0.686
+data_analytics,Master,14,107,0.131,0.08,0.208
+data_analytics,Bachelor,11,107,0.103,0.058,0.175
+data_analytics,HTL/Matura,8,107,0.075,0.038,0.141
+data_analytics,MINT/STEM,1,107,0.009,0.002,0.051
+data_engineering,Degree (generic),92,160,0.575,0.498,0.649
+data_engineering,HTL/Matura,39,160,0.244,0.184,0.316
+data_engineering,Master,4,160,0.025,0.01,0.063
+data_engineering,Bachelor,3,160,0.019,0.006,0.054
+data_engineering,PhD,2,160,0.013,0.003,0.044
+data_engineering,MINT/STEM,1,160,0.006,0.001,0.035
+data_governance,Degree (generic),38,65,0.585,0.463,0.696
+data_governance,Master,14,65,0.215,0.133,0.33
+data_governance,HTL/Matura,14,65,0.215,0.133,0.33
+data_governance,Bachelor,5,65,0.077,0.033,0.168
+data_governance,PhD,1,65,0.015,0.003,0.082
+data_science,Degree (generic),90,157,0.573,0.495,0.648
+data_science,Master,25,157,0.159,0.11,0.225
+data_science,Bachelor,15,157,0.096,0.059,0.152
+data_science,PhD,11,157,0.07,0.04,0.121
+data_science,HTL/Matura,9,157,0.057,0.03,0.105
+data_science,MINT/STEM,2,157,0.013,0.004,0.045
+marketing_analytics,Degree (generic),7,24,0.292,0.149,0.492
+marketing_analytics,Master,2,24,0.083,0.023,0.258
+product_analytics,Degree (generic),1,1,1.0,0.207,1.0

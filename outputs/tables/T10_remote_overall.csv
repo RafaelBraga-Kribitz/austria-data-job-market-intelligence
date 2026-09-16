@@ -1,0 +1,6 @@
+remote_type,count,n,share,ci_low,ci_high
+unknown,285,719,0.396,0.361,0.433
+hybrid,197,719,0.274,0.243,0.308
+hybrid_or_flexible,184,719,0.256,0.225,0.289
+on_site,39,719,0.054,0.04,0.073
+remote,14,719,0.019,0.012,0.032

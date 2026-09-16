@@ -1,0 +1,837 @@
+
+=== Counts  [market_summary.json] ===
+{
+ "raw_rows_all_sources": 12429,
+ "canonical_groups_all": 10945,
+ "core_canonical": 720,
+ "core_with_description": 719,
+ "adjacent_canonical": 546,
+ "styria_core": 58,
+ "graz_area_core": 52,
+ "vienna_core": 350,
+ "unique_employers_core": 387,
+ "unique_employers_styria": 32
+}
+posted: {'min': '2023-08-17', 'max': '2026-09-16'} collected: {'min': '2026-09-16 17:00:34+00:00', 'max': '2026-09-16 18:39:42+00:00'}
+
+=== Source coverage  [T01] ===
+   source  rows  in_scope_rows  adjacent_rows  with_description  in_scope_canonical
+    eures  4569            223            134              4569                 202
+   jobsat   105             65             12               105                  58
+ karriere  2114            200            126              2114                 134
+ linkedin  4133            486            363              4129                 300
+willhaben  1508             40             21              1508                  26
+
+=== Dedupe  [dedupe_summary / T01b] ===
+ rows_total  rows_in_scope  unique_groups_total  unique_groups_in_scope  duplicate_rate_in_scope
+      12429           1670                10945                    1266                    0.242
+        sources_in_group  groups
+                linkedin     290
+                   eures     186
+                karriere      77
+       karriere,linkedin      48
+         jobsat,karriere      33
+jobsat,karriere,linkedin      20
+               willhaben      19
+          eures,linkedin      16
+      karriere,willhaben       6
+          eures,karriere       4
+
+=== Families  [T02] ===
+        role_family  count   n  share  styria_count  graz_area_count  vienna_count
+   data_engineering    160 720  0.222            20               16            80
+       data_science    158 720  0.219            13               13            81
+  business_analysis    120 720  0.167             4                3            75
+     data_analytics    107 720  0.149            11               11            42
+                 bi     85 720  0.118             5                5            35
+    data_governance     65 720  0.090             5                4            23
+marketing_analytics     24 720  0.033             0                0            13
+  product_analytics      1 720  0.001             0                0             1
+            role_family  count
+ai_software_engineering    311
+             other_data    235
+
+=== Normalized titles  [T02b] ===
+        role_family                                    normalized_title  count  styria
+   data_engineering                                       Data Engineer    134      18
+  business_analysis                                    Business Analyst    120       4
+       data_science                                      Data Scientist     79       5
+     data_analytics                                        Data Analyst     77      11
+       data_science                      Machine Learning / AI Engineer     76       8
+    data_governance      Master / Product Data Management (operational)     34       3
+                 bi                          BI Developer / BI Engineer     33       2
+                 bi                                          BI Analyst     32       1
+    data_governance       Data Governance / Data Steward / Data Manager     31       2
+     data_analytics Financial / Risk / Controlling Analyst (data-heavy)     30       0
+marketing_analytics                        Marketing/Growth/CRM Analyst     22       0
+   data_engineering                      Data Architect / Data Platform     21       2
+                 bi                BI Consultant / Analytics Consultant     20       2
+   data_engineering                                  Analytics Engineer      5       0
+       data_science                      Statistician / Biostatistician      3       0
+marketing_analytics                            Marketing Data Scientist      2       0
+  product_analytics                                     Product Analyst      1       0
+
+=== States  [T03a/T03d] ===
+           state  count   n  share
+            Wien    343 720  0.476
+  Oberösterreich    122 720  0.169
+      Steiermark     54 720  0.075
+      Vorarlberg     46 720  0.064
+Niederösterreich     44 720  0.061
+        Salzburg     37 720  0.051
+           Tirol     30 720  0.042
+         Kärnten     22 720  0.031
+     unspecified     22 720  0.031
+              metric  count
+       core_postings    720
+              styria     58
+           graz_area     52
+           graz_city     34
+              vienna    350
+   austria_wide_flag     13
+      multi_location     61
+location_unspecified     22
+          city  count
+          Graz     34
+ Hart Bei Graz      6
+   unspecified      3
+          Weiz      3
+      Dornbirn      2
+       Lieboch      1
+        Liezen      1
+Raaba-Grambach      1
+
+=== Employers  [T04b/T04a/T04] ===
+                                metric   value
+                   core_postings_total 720.000
+          postings_with_named_employer 580.000
+       postings_without_named_employer 140.000
+        unique_named_employers_austria 387.000
+         unique_named_employers_styria  32.000
+      unique_named_employers_graz_area  28.000
+                  top10_share_of_named   0.109
+                  top25_share_of_named   0.202
+        agency_share_of_named_postings   0.045
+        eures_anonymised_employer_rows 140.000
+styria_postings_without_named_employer  10.000
+                 example_company  styria                                                       families  is_agency
+                           KNAPP       7 business_analysis,data_analytics,data_engineering,data_science      False
+                  adesso Austria       4                                  data_engineering,data_science      False
+                   Tieto Austria       3                                  data_engineering,data_science      False
+               CANCOM Austria AG       2                                            bi,data_engineering      False
+                  niceshops GmbH       2                                                 data_analytics      False
+                      Anton Paar       2                                                   data_science      False
+            Mercedes-Benz G GmbH       2                                                 data_analytics      False
+             Magna International       2                                            bi,data_engineering      False
+                       Netconomy       1                                  data_engineering,data_science      False
+   KERN engineering careers GmbH       1                               bi,data_engineering,data_science      False
+Österreichische Gesundheitskasse       1                                                data_governance      False
+           ASE Services Süd GmbH       1                                                   data_science      False
+                       ams OSRAM       1                                                   data_science      False
+                     All for One       1                                                 data_analytics      False
+                       EPIG GmbH       1                                                 data_analytics      False
+                        Easelink       1                                              business_analysis      False
+       Kapsch Aktiengesellschaft       1                                               data_engineering      False
+                Maco Produktions       1                                               data_engineering      False
+                         OMNINET       1                                                             bi      False
+          Merkur Versicherung AG       1                                                   data_science      False
+                 example_company  postings                         states
+                        Red Bull        10                       Salzburg
+                       Qualysoft         7                           Wien
+                  Liebherr Group         7                     Vorarlberg
+                           KNAPP         7                     Steiermark
+                Hirebuddy FlexCo         6          Niederösterreich,Wien
+   KERN engineering careers GmbH         6 Oberösterreich,Steiermark,Wien
+                  PwC Österreich         5                           Wien
+                             ÖBB         5                           Wien
+                     ÖBB-Konzern         5          Niederösterreich,Wien
+                  Accenture DACH         5                     Tirol,Wien
+                             msg         4                 Oberösterreich
+                   Tieto Austria         4                Steiermark,Wien
+           smart Energy Services         4                           Wien
+TOWA. the digital growth company         4                Vorarlberg,Wien
+                   RHI Magnesita         4                           Wien
+
+=== Tech skills overall  [T05_skills_all_tech] ===
+                   skill  count   n  share  ci_low  ci_high
+                     SQL    291 719  0.405   0.369    0.441
+            AI (generic)    276 719  0.384   0.349    0.420
+      Data Visualization    274 719  0.381   0.346    0.417
+                  Python    253 719  0.352   0.318    0.387
+ Data Governance/Quality    220 719  0.306   0.273    0.341
+         Cloud (generic)    206 719  0.287   0.255    0.321
+                 ETL/ELT    159 719  0.221   0.192    0.253
+                   Azure    139 719  0.193   0.166    0.224
+                Power BI    132 719  0.184   0.157    0.214
+                   Excel    128 719  0.178   0.152    0.208
+           Data Modeling    118 719  0.164   0.139    0.193
+        Machine Learning    118 719  0.164   0.139    0.193
+     Generative AI / LLM    117 719  0.163   0.138    0.191
+                   CI/CD    109 719  0.152   0.127    0.180
+    Statistics (general)     98 719  0.136   0.113    0.163
+              Databricks     83 719  0.115   0.094    0.141
+               REST APIs     83 719  0.115   0.094    0.141
+             Mathematics     77 719  0.107   0.087    0.132
+Data Warehouse (generic)     72 719  0.100   0.080    0.124
+                     Git     71 719  0.099   0.079    0.123
+                     AWS     62 719  0.086   0.068    0.109
+                       R     51 719  0.071   0.054    0.092
+               Streaming     51 719  0.071   0.054    0.092
+     Data Lake/Lakehouse     51 719  0.071   0.054    0.092
+                    Java     51 719  0.071   0.054    0.092
+                   Spark     47 719  0.065   0.050    0.086
+                   MLOps     46 719  0.064   0.048    0.084
+                  Docker     44 719  0.061   0.046    0.081
+                  Oracle     41 719  0.057   0.042    0.076
+        Microsoft Fabric     41 719  0.057   0.042    0.076
+               Snowflake     41 719  0.057   0.042    0.076
+                     GCP     41 719  0.057   0.042    0.076
+             Forecasting     41 719  0.057   0.042    0.076
+              Kubernetes     40 719  0.056   0.041    0.075
+ Segmentation/Clustering     40 719  0.056   0.041    0.075
+               SAP BW/BO     38 719  0.053   0.039    0.072
+              SQL Server     38 719  0.053   0.039    0.072
+              Bash/Shell     35 719  0.049   0.035    0.067
+                      C#     34 719  0.047   0.034    0.065
+              PostgreSQL     33 719  0.046   0.033    0.064
+
+=== Tech skills Styria vs rest  [T05_skills_all_tech_by_styria] ===
+{'Rest of Austria': 661, 'Styria': 58}
+styria_flag               Rest of Austria  Styria
+skill                                            
+SQL                                  0.40    0.47
+AI (generic)                         0.38    0.43
+Data Visualization                   0.38    0.34
+Python                               0.34    0.50
+Data Governance/Quality              0.30    0.36
+Cloud (generic)                      0.28    0.41
+ETL/ELT                              0.21    0.34
+Azure                                0.18    0.34
+Power BI                             0.19    0.14
+Excel                                0.18    0.12
+Data Modeling                        0.17    0.14
+Machine Learning                     0.17    0.14
+Generative AI / LLM                  0.17    0.12
+CI/CD                                0.14    0.22
+Statistics (general)                 0.14    0.05
+Databricks                           0.11    0.19
+REST APIs                            0.11    0.14
+Mathematics                          0.11    0.10
+Data Warehouse (generic)             0.09    0.17
+Git                                  0.09    0.19
+AWS                                  0.08    0.12
+R                                    0.07    0.07
+Streaming                            0.07    0.05
+Data Lake/Lakehouse                  0.07    0.07
+Java                                 0.07    0.09
+
+=== Top skills per family  [T14] ===
+        role_family  n_with_description                                                                                                                                                                                                                                                                                                             top_tech_skills
+                 bi                  85                    Data Visualization (86%); SQL (52%); Power BI (51%); Data Modeling (33%); AI (generic) (31%); SAP BW/BO (28%); Cloud (generic) (26%); Excel (20%); Data Warehouse (generic) (18%); Data Governance/Quality (18%); ETL/ELT (16%); Azure (14%); Python (11%); Statistics (general) (11%); SQL Server (11%)
+  business_analysis                 120                                                    AI (generic) (24%); Data Visualization (17%); Excel (14%); SQL (13%); Data Governance/Quality (9%); REST APIs (7%); Cloud (generic) (6%); R (6%); Bash/Shell (5%); Generative AI / LLM (5%); C# (4%); CI/CD (4%); Mathematics (4%); Java (4%); Statistics (general) (3%)
+     data_analytics                 107         Data Visualization (64%); Excel (47%); SQL (38%); Power BI (34%); Data Governance/Quality (28%); Python (26%); AI (generic) (21%); Statistics (general) (19%); Forecasting (18%); Cloud (generic) (17%); Mathematics (16%); Data Modeling (14%); Exploratory Analysis (12%); Segmentation/Clustering (10%); R (10%)
+   data_engineering                 160              SQL (69%); ETL/ELT (60%); Python (55%); Cloud (generic) (45%); Data Governance/Quality (44%); Azure (38%); Data Modeling (38%); CI/CD (34%); Data Visualization (32%); Databricks (29%); AI (generic) (28%); Data Warehouse (generic) (28%); Data Lake/Lakehouse (24%); Power BI (19%); Microsoft Fabric (18%)
+    data_governance                  65       Data Governance/Quality (82%); Excel (26%); AI (generic) (23%); Data Visualization (18%); SQL (14%); Statistics (general) (12%); Python (9%); Mathematics (9%); Cloud (generic) (8%); Power BI (8%); Classification (5%); Data Modeling (5%); Data Warehouse (generic) (5%); Streaming (5%); Generative AI / LLM (5%)
+       data_science                 157                                                            AI (generic) (82%); Python (73%); Machine Learning (55%); Generative AI / LLM (53%); Cloud (generic) (48%); SQL (36%); Azure (34%); CI/CD (31%); Statistics (general) (29%); REST APIs (29%); AWS (24%); Git (23%); MLOps (23%); Docker (23%); Mathematics (22%)
+marketing_analytics                  24 SQL (54%); Data Visualization (50%); Data Governance/Quality (50%); Google Analytics (46%); AI (generic) (42%); Excel (38%); Power BI (33%); Cloud (generic) (29%); BigQuery (25%); Generative AI / LLM (25%); Matomo (25%); Statistics (general) (25%); Segmentation/Clustering (21%); JavaScript (21%); Mathematics (17%)
+  product_analytics                   1                                            A/B Testing / Experimentation (100%); AI (generic) (100%); Data Governance/Quality (100%); Data Visualization (100%); ETL/ELT (100%); Hypothesis Testing (100%); Machine Learning (100%); Python (100%); SQL (100%); Segmentation/Clustering (100%); Statistics (general) (100%)
+
+=== Business/soft/python/stats/BI/platform categories  [T05_skills_<cat>] ===
+-- business_domain: Consulting 31% (225); Requirements/Business Analysis 29% (209); Finance/Controlling 25% (180); Project Management 21% (151); Operations/Manufacturing 20% (140); Public Sector/Research 19% (137); SAP (ERP) 19% (137); Banking/Insurance 17% (122); Sales/Commercial 16% (113); Risk/Actuarial 12% (85); Supply Chain/Logistics 10% (75); Marketing 10% (71)
+-- soft_skills: Teamwork 66% (474); Self-organisation 63% (456); Communication 63% (453); Analytical Thinking 55% (396); Stakeholder Management 55% (392); Curiosity/Learning 46% (328); Leadership 15% (106); Attention to Detail 10% (68); Customer Orientation 8% (55); Flexibility/Resilience 6% (42); Business Acumen 5% (33)
+-- python_ecosystem: PyTorch 4% (32); Jupyter 4% (29); scikit-learn 4% (25); LangChain/LLM frameworks 3% (24); TensorFlow/Keras 3% (22); pandas 3% (21); NumPy 2% (11); Hugging Face/Transformers 1% (6); matplotlib/seaborn 0% (3); Plotly/Dash 0% (3); FastAPI/Flask 0% (3); XGBoost/LightGBM 0% (2)
+-- statistics_methods: Data Visualization 38% (274); Statistics (general) 14% (98); Mathematics 11% (77); Segmentation/Clustering 6% (40); Exploratory Analysis 4% (30); A/B Testing / Experimentation 3% (22); Classification 1% (9); Sampling/Survey 1% (6); Regression 1% (6); Causal Inference 1% (5); Hypothesis Testing 1% (4); Bayesian 0% (3)
+-- bi_tools: Power BI 18% (132); Excel 18% (128); SAP BW/BO 5% (38); Tableau 3% (24); Qlik 3% (22); Google Analytics 2% (16); Looker 2% (11); Matomo 1% (8); Grafana 1% (8); MicroStrategy 1% (4); SSRS 0% (3); Metabase 0% (1)
+-- data_platforms: Databricks 12% (83); Data Warehouse (generic) 10% (72); Data Lake/Lakehouse 7% (51); Microsoft Fabric 6% (41); Snowflake 6% (41); Oracle 6% (41); SQL Server 5% (38); PostgreSQL 5% (33); BigQuery 4% (25); Azure Synapse 3% (21); SAP HANA 3% (20); MongoDB 2% (12)
+-- cloud_platforms: Cloud (generic) 29% (206); Azure 19% (139); AWS 9% (62); GCP 6% (41)
+-- ml_ai: AI (generic) 38% (276); Machine Learning 16% (118); Generative AI / LLM 16% (117); Forecasting 6% (41); Predictive Analytics 4% (25); Deep Learning 2% (16); Anomaly Detection 2% (13); NLP 2% (13); Computer Vision 2% (12); Time Series 1% (5); Reinforcement Learning 1% (5); Recommender Systems 0% (1)
+-- certifications: Certification (any mention) 13% (92); Requirements/BA cert (IREB/IIBA/CBAP) 3% (20); Scrum/PM cert 1% (9); ITIL 1% (7); Data-management cert (CDMP/DAMA) 0% (3); Azure cert 0% (2); Google cert 0% (2)
+
+=== Stacks & pairs  [T06b/T06] ===
+                                      stack  count   n  share
+                     ETL/ELT + Python + SQL     87 719  0.121
+             Cloud (generic) + Python + SQL     84 719  0.117
+AI (generic) + Generative AI / LLM + Python     77 719  0.107
+   AI (generic) + Machine Learning + Python     76 719  0.106
+           Azure + Cloud (generic) + Python     74 719  0.103
+          Data Visualization + Python + SQL     74 719  0.103
+        Data Visualization + Power BI + SQL     72 719  0.100
+                AI (generic) + Python + SQL     72 719  0.100
+                       Azure + Python + SQL     71 719  0.099
+    AI (generic) + Cloud (generic) + Python     70 719  0.097
+           skill_a             skill_b  both  share_of_postings  p_b_given_a  lift
+               SQL              Python   171              0.238        0.588  1.67
+               SQL  Data Visualization   148              0.206        0.509  1.33
+      AI (generic)              Python   135              0.188        0.489  1.39
+      AI (generic)     Cloud (generic)   127              0.177        0.460  1.61
+            Python     Cloud (generic)   121              0.168        0.478  1.67
+               SQL             ETL/ELT   117              0.163        0.402  1.82
+Data Visualization            Power BI   115              0.160        0.420  2.29
+      AI (generic) Generative AI / LLM   114              0.159        0.413  2.54
+               SQL     Cloud (generic)   111              0.154        0.381  1.33
+            Python             ETL/ELT   103              0.143        0.407  1.84
+               SQL        AI (generic)   102              0.142        0.351  0.91
+            Python               Azure   100              0.139        0.395  2.04
+
+=== German requirement  [T07] ===
+     german_requirement  count   n  share  ci_low  ci_high
+          not_mentioned    298 719  0.414   0.379    0.451
+       required_implied    224 719  0.312   0.279    0.346
+              preferred     88 719  0.122   0.100    0.148
+               required     61 719  0.085   0.067    0.107
+              mentioned     42 719  0.058   0.044    0.078
+      german_or_english      4 719  0.006   0.002    0.014
+explicitly_not_required      2 719  0.003   0.001    0.010
+german_requirement   explicitly_not_required  german_or_english  mentioned  not_mentioned  preferred  required  required_implied
+role_family                                                                                                                     
+bi                                       NaN               0.01       0.06           0.27       0.15      0.05              0.46
+business_analysis                        NaN                NaN       0.09           0.37       0.10      0.12              0.32
+data_analytics                          0.01               0.03       0.01           0.43       0.10      0.09              0.33
+data_engineering                        0.01                NaN       0.03           0.51       0.09      0.08              0.28
+data_governance                          NaN                NaN       0.02           0.52       0.06      0.06              0.34
+data_science                             NaN                NaN       0.12           0.36       0.19      0.08              0.25
+marketing_analytics                      NaN                NaN        NaN           0.50       0.17      0.08              0.25
+product_analytics                        NaN                NaN       1.00            NaN        NaN       NaN               NaN
+german_requirement  explicitly_not_required  german_or_english  mentioned  not_mentioned  preferred  required  required_implied
+source                                                                                                                         
+eures                                   NaN               0.01       0.10           0.46       0.11      0.04              0.28
+jobsat                                  NaN                NaN       0.02           0.36       0.16      0.12              0.34
+karriere                                NaN               0.01       0.03           0.37       0.10      0.12              0.37
+linkedin                               0.01               0.00       0.06           0.42       0.13      0.10              0.28
+willhaben                               NaN                NaN        NaN           0.31       0.12      0.04              0.54
+german_requirement  explicitly_not_required  german_or_english  mentioned  not_mentioned  preferred  required  required_implied
+styria_flag                                                                                                                    
+Rest of Austria                         0.0               0.01       0.06           0.42       0.12      0.09              0.30
+Styria                                  NaN                NaN       0.03           0.38       0.10      0.05              0.43
+german_requirement  explicitly_not_required  german_or_english  mentioned  not_mentioned  preferred  required  required_implied
+seniority                                                                                                                      
+intern_student                          NaN               0.07        NaN           0.31       0.14      0.12              0.36
+lead_head                               NaN                NaN       0.06           0.43       0.10      0.07              0.33
+senior                                  NaN                NaN       0.05           0.35       0.12      0.10              0.38
+trainee_junior                          NaN                NaN        NaN           0.52       0.19      0.06              0.23
+unspecified                             0.0               0.00       0.07           0.44       0.12      0.08              0.29
+
+=== German levels / English / posting language  [T07a/T07b/T07c/T07d] ===
+german_level_bucket  count   n  share  ci_low  ci_high
+          C1/fluent    261 719  0.363   0.329    0.399
+            B2/good     86 719  0.120   0.098    0.145
+          C2/native      9 719  0.013   0.007    0.024
+                 B1      4 719  0.006   0.002    0.014
+              A1-A2      2 719  0.003   0.001    0.010
+english_requirement  count   n  share  ci_low  ci_high
+      not_mentioned    272 719  0.378   0.344    0.414
+   required_implied    232 719  0.323   0.290    0.358
+          preferred    110 719  0.153   0.129    0.181
+           required     59 719  0.082   0.064    0.104
+          mentioned     46 719  0.064   0.048    0.084
+posting_language  count   n  share  ci_low  ci_high
+              de    542 719  0.754   0.721    0.784
+              en    174 719  0.242   0.212    0.275
+           mixed      3 719  0.004   0.001    0.012
+posting_language       de    en  mixed
+role_family                           
+bi                   0.92  0.08    NaN
+business_analysis    0.82  0.17   0.01
+data_analytics       0.76  0.23   0.01
+data_engineering     0.78  0.22   0.01
+data_governance      0.80  0.20    NaN
+data_science         0.56  0.44    NaN
+marketing_analytics  0.83  0.17    NaN
+product_analytics     NaN  1.00    NaN
+posting_language    de    en  mixed
+styria_flag                        
+Rest of Austria   0.75  0.24   0.00
+Styria            0.76  0.22   0.02
+posting_language,explicitly_not_required,german_or_english,mentioned,not_mentioned,preferred,required,required_implied
+de,0,4,32,201,54,45,206
+en,2,0,10,96,33,16,17
+mixed,0,0,0,1,1,0,1
+
+
+=== Addressable scenarios  [T07e] ===
+                     scope   n  english_posting_no_german_req  no_explicit_german_requirement  german_not_required_at_C1_or_above
+                   Austria 719                            141                             434                                 512
+                    Styria  58                              8                              30                                  37
+                 Graz area  52                              6                              25                                  32
+                    Vienna 349                             86                             205                                 233
+                 family:bi  85                              7                              42                                  52
+  family:business_analysis 120                             15                              67                                  78
+     family:data_analytics 107                             20                              62                                  79
+   family:data_engineering 160                             29                             102                                 120
+    family:data_governance  65                             10                              39                                  45
+       family:data_science 157                             55                             105                                 119
+family:marketing_analytics  24                              4                              16                                  18
+  family:product_analytics   1                              1                               1                                   1
+
+=== Seniority & experience  [T08] ===
+     seniority  count   n  share  ci_low  ci_high
+   unspecified    414 720  0.575   0.539    0.611
+        senior    136 720  0.189   0.162    0.219
+     lead_head     97 720  0.135   0.112    0.162
+intern_student     42 720  0.058   0.043    0.078
+trainee_junior     31 720  0.043   0.030    0.060
+seniority            intern_student  lead_head  senior  trainee_junior  unspecified
+role_family                                                                        
+bi                             0.07       0.07    0.24            0.06         0.56
+business_analysis              0.03       0.16    0.10            0.02         0.69
+data_analytics                 0.13       0.10    0.13            0.05         0.59
+data_engineering               0.01       0.09    0.29            0.04         0.57
+data_governance                0.09       0.31    0.06            0.03         0.51
+data_science                   0.05       0.15    0.22            0.04         0.54
+marketing_analytics            0.12       0.08    0.21            0.21         0.38
+product_analytics               NaN        NaN     NaN             NaN         1.00
+     seniority  count  mean  25%  50%  75%
+intern_student    2.0   5.0  5.0  5.0  5.0
+     lead_head   26.0   4.2  3.0  4.0  5.0
+        senior   29.0   4.4  4.0  5.0  5.0
+trainee_junior    5.0   2.2  2.0  2.0  3.0
+   unspecified   75.0   3.7  2.0  3.0  5.0
+               metric  count
+     with_description    719
+explicit_years_stated    137
+    multi_year_phrase    238
+   entry_level_phrase     97
+seniority,1,2,3,4-5,6-8,9+
+intern_student,0,0,0,2,0,0
+lead_head,1,4,8,9,3,1
+senior,0,1,4,23,1,0
+trainee_junior,1,2,2,0,0,0
+unspecified,2,20,27,23,0,3
+
+
+=== Salary  [T09] ===
+                            metric  count
+                     core_postings    720
+                with_salary_figure    569
+                        with_range    109
+                kv_minimum_mention    424
+                   overpay_mention    385
+                 structured_source     39
+                       text_parsed    530
+                    all_in_mention     73
+         bonus_or_variable_mention     67
+part_time_basis_risk_among_figures      8
+              minimum_only_figures    460
+source,implausible,minimum_only,none,range
+eures,1,146,11,44
+jobsat,0,44,3,11
+karriere,0,97,10,27
+linkedin,3,150,121,26
+willhaben,0,23,2,1
+
+-- by role_family
+        role_family     n  min_p25  min_median  min_p75  max_median  n_with_max
+                 bi  67.0  43269.0     52648.0  60000.0     58000.0        15.0
+  business_analysis  93.0  45738.0     55000.0  58982.0     60000.0        12.0
+     data_analytics  83.0  40803.0     47810.0  56000.0     65000.0        16.0
+   data_engineering 132.0  48287.0     55356.0  62145.0     67452.0        24.0
+    data_governance  50.0  37370.0     45500.0  55130.0     55794.0         8.0
+       data_science 122.0  45999.0     55356.0  65000.0     65226.0        31.0
+marketing_analytics  21.0  35486.0     42000.0  60000.0     75000.0         3.0
+  product_analytics   1.0  63000.0     63000.0  63000.0         NaN         0.0
+-- by seniority
+     seniority     n  min_p25  min_median  min_p75  max_median  n_with_max
+intern_student  38.0  31146.0     35726.0  38452.0     37380.0         5.0
+     lead_head  68.0  51238.0     60098.0  75000.0     95000.0        11.0
+        senior 105.0  55000.0     60000.0  65000.0     70000.0        21.0
+trainee_junior  22.0  35578.0     42000.0  45738.0     54390.0         3.0
+   unspecified 336.0  44973.0     52220.0  57100.0     61600.0        69.0
+-- by state
+           state     n  min_p25  min_median  min_p75  max_median  n_with_max
+         Kärnten  17.0  48287.0     53000.0  54439.0     74094.0         2.0
+Niederösterreich  40.0  36154.0     48974.0  55480.0     53900.0         9.0
+  Oberösterreich 106.0  45500.0     53221.0  58695.0     64400.0        27.0
+        Salzburg  34.0  34464.0     41377.0  57500.0     63100.0         4.0
+      Steiermark  49.0  45738.0     53200.0  57400.0     60970.0         9.0
+           Tirol  24.0  46084.0     47810.0  52800.0     84394.0         2.0
+      Vorarlberg  22.0  43664.0     48978.0  54320.0     67500.0         6.0
+            Wien 272.0  45010.0     55356.0  63000.0     64024.0        50.0
+-- by normalized_title
+                                   normalized_title     n  min_p25  min_median  min_p75  max_median  n_with_max
+                                 Analytics Engineer   3.0  51950.0     53900.0  56950.0         NaN         0.0
+                                         BI Analyst  25.0  39200.0     47547.0  53000.0     49500.0         6.0
+               BI Consultant / Analytics Consultant  14.0  39666.0     47500.0  60000.0     70000.0         7.0
+                         BI Developer / BI Engineer  28.0  45500.0     56500.0  60000.0     76500.0         2.0
+                                   Business Analyst  93.0  45738.0     55000.0  58982.0     60000.0        12.0
+                                       Data Analyst  62.0  42034.0     47810.0  58604.0     65000.0        13.0
+                     Data Architect / Data Platform  17.0  55356.0     60000.0  70000.0     80000.0         3.0
+                                      Data Engineer 112.0  47744.0     54450.0  61700.0     65000.0        21.0
+      Data Governance / Data Steward / Data Manager  21.0  36676.0     47810.0  58479.0     84000.0         1.0
+                                     Data Scientist  66.0  42329.0     52220.0  61000.0     61600.0        17.0
+Financial / Risk / Controlling Analyst (data-heavy)  21.0  36676.0     45856.0  55889.0     55307.0         3.0
+                     Machine Learning / AI Engineer  56.0  53682.0     56700.0  69259.0     74852.0        14.0
+                           Marketing Data Scientist   2.0  60000.0     60000.0  60000.0         NaN         0.0
+                       Marketing/Growth/CRM Analyst  19.0  35243.0     42000.0  44946.0     75000.0         3.0
+     Master / Product Data Management (operational)  29.0  37380.0     44800.0  54506.0     55307.0         7.0
+                                    Product Analyst   1.0  63000.0     63000.0  63000.0         NaN         0.0
+-- by source
+   source     n  min_p25  min_median  min_p75  max_median  n_with_max
+    eures 190.0  43563.0     52824.0  57400.0     64700.0        44.0
+   jobsat  55.0  44455.0     51359.0  56000.0     56705.0        11.0
+ karriere 124.0  43673.0     54450.0  60000.0     64596.0        27.0
+ linkedin 176.0  45008.0     55356.0  62748.0     65000.0        26.0
+willhaben  24.0  43550.0     49700.0  62935.0     60000.0         1.0
+-- by posting_language
+posting_language     n  min_p25  min_median  min_p75  max_median  n_with_max
+              de 461.0  43664.0     53200.0  60000.0     63724.0        96.0
+              en 107.0  45374.0     55356.0  65000.0     82000.0        13.0
+           mixed   1.0  60970.0     60970.0  60970.0         NaN         0.0
+        role_family      seniority    n  min_median  max_median
+                 bi intern_student  6.0     35482.0     30292.0
+                 bi      lead_head  5.0     74200.0         NaN
+                 bi         senior 14.0     60000.0     82500.0
+                 bi trainee_junior  4.0     37745.0     50000.0
+                 bi    unspecified 38.0     48416.0     58500.0
+  business_analysis intern_student  4.0     33068.0         NaN
+  business_analysis      lead_head 12.0     55500.0         NaN
+  business_analysis         senior 10.0     57678.0     70500.0
+  business_analysis trainee_junior  2.0     50888.0     63049.0
+  business_analysis    unspecified 65.0     53900.0     55307.0
+     data_analytics intern_student 10.0     35868.0     43054.0
+     data_analytics      lead_head  9.0     61600.0    104400.0
+     data_analytics         senior 12.0     50000.0     65000.0
+     data_analytics trainee_junior  4.0     38920.0         NaN
+     data_analytics    unspecified 48.0     48405.0     62985.0
+   data_engineering intern_student  1.0     65000.0         NaN
+   data_engineering      lead_head 14.0     58798.0     76216.0
+   data_engineering         senior 34.0     60000.0     70000.0
+   data_engineering trainee_junior  2.0     46642.0     54390.0
+   data_engineering    unspecified 81.0     53200.0     65000.0
+    data_governance intern_student  6.0     36676.0     56280.0
+    data_governance      lead_head 14.0     51158.0     64400.0
+    data_governance         senior  3.0     61600.0     75600.0
+    data_governance trainee_junior  2.0     40709.0         NaN
+    data_governance    unspecified 25.0     41270.0     50106.0
+       data_science intern_student  8.0     36320.0         NaN
+       data_science      lead_head 13.0     75000.0     95000.0
+       data_science         senior 28.0     64000.0     79800.0
+       data_science trainee_junior  3.0     53200.0         NaN
+       data_science    unspecified 70.0     54439.0     65226.0
+marketing_analytics intern_student  3.0     25200.0         NaN
+marketing_analytics      lead_head  1.0     35486.0     70280.0
+marketing_analytics         senior  4.0     51000.0     75000.0
+marketing_analytics trainee_junior  5.0     42000.0         NaN
+marketing_analytics    unspecified  8.0     52500.0         NaN
+  product_analytics    unspecified  1.0     63000.0         NaN
+                   skill   n  min_median  min_p25  min_p75
+                     SQL 240     53851.0  45000.0  61000.0
+            AI (generic) 207     55356.0  46239.0  65000.0
+      Data Visualization 220     49852.0  41825.0  60000.0
+                  Python 203     55356.0  45738.0  63000.0
+ Data Governance/Quality 175     51380.0  43664.0  60542.0
+         Cloud (generic) 165     58000.0  50000.0  64000.0
+                 ETL/ELT 135     55356.0  47810.0  61485.0
+                   Azure 114     57400.0  50098.0  65000.0
+                Power BI 109     49000.0  38473.0  60000.0
+                   Excel 107     43664.0  36029.0  52010.0
+           Data Modeling  99     55356.0  48405.0  60965.0
+        Machine Learning  86     57392.0  50534.0  64500.0
+     Generative AI / LLM  95     60000.0  49581.0  68106.0
+                   CI/CD  86     55356.0  52163.0  63000.0
+    Statistics (general)  81     52220.0  43466.0  58954.0
+              Databricks  68     60000.0  52934.0  68500.0
+               REST APIs  61     55356.0  45000.0  61000.0
+             Mathematics  61     52220.0  42137.0  56000.0
+Data Warehouse (generic)  63     58800.0  47926.0  65000.0
+                     Git  58     55356.0  49000.0  61750.0
+                     AWS  47     56000.0  50568.0  62500.0
+                       R  44     52220.0  41791.0  60000.0
+               Streaming  36     55356.0  45738.0  62638.0
+     Data Lake/Lakehouse  42     60000.0  52136.0  68000.0
+                    Java  43     57400.0  52982.0  62000.0
+
+=== Remote  [T10] ===
+       remote_type  count   n  share  ci_low  ci_high
+           unknown    285 719  0.396   0.361    0.433
+            hybrid    197 719  0.274   0.243    0.308
+hybrid_or_flexible    184 719  0.256   0.225    0.289
+           on_site     39 719  0.054   0.040    0.073
+            remote     14 719  0.019   0.012    0.032
+remote_type          hybrid  hybrid_or_flexible  on_site  remote  unknown
+role_family                                                              
+bi                     0.24                0.29     0.04    0.01     0.42
+business_analysis      0.26                0.25     0.08    0.02     0.39
+data_analytics         0.22                0.21     0.04    0.02     0.52
+data_engineering       0.32                0.30     0.02    0.02     0.34
+data_governance        0.20                0.17     0.17    0.02     0.45
+data_science           0.30                0.25     0.05    0.02     0.38
+marketing_analytics    0.42                0.38      NaN    0.08     0.12
+product_analytics      1.00                 NaN      NaN     NaN      NaN
+remote_type      hybrid  hybrid_or_flexible  on_site  remote  unknown
+styria_flag                                                          
+Rest of Austria    0.27                0.25     0.06    0.02     0.39
+Styria             0.28                0.28     0.02     NaN     0.43
+remote_type  hybrid  hybrid_or_flexible  on_site  remote  unknown
+source                                                           
+eures          0.21                0.17     0.05    0.02     0.55
+jobsat         0.33                0.29     0.07     NaN     0.31
+karriere       0.40                0.37     0.10     NaN     0.13
+linkedin       0.25                0.26     0.03    0.04     0.42
+willhaben      0.23                0.19      NaN     NaN     0.58
+ home_office_days_per_week  count
+                       2.0      4
+                       1.0      1
+                       3.0      1
+
+=== Education & certifications  [T11] ===
+                     metric  count
+           with_description    719
+     degree_required_phrase    234
+degree_or_equivalent_phrase    240
+   any_degree_level_mention    459
+                phd_mention     15
+             master_mention     72
+           bachelor_mention     46
+         htl_matura_mention    124
+  any_certification_mention    102
+    degree_level  count   n  share  ci_low  ci_high
+Degree (generic)    420 719  0.584   0.548    0.620
+      HTL/Matura    124 719  0.172   0.147    0.202
+          Master     72 719  0.100   0.080    0.124
+        Bachelor     46 719  0.064   0.048    0.084
+             PhD     15 719  0.021   0.013    0.034
+       MINT/STEM      6 719  0.008   0.004    0.018
+                degree_field  count   n  share  ci_low  ci_high
+Computer Science/Informatics    271 719  0.377   0.342    0.413
+         Engineering/Physics    238 719  0.331   0.298    0.366
+          Economics/Business    189 719  0.263   0.232    0.296
+                Data Science    126 719  0.175   0.149    0.205
+      Statistics/Mathematics     90 719  0.125   0.103    0.151
+     Marketing/Communication     14 719  0.019   0.012    0.032
+       Natural/Life Sciences     11 719  0.015   0.009    0.027
+  Social Sciences/Psychology      4 719  0.006   0.002    0.014
+        role_family  share   n
+                 bi  0.341  85
+  business_analysis  0.325 120
+     data_analytics  0.402 107
+   data_engineering  0.256 160
+    data_governance  0.338  65
+       data_science  0.344 157
+marketing_analytics  0.208  24
+  product_analytics  1.000   1
+                        certification  count   n  share  ci_low  ci_high
+          Certification (any mention)     92 719  0.128   0.106    0.154
+Requirements/BA cert (IREB/IIBA/CBAP)     20 719  0.028   0.018    0.043
+                        Scrum/PM cert      9 719  0.013   0.007    0.024
+                                 ITIL      7 719  0.010   0.005    0.020
+     Data-management cert (CDMP/DAMA)      3 719  0.004   0.001    0.012
+                           Azure cert      2 719  0.003   0.001    0.010
+                          Google cert      2 719  0.003   0.001    0.010
+
+=== Employment  [T12] ===
+  employment_type  count   n  share  ci_low  ci_high
+        full_time    615 720  0.854   0.827    0.878
+full_or_part_time     66 720  0.092   0.073    0.115
+          unknown     32 720  0.044   0.032    0.062
+        part_time      7 720  0.010   0.005    0.020
+               metric  count
+        core_postings    720
+internship_or_student     45
+temporary_or_contract     74
+       academic_title      0
+
+=== Posting age  [T13b] ===
+   source  count  mean  25%  50%  75%    max
+    eures  202.0  59.0 19.0 41.0 70.0  925.0
+   jobsat   58.0  31.0  9.0 19.0 42.0  236.0
+ karriere  134.0   4.0  1.0  5.0  6.0    9.0
+ linkedin  300.0  37.0  6.0 14.0 30.0  714.0
+willhaben   26.0 101.0  8.0 34.0 74.0 1126.0
+
+=== Clusters  [T15] ===
+ cluster   n  share                                                                                                                                                                                                                                                                                                                           defining_skills                                                                     family_mix  styria_share  english_posting_share
+       0  78  0.115                                                                                                                                                                     Marketing (62%, lift 5.9); Digital/Online Marketing (29%, lift 5.7); Data Governance/Quality (77%, lift 2.4); Sales/Commercial (36%, lift 2.2); Excel (29%, lift 1.6)   data_governance 29; marketing_analytics 21; data_analytics 9; data_science 7          0.03                   0.23
+       1  73  0.108                                                                                                                              Oracle (40%, lift 6.7); SQL Server (29%, lift 5.1); Data Warehouse (generic) (48%, lift 4.5); SQL (89%, lift 2.1); ETL/ELT (40%, lift 1.7); Public Sector/Research (33%, lift 1.6); Power BI (27%, lift 1.4)                data_engineering 40; bi 23; business_analysis 7; data_science 1          0.07                   0.04
+       2  91  0.134                                                                                                                         Forecasting (25%, lift 4.2); Excel (76%, lift 4.1); Finance/Controlling (73%, lift 2.7); Banking/Insurance (38%, lift 2.1); Power BI (37%, lift 1.9); Public Sector/Research (30%, lift 1.5); SQL (27%, lift 0.6)                  data_analytics 45; bi 25; data_science 8; business_analysis 7          0.07                   0.20
+       3  84  0.124 Azure Data Factory (26%, lift 8.1); Microsoft Fabric (42%, lift 6.9); Data Lake/Lakehouse (44%, lift 5.9); Databricks (64%, lift 5.3); Azure (95%, lift 4.6); Spark (27%, lift 3.9); Data Modeling (58%, lift 3.4); ETL/ELT (67%, lift 2.8); CI/CD (40%, lift 2.5); Power BI (42%, lift 2.1); Python (62%, lift 1.7); SQL (68%, lift 1.6)                   data_engineering 57; bi 12; data_science 8; data_analytics 6          0.17                   0.20
+       4 112  0.165                      PyTorch (26%, lift 5.5); Docker (29%, lift 4.4); Kubernetes (25%, lift 4.2); Generative AI / LLM (71%, lift 4.2); Machine Learning (69%, lift 4.0); MLOps (27%, lift 3.9); AWS (30%, lift 3.3); REST APIs (39%, lift 3.2); CI/CD (46%, lift 2.8); Git (29%, lift 2.7); Python (82%, lift 2.2); Azure (41%, lift 2.0)      data_science 96; data_engineering 12; data_analytics 2; data_governance 1          0.09                   0.47
+       5  88  0.130                                                                                                                                                                                                                   Requirements/Business Analysis (100%, lift 3.5); Banking/Insurance (33%, lift 1.8); Finance/Controlling (31%, lift 1.2)                  business_analysis 61; data_governance 8; data_science 7; bi 7          0.08                   0.14
+       6  90  0.133                                                                              Python (96%, lift 2.6); SQL (99%, lift 2.3); ETL/ELT (47%, lift 2.0); Data Modeling (31%, lift 1.8); Public Sector/Research (30%, lift 1.5); Banking/Insurance (26%, lift 1.4); Data Governance/Quality (43%, lift 1.4); Finance/Controlling (29%, lift 1.1)                  data_engineering 30; data_science 24; data_analytics 18; bi 8          0.11                   0.42
+       7  62  0.091                                                                                                                                          Operations/Manufacturing (97%, lift 4.8); Supply Chain/Logistics (29%, lift 2.6); Excel (26%, lift 1.4); Requirements/Business Analysis (34%, lift 1.2); Data Governance/Quality (29%, lift 0.9) business_analysis 22; data_analytics 16; data_engineering 8; data_governance 7          0.02                   0.13
+0.073
+
+=== Adjacent demand  [T16] ===
+        region                  tool  postings_mentioning  in_core_data_title  in_non_data_title  share_non_data_title                                     top_non_data_families  sweep_postings_region
+Oberösterreich                Python                   57                  13                 44                 0.772  out_of_scope 36; ai_software_engineering 7; other_data 1                   4811
+Oberösterreich                   SQL                   79                  24                 55                 0.696  out_of_scope 49; ai_software_engineering 3; other_data 3                   4811
+Oberösterreich              Power BI                   29                  10                 19                 0.655                                           out_of_scope 19                   4811
+Oberösterreich               Tableau                    1                   1                  0                 0.000                                                       NaN                   4811
+Oberösterreich                 Excel                  356                   9                347                 0.975                            out_of_scope 344; other_data 3                   4811
+Oberösterreich      Machine Learning                   10                   4                  6                 0.600                                            out_of_scope 6                   4811
+Oberösterreich            Statistics                   67                   5                 62                 0.925                out_of_scope 61; ai_software_engineering 1                   4811
+Oberösterreich Data analytics (word)                   35                   9                 26                 0.743                                           out_of_scope 26                   4811
+Oberösterreich   Dashboard/Reporting                   48                  17                 31                 0.646                             out_of_scope 30; other_data 1                   4811
+Oberösterreich Business Intelligence                   60                  18                 42                 0.700                                           out_of_scope 42                   4811
+Oberösterreich   Data Science (word)                   34                  14                 20                 0.588                out_of_scope 18; ai_software_engineering 2                   4811
+Oberösterreich          R (language)                    4                   1                  3                 0.750                                            out_of_scope 3                   4811
+    Steiermark                Python                   53                   9                 44                 0.830  out_of_scope 36; ai_software_engineering 6; other_data 2                   3867
+    Steiermark                   SQL                   81                  10                 71                 0.877 out_of_scope 58; other_data 11; ai_software_engineering 2                   3867
+    Steiermark              Power BI                   21                   0                 21                 1.000                             out_of_scope 19; other_data 2                   3867
+    Steiermark               Tableau                    1                   1                  0                 0.000                                                       NaN                   3867
+    Steiermark                 Excel                  182                   0                182                 1.000                            out_of_scope 181; other_data 1                   3867
+    Steiermark      Machine Learning                    8                   2                  6                 0.750                   ai_software_engineering 5; other_data 1                   3867
+    Steiermark            Statistics                   23                   2                 21                 0.913                                           out_of_scope 21                   3867
+    Steiermark Data analytics (word)                   33                   4                 29                 0.879                             out_of_scope 27; other_data 2                   3867
+    Steiermark   Dashboard/Reporting                   19                   5                 14                 0.737   out_of_scope 9; other_data 3; ai_software_engineering 2                   3867
+    Steiermark Business Intelligence                   43                   4                 39                 0.907                             out_of_scope 36; other_data 3                   3867
+    Steiermark   Data Science (word)                   15                   8                  7                 0.467   ai_software_engineering 4; out_of_scope 2; other_data 1                   3867
+    Steiermark          R (language)                    4                   2                  2                 0.500                                            out_of_scope 2                   3867
+          Wien                Python                  102                  24                 78                 0.765  out_of_scope 66; ai_software_engineering 9; other_data 3                   3419
+          Wien                   SQL                   91                  23                 68                 0.747                             out_of_scope 61; other_data 7                   3419
+          Wien              Power BI                   54                  21                 33                 0.611                             out_of_scope 31; other_data 2                   3419
+          Wien               Tableau                    2                   1                  1                 0.500                                            out_of_scope 1                   3419
+          Wien                 Excel                  279                   5                274                 0.982                            out_of_scope 271; other_data 3                   3419
+          Wien      Machine Learning                   15                   3                 12                 0.800   out_of_scope 6; ai_software_engineering 3; other_data 3                   3419
+          Wien            Statistics                   43                   4                 39                 0.907                             out_of_scope 38; other_data 1                   3419
+          Wien Data analytics (word)                   57                   9                 48                 0.842  out_of_scope 46; other_data 1; ai_software_engineering 1                   3419
+          Wien   Dashboard/Reporting                   23                   6                 17                 0.739                             out_of_scope 15; other_data 2                   3419
+          Wien Business Intelligence                   69                  24                 45                 0.652  out_of_scope 42; other_data 2; ai_software_engineering 1                   3419
+          Wien   Data Science (word)                   29                  11                 18                 0.621  out_of_scope 13; ai_software_engineering 4; other_data 1                   3419
+          Wien          R (language)                   14                   2                 12                 0.857                                           out_of_scope 12                   3419
+
+=== JobBarometer  [JB05/JB03/JB04] ===
+                    beruf  austria  styria  vienna  upper_austria  styria_share  austria_2020  growth_2020_to_latest  styria_2020  styria_growth_2020_to_latest
+     Data Scientist (m/w)   2207.0   300.0   935.0          299.0         0.136        3049.0                  -0.28        224.0                          0.34
+           InformatikerIn   1518.0   207.0   419.0          265.0         0.136        2498.0                  -0.39        159.0                          0.30
+WirtschaftsinformatikerIn   1307.0    91.0   577.0          150.0         0.070        2025.0                  -0.35         81.0                          0.12
+    DatenbankentwicklerIn   1198.0   137.0   521.0          205.0         0.114        1993.0                  -0.40        169.0                         -0.19
+ DatenbankadministratorIn   1011.0    75.0   435.0          124.0         0.074        1661.0                  -0.39        122.0                         -0.39
+       SystemanalytikerIn    731.0    65.0   308.0           98.0         0.089         398.0                   0.84         39.0                          0.67
+ Data-Warehouse-ManagerIn    505.0    51.0   200.0           72.0         0.101         990.0                  -0.49         81.0                         -0.37
+bundesland  Oberösterreich  Steiermark    Wien  Österreich
+year                                                      
+2020                 336.0       224.0   811.0      3049.0
+2021                 549.0       268.0  1291.0      3866.0
+2022                 885.0       423.0  1809.0      5032.0
+2023                 565.0       277.0  1472.0      3471.0
+2024                 400.0       271.0  1152.0      2680.0
+2025                 299.0       300.0   935.0      2207.0
+                    beruf bundesland    trend_3y               share_label  count_latest
+     Data Scientist (m/w) Österreich     positiv     30% - geringer Anteil        2207.0
+     Data Scientist (m/w) Steiermark     positiv     30% - geringer Anteil         300.0
+ Data-Warehouse-ManagerIn Österreich     positiv 0% - sehr geringer Anteil         505.0
+ Data-Warehouse-ManagerIn Steiermark     positiv 0% - sehr geringer Anteil          51.0
+    DatenbankentwicklerIn Österreich     positiv     30% - geringer Anteil        1198.0
+    DatenbankentwicklerIn Steiermark     positiv     30% - geringer Anteil         137.0
+       SystemanalytikerIn Österreich tendenziell     30% - geringer Anteil         731.0
+       SystemanalytikerIn Steiermark tendenziell 0% - sehr geringer Anteil          65.0
+WirtschaftsinformatikerIn Österreich     positiv     30% - geringer Anteil        1307.0
+WirtschaftsinformatikerIn Steiermark     positiv     30% - geringer Anteil          91.0
+               beruf                                                     competency  avg_share_2022_2025_pct    kind  growth_pp
+Data Scientist (m/w) Wissenschaftliches Fachwissen Technik und Formalwissenschaften                     16.2     top        NaN
+Data Scientist (m/w)               Datenbankentwicklungs- und -betreuungskenntnisse                     14.2     top        NaN
+Data Scientist (m/w)                                 Softwareentwicklungskenntnisse                     12.3     top        NaN
+Data Scientist (m/w)                                           Statistik-Kenntnisse                      7.0     top        NaN
+Data Scientist (m/w)                                       EDV-Anwendungskenntnisse                      6.6     top        NaN
+Data Scientist (m/w)           Internet-Entwicklungs- und Administrationskenntnisse                      5.1     top        NaN
+Data Scientist (m/w)                                 Qualitätsmanagement-Kenntnisse                      4.3     top        NaN
+Data Scientist (m/w)                                   Projektmanagement-Kenntnisse                      3.1     top        NaN
+Data Scientist (m/w)          Betriebswirtschaftliche Anwendungssoftware-Kenntnisse                      3.0     top        NaN
+Data Scientist (m/w)                                 Programmiersprachen-Kenntnisse                      NaN growing        2.1
+Data Scientist (m/w)                                           Kommunikationsstärke                      NaN growing        1.2
+Data Scientist (m/w) Wissenschaftliches Fachwissen Technik und Formalwissenschaften                      NaN growing        0.7
+Data Scientist (m/w)                                           Statistik-Kenntnisse                      NaN growing        0.6
+Data Scientist (m/w)            Branchenspezifische Produkt- und Materialkenntnisse                      NaN growing        0.5
+Data Scientist (m/w)          Betriebswirtschaftliche Anwendungssoftware-Kenntnisse                      NaN growing        0.4
+Data Scientist (m/w)                    Kenntnis wissenschaftlicher Arbeitsmethoden                      NaN growing        0.3
+Data Scientist (m/w)                                        Problemlösungsfähigkeit                      NaN growing        0.3
+Data Scientist (m/w)                                  Betriebswirtschaftskenntnisse                      NaN growing        0.2
+
+=== Decision matrix  [D01/D02/D04] ===
+        role_family  V1_postings_at  V2_postings_styria  V3_english_posting_share  V4_german_required_share  V5_profile_overlap_top15  V6_structural_gap_top15  V7_median_min_salary  V8_remote_or_hybrid_share  V9_senior_entry_openness  V10_degree_required_share  score_default  rank_default  small_sample_flag
+   data_engineering             160                  20                     0.219                     0.362                      0.47                     0.53               55356.0                      0.644                      0.96                      0.256       0.634767           1.0              False
+       data_science             158                  13                     0.439                     0.331                      0.47                     0.53               55356.0                      0.566                      0.91                      0.344       0.611535           2.0              False
+     data_analytics             107                  11                     0.234                     0.420                      0.87                     0.13               47810.0                      0.440                      0.82                      0.402       0.594941           3.0              False
+marketing_analytics              24                   0                     0.167                     0.333                      0.80                     0.13               42000.0                      0.875                      0.67                      0.208       0.446417           4.0               True
+  business_analysis             120                   4                     0.167                     0.442                      0.53                     0.47               55000.0                      0.525                      0.95                      0.325       0.413186           5.0               True
+    data_governance              65                   5                     0.200                     0.400                      0.67                     0.33               45500.0                      0.384                      0.88                      0.338       0.403357           6.0               True
+                 bi              85                   5                     0.082                     0.506                      0.60                     0.40               52648.0                      0.541                      0.87                      0.341       0.326567           7.0               True
+  product_analytics               1                   0                     1.000                     0.000                      1.00                     0.00               63000.0                      1.000                      1.00                      1.000            NaN           NaN               True
+        role_family  score_default  rank_default  score_geography_first  rank_geography_first  score_language_first  rank_language_first  score_equal  rank_equal
+     data_analytics          0.595             3                  0.549                     3                 0.529                    3        0.514           3
+                 bi          0.327             7                  0.287                     7                 0.259                    7        0.347           7
+marketing_analytics          0.446             4                  0.355                     4                 0.478                    4        0.505           4
+  business_analysis          0.413             5                  0.355                     5                 0.413                    6        0.443           5
+       data_science          0.612             2                  0.651                     2                 0.730                    1        0.613           2
+   data_engineering          0.635             1                  0.735                     1                 0.655                    2        0.649           1
+    data_governance          0.403             6                  0.352                     6                 0.419                    5        0.380           6
+                   skill  share  styria_share  families_where_top(>=15%) profile_status                         priority
+                     SQL  0.405         0.466                          6     developing                              NOW
+                  Python  0.352         0.500                          4     developing                              NOW
+ Data Governance/Quality  0.306         0.362                          7     developing                              NOW
+                 ETL/ELT  0.221         0.345                          4     developing                              NOW
+                   Azure  0.193         0.345                          2     structural                            LATER
+                Power BI  0.184         0.138                          4     developing                             NEXT
+                   Excel  0.178         0.121                          4           have       already have (demonstrate)
+           Data Modeling  0.164         0.138                          2     developing                             NEXT
+     Generative AI / LLM  0.163         0.121                          2     developing                             NEXT
+                   CI/CD  0.152         0.224                          2     structural                            LATER
+              Databricks  0.115         0.190                          1     structural                            LATER
+               REST APIs  0.115         0.138                          1     developing                             NEXT
+             Mathematics  0.107         0.103                          3     structural                            LATER
+Data Warehouse (generic)  0.100         0.172                          2     structural                            LATER
+                     Git  0.099         0.190                          2     developing                            LATER
+                     AWS  0.086         0.121                          1     structural                            LATER
+                       R  0.071         0.069                          1     developing do not prioritise (low evidence)
+               Streaming  0.071         0.052                          0     structural do not prioritise (low evidence)
+     Data Lake/Lakehouse  0.071         0.069                          1     structural do not prioritise (low evidence)
+                    Java  0.071         0.086                          0     structural do not prioritise (low evidence)
+                   Spark  0.065         0.052                          1     structural do not prioritise (low evidence)
+                   MLOps  0.064         0.069                          1     structural do not prioritise (low evidence)
+                  Docker  0.061         0.034                          1     structural do not prioritise (low evidence)
+                  Oracle  0.057         0.034                          1     structural do not prioritise (low evidence)
+        Microsoft Fabric  0.057         0.103                          1     structural do not prioritise (low evidence)
+               Snowflake  0.057         0.034                          0     developing do not prioritise (low evidence)
+                     GCP  0.057         0.172                          0     structural do not prioritise (low evidence)
+             Forecasting  0.057         0.034                          1           have       already have (demonstrate)
+              Kubernetes  0.056         0.034                          1     structural do not prioritise (low evidence)
+ Segmentation/Clustering  0.056         0.034                          2           have       already have (demonstrate)
+               SAP BW/BO  0.053         0.052                          1     structural do not prioritise (low evidence)
+              SQL Server  0.053         0.103                          0     structural do not prioritise (low evidence)
+              Bash/Shell  0.049         0.034                          0     structural do not prioritise (low evidence)
+                      C#  0.047         0.034                          0     structural do not prioritise (low evidence)
+              PostgreSQL  0.046         0.069                          0     developing do not prioritise (low evidence)
+                 PyTorch  0.045         0.052                          1     structural do not prioritise (low evidence)
+    Exploratory Analysis  0.042         0.086                          0     developing do not prioritise (low evidence)
+              JavaScript  0.042         0.034                          1   unclassified do not prioritise (low evidence)
+                 Jupyter  0.040         0.155                          0     developing do not prioritise (low evidence)
+           Terraform/IaC  0.036         0.086                          0     structural do not prioritise (low evidence)
+            scikit-learn  0.035         0.017                          0     developing do not prioritise (low evidence)
+                     dbt  0.035         0.017                          0     structural do not prioritise (low evidence)
+                BigQuery  0.035         0.052                          1     developing do not prioritise (low evidence)
+    Predictive Analytics  0.035         0.052                          0     developing do not prioritise (low evidence)
+                 Tableau  0.033         0.052                          0     developing do not prioritise (low evidence)
+
+=== Data quality  [Q02/Q03a/Q04/Q05a] ===
+   source   n  description_gt300  salary_figure  salary_range  german_mentioned  state_known  city_known  date_known  seniority_in_title  remote_known
+    eures 223              1.000          0.937         0.220             0.556        0.987       0.543         1.0               0.314         0.466
+   jobsat  65              1.000          0.954         0.185             0.615        0.969       0.969         1.0               0.477         0.692
+ karriere 200              1.000          0.915         0.190             0.615        0.995       0.915         1.0               0.395         0.835
+ linkedin 486              0.998          0.636         0.082             0.628        0.955       0.885         1.0               0.551         0.529
+willhaben  40              1.000          0.950         0.025             0.675        1.000       0.925         1.0               0.300         0.475
+                             metric  count
+                     canonical_rows  10945
+                               core    720
+other_data (data-ish but unmatched)    235
+            ai_software_engineering    311
+                       out_of_scope   9679
+               out_of_scope_no_rule   4410
+         out_of_scope_soft_override    235
+         out_of_scope_hard_override     54
+      location_confidence_high_core    716
+      location_confidence_none_core      3
+         seniority_unspecified_core    414
+                  metric    value
+              groups_all 10945.00
+           groups_size>1  1107.00
+    rows_in_multi_groups  2591.00
+             core_groups   720.00
+      core_groups_size>1   186.00
+               core_rows  1014.00
+     core_duplicate_rate     0.29
+cross_source_groups_core   145.00
+         metric  count
+ core_with_date   1014
+ older_than_60d    153
+older_than_180d     34
+older_than_365d      6

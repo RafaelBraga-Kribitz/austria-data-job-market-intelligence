@@ -1,0 +1,12 @@
+metric,count
+core_postings,720
+with_salary_figure,569
+with_range,109
+kv_minimum_mention,424
+overpay_mention,385
+structured_source,39
+text_parsed,530
+all_in_mention,73
+bonus_or_variable_mention,67
+part_time_basis_risk_among_figures,8
+minimum_only_figures,460

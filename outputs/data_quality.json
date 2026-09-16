@@ -1,0 +1,1195 @@
+{
+ "missingness": [
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "title",
+   "n": 4569,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "company",
+   "n": 4569,
+   "missing": 2797,
+   "missing_share": 0.612
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "location_text",
+   "n": 4569,
+   "missing": 4569,
+   "missing_share": 1.0
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "state",
+   "n": 4569,
+   "missing": 32,
+   "missing_share": 0.007
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "city",
+   "n": 4569,
+   "missing": 2178,
+   "missing_share": 0.477
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "posted_date",
+   "n": 4569,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "description_text",
+   "n": 4569,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "employment_type_raw",
+   "n": 4569,
+   "missing": 1,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "salary_min_annual_eur",
+   "n": 4569,
+   "missing": 467,
+   "missing_share": 0.102
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "german_requirement",
+   "n": 4569,
+   "missing": 2170,
+   "missing_share": 0.475
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "seniority",
+   "n": 4569,
+   "missing": 2856,
+   "missing_share": 0.625
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "remote_type",
+   "n": 4569,
+   "missing": 3017,
+   "missing_share": 0.66
+  },
+  {
+   "set": "all",
+   "source": "eures",
+   "field": "industry_raw",
+   "n": 4569,
+   "missing": 4569,
+   "missing_share": 1.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "title",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "company",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "location_text",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "state",
+   "n": 105,
+   "missing": 4,
+   "missing_share": 0.038
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "city",
+   "n": 105,
+   "missing": 4,
+   "missing_share": 0.038
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "posted_date",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "description_text",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "employment_type_raw",
+   "n": 105,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "salary_min_annual_eur",
+   "n": 105,
+   "missing": 7,
+   "missing_share": 0.067
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "german_requirement",
+   "n": 105,
+   "missing": 48,
+   "missing_share": 0.457
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "seniority",
+   "n": 105,
+   "missing": 56,
+   "missing_share": 0.533
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "remote_type",
+   "n": 105,
+   "missing": 36,
+   "missing_share": 0.343
+  },
+  {
+   "set": "all",
+   "source": "jobsat",
+   "field": "industry_raw",
+   "n": 105,
+   "missing": 105,
+   "missing_share": 1.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "title",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "company",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "location_text",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "state",
+   "n": 2114,
+   "missing": 11,
+   "missing_share": 0.005
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "city",
+   "n": 2114,
+   "missing": 175,
+   "missing_share": 0.083
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "posted_date",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "description_text",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "employment_type_raw",
+   "n": 2114,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "salary_min_annual_eur",
+   "n": 2114,
+   "missing": 277,
+   "missing_share": 0.131
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "german_requirement",
+   "n": 2114,
+   "missing": 880,
+   "missing_share": 0.416
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "seniority",
+   "n": 2114,
+   "missing": 1248,
+   "missing_share": 0.59
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "remote_type",
+   "n": 2114,
+   "missing": 454,
+   "missing_share": 0.215
+  },
+  {
+   "set": "all",
+   "source": "karriere",
+   "field": "industry_raw",
+   "n": 2114,
+   "missing": 2114,
+   "missing_share": 1.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "title",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "company",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "location_text",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "state",
+   "n": 4133,
+   "missing": 115,
+   "missing_share": 0.028
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "city",
+   "n": 4133,
+   "missing": 383,
+   "missing_share": 0.093
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "posted_date",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "description_text",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "employment_type_raw",
+   "n": 4133,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "salary_min_annual_eur",
+   "n": 4133,
+   "missing": 1425,
+   "missing_share": 0.345
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "german_requirement",
+   "n": 4133,
+   "missing": 1502,
+   "missing_share": 0.363
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "seniority",
+   "n": 4133,
+   "missing": 1635,
+   "missing_share": 0.396
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "remote_type",
+   "n": 4133,
+   "missing": 1898,
+   "missing_share": 0.459
+  },
+  {
+   "set": "all",
+   "source": "linkedin",
+   "field": "industry_raw",
+   "n": 4133,
+   "missing": 10,
+   "missing_share": 0.002
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "title",
+   "n": 1508,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "company",
+   "n": 1508,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "location_text",
+   "n": 1508,
+   "missing": 2,
+   "missing_share": 0.001
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "state",
+   "n": 1508,
+   "missing": 21,
+   "missing_share": 0.014
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "city",
+   "n": 1508,
+   "missing": 307,
+   "missing_share": 0.204
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "posted_date",
+   "n": 1508,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "description_text",
+   "n": 1508,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "employment_type_raw",
+   "n": 1508,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "salary_min_annual_eur",
+   "n": 1508,
+   "missing": 387,
+   "missing_share": 0.257
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "german_requirement",
+   "n": 1508,
+   "missing": 744,
+   "missing_share": 0.493
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "seniority",
+   "n": 1508,
+   "missing": 1343,
+   "missing_share": 0.891
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "remote_type",
+   "n": 1508,
+   "missing": 529,
+   "missing_share": 0.351
+  },
+  {
+   "set": "all",
+   "source": "willhaben",
+   "field": "industry_raw",
+   "n": 1508,
+   "missing": 1508,
+   "missing_share": 1.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "title",
+   "n": 223,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "company",
+   "n": 223,
+   "missing": 151,
+   "missing_share": 0.677
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "location_text",
+   "n": 223,
+   "missing": 223,
+   "missing_share": 1.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "state",
+   "n": 223,
+   "missing": 3,
+   "missing_share": 0.013
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "city",
+   "n": 223,
+   "missing": 102,
+   "missing_share": 0.457
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "posted_date",
+   "n": 223,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "description_text",
+   "n": 223,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "employment_type_raw",
+   "n": 223,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "salary_min_annual_eur",
+   "n": 223,
+   "missing": 14,
+   "missing_share": 0.063
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "german_requirement",
+   "n": 223,
+   "missing": 99,
+   "missing_share": 0.444
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "seniority",
+   "n": 223,
+   "missing": 153,
+   "missing_share": 0.686
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "remote_type",
+   "n": 223,
+   "missing": 119,
+   "missing_share": 0.534
+  },
+  {
+   "set": "core",
+   "source": "eures",
+   "field": "industry_raw",
+   "n": 223,
+   "missing": 223,
+   "missing_share": 1.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "title",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "company",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "location_text",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "state",
+   "n": 65,
+   "missing": 2,
+   "missing_share": 0.031
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "city",
+   "n": 65,
+   "missing": 2,
+   "missing_share": 0.031
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "posted_date",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "description_text",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "employment_type_raw",
+   "n": 65,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "salary_min_annual_eur",
+   "n": 65,
+   "missing": 3,
+   "missing_share": 0.046
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "german_requirement",
+   "n": 65,
+   "missing": 25,
+   "missing_share": 0.385
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "seniority",
+   "n": 65,
+   "missing": 34,
+   "missing_share": 0.523
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "remote_type",
+   "n": 65,
+   "missing": 20,
+   "missing_share": 0.308
+  },
+  {
+   "set": "core",
+   "source": "jobsat",
+   "field": "industry_raw",
+   "n": 65,
+   "missing": 65,
+   "missing_share": 1.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "title",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "company",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "location_text",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "state",
+   "n": 200,
+   "missing": 1,
+   "missing_share": 0.005
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "city",
+   "n": 200,
+   "missing": 17,
+   "missing_share": 0.085
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "posted_date",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "description_text",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "employment_type_raw",
+   "n": 200,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "salary_min_annual_eur",
+   "n": 200,
+   "missing": 17,
+   "missing_share": 0.085
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "german_requirement",
+   "n": 200,
+   "missing": 77,
+   "missing_share": 0.385
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "seniority",
+   "n": 200,
+   "missing": 121,
+   "missing_share": 0.605
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "remote_type",
+   "n": 200,
+   "missing": 33,
+   "missing_share": 0.165
+  },
+  {
+   "set": "core",
+   "source": "karriere",
+   "field": "industry_raw",
+   "n": 200,
+   "missing": 200,
+   "missing_share": 1.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "title",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "company",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "location_text",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "state",
+   "n": 486,
+   "missing": 22,
+   "missing_share": 0.045
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "city",
+   "n": 486,
+   "missing": 56,
+   "missing_share": 0.115
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "posted_date",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "description_text",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "employment_type_raw",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "salary_min_annual_eur",
+   "n": 486,
+   "missing": 177,
+   "missing_share": 0.364
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "german_requirement",
+   "n": 486,
+   "missing": 181,
+   "missing_share": 0.372
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "seniority",
+   "n": 486,
+   "missing": 218,
+   "missing_share": 0.449
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "remote_type",
+   "n": 486,
+   "missing": 229,
+   "missing_share": 0.471
+  },
+  {
+   "set": "core",
+   "source": "linkedin",
+   "field": "industry_raw",
+   "n": 486,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "title",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "company",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "location_text",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "state",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "city",
+   "n": 40,
+   "missing": 3,
+   "missing_share": 0.075
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "posted_date",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "description_text",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "employment_type_raw",
+   "n": 40,
+   "missing": 0,
+   "missing_share": 0.0
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "salary_min_annual_eur",
+   "n": 40,
+   "missing": 2,
+   "missing_share": 0.05
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "german_requirement",
+   "n": 40,
+   "missing": 13,
+   "missing_share": 0.325
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "seniority",
+   "n": 40,
+   "missing": 28,
+   "missing_share": 0.7
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "remote_type",
+   "n": 40,
+   "missing": 21,
+   "missing_share": 0.525
+  },
+  {
+   "set": "core",
+   "source": "willhaben",
+   "field": "industry_raw",
+   "n": 40,
+   "missing": 40,
+   "missing_share": 1.0
+  }
+ ],
+ "coverage_by_source_core": [
+  {
+   "source": "eures",
+   "n": 223,
+   "description_gt300": 1.0,
+   "salary_figure": 0.937,
+   "salary_range": 0.22,
+   "german_mentioned": 0.556,
+   "state_known": 0.987,
+   "city_known": 0.543,
+   "date_known": 1.0,
+   "seniority_in_title": 0.314,
+   "remote_known": 0.466
+  },
+  {
+   "source": "jobsat",
+   "n": 65,
+   "description_gt300": 1.0,
+   "salary_figure": 0.954,
+   "salary_range": 0.185,
+   "german_mentioned": 0.615,
+   "state_known": 0.969,
+   "city_known": 0.969,
+   "date_known": 1.0,
+   "seniority_in_title": 0.477,
+   "remote_known": 0.692
+  },
+  {
+   "source": "karriere",
+   "n": 200,
+   "description_gt300": 1.0,
+   "salary_figure": 0.915,
+   "salary_range": 0.19,
+   "german_mentioned": 0.615,
+   "state_known": 0.995,
+   "city_known": 0.915,
+   "date_known": 1.0,
+   "seniority_in_title": 0.395,
+   "remote_known": 0.835
+  },
+  {
+   "source": "linkedin",
+   "n": 486,
+   "description_gt300": 0.998,
+   "salary_figure": 0.636,
+   "salary_range": 0.082,
+   "german_mentioned": 0.628,
+   "state_known": 0.955,
+   "city_known": 0.885,
+   "date_known": 1.0,
+   "seniority_in_title": 0.551,
+   "remote_known": 0.529
+  },
+  {
+   "source": "willhaben",
+   "n": 40,
+   "description_gt300": 1.0,
+   "salary_figure": 0.95,
+   "salary_range": 0.025,
+   "german_mentioned": 0.675,
+   "state_known": 1.0,
+   "city_known": 0.925,
+   "date_known": 1.0,
+   "seniority_in_title": 0.3,
+   "remote_known": 0.475
+  }
+ ],
+ "normalization_confidence": [
+  {
+   "metric": "canonical_rows",
+   "count": 10945
+  },
+  {
+   "metric": "core",
+   "count": 720
+  },
+  {
+   "metric": "other_data (data-ish but unmatched)",
+   "count": 235
+  },
+  {
+   "metric": "ai_software_engineering",
+   "count": 311
+  },
+  {
+   "metric": "out_of_scope",
+   "count": 9679
+  },
+  {
+   "metric": "out_of_scope_no_rule",
+   "count": 4410
+  },
+  {
+   "metric": "out_of_scope_soft_override",
+   "count": 235
+  },
+  {
+   "metric": "out_of_scope_hard_override",
+   "count": 54
+  },
+  {
+   "metric": "location_confidence_high_core",
+   "count": 716
+  },
+  {
+   "metric": "location_confidence_none_core",
+   "count": 3
+  },
+  {
+   "metric": "seniority_unspecified_core",
+   "count": 414
+  }
+ ],
+ "duplicates": [
+  {
+   "metric": "groups_all",
+   "value": 10945.0
+  },
+  {
+   "metric": "groups_size>1",
+   "value": 1107.0
+  },
+  {
+   "metric": "rows_in_multi_groups",
+   "value": 2591.0
+  },
+  {
+   "metric": "core_groups",
+   "value": 720.0
+  },
+  {
+   "metric": "core_groups_size>1",
+   "value": 186.0
+  },
+  {
+   "metric": "core_rows",
+   "value": 1014.0
+  },
+  {
+   "metric": "core_duplicate_rate",
+   "value": 0.29
+  },
+  {
+   "metric": "cross_source_groups_core",
+   "value": 145.0
+  }
+ ],
+ "stale": {
+  "older_than_180d": 34,
+  "core_with_date": 1014
+ }
+}

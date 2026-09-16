@@ -1,0 +1,7 @@
+degree_level,count,n,share,ci_low,ci_high
+Degree (generic),420,719,0.584,0.548,0.62
+HTL/Matura,124,719,0.172,0.147,0.202
+Master,72,719,0.1,0.08,0.124
+Bachelor,46,719,0.064,0.048,0.084
+PhD,15,719,0.021,0.013,0.034
+MINT/STEM,6,719,0.008,0.004,0.018

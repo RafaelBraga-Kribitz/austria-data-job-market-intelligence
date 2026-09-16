@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use the code, methodology or aggregated statistics of this repository, please cite it as below."
+title: "Austria Data-Job Market Intelligence: an evidence base for data-career decisions in Austria (Styria/Graz focus)"
+type: software
+authors:
+  - family-names: Braga-Kribitz
+    given-names: Rafael
+version: "2026-09-16.2"
+date-released: "2026-09-16"
+license: "MIT (code), CC-BY-4.0 (documents and aggregated outputs)"
+repository-code: "https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence"
+keywords:
+  - labour market
+  - job postings
+  - Austria
+  - Styria
+  - Graz
+  - data analytics
+  - data science
+  - career decision support
+abstract: >
+  One-day snapshot (2026-09-16) of open data-role job advertisements in Austria collected from five public
+  sources plus the AMS JobBarometer yearly series 2020-2025, normalised with transparent rule-based
+  taxonomies and summarised into aggregated tables, figures and decision documents. The public repository
+  contains code, methodology, configuration and aggregated statistics only; source records and advertisement
+  texts are retained privately.

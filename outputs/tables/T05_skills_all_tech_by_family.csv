@@ -1,0 +1,408 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Data Visualization,73,85,0.859,0.769,0.917
+bi,SQL,44,85,0.518,0.413,0.621
+bi,Power BI,43,85,0.506,0.402,0.61
+bi,Data Modeling,28,85,0.329,0.239,0.435
+bi,AI (generic),26,85,0.306,0.218,0.41
+bi,SAP BW/BO,24,85,0.282,0.198,0.386
+bi,Cloud (generic),22,85,0.259,0.178,0.361
+bi,Excel,17,85,0.2,0.129,0.297
+bi,Data Warehouse (generic),15,85,0.176,0.11,0.271
+bi,Data Governance/Quality,15,85,0.176,0.11,0.271
+bi,ETL/ELT,14,85,0.165,0.101,0.258
+bi,Azure,12,85,0.141,0.083,0.231
+bi,Python,9,85,0.106,0.057,0.189
+bi,Statistics (general),9,85,0.106,0.057,0.189
+bi,SQL Server,9,85,0.106,0.057,0.189
+bi,DAX/M,9,85,0.106,0.057,0.189
+bi,Oracle,9,85,0.106,0.057,0.189
+bi,Forecasting,8,85,0.094,0.048,0.175
+bi,Qlik,8,85,0.094,0.048,0.175
+bi,Databricks,8,85,0.094,0.048,0.175
+bi,Generative AI / LLM,7,85,0.082,0.04,0.16
+bi,Tableau,7,85,0.082,0.04,0.16
+bi,REST APIs,7,85,0.082,0.04,0.16
+bi,SAP HANA,7,85,0.082,0.04,0.16
+bi,Snowflake,5,85,0.059,0.025,0.13
+bi,PostgreSQL,5,85,0.059,0.025,0.13
+bi,Mathematics,5,85,0.059,0.025,0.13
+bi,Microsoft Fabric,4,85,0.047,0.018,0.115
+bi,Machine Learning,4,85,0.047,0.018,0.115
+bi,Grafana,3,85,0.035,0.012,0.099
+bi,Data Lake/Lakehouse,3,85,0.035,0.012,0.099
+bi,Streaming,3,85,0.035,0.012,0.099
+bi,Jupyter,3,85,0.035,0.012,0.099
+bi,Plotly/Dash,3,85,0.035,0.012,0.099
+bi,pandas,3,85,0.035,0.012,0.099
+bi,scikit-learn,3,85,0.035,0.012,0.099
+bi,Looker,3,85,0.035,0.012,0.099
+bi,JavaScript,3,85,0.035,0.012,0.099
+bi,Bash/Shell,2,85,0.024,0.006,0.082
+bi,SSRS,2,85,0.024,0.006,0.082
+bi,Matomo,2,85,0.024,0.006,0.082
+bi,Exploratory Analysis,2,85,0.024,0.006,0.082
+bi,Predictive Analytics,2,85,0.024,0.006,0.082
+bi,Google Analytics,2,85,0.024,0.006,0.082
+bi,R,2,85,0.024,0.006,0.082
+bi,VBA,1,85,0.012,0.002,0.064
+bi,Cognos,1,85,0.012,0.002,0.064
+bi,Sampling/Survey,1,85,0.012,0.002,0.064
+bi,Git,1,85,0.012,0.002,0.064
+bi,BigQuery,1,85,0.012,0.002,0.064
+bi,Fivetran/Airbyte,1,85,0.012,0.002,0.064
+bi,Segmentation/Clustering,1,85,0.012,0.002,0.064
+bi,dbt,1,85,0.012,0.002,0.064
+bi,AWS,1,85,0.012,0.002,0.064
+bi,Classification,1,85,0.012,0.002,0.064
+bi,NLP,1,85,0.012,0.002,0.064
+bi,MySQL/MariaDB,1,85,0.012,0.002,0.064
+bi,Java,1,85,0.012,0.002,0.064
+bi,Elasticsearch,1,85,0.012,0.002,0.064
+bi,Terraform/IaC,1,85,0.012,0.002,0.064
+business_analysis,AI (generic),29,120,0.242,0.174,0.326
+business_analysis,Data Visualization,20,120,0.167,0.111,0.243
+business_analysis,Excel,17,120,0.142,0.09,0.215
+business_analysis,SQL,16,120,0.133,0.084,0.206
+business_analysis,Data Governance/Quality,11,120,0.092,0.052,0.157
+business_analysis,REST APIs,8,120,0.067,0.034,0.126
+business_analysis,Cloud (generic),7,120,0.058,0.029,0.116
+business_analysis,R,7,120,0.058,0.029,0.116
+business_analysis,Bash/Shell,6,120,0.05,0.023,0.105
+business_analysis,Generative AI / LLM,6,120,0.05,0.023,0.105
+business_analysis,C#,5,120,0.042,0.018,0.094
+business_analysis,CI/CD,5,120,0.042,0.018,0.094
+business_analysis,Mathematics,5,120,0.042,0.018,0.094
+business_analysis,Java,5,120,0.042,0.018,0.094
+business_analysis,Statistics (general),4,120,0.033,0.013,0.083
+business_analysis,SAP HANA,4,120,0.033,0.013,0.083
+business_analysis,Python,4,120,0.033,0.013,0.083
+business_analysis,Exploratory Analysis,4,120,0.033,0.013,0.083
+business_analysis,SAP BW/BO,3,120,0.025,0.009,0.071
+business_analysis,Streaming,2,120,0.017,0.005,0.059
+business_analysis,Git,2,120,0.017,0.005,0.059
+business_analysis,Azure,2,120,0.017,0.005,0.059
+business_analysis,Power BI,2,120,0.017,0.005,0.059
+business_analysis,Data Warehouse (generic),2,120,0.017,0.005,0.059
+business_analysis,PostgreSQL,2,120,0.017,0.005,0.059
+business_analysis,Jupyter,2,120,0.017,0.005,0.059
+business_analysis,VBA,2,120,0.017,0.005,0.059
+business_analysis,GCP,1,120,0.008,0.001,0.046
+business_analysis,Tableau,1,120,0.008,0.001,0.046
+business_analysis,Oracle,1,120,0.008,0.001,0.046
+business_analysis,SQL Server,1,120,0.008,0.001,0.046
+business_analysis,Segmentation/Clustering,1,120,0.008,0.001,0.046
+business_analysis,JavaScript,1,120,0.008,0.001,0.046
+business_analysis,DAX/M,1,120,0.008,0.001,0.046
+business_analysis,Data Lake/Lakehouse,1,120,0.008,0.001,0.046
+business_analysis,Machine Learning,1,120,0.008,0.001,0.046
+business_analysis,Redshift,1,120,0.008,0.001,0.046
+business_analysis,AWS,1,120,0.008,0.001,0.046
+business_analysis,Docker,1,120,0.008,0.001,0.046
+business_analysis,Kubernetes,1,120,0.008,0.001,0.046
+business_analysis,MySQL/MariaDB,1,120,0.008,0.001,0.046
+business_analysis,MongoDB,1,120,0.008,0.001,0.046
+business_analysis,ETL/ELT,1,120,0.008,0.001,0.046
+business_analysis,Sampling/Survey,1,120,0.008,0.001,0.046
+business_analysis,Data Modeling,1,120,0.008,0.001,0.046
+business_analysis,Forecasting,1,120,0.008,0.001,0.046
+data_analytics,Data Visualization,69,107,0.645,0.551,0.729
+data_analytics,Excel,50,107,0.467,0.376,0.561
+data_analytics,SQL,41,107,0.383,0.297,0.478
+data_analytics,Power BI,36,107,0.336,0.254,0.43
+data_analytics,Data Governance/Quality,30,107,0.28,0.204,0.372
+data_analytics,Python,28,107,0.262,0.188,0.352
+data_analytics,AI (generic),22,107,0.206,0.14,0.292
+data_analytics,Statistics (general),20,107,0.187,0.124,0.271
+data_analytics,Forecasting,19,107,0.178,0.117,0.261
+data_analytics,Cloud (generic),18,107,0.168,0.109,0.25
+data_analytics,Mathematics,17,107,0.159,0.102,0.24
+data_analytics,Data Modeling,15,107,0.14,0.087,0.218
+data_analytics,Exploratory Analysis,13,107,0.121,0.072,0.197
+data_analytics,Segmentation/Clustering,11,107,0.103,0.058,0.175
+data_analytics,R,11,107,0.103,0.058,0.175
+data_analytics,Machine Learning,9,107,0.084,0.045,0.152
+data_analytics,DAX/M,9,107,0.084,0.045,0.152
+data_analytics,ETL/ELT,9,107,0.084,0.045,0.152
+data_analytics,Azure,8,107,0.075,0.038,0.141
+data_analytics,Snowflake,8,107,0.075,0.038,0.141
+data_analytics,Databricks,8,107,0.075,0.038,0.141
+data_analytics,Qlik,7,107,0.065,0.032,0.129
+data_analytics,Predictive Analytics,6,107,0.056,0.026,0.117
+data_analytics,Generative AI / LLM,5,107,0.047,0.02,0.105
+data_analytics,Tableau,4,107,0.037,0.015,0.092
+data_analytics,GCP,3,107,0.028,0.01,0.079
+data_analytics,SAP BW/BO,3,107,0.028,0.01,0.079
+data_analytics,SAP HANA,3,107,0.028,0.01,0.079
+data_analytics,BigQuery,3,107,0.028,0.01,0.079
+data_analytics,Julia,2,107,0.019,0.005,0.066
+data_analytics,C#,2,107,0.019,0.005,0.066
+data_analytics,MLOps,2,107,0.019,0.005,0.066
+data_analytics,dbt,2,107,0.019,0.005,0.066
+data_analytics,A/B Testing / Experimentation,2,107,0.019,0.005,0.066
+data_analytics,MATLAB,2,107,0.019,0.005,0.066
+data_analytics,Git,2,107,0.019,0.005,0.066
+data_analytics,Causal Inference,2,107,0.019,0.005,0.066
+data_analytics,AWS,2,107,0.019,0.005,0.066
+data_analytics,Looker,2,107,0.019,0.005,0.066
+data_analytics,Google Analytics,1,107,0.009,0.002,0.051
+data_analytics,Sampling/Survey,1,107,0.009,0.002,0.051
+data_analytics,Jupyter,1,107,0.009,0.002,0.051
+data_analytics,VBA,1,107,0.009,0.002,0.051
+data_analytics,SQL Server,1,107,0.009,0.002,0.051
+data_analytics,Metabase,1,107,0.009,0.002,0.051
+data_analytics,pandas,1,107,0.009,0.002,0.051
+data_analytics,scikit-learn,1,107,0.009,0.002,0.051
+data_analytics,statsmodels,1,107,0.009,0.002,0.051
+data_analytics,Streaming,1,107,0.009,0.002,0.051
+data_analytics,CI/CD,1,107,0.009,0.002,0.051
+data_analytics,Terraform/IaC,1,107,0.009,0.002,0.051
+data_analytics,Microsoft Fabric,1,107,0.009,0.002,0.051
+data_analytics,Data Lake/Lakehouse,1,107,0.009,0.002,0.051
+data_analytics,Data Warehouse (generic),1,107,0.009,0.002,0.051
+data_analytics,Oracle,1,107,0.009,0.002,0.051
+data_engineering,SQL,110,160,0.688,0.612,0.754
+data_engineering,ETL/ELT,96,160,0.6,0.523,0.673
+data_engineering,Python,88,160,0.55,0.473,0.625
+data_engineering,Cloud (generic),72,160,0.45,0.375,0.527
+data_engineering,Data Governance/Quality,71,160,0.444,0.369,0.521
+data_engineering,Azure,61,160,0.381,0.31,0.458
+data_engineering,Data Modeling,60,160,0.375,0.304,0.452
+data_engineering,CI/CD,54,160,0.338,0.269,0.414
+data_engineering,Data Visualization,52,160,0.325,0.257,0.401
+data_engineering,Databricks,46,160,0.287,0.223,0.362
+data_engineering,AI (generic),44,160,0.275,0.212,0.349
+data_engineering,Data Warehouse (generic),44,160,0.275,0.212,0.349
+data_engineering,Data Lake/Lakehouse,39,160,0.244,0.184,0.316
+data_engineering,Power BI,30,160,0.188,0.135,0.255
+data_engineering,Microsoft Fabric,29,160,0.181,0.129,0.248
+data_engineering,Oracle,28,160,0.175,0.124,0.241
+data_engineering,Git,28,160,0.175,0.124,0.241
+data_engineering,Spark,28,160,0.175,0.124,0.241
+data_engineering,Streaming,23,160,0.144,0.098,0.206
+data_engineering,SQL Server,22,160,0.138,0.093,0.199
+data_engineering,PostgreSQL,21,160,0.131,0.087,0.192
+data_engineering,AWS,21,160,0.131,0.087,0.192
+data_engineering,Java,20,160,0.125,0.082,0.185
+data_engineering,REST APIs,20,160,0.125,0.082,0.185
+data_engineering,GCP,19,160,0.119,0.077,0.178
+data_engineering,Azure Data Factory,19,160,0.119,0.077,0.178
+data_engineering,Terraform/IaC,19,160,0.119,0.077,0.178
+data_engineering,Snowflake,17,160,0.106,0.067,0.164
+data_engineering,Azure Synapse,17,160,0.106,0.067,0.164
+data_engineering,Bash/Shell,17,160,0.106,0.067,0.164
+data_engineering,Machine Learning,15,160,0.094,0.058,0.149
+data_engineering,Kafka,14,160,0.087,0.053,0.142
+data_engineering,Jupyter,12,160,0.075,0.043,0.127
+data_engineering,dbt,12,160,0.075,0.043,0.127
+data_engineering,Kubernetes,11,160,0.069,0.039,0.119
+data_engineering,C#,11,160,0.069,0.039,0.119
+data_engineering,Scala,11,160,0.069,0.039,0.119
+data_engineering,Airflow,11,160,0.069,0.039,0.119
+data_engineering,Segmentation/Clustering,10,160,0.062,0.034,0.111
+data_engineering,BigQuery,10,160,0.062,0.034,0.111
+data_engineering,MySQL/MariaDB,9,160,0.056,0.03,0.103
+data_engineering,Excel,9,160,0.056,0.03,0.103
+data_engineering,MLOps,8,160,0.05,0.026,0.096
+data_engineering,MongoDB,8,160,0.05,0.026,0.096
+data_engineering,Docker,7,160,0.044,0.021,0.088
+data_engineering,Generative AI / LLM,7,160,0.044,0.021,0.088
+data_engineering,R,5,160,0.031,0.013,0.071
+data_engineering,Mathematics,5,160,0.031,0.013,0.071
+data_engineering,Hadoop,5,160,0.031,0.013,0.071
+data_engineering,Anomaly Detection,4,160,0.025,0.01,0.063
+data_engineering,MicroStrategy,4,160,0.025,0.01,0.063
+data_engineering,SAP BW/BO,4,160,0.025,0.01,0.063
+data_engineering,SAP HANA,4,160,0.025,0.01,0.063
+data_engineering,pandas,4,160,0.025,0.01,0.063
+data_engineering,Statistics (general),4,160,0.025,0.01,0.063
+data_engineering,Cassandra,4,160,0.025,0.01,0.063
+data_engineering,Qlik,3,160,0.019,0.006,0.054
+data_engineering,Redshift,3,160,0.019,0.006,0.054
+data_engineering,Tableau,3,160,0.019,0.006,0.054
+data_engineering,Forecasting,3,160,0.019,0.006,0.054
+data_engineering,Exploratory Analysis,3,160,0.019,0.006,0.054
+data_engineering,LangChain/LLM frameworks,3,160,0.019,0.006,0.054
+data_engineering,Google Analytics,2,160,0.013,0.003,0.044
+data_engineering,DAX/M,2,160,0.013,0.003,0.044
+data_engineering,Rust,2,160,0.013,0.003,0.044
+data_engineering,NumPy,2,160,0.013,0.003,0.044
+data_engineering,Grafana,2,160,0.013,0.003,0.044
+data_engineering,A/B Testing / Experimentation,2,160,0.013,0.003,0.044
+data_engineering,JavaScript,2,160,0.013,0.003,0.044
+data_engineering,VBA,1,160,0.006,0.001,0.035
+data_engineering,SSRS,1,160,0.006,0.001,0.035
+data_engineering,Data Mining,1,160,0.006,0.001,0.035
+data_engineering,Elasticsearch,1,160,0.006,0.001,0.035
+data_engineering,Neo4j,1,160,0.006,0.001,0.035
+data_engineering,Time Series,1,160,0.006,0.001,0.035
+data_engineering,Looker,1,160,0.006,0.001,0.035
+data_engineering,scikit-learn,1,160,0.006,0.001,0.035
+data_engineering,ClickHouse,1,160,0.006,0.001,0.035
+data_engineering,FastAPI/Flask,1,160,0.006,0.001,0.035
+data_engineering,Regression,1,160,0.006,0.001,0.035
+data_engineering,Sampling/Survey,1,160,0.006,0.001,0.035
+data_governance,Data Governance/Quality,53,65,0.815,0.704,0.891
+data_governance,Excel,17,65,0.262,0.17,0.38
+data_governance,AI (generic),15,65,0.231,0.145,0.346
+data_governance,Data Visualization,12,65,0.185,0.109,0.296
+data_governance,SQL,9,65,0.138,0.075,0.243
+data_governance,Statistics (general),8,65,0.123,0.064,0.225
+data_governance,Python,6,65,0.092,0.043,0.187
+data_governance,Mathematics,6,65,0.092,0.043,0.187
+data_governance,Cloud (generic),5,65,0.077,0.033,0.168
+data_governance,Power BI,5,65,0.077,0.033,0.168
+data_governance,Classification,3,65,0.046,0.016,0.127
+data_governance,Data Modeling,3,65,0.046,0.016,0.127
+data_governance,Data Warehouse (generic),3,65,0.046,0.016,0.127
+data_governance,Streaming,3,65,0.046,0.016,0.127
+data_governance,Generative AI / LLM,3,65,0.046,0.016,0.127
+data_governance,Azure,3,65,0.046,0.016,0.127
+data_governance,Java,2,65,0.031,0.008,0.105
+data_governance,ETL/ELT,2,65,0.031,0.008,0.105
+data_governance,Git,2,65,0.031,0.008,0.105
+data_governance,Databricks,2,65,0.031,0.008,0.105
+data_governance,Snowflake,2,65,0.031,0.008,0.105
+data_governance,REST APIs,2,65,0.031,0.008,0.105
+data_governance,SAP BW/BO,2,65,0.031,0.008,0.105
+data_governance,Kubernetes,1,65,0.015,0.003,0.082
+data_governance,CI/CD,1,65,0.015,0.003,0.082
+data_governance,Anomaly Detection,1,65,0.015,0.003,0.082
+data_governance,Sampling/Survey,1,65,0.015,0.003,0.082
+data_governance,Computer Vision,1,65,0.015,0.003,0.082
+data_governance,SQL Server,1,65,0.015,0.003,0.082
+data_governance,NLP,1,65,0.015,0.003,0.082
+data_governance,Machine Learning,1,65,0.015,0.003,0.082
+data_governance,Qlik,1,65,0.015,0.003,0.082
+data_governance,VBA,1,65,0.015,0.003,0.082
+data_governance,R,1,65,0.015,0.003,0.082
+data_governance,Regression,1,65,0.015,0.003,0.082
+data_governance,SAS,1,65,0.015,0.003,0.082
+data_governance,Spark,1,65,0.015,0.003,0.082
+data_governance,Tableau,1,65,0.015,0.003,0.082
+data_science,AI (generic),129,157,0.822,0.754,0.874
+data_science,Python,114,157,0.726,0.652,0.79
+data_science,Machine Learning,87,157,0.554,0.476,0.63
+data_science,Generative AI / LLM,83,157,0.529,0.451,0.605
+data_science,Cloud (generic),75,157,0.478,0.401,0.555
+data_science,SQL,57,157,0.363,0.292,0.441
+data_science,Azure,53,157,0.338,0.268,0.415
+data_science,CI/CD,48,157,0.306,0.239,0.382
+data_science,Statistics (general),46,157,0.293,0.227,0.368
+data_science,REST APIs,45,157,0.287,0.222,0.362
+data_science,AWS,37,157,0.236,0.176,0.308
+data_science,Git,36,157,0.229,0.17,0.301
+data_science,MLOps,36,157,0.229,0.17,0.301
+data_science,Docker,36,157,0.229,0.17,0.301
+data_science,Mathematics,35,157,0.223,0.165,0.294
+data_science,Data Visualization,35,157,0.223,0.165,0.294
+data_science,ETL/ELT,34,157,0.217,0.159,0.287
+data_science,PyTorch,32,157,0.204,0.148,0.274
+data_science,Data Governance/Quality,27,157,0.172,0.121,0.239
+data_science,Kubernetes,27,157,0.172,0.121,0.239
+data_science,R,25,157,0.159,0.11,0.225
+data_science,Java,23,157,0.146,0.1,0.21
+data_science,TensorFlow/Keras,22,157,0.14,0.094,0.203
+data_science,LangChain/LLM frameworks,21,157,0.134,0.089,0.196
+data_science,scikit-learn,20,157,0.127,0.084,0.189
+data_science,JavaScript,19,157,0.121,0.079,0.181
+data_science,Databricks,19,157,0.121,0.079,0.181
+data_science,Streaming,19,157,0.121,0.079,0.181
+data_science,Spark,18,157,0.115,0.074,0.174
+data_science,GCP,18,157,0.115,0.074,0.174
+data_science,Deep Learning,16,157,0.102,0.064,0.159
+data_science,C#,16,157,0.102,0.064,0.159
+data_science,Predictive Analytics,15,157,0.096,0.059,0.152
+data_science,pandas,13,157,0.083,0.049,0.137
+data_science,A/B Testing / Experimentation,13,157,0.083,0.049,0.137
+data_science,Segmentation/Clustering,11,157,0.07,0.04,0.121
+data_science,Jupyter,11,157,0.07,0.04,0.121
+data_science,Computer Vision,11,157,0.07,0.04,0.121
+data_science,NLP,11,157,0.07,0.04,0.121
+data_science,Bash/Shell,10,157,0.064,0.035,0.113
+data_science,Forecasting,10,157,0.064,0.035,0.113
+data_science,Data Modeling,10,157,0.064,0.035,0.113
+data_science,Excel,9,157,0.057,0.03,0.105
+data_science,Snowflake,9,157,0.057,0.03,0.105
+data_science,NumPy,9,157,0.057,0.03,0.105
+data_science,Power BI,8,157,0.051,0.026,0.097
+data_science,Exploratory Analysis,8,157,0.051,0.026,0.097
+data_science,Data Warehouse (generic),7,157,0.045,0.022,0.089
+data_science,Microsoft Fabric,7,157,0.045,0.022,0.089
+data_science,Anomaly Detection,7,157,0.045,0.022,0.089
+data_science,Data Lake/Lakehouse,7,157,0.045,0.022,0.089
+data_science,Scala,7,157,0.045,0.022,0.089
+data_science,Neo4j,7,157,0.045,0.022,0.089
+data_science,dbt,7,157,0.045,0.022,0.089
+data_science,Tableau,6,157,0.038,0.018,0.081
+data_science,Hugging Face/Transformers,6,157,0.038,0.018,0.081
+data_science,Terraform/IaC,5,157,0.032,0.014,0.072
+data_science,Reinforcement Learning,5,157,0.032,0.014,0.072
+data_science,Classification,5,157,0.032,0.014,0.072
+data_science,PostgreSQL,5,157,0.032,0.014,0.072
+data_science,BigQuery,5,157,0.032,0.014,0.072
+data_science,Azure Synapse,4,157,0.025,0.01,0.064
+data_science,Regression,4,157,0.025,0.01,0.064
+data_science,Kafka,4,157,0.025,0.01,0.064
+data_science,Time Series,4,157,0.025,0.01,0.064
+data_science,SQL Server,4,157,0.025,0.01,0.064
+data_science,Bayesian,3,157,0.019,0.007,0.055
+data_science,MongoDB,3,157,0.019,0.007,0.055
+data_science,Rust,3,157,0.019,0.007,0.055
+data_science,Grafana,3,157,0.019,0.007,0.055
+data_science,Azure Data Factory,3,157,0.019,0.007,0.055
+data_science,Qlik,3,157,0.019,0.007,0.055
+data_science,Causal Inference,3,157,0.019,0.007,0.055
+data_science,Hypothesis Testing,3,157,0.019,0.007,0.055
+data_science,matplotlib/seaborn,3,157,0.019,0.007,0.055
+data_science,SAS,2,157,0.013,0.004,0.045
+data_science,SAP HANA,2,157,0.013,0.004,0.045
+data_science,SAP BW/BO,2,157,0.013,0.004,0.045
+data_science,Julia,2,157,0.013,0.004,0.045
+data_science,C/C++,2,157,0.013,0.004,0.045
+data_science,XGBoost/LightGBM,2,157,0.013,0.004,0.045
+data_science,FastAPI/Flask,2,157,0.013,0.004,0.045
+data_science,Oracle,2,157,0.013,0.004,0.045
+data_science,Fivetran/Airbyte,1,157,0.006,0.001,0.035
+data_science,Streamlit,1,157,0.006,0.001,0.035
+data_science,Looker,1,157,0.006,0.001,0.035
+data_science,Data Mining,1,157,0.006,0.001,0.035
+data_science,Recommender Systems,1,157,0.006,0.001,0.035
+data_science,Hadoop,1,157,0.006,0.001,0.035
+data_science,Sampling/Survey,1,157,0.006,0.001,0.035
+data_science,Airflow,1,157,0.006,0.001,0.035
+marketing_analytics,SQL,13,24,0.542,0.351,0.721
+marketing_analytics,Data Visualization,12,24,0.5,0.314,0.686
+marketing_analytics,Data Governance/Quality,12,24,0.5,0.314,0.686
+marketing_analytics,Google Analytics,11,24,0.458,0.279,0.649
+marketing_analytics,AI (generic),10,24,0.417,0.245,0.612
+marketing_analytics,Excel,9,24,0.375,0.212,0.573
+marketing_analytics,Power BI,8,24,0.333,0.18,0.533
+marketing_analytics,Cloud (generic),7,24,0.292,0.149,0.492
+marketing_analytics,BigQuery,6,24,0.25,0.12,0.449
+marketing_analytics,Generative AI / LLM,6,24,0.25,0.12,0.449
+marketing_analytics,Matomo,6,24,0.25,0.12,0.449
+marketing_analytics,Statistics (general),6,24,0.25,0.12,0.449
+marketing_analytics,Segmentation/Clustering,5,24,0.208,0.092,0.405
+marketing_analytics,JavaScript,5,24,0.208,0.092,0.405
+marketing_analytics,Mathematics,4,24,0.167,0.067,0.359
+marketing_analytics,A/B Testing / Experimentation,4,24,0.167,0.067,0.359
+marketing_analytics,Looker,4,24,0.167,0.067,0.359
+marketing_analytics,Python,3,24,0.125,0.043,0.31
+marketing_analytics,dbt,3,24,0.125,0.043,0.31
+marketing_analytics,Predictive Analytics,2,24,0.083,0.023,0.258
+marketing_analytics,ETL/ELT,2,24,0.083,0.023,0.258
+marketing_analytics,Tableau,2,24,0.083,0.023,0.258
+marketing_analytics,Data Modeling,1,24,0.042,0.007,0.202
+marketing_analytics,Anomaly Detection,1,24,0.042,0.007,0.202
+marketing_analytics,REST APIs,1,24,0.042,0.007,0.202
+product_analytics,A/B Testing / Experimentation,1,1,1.0,0.207,1.0
+product_analytics,AI (generic),1,1,1.0,0.207,1.0
+product_analytics,Data Governance/Quality,1,1,1.0,0.207,1.0
+product_analytics,Data Visualization,1,1,1.0,0.207,1.0
+product_analytics,ETL/ELT,1,1,1.0,0.207,1.0
+product_analytics,Hypothesis Testing,1,1,1.0,0.207,1.0
+product_analytics,Machine Learning,1,1,1.0,0.207,1.0
+product_analytics,Python,1,1,1.0,0.207,1.0
+product_analytics,SQL,1,1,1.0,0.207,1.0
+product_analytics,Segmentation/Clustering,1,1,1.0,0.207,1.0
+product_analytics,Statistics (general),1,1,1.0,0.207,1.0

@@ -1,0 +1,77 @@
+role_family,skill,count,n,share,ci_low,ci_high
+bi,Data Modeling,28,85,0.329,0.239,0.435
+bi,Data Governance/Quality,15,85,0.176,0.11,0.271
+bi,ETL/ELT,14,85,0.165,0.101,0.258
+bi,REST APIs,7,85,0.082,0.04,0.16
+bi,Streaming,3,85,0.035,0.012,0.099
+bi,Git,1,85,0.012,0.002,0.064
+bi,dbt,1,85,0.012,0.002,0.064
+bi,Fivetran/Airbyte,1,85,0.012,0.002,0.064
+bi,Terraform/IaC,1,85,0.012,0.002,0.064
+business_analysis,Data Governance/Quality,11,120,0.092,0.052,0.157
+business_analysis,REST APIs,8,120,0.067,0.034,0.126
+business_analysis,CI/CD,5,120,0.042,0.018,0.094
+business_analysis,Streaming,2,120,0.017,0.005,0.059
+business_analysis,Git,2,120,0.017,0.005,0.059
+business_analysis,Docker,1,120,0.008,0.001,0.046
+business_analysis,Kubernetes,1,120,0.008,0.001,0.046
+business_analysis,ETL/ELT,1,120,0.008,0.001,0.046
+business_analysis,Data Modeling,1,120,0.008,0.001,0.046
+data_analytics,Data Governance/Quality,30,107,0.28,0.204,0.372
+data_analytics,Data Modeling,15,107,0.14,0.087,0.218
+data_analytics,ETL/ELT,9,107,0.084,0.045,0.152
+data_analytics,MLOps,2,107,0.019,0.005,0.066
+data_analytics,dbt,2,107,0.019,0.005,0.066
+data_analytics,Git,2,107,0.019,0.005,0.066
+data_analytics,Streaming,1,107,0.009,0.002,0.051
+data_analytics,CI/CD,1,107,0.009,0.002,0.051
+data_analytics,Terraform/IaC,1,107,0.009,0.002,0.051
+data_engineering,ETL/ELT,96,160,0.6,0.523,0.673
+data_engineering,Data Governance/Quality,71,160,0.444,0.369,0.521
+data_engineering,Data Modeling,60,160,0.375,0.304,0.452
+data_engineering,CI/CD,54,160,0.338,0.269,0.414
+data_engineering,Git,28,160,0.175,0.124,0.241
+data_engineering,Spark,28,160,0.175,0.124,0.241
+data_engineering,Streaming,23,160,0.144,0.098,0.206
+data_engineering,REST APIs,20,160,0.125,0.082,0.185
+data_engineering,Terraform/IaC,19,160,0.119,0.077,0.178
+data_engineering,Azure Data Factory,19,160,0.119,0.077,0.178
+data_engineering,Kafka,14,160,0.087,0.053,0.142
+data_engineering,dbt,12,160,0.075,0.043,0.127
+data_engineering,Airflow,11,160,0.069,0.039,0.119
+data_engineering,Kubernetes,11,160,0.069,0.039,0.119
+data_engineering,MLOps,8,160,0.05,0.026,0.096
+data_engineering,Docker,7,160,0.044,0.021,0.088
+data_governance,Data Governance/Quality,53,65,0.815,0.704,0.891
+data_governance,Streaming,3,65,0.046,0.016,0.127
+data_governance,Data Modeling,3,65,0.046,0.016,0.127
+data_governance,REST APIs,2,65,0.031,0.008,0.105
+data_governance,Git,2,65,0.031,0.008,0.105
+data_governance,ETL/ELT,2,65,0.031,0.008,0.105
+data_governance,Kubernetes,1,65,0.015,0.003,0.082
+data_governance,CI/CD,1,65,0.015,0.003,0.082
+data_governance,Spark,1,65,0.015,0.003,0.082
+data_science,CI/CD,48,157,0.306,0.239,0.382
+data_science,REST APIs,45,157,0.287,0.222,0.362
+data_science,MLOps,36,157,0.229,0.17,0.301
+data_science,Git,36,157,0.229,0.17,0.301
+data_science,Docker,36,157,0.229,0.17,0.301
+data_science,ETL/ELT,34,157,0.217,0.159,0.287
+data_science,Data Governance/Quality,27,157,0.172,0.121,0.239
+data_science,Kubernetes,27,157,0.172,0.121,0.239
+data_science,Streaming,19,157,0.121,0.079,0.181
+data_science,Spark,18,157,0.115,0.074,0.174
+data_science,Data Modeling,10,157,0.064,0.035,0.113
+data_science,dbt,7,157,0.045,0.022,0.089
+data_science,Terraform/IaC,5,157,0.032,0.014,0.072
+data_science,Kafka,4,157,0.025,0.01,0.064
+data_science,Azure Data Factory,3,157,0.019,0.007,0.055
+data_science,Fivetran/Airbyte,1,157,0.006,0.001,0.035
+data_science,Airflow,1,157,0.006,0.001,0.035
+marketing_analytics,Data Governance/Quality,12,24,0.5,0.314,0.686
+marketing_analytics,dbt,3,24,0.125,0.043,0.31
+marketing_analytics,ETL/ELT,2,24,0.083,0.023,0.258
+marketing_analytics,Data Modeling,1,24,0.042,0.007,0.202
+marketing_analytics,REST APIs,1,24,0.042,0.007,0.202
+product_analytics,ETL/ELT,1,1,1.0,0.207,1.0
+product_analytics,Data Governance/Quality,1,1,1.0,0.207,1.0

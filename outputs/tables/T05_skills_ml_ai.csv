@@ -1,0 +1,13 @@
+skill,count,n,share,ci_low,ci_high
+AI (generic),276,719,0.384,0.349,0.42
+Machine Learning,118,719,0.164,0.139,0.193
+Generative AI / LLM,117,719,0.163,0.138,0.191
+Forecasting,41,719,0.057,0.042,0.076
+Predictive Analytics,25,719,0.035,0.024,0.051
+Deep Learning,16,719,0.022,0.014,0.036
+Anomaly Detection,13,719,0.018,0.011,0.031
+NLP,13,719,0.018,0.011,0.031
+Computer Vision,12,719,0.017,0.01,0.029
+Time Series,5,719,0.007,0.003,0.016
+Reinforcement Learning,5,719,0.007,0.003,0.016
+Recommender Systems,1,719,0.001,0.0,0.008
