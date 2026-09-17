@@ -43,7 +43,7 @@ The decision documents are written for one specific profile (senior marketing/gr
 | Rule configurations (`config/`): role taxonomy, skill vocabulary, geography, queries, profile | Raw source records (`data/raw`, 1.3 GB), processed posting files (`data/processed`), fetched third-party reference pages (`data/external`), run logs |
 | Methodology, source inventory, data-quality, limitations, legal/publication audit, specification audit, decision framework (`docs/`) | Per-posting tables that carry advertisement text, contact data or source URLs |
 | Aggregated tables (`outputs/tables`, 140+ CSVs, with every text/URL column removed), figures, JSON summaries, the digest of every quoted number | The git history of the private repository |
-| Decision documents, decision log, tests (rule tests run anywhere; integrity tests skip without the private data) | |
+| Decision documents, decision log, tests (rule tests run anywhere; integrity tests skip without the private data) | The application-lead file `data/private/application_leads.json` (`docs/application-leads.md`): ad text, source URLs and the contact persons, e-mails and phone numbers stated in the advertisements |
 
 Why the split, in one paragraph: the advertisements are third-party text, the sources hold database rights and restrict automated extraction in their terms, and the ads contain contact persons' names, e-mails and phone numbers. Aggregated statistics contain none of that. The full reasoning, with the clauses and statutes fetched on 2026-09-16, is in `docs/legal-and-publication-audit.md`; the decision is in `PUBLICATION_DECISION.md`. This is a publication-readiness analysis, not legal advice.
 
@@ -89,6 +89,7 @@ Every step is a script in `src/`; every rule lives in `config/`; every intermedi
 5. **Aggregation** (`src/analysis/`). Core set = canonical rows in eight data families; the adjacent set is reported separately; text-derived shares use postings with a description longer than 300 characters as denominator; every table stores `n`; Wilson 95 % confidence intervals on proportions that feed decisions; k-means/NMF requirement clusters as descriptive archetypes only; JobBarometer and Eurostat series are analysed as their own units and never merged with posting-level statistics.
 6. **Validation.** `tests/test_pipeline.py` checks rule behaviour on known inputs and the internal consistency of the processed outputs; the 177-title manual precision audit (Q03c) measures the taxonomy; `src/reporting/digest.py` reprints every number quoted in the documents from `outputs/`.
 7. **Decision documents.** `docs/market-guide.md` reports the findings table by table; `CAREER_DECISION_MAP.md` and `docs/career-map.md` score each path on transparent variables (postings, Styria postings, English-posting share, German-required share, skill overlap with the profile, median advertised minimum salary, remote share) with stated normalisation and weights plus a sensitivity check with alternative weights (`docs/decision-framework.md`, `src/analysis/build_decision_matrix.py`). No hidden scoring.
+8. **Application leads** (`src/pipeline/build_application_leads.py`, `docs/application-leads.md`). A private, git-ignored `data/private/application_leads.json` for the application funnel: one record per posting with the contact data the advertisement states (e-mail, contact person, position, phone — each with the snippet it was read from and a confidence label), the ad itself, open/expired status, salary, requirements, a profile-fit block for CV tailoring, cold-e-mail slots and a tracking block that survives re-runs. It is the one artifact carrying contact data and is never exported by `src/publish/export_public.py`; without the private postings file the script falls back to employer-level leads built from the public aggregates, with no contacts.
 
 ## Coverage and quality (docs/data-quality.md)
 
@@ -187,6 +188,8 @@ python src/reporting/digest.py > outputs/reports/digest.txt
 # 4. validation and publication
 python -m pytest tests -q
 python src/publish/export_public.py ../austria-data-job-market-intelligence-public
+# 5. private extras (never published): application/outreach leads for the profile in config/profile.json
+python src/pipeline/build_application_leads.py    # -> data/private/application_leads.json (git-ignored)
 ```
 
 After a re-run, update the numbers in `docs/market-guide.md`, `CAREER_DECISION_MAP.md` and `AGENT_CONTEXT.md` from `outputs/reports/digest.txt`, and record rule changes in `DECISION_LOG.md`.
