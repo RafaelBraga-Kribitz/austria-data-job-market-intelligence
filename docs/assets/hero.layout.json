@@ -1,0 +1,84 @@
+{
+  "output": "C:\\Users\\Benutzer1\\Dev\\portfolio-readme-work\\austria-data-job-market-intelligence\\docs\\assets\\hero.png",
+  "width": 1600,
+  "height": 640,
+  "mode": "light",
+  "fonts": "Söhne from C:\\Users\\Benutzer1\\Dev\\braga-design-system-template\\public\\fonts",
+  "title_size": 112,
+  "descriptor_size": 34,
+  "attempts": 2,
+  "blocks": {
+    "kind": {
+      "bbox": [
+        72,
+        72,
+        488,
+        104
+      ],
+      "lines": [
+        "BRAGA · ANALYTICAL PROJECT"
+      ],
+      "font": "SohneMono-Buch.otf"
+    },
+    "status": {
+      "bbox": [
+        1400,
+        72,
+        1528,
+        104
+      ],
+      "lines": [
+        "COMPLETE"
+      ],
+      "font": "SohneMono-Buch.otf"
+    },
+    "facts": {
+      "bbox": [
+        72,
+        542,
+        1240,
+        570
+      ],
+      "lines": [
+        "LICENSE  MIT  ·  REPO  github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence"
+      ],
+      "font": "SohneMono-Buch.otf"
+    },
+    "title": {
+      "bbox": [
+        72,
+        128,
+        1369,
+        356
+      ],
+      "lines": [
+        "Austria Data-Job Market",
+        "Intelligence"
+      ],
+      "font": "Sohne-Fett.otf"
+    },
+    "descriptor": {
+      "bbox": [
+        72,
+        384,
+        1186,
+        474
+      ],
+      "lines": [
+        "One-day snapshot of 720 core data-role postings from five public sources,",
+        "the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality."
+      ],
+      "font": "Sohne-Buch.otf"
+    }
+  },
+  "guardrails": [
+    "safe-area",
+    "wrap-and-shrink",
+    "line-length",
+    "no-overlap",
+    "glyph-coverage-per-char",
+    "contrast>=4.5",
+    "pixel-scan"
+  ],
+  "validated": true
+}

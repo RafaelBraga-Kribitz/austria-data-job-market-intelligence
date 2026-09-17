@@ -1,14 +1,15 @@
 # Austria Data-Job Market Intelligence
 
-![Austria Data-Job Market Intelligence — One-day snapshot of 720 core data-role postings from five public sources, the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality.](outputs/figures/F03_styria_vs_austria_families.png)
+![Austria Data-Job Market Intelligence — One-day snapshot of 720 core data-role postings from five public sources, the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality.](docs/assets/hero.png)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Status: Complete](https://img.shields.io/badge/status-Complete-brightgreen)](#status)
 
 **Status:** Complete
 
-
 An evidence base for data-career decisions in Austria, with a Styria/Graz focus: a one-day snapshot (2026-09-16) of open data-role advertisements from five public sources, the AMS JobBarometer yearly series 2020–2025, transparent rule-based normalisation, aggregated statistics with confidence intervals, and two decision documents (`CAREER_DECISION_MAP.md`, `AGENT_CONTEXT.md`). It is a labour-market intelligence and decision-support project, not a portfolio dashboard.
+
+![Austria Data-Job Market Intelligence — One-day snapshot of 720 core data-role postings from five public sources, the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality.](outputs/figures/F03_styria_vs_austria_families.png)
 
 ## Key findings
 
@@ -243,6 +244,13 @@ Code: MIT. Documents and aggregated outputs: CC BY 4.0. No licence is granted fo
 
 <table>
   <tr>
+    <td width="110">
+      <img
+        src="docs/assets/Author_MDS_Rafael_Braga-Kribitz_kroped.png"
+        alt="Rafael Braga-Kribitz"
+        width="96"
+      />
+    </td>
     <td>
       <strong>Rafael Braga-Kribitz</strong><br />
       Seiersberg-Pirka, Austria · Portfolio project, 2026<br />
