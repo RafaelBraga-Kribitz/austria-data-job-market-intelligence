@@ -21,7 +21,9 @@ plt.rcParams.update({"figure.dpi": 130, "font.size": 9, "axes.spines.top": False
 
 
 def foot(ax, n, extra=""):
-    ax.annotate(f"n = {n}. {SRC}. {PERIOD}. {extra}", xy=(0, -0.28), xycoords="axes fraction", fontsize=6.5, color="#555", wrap=True)
+    # Anchored below the whole figure (not at a fixed axes fraction) so rotated tick labels
+    # can never overlap it; bbox_inches="tight" at save time includes it in the PNG.
+    ax.figure.text(0.01, -0.02, f"n = {n}. {SRC}. {PERIOD}. {extra}", fontsize=6.5, color="#555", ha="left", va="top", wrap=True)
 
 
 def barh(df, cat, val, title, fname, n, xlabel, top=25, extra="", ci=None):
