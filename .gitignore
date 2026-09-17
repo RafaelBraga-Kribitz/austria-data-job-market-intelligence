@@ -7,3 +7,7 @@ data/raw/_probe/
 
 # private audit trail (pre-D-012 processed snapshot), too large for git
 data/processed/_pre_D012/
+
+# application / outreach leads: ad text, source URLs, contact persons' e-mails
+data/private/
+application_leads*.json
