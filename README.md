@@ -96,41 +96,56 @@ Every step is a script in `src/`; every rule lives in `config/`; every intermedi
 
 ## Architecture
 
+The repository has two evidence streams that meet in `outputs/tables/`. The first is the
+posting snapshot: private collectors write raw ads, and the pipeline puts them into a common
+schema, applies the rule-based taxonomies from `config/`, and collapses duplicate postings
+before any analysis runs.
+
 ```mermaid
-flowchart LR
-  subgraph acq["src/acquisition"]
-    A1["collect_jobbarometer.py<br/>AMS JobBarometer pages"]
-    A2["collect_eurostat_jvs.py<br/>Eurostat vacancy API"]
-    A3["posting collectors (private)<br/>EURES · karriere.at · LinkedIn · willhaben · jobs.at"]
-  end
+flowchart TD
+  A3["posting collectors (private)<br/>EURES · karriere.at · LinkedIn · willhaben · jobs.at"]
   C["config/<br/>role_taxonomy · skills_taxonomy · geo · queries · profile"]
   subgraph pipe["src/pipeline"]
     P1["build_interim.py<br/>common schema"] --> P2["normalize.py<br/>rule-based fields"] --> P3["dedupe.py<br/>union-find groups"]
   end
-  subgraph ana["src/analysis"]
-    N1["run_analysis.py · cluster_requirements.py<br/>data_quality.py · adjacent_demand.py · precision_audit.py"]
-    N2["jobbarometer_analysis.py"]
-    N3["seasonality.py"]
-    N4["build_decision_matrix.py · make_figures.py<br/>export_agent_json.py"]
+  N1["run_analysis.py · cluster_requirements.py<br/>data_quality.py · adjacent_demand.py · precision_audit.py"]
+  O1["outputs/tables/ T* JB* S* D* Q*"]
+  A3 -->|"data/raw (private)"| P1
+  C --> P2
+  P3 -->|"data/processed (private)"| N1
+  N1 --> O1
+```
+
+*The posting stream. Everything upstream of `outputs/tables/` is the 720-ad snapshot; the
+normalisation and dedupe steps are what `precision_audit.py` and `data_quality.py` report on.*
+
+The second stream is the official series. The AMS JobBarometer and Eurostat vacancy figures are
+already aggregated at source, so they bypass the pipeline and land in the same tables. From
+there every published artifact is derived: figures, the digest, the sanitised public export, and
+the hand-written decision documents that cite table ids.
+
+```mermaid
+flowchart TD
+  subgraph acq["src/acquisition — official series"]
+    A1["collect_jobbarometer.py<br/>AMS JobBarometer pages"]
+    A2["collect_eurostat_jvs.py<br/>Eurostat vacancy API"]
   end
-  subgraph out["outputs/"]
-    O1["tables/ T* JB* S* D* Q*"]
-    O2["figures/ F01–F13 · *.json"]
-  end
+  N2["jobbarometer_analysis.py"]
+  N3["seasonality.py"]
+  O1["outputs/tables/ T* JB* S* D* Q*"]
+  C["config/<br/>role_taxonomy · skills_taxonomy · geo · queries · profile"]
+  N4["build_decision_matrix.py · make_figures.py<br/>export_agent_json.py"]
+  O2["outputs/figures/ F01–F13 · *.json"]
   subgraph rep["src/reporting · src/publish"]
     R1["digest.py<br/>outputs/reports/digest.txt"]
     R2["export_public.py<br/>sanitised public tree"]
   end
   D["CAREER_DECISION_MAP.md · AGENT_CONTEXT.md<br/>docs/market-guide.md (hand-written synthesis, numbers with table ids)"]
-  A3 -->|"data/raw (private)"| P1
-  C --> P2
-  C -->|"profile.json"| N4
   A1 --> N2
   A2 --> N3
-  P3 -->|"data/processed (private)"| N1
-  N1 --> O1
   N2 --> O1
   N3 --> O1
+  C -->|"profile.json"| N4
   O1 --> N4
   N4 --> O2
   O1 --> R1
@@ -139,6 +154,9 @@ flowchart LR
   O2 --> R2
   R1 --> D
 ```
+
+*The official series and everything published from the tables. `outputs/tables/` and `config/`
+are repeated from the diagram above — they are the handoff between the two streams.*
 
 ## Repository map
 
