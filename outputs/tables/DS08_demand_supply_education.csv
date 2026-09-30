@@ -1,0 +1,33 @@
+dimension,category,demand_count,demand_n,demand_share,supply_count,supply_n,supply_share,supply_ci_low,supply_ci_high,supply_T1,supply_T1_share,difference_pp,demand_table,supply_population,note
+education_level,Master,72,719,0.1,255,1818,0.14,0.125,0.157,145.0,0.166,4.0,T11a,P_data,demand = level named in the ad (often 'or equivalent'); supply = level wording in bio/READMEs (absence ≠ no degree)
+education_level,Bachelor,46,719,0.064,93,1818,0.051,0.042,0.062,49.0,0.056,-1.3,T11a,P_data,demand = level named in the ad (often 'or equivalent'); supply = level wording in bio/READMEs (absence ≠ no degree)
+education_level,PhD,15,719,0.021,163,1818,0.09,0.077,0.104,63.0,0.072,6.9,T11a,P_data,demand = level named in the ad (often 'or equivalent'); supply = level wording in bio/READMEs (absence ≠ no degree)
+education_level,HTL/Matura,124,719,0.172,3,1818,0.002,0.001,0.005,0.0,0.0,-17.1,T11a,P_data,demand = level named in the ad (often 'or equivalent'); supply = level wording in bio/READMEs (absence ≠ no degree)
+education_level,Degree (generic),420,719,0.584,0,1818,0.0,-0.0,0.002,0.0,0.0,-58.4,T11a,P_data,demand = level named in the ad (often 'or equivalent'); supply = level wording in bio/READMEs (absence ≠ no degree)
+education_level,degree wording required (T11e),229,719,0.318,559,1818,0.307,0.287,0.329,301.0,0.345,,T11e,P_data,supply = any education wording observable
+education_level,any degree wording (T11e required+preferred+mentioned),466,719,0.648,559,1818,0.307,0.287,0.329,301.0,0.345,,T11e,P_data,supply = any education wording observable
+education_field,Computer Science/Informatics,271,719,0.377,144,872,0.165,0.142,0.191,144.0,0.165,-21.2,T11b,P_T1,field wording in bios only
+education_field,Engineering/Physics,238,719,0.331,98,872,0.112,0.093,0.135,98.0,0.112,-21.9,T11b,P_T1,field wording in bios only
+education_field,Economics/Business,189,719,0.263,107,872,0.123,0.103,0.146,107.0,0.123,-14.0,T11b,P_T1,field wording in bios only
+education_field,Data Science,126,719,0.175,495,872,0.568,0.535,0.6,495.0,0.568,39.2,T11b,P_T1,field wording in bios only
+education_field,Statistics/Mathematics,90,719,0.125,44,872,0.05,0.038,0.067,44.0,0.05,-7.5,T11b,P_T1,field wording in bios only
+education_field,Marketing/Communication,14,719,0.019,8,872,0.009,0.005,0.018,8.0,0.009,-1.0,T11b,P_T1,field wording in bios only
+education_field,Natural/Life Sciences,11,719,0.015,61,872,0.07,0.055,0.089,61.0,0.07,5.5,T11b,P_T1,field wording in bios only
+education_field,Social Sciences/Psychology,4,719,0.006,11,872,0.013,0.007,0.022,11.0,0.013,0.7,T11b,P_T1,field wording in bios only
+certification,Certification (any mention),92,719,0.128,69,1818,0.038,0.03,0.048,26.0,,-9.0,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Requirements/BA cert (IREB/IIBA/CBAP),20,719,0.028,1,1818,0.001,0.0,0.003,0.0,,-2.7,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Scrum/PM cert,9,719,0.013,7,1818,0.004,0.002,0.008,4.0,,-0.9,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,ITIL,7,719,0.01,0,1818,0.0,-0.0,0.002,0.0,,-1.0,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Data-management cert (CDMP/DAMA),3,719,0.004,0,1818,0.0,-0.0,0.002,0.0,,-0.4,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Azure cert,2,719,0.003,1,1818,0.001,0.0,0.003,0.0,,-0.2,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Google cert,2,719,0.003,1,1818,0.001,0.0,0.003,1.0,,-0.2,T11d,P_data,candidate-side certificate wording incl. capstone repositories
+certification,Coursera/edX/Udemy (any),0,719,0.0,112,1818,0.062,0.051,0.074,,,6.2,T11d (not requested in any ad),P_data,candidate-side only
+certification,Bootcamp,0,719,0.0,24,1818,0.013,0.009,0.02,,,1.3,T11d (not requested in any ad),P_data,candidate-side only
+certification,IBM Data Science Certificate,0,719,0.0,8,1818,0.004,0.002,0.009,,,0.4,T11d (not requested in any ad),P_data,candidate-side only
+certification,DataCamp,0,719,0.0,8,1818,0.004,0.002,0.009,,,0.4,T11d (not requested in any ad),P_data,candidate-side only
+certification,Microsoft cert (generic),0,719,0.0,3,1818,0.002,0.001,0.005,,,0.2,T11d (not requested in any ad),P_data,candidate-side only
+certification,Google Data Analytics Certificate,0,719,0.0,2,1818,0.001,0.0,0.004,,,0.1,T11d (not requested in any ad),P_data,candidate-side only
+certification,CFA/finance cert,0,719,0.0,2,1818,0.001,0.0,0.004,,,0.1,T11d (not requested in any ad),P_data,candidate-side only
+certification,Microsoft/Azure cert,0,719,0.0,2,1818,0.001,0.0,0.004,,,0.1,T11d (not requested in any ad),P_data,candidate-side only
+certification,Snowflake cert,0,719,0.0,1,1818,0.001,0.0,0.003,,,0.1,T11d (not requested in any ad),P_data,candidate-side only
+certification,AWS cert,0,719,0.0,1,1818,0.001,0.0,0.003,,,0.1,T11d (not requested in any ad),P_data,candidate-side only

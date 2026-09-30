@@ -1,0 +1,8 @@
+measure,raw_bio_titles,normalized_titles,note
+distinct,574.0,13.0,population: P_T1; entropy in bits; HHI = sum of squared shares
+total,764.0,872.0,population: P_T1; entropy in bits; HHI = sum of squared shares
+entropy_bits,8.586,2.032,population: P_T1; entropy in bits; HHI = sum of squared shares
+normalised_entropy,0.937,0.549,population: P_T1; entropy in bits; HHI = sum of squared shares
+hhi,0.0074,0.3618,population: P_T1; entropy in bits; HHI = sum of squared shares
+top1_share,0.062,0.557,population: P_T1; entropy in bits; HHI = sum of squared shares
+top5_share,0.14,0.947,population: P_T1; entropy in bits; HHI = sum of squared shares

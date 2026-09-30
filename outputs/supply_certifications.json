@@ -1,0 +1,184 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "certifications": [
+  {
+   "certification": "Coursera/edX/Udemy (any)",
+   "count": 112,
+   "n": 1818,
+   "share": 0.062,
+   "ci_low": 0.051,
+   "ci_high": 0.074,
+   "population": "P_data"
+  },
+  {
+   "certification": "Certification (any mention)",
+   "count": 69,
+   "n": 1818,
+   "share": 0.038,
+   "ci_low": 0.03,
+   "ci_high": 0.048,
+   "population": "P_data"
+  },
+  {
+   "certification": "Bootcamp",
+   "count": 24,
+   "n": 1818,
+   "share": 0.013,
+   "ci_low": 0.009,
+   "ci_high": 0.02,
+   "population": "P_data"
+  },
+  {
+   "certification": "IBM Data Science Certificate",
+   "count": 8,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.009,
+   "population": "P_data"
+  },
+  {
+   "certification": "DataCamp",
+   "count": 8,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.009,
+   "population": "P_data"
+  },
+  {
+   "certification": "Scrum/PM cert",
+   "count": 7,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.008,
+   "population": "P_data"
+  },
+  {
+   "certification": "Microsoft cert (generic)",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005,
+   "population": "P_data"
+  },
+  {
+   "certification": "CFA/finance cert",
+   "count": 2,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.004,
+   "population": "P_data"
+  },
+  {
+   "certification": "Google Data Analytics Certificate",
+   "count": 2,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.004,
+   "population": "P_data"
+  },
+  {
+   "certification": "Microsoft/Azure cert",
+   "count": 2,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.004,
+   "population": "P_data"
+  },
+  {
+   "certification": "Requirements/BA cert (IREB/IIBA/CBAP)",
+   "count": 1,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.003,
+   "population": "P_data"
+  },
+  {
+   "certification": "Azure cert",
+   "count": 1,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.003,
+   "population": "P_data"
+  },
+  {
+   "certification": "Snowflake cert",
+   "count": 1,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.003,
+   "population": "P_data"
+  },
+  {
+   "certification": "AWS cert",
+   "count": 1,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.003,
+   "population": "P_data"
+  },
+  {
+   "certification": "Google cert",
+   "count": 1,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.003,
+   "population": "P_data"
+  }
+ ],
+ "per_candidate": [
+  {
+   "certifications_per_candidate": "0",
+   "count": 1668,
+   "n": 1818,
+   "share": 0.917,
+   "ci_low": 0.904,
+   "ci_high": 0.929
+  },
+  {
+   "certifications_per_candidate": "1",
+   "count": 129,
+   "n": 1818,
+   "share": 0.071,
+   "ci_low": 0.06,
+   "ci_high": 0.084
+  },
+  {
+   "certifications_per_candidate": "2",
+   "count": 19,
+   "n": 1818,
+   "share": 0.01,
+   "ci_low": 0.007,
+   "ci_high": 0.016
+  },
+  {
+   "certifications_per_candidate": "3+",
+   "count": 2,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.004
+  }
+ ]
+}

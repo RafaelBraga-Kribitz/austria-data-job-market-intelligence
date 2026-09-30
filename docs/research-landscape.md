@@ -104,7 +104,7 @@ Numbers are quoted only where the page (or an explicit search snippet) showed th
 
 | API | Auth | Austria coverage | Notes | Suitability |
 |---|---|---|---|---|
-| Arbeitnow Job Board API, `https://www.arbeitnow.com/api/job-board-api` (fetched blog: https://www.arbeitnow.com/blog/job-board-api) | **No key** | Europe/DACH-focused (Germany-heavy); location field per job, no documented country filter | JSON, sourced from ATS feeds (Greenhouse, Personio, etc.); no stated licence/terms, rate limits undocumented | Medium (small extra supply of ATS-sourced tech jobs; filter location client-side) |
+| Arbeitnow Job Board API, `https://www.arbeitnow.com/api/job-board-api` (fetched blog: https://www.arbeitnow.com/blog/job-board-api) | **No key** | Europe/DACH-focused (Germany-heavy); location field per job, no documented country filter | JSON from ATS feeds; `collect_arbeitnow.py` filters Austria client-side; raw gitignored; 2026-09-18: 1 Austria / 0 core. T19 n=109 is jobspy LinkedIn, not this API | Medium (dated supplement, not merged into 720) |
 | Adzuna API, https://developer.adzuna.com/ | Free App ID + App Key (registration) | **Yes** ("at" country code; Austria listed among supported countries) | Aggregator incl. salary estimates; terms restrict redistribution | Medium (needs account; cross-check volumes and salary_min/max) |
 | Jooble API, `POST https://jooble.org/api/{key}` | Key (free request) | Aggregator, Austria searchable | Terms limit storage/redistribution | Low-Medium |
 | EURES public API (AMS mirror), karriere.at, LinkedIn guest, willhaben, jobs.at | already in use by us | — | — | (already covered) |
@@ -113,7 +113,8 @@ Numbers are quoted only where the page (or an explicit search snippet) showed th
 
 ## 5. Open-source tools
 
-- **python-jobspy** (https://github.com/speedyapply/JobSpy, PyPI `python-jobspy`, MIT, 4.3k stars, 353 commits, actively maintained): scrapes LinkedIn, Indeed, Glassdoor, Google, ZipRecruiter, Bayt, Naukri, BDJobs. **Austria is a supported `country_indeed` value** and Glassdoor also lists Austria; LinkedIn via `location`. Indeed is bot-blocked for us, so JobSpy's Indeed path may fail from our IP; its LinkedIn scraper duplicates what we already do. Suitability: Medium (adaptable, e.g. Glassdoor/Google Jobs paths).
+- **python-jobspy** (https://github.com/speedyapply/JobSpy, PyPI `python-jobspy`, MIT): scrapes LinkedIn, Indeed, Glassdoor, Google, ZipRecruiter, Bayt, Naukri, BDJobs. **Austria is a supported `country_indeed` value**. Its LinkedIn scraper requests LinkedIn's logged-out `jobs-guest` search endpoint. Used privately in the gitignored hunter (`src/private/radar/`, D-022/D-023) for LinkedIn *job listings* on 2026-09-18 (the source of the T19 aggregates; never member or people data); not a public collector. Terms position: docs/legal-and-publication-audit.md §11.2. Indeed may still 403 from datacenter IPs — then saved-HTML is the fallback. Suitability: Medium (private hunter only).
+- **german-ai-job-radar** (https://github.com/vijayakumarharsath/german-ai-job-radar, MIT, fetched 2026-09-18): personal hunter for DE intern/junior AI/ML roles (StepStone JSON-LD, Indeed/jobspy, Arbeitnow, localhost UI, topic mining, dual-track employers). **Absorbed 2026-09-18 (D-023):** public tables T17/T04d/T05f/D04b plus Arbeitnow collector; scrapers, JD store, profile scores and UI stay gitignored and Austria-retargeted. Suitability: High as a method source; do not clone it as a public product.
 - **Nesta ojd_daps_skills** (https://github.com/nestauk/ojd_daps_skills, docs https://nestauk.github.io/ojd_daps_skills/, `pip install ojd-daps-skills`): spaCy NER for skills/experience/benefits + mapping to ESCO or Lightcast. **English-only**; licence not shown on docs page (repo is MIT per GitHub - verify). Suitability: Medium-adaptable (mapping-to-ESCO logic reusable; NER must be swapped for a German/multilingual model).
 - **SkillSpan (jjzha)** (https://github.com/kris927b/SkillSpan, NAACL 2022; models/collections at https://huggingface.co/jjzha, demo https://huggingface.co/spaces/jjzha/skill_extraction_demo): 14.5K sentences / 12.5K annotated hard+soft skill spans, English. jjzha also published multilingual/ESCO-linked models (e.g. `jjzha/esco-xlm-roberta-large`) — worth testing on German text. Suitability: Medium.
 - **SkillNER** (PyPI `skillNer`): rule/NER extractor keyed to EMSI/Lightcast skills, English. Not verified in this survey (no fetch); Low-Medium.
@@ -169,8 +170,9 @@ Note on units: Austrian sources mix monthly gross (x14) and annual gross; StepSt
 
 **(b) Adapt**
 - Nesta ojd_daps_skills mapping logic (skill span -> ESCO) with a multilingual NER (test jjzha ESCO-linked XLM-R models on German ads).
-- python-jobspy for any additional board we decide to add (Glassdoor/Google Jobs), MIT licence; not for Indeed from our network.
-- Arbeitnow API as a low-cost supplemental feed (filter `location` for Austrian cities); Adzuna "at" if we accept account creation, mainly for salary_min/max on ads.
+- python-jobspy **privately** (D-022) for Indeed/LinkedIn *job listings* in the gitignored hunter (LinkedIn members/people are never collected by automation); the code and records are never published, the T19 aggregates are.
+- Arbeitnow API as a dated public-code supplement (`collect_arbeitnow.py`); raw gitignored. T19 2026-09-18 `published_aggregates` n=109 is python-jobspy LinkedIn jobs (title-only); Arbeitnow itself stayed below threshold.
+- german-ai-job-radar ideas (D-023): intern vs junior divergence, dual-track employers, additive GenAI topics — as public tables, not as a cloned dashboard.
 - Verdienststrukturerhebung 2022 ISCO tables as the official earnings benchmark for ICT professionals (need the ISCO table from the publication PDF, not the fetched OGD file).
 
 **(c) Ignore**
@@ -210,7 +212,7 @@ Note on units: Austrian sources mix monthly gross (x14) and annual gross; StepSt
 - https://www.kaggle.com/datasets/thedevastator/job-postings-in-europe ; https://huggingface.co/datasets/lukebarousse/data_jobs (search-only)
 - https://www.arbeitnow.com/blog/job-board-api (fetched)
 - https://developer.adzuna.com/ ; https://publicapis.io/jooble-api (search-only)
-- https://github.com/speedyapply/JobSpy (fetched)
+- https://github.com/vijayakumarharsath/german-ai-job-radar (fetched 2026-09-18)
 - https://nestauk.github.io/ojd_daps_skills/ (fetched); https://github.com/nestauk/ojd_daps_skills
 - https://github.com/kris927b/SkillSpan ; https://huggingface.co/jjzha (search-only)
 - https://www.hays.at/jobprofile/data-scientist (fetched)

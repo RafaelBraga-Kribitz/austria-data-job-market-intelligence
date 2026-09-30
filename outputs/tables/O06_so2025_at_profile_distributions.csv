@@ -1,0 +1,99 @@
+question,answer,population,count,n,share,ci_low,ci_high,source,source_quality
+EdLevel,"Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",all AT respondents,154,409,0.377,0.331,0.424,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",all AT respondents,86,409,0.21,0.174,0.252,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,Some college/university study without earning a degree,all AT respondents,73,409,0.178,0.144,0.219,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",all AT respondents,45,409,0.11,0.083,0.144,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Professional degree (JD, MD, Ph.D, Ed.D, etc.)",all AT respondents,22,409,0.054,0.036,0.08,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Associate degree (A.A., A.S., etc.)",all AT respondents,15,409,0.037,0.022,0.06,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,Other (please specify):,all AT respondents,11,409,0.027,0.015,0.048,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,Primary/elementary school,all AT respondents,3,409,0.007,0.002,0.021,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",AT data-role respondents,18,29,0.621,0.44,0.773,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Professional degree (JD, MD, Ph.D, Ed.D, etc.)",AT data-role respondents,3,29,0.103,0.036,0.264,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",AT data-role respondents,3,29,0.103,0.036,0.264,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,Other (please specify):,AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+EdLevel,Some college/university study without earning a degree,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Employed,all AT respondents,310,410,0.756,0.712,0.795,Stack Overflow Developer Survey 2025 (AT),B
+Employment,"Independent contractor, freelancer, or self-employed",all AT respondents,53,410,0.129,0.1,0.165,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Student,all AT respondents,31,410,0.076,0.054,0.105,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Not employed,all AT respondents,8,410,0.02,0.01,0.038,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Retired,all AT respondents,4,410,0.01,0.004,0.025,Stack Overflow Developer Survey 2025 (AT),B
+Employment,I prefer not to say,all AT respondents,4,410,0.01,0.004,0.025,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Employed,AT data-role respondents,21,29,0.724,0.543,0.853,Stack Overflow Developer Survey 2025 (AT),B
+Employment,"Independent contractor, freelancer, or self-employed",AT data-role respondents,7,29,0.241,0.122,0.421,Stack Overflow Developer Survey 2025 (AT),B
+Employment,Student,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Hybrid (some remote, leans heavy to in-person)",all AT respondents,99,337,0.294,0.248,0.345,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Hybrid (some in-person, leans heavy to flexibility)",all AT respondents,81,337,0.24,0.198,0.289,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Your choice (very flexible, you can come in when you want or just as needed)",all AT respondents,68,337,0.202,0.162,0.248,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,Remote,all AT respondents,52,337,0.154,0.12,0.197,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,In-person,all AT respondents,37,337,0.11,0.081,0.148,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Your choice (very flexible, you can come in when you want or just as needed)",AT data-role respondents,8,22,0.364,0.197,0.57,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Hybrid (some remote, leans heavy to in-person)",AT data-role respondents,5,22,0.227,0.101,0.434,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,"Hybrid (some in-person, leans heavy to flexibility)",AT data-role respondents,4,22,0.182,0.073,0.385,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,Remote,AT data-role respondents,4,22,0.182,0.073,0.385,Stack Overflow Developer Survey 2025 (AT),B
+RemoteWork,In-person,AT data-role respondents,1,22,0.045,0.008,0.218,Stack Overflow Developer Survey 2025 (AT),B
+Age,25-34 years old,all AT respondents,138,410,0.337,0.293,0.384,Stack Overflow Developer Survey 2025 (AT),B
+Age,35-44 years old,all AT respondents,121,410,0.295,0.253,0.341,Stack Overflow Developer Survey 2025 (AT),B
+Age,18-24 years old,all AT respondents,66,410,0.161,0.129,0.2,Stack Overflow Developer Survey 2025 (AT),B
+Age,45-54 years old,all AT respondents,54,410,0.132,0.102,0.168,Stack Overflow Developer Survey 2025 (AT),B
+Age,55-64 years old,all AT respondents,22,410,0.054,0.036,0.08,Stack Overflow Developer Survey 2025 (AT),B
+Age,65 years or older,all AT respondents,5,410,0.012,0.005,0.028,Stack Overflow Developer Survey 2025 (AT),B
+Age,Prefer not to say,all AT respondents,4,410,0.01,0.004,0.025,Stack Overflow Developer Survey 2025 (AT),B
+Age,25-34 years old,AT data-role respondents,16,29,0.552,0.375,0.716,Stack Overflow Developer Survey 2025 (AT),B
+Age,35-44 years old,AT data-role respondents,7,29,0.241,0.122,0.421,Stack Overflow Developer Survey 2025 (AT),B
+Age,55-64 years old,AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+Age,45-54 years old,AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+Age,18-24 years old,AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,20 to 99 employees,all AT respondents,76,337,0.226,0.184,0.273,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,Less than 20 employees,all AT respondents,69,337,0.205,0.165,0.251,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,100 to 499 employees,all AT respondents,57,337,0.169,0.133,0.213,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"1,000 to 4,999 employees",all AT respondents,48,337,0.142,0.109,0.184,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,500 to 999 employees,all AT respondents,32,337,0.095,0.068,0.131,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"10,000 or more employees",all AT respondents,23,337,0.068,0.046,0.1,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"5,000 to 9,999 employees",all AT respondents,12,337,0.036,0.02,0.061,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"Just me - I am a freelancer, sole proprietor, etc.",all AT respondents,12,337,0.036,0.02,0.061,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,I don’t know,all AT respondents,8,337,0.024,0.012,0.046,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,Less than 20 employees,AT data-role respondents,8,22,0.364,0.197,0.57,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,100 to 499 employees,AT data-role respondents,5,22,0.227,0.101,0.434,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,20 to 99 employees,AT data-role respondents,4,22,0.182,0.073,0.385,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"10,000 or more employees",AT data-role respondents,2,22,0.091,0.025,0.278,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,I don’t know,AT data-role respondents,1,22,0.045,0.008,0.218,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,"1,000 to 4,999 employees",AT data-role respondents,1,22,0.045,0.008,0.218,Stack Overflow Developer Survey 2025 (AT),B
+OrgSize,500 to 999 employees,AT data-role respondents,1,22,0.045,0.008,0.218,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Software Development,all AT respondents,185,374,0.495,0.444,0.545,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Other:,all AT respondents,29,374,0.078,0.055,0.109,Stack Overflow Developer Survey 2025 (AT),B
+Industry,"Internet, Telecomm or Information Services",all AT respondents,28,374,0.075,0.052,0.106,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Manufacturing,all AT respondents,28,374,0.075,0.052,0.106,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Higher Education,all AT respondents,12,374,0.032,0.018,0.055,Stack Overflow Developer Survey 2025 (AT),B
+Industry,"Transportation, or Supply Chain",all AT respondents,12,374,0.032,0.018,0.055,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Banking/Financial Services,all AT respondents,11,374,0.029,0.017,0.052,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Healthcare,all AT respondents,11,374,0.029,0.017,0.052,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Government,all AT respondents,10,374,0.027,0.015,0.049,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Media & Advertising Services,all AT respondents,10,374,0.027,0.015,0.049,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Energy,all AT respondents,10,374,0.027,0.015,0.049,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Fintech,all AT respondents,9,374,0.024,0.013,0.045,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Retail and Consumer Services,all AT respondents,8,374,0.021,0.011,0.042,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Computer Systems Design and Services,all AT respondents,7,374,0.019,0.009,0.038,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Insurance,all AT respondents,4,374,0.011,0.004,0.027,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Software Development,AT data-role respondents,10,29,0.345,0.199,0.527,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Other:,AT data-role respondents,8,29,0.276,0.147,0.457,Stack Overflow Developer Survey 2025 (AT),B
+Industry,"Internet, Telecomm or Information Services",AT data-role respondents,4,29,0.138,0.055,0.306,Stack Overflow Developer Survey 2025 (AT),B
+Industry,"Transportation, or Supply Chain",AT data-role respondents,2,29,0.069,0.019,0.22,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Insurance,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Banking/Financial Services,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Fintech,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Computer Systems Design and Services,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+Industry,Manufacturing,AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B
+ICorPM,Individual contributor,all AT respondents,308,334,0.922,0.888,0.946,Stack Overflow Developer Survey 2025 (AT),B
+ICorPM,People manager,all AT respondents,26,334,0.078,0.054,0.112,Stack Overflow Developer Survey 2025 (AT),B
+ICorPM,Individual contributor,AT data-role respondents,20,22,0.909,0.722,0.975,Stack Overflow Developer Survey 2025 (AT),B
+ICorPM,People manager,AT data-role respondents,2,22,0.091,0.025,0.278,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools daily",all AT respondents,151,402,0.376,0.33,0.424,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools weekly",all AT respondents,88,402,0.219,0.181,0.262,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools monthly or infrequently",all AT respondents,76,402,0.189,0.154,0.23,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"No, and I don't plan to",all AT respondents,71,402,0.177,0.142,0.217,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"No, but I plan to soon",all AT respondents,16,402,0.04,0.025,0.064,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools daily",AT data-role respondents,17,29,0.586,0.407,0.745,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools weekly",AT data-role respondents,8,29,0.276,0.147,0.457,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"Yes, I use AI tools monthly or infrequently",AT data-role respondents,3,29,0.103,0.036,0.264,Stack Overflow Developer Survey 2025 (AT),B
+AISelect,"No, and I don't plan to",AT data-role respondents,1,29,0.034,0.006,0.172,Stack Overflow Developer Survey 2025 (AT),B

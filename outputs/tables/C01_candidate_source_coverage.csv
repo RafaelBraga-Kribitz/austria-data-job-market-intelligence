@@ -1,0 +1,5 @@
+frame,accounts,austrian_location,data_signal,bio_declared,data_signal_share,share_with_bio,source,source_quality,collection_date,n_search_rows,n_repos_listed,n_data_repos,n_readmes_fetched,linkedin_manual_records
+A,2420,2395,1280,865,0.529,0.944,GitHub REST API,B,2026-09-17,14104,126013,9347,11798,0
+B,2026,2023,247,52,0.122,0.408,GitHub REST API,B,2026-09-17,14104,126013,9347,11798,0
+C,5674,5649,637,164,0.112,0.41,GitHub REST API,B,2026-09-17,14104,126013,9347,11798,0
+all,9457,9409,1818,872,0.193,0.512,GitHub REST API,B,2026-09-17,14104,126013,9347,11798,0

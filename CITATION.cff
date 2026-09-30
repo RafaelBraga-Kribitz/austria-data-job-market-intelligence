@@ -1,13 +1,18 @@
 cff-version: 1.2.0
-message: "If you use the code, methodology or aggregated statistics of this repository, please cite it as below."
-title: "Austria Data-Job Market Intelligence: an evidence base for data-career decisions in Austria (Styria/Graz focus)"
+message: >-
+  If you use the code, methodology or aggregated statistics of this repository, please cite it as below.
+  The code is licensed under MIT; the documents and aggregated outputs under CC BY 4.0 (see LICENSE for the
+  exact split and for third-party material). There is no DOI for this repository; cite the version and date.
+title: "Austria Data-Job Market Intelligence: employer demand, observed candidate supply and demand × supply evidence for data-career decisions in Austria (Styria/Graz focus)"
 type: software
 authors:
   - family-names: Braga-Kribitz
     given-names: Rafael
-version: "2026-09-16.2"
-date-released: "2026-09-16"
-license: "MIT (code), CC-BY-4.0 (documents and aggregated outputs)"
+version: "2026-09-30.1"
+date-released: "2026-09-30"
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence"
 keywords:
   - labour market
@@ -18,9 +23,19 @@ keywords:
   - data analytics
   - data science
   - career decision support
-abstract: >
-  One-day snapshot (2026-09-16) of open data-role job advertisements in Austria collected from five public
-  sources plus the AMS JobBarometer yearly series 2020-2025, normalised with transparent rule-based
-  taxonomies and summarised into aggregated tables, figures and decision documents. The public repository
-  contains code, methodology, configuration and aggregated statistics only; source records and advertisement
-  texts are retained privately.
+  - candidate supply
+  - GitHub
+  - demand and supply
+  - official statistics
+abstract: >-
+  Evidence for data-career decisions in Austria, in four layers. Layer 1 (employer demand): a one-day
+  snapshot (2026-09-16) of open data-role job advertisements collected from five posting sources plus the
+  AMS JobBarometer yearly series 2020-2025 and Eurostat job-vacancy statistics, normalised with transparent
+  rule-based taxonomies (720 core postings). Layer 2 (observed candidate supply): public GitHub profiles and
+  repositories of Austria-located accounts collected through the documented GitHub API, the Stack Overflow
+  Developer Survey 2025 (ODbL) and Eurostat graduate and employment series. Layer 3 (demand × supply):
+  skill-by-skill comparison of what employers ask for with what candidates demonstrate. Layer V (visual
+  decision layer): decision questions each answered by one figure. The public repository contains the
+  author's code, methodology, configuration, aggregated tables, figures and JSON summaries, and the openly
+  licensed Eurostat raw data; posting collectors, source records, advertisement texts and individual-level
+  candidate records are retained privately.

@@ -4,11 +4,24 @@
   "max": "2026-09-16 18:39:42+00:00"
  },
  "posted_date_range": {
+  "scope": "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source",
   "min": "2023-08-17",
   "max": "2026-09-16"
  },
  "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "regional_count_basis": {
+  "styria_core": "any listed site: core postings with at least one location in Styria (is_styria flag; multi-site ads count in every state they list). Used by T02 styria_count, T03c, T04a styria, T07e and every *_by_styria table.",
+  "vienna_core": "any listed site: core postings with at least one location in Vienna (is_vienna flag).",
+  "graz_area_core": "any listed site: core postings with at least one location in the Graz commuting area (is_graz_area flag); a subset of styria_core.",
+  "styria_core_primary_state": "primary state: core postings whose primary `state` is Steiermark (one state per ad; T03a_state_counts.csv, DS05).",
+  "vienna_core_primary_state": "primary state: core postings whose primary `state` is Wien (T03a_state_counts.csv, DS05).",
+  "graz_area_core_primary_styria": "Graz commuting area postings whose primary state is Steiermark (subset of styria_core_primary_state)."
+ },
  "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
+ "section_basis": {
+  "states, family_by_state": "primary state (one state per ad)",
+  "summary, geo_scope, styria_cities, employers_styria_top.styria, remote_by_styria": "any listed site (multi-site ads count in every region they list)"
+ },
  "summary": [
   {
    "metric": "core_postings",
@@ -1142,6 +1155,19 @@
   {
    "metric": "styria_postings_without_named_employer",
    "value": 10.0
+  }
+ ],
+ "dual_track_employers": [
+  {
+   "company_norm": "red bull",
+   "example_company": "Red Bull",
+   "intern_student_postings": 3,
+   "trainee_junior_postings": 1,
+   "postings": 10,
+   "styria_postings": 0,
+   "families": "data_analytics,data_governance,data_science",
+   "states": "Salzburg",
+   "is_agency": false
   }
  ],
  "remote_overall": [

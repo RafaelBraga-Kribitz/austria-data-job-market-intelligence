@@ -1,0 +1,1336 @@
+level_code,field_code,field,year,graduates,status,level
+ED6,TOTAL,Total,2005,2450,,Bachelor
+ED6,TOTAL,Total,2010,16435,,Bachelor
+ED6,TOTAL,Total,2013,27863,,Bachelor
+ED6,TOTAL,Total,2014,28324,,Bachelor
+ED6,TOTAL,Total,2015,29594,,Bachelor
+ED6,TOTAL,Total,2016,30050,,Bachelor
+ED6,TOTAL,Total,2017,29801,,Bachelor
+ED6,TOTAL,Total,2018,28593,,Bachelor
+ED6,TOTAL,Total,2019,30409,,Bachelor
+ED6,TOTAL,Total,2020,31246,,Bachelor
+ED6,TOTAL,Total,2021,33770,,Bachelor
+ED6,TOTAL,Total,2022,32009,,Bachelor
+ED6,TOTAL,Total,2023,32799,,Bachelor
+ED6,TOTAL,Total,2024,33319,,Bachelor
+ED6,F06,Information and communication technologies,2005,807,,Bachelor
+ED6,F06,Information and communication technologies,2010,1382,,Bachelor
+ED6,F06,Information and communication technologies,2013,1377,,Bachelor
+ED6,F06,Information and communication technologies,2014,1450,,Bachelor
+ED6,F06,Information and communication technologies,2015,1273,,Bachelor
+ED6,F06,Information and communication technologies,2016,1341,,Bachelor
+ED6,F06,Information and communication technologies,2017,1299,,Bachelor
+ED6,F06,Information and communication technologies,2018,1433,,Bachelor
+ED6,F06,Information and communication technologies,2019,1563,,Bachelor
+ED6,F06,Information and communication technologies,2020,1535,,Bachelor
+ED6,F06,Information and communication technologies,2021,1812,,Bachelor
+ED6,F06,Information and communication technologies,2022,1912,,Bachelor
+ED6,F06,Information and communication technologies,2023,2062,,Bachelor
+ED6,F06,Information and communication technologies,2024,2142,,Bachelor
+ED6,F061,Information and communication technologies,2005,663,,Bachelor
+ED6,F061,Information and communication technologies,2010,762,,Bachelor
+ED6,F061,Information and communication technologies,2013,1377,,Bachelor
+ED6,F061,Information and communication technologies,2014,1450,,Bachelor
+ED6,F061,Information and communication technologies,2015,629,,Bachelor
+ED6,F061,Information and communication technologies,2016,672,,Bachelor
+ED6,F061,Information and communication technologies,2017,660,,Bachelor
+ED6,F061,Information and communication technologies,2018,700,,Bachelor
+ED6,F061,Information and communication technologies,2019,804,,Bachelor
+ED6,F061,Information and communication technologies,2020,779,,Bachelor
+ED6,F061,Information and communication technologies,2021,885,,Bachelor
+ED6,F061,Information and communication technologies,2022,887,,Bachelor
+ED6,F061,Information and communication technologies,2023,1056,,Bachelor
+ED6,F061,Information and communication technologies,2024,1094,,Bachelor
+ED6,F0612,Database and network design and administration,2015,377,,Bachelor
+ED6,F0612,Database and network design and administration,2016,408,,Bachelor
+ED6,F0612,Database and network design and administration,2017,428,,Bachelor
+ED6,F0612,Database and network design and administration,2018,439,,Bachelor
+ED6,F0612,Database and network design and administration,2019,499,,Bachelor
+ED6,F0612,Database and network design and administration,2020,433,,Bachelor
+ED6,F0612,Database and network design and administration,2021,496,,Bachelor
+ED6,F0612,Database and network design and administration,2022,474,,Bachelor
+ED6,F0612,Database and network design and administration,2023,559,,Bachelor
+ED6,F0612,Database and network design and administration,2024,493,,Bachelor
+ED6,F0613,Software and applications development and analysis,2013,1352,d,Bachelor
+ED6,F0613,Software and applications development and analysis,2015,252,,Bachelor
+ED6,F0613,Software and applications development and analysis,2016,265,,Bachelor
+ED6,F0613,Software and applications development and analysis,2017,233,,Bachelor
+ED6,F0613,Software and applications development and analysis,2018,261,,Bachelor
+ED6,F0613,Software and applications development and analysis,2019,305,,Bachelor
+ED6,F0613,Software and applications development and analysis,2020,346,,Bachelor
+ED6,F0613,Software and applications development and analysis,2021,389,,Bachelor
+ED6,F0613,Software and applications development and analysis,2022,404,,Bachelor
+ED6,F0613,Software and applications development and analysis,2023,445,,Bachelor
+ED6,F0613,Software and applications development and analysis,2024,537,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2005,317,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2010,1637,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2013,2088,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2014,2344,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2015,2488,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2016,2552,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2017,2645,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2018,2651,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2019,2750,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2020,2642,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2021,2845,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2022,2651,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2023,2558,,Bachelor
+ED6,F05,"Natural sciences, mathematics and statistics",2024,2749,,Bachelor
+ED6,F054,Mathematics and statistics,2005,26,,Bachelor
+ED6,F054,Mathematics and statistics,2010,142,,Bachelor
+ED6,F054,Mathematics and statistics,2013,193,,Bachelor
+ED6,F054,Mathematics and statistics,2014,229,,Bachelor
+ED6,F054,Mathematics and statistics,2015,247,,Bachelor
+ED6,F054,Mathematics and statistics,2016,254,,Bachelor
+ED6,F054,Mathematics and statistics,2017,250,,Bachelor
+ED6,F054,Mathematics and statistics,2018,220,,Bachelor
+ED6,F054,Mathematics and statistics,2019,244,,Bachelor
+ED6,F054,Mathematics and statistics,2020,241,,Bachelor
+ED6,F054,Mathematics and statistics,2021,266,,Bachelor
+ED6,F054,Mathematics and statistics,2022,262,,Bachelor
+ED6,F054,Mathematics and statistics,2023,283,,Bachelor
+ED6,F054,Mathematics and statistics,2024,227,,Bachelor
+ED6,F0541,Mathematics,2013,172,,Bachelor
+ED6,F0541,Mathematics,2015,228,,Bachelor
+ED6,F0541,Mathematics,2016,224,,Bachelor
+ED6,F0541,Mathematics,2017,224,,Bachelor
+ED6,F0541,Mathematics,2018,194,,Bachelor
+ED6,F0541,Mathematics,2019,216,,Bachelor
+ED6,F0541,Mathematics,2020,198,,Bachelor
+ED6,F0541,Mathematics,2021,214,,Bachelor
+ED6,F0541,Mathematics,2022,210,,Bachelor
+ED6,F0541,Mathematics,2023,219,,Bachelor
+ED6,F0541,Mathematics,2024,188,,Bachelor
+ED6,F0542,Statistics,2013,22,,Bachelor
+ED6,F0542,Statistics,2015,20,,Bachelor
+ED6,F0542,Statistics,2016,30,,Bachelor
+ED6,F0542,Statistics,2017,26,,Bachelor
+ED6,F0542,Statistics,2018,26,,Bachelor
+ED6,F0542,Statistics,2019,28,,Bachelor
+ED6,F0542,Statistics,2020,43,,Bachelor
+ED6,F0542,Statistics,2021,52,,Bachelor
+ED6,F0542,Statistics,2022,53,,Bachelor
+ED6,F0542,Statistics,2023,64,,Bachelor
+ED6,F0542,Statistics,2024,39,,Bachelor
+ED6,F04,"Business, administration and law",2005,340,,Bachelor
+ED6,F04,"Business, administration and law",2010,3035,,Bachelor
+ED6,F04,"Business, administration and law",2013,5762,,Bachelor
+ED6,F04,"Business, administration and law",2014,5799,,Bachelor
+ED6,F04,"Business, administration and law",2015,4066,,Bachelor
+ED6,F04,"Business, administration and law",2016,4405,,Bachelor
+ED6,F04,"Business, administration and law",2017,4855,,Bachelor
+ED6,F04,"Business, administration and law",2018,6247,,Bachelor
+ED6,F04,"Business, administration and law",2019,6612,,Bachelor
+ED6,F04,"Business, administration and law",2020,6917,,Bachelor
+ED6,F04,"Business, administration and law",2021,6924,,Bachelor
+ED6,F04,"Business, administration and law",2022,6411,,Bachelor
+ED6,F04,"Business, administration and law",2023,6989,,Bachelor
+ED6,F04,"Business, administration and law",2024,6712,,Bachelor
+ED6,F041,Business and administration,2005,11,,Bachelor
+ED6,F041,Business and administration,2010,1713,,Bachelor
+ED6,F041,Business and administration,2013,3330,,Bachelor
+ED6,F041,Business and administration,2014,3319,,Bachelor
+ED6,F041,Business and administration,2015,2071,,Bachelor
+ED6,F041,Business and administration,2016,2331,,Bachelor
+ED6,F041,Business and administration,2017,2714,,Bachelor
+ED6,F041,Business and administration,2018,4438,,Bachelor
+ED6,F041,Business and administration,2019,4599,,Bachelor
+ED6,F041,Business and administration,2020,4725,,Bachelor
+ED6,F041,Business and administration,2021,4711,,Bachelor
+ED6,F041,Business and administration,2022,4315,,Bachelor
+ED6,F041,Business and administration,2023,4759,,Bachelor
+ED6,F041,Business and administration,2024,4382,,Bachelor
+ED6,F0414,Marketing and advertising,2013,272,,Bachelor
+ED6,F0414,Marketing and advertising,2015,142,,Bachelor
+ED6,F0414,Marketing and advertising,2016,144,,Bachelor
+ED6,F0414,Marketing and advertising,2017,131,,Bachelor
+ED6,F0414,Marketing and advertising,2018,156,,Bachelor
+ED6,F0414,Marketing and advertising,2019,194,,Bachelor
+ED6,F0414,Marketing and advertising,2020,181,,Bachelor
+ED6,F0414,Marketing and advertising,2021,168,,Bachelor
+ED6,F0414,Marketing and advertising,2022,175,,Bachelor
+ED6,F0414,Marketing and advertising,2023,160,,Bachelor
+ED6,F0414,Marketing and advertising,2024,156,,Bachelor
+ED6,F0410,Business and administration not further defined,2013,0,,Bachelor
+ED6,F0410,Business and administration not further defined,2015,0,,Bachelor
+ED6,F0410,Business and administration not further defined,2016,0,,Bachelor
+ED6,F0410,Business and administration not further defined,2017,0,,Bachelor
+ED6,F0410,Business and administration not further defined,2018,1647,,Bachelor
+ED6,F0410,Business and administration not further defined,2019,1655,,Bachelor
+ED6,F0410,Business and administration not further defined,2020,1783,,Bachelor
+ED6,F0410,Business and administration not further defined,2021,1766,,Bachelor
+ED6,F0410,Business and administration not further defined,2022,1529,,Bachelor
+ED6,F0410,Business and administration not further defined,2023,1713,,Bachelor
+ED6,F0410,Business and administration not further defined,2024,1532,,Bachelor
+ED6,F0413,Management and administration,2013,2823,,Bachelor
+ED6,F0413,Management and administration,2015,1646,,Bachelor
+ED6,F0413,Management and administration,2016,1878,,Bachelor
+ED6,F0413,Management and administration,2017,2282,,Bachelor
+ED6,F0413,Management and administration,2018,2325,,Bachelor
+ED6,F0413,Management and administration,2019,2427,,Bachelor
+ED6,F0413,Management and administration,2020,2490,,Bachelor
+ED6,F0413,Management and administration,2021,2465,,Bachelor
+ED6,F0413,Management and administration,2022,2342,,Bachelor
+ED6,F0413,Management and administration,2023,2583,,Bachelor
+ED6,F0413,Management and administration,2024,2446,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2013,62,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2015,84,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2016,88,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2017,84,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2018,82,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2019,88,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2020,43,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2021,82,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2022,69,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2023,86,,Bachelor
+ED6,F0412,"Finance, banking and insurance",2024,70,,Bachelor
+ED6,F0411,Accounting and taxation,2013,173,,Bachelor
+ED6,F0411,Accounting and taxation,2015,172,,Bachelor
+ED6,F0411,Accounting and taxation,2016,193,,Bachelor
+ED6,F0411,Accounting and taxation,2017,193,,Bachelor
+ED6,F0411,Accounting and taxation,2018,204,,Bachelor
+ED6,F0411,Accounting and taxation,2019,209,,Bachelor
+ED6,F0411,Accounting and taxation,2020,198,,Bachelor
+ED6,F0411,Accounting and taxation,2021,203,,Bachelor
+ED6,F0411,Accounting and taxation,2022,186,,Bachelor
+ED6,F0411,Accounting and taxation,2023,194,,Bachelor
+ED6,F0411,Accounting and taxation,2024,153,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2005,456,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2010,2087,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2013,3723,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2014,3798,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2015,5427,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2016,5851,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2017,5169,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2018,3380,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2019,3577,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2020,3685,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2021,3747,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2022,3509,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2023,3572,,Bachelor
+ED6,F03,"Social sciences, journalism and information",2024,3756,,Bachelor
+ED6,F0311,Economics,2013,652,,Bachelor
+ED6,F0311,Economics,2015,838,,Bachelor
+ED6,F0311,Economics,2016,858,,Bachelor
+ED6,F0311,Economics,2017,471,,Bachelor
+ED6,F0311,Economics,2018,419,,Bachelor
+ED6,F0311,Economics,2019,383,,Bachelor
+ED6,F0311,Economics,2020,469,,Bachelor
+ED6,F0311,Economics,2021,438,,Bachelor
+ED6,F0311,Economics,2022,458,,Bachelor
+ED6,F0311,Economics,2023,441,,Bachelor
+ED6,F0311,Economics,2024,460,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2005,103,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2010,2368,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2013,3936,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2014,4015,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2015,4075,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2016,4332,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2017,4237,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2018,4223,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2019,4408,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2020,4314,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2021,4735,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2022,4356,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2023,4278,,Bachelor
+ED6,F07,"Engineering, manufacturing and construction",2024,4110,,Bachelor
+ED6,F071,Engineering and engineering trades,2005,32,,Bachelor
+ED6,F071,Engineering and engineering trades,2010,1069,,Bachelor
+ED6,F071,Engineering and engineering trades,2013,1746,,Bachelor
+ED6,F071,Engineering and engineering trades,2014,1765,,Bachelor
+ED6,F071,Engineering and engineering trades,2015,1698,,Bachelor
+ED6,F071,Engineering and engineering trades,2016,1786,,Bachelor
+ED6,F071,Engineering and engineering trades,2017,1756,,Bachelor
+ED6,F071,Engineering and engineering trades,2018,1841,,Bachelor
+ED6,F071,Engineering and engineering trades,2019,1972,,Bachelor
+ED6,F071,Engineering and engineering trades,2020,1903,,Bachelor
+ED6,F071,Engineering and engineering trades,2021,2004,,Bachelor
+ED6,F071,Engineering and engineering trades,2022,1938,,Bachelor
+ED6,F071,Engineering and engineering trades,2023,1830,,Bachelor
+ED6,F071,Engineering and engineering trades,2024,1815,,Bachelor
+ED6,F053,Physical sciences,2005,63,,Bachelor
+ED6,F053,Physical sciences,2010,412,,Bachelor
+ED6,F053,Physical sciences,2013,714,,Bachelor
+ED6,F053,Physical sciences,2014,735,,Bachelor
+ED6,F053,Physical sciences,2015,789,,Bachelor
+ED6,F053,Physical sciences,2016,850,,Bachelor
+ED6,F053,Physical sciences,2017,932,,Bachelor
+ED6,F053,Physical sciences,2018,914,,Bachelor
+ED6,F053,Physical sciences,2019,956,,Bachelor
+ED6,F053,Physical sciences,2020,916,,Bachelor
+ED6,F053,Physical sciences,2021,874,,Bachelor
+ED6,F053,Physical sciences,2022,909,,Bachelor
+ED6,F053,Physical sciences,2023,810,,Bachelor
+ED6,F053,Physical sciences,2024,938,,Bachelor
+ED6,F0533,Physics,2013,297,,Bachelor
+ED6,F0533,Physics,2015,351,,Bachelor
+ED6,F0533,Physics,2016,376,,Bachelor
+ED6,F0533,Physics,2017,446,,Bachelor
+ED6,F0533,Physics,2018,394,,Bachelor
+ED6,F0533,Physics,2019,413,,Bachelor
+ED6,F0533,Physics,2020,419,,Bachelor
+ED6,F0533,Physics,2021,414,,Bachelor
+ED6,F0533,Physics,2022,419,,Bachelor
+ED6,F0533,Physics,2023,402,,Bachelor
+ED6,F0533,Physics,2024,442,,Bachelor
+ED6,F0313,Psychology,2013,866,,Bachelor
+ED6,F0313,Psychology,2015,1093,,Bachelor
+ED6,F0313,Psychology,2016,1230,,Bachelor
+ED6,F0313,Psychology,2017,1362,,Bachelor
+ED6,F0313,Psychology,2018,1100,,Bachelor
+ED6,F0313,Psychology,2019,1352,,Bachelor
+ED6,F0313,Psychology,2020,1246,,Bachelor
+ED6,F0313,Psychology,2021,1454,,Bachelor
+ED6,F0313,Psychology,2022,1464,,Bachelor
+ED6,F0313,Psychology,2023,1484,,Bachelor
+ED6,F0313,Psychology,2024,1577,,Bachelor
+ED6,F0314,Sociology and cultural studies,2013,663,,Bachelor
+ED6,F0314,Sociology and cultural studies,2015,653,,Bachelor
+ED6,F0314,Sociology and cultural studies,2016,643,,Bachelor
+ED6,F0314,Sociology and cultural studies,2017,644,,Bachelor
+ED6,F0314,Sociology and cultural studies,2018,696,,Bachelor
+ED6,F0314,Sociology and cultural studies,2019,701,,Bachelor
+ED6,F0314,Sociology and cultural studies,2020,623,,Bachelor
+ED6,F0314,Sociology and cultural studies,2021,629,,Bachelor
+ED6,F0314,Sociology and cultural studies,2022,520,,Bachelor
+ED6,F0314,Sociology and cultural studies,2023,518,,Bachelor
+ED6,F0314,Sociology and cultural studies,2024,534,,Bachelor
+ED6,F01,Education,2005,95,,Bachelor
+ED6,F01,Education,2010,2321,,Bachelor
+ED6,F01,Education,2013,4769,,Bachelor
+ED6,F01,Education,2014,5112,,Bachelor
+ED6,F01,Education,2015,5800,,Bachelor
+ED6,F01,Education,2016,5194,,Bachelor
+ED6,F01,Education,2017,5166,,Bachelor
+ED6,F01,Education,2018,3988,,Bachelor
+ED6,F01,Education,2019,4439,,Bachelor
+ED6,F01,Education,2020,4750,,Bachelor
+ED6,F01,Education,2021,5383,,Bachelor
+ED6,F01,Education,2022,5192,,Bachelor
+ED6,F01,Education,2023,4985,,Bachelor
+ED6,F01,Education,2024,5243,,Bachelor
+ED6,F02,Arts and humanities,2005,288,,Bachelor
+ED6,F02,Arts and humanities,2010,1647,,Bachelor
+ED6,F02,Arts and humanities,2013,3348,,Bachelor
+ED6,F02,Arts and humanities,2014,3134,,Bachelor
+ED6,F02,Arts and humanities,2015,3509,,Bachelor
+ED6,F02,Arts and humanities,2016,3225,,Bachelor
+ED6,F02,Arts and humanities,2017,3130,,Bachelor
+ED6,F02,Arts and humanities,2018,3041,,Bachelor
+ED6,F02,Arts and humanities,2019,3122,,Bachelor
+ED6,F02,Arts and humanities,2020,3110,,Bachelor
+ED6,F02,Arts and humanities,2021,3246,,Bachelor
+ED6,F02,Arts and humanities,2022,2821,,Bachelor
+ED6,F02,Arts and humanities,2023,2911,,Bachelor
+ED6,F02,Arts and humanities,2024,2823,,Bachelor
+ED6,F09,Health and welfare,2005,35,,Bachelor
+ED6,F09,Health and welfare,2010,1355,,Bachelor
+ED6,F09,Health and welfare,2013,2231,,Bachelor
+ED6,F09,Health and welfare,2015,2146,,Bachelor
+ED6,F09,Health and welfare,2016,2316,,Bachelor
+ED6,F09,Health and welfare,2017,2446,,Bachelor
+ED6,F09,Health and welfare,2018,2879,,Bachelor
+ED6,F09,Health and welfare,2019,3160,,Bachelor
+ED6,F09,Health and welfare,2020,3466,,Bachelor
+ED6,F09,Health and welfare,2021,4188,,Bachelor
+ED6,F09,Health and welfare,2022,4386,,Bachelor
+ED6,F09,Health and welfare,2023,4652,,Bachelor
+ED6,F09,Health and welfare,2024,5038,,Bachelor
+ED7,TOTAL,Total,2005,22426,,Master
+ED7,TOTAL,Total,2010,24904,,Master
+ED7,TOTAL,Total,2013,27830,,Master
+ED7,TOTAL,Total,2014,24067,,Master
+ED7,TOTAL,Total,2015,24640,,Master
+ED7,TOTAL,Total,2016,26170,,Master
+ED7,TOTAL,Total,2017,26280,,Master
+ED7,TOTAL,Total,2018,26757,,Master
+ED7,TOTAL,Total,2019,26256,,Master
+ED7,TOTAL,Total,2020,27429,,Master
+ED7,TOTAL,Total,2021,27988,,Master
+ED7,TOTAL,Total,2022,26936,,Master
+ED7,TOTAL,Total,2023,28296,,Master
+ED7,TOTAL,Total,2024,29337,,Master
+ED7,F06,Information and communication technologies,2005,1013,,Master
+ED7,F06,Information and communication technologies,2010,1081,,Master
+ED7,F06,Information and communication technologies,2013,1019,,Master
+ED7,F06,Information and communication technologies,2014,1038,,Master
+ED7,F06,Information and communication technologies,2015,1084,,Master
+ED7,F06,Information and communication technologies,2016,1067,,Master
+ED7,F06,Information and communication technologies,2017,987,,Master
+ED7,F06,Information and communication technologies,2018,1085,,Master
+ED7,F06,Information and communication technologies,2019,1038,,Master
+ED7,F06,Information and communication technologies,2020,1091,,Master
+ED7,F06,Information and communication technologies,2021,1142,,Master
+ED7,F06,Information and communication technologies,2022,1208,,Master
+ED7,F06,Information and communication technologies,2023,1424,,Master
+ED7,F06,Information and communication technologies,2024,1507,,Master
+ED7,F061,Information and communication technologies,2005,543,,Master
+ED7,F061,Information and communication technologies,2010,580,,Master
+ED7,F061,Information and communication technologies,2013,1019,,Master
+ED7,F061,Information and communication technologies,2014,1038,,Master
+ED7,F061,Information and communication technologies,2015,651,,Master
+ED7,F061,Information and communication technologies,2016,531,,Master
+ED7,F061,Information and communication technologies,2017,495,,Master
+ED7,F061,Information and communication technologies,2018,576,,Master
+ED7,F061,Information and communication technologies,2019,555,,Master
+ED7,F061,Information and communication technologies,2020,589,,Master
+ED7,F061,Information and communication technologies,2021,549,,Master
+ED7,F061,Information and communication technologies,2022,595,,Master
+ED7,F061,Information and communication technologies,2023,684,,Master
+ED7,F061,Information and communication technologies,2024,650,,Master
+ED7,F0612,Database and network design and administration,2015,500,,Master
+ED7,F0612,Database and network design and administration,2016,401,,Master
+ED7,F0612,Database and network design and administration,2017,334,,Master
+ED7,F0612,Database and network design and administration,2018,435,,Master
+ED7,F0612,Database and network design and administration,2019,454,,Master
+ED7,F0612,Database and network design and administration,2020,418,,Master
+ED7,F0612,Database and network design and administration,2021,388,,Master
+ED7,F0612,Database and network design and administration,2022,424,,Master
+ED7,F0612,Database and network design and administration,2023,521,,Master
+ED7,F0612,Database and network design and administration,2024,426,,Master
+ED7,F0613,Software and applications development and analysis,2013,1008,d,Master
+ED7,F0613,Software and applications development and analysis,2015,151,,Master
+ED7,F0613,Software and applications development and analysis,2016,130,,Master
+ED7,F0613,Software and applications development and analysis,2017,161,,Master
+ED7,F0613,Software and applications development and analysis,2018,141,,Master
+ED7,F0613,Software and applications development and analysis,2019,101,,Master
+ED7,F0613,Software and applications development and analysis,2020,171,,Master
+ED7,F0613,Software and applications development and analysis,2021,159,,Master
+ED7,F0613,Software and applications development and analysis,2022,152,,Master
+ED7,F0613,Software and applications development and analysis,2023,127,,Master
+ED7,F0613,Software and applications development and analysis,2024,187,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2005,1136,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2010,1555,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2013,1753,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2014,1571,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2015,1741,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2016,1807,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2017,1823,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2018,1966,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2019,1817,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2020,1905,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2021,1918,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2022,1966,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2023,1889,,Master
+ED7,F05,"Natural sciences, mathematics and statistics",2024,1992,,Master
+ED7,F054,Mathematics and statistics,2005,99,,Master
+ED7,F054,Mathematics and statistics,2010,180,,Master
+ED7,F054,Mathematics and statistics,2013,163,,Master
+ED7,F054,Mathematics and statistics,2014,153,,Master
+ED7,F054,Mathematics and statistics,2015,141,,Master
+ED7,F054,Mathematics and statistics,2016,143,,Master
+ED7,F054,Mathematics and statistics,2017,149,,Master
+ED7,F054,Mathematics and statistics,2018,210,,Master
+ED7,F054,Mathematics and statistics,2019,148,,Master
+ED7,F054,Mathematics and statistics,2020,162,,Master
+ED7,F054,Mathematics and statistics,2021,144,,Master
+ED7,F054,Mathematics and statistics,2022,135,,Master
+ED7,F054,Mathematics and statistics,2023,158,,Master
+ED7,F054,Mathematics and statistics,2024,139,,Master
+ED7,F0541,Mathematics,2013,148,,Master
+ED7,F0541,Mathematics,2015,134,,Master
+ED7,F0541,Mathematics,2016,136,,Master
+ED7,F0541,Mathematics,2017,133,,Master
+ED7,F0541,Mathematics,2018,200,,Master
+ED7,F0541,Mathematics,2019,140,,Master
+ED7,F0541,Mathematics,2020,146,,Master
+ED7,F0541,Mathematics,2021,129,,Master
+ED7,F0541,Mathematics,2022,124,,Master
+ED7,F0541,Mathematics,2023,144,,Master
+ED7,F0541,Mathematics,2024,124,,Master
+ED7,F0542,Statistics,2013,15,,Master
+ED7,F0542,Statistics,2015,7,,Master
+ED7,F0542,Statistics,2016,7,,Master
+ED7,F0542,Statistics,2017,17,,Master
+ED7,F0542,Statistics,2018,11,,Master
+ED7,F0542,Statistics,2019,8,,Master
+ED7,F0542,Statistics,2020,16,,Master
+ED7,F0542,Statistics,2021,15,,Master
+ED7,F0542,Statistics,2022,11,,Master
+ED7,F0542,Statistics,2023,14,,Master
+ED7,F0542,Statistics,2024,16,,Master
+ED7,F04,"Business, administration and law",2005,7321,,Master
+ED7,F04,"Business, administration and law",2010,7443,,Master
+ED7,F04,"Business, administration and law",2013,8119,,Master
+ED7,F04,"Business, administration and law",2014,6716,,Master
+ED7,F04,"Business, administration and law",2015,7222,,Master
+ED7,F04,"Business, administration and law",2016,7796,,Master
+ED7,F04,"Business, administration and law",2017,8349,,Master
+ED7,F04,"Business, administration and law",2018,8229,,Master
+ED7,F04,"Business, administration and law",2019,8271,,Master
+ED7,F04,"Business, administration and law",2020,8429,,Master
+ED7,F04,"Business, administration and law",2021,8462,,Master
+ED7,F04,"Business, administration and law",2022,8659,,Master
+ED7,F04,"Business, administration and law",2023,9071,,Master
+ED7,F04,"Business, administration and law",2024,9383,,Master
+ED7,F041,Business and administration,2005,2839,,Master
+ED7,F041,Business and administration,2010,3348,,Master
+ED7,F041,Business and administration,2013,5618,,Master
+ED7,F041,Business and administration,2014,4072,,Master
+ED7,F041,Business and administration,2015,3700,,Master
+ED7,F041,Business and administration,2016,4147,,Master
+ED7,F041,Business and administration,2017,4800,,Master
+ED7,F041,Business and administration,2018,4979,,Master
+ED7,F041,Business and administration,2019,4853,,Master
+ED7,F041,Business and administration,2020,5200,,Master
+ED7,F041,Business and administration,2021,4900,,Master
+ED7,F041,Business and administration,2022,5270,,Master
+ED7,F041,Business and administration,2023,5610,,Master
+ED7,F041,Business and administration,2024,5747,,Master
+ED7,F0414,Marketing and advertising,2013,274,,Master
+ED7,F0414,Marketing and advertising,2015,315,,Master
+ED7,F0414,Marketing and advertising,2016,349,,Master
+ED7,F0414,Marketing and advertising,2017,432,,Master
+ED7,F0414,Marketing and advertising,2018,356,,Master
+ED7,F0414,Marketing and advertising,2019,488,,Master
+ED7,F0414,Marketing and advertising,2020,470,,Master
+ED7,F0414,Marketing and advertising,2021,475,,Master
+ED7,F0414,Marketing and advertising,2022,571,,Master
+ED7,F0414,Marketing and advertising,2023,670,,Master
+ED7,F0414,Marketing and advertising,2024,620,,Master
+ED7,F0410,Business and administration not further defined,2013,0,,Master
+ED7,F0410,Business and administration not further defined,2015,0,,Master
+ED7,F0410,Business and administration not further defined,2016,0,,Master
+ED7,F0410,Business and administration not further defined,2017,0,,Master
+ED7,F0410,Business and administration not further defined,2018,0,,Master
+ED7,F0410,Business and administration not further defined,2019,0,,Master
+ED7,F0410,Business and administration not further defined,2020,0,,Master
+ED7,F0410,Business and administration not further defined,2021,0,,Master
+ED7,F0410,Business and administration not further defined,2022,0,,Master
+ED7,F0410,Business and administration not further defined,2023,0,,Master
+ED7,F0410,Business and administration not further defined,2024,0,,Master
+ED7,F0413,Management and administration,2013,4895,,Master
+ED7,F0413,Management and administration,2015,2964,,Master
+ED7,F0413,Management and administration,2016,3131,,Master
+ED7,F0413,Management and administration,2017,3617,,Master
+ED7,F0413,Management and administration,2018,3752,,Master
+ED7,F0413,Management and administration,2019,3605,,Master
+ED7,F0413,Management and administration,2020,3723,,Master
+ED7,F0413,Management and administration,2021,3664,,Master
+ED7,F0413,Management and administration,2022,3906,,Master
+ED7,F0413,Management and administration,2023,4000,,Master
+ED7,F0413,Management and administration,2024,4110,,Master
+ED7,F0412,"Finance, banking and insurance",2013,182,,Master
+ED7,F0412,"Finance, banking and insurance",2015,113,,Master
+ED7,F0412,"Finance, banking and insurance",2016,201,,Master
+ED7,F0412,"Finance, banking and insurance",2017,196,,Master
+ED7,F0412,"Finance, banking and insurance",2018,280,,Master
+ED7,F0412,"Finance, banking and insurance",2019,208,,Master
+ED7,F0412,"Finance, banking and insurance",2020,413,,Master
+ED7,F0412,"Finance, banking and insurance",2021,274,,Master
+ED7,F0412,"Finance, banking and insurance",2022,317,,Master
+ED7,F0412,"Finance, banking and insurance",2023,346,,Master
+ED7,F0412,"Finance, banking and insurance",2024,376,,Master
+ED7,F0411,Accounting and taxation,2013,219,,Master
+ED7,F0411,Accounting and taxation,2015,237,,Master
+ED7,F0411,Accounting and taxation,2016,325,,Master
+ED7,F0411,Accounting and taxation,2017,407,,Master
+ED7,F0411,Accounting and taxation,2018,417,,Master
+ED7,F0411,Accounting and taxation,2019,360,,Master
+ED7,F0411,Accounting and taxation,2020,372,,Master
+ED7,F0411,Accounting and taxation,2021,310,,Master
+ED7,F0411,Accounting and taxation,2022,320,,Master
+ED7,F0411,Accounting and taxation,2023,403,,Master
+ED7,F0411,Accounting and taxation,2024,443,,Master
+ED7,F03,"Social sciences, journalism and information",2005,2689,,Master
+ED7,F03,"Social sciences, journalism and information",2010,3227,,Master
+ED7,F03,"Social sciences, journalism and information",2013,3294,,Master
+ED7,F03,"Social sciences, journalism and information",2014,2717,,Master
+ED7,F03,"Social sciences, journalism and information",2015,2888,,Master
+ED7,F03,"Social sciences, journalism and information",2016,3448,,Master
+ED7,F03,"Social sciences, journalism and information",2017,2554,,Master
+ED7,F03,"Social sciences, journalism and information",2018,2428,,Master
+ED7,F03,"Social sciences, journalism and information",2019,2642,,Master
+ED7,F03,"Social sciences, journalism and information",2020,2979,,Master
+ED7,F03,"Social sciences, journalism and information",2021,2800,,Master
+ED7,F03,"Social sciences, journalism and information",2022,2640,,Master
+ED7,F03,"Social sciences, journalism and information",2023,2952,,Master
+ED7,F03,"Social sciences, journalism and information",2024,3100,,Master
+ED7,F0311,Economics,2013,618,,Master
+ED7,F0311,Economics,2015,405,,Master
+ED7,F0311,Economics,2016,416,,Master
+ED7,F0311,Economics,2017,261,,Master
+ED7,F0311,Economics,2018,233,,Master
+ED7,F0311,Economics,2019,210,,Master
+ED7,F0311,Economics,2020,194,,Master
+ED7,F0311,Economics,2021,245,,Master
+ED7,F0311,Economics,2022,162,,Master
+ED7,F0311,Economics,2023,222,,Master
+ED7,F0311,Economics,2024,176,,Master
+ED7,F07,"Engineering, manufacturing and construction",2005,2712,,Master
+ED7,F07,"Engineering, manufacturing and construction",2010,2850,,Master
+ED7,F07,"Engineering, manufacturing and construction",2013,3317,,Master
+ED7,F07,"Engineering, manufacturing and construction",2014,4004,,Master
+ED7,F07,"Engineering, manufacturing and construction",2015,3196,,Master
+ED7,F07,"Engineering, manufacturing and construction",2016,3746,,Master
+ED7,F07,"Engineering, manufacturing and construction",2017,3612,,Master
+ED7,F07,"Engineering, manufacturing and construction",2018,3759,,Master
+ED7,F07,"Engineering, manufacturing and construction",2019,4027,,Master
+ED7,F07,"Engineering, manufacturing and construction",2020,3864,,Master
+ED7,F07,"Engineering, manufacturing and construction",2021,4033,,Master
+ED7,F07,"Engineering, manufacturing and construction",2022,3824,,Master
+ED7,F07,"Engineering, manufacturing and construction",2023,4035,,Master
+ED7,F07,"Engineering, manufacturing and construction",2024,4110,,Master
+ED7,F071,Engineering and engineering trades,2005,1278,,Master
+ED7,F071,Engineering and engineering trades,2010,1232,,Master
+ED7,F071,Engineering and engineering trades,2013,1411,,Master
+ED7,F071,Engineering and engineering trades,2014,1614,,Master
+ED7,F071,Engineering and engineering trades,2015,1369,,Master
+ED7,F071,Engineering and engineering trades,2016,1563,,Master
+ED7,F071,Engineering and engineering trades,2017,1582,,Master
+ED7,F071,Engineering and engineering trades,2018,1542,,Master
+ED7,F071,Engineering and engineering trades,2019,1606,,Master
+ED7,F071,Engineering and engineering trades,2020,1675,,Master
+ED7,F071,Engineering and engineering trades,2021,1567,,Master
+ED7,F071,Engineering and engineering trades,2022,1681,,Master
+ED7,F071,Engineering and engineering trades,2023,1673,,Master
+ED7,F071,Engineering and engineering trades,2024,1741,,Master
+ED7,F053,Physical sciences,2005,412,,Master
+ED7,F053,Physical sciences,2010,522,,Master
+ED7,F053,Physical sciences,2013,643,,Master
+ED7,F053,Physical sciences,2014,564,,Master
+ED7,F053,Physical sciences,2015,639,,Master
+ED7,F053,Physical sciences,2016,618,,Master
+ED7,F053,Physical sciences,2017,627,,Master
+ED7,F053,Physical sciences,2018,694,,Master
+ED7,F053,Physical sciences,2019,665,,Master
+ED7,F053,Physical sciences,2020,729,,Master
+ED7,F053,Physical sciences,2021,764,,Master
+ED7,F053,Physical sciences,2022,688,,Master
+ED7,F053,Physical sciences,2023,650,,Master
+ED7,F053,Physical sciences,2024,688,,Master
+ED7,F0533,Physics,2013,260,,Master
+ED7,F0533,Physics,2015,253,,Master
+ED7,F0533,Physics,2016,232,,Master
+ED7,F0533,Physics,2017,211,,Master
+ED7,F0533,Physics,2018,275,,Master
+ED7,F0533,Physics,2019,261,,Master
+ED7,F0533,Physics,2020,259,,Master
+ED7,F0533,Physics,2021,265,,Master
+ED7,F0533,Physics,2022,240,,Master
+ED7,F0533,Physics,2023,254,,Master
+ED7,F0533,Physics,2024,232,,Master
+ED7,F0313,Psychology,2013,1166,,Master
+ED7,F0313,Psychology,2015,1045,,Master
+ED7,F0313,Psychology,2016,1578,,Master
+ED7,F0313,Psychology,2017,931,,Master
+ED7,F0313,Psychology,2018,1019,,Master
+ED7,F0313,Psychology,2019,1072,,Master
+ED7,F0313,Psychology,2020,1294,,Master
+ED7,F0313,Psychology,2021,1248,,Master
+ED7,F0313,Psychology,2022,1299,,Master
+ED7,F0313,Psychology,2023,1370,,Master
+ED7,F0313,Psychology,2024,1478,,Master
+ED7,F0314,Sociology and cultural studies,2013,610,,Master
+ED7,F0314,Sociology and cultural studies,2015,374,,Master
+ED7,F0314,Sociology and cultural studies,2016,319,,Master
+ED7,F0314,Sociology and cultural studies,2017,309,,Master
+ED7,F0314,Sociology and cultural studies,2018,299,,Master
+ED7,F0314,Sociology and cultural studies,2019,314,,Master
+ED7,F0314,Sociology and cultural studies,2020,288,,Master
+ED7,F0314,Sociology and cultural studies,2021,316,,Master
+ED7,F0314,Sociology and cultural studies,2022,277,,Master
+ED7,F0314,Sociology and cultural studies,2023,367,,Master
+ED7,F0314,Sociology and cultural studies,2024,373,,Master
+ED7,F01,Education,2005,2097,,Master
+ED7,F01,Education,2010,2018,,Master
+ED7,F01,Education,2013,2528,,Master
+ED7,F01,Education,2014,2235,,Master
+ED7,F01,Education,2015,2599,,Master
+ED7,F01,Education,2016,2956,,Master
+ED7,F01,Education,2017,3413,,Master
+ED7,F01,Education,2018,3451,,Master
+ED7,F01,Education,2019,2798,,Master
+ED7,F01,Education,2020,3491,,Master
+ED7,F01,Education,2021,3495,,Master
+ED7,F01,Education,2022,2527,,Master
+ED7,F01,Education,2023,2695,,Master
+ED7,F01,Education,2024,2768,,Master
+ED7,F02,Arts and humanities,2005,2277,,Master
+ED7,F02,Arts and humanities,2010,2659,,Master
+ED7,F02,Arts and humanities,2013,4506,,Master
+ED7,F02,Arts and humanities,2014,2663,,Master
+ED7,F02,Arts and humanities,2015,2744,,Master
+ED7,F02,Arts and humanities,2016,1887,,Master
+ED7,F02,Arts and humanities,2017,2142,,Master
+ED7,F02,Arts and humanities,2018,2187,,Master
+ED7,F02,Arts and humanities,2019,2054,,Master
+ED7,F02,Arts and humanities,2020,1864,,Master
+ED7,F02,Arts and humanities,2021,2158,,Master
+ED7,F02,Arts and humanities,2022,2127,,Master
+ED7,F02,Arts and humanities,2023,2058,,Master
+ED7,F02,Arts and humanities,2024,2107,,Master
+ED7,F09,Health and welfare,2005,2488,,Master
+ED7,F09,Health and welfare,2010,3342,,Master
+ED7,F09,Health and welfare,2013,2689,,Master
+ED7,F09,Health and welfare,2015,2519,,Master
+ED7,F09,Health and welfare,2016,2838,,Master
+ED7,F09,Health and welfare,2017,2843,,Master
+ED7,F09,Health and welfare,2018,3047,,Master
+ED7,F09,Health and welfare,2019,3023,,Master
+ED7,F09,Health and welfare,2020,3250,,Master
+ED7,F09,Health and welfare,2021,3433,,Master
+ED7,F09,Health and welfare,2022,3392,,Master
+ED7,F09,Health and welfare,2023,3555,,Master
+ED7,F09,Health and welfare,2024,3741,,Master
+ED8,TOTAL,Total,2005,2235,,Doctoral
+ED8,TOTAL,Total,2010,2483,,Doctoral
+ED8,TOTAL,Total,2013,2228,,Doctoral
+ED8,TOTAL,Total,2014,2207,,Doctoral
+ED8,TOTAL,Total,2015,2189,,Doctoral
+ED8,TOTAL,Total,2016,2239,,Doctoral
+ED8,TOTAL,Total,2017,2628,,Doctoral
+ED8,TOTAL,Total,2018,2779,,Doctoral
+ED8,TOTAL,Total,2019,2215,,Doctoral
+ED8,TOTAL,Total,2020,2178,,Doctoral
+ED8,TOTAL,Total,2021,2117,,Doctoral
+ED8,TOTAL,Total,2022,2135,,Doctoral
+ED8,TOTAL,Total,2023,2136,,Doctoral
+ED8,TOTAL,Total,2024,2457,,Doctoral
+ED8,F06,Information and communication technologies,2005,85,,Doctoral
+ED8,F06,Information and communication technologies,2010,146,,Doctoral
+ED8,F06,Information and communication technologies,2013,111,,Doctoral
+ED8,F06,Information and communication technologies,2014,114,,Doctoral
+ED8,F06,Information and communication technologies,2015,113,,Doctoral
+ED8,F06,Information and communication technologies,2016,113,,Doctoral
+ED8,F06,Information and communication technologies,2017,109,,Doctoral
+ED8,F06,Information and communication technologies,2018,102,,Doctoral
+ED8,F06,Information and communication technologies,2019,118,,Doctoral
+ED8,F06,Information and communication technologies,2020,97,,Doctoral
+ED8,F06,Information and communication technologies,2021,119,,Doctoral
+ED8,F06,Information and communication technologies,2022,100,,Doctoral
+ED8,F06,Information and communication technologies,2023,135,,Doctoral
+ED8,F06,Information and communication technologies,2024,135,,Doctoral
+ED8,F061,Information and communication technologies,2005,28,,Doctoral
+ED8,F061,Information and communication technologies,2010,45,,Doctoral
+ED8,F061,Information and communication technologies,2013,111,,Doctoral
+ED8,F061,Information and communication technologies,2014,114,,Doctoral
+ED8,F061,Information and communication technologies,2015,21,,Doctoral
+ED8,F061,Information and communication technologies,2016,25,,Doctoral
+ED8,F061,Information and communication technologies,2017,16,,Doctoral
+ED8,F061,Information and communication technologies,2018,14,,Doctoral
+ED8,F061,Information and communication technologies,2019,12,,Doctoral
+ED8,F061,Information and communication technologies,2020,11,,Doctoral
+ED8,F061,Information and communication technologies,2021,23,,Doctoral
+ED8,F061,Information and communication technologies,2022,18,,Doctoral
+ED8,F061,Information and communication technologies,2023,20,,Doctoral
+ED8,F061,Information and communication technologies,2024,11,,Doctoral
+ED8,F0612,Database and network design and administration,2015,21,,Doctoral
+ED8,F0612,Database and network design and administration,2016,25,,Doctoral
+ED8,F0612,Database and network design and administration,2017,16,,Doctoral
+ED8,F0612,Database and network design and administration,2018,14,,Doctoral
+ED8,F0612,Database and network design and administration,2019,12,,Doctoral
+ED8,F0612,Database and network design and administration,2020,11,,Doctoral
+ED8,F0612,Database and network design and administration,2021,23,,Doctoral
+ED8,F0612,Database and network design and administration,2022,18,,Doctoral
+ED8,F0612,Database and network design and administration,2023,20,,Doctoral
+ED8,F0612,Database and network design and administration,2024,7,,Doctoral
+ED8,F0613,Software and applications development and analysis,2013,111,d,Doctoral
+ED8,F0613,Software and applications development and analysis,2015,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2016,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2017,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2018,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2019,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2020,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2021,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2022,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2023,0,,Doctoral
+ED8,F0613,Software and applications development and analysis,2024,0,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2005,428,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2010,471,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2013,493,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2014,416,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2015,431,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2016,440,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2017,446,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2018,504,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2019,444,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2020,417,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2021,411,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2022,434,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2023,424,,Doctoral
+ED8,F05,"Natural sciences, mathematics and statistics",2024,529,,Doctoral
+ED8,F054,Mathematics and statistics,2005,36,,Doctoral
+ED8,F054,Mathematics and statistics,2010,60,,Doctoral
+ED8,F054,Mathematics and statistics,2013,58,,Doctoral
+ED8,F054,Mathematics and statistics,2014,69,,Doctoral
+ED8,F054,Mathematics and statistics,2015,77,,Doctoral
+ED8,F054,Mathematics and statistics,2016,60,,Doctoral
+ED8,F054,Mathematics and statistics,2017,75,,Doctoral
+ED8,F054,Mathematics and statistics,2018,63,,Doctoral
+ED8,F054,Mathematics and statistics,2019,62,,Doctoral
+ED8,F054,Mathematics and statistics,2020,75,,Doctoral
+ED8,F054,Mathematics and statistics,2021,66,,Doctoral
+ED8,F054,Mathematics and statistics,2022,71,,Doctoral
+ED8,F054,Mathematics and statistics,2023,63,,Doctoral
+ED8,F054,Mathematics and statistics,2024,84,,Doctoral
+ED8,F0541,Mathematics,2013,56,,Doctoral
+ED8,F0541,Mathematics,2015,70,,Doctoral
+ED8,F0541,Mathematics,2016,57,,Doctoral
+ED8,F0541,Mathematics,2017,74,,Doctoral
+ED8,F0541,Mathematics,2018,60,,Doctoral
+ED8,F0541,Mathematics,2019,60,,Doctoral
+ED8,F0541,Mathematics,2020,72,,Doctoral
+ED8,F0541,Mathematics,2021,63,,Doctoral
+ED8,F0541,Mathematics,2022,70,,Doctoral
+ED8,F0541,Mathematics,2023,60,,Doctoral
+ED8,F0541,Mathematics,2024,82,,Doctoral
+ED8,F0542,Statistics,2013,2,,Doctoral
+ED8,F0542,Statistics,2015,7,,Doctoral
+ED8,F0542,Statistics,2016,3,,Doctoral
+ED8,F0542,Statistics,2017,1,,Doctoral
+ED8,F0542,Statistics,2018,3,,Doctoral
+ED8,F0542,Statistics,2019,2,,Doctoral
+ED8,F0542,Statistics,2020,3,,Doctoral
+ED8,F0542,Statistics,2021,3,,Doctoral
+ED8,F0542,Statistics,2022,1,,Doctoral
+ED8,F0542,Statistics,2023,3,,Doctoral
+ED8,F0542,Statistics,2024,2,,Doctoral
+ED8,F04,"Business, administration and law",2005,465,,Doctoral
+ED8,F04,"Business, administration and law",2010,464,,Doctoral
+ED8,F04,"Business, administration and law",2013,309,,Doctoral
+ED8,F04,"Business, administration and law",2014,299,,Doctoral
+ED8,F04,"Business, administration and law",2015,281,,Doctoral
+ED8,F04,"Business, administration and law",2016,249,,Doctoral
+ED8,F04,"Business, administration and law",2017,343,,Doctoral
+ED8,F04,"Business, administration and law",2018,351,,Doctoral
+ED8,F04,"Business, administration and law",2019,267,,Doctoral
+ED8,F04,"Business, administration and law",2020,257,,Doctoral
+ED8,F04,"Business, administration and law",2021,252,,Doctoral
+ED8,F04,"Business, administration and law",2022,263,,Doctoral
+ED8,F04,"Business, administration and law",2023,248,,Doctoral
+ED8,F04,"Business, administration and law",2024,262,,Doctoral
+ED8,F041,Business and administration,2005,1,,Doctoral
+ED8,F041,Business and administration,2010,0,,Doctoral
+ED8,F041,Business and administration,2013,88,,Doctoral
+ED8,F041,Business and administration,2014,72,,Doctoral
+ED8,F041,Business and administration,2015,7,,Doctoral
+ED8,F041,Business and administration,2016,4,,Doctoral
+ED8,F041,Business and administration,2017,14,,Doctoral
+ED8,F041,Business and administration,2018,22,,Doctoral
+ED8,F041,Business and administration,2019,33,,Doctoral
+ED8,F041,Business and administration,2020,34,,Doctoral
+ED8,F041,Business and administration,2021,32,,Doctoral
+ED8,F041,Business and administration,2022,44,,Doctoral
+ED8,F041,Business and administration,2023,31,,Doctoral
+ED8,F041,Business and administration,2024,56,,Doctoral
+ED8,F0414,Marketing and advertising,2013,0,,Doctoral
+ED8,F0414,Marketing and advertising,2015,0,,Doctoral
+ED8,F0414,Marketing and advertising,2016,0,,Doctoral
+ED8,F0414,Marketing and advertising,2017,0,,Doctoral
+ED8,F0414,Marketing and advertising,2018,0,,Doctoral
+ED8,F0414,Marketing and advertising,2019,0,,Doctoral
+ED8,F0414,Marketing and advertising,2020,0,,Doctoral
+ED8,F0414,Marketing and advertising,2021,0,,Doctoral
+ED8,F0414,Marketing and advertising,2022,0,,Doctoral
+ED8,F0414,Marketing and advertising,2023,0,,Doctoral
+ED8,F0414,Marketing and advertising,2024,0,,Doctoral
+ED8,F0410,Business and administration not further defined,2013,0,,Doctoral
+ED8,F0410,Business and administration not further defined,2015,0,,Doctoral
+ED8,F0410,Business and administration not further defined,2016,0,,Doctoral
+ED8,F0410,Business and administration not further defined,2017,1,,Doctoral
+ED8,F0410,Business and administration not further defined,2018,1,,Doctoral
+ED8,F0410,Business and administration not further defined,2019,2,,Doctoral
+ED8,F0410,Business and administration not further defined,2020,0,,Doctoral
+ED8,F0410,Business and administration not further defined,2021,1,,Doctoral
+ED8,F0410,Business and administration not further defined,2022,2,,Doctoral
+ED8,F0410,Business and administration not further defined,2023,2,,Doctoral
+ED8,F0410,Business and administration not further defined,2024,5,,Doctoral
+ED8,F0413,Management and administration,2013,88,,Doctoral
+ED8,F0413,Management and administration,2015,0,,Doctoral
+ED8,F0413,Management and administration,2016,0,,Doctoral
+ED8,F0413,Management and administration,2017,9,,Doctoral
+ED8,F0413,Management and administration,2018,11,,Doctoral
+ED8,F0413,Management and administration,2019,25,,Doctoral
+ED8,F0413,Management and administration,2020,29,,Doctoral
+ED8,F0413,Management and administration,2021,26,,Doctoral
+ED8,F0413,Management and administration,2022,35,,Doctoral
+ED8,F0413,Management and administration,2023,25,,Doctoral
+ED8,F0413,Management and administration,2024,39,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2013,0,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2015,1,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2016,2,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2017,0,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2018,6,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2019,3,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2020,2,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2021,1,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2022,0,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2023,1,,Doctoral
+ED8,F0412,"Finance, banking and insurance",2024,3,,Doctoral
+ED8,F0411,Accounting and taxation,2013,0,,Doctoral
+ED8,F0411,Accounting and taxation,2015,6,,Doctoral
+ED8,F0411,Accounting and taxation,2016,2,,Doctoral
+ED8,F0411,Accounting and taxation,2017,4,,Doctoral
+ED8,F0411,Accounting and taxation,2018,4,,Doctoral
+ED8,F0411,Accounting and taxation,2019,3,,Doctoral
+ED8,F0411,Accounting and taxation,2020,3,,Doctoral
+ED8,F0411,Accounting and taxation,2021,4,,Doctoral
+ED8,F0411,Accounting and taxation,2022,7,,Doctoral
+ED8,F0411,Accounting and taxation,2023,3,,Doctoral
+ED8,F0411,Accounting and taxation,2024,9,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2005,218,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2010,231,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2013,223,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2014,209,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2015,166,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2016,158,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2017,251,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2018,299,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2019,142,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2020,115,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2021,103,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2022,155,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2023,149,,Doctoral
+ED8,F03,"Social sciences, journalism and information",2024,204,,Doctoral
+ED8,F0311,Economics,2013,36,,Doctoral
+ED8,F0311,Economics,2015,29,,Doctoral
+ED8,F0311,Economics,2016,21,,Doctoral
+ED8,F0311,Economics,2017,37,,Doctoral
+ED8,F0311,Economics,2018,28,,Doctoral
+ED8,F0311,Economics,2019,16,,Doctoral
+ED8,F0311,Economics,2020,26,,Doctoral
+ED8,F0311,Economics,2021,17,,Doctoral
+ED8,F0311,Economics,2022,24,,Doctoral
+ED8,F0311,Economics,2023,18,,Doctoral
+ED8,F0311,Economics,2024,23,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2005,394,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2010,437,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2013,433,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2014,512,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2015,467,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2016,537,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2017,528,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2018,510,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2019,495,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2020,543,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2021,540,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2022,472,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2023,473,,Doctoral
+ED8,F07,"Engineering, manufacturing and construction",2024,558,,Doctoral
+ED8,F071,Engineering and engineering trades,2005,309,,Doctoral
+ED8,F071,Engineering and engineering trades,2010,313,,Doctoral
+ED8,F071,Engineering and engineering trades,2013,300,,Doctoral
+ED8,F071,Engineering and engineering trades,2014,365,,Doctoral
+ED8,F071,Engineering and engineering trades,2015,343,,Doctoral
+ED8,F071,Engineering and engineering trades,2016,395,,Doctoral
+ED8,F071,Engineering and engineering trades,2017,384,,Doctoral
+ED8,F071,Engineering and engineering trades,2018,381,,Doctoral
+ED8,F071,Engineering and engineering trades,2019,369,,Doctoral
+ED8,F071,Engineering and engineering trades,2020,408,,Doctoral
+ED8,F071,Engineering and engineering trades,2021,395,,Doctoral
+ED8,F071,Engineering and engineering trades,2022,331,,Doctoral
+ED8,F071,Engineering and engineering trades,2023,350,,Doctoral
+ED8,F071,Engineering and engineering trades,2024,441,,Doctoral
+ED8,F053,Physical sciences,2005,206,,Doctoral
+ED8,F053,Physical sciences,2010,216,,Doctoral
+ED8,F053,Physical sciences,2013,262,,Doctoral
+ED8,F053,Physical sciences,2014,216,,Doctoral
+ED8,F053,Physical sciences,2015,209,,Doctoral
+ED8,F053,Physical sciences,2016,217,,Doctoral
+ED8,F053,Physical sciences,2017,207,,Doctoral
+ED8,F053,Physical sciences,2018,236,,Doctoral
+ED8,F053,Physical sciences,2019,215,,Doctoral
+ED8,F053,Physical sciences,2020,220,,Doctoral
+ED8,F053,Physical sciences,2021,216,,Doctoral
+ED8,F053,Physical sciences,2022,202,,Doctoral
+ED8,F053,Physical sciences,2023,207,,Doctoral
+ED8,F053,Physical sciences,2024,269,,Doctoral
+ED8,F0533,Physics,2013,132,,Doctoral
+ED8,F0533,Physics,2015,115,,Doctoral
+ED8,F0533,Physics,2016,119,,Doctoral
+ED8,F0533,Physics,2017,113,,Doctoral
+ED8,F0533,Physics,2018,132,,Doctoral
+ED8,F0533,Physics,2019,119,,Doctoral
+ED8,F0533,Physics,2020,124,,Doctoral
+ED8,F0533,Physics,2021,126,,Doctoral
+ED8,F0533,Physics,2022,116,,Doctoral
+ED8,F0533,Physics,2023,115,,Doctoral
+ED8,F0533,Physics,2024,139,,Doctoral
+ED8,F0313,Psychology,2013,60,,Doctoral
+ED8,F0313,Psychology,2015,36,,Doctoral
+ED8,F0313,Psychology,2016,48,,Doctoral
+ED8,F0313,Psychology,2017,81,,Doctoral
+ED8,F0313,Psychology,2018,74,,Doctoral
+ED8,F0313,Psychology,2019,56,,Doctoral
+ED8,F0313,Psychology,2020,48,,Doctoral
+ED8,F0313,Psychology,2021,46,,Doctoral
+ED8,F0313,Psychology,2022,56,,Doctoral
+ED8,F0313,Psychology,2023,67,,Doctoral
+ED8,F0313,Psychology,2024,93,,Doctoral
+ED8,F0314,Sociology and cultural studies,2013,51,,Doctoral
+ED8,F0314,Sociology and cultural studies,2015,40,,Doctoral
+ED8,F0314,Sociology and cultural studies,2016,30,,Doctoral
+ED8,F0314,Sociology and cultural studies,2017,53,,Doctoral
+ED8,F0314,Sociology and cultural studies,2018,76,,Doctoral
+ED8,F0314,Sociology and cultural studies,2019,23,,Doctoral
+ED8,F0314,Sociology and cultural studies,2020,22,,Doctoral
+ED8,F0314,Sociology and cultural studies,2021,18,,Doctoral
+ED8,F0314,Sociology and cultural studies,2022,33,,Doctoral
+ED8,F0314,Sociology and cultural studies,2023,28,,Doctoral
+ED8,F0314,Sociology and cultural studies,2024,33,,Doctoral
+ED8,F01,Education,2005,105,,Doctoral
+ED8,F01,Education,2010,70,,Doctoral
+ED8,F01,Education,2013,49,,Doctoral
+ED8,F01,Education,2014,43,,Doctoral
+ED8,F01,Education,2015,55,,Doctoral
+ED8,F01,Education,2016,51,,Doctoral
+ED8,F01,Education,2017,81,,Doctoral
+ED8,F01,Education,2018,64,,Doctoral
+ED8,F01,Education,2019,40,,Doctoral
+ED8,F01,Education,2020,44,,Doctoral
+ED8,F01,Education,2021,42,,Doctoral
+ED8,F01,Education,2022,33,,Doctoral
+ED8,F01,Education,2023,48,,Doctoral
+ED8,F01,Education,2024,45,,Doctoral
+ED8,F02,Arts and humanities,2005,339,,Doctoral
+ED8,F02,Arts and humanities,2010,333,,Doctoral
+ED8,F02,Arts and humanities,2013,265,,Doctoral
+ED8,F02,Arts and humanities,2014,265,,Doctoral
+ED8,F02,Arts and humanities,2015,274,,Doctoral
+ED8,F02,Arts and humanities,2016,260,,Doctoral
+ED8,F02,Arts and humanities,2017,374,,Doctoral
+ED8,F02,Arts and humanities,2018,517,,Doctoral
+ED8,F02,Arts and humanities,2019,253,,Doctoral
+ED8,F02,Arts and humanities,2020,248,,Doctoral
+ED8,F02,Arts and humanities,2021,215,,Doctoral
+ED8,F02,Arts and humanities,2022,239,,Doctoral
+ED8,F02,Arts and humanities,2023,215,,Doctoral
+ED8,F02,Arts and humanities,2024,267,,Doctoral
+ED8,F09,Health and welfare,2005,69,,Doctoral
+ED8,F09,Health and welfare,2010,190,,Doctoral
+ED8,F09,Health and welfare,2013,220,,Doctoral
+ED8,F09,Health and welfare,2014,234,,Doctoral
+ED8,F09,Health and welfare,2015,280,,Doctoral
+ED8,F09,Health and welfare,2016,289,,Doctoral
+ED8,F09,Health and welfare,2017,287,,Doctoral
+ED8,F09,Health and welfare,2018,270,,Doctoral
+ED8,F09,Health and welfare,2019,314,,Doctoral
+ED8,F09,Health and welfare,2020,301,,Doctoral
+ED8,F09,Health and welfare,2021,288,,Doctoral
+ED8,F09,Health and welfare,2022,263,,Doctoral
+ED8,F09,Health and welfare,2023,285,,Doctoral
+ED8,F09,Health and welfare,2024,321,,Doctoral
+ED5-8,TOTAL,Total,2010,70955,,All tertiary
+ED5-8,TOTAL,Total,2013,85278,,All tertiary
+ED5-8,TOTAL,Total,2014,81990,,All tertiary
+ED5-8,TOTAL,Total,2015,83587,,All tertiary
+ED5-8,TOTAL,Total,2016,83396,,All tertiary
+ED5-8,TOTAL,Total,2017,84862,,All tertiary
+ED5-8,TOTAL,Total,2018,84259,,All tertiary
+ED5-8,TOTAL,Total,2019,84641,,All tertiary
+ED5-8,TOTAL,Total,2020,89372,,All tertiary
+ED5-8,TOTAL,Total,2021,90063,,All tertiary
+ED5-8,TOTAL,Total,2022,85361,,All tertiary
+ED5-8,TOTAL,Total,2023,88480,,All tertiary
+ED5-8,TOTAL,Total,2024,90736,,All tertiary
+ED5-8,F06,Information and communication technologies,2010,3589,,All tertiary
+ED5-8,F06,Information and communication technologies,2013,3596,,All tertiary
+ED5-8,F06,Information and communication technologies,2014,3651,,All tertiary
+ED5-8,F06,Information and communication technologies,2015,3358,,All tertiary
+ED5-8,F06,Information and communication technologies,2016,3378,,All tertiary
+ED5-8,F06,Information and communication technologies,2017,3342,,All tertiary
+ED5-8,F06,Information and communication technologies,2018,3696,,All tertiary
+ED5-8,F06,Information and communication technologies,2019,3790,,All tertiary
+ED5-8,F06,Information and communication technologies,2020,3893,,All tertiary
+ED5-8,F06,Information and communication technologies,2021,4331,,All tertiary
+ED5-8,F06,Information and communication technologies,2022,4493,,All tertiary
+ED5-8,F06,Information and communication technologies,2023,4992,,All tertiary
+ED5-8,F06,Information and communication technologies,2024,5257,,All tertiary
+ED5-8,F061,Information and communication technologies,2010,1388,,All tertiary
+ED5-8,F061,Information and communication technologies,2013,3596,,All tertiary
+ED5-8,F061,Information and communication technologies,2014,3651,,All tertiary
+ED5-8,F061,Information and communication technologies,2015,1301,,All tertiary
+ED5-8,F061,Information and communication technologies,2016,1228,,All tertiary
+ED5-8,F061,Information and communication technologies,2017,1171,,All tertiary
+ED5-8,F061,Information and communication technologies,2018,1289,,All tertiary
+ED5-8,F061,Information and communication technologies,2019,1370,,All tertiary
+ED5-8,F061,Information and communication technologies,2020,1379,,All tertiary
+ED5-8,F061,Information and communication technologies,2021,1456,,All tertiary
+ED5-8,F061,Information and communication technologies,2022,1500,,All tertiary
+ED5-8,F061,Information and communication technologies,2023,1760,,All tertiary
+ED5-8,F061,Information and communication technologies,2024,1754,,All tertiary
+ED5-8,F0612,Database and network design and administration,2015,897,,All tertiary
+ED5-8,F0612,Database and network design and administration,2016,834,,All tertiary
+ED5-8,F0612,Database and network design and administration,2017,777,,All tertiary
+ED5-8,F0612,Database and network design and administration,2018,887,,All tertiary
+ED5-8,F0612,Database and network design and administration,2019,965,,All tertiary
+ED5-8,F0612,Database and network design and administration,2020,862,,All tertiary
+ED5-8,F0612,Database and network design and administration,2021,906,,All tertiary
+ED5-8,F0612,Database and network design and administration,2022,916,,All tertiary
+ED5-8,F0612,Database and network design and administration,2023,1100,,All tertiary
+ED5-8,F0612,Database and network design and administration,2024,925,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2013,3561,d,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2015,403,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2016,394,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2017,394,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2018,402,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2019,406,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2020,517,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2021,548,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2022,556,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2023,572,,All tertiary
+ED5-8,F0613,Software and applications development and analysis,2024,724,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2010,3662,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2013,4359,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2014,4334,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2015,4660,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2016,4799,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2017,4913,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2018,5122,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2019,5011,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2020,4972,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2021,5239,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2022,5114,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2023,4920,,All tertiary
+ED5-8,F05,"Natural sciences, mathematics and statistics",2024,5319,,All tertiary
+ED5-8,F054,Mathematics and statistics,2010,381,,All tertiary
+ED5-8,F054,Mathematics and statistics,2013,413,,All tertiary
+ED5-8,F054,Mathematics and statistics,2014,451,,All tertiary
+ED5-8,F054,Mathematics and statistics,2015,465,,All tertiary
+ED5-8,F054,Mathematics and statistics,2016,456,,All tertiary
+ED5-8,F054,Mathematics and statistics,2017,474,,All tertiary
+ED5-8,F054,Mathematics and statistics,2018,493,,All tertiary
+ED5-8,F054,Mathematics and statistics,2019,454,,All tertiary
+ED5-8,F054,Mathematics and statistics,2020,477,,All tertiary
+ED5-8,F054,Mathematics and statistics,2021,475,,All tertiary
+ED5-8,F054,Mathematics and statistics,2022,468,,All tertiary
+ED5-8,F054,Mathematics and statistics,2023,503,,All tertiary
+ED5-8,F054,Mathematics and statistics,2024,450,,All tertiary
+ED5-8,F0541,Mathematics,2013,375,,All tertiary
+ED5-8,F0541,Mathematics,2015,431,,All tertiary
+ED5-8,F0541,Mathematics,2016,416,,All tertiary
+ED5-8,F0541,Mathematics,2017,430,,All tertiary
+ED5-8,F0541,Mathematics,2018,454,,All tertiary
+ED5-8,F0541,Mathematics,2019,416,,All tertiary
+ED5-8,F0541,Mathematics,2020,415,,All tertiary
+ED5-8,F0541,Mathematics,2021,405,,All tertiary
+ED5-8,F0541,Mathematics,2022,403,,All tertiary
+ED5-8,F0541,Mathematics,2023,423,,All tertiary
+ED5-8,F0541,Mathematics,2024,394,,All tertiary
+ED5-8,F0542,Statistics,2013,38,,All tertiary
+ED5-8,F0542,Statistics,2015,34,,All tertiary
+ED5-8,F0542,Statistics,2016,40,,All tertiary
+ED5-8,F0542,Statistics,2017,44,,All tertiary
+ED5-8,F0542,Statistics,2018,40,,All tertiary
+ED5-8,F0542,Statistics,2019,38,,All tertiary
+ED5-8,F0542,Statistics,2020,62,,All tertiary
+ED5-8,F0542,Statistics,2021,70,,All tertiary
+ED5-8,F0542,Statistics,2022,65,,All tertiary
+ED5-8,F0542,Statistics,2023,81,,All tertiary
+ED5-8,F0542,Statistics,2024,57,,All tertiary
+ED5-8,F04,"Business, administration and law",2010,17471,,All tertiary
+ED5-8,F04,"Business, administration and law",2013,20954,,All tertiary
+ED5-8,F04,"Business, administration and law",2014,19344,,All tertiary
+ED5-8,F04,"Business, administration and law",2015,18070,,All tertiary
+ED5-8,F04,"Business, administration and law",2016,18122,,All tertiary
+ED5-8,F04,"Business, administration and law",2017,19414,,All tertiary
+ED5-8,F04,"Business, administration and law",2018,20513,,All tertiary
+ED5-8,F04,"Business, administration and law",2019,20351,,All tertiary
+ED5-8,F04,"Business, administration and law",2020,21708,,All tertiary
+ED5-8,F04,"Business, administration and law",2021,21065,,All tertiary
+ED5-8,F04,"Business, administration and law",2022,20230,,All tertiary
+ED5-8,F04,"Business, administration and law",2023,21657,,All tertiary
+ED5-8,F04,"Business, administration and law",2024,21880,,All tertiary
+ED5-8,F041,Business and administration,2010,5063,,All tertiary
+ED5-8,F041,Business and administration,2013,9242,,All tertiary
+ED5-8,F041,Business and administration,2014,7680,,All tertiary
+ED5-8,F041,Business and administration,2015,5901,,All tertiary
+ED5-8,F041,Business and administration,2016,6522,,All tertiary
+ED5-8,F041,Business and administration,2017,7571,,All tertiary
+ED5-8,F041,Business and administration,2018,9452,,All tertiary
+ED5-8,F041,Business and administration,2019,9500,,All tertiary
+ED5-8,F041,Business and administration,2020,9979,,All tertiary
+ED5-8,F041,Business and administration,2021,9672,,All tertiary
+ED5-8,F041,Business and administration,2022,9646,,All tertiary
+ED5-8,F041,Business and administration,2023,10413,,All tertiary
+ED5-8,F041,Business and administration,2024,10204,,All tertiary
+ED5-8,F0414,Marketing and advertising,2013,546,,All tertiary
+ED5-8,F0414,Marketing and advertising,2015,457,,All tertiary
+ED5-8,F0414,Marketing and advertising,2016,493,,All tertiary
+ED5-8,F0414,Marketing and advertising,2017,563,,All tertiary
+ED5-8,F0414,Marketing and advertising,2018,512,,All tertiary
+ED5-8,F0414,Marketing and advertising,2019,682,,All tertiary
+ED5-8,F0414,Marketing and advertising,2020,651,,All tertiary
+ED5-8,F0414,Marketing and advertising,2021,643,,All tertiary
+ED5-8,F0414,Marketing and advertising,2022,746,,All tertiary
+ED5-8,F0414,Marketing and advertising,2023,830,,All tertiary
+ED5-8,F0414,Marketing and advertising,2024,776,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2013,0,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2015,0,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2016,0,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2017,1,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2018,1648,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2019,1657,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2020,1783,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2021,1767,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2022,1531,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2023,1715,,All tertiary
+ED5-8,F0410,Business and administration not further defined,2024,1537,,All tertiary
+ED5-8,F0413,Management and administration,2013,8013,,All tertiary
+ED5-8,F0413,Management and administration,2015,4733,,All tertiary
+ED5-8,F0413,Management and administration,2016,5049,,All tertiary
+ED5-8,F0413,Management and administration,2017,5950,,All tertiary
+ED5-8,F0413,Management and administration,2018,6101,,All tertiary
+ED5-8,F0413,Management and administration,2019,6071,,All tertiary
+ED5-8,F0413,Management and administration,2020,6261,,All tertiary
+ED5-8,F0413,Management and administration,2021,6183,,All tertiary
+ED5-8,F0413,Management and administration,2022,6300,,All tertiary
+ED5-8,F0413,Management and administration,2023,6620,,All tertiary
+ED5-8,F0413,Management and administration,2024,6614,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2013,243,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2015,198,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2016,291,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2017,280,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2018,368,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2019,299,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2020,458,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2021,357,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2022,386,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2023,433,,All tertiary
+ED5-8,F0412,"Finance, banking and insurance",2024,449,,All tertiary
+ED5-8,F0411,Accounting and taxation,2013,392,,All tertiary
+ED5-8,F0411,Accounting and taxation,2015,415,,All tertiary
+ED5-8,F0411,Accounting and taxation,2016,519,,All tertiary
+ED5-8,F0411,Accounting and taxation,2017,604,,All tertiary
+ED5-8,F0411,Accounting and taxation,2018,625,,All tertiary
+ED5-8,F0411,Accounting and taxation,2019,572,,All tertiary
+ED5-8,F0411,Accounting and taxation,2020,573,,All tertiary
+ED5-8,F0411,Accounting and taxation,2021,517,,All tertiary
+ED5-8,F0411,Accounting and taxation,2022,513,,All tertiary
+ED5-8,F0411,Accounting and taxation,2023,600,,All tertiary
+ED5-8,F0411,Accounting and taxation,2024,605,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2010,5545,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2013,7240,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2014,6724,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2015,8480,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2016,9457,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2017,7974,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2018,6107,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2019,6361,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2020,6778,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2021,6650,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2022,6303,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2023,6673,,All tertiary
+ED5-8,F03,"Social sciences, journalism and information",2024,7060,,All tertiary
+ED5-8,F0311,Economics,2013,1306,,All tertiary
+ED5-8,F0311,Economics,2015,1272,,All tertiary
+ED5-8,F0311,Economics,2016,1294,,All tertiary
+ED5-8,F0311,Economics,2017,768,,All tertiary
+ED5-8,F0311,Economics,2018,679,,All tertiary
+ED5-8,F0311,Economics,2019,609,,All tertiary
+ED5-8,F0311,Economics,2020,689,,All tertiary
+ED5-8,F0311,Economics,2021,701,,All tertiary
+ED5-8,F0311,Economics,2022,644,,All tertiary
+ED5-8,F0311,Economics,2023,680,,All tertiary
+ED5-8,F0311,Economics,2024,658,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2010,14646,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2013,16309,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2014,17343,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2015,16450,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2016,17088,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2017,17057,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2018,17330,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2019,17774,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2020,18461,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2021,17987,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2022,16900,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2023,17063,,All tertiary
+ED5-8,F07,"Engineering, manufacturing and construction",2024,17158,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2010,7646,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2013,8710,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2014,8932,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2015,8081,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2016,8166,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2017,8292,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2018,8286,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2019,8547,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2020,9268,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2021,8504,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2022,8217,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2023,7949,,All tertiary
+ED5-8,F071,Engineering and engineering trades,2024,8060,,All tertiary
+ED5-8,F053,Physical sciences,2010,1149,,All tertiary
+ED5-8,F053,Physical sciences,2013,1644,,All tertiary
+ED5-8,F053,Physical sciences,2014,1517,,All tertiary
+ED5-8,F053,Physical sciences,2015,1637,,All tertiary
+ED5-8,F053,Physical sciences,2016,1684,,All tertiary
+ED5-8,F053,Physical sciences,2017,1766,,All tertiary
+ED5-8,F053,Physical sciences,2018,1843,,All tertiary
+ED5-8,F053,Physical sciences,2019,1836,,All tertiary
+ED5-8,F053,Physical sciences,2020,1865,,All tertiary
+ED5-8,F053,Physical sciences,2021,1853,,All tertiary
+ED5-8,F053,Physical sciences,2022,1798,,All tertiary
+ED5-8,F053,Physical sciences,2023,1667,,All tertiary
+ED5-8,F053,Physical sciences,2024,1895,,All tertiary
+ED5-8,F0533,Physics,2013,713,,All tertiary
+ED5-8,F0533,Physics,2015,719,,All tertiary
+ED5-8,F0533,Physics,2016,727,,All tertiary
+ED5-8,F0533,Physics,2017,770,,All tertiary
+ED5-8,F0533,Physics,2018,800,,All tertiary
+ED5-8,F0533,Physics,2019,792,,All tertiary
+ED5-8,F0533,Physics,2020,801,,All tertiary
+ED5-8,F0533,Physics,2021,804,,All tertiary
+ED5-8,F0533,Physics,2022,775,,All tertiary
+ED5-8,F0533,Physics,2023,770,,All tertiary
+ED5-8,F0533,Physics,2024,813,,All tertiary
+ED5-8,F0313,Psychology,2013,2091,,All tertiary
+ED5-8,F0313,Psychology,2015,2174,,All tertiary
+ED5-8,F0313,Psychology,2016,2855,,All tertiary
+ED5-8,F0313,Psychology,2017,2373,,All tertiary
+ED5-8,F0313,Psychology,2018,2192,,All tertiary
+ED5-8,F0313,Psychology,2019,2480,,All tertiary
+ED5-8,F0313,Psychology,2020,2587,,All tertiary
+ED5-8,F0313,Psychology,2021,2748,,All tertiary
+ED5-8,F0313,Psychology,2022,2819,,All tertiary
+ED5-8,F0313,Psychology,2023,2921,,All tertiary
+ED5-8,F0313,Psychology,2024,3147,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2013,1324,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2015,1066,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2016,992,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2017,1006,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2018,1070,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2019,1038,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2020,933,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2021,963,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2022,830,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2023,912,,All tertiary
+ED5-8,F0314,Sociology and cultural studies,2024,940,,All tertiary
+ED5-8,F01,Education,2010,5946,,All tertiary
+ED5-8,F01,Education,2013,9299,,All tertiary
+ED5-8,F01,Education,2014,9396,,All tertiary
+ED5-8,F01,Education,2015,10625,,All tertiary
+ED5-8,F01,Education,2016,10205,,All tertiary
+ED5-8,F01,Education,2017,10961,,All tertiary
+ED5-8,F01,Education,2018,9761,,All tertiary
+ED5-8,F01,Education,2019,9567,,All tertiary
+ED5-8,F01,Education,2020,10649,,All tertiary
+ED5-8,F01,Education,2021,11341,,All tertiary
+ED5-8,F01,Education,2022,9941,,All tertiary
+ED5-8,F01,Education,2023,10181,,All tertiary
+ED5-8,F01,Education,2024,10530,,All tertiary
+ED5-8,F02,Arts and humanities,2010,5486,,All tertiary
+ED5-8,F02,Arts and humanities,2013,9081,,All tertiary
+ED5-8,F02,Arts and humanities,2014,7112,,All tertiary
+ED5-8,F02,Arts and humanities,2015,7534,,All tertiary
+ED5-8,F02,Arts and humanities,2016,6248,,All tertiary
+ED5-8,F02,Arts and humanities,2017,6652,,All tertiary
+ED5-8,F02,Arts and humanities,2018,6810,,All tertiary
+ED5-8,F02,Arts and humanities,2019,6478,,All tertiary
+ED5-8,F02,Arts and humanities,2020,6445,,All tertiary
+ED5-8,F02,Arts and humanities,2021,6621,,All tertiary
+ED5-8,F02,Arts and humanities,2022,6022,,All tertiary
+ED5-8,F02,Arts and humanities,2023,6224,,All tertiary
+ED5-8,F02,Arts and humanities,2024,6151,,All tertiary
+ED5-8,F09,Health and welfare,2010,6021,,All tertiary
+ED5-8,F09,Health and welfare,2013,5661,,All tertiary
+ED5-8,F09,Health and welfare,2015,5560,,All tertiary
+ED5-8,F09,Health and welfare,2016,6126,,All tertiary
+ED5-8,F09,Health and welfare,2017,6342,,All tertiary
+ED5-8,F09,Health and welfare,2018,7097,,All tertiary
+ED5-8,F09,Health and welfare,2019,7374,,All tertiary
+ED5-8,F09,Health and welfare,2020,7895,,All tertiary
+ED5-8,F09,Health and welfare,2021,8841,,All tertiary
+ED5-8,F09,Health and welfare,2022,8928,,All tertiary
+ED5-8,F09,Health and welfare,2023,9415,,All tertiary
+ED5-8,F09,Health and welfare,2024,9964,,All tertiary

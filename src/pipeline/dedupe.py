@@ -9,13 +9,21 @@ Method (documented in docs/methodology.md):
   Two postings are duplicates when
     (a) same source & same source_id            (already collapsed in step 1), or
     (b) same company_norm + same title_clean + same state (exact key), or
-    (c) same title_clean + same state + description fingerprint equal
-        (first 400 chars of description after whitespace/case normalisation), or
+    (c) same title_clean + description fingerprint equal, regardless of state
+        (first 400 chars of description after whitespace/case normalisation;
+        state-agnostic on purpose, see docs/methodology.md section 4), or
     (d) same company_norm + same title_clean and one side has no state.
   Groups are formed with union-find. The canonical row per group is the one
   with the longest description; ties -> source priority
   karriere > linkedin > eures > willhaben > jobsat (richer structured fields first).
   EURES rows with anonymised employer ("siehe Beschreibung") can only match via (c).
+  dedupe_method labels: company_title_state (b), title_fingerprint (c),
+  company_title_nostate (d); group_root / unique for the remaining rows.
+
+Scope: only the five Layer 1 job-board sources built by build_interim.py
+(eures, karriere, linkedin, willhaben, jobsat). Arbeitnow and the radar feed
+(data/raw/arbeitnow, data/raw/radar; D-022/D-023) are a separate supplement
+handled by src/analysis/supplement_radar.py and never enter this dedupe.
 """
 from __future__ import annotations
 
@@ -29,7 +37,6 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
 TAB = ROOT / "outputs" / "tables"
-TAB.mkdir(parents=True, exist_ok=True)
 PRIORITY = {"karriere": 0, "linkedin": 1, "eures": 2, "willhaben": 3, "jobsat": 4}
 
 
@@ -54,16 +61,20 @@ def fingerprint(desc: str | None) -> str | None:
         return None
     s = re.sub(r"[^a-z0-9äöüß]+", " ", desc.lower())
     s = re.sub(r"\s+", " ", s).strip()
-    # skip boilerplate starts (company intro) by using chars 200-600 too
+    # first 400 normalised characters only; no second window is used, so postings
+    # that share a long boilerplate intro (company profile) can collide here
     return s[:400]
 
 
-def main():
-    df = pd.read_json(PROC / "postings_normalized.jsonl", lines=True)
+def assign_groups(df: pd.DataFrame) -> pd.DataFrame:
+    """Add dedupe_group_id, dedupe_group_size, is_canonical, dedupe_method and
+    sources_in_group to a normalised postings frame (RangeIndex expected)."""
+    df = df.reset_index(drop=True)
     n = len(df)
     uf = UF(n)
     method = [None] * n
-    # (b) company + title + state
+    # (b) company + title + state, (c) title + fingerprint (state-agnostic),
+    # (d) company + title where one side has no state
     key_b = defaultdict(list)
     key_c = defaultdict(list)
     key_d = defaultdict(list)
@@ -76,14 +87,13 @@ def main():
             key_d[(cn, tc)].append(i)
         fp = fingerprint(r.get("description_text"))
         if tc and fp:
-            key_c[(tc, st, fp)].append(i)
-            key_c[(tc, None, fp)].append(i)  # allow state-agnostic fingerprint match
+            key_c[(tc, fp)].append(i)
     for k, idxs in key_b.items():
         for j in idxs[1:]:
             uf.union(idxs[0], j); method[j] = method[j] or "company_title_state"
     for k, idxs in key_c.items():
         for j in idxs[1:]:
-            uf.union(idxs[0], j); method[j] = method[j] or "title_state_fingerprint"
+            uf.union(idxs[0], j); method[j] = method[j] or "title_fingerprint"
     for k, idxs in key_d.items():
         sts = {df.at[i, "state"] for i in idxs}
         if None in sts or any(pd.isna(s) for s in sts):
@@ -103,6 +113,13 @@ def main():
     df["is_canonical"] = canon
     df["dedupe_method"] = [m if m else ("unique" if s == 1 else "group_root") for m, s in zip(method, gsize)]
     df["sources_in_group"] = df.groupby("dedupe_group_id")["source"].transform(lambda s: ",".join(sorted(set(s))))
+    return df
+
+
+def main():
+    df = assign_groups(pd.read_json(PROC / "postings_normalized.jsonl", lines=True))
+    n = len(df)
+    TAB.mkdir(parents=True, exist_ok=True)
     df.to_json(PROC / "postings_dedup.jsonl", orient="records", lines=True, force_ascii=False)
     df2 = df.copy()
     for c in df2.columns:

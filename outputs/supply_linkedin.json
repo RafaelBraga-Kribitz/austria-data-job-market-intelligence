@@ -1,0 +1,43 @@
+{
+ "generated": "2026-09-30T21:03:56.435782",
+ "status": "NOT COLLECTED by automation (LinkedIn User Agreement 8.2, robots.txt; DECISION_LOG D-013/D-018). The offline LinkedIn slot exists and is empty.",
+ "linkedin_collection_dates": [],
+ "search_counts_recorded": 0,
+ "profiles_recorded": 0,
+ "search_counts_by_method": {},
+ "search_counts_by_source_quality": {},
+ "profiles_by_method_n_ge_5": {},
+ "profiles_by_method_other_or_suppressed": 0,
+ "profiles_by_source_quality_n_ge_5": {},
+ "profiles_by_source_quality_other_or_suppressed": 0,
+ "profiles_by_location_n_ge_5": {},
+ "profiles_by_location_other_or_suppressed": 0,
+ "languages_stated_n_ge_5": {},
+ "public_profile_aggregates": "cells below 5 profiles are merged into *_other_or_suppressed (with secondary suppression, so totals cannot be differenced back to a small cell); a profile may state several languages",
+ "protocol": "docs/supply-methodology.md §7 (LinkedIn slot protocol)",
+ "observable_proxy": "share of GitHub data-signal candidates who link a LinkedIn profile (C15)",
+ "proxy_collection_date": "2026-09-17",
+ "proxy_source_quality": "B",
+ "linkedin_link_share": [
+  {
+   "population": "P_data",
+   "evidence": "LinkedIn link on profile/READMEs",
+   "count": 662,
+   "n": 1818,
+   "share": 0.364,
+   "ci_low": 0.342,
+   "ci_high": 0.387,
+   "note": "links are those visible on the GitHub profile (website field, social accounts) or in data-project READMEs; a candidate may have a LinkedIn profile without linking it"
+  },
+  {
+   "population": "P_T1",
+   "evidence": "LinkedIn link on profile/READMEs",
+   "count": 345,
+   "n": 872,
+   "share": 0.396,
+   "ci_low": 0.364,
+   "ci_high": 0.428,
+   "note": "links are those visible on the GitHub profile (website field, social accounts) or in data-project READMEs; a candidate may have a LinkedIn profile without linking it"
+  }
+ ]
+}

@@ -1,0 +1,1939 @@
+{
+ "generated": "2026-09-30T21:03:56.435782",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source_quality": "B",
+ "populations": {
+  "P_data": 1818,
+  "P_T1": 872,
+  "data_repos": 7508,
+  "projects": 6677,
+  "documented_projects": 3959,
+  "substantive_projects": 2605
+ },
+ "formats": [
+  {
+   "format": "notebook",
+   "count": 2896,
+   "n": 6677,
+   "share": 0.434,
+   "ci_low": 0.422,
+   "ci_high": 0.446,
+   "population": "projects"
+  },
+  {
+   "format": "python_package_or_src",
+   "count": 2711,
+   "n": 6677,
+   "share": 0.406,
+   "ci_low": 0.394,
+   "ci_high": 0.418,
+   "population": "projects"
+  },
+  {
+   "format": "license",
+   "count": 2283,
+   "n": 6677,
+   "share": 0.342,
+   "ci_low": 0.331,
+   "ci_high": 0.353,
+   "population": "projects"
+  },
+  {
+   "format": "data_included",
+   "count": 2029,
+   "n": 6677,
+   "share": 0.304,
+   "ci_low": 0.293,
+   "ci_high": 0.315,
+   "population": "projects"
+  },
+  {
+   "format": "reproducible_env",
+   "count": 1926,
+   "n": 6677,
+   "share": 0.288,
+   "ci_low": 0.278,
+   "ci_high": 0.299,
+   "population": "projects"
+  },
+  {
+   "format": "web_app",
+   "count": 872,
+   "n": 6677,
+   "share": 0.131,
+   "ci_low": 0.123,
+   "ci_high": 0.139,
+   "population": "projects"
+  },
+  {
+   "format": "report_pdf_slides",
+   "count": 848,
+   "n": 6677,
+   "share": 0.127,
+   "ci_low": 0.119,
+   "ci_high": 0.135,
+   "population": "projects"
+  },
+  {
+   "format": "paper_academic",
+   "count": 831,
+   "n": 6677,
+   "share": 0.124,
+   "ci_low": 0.117,
+   "ci_high": 0.133,
+   "population": "projects"
+  },
+  {
+   "format": "tests",
+   "count": 775,
+   "n": 6677,
+   "share": 0.116,
+   "ci_low": 0.109,
+   "ci_high": 0.124,
+   "population": "projects"
+  },
+  {
+   "format": "ci",
+   "count": 756,
+   "n": 6677,
+   "share": 0.113,
+   "ci_low": 0.106,
+   "ci_high": 0.121,
+   "population": "projects"
+  },
+  {
+   "format": "docs_folder",
+   "count": 747,
+   "n": 6677,
+   "share": 0.112,
+   "ci_low": 0.105,
+   "ci_high": 0.12,
+   "population": "projects"
+  },
+  {
+   "format": "competition_kaggle",
+   "count": 698,
+   "n": 6677,
+   "share": 0.105,
+   "ci_low": 0.097,
+   "ci_high": 0.112,
+   "population": "projects"
+  },
+  {
+   "format": "makefile_scripts",
+   "count": 636,
+   "n": 6677,
+   "share": 0.095,
+   "ci_low": 0.088,
+   "ci_high": 0.103,
+   "population": "projects"
+  },
+  {
+   "format": "api",
+   "count": 616,
+   "n": 6677,
+   "share": 0.092,
+   "ci_low": 0.086,
+   "ci_high": 0.099,
+   "population": "projects"
+  },
+  {
+   "format": "docker",
+   "count": 588,
+   "n": 6677,
+   "share": 0.088,
+   "ci_low": 0.082,
+   "ci_high": 0.095,
+   "population": "projects"
+  },
+  {
+   "format": "dashboard_bi",
+   "count": 536,
+   "n": 6677,
+   "share": 0.08,
+   "ci_low": 0.074,
+   "ci_high": 0.087,
+   "population": "projects"
+  },
+  {
+   "format": "pipeline_project",
+   "count": 494,
+   "n": 6677,
+   "share": 0.074,
+   "ci_low": 0.068,
+   "ci_high": 0.081,
+   "population": "projects"
+  },
+  {
+   "format": "gh_pages_site",
+   "count": 485,
+   "n": 6677,
+   "share": 0.073,
+   "ci_low": 0.067,
+   "ci_high": 0.079,
+   "population": "projects"
+  },
+  {
+   "format": "streamlit_gradio_app",
+   "count": 431,
+   "n": 6677,
+   "share": 0.065,
+   "ci_low": 0.059,
+   "ci_high": 0.071,
+   "population": "projects"
+  },
+  {
+   "format": "model_artifacts",
+   "count": 391,
+   "n": 6677,
+   "share": 0.059,
+   "ci_low": 0.053,
+   "ci_high": 0.064,
+   "population": "projects"
+  },
+  {
+   "format": "r_markdown_quarto",
+   "count": 218,
+   "n": 6677,
+   "share": 0.033,
+   "ci_low": 0.029,
+   "ci_high": 0.037,
+   "population": "projects"
+  },
+  {
+   "format": "sql_files",
+   "count": 81,
+   "n": 6677,
+   "share": 0.012,
+   "ci_low": 0.01,
+   "ci_high": 0.015,
+   "population": "projects"
+  },
+  {
+   "format": "python_package_or_src",
+   "count": 2280,
+   "n": 3959,
+   "share": 0.576,
+   "ci_low": 0.56,
+   "ci_high": 0.591,
+   "population": "documented projects"
+  },
+  {
+   "format": "notebook",
+   "count": 1728,
+   "n": 3959,
+   "share": 0.436,
+   "ci_low": 0.421,
+   "ci_high": 0.452,
+   "population": "documented projects"
+  },
+  {
+   "format": "license",
+   "count": 1695,
+   "n": 3959,
+   "share": 0.428,
+   "ci_low": 0.413,
+   "ci_high": 0.444,
+   "population": "documented projects"
+  },
+  {
+   "format": "reproducible_env",
+   "count": 1574,
+   "n": 3959,
+   "share": 0.398,
+   "ci_low": 0.382,
+   "ci_high": 0.413,
+   "population": "documented projects"
+  },
+  {
+   "format": "data_included",
+   "count": 1442,
+   "n": 3959,
+   "share": 0.364,
+   "ci_low": 0.349,
+   "ci_high": 0.379,
+   "population": "documented projects"
+  },
+  {
+   "format": "paper_academic",
+   "count": 720,
+   "n": 3959,
+   "share": 0.182,
+   "ci_low": 0.17,
+   "ci_high": 0.194,
+   "population": "documented projects"
+  },
+  {
+   "format": "web_app",
+   "count": 696,
+   "n": 3959,
+   "share": 0.176,
+   "ci_low": 0.164,
+   "ci_high": 0.188,
+   "population": "documented projects"
+  },
+  {
+   "format": "tests",
+   "count": 684,
+   "n": 3959,
+   "share": 0.173,
+   "ci_low": 0.161,
+   "ci_high": 0.185,
+   "population": "documented projects"
+  },
+  {
+   "format": "docs_folder",
+   "count": 668,
+   "n": 3959,
+   "share": 0.169,
+   "ci_low": 0.157,
+   "ci_high": 0.181,
+   "population": "documented projects"
+  },
+  {
+   "format": "ci",
+   "count": 657,
+   "n": 3959,
+   "share": 0.166,
+   "ci_low": 0.155,
+   "ci_high": 0.178,
+   "population": "documented projects"
+  },
+  {
+   "format": "report_pdf_slides",
+   "count": 593,
+   "n": 3959,
+   "share": 0.15,
+   "ci_low": 0.139,
+   "ci_high": 0.161,
+   "population": "documented projects"
+  },
+  {
+   "format": "competition_kaggle",
+   "count": 567,
+   "n": 3959,
+   "share": 0.143,
+   "ci_low": 0.133,
+   "ci_high": 0.154,
+   "population": "documented projects"
+  },
+  {
+   "format": "api",
+   "count": 541,
+   "n": 3959,
+   "share": 0.137,
+   "ci_low": 0.126,
+   "ci_high": 0.148,
+   "population": "documented projects"
+  },
+  {
+   "format": "makefile_scripts",
+   "count": 533,
+   "n": 3959,
+   "share": 0.135,
+   "ci_low": 0.124,
+   "ci_high": 0.146,
+   "population": "documented projects"
+  },
+  {
+   "format": "docker",
+   "count": 491,
+   "n": 3959,
+   "share": 0.124,
+   "ci_low": 0.114,
+   "ci_high": 0.135,
+   "population": "documented projects"
+  },
+  {
+   "format": "dashboard_bi",
+   "count": 437,
+   "n": 3959,
+   "share": 0.11,
+   "ci_low": 0.101,
+   "ci_high": 0.121,
+   "population": "documented projects"
+  },
+  {
+   "format": "pipeline_project",
+   "count": 433,
+   "n": 3959,
+   "share": 0.109,
+   "ci_low": 0.1,
+   "ci_high": 0.119,
+   "population": "documented projects"
+  },
+  {
+   "format": "gh_pages_site",
+   "count": 402,
+   "n": 3959,
+   "share": 0.102,
+   "ci_low": 0.093,
+   "ci_high": 0.111,
+   "population": "documented projects"
+  },
+  {
+   "format": "model_artifacts",
+   "count": 318,
+   "n": 3959,
+   "share": 0.08,
+   "ci_low": 0.072,
+   "ci_high": 0.089,
+   "population": "documented projects"
+  },
+  {
+   "format": "streamlit_gradio_app",
+   "count": 306,
+   "n": 3959,
+   "share": 0.077,
+   "ci_low": 0.069,
+   "ci_high": 0.086,
+   "population": "documented projects"
+  },
+  {
+   "format": "r_markdown_quarto",
+   "count": 121,
+   "n": 3959,
+   "share": 0.031,
+   "ci_low": 0.026,
+   "ci_high": 0.036,
+   "population": "documented projects"
+  },
+  {
+   "format": "sql_files",
+   "count": 56,
+   "n": 3959,
+   "share": 0.014,
+   "ci_low": 0.011,
+   "ci_high": 0.018,
+   "population": "documented projects"
+  },
+  {
+   "format": "python_package_or_src",
+   "count": 1085,
+   "n": 1818,
+   "share": 0.597,
+   "ci_low": 0.574,
+   "ci_high": 0.619,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "data_included",
+   "count": 998,
+   "n": 1818,
+   "share": 0.549,
+   "ci_low": 0.526,
+   "ci_high": 0.572,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "notebook",
+   "count": 994,
+   "n": 1818,
+   "share": 0.547,
+   "ci_low": 0.524,
+   "ci_high": 0.57,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "license",
+   "count": 873,
+   "n": 1818,
+   "share": 0.48,
+   "ci_low": 0.457,
+   "ci_high": 0.503,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "reproducible_env",
+   "count": 811,
+   "n": 1818,
+   "share": 0.446,
+   "ci_low": 0.423,
+   "ci_high": 0.469,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "report_pdf_slides",
+   "count": 526,
+   "n": 1818,
+   "share": 0.289,
+   "ci_low": 0.269,
+   "ci_high": 0.311,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "web_app",
+   "count": 523,
+   "n": 1818,
+   "share": 0.288,
+   "ci_low": 0.267,
+   "ci_high": 0.309,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "competition_kaggle",
+   "count": 457,
+   "n": 1818,
+   "share": 0.251,
+   "ci_low": 0.232,
+   "ci_high": 0.272,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "tests",
+   "count": 449,
+   "n": 1818,
+   "share": 0.247,
+   "ci_low": 0.228,
+   "ci_high": 0.267,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "docs_folder",
+   "count": 446,
+   "n": 1818,
+   "share": 0.245,
+   "ci_low": 0.226,
+   "ci_high": 0.266,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "paper_academic",
+   "count": 430,
+   "n": 1818,
+   "share": 0.237,
+   "ci_low": 0.218,
+   "ci_high": 0.257,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "api",
+   "count": 407,
+   "n": 1818,
+   "share": 0.224,
+   "ci_low": 0.205,
+   "ci_high": 0.244,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "ci",
+   "count": 405,
+   "n": 1818,
+   "share": 0.223,
+   "ci_low": 0.204,
+   "ci_high": 0.242,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "makefile_scripts",
+   "count": 388,
+   "n": 1818,
+   "share": 0.213,
+   "ci_low": 0.195,
+   "ci_high": 0.233,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "dashboard_bi",
+   "count": 370,
+   "n": 1818,
+   "share": 0.204,
+   "ci_low": 0.186,
+   "ci_high": 0.223,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "docker",
+   "count": 352,
+   "n": 1818,
+   "share": 0.194,
+   "ci_low": 0.176,
+   "ci_high": 0.212,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "pipeline_project",
+   "count": 318,
+   "n": 1818,
+   "share": 0.175,
+   "ci_low": 0.158,
+   "ci_high": 0.193,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "gh_pages_site",
+   "count": 306,
+   "n": 1818,
+   "share": 0.168,
+   "ci_low": 0.152,
+   "ci_high": 0.186,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "model_artifacts",
+   "count": 295,
+   "n": 1818,
+   "share": 0.162,
+   "ci_low": 0.146,
+   "ci_high": 0.18,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "streamlit_gradio_app",
+   "count": 276,
+   "n": 1818,
+   "share": 0.152,
+   "ci_low": 0.136,
+   "ci_high": 0.169,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "r_markdown_quarto",
+   "count": 130,
+   "n": 1818,
+   "share": 0.072,
+   "ci_low": 0.061,
+   "ci_high": 0.084,
+   "population": "P_data candidates (≥1 project with format)"
+  },
+  {
+   "format": "sql_files",
+   "count": 80,
+   "n": 1818,
+   "share": 0.044,
+   "ci_low": 0.035,
+   "ci_high": 0.054,
+   "population": "P_data candidates (≥1 project with format)"
+  }
+ ],
+ "combinations": [
+  {
+   "format_combination": "notebook",
+   "projects": 1504
+  },
+  {
+   "format_combination": "(none of the packaging formats)",
+   "projects": 1235
+  },
+  {
+   "format_combination": "python_package_or_src",
+   "projects": 550
+  },
+  {
+   "format_combination": "notebook + python_package_or_src",
+   "projects": 547
+  },
+  {
+   "format_combination": "ci + python_package_or_src + tests",
+   "projects": 117
+  },
+  {
+   "format_combination": "web_app",
+   "projects": 110
+  },
+  {
+   "format_combination": "dashboard_bi",
+   "projects": 103
+  },
+  {
+   "format_combination": "python_package_or_src + tests",
+   "projects": 96
+  },
+  {
+   "format_combination": "python_package_or_src + web_app",
+   "projects": 84
+  },
+  {
+   "format_combination": "r_markdown_quarto",
+   "projects": 72
+  },
+  {
+   "format_combination": "ci + python_package_or_src",
+   "projects": 71
+  },
+  {
+   "format_combination": "dashboard_bi + notebook",
+   "projects": 60
+  },
+  {
+   "format_combination": "api",
+   "projects": 60
+  },
+  {
+   "format_combination": "notebook + pipeline_project",
+   "projects": 56
+  },
+  {
+   "format_combination": "api + python_package_or_src",
+   "projects": 54
+  },
+  {
+   "format_combination": "streamlit_gradio_app",
+   "projects": 51
+  },
+  {
+   "format_combination": "docker",
+   "projects": 44
+  },
+  {
+   "format_combination": "pipeline_project",
+   "projects": 40
+  },
+  {
+   "format_combination": "notebook + python_package_or_src + tests",
+   "projects": 40
+  },
+  {
+   "format_combination": "notebook + pipeline_project + python_package_or_src",
+   "projects": 40
+  }
+ ],
+ "readme_patterns": [
+  {
+   "population": "projects",
+   "feature": "section: objective_overview",
+   "count": 1563,
+   "n": 6677,
+   "share": 0.234,
+   "ci_low": 0.224,
+   "ci_high": 0.244
+  },
+  {
+   "population": "projects",
+   "feature": "section: business_context",
+   "count": 435,
+   "n": 6677,
+   "share": 0.065,
+   "ci_low": 0.059,
+   "ci_high": 0.071
+  },
+  {
+   "population": "projects",
+   "feature": "section: data_source",
+   "count": 1794,
+   "n": 6677,
+   "share": 0.269,
+   "ci_low": 0.258,
+   "ci_high": 0.279
+  },
+  {
+   "population": "projects",
+   "feature": "section: methodology",
+   "count": 2178,
+   "n": 6677,
+   "share": 0.326,
+   "ci_low": 0.315,
+   "ci_high": 0.338
+  },
+  {
+   "population": "projects",
+   "feature": "section: results",
+   "count": 1026,
+   "n": 6677,
+   "share": 0.154,
+   "ci_low": 0.145,
+   "ci_high": 0.163
+  },
+  {
+   "population": "projects",
+   "feature": "section: limitations",
+   "count": 489,
+   "n": 6677,
+   "share": 0.073,
+   "ci_low": 0.067,
+   "ci_high": 0.08
+  },
+  {
+   "population": "projects",
+   "feature": "section: reproducibility",
+   "count": 2843,
+   "n": 6677,
+   "share": 0.426,
+   "ci_low": 0.414,
+   "ci_high": 0.438
+  },
+  {
+   "population": "projects",
+   "feature": "section: tech_stack",
+   "count": 1380,
+   "n": 6677,
+   "share": 0.207,
+   "ci_low": 0.197,
+   "ci_high": 0.217
+  },
+  {
+   "population": "projects",
+   "feature": "section: structure",
+   "count": 1266,
+   "n": 6677,
+   "share": 0.19,
+   "ci_low": 0.18,
+   "ci_high": 0.199
+  },
+  {
+   "population": "projects",
+   "feature": "section: author_contact",
+   "count": 1420,
+   "n": 6677,
+   "share": 0.213,
+   "ci_low": 0.203,
+   "ci_high": 0.223
+  },
+  {
+   "population": "projects",
+   "feature": "section: visuals_section",
+   "count": 886,
+   "n": 6677,
+   "share": 0.133,
+   "ci_low": 0.125,
+   "ci_high": 0.141
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_image",
+   "count": 2160,
+   "n": 6677,
+   "share": 0.323,
+   "ci_low": 0.312,
+   "ci_high": 0.335
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_badge",
+   "count": 876,
+   "n": 6677,
+   "share": 0.131,
+   "ci_low": 0.123,
+   "ci_high": 0.14
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_code_block",
+   "count": 2587,
+   "n": 6677,
+   "share": 0.387,
+   "ci_low": 0.376,
+   "ci_high": 0.399
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_table",
+   "count": 787,
+   "n": 6677,
+   "share": 0.118,
+   "ci_low": 0.11,
+   "ci_high": 0.126
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_link_dashboard",
+   "count": 87,
+   "n": 6677,
+   "share": 0.013,
+   "ci_low": 0.011,
+   "ci_high": 0.016
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_link_kaggle",
+   "count": 211,
+   "n": 6677,
+   "share": 0.032,
+   "ci_low": 0.028,
+   "ci_high": 0.036
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_link_linkedin",
+   "count": 156,
+   "n": 6677,
+   "share": 0.023,
+   "ci_low": 0.02,
+   "ci_high": 0.027
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_link_medium_blog",
+   "count": 77,
+   "n": 6677,
+   "share": 0.012,
+   "ci_low": 0.009,
+   "ci_high": 0.014
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_link_colab_binder",
+   "count": 136,
+   "n": 6677,
+   "share": 0.02,
+   "ci_low": 0.017,
+   "ci_high": 0.024
+  },
+  {
+   "population": "projects",
+   "feature": "content: has_doi_arxiv",
+   "count": 525,
+   "n": 6677,
+   "share": 0.079,
+   "ci_low": 0.072,
+   "ci_high": 0.085
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_metrics",
+   "count": 848,
+   "n": 6677,
+   "share": 0.127,
+   "ci_low": 0.119,
+   "ci_high": 0.135
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_business_terms",
+   "count": 928,
+   "n": 6677,
+   "share": 0.139,
+   "ci_low": 0.131,
+   "ci_high": 0.147
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_limitations",
+   "count": 228,
+   "n": 6677,
+   "share": 0.034,
+   "ci_low": 0.03,
+   "ci_high": 0.039
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_tests_ci",
+   "count": 581,
+   "n": 6677,
+   "share": 0.087,
+   "ci_low": 0.08,
+   "ci_high": 0.094
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_docker",
+   "count": 451,
+   "n": 6677,
+   "share": 0.068,
+   "ci_low": 0.062,
+   "ci_high": 0.074
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_deployment",
+   "count": 793,
+   "n": 6677,
+   "share": 0.119,
+   "ci_low": 0.111,
+   "ci_high": 0.127
+  },
+  {
+   "population": "projects",
+   "feature": "content: mentions_reproduce_cmd",
+   "count": 2504,
+   "n": 6677,
+   "share": 0.375,
+   "ci_low": 0.363,
+   "ci_high": 0.387
+  },
+  {
+   "population": "projects",
+   "feature": "content: german_text",
+   "count": 239,
+   "n": 6677,
+   "share": 0.036,
+   "ci_low": 0.032,
+   "ci_high": 0.041
+  },
+  {
+   "population": "projects",
+   "feature": "content: first_person_narrative",
+   "count": 1802,
+   "n": 6677,
+   "share": 0.27,
+   "ci_low": 0.259,
+   "ci_high": 0.281
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: objective_overview",
+   "count": 1442,
+   "n": 3959,
+   "share": 0.364,
+   "ci_low": 0.349,
+   "ci_high": 0.379
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: business_context",
+   "count": 420,
+   "n": 3959,
+   "share": 0.106,
+   "ci_low": 0.097,
+   "ci_high": 0.116
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: data_source",
+   "count": 1627,
+   "n": 3959,
+   "share": 0.411,
+   "ci_low": 0.396,
+   "ci_high": 0.426
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: methodology",
+   "count": 1967,
+   "n": 3959,
+   "share": 0.497,
+   "ci_low": 0.481,
+   "ci_high": 0.512
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: results",
+   "count": 987,
+   "n": 3959,
+   "share": 0.249,
+   "ci_low": 0.236,
+   "ci_high": 0.263
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: limitations",
+   "count": 481,
+   "n": 3959,
+   "share": 0.121,
+   "ci_low": 0.112,
+   "ci_high": 0.132
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: reproducibility",
+   "count": 2616,
+   "n": 3959,
+   "share": 0.661,
+   "ci_low": 0.646,
+   "ci_high": 0.675
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: tech_stack",
+   "count": 1280,
+   "n": 3959,
+   "share": 0.323,
+   "ci_low": 0.309,
+   "ci_high": 0.338
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: structure",
+   "count": 1221,
+   "n": 3959,
+   "share": 0.308,
+   "ci_low": 0.294,
+   "ci_high": 0.323
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: author_contact",
+   "count": 1339,
+   "n": 3959,
+   "share": 0.338,
+   "ci_low": 0.324,
+   "ci_high": 0.353
+  },
+  {
+   "population": "documented projects",
+   "feature": "section: visuals_section",
+   "count": 787,
+   "n": 3959,
+   "share": 0.199,
+   "ci_low": 0.187,
+   "ci_high": 0.212
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_image",
+   "count": 1906,
+   "n": 3959,
+   "share": 0.481,
+   "ci_low": 0.466,
+   "ci_high": 0.497
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_badge",
+   "count": 785,
+   "n": 3959,
+   "share": 0.198,
+   "ci_low": 0.186,
+   "ci_high": 0.211
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_code_block",
+   "count": 2409,
+   "n": 3959,
+   "share": 0.608,
+   "ci_low": 0.593,
+   "ci_high": 0.624
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_table",
+   "count": 774,
+   "n": 3959,
+   "share": 0.196,
+   "ci_low": 0.183,
+   "ci_high": 0.208
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_link_dashboard",
+   "count": 69,
+   "n": 3959,
+   "share": 0.017,
+   "ci_low": 0.014,
+   "ci_high": 0.022
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_link_kaggle",
+   "count": 181,
+   "n": 3959,
+   "share": 0.046,
+   "ci_low": 0.04,
+   "ci_high": 0.053
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_link_linkedin",
+   "count": 155,
+   "n": 3959,
+   "share": 0.039,
+   "ci_low": 0.034,
+   "ci_high": 0.046
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_link_medium_blog",
+   "count": 69,
+   "n": 3959,
+   "share": 0.017,
+   "ci_low": 0.014,
+   "ci_high": 0.022
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_link_colab_binder",
+   "count": 107,
+   "n": 3959,
+   "share": 0.027,
+   "ci_low": 0.022,
+   "ci_high": 0.033
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: has_doi_arxiv",
+   "count": 475,
+   "n": 3959,
+   "share": 0.12,
+   "ci_low": 0.11,
+   "ci_high": 0.13
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_metrics",
+   "count": 815,
+   "n": 3959,
+   "share": 0.206,
+   "ci_low": 0.194,
+   "ci_high": 0.219
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_business_terms",
+   "count": 868,
+   "n": 3959,
+   "share": 0.219,
+   "ci_low": 0.207,
+   "ci_high": 0.232
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_limitations",
+   "count": 219,
+   "n": 3959,
+   "share": 0.055,
+   "ci_low": 0.049,
+   "ci_high": 0.063
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_tests_ci",
+   "count": 560,
+   "n": 3959,
+   "share": 0.141,
+   "ci_low": 0.131,
+   "ci_high": 0.153
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_docker",
+   "count": 410,
+   "n": 3959,
+   "share": 0.104,
+   "ci_low": 0.094,
+   "ci_high": 0.113
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_deployment",
+   "count": 742,
+   "n": 3959,
+   "share": 0.187,
+   "ci_low": 0.176,
+   "ci_high": 0.2
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: mentions_reproduce_cmd",
+   "count": 2283,
+   "n": 3959,
+   "share": 0.577,
+   "ci_low": 0.561,
+   "ci_high": 0.592
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: german_text",
+   "count": 215,
+   "n": 3959,
+   "share": 0.054,
+   "ci_low": 0.048,
+   "ci_high": 0.062
+  },
+  {
+   "population": "documented projects",
+   "feature": "content: first_person_narrative",
+   "count": 1523,
+   "n": 3959,
+   "share": 0.385,
+   "ci_low": 0.37,
+   "ci_high": 0.4
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: objective_overview",
+   "count": 1021,
+   "n": 2605,
+   "share": 0.392,
+   "ci_low": 0.373,
+   "ci_high": 0.411
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: business_context",
+   "count": 313,
+   "n": 2605,
+   "share": 0.12,
+   "ci_low": 0.108,
+   "ci_high": 0.133
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: data_source",
+   "count": 1181,
+   "n": 2605,
+   "share": 0.453,
+   "ci_low": 0.434,
+   "ci_high": 0.473
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: methodology",
+   "count": 1428,
+   "n": 2605,
+   "share": 0.548,
+   "ci_low": 0.529,
+   "ci_high": 0.567
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: results",
+   "count": 749,
+   "n": 2605,
+   "share": 0.288,
+   "ci_low": 0.27,
+   "ci_high": 0.305
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: limitations",
+   "count": 379,
+   "n": 2605,
+   "share": 0.145,
+   "ci_low": 0.132,
+   "ci_high": 0.16
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: reproducibility",
+   "count": 1797,
+   "n": 2605,
+   "share": 0.69,
+   "ci_low": 0.672,
+   "ci_high": 0.707
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: tech_stack",
+   "count": 935,
+   "n": 2605,
+   "share": 0.359,
+   "ci_low": 0.341,
+   "ci_high": 0.378
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: structure",
+   "count": 895,
+   "n": 2605,
+   "share": 0.344,
+   "ci_low": 0.326,
+   "ci_high": 0.362
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: author_contact",
+   "count": 1010,
+   "n": 2605,
+   "share": 0.388,
+   "ci_low": 0.369,
+   "ci_high": 0.407
+  },
+  {
+   "population": "substantive projects",
+   "feature": "section: visuals_section",
+   "count": 574,
+   "n": 2605,
+   "share": 0.22,
+   "ci_low": 0.205,
+   "ci_high": 0.237
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_image",
+   "count": 1378,
+   "n": 2605,
+   "share": 0.529,
+   "ci_low": 0.51,
+   "ci_high": 0.548
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_badge",
+   "count": 606,
+   "n": 2605,
+   "share": 0.233,
+   "ci_low": 0.217,
+   "ci_high": 0.249
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_code_block",
+   "count": 1702,
+   "n": 2605,
+   "share": 0.653,
+   "ci_low": 0.635,
+   "ci_high": 0.671
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_table",
+   "count": 635,
+   "n": 2605,
+   "share": 0.244,
+   "ci_low": 0.228,
+   "ci_high": 0.261
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_link_dashboard",
+   "count": 50,
+   "n": 2605,
+   "share": 0.019,
+   "ci_low": 0.015,
+   "ci_high": 0.025
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_link_kaggle",
+   "count": 128,
+   "n": 2605,
+   "share": 0.049,
+   "ci_low": 0.041,
+   "ci_high": 0.058
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_link_linkedin",
+   "count": 111,
+   "n": 2605,
+   "share": 0.043,
+   "ci_low": 0.036,
+   "ci_high": 0.051
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_link_medium_blog",
+   "count": 45,
+   "n": 2605,
+   "share": 0.017,
+   "ci_low": 0.013,
+   "ci_high": 0.023
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_link_colab_binder",
+   "count": 56,
+   "n": 2605,
+   "share": 0.021,
+   "ci_low": 0.017,
+   "ci_high": 0.028
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: has_doi_arxiv",
+   "count": 359,
+   "n": 2605,
+   "share": 0.138,
+   "ci_low": 0.125,
+   "ci_high": 0.152
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_metrics",
+   "count": 592,
+   "n": 2605,
+   "share": 0.227,
+   "ci_low": 0.212,
+   "ci_high": 0.244
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_business_terms",
+   "count": 665,
+   "n": 2605,
+   "share": 0.255,
+   "ci_low": 0.239,
+   "ci_high": 0.272
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_limitations",
+   "count": 168,
+   "n": 2605,
+   "share": 0.064,
+   "ci_low": 0.056,
+   "ci_high": 0.075
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_tests_ci",
+   "count": 455,
+   "n": 2605,
+   "share": 0.175,
+   "ci_low": 0.161,
+   "ci_high": 0.19
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_docker",
+   "count": 310,
+   "n": 2605,
+   "share": 0.119,
+   "ci_low": 0.107,
+   "ci_high": 0.132
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_deployment",
+   "count": 564,
+   "n": 2605,
+   "share": 0.217,
+   "ci_low": 0.201,
+   "ci_high": 0.233
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: mentions_reproduce_cmd",
+   "count": 1558,
+   "n": 2605,
+   "share": 0.598,
+   "ci_low": 0.579,
+   "ci_high": 0.617
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: german_text",
+   "count": 161,
+   "n": 2605,
+   "share": 0.062,
+   "ci_low": 0.053,
+   "ci_high": 0.072
+  },
+  {
+   "population": "substantive projects",
+   "feature": "content: first_person_narrative",
+   "count": 1055,
+   "n": 2605,
+   "share": 0.405,
+   "ci_low": 0.386,
+   "ci_high": 0.424
+  }
+ ],
+ "readme_structure": {
+  "population": "documented projects",
+  "n": 3959,
+  "median_sections_detected": 3.0,
+  "share_≥4_sections": 0.476,
+  "median_chars": 3257.0,
+  "median_words": 412.0,
+  "median_headings": 8.0,
+  "share_results_AND_method": 0.194,
+  "share_results_AND_limitations": 0.053,
+  "share_business_context_OR_terms": 0.274,
+  "share_reproducibility_section_AND_cmd": 0.473
+ },
+ "common_headings": [
+  {
+   "heading": "installation",
+   "projects": 612,
+   "n": 3959,
+   "share": 0.155,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "license",
+   "projects": 593,
+   "n": 3959,
+   "share": 0.15,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "usage",
+   "projects": 480,
+   "n": 3959,
+   "share": 0.121,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "features",
+   "projects": 289,
+   "n": 3959,
+   "share": 0.073,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "overview",
+   "projects": 281,
+   "n": 3959,
+   "share": 0.071,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "prerequisites",
+   "projects": 267,
+   "n": 3959,
+   "share": 0.067,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "requirements",
+   "projects": 250,
+   "n": 3959,
+   "share": 0.063,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "project structure",
+   "projects": 224,
+   "n": 3959,
+   "share": 0.057,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "getting started",
+   "projects": 204,
+   "n": 3959,
+   "share": 0.052,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "contributing",
+   "projects": 185,
+   "n": 3959,
+   "share": 0.047,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "quick start",
+   "projects": 178,
+   "n": 3959,
+   "share": 0.045,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "results",
+   "projects": 171,
+   "n": 3959,
+   "share": 0.043,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "setup",
+   "projects": 166,
+   "n": 3959,
+   "share": 0.042,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "repository structure",
+   "projects": 162,
+   "n": 3959,
+   "share": 0.041,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "dataset",
+   "projects": 154,
+   "n": 3959,
+   "share": 0.039,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "data",
+   "projects": 147,
+   "n": 3959,
+   "share": 0.037,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "citation",
+   "projects": 134,
+   "n": 3959,
+   "share": 0.034,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "architecture",
+   "projects": 128,
+   "n": 3959,
+   "share": 0.032,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "table of contents",
+   "projects": 128,
+   "n": 3959,
+   "share": 0.032,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "references",
+   "projects": 127,
+   "n": 3959,
+   "share": 0.032,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "contact",
+   "projects": 116,
+   "n": 3959,
+   "share": 0.029,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "configuration",
+   "projects": 114,
+   "n": 3959,
+   "share": 0.029,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "dependencies",
+   "projects": 110,
+   "n": 3959,
+   "share": 0.028,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "author",
+   "projects": 109,
+   "n": 3959,
+   "share": 0.028,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "introduction",
+   "projects": 106,
+   "n": 3959,
+   "share": 0.027,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "tech stack",
+   "projects": 97,
+   "n": 3959,
+   "share": 0.025,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "documentation",
+   "projects": 97,
+   "n": 3959,
+   "share": 0.025,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "acknowledgements",
+   "projects": 96,
+   "n": 3959,
+   "share": 0.024,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "project overview",
+   "projects": 95,
+   "n": 3959,
+   "share": 0.024,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "how it works",
+   "projects": 93,
+   "n": 3959,
+   "share": 0.023,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "install",
+   "projects": 87,
+   "n": 3959,
+   "share": 0.022,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "training",
+   "projects": 78,
+   "n": 3959,
+   "share": 0.02,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "how to run",
+   "projects": 78,
+   "n": 3959,
+   "share": 0.02,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "acknowledgments",
+   "projects": 78,
+   "n": 3959,
+   "share": 0.02,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "description",
+   "projects": 78,
+   "n": 3959,
+   "share": 0.02,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "development",
+   "projects": 72,
+   "n": 3959,
+   "share": 0.018,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "key features",
+   "projects": 67,
+   "n": 3959,
+   "share": 0.017,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "limitations",
+   "projects": 61,
+   "n": 3959,
+   "share": 0.015,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "notes",
+   "projects": 60,
+   "n": 3959,
+   "share": 0.015,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "technologies used",
+   "projects": 60,
+   "n": 3959,
+   "share": 0.015,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "or",
+   "projects": 57,
+   "n": 3959,
+   "share": 0.014,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "evaluation",
+   "projects": 56,
+   "n": 3959,
+   "share": 0.014,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "install dependencies",
+   "projects": 54,
+   "n": 3959,
+   "share": 0.014,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "authors",
+   "projects": 53,
+   "n": 3959,
+   "share": 0.013,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "abstract",
+   "projects": 52,
+   "n": 3959,
+   "share": 0.013,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "files",
+   "projects": 48,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "example",
+   "projects": 47,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "troubleshooting",
+   "projects": 47,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "</p>",
+   "projects": 46,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "examples",
+   "projects": 46,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "roadmap",
+   "projects": 46,
+   "n": 3959,
+   "share": 0.012,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "quickstart",
+   "projects": 45,
+   "n": 3959,
+   "share": 0.011,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "conclusion",
+   "projects": 43,
+   "n": 3959,
+   "share": 0.011,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "methodology",
+   "projects": 43,
+   "n": 3959,
+   "share": 0.011,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "testing",
+   "projects": 42,
+   "n": 3959,
+   "share": 0.011,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "status",
+   "projects": 41,
+   "n": 3959,
+   "share": 0.01,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "key findings",
+   "projects": 41,
+   "n": 3959,
+   "share": 0.01,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "how to use",
+   "projects": 40,
+   "n": 3959,
+   "share": 0.01,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "run",
+   "projects": 40,
+   "n": 3959,
+   "share": 0.01,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  },
+  {
+   "heading": "motivation",
+   "projects": 39,
+   "n": 3959,
+   "share": 0.01,
+   "note": "verbatim lower-cased headings used in ≥ 5 documented projects"
+  }
+ ]
+}

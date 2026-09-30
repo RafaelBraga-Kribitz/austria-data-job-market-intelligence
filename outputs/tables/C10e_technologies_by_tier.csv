@@ -1,0 +1,51 @@
+data_tier,item,count,n,share,ci_low,ci_high
+T1_bio_declared,Python,538,872,0.617,0.584,0.649
+T1_bio_declared,Jupyter,415,872,0.476,0.443,0.509
+T1_bio_declared,Data Visualization,333,872,0.382,0.35,0.415
+T1_bio_declared,Machine Learning,309,872,0.354,0.323,0.387
+T1_bio_declared,Bash/Shell,285,872,0.327,0.297,0.359
+T1_bio_declared,AI (generic),270,872,0.31,0.28,0.341
+T1_bio_declared,JavaScript,263,872,0.302,0.272,0.333
+T1_bio_declared,Public Sector/Research,188,872,0.216,0.19,0.244
+T1_bio_declared,pandas,169,872,0.194,0.169,0.221
+T1_bio_declared,R,158,872,0.181,0.157,0.208
+T1_bio_declared,REST APIs,151,872,0.173,0.149,0.2
+T1_bio_declared,NumPy,150,872,0.172,0.148,0.198
+T1_bio_declared,Generative AI / LLM,149,872,0.171,0.147,0.197
+T1_bio_declared,Classification,144,872,0.165,0.142,0.191
+T1_bio_declared,SQL,143,872,0.164,0.141,0.19
+T1_bio_declared,Statistics (general),136,872,0.156,0.133,0.182
+T1_bio_declared,Docker,132,872,0.151,0.129,0.177
+T1_bio_declared,matplotlib/seaborn,129,872,0.148,0.126,0.173
+T1_bio_declared,Segmentation/Clustering,128,872,0.147,0.125,0.172
+T1_bio_declared,PyTorch,127,872,0.146,0.124,0.171
+T1_bio_declared,scikit-learn,122,872,0.14,0.118,0.165
+T1_bio_declared,Deep Learning,120,872,0.138,0.116,0.162
+T1_bio_declared,C/C++,115,872,0.132,0.111,0.156
+T1_bio_declared,Predictive Analytics,113,872,0.13,0.109,0.154
+T1_bio_declared,Java,112,872,0.128,0.108,0.152
+T2_repo_evidenced,Python,803,946,0.849,0.825,0.87
+T2_repo_evidenced,Bash/Shell,599,946,0.633,0.602,0.663
+T2_repo_evidenced,Jupyter,569,946,0.601,0.57,0.632
+T2_repo_evidenced,Data Visualization,529,946,0.559,0.527,0.591
+T2_repo_evidenced,JavaScript,502,946,0.531,0.499,0.562
+T2_repo_evidenced,AI (generic),404,946,0.427,0.396,0.459
+T2_repo_evidenced,Public Sector/Research,335,946,0.354,0.324,0.385
+T2_repo_evidenced,Machine Learning,306,946,0.323,0.294,0.354
+T2_repo_evidenced,REST APIs,301,946,0.318,0.289,0.349
+T2_repo_evidenced,C/C++,294,946,0.311,0.282,0.341
+T2_repo_evidenced,Generative AI / LLM,268,946,0.283,0.256,0.313
+T2_repo_evidenced,Docker,247,946,0.261,0.234,0.29
+T2_repo_evidenced,Java,232,946,0.245,0.219,0.274
+T2_repo_evidenced,Deep Learning,232,946,0.245,0.219,0.274
+T2_repo_evidenced,NumPy,224,946,0.237,0.211,0.265
+T2_repo_evidenced,C#,219,946,0.232,0.206,0.259
+T2_repo_evidenced,Classification,218,946,0.23,0.205,0.258
+T2_repo_evidenced,Segmentation/Clustering,201,946,0.212,0.188,0.24
+T2_repo_evidenced,PyTorch,201,946,0.212,0.188,0.24
+T2_repo_evidenced,R,186,946,0.197,0.173,0.223
+T2_repo_evidenced,Statistics (general),180,946,0.19,0.167,0.217
+T2_repo_evidenced,matplotlib/seaborn,180,946,0.19,0.167,0.217
+T2_repo_evidenced,pandas,177,946,0.187,0.164,0.213
+T2_repo_evidenced,FastAPI/Flask,155,946,0.164,0.142,0.189
+T2_repo_evidenced,SQL,154,946,0.163,0.141,0.188

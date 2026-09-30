@@ -1,0 +1,17 @@
+entry_track,german_requirement,count,n,share,ci_low,ci_high
+intern_student,required_implied,15,42,0.357,0.23,0.508
+intern_student,not_mentioned,13,42,0.31,0.191,0.46
+intern_student,preferred,6,42,0.143,0.067,0.278
+intern_student,required,5,42,0.119,0.052,0.25
+intern_student,german_or_english,3,42,0.071,0.025,0.19
+rest,not_mentioned,269,646,0.416,0.379,0.455
+rest,required_implied,202,646,0.313,0.278,0.349
+rest,preferred,76,646,0.118,0.095,0.145
+rest,required,54,646,0.084,0.065,0.107
+rest,mentioned,42,646,0.065,0.048,0.087
+rest,explicitly_not_required,2,646,0.003,0.001,0.011
+rest,german_or_english,1,646,0.002,0.0,0.009
+trainee_junior,not_mentioned,16,31,0.516,0.348,0.68
+trainee_junior,required_implied,7,31,0.226,0.114,0.398
+trainee_junior,preferred,6,31,0.194,0.092,0.363
+trainee_junior,required,2,31,0.065,0.018,0.207

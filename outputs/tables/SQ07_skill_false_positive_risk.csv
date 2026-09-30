@@ -1,0 +1,17 @@
+skill,candidates,bio_mentions,repo_meta_used,readme_demonstrated,risk,note
+R,344,24,278,234,language-field only (reliable),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Go,82,0,81,11,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+C/C++,409,15,380,98,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Julia,45,2,28,24,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+AI (generic),674,377,376,363,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Cloud (generic),206,20,98,129,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Data Visualization,862,25,420,746,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Streaming,177,4,124,107,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Data Modeling,23,3,12,18,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Statistics (general),316,36,153,239,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Mathematics,82,26,42,32,generic word (indicative only),the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Excel,67,11,29,40,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+SAS,8,0,2,7,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+DAX/M,17,0,8,16,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Kafka,46,1,36,35,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading
+Airflow,29,1,17,24,check sample,the Layer 1 vocabulary was designed for job ads; README prose can trigger generic entries more often; project_demonstrated counts are the conservative reading

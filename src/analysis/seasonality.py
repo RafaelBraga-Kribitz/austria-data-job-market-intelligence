@@ -1,4 +1,4 @@
-"""Seasonality of Austrian labour demand -> outputs/tables/S*.csv, outputs/seasonality.json, figure F13.
+"""Seasonality of Austrian labour demand -> outputs/tables/S*.csv, outputs/seasonality.json.
 
 Two separate questions, two separate evidence layers:
 
@@ -25,7 +25,10 @@ Outputs: S01 seasonal index by sector x quarter (both methods, both samples)
          S03 sensitivity: full sample vs excluding 2020-2021 vs 2015+ only
          S04 level context: mean vacancies per quarter and sector, and the trend by year
          S05 why the posting snapshot cannot answer this (age/first-publish distribution)
-         outputs/seasonality.json, outputs/figures/F13_seasonality.png
+         S06 seasonal swing against the between-year (business-cycle) swing per sector
+         outputs/seasonality.json
+The figure is BQ03_seasonality (src/analysis/visual_questions_demand.py, built from S01 and S06). The
+legacy F13_seasonality.png answered the same question outside the figure manifest and is no longer written.
 """
 from __future__ import annotations
 
@@ -40,7 +43,6 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw" / "eurostat_jvs"
 PROC = ROOT / "data" / "processed"
 TAB = ROOT / "outputs" / "tables"
-FIG = ROOT / "outputs" / "figures"
 OUT = ROOT / "outputs"
 
 SECTOR_LABEL = {
@@ -182,55 +184,32 @@ def snapshot_negative_evidence() -> tuple[pd.DataFrame, dict]:
     return tbl, meta
 
 
-def make_figure(s01: pd.DataFrame) -> None:
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
+def season_vs_cycle(s01: pd.DataFrame, yr: pd.DataFrame) -> pd.DataFrame:
+    """S06: seasonal swing (strongest / weakest quarter index, full sample) against the between-year swing
+    (highest / lowest yearly mean, S04a) per sector. `ratio` = how many times larger the cycle is than the season.
+
+    min_year / max_year are the years of the lowest / highest yearly mean, not the ends of the series.
+    """
     full = s01[s01["sample"] == "full"]
-    sectors = [s for s in FOCUS if s in set(full.sector)]
-    labels = ["Q1 Jan-Mar", "Q2 Apr-Jun", "Q3 Jul-Sep", "Q4 Oct-Dec"]
-    colours = plt.rcParams["axes.prop_cycle"].by_key()["color"]
-    x = np.arange(4)
-    # Two panels on purpose: bars from zero encode magnitude honestly (the effect IS small);
-    # the dot panel zooms in so the pattern is legible without misusing bar length.
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12.5, 5.4), gridspec_kw={"width_ratios": [1, 1.15]})
-    width = 0.8 / max(len(sectors), 1)
-    for i, s in enumerate(sectors):
-        g = full[full.sector == s].sort_values("quarter")
-        ax1.bar(x + i * width, g.index_a_own_year_mean, width, color=colours[i % len(colours)],
-                label=f"{s} — {SECTOR_LABEL[s].split('(')[0].strip()}")
-    ax1.axhline(1.0, color="black", lw=1, ls="--")
-    ax1.set_xticks(x + width * (len(sectors) - 1) / 2)
-    ax1.set_xticklabels(labels, fontsize=8)
-    ax1.set_ylabel("seasonal index (1.00 = average quarter)")
-    ax1.set_title("Magnitude: axis from 0\nthe seasonal effect is 5-14% end to end", fontsize=9)
-
-    for i, s in enumerate(sectors):
-        g = full[full.sector == s].sort_values("quarter")
-        err = np.vstack([g.index_a_own_year_mean - g.ci_low, g.ci_high - g.index_a_own_year_mean])
-        ax2.errorbar(x + (i - (len(sectors) - 1) / 2) * 0.16, g.index_a_own_year_mean, yerr=err,
-                     fmt="o", capsize=3, ms=5, color=colours[i % len(colours)],
-                     label=f"{s} — {SECTOR_LABEL[s].split('(')[0].strip()}")
-    ax2.axhline(1.0, color="black", lw=1, ls="--")
-    ax2.set_xticks(x)
-    ax2.set_xticklabels(labels, fontsize=8)
-    ax2.set_xlim(-0.5, 3.5)
-    ax2.grid(axis="y", alpha=0.3)
-    ax2.set_title("Pattern: zoomed axis, 95% CI across the 17 years\n"
-                  "Q4 is the weakest quarter in every aggregate", fontsize=9)
-    ax2.legend(fontsize=7, loc="lower left")
-
-    fig.suptitle("Austria: seasonality of open job vacancies, 2009-2025 (n = 17 years)\n"
-                 "Eurostat JVS jvs_q_nace2, non-seasonally-adjusted; index = quarter / own-year mean. "
-                 "No occupation or regional detail: not specific to data roles or to Styria.", fontsize=9.5)
-    fig.tight_layout(rect=(0, 0, 1, 0.90))
-    fig.savefig(FIG / "F13_seasonality.png", dpi=150)
-    plt.close(fig)
+    rows = []
+    for s in FOCUS:
+        idx = full[full.sector == s].index_a_own_year_mean
+        y = yr[yr.sector == s]
+        if idx.empty or y.empty:
+            continue
+        lo, hi = y.loc[y.mean_vacancies.idxmin()], y.loc[y.mean_vacancies.idxmax()]
+        seasonal = (idx.max() / idx.min() - 1) * 100
+        between = (hi.mean_vacancies / lo.mean_vacancies - 1) * 100
+        rows.append({"sector": s, "seasonal_spread_pct": round(float(seasonal), 1), "between_year_spread_pct": round(float(between), 1),
+                     "ratio": round(float(between / seasonal), 1) if seasonal else None,
+                     "sd_seasonal_index": round(float(idx.std(ddof=0)), 3),
+                     "cv_year_means": round(float(y.mean_vacancies.std(ddof=1) / y.mean_vacancies.mean()), 3),
+                     "min_year": int(lo.year), "max_year": int(hi.year), "min_val": int(lo.mean_vacancies), "max_val": int(hi.mean_vacancies)})
+    return pd.DataFrame(rows)
 
 
 def main() -> None:
     TAB.mkdir(parents=True, exist_ok=True)
-    FIG.mkdir(parents=True, exist_ok=True)
     df = load_jvs()
 
     s01 = pd.concat([seasonal_table(df, s) for s in ("full", "excl_covid", "from_2015")], ignore_index=True)
@@ -267,7 +246,8 @@ def main() -> None:
     if not s05.empty:
         s05.to_csv(TAB / "S05_snapshot_age_distribution.csv", index=False)
 
-    make_figure(s01)
+    s06 = season_vs_cycle(s01, yr)
+    s06.to_csv(TAB / "S06_season_vs_cycle.csv", index=False)
 
     full = s01[s01["sample"] == "full"]
     summary = {}

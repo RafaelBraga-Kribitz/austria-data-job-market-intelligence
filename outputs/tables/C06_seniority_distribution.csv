@@ -1,0 +1,12 @@
+seniority,count,n,share,ci_low,ci_high,population,note
+unlabelled,596,872,0.683,0.652,0.713,P_T1,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+student,147,872,0.169,0.145,0.195,P_T1,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+senior,48,872,0.055,0.042,0.072,P_T1,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+lead_head,42,872,0.048,0.036,0.064,P_T1,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+junior,39,872,0.045,0.033,0.061,P_T1,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+unlabelled,1059,1818,0.583,0.56,0.605,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+unknown,295,1818,0.162,0.146,0.18,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+student,271,1818,0.149,0.133,0.166,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+lead_head,77,1818,0.042,0.034,0.053,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+senior,69,1818,0.038,0.03,0.048,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio
+junior,47,1818,0.026,0.019,0.034,P_data,explicit bio wording only; 'unlabelled' = bio without a seniority word; 'unknown' = no bio

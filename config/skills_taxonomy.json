@@ -299,6 +299,7 @@
     ],
     "LangChain/LLM frameworks": [
       "langchain",
+      "langgraph",
       "llamaindex",
       "llama-index"
     ]
@@ -308,7 +309,9 @@
       "\\bdbt\\b"
     ],
     "Airflow": [
-      "airflow"
+      "airflow",
+      "dagster",
+      "\\bprefect\\b"
     ],
     "Spark": [
       "\\bspark\\b",
@@ -379,6 +382,13 @@
       "vertex ai",
       "azure ml"
     ],
+    "Experiment tracking": [
+      "\\bmlflow\\b",
+      "weights\\s*&?\\s*biases?",
+      "\\bwandb\\b",
+      "tensorboard",
+      "\\bdvc\\b"
+    ],
     "Data Modeling": [
       "data ?model(?:l)?ing",
       "datenmodellierung",
@@ -438,6 +448,68 @@
       "prompt engineering",
       "foundation model",
       "copilot"
+    ],
+    "RAG": [
+      "\\brag\\b",
+      "retrieval[\\s-]*augmented"
+    ],
+    "Vector DBs": [
+      "vector\\s*(database|db|store)",
+      "qdrant",
+      "pinecone",
+      "weaviate",
+      "milvus",
+      "pgvector",
+      "\\bfaiss\\b",
+      "chroma ?db"
+    ],
+    "AI agents / tool-calling": [
+      "agentic",
+      "multi[\\s-]?agent",
+      "\\bai[\\s-]*agents?\\b",
+      "agent\\s*framework",
+      "function\\s*calling",
+      "tool[\\s-]*calling",
+      "\\bmcp\\b",
+      "model context protocol",
+      "langgraph"
+    ],
+    "Fine-tuning / LoRA / PEFT": [
+      "fine[\\s-]*tun",
+      "\\blora\\b",
+      "\\bqlora\\b",
+      "\\bpeft\\b",
+      "adapter[\\s-]*(training|tuning)"
+    ],
+    "Local LLM serving": [
+      "\\bvllm\\b",
+      "text[\\s-]*generation[\\s-]*inference",
+      "tensorrt[\\s-]*llm",
+      "\\bollama\\b",
+      "llama\\.cpp",
+      "openvino"
+    ],
+    "Multimodal / VLM": [
+      "multimodal",
+      "multi[\\s-]*modal",
+      "vision[\\s-]*language",
+      "\\bvlms?\\b"
+    ],
+    "Prompt engineering": [
+      "prompt\\s*engineer",
+      "prompt\\s*design",
+      "prompt[- ]engineering"
+    ],
+    "EU AI Act / AI governance": [
+      "ai\\s*act",
+      "ki[- ]verordnung",
+      "eu[- ]ki[- ]verordnung",
+      "ai\\s*governance",
+      "responsible\\s*ai",
+      "\\bguardrail"
+    ],
+    "ROS / ROS 2": [
+      "\\bros\\s*2?\\b"
     ],
     "AI (generic)": [
       "\\bai\\b",
@@ -646,6 +718,14 @@
       "predictive maintenance",
       "quality (?:data|engineering)",
       "qualitätsdaten"
+    ],
+    "Industry 4.0 / MES / OPC UA": [
+      "industrie\\s*4\\.0",
+      "industry\\s*4\\.0",
+      "opc[\\s-]*ua",
+      "\\bmes\\b",
+      "digital(e[nr]?)?\\s*zwillin",
+      "digital\\s*twin"
     ],
     "Healthcare/Pharma/Bio": [
       "healthcare",

@@ -13,9 +13,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 TAB = ROOT / "outputs" / "tables"
 FIG = ROOT / "outputs" / "figures"
-FIG.mkdir(parents=True, exist_ok=True)
 S = json.load(open(ROOT / "outputs" / "market_summary.json", encoding="utf-8"))
-PERIOD = f"postings collected {S['collected_at_range']['min'][:10]}; posted {S['posted_date_range']['min']} to {S['posted_date_range']['max']}"
+PERIOD = f"postings collected {S['collected_at_range']['min'][:10]}; core ads posted {S['posted_date_range']['min']} to {S['posted_date_range']['max']}"
 SRC = "Sources: EURES/AMS, karriere.at, LinkedIn, willhaben, jobs.at (deduplicated)"
 plt.rcParams.update({"figure.dpi": 130, "font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
 
@@ -23,6 +22,7 @@ plt.rcParams.update({"figure.dpi": 130, "font.size": 9, "axes.spines.top": False
 def foot(ax, n, extra=""):
     # Anchored below the whole figure (not at a fixed axes fraction) so rotated tick labels
     # can never overlap it; bbox_inches="tight" at save time includes it in the PNG.
+    # (Fix made in the public repository on 2026-09-17, ported back 2026-09-30.)
     ax.figure.text(0.01, -0.02, f"n = {n}. {SRC}. {PERIOD}. {extra}", fontsize=6.5, color="#555", ha="left", va="top", wrap=True)
 
 
@@ -40,6 +40,7 @@ def barh(df, cat, val, title, fname, n, xlabel, top=25, extra="", ci=None):
 
 
 def main():
+    FIG.mkdir(parents=True, exist_ok=True)
     c = S["counts"]
     # F01 role families
     fam = pd.read_csv(TAB / "T02_role_family_counts.csv")
@@ -103,7 +104,7 @@ def main():
     barh(se, "seniority", "count", "Seniority signal in titles (core postings)", "F09_seniority.png", int(se.n.iloc[0]), "Unique postings", extra="'unspecified' = no seniority word in the title.")
     # F10 employers Styria
     es = pd.read_csv(TAB / "T04a_employers_styria.csv").head(25)
-    barh(es, "example_company", "styria", "Employers with most core data-role postings in Styria", "F10_employers_styria.png", c["styria_core"], "Unique postings in Styria")
+    barh(es, "example_company", "styria", "Employers with most core data-role postings in Styria", "F10_employers_styria.png", c["styria_core"], "Postings listing a Styrian site (any-site basis)")
     # F11 JobBarometer yearly (if available)
     p = TAB / "JB01_yearly_counts_long.csv"
     if p.exists():
@@ -134,6 +135,24 @@ def main():
     ax.set_title("Skill co-occurrence: share of postings mentioning both (diagonal = single skill)", loc="left", fontsize=10, weight="bold")
     ax.annotate(f"n = {int(sk.n.iloc[0])} core postings with description. {SRC}.", xy=(0, -0.3), xycoords="axes fraction", fontsize=6.5, color="#555")
     fig.tight_layout(); fig.savefig(FIG / "F12_cooccurrence.png", bbox_inches="tight"); plt.close(fig)
+    # F14 intern vs junior skill divergence (top |pp|)
+    p17 = TAB / "T17_skill_divergence_intern_vs_junior.csv"
+    if p17.exists():
+        d17 = pd.read_csv(p17)
+        d17 = d17[d17.junior_minus_intern_pp.notna()].copy()
+        d17["abs_pp"] = d17.junior_minus_intern_pp.abs()
+        d17 = d17.sort_values("abs_pp", ascending=False).head(16).iloc[::-1]
+        if len(d17):
+            fig, ax = plt.subplots(figsize=(8, 0.32 * len(d17) + 1.8))
+            colors = ["#dd6b20" if v > 0 else "#2b6cb0" for v in d17.junior_minus_intern_pp]
+            ax.barh(d17.skill.astype(str), d17.junior_minus_intern_pp, color=colors)
+            ax.axvline(0, color="#333", lw=0.6)
+            ax.set_xlabel("Junior share − intern share (percentage points)")
+            ax.set_title("What changes from intern/Werkstudent to junior titles", loc="left", fontsize=10, weight="bold")
+            n_i = int(d17.intern_n.iloc[0]) if "intern_n" in d17 else 0
+            n_j = int(d17.junior_n.iloc[0]) if "junior_n" in d17 else 0
+            foot(ax, n_i + n_j, f"Intern n={n_i}, junior n={n_j}; cells with n<30 are tentative (T17). Orange = more common in junior ads.")
+            fig.tight_layout(); fig.savefig(FIG / "F14_intern_vs_junior_skills.png", bbox_inches="tight"); plt.close(fig)
     print("figures:", sorted(p.name for p in FIG.glob("*.png")))
 
 

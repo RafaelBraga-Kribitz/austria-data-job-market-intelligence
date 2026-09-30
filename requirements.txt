@@ -1,11 +1,17 @@
-# Python 3.12 (tested with 3.12.10 on Windows 11). Versions pinned to those used for the 2026-09-16 run.
-requests>=2.32
+# Python 3.12 (tested with 3.12.10 on Windows 11). Every direct dependency is pinned to the version installed on the
+# author's machine for the 2026-09-30 re-run (python -m pip freeze); run_all.py records the installed versions of this list,
+# the Python version and the git commit of every run in outputs/run_manifest.json.
+requests==2.34.2
 pandas==2.3.3
 numpy==2.5.1
 scikit-learn==1.9.0
-scipy>=1.14
-matplotlib>=3.9
-pyarrow>=17
-lxml>=5
-beautifulsoup4>=4.12
-pytest>=8
+scipy==1.18.0
+matplotlib==3.11.1
+# technology co-occurrence network figure SF11 (src/analysis/supply_figures.py)
+networkx==3.6.1
+# pyarrow 25.0.1 is blocked by Windows Application Control on the author's machine (pandas import fails); 24.0.0 works
+pyarrow==24.0.0
+# time-zone database for zoneinfo("Europe/Vienna") in the collectors (src/acquisition/common.py); Windows ships none
+tzdata==2026.3
+pytest==9.1.1
+# HTML parsing (lxml, beautifulsoup4) is used only by the private hunter: see src/private/radar/requirements.txt

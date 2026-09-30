@@ -1,0 +1,14 @@
+education_level,count,n,share,ci_low,ci_high,population,note
+Master,255,1818,0.14,0.125,0.157,P_data,wording in bios and project READMEs; absence ≠ no degree
+Student (current),246,1818,0.135,0.12,0.152,P_data,wording in bios and project READMEs; absence ≠ no degree
+PhD,163,1818,0.09,0.077,0.104,P_data,wording in bios and project READMEs; absence ≠ no degree
+Bachelor,93,1818,0.051,0.042,0.062,P_data,wording in bios and project READMEs; absence ≠ no degree
+Bootcamp,17,1818,0.009,0.006,0.015,P_data,wording in bios and project READMEs; absence ≠ no degree
+HTL/Matura,3,1818,0.002,0.001,0.005,P_data,wording in bios and project READMEs; absence ≠ no degree
+Master,145,872,0.166,0.143,0.192,P_T1,wording in bios and project READMEs; absence ≠ no degree
+Student (current),141,872,0.162,0.139,0.188,P_T1,wording in bios and project READMEs; absence ≠ no degree
+PhD,63,872,0.072,0.057,0.091,P_T1,wording in bios and project READMEs; absence ≠ no degree
+Bachelor,49,872,0.056,0.043,0.074,P_T1,wording in bios and project READMEs; absence ≠ no degree
+Bootcamp,10,872,0.011,0.006,0.021,P_T1,wording in bios and project READMEs; absence ≠ no degree
+no education wording observable,1259,1818,0.693,0.671,0.713,P_data,wording in bios and project READMEs; absence ≠ no degree
+no education wording observable,571,872,0.655,0.623,0.686,P_T1,wording in bios and project READMEs; absence ≠ no degree

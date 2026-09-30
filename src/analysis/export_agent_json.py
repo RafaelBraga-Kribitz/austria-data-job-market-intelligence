@@ -2,10 +2,17 @@
 
 Each file states its denominator and vintage. career_paths.json is written by hand
 (docs/career-map.md is the source) because it encodes judgement, not just counts.
+
+Regional counts come on two bases (market_summary.json `count_basis`): the primary
+`state` field (T03a; Styria 54 / Vienna 343 in the 2026-09-16 run) and the
+any-listed-site flags (styria_core / vienna_core 58 / 350, T04a `styria`,
+*_by_styria tables). Both are exported and labelled: META["regional_count_basis"]
+and the per-section `section_basis` in locations.json.
 """
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -14,11 +21,24 @@ ROOT = Path(__file__).resolve().parents[2]
 TAB = ROOT / "outputs" / "tables"
 OUT = ROOT / "outputs"
 S = json.load(open(OUT / "market_summary.json", encoding="utf-8"))
-META = {"vintage": S["collected_at_range"], "posted_date_range": S["posted_date_range"], "analysis_set": S["analysis_set_definition"], "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline."}
+META = {"vintage": S["collected_at_range"], "posted_date_range": S["posted_date_range"], "analysis_set": S["analysis_set_definition"],
+        "regional_count_basis": S.get("count_basis", {}),
+        "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline."}
+MISSING: list[str] = []
 
 
 def rec(df, n=None):
     return json.loads(df.head(n).to_json(orient="records")) if n else json.loads(df.to_json(orient="records"))
+
+
+def optional(name: str, n=None) -> list:
+    """Records of an optional table; a missing table is reported, not silently exported as []."""
+    p = TAB / name
+    if not p.exists():
+        MISSING.append(name)
+        print(f"WARNING: {name} is missing - its section is exported empty; run the step that writes it", file=sys.stderr)
+        return []
+    return rec(pd.read_csv(p), n)
 
 
 def main():
@@ -32,7 +52,9 @@ def main():
         cats[c] = rec(pd.read_csv(TAB / f"T05_skills_{c}.csv"), 25)
     by_fam = {f: rec(g.sort_values("count", ascending=False), 20) for f, g in fam.groupby("role_family")}
     json.dump({**META, "denominator": int(st.n.iloc[0]) if len(st) else None, "top_tech_overall": rec(st, 40), "by_category": cats, "by_family_top20": by_fam,
-               "styria_vs_rest": rec(sty), "top_cooccurrence_pairs": rec(co, 40)}, open(OUT / "skills.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+               "styria_vs_rest": rec(sty), "top_cooccurrence_pairs": rec(co, 40),
+               "topic_demand": optional("T05f_topic_demand.csv"),
+               "intern_vs_junior": optional("T17_skill_divergence_intern_vs_junior.csv", 40)}, open(OUT / "skills.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     # roles
     json.dump({**META, "families": rec(pd.read_csv(TAB / "T02_role_family_counts.csv")), "adjacent_families": rec(pd.read_csv(TAB / "T02a_adjacent_family_counts.csv")),
                "normalized_titles": rec(pd.read_csv(TAB / "T02b_normalized_title_counts.csv")), "top_raw_titles": rec(pd.read_csv(TAB / "T02c_top_raw_titles.csv"), 60),
@@ -41,10 +63,13 @@ def main():
               open(OUT / "roles.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     # locations
     fb = pd.read_csv(TAB / "T03_family_by_state.csv")
-    json.dump({**META, "summary": rec(pd.read_csv(TAB / "T03d_geo_summary.csv")), "states": rec(pd.read_csv(TAB / "T03a_state_counts.csv")), "geo_scope": rec(pd.read_csv(TAB / "T03b_geo_scope.csv")),
+    json.dump({**META, "section_basis": {"states, family_by_state": "primary state (one state per ad)",
+                                         "summary, geo_scope, styria_cities, employers_styria_top.styria, remote_by_styria": "any listed site (multi-site ads count in every region they list)"},
+               "summary": rec(pd.read_csv(TAB / "T03d_geo_summary.csv")), "states": rec(pd.read_csv(TAB / "T03a_state_counts.csv")), "geo_scope": rec(pd.read_csv(TAB / "T03b_geo_scope.csv")),
                "family_by_state": json.loads(fb.to_json(orient="records")), "styria_cities": rec(pd.read_csv(TAB / "T03c_styria_cities.csv")),
                "employers_styria_top": rec(pd.read_csv(TAB / "T04a_employers_styria.csv"), 40), "employers_top": rec(pd.read_csv(TAB / "T04_employers.csv"), 40),
                "employer_concentration": rec(pd.read_csv(TAB / "T04b_employer_concentration.csv")),
+               "dual_track_employers": optional("T04d_dual_track_employers.csv", 40),
                "remote_overall": rec(pd.read_csv(TAB / "T10_remote_overall.csv")), "remote_by_family": rec(pd.read_csv(TAB / "T10_remote_by_family.csv")), "remote_by_styria": rec(pd.read_csv(TAB / "T10_remote_by_styria.csv"))},
               open(OUT / "locations.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     # languages
@@ -62,6 +87,8 @@ def main():
                "definitions": {"salary_min_annual_eur": "advertised MINIMUM gross annual salary in EUR; monthly figures ×14 (Austrian convention); mostly collective-agreement floors, not offers", "salary_max_annual_eur": "upper end when a range was advertised", "third_party_surveys": "NOT included here; see docs/salary-context.md"}},
               open(OUT / "salaries.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("wrote skills/roles/locations/languages/salaries json")
+    if MISSING:
+        print(f"WARNING: {len(MISSING)} optional table(s) missing, exported as empty lists: {', '.join(MISSING)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

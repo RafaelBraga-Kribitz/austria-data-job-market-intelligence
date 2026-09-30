@@ -1,0 +1,15 @@
+reg,item,count,n,share,ci_low,ci_high
+Steiermark,Master,9,56,0.161,0.087,0.278
+Steiermark,PhD,9,56,0.161,0.087,0.278
+Steiermark,Student (current),6,56,0.107,0.05,0.215
+Steiermark,Bachelor,2,56,0.036,0.01,0.121
+Wien,Master,88,478,0.184,0.152,0.221
+Wien,Student (current),86,478,0.18,0.148,0.217
+Wien,PhD,34,478,0.071,0.051,0.098
+Wien,Bachelor,28,478,0.059,0.041,0.083
+Wien,Bootcamp,8,478,0.017,0.009,0.033
+other/unspecified,Student (current),49,338,0.145,0.111,0.186
+other/unspecified,Master,48,338,0.142,0.109,0.183
+other/unspecified,PhD,20,338,0.059,0.039,0.09
+other/unspecified,Bachelor,19,338,0.056,0.036,0.086
+other/unspecified,Bootcamp,2,338,0.006,0.002,0.021

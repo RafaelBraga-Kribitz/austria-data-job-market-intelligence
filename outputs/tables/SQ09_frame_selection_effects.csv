@@ -1,0 +1,4 @@
+frame,n,has_bio,T1,data_signal,median_repos,push_12m,student_T1,note
+A,2395,0.944,0.361,0.534,4.0,0.538,0.169,frame A over-represents accounts that write data words in bios; frame B is the population of Styrian accounts with ≥ 1 repo; frame C is a base-rate sample
+B,2023,0.407,0.026,0.122,3.0,0.425,0.154,frame A over-represents accounts that write data words in bios; frame B is the population of Styrian accounts with ≥ 1 repo; frame C is a base-rate sample
+C,5649,0.41,0.029,0.113,3.0,0.45,0.195,frame A over-represents accounts that write data words in bios; frame B is the population of Styrian accounts with ≥ 1 repo; frame C is a base-rate sample

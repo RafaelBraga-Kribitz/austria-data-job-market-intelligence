@@ -1,16 +1,19 @@
 """Validation tests: rule behaviour on known inputs + integrity of processed outputs.
-Run: python -m pytest tests -q
+Run: python -m pytest tests -q   (module paths come from pyproject.toml)
+
+The integrity checks on the postings file run twice: on the synthetic postings built by conftest.py (everywhere) and on
+the private data/processed/postings_dedup.jsonl (skipped loudly when it is absent). The analysis smoke test runs
+run_analysis.py and data_quality.py end to end on the synthetic postings in a temporary folder.
 """
 import json
-import sys
 from pathlib import Path
 
 import pandas as pd
 import pytest
 
+import normalize as N
+
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src" / "pipeline"))
-import normalize as N  # noqa: E402
 
 PROC = ROOT / "data" / "processed"
 TAB = ROOT / "outputs" / "tables"
@@ -165,13 +168,13 @@ def test_skills_extraction():
     assert not sk2["has_r"]
 
 
-# ---------------- integrity tests on processed data (skipped if pipeline not run)
-@pytest.fixture(scope="module")
-def dedup():
-    p = PROC / "postings_dedup.jsonl"
-    if not p.exists():
-        pytest.skip("pipeline outputs not present")
-    return pd.read_json(p, lines=True)
+# ---------------- integrity tests on processed data: synthetic postings everywhere, private postings when present
+@pytest.fixture(scope="module", params=["synthetic", "private"])
+def dedup(request):
+    if request.param == "synthetic":
+        return request.getfixturevalue("synthetic_dedup")
+    from conftest import require
+    return pd.read_json(require(PROC / "postings_dedup.jsonl", "processed Layer 1 postings"), lines=True)
 
 
 def test_uids_unique(dedup):
@@ -206,19 +209,14 @@ def test_family_values(dedup):
     assert set(dedup.role_family.unique()) <= fams
 
 
-def test_table_shares_consistent():
-    p = TAB / "T02_role_family_counts.csv"
-    if not p.exists():
-        pytest.skip("tables not present")
-    t = pd.read_csv(p)
+def test_table_shares_consistent(require_input):
+    t = pd.read_csv(require_input(TAB / "T02_role_family_counts.csv", "Layer 1 table T02"))
     assert abs(t.share.sum() - 1) < 0.02 and (t["count"].sum() == t.n.iloc[0])
     st = pd.read_csv(TAB / "T05_skills_all_tech.csv")
     assert (st["count"] <= st.n).all() and ((st.share - st["count"] / st.n).abs() < 0.001).all()
 
 
 # ---------------- seasonality (D-015): the index must recover a known seasonal pattern
-sys.path.insert(0, str(ROOT / "src" / "analysis"))
-
 
 def _synthetic_quarterly(mult, years=12, base=1000.0, q_growth=1.0, y_growth=1.0):
     """Series with a known multiplicative seasonal pattern on a trend.
@@ -286,11 +284,8 @@ def test_centred_moving_average_weights():
     assert pd.isna(out.cma.iloc[0]) and pd.isna(out.cma.iloc[-1])
 
 
-def test_seasonality_tables_consistent():
-    p = TAB / "S01_seasonal_index.csv"
-    if not p.exists():
-        pytest.skip("seasonality tables not present")
-    s = pd.read_csv(p)
+def test_seasonality_tables_consistent(require_input):
+    s = pd.read_csv(require_input(TAB / "S01_seasonal_index.csv", "seasonality table S01"))
     full = s[s["sample"] == "full"]
     # the four quarterly indices of a sector must average to ~1 by construction
     for sector, g in full.groupby("sector"):
@@ -306,12 +301,10 @@ def test_seasonality_is_robust_to_duplicated_raw_observations(tmp_path, monkeypa
     """Regression: re-running the collector on the same day used to append, duplicating every
     observation, which silently produced an empty seasonal index (caught by the clean-clone check)."""
     import seasonality as S
-    raw = json.load(open(ROOT / "outputs" / "seasonality.json", encoding="utf-8")) if (ROOT / "outputs" / "seasonality.json").exists() else None
-    if raw is None:
-        pytest.skip("seasonality outputs not present")
-    files = sorted((ROOT / "data" / "raw" / "eurostat_jvs").glob("*/jvs_q_nace2_at.jsonl")) if (ROOT / "data" / "raw" / "eurostat_jvs").exists() else []
+    from conftest import require
+    files = sorted(require(ROOT / "data" / "raw" / "eurostat_jvs", "Eurostat JVS raw folder (public, tracked)").glob("*/jvs_q_nace2_at.jsonl"))
     if not files:
-        pytest.skip("eurostat raw file not present")
+        pytest.skip("MISSING DATA: no data/raw/eurostat_jvs/<date>/jvs_q_nace2_at.jsonl - this regression check did NOT run")
     src = files[-1]
     dup_dir = tmp_path / "eurostat_jvs" / "2026-01-01"
     dup_dir.mkdir(parents=True)
@@ -324,3 +317,44 @@ def test_seasonality_is_robust_to_duplicated_raw_observations(tmp_path, monkeypa
     assert not t.empty and t.n_years.max() >= 10
     for sector, g in t.groupby("sector"):
         assert g.sort_values("index_a_own_year_mean").iloc[0].quarter == "Q4", sector
+
+
+# ---------------- analysis smoke test (H2/M85): run_analysis.py and data_quality.py end to end on synthetic postings
+def test_run_analysis_and_data_quality_smoke(synthetic_dedup, tmp_path, monkeypatch):
+    import data_quality as DQ
+    import run_analysis as RA
+    proc, tab, out = tmp_path / "processed", tmp_path / "tables", tmp_path / "outputs"
+    for p in (proc, tab, out):
+        p.mkdir()
+    synthetic_dedup.to_json(proc / "postings_dedup.jsonl", orient="records", lines=True, force_ascii=False)
+    for mod in (RA, DQ):
+        monkeypatch.setattr(mod, "PROC", proc)
+        monkeypatch.setattr(mod, "TAB", tab)
+        monkeypatch.setattr(mod, "OUT", out)
+    RA.main()
+    DQ.main()
+
+    core = synthetic_dedup[synthetic_dedup.is_canonical & synthetic_dedup.role_family.isin(RA.CORE_FAMILIES)]
+    summary = json.loads((out / "market_summary.json").read_text(encoding="utf-8"))
+    assert summary["counts"]["raw_rows_all_sources"] == len(synthetic_dedup)
+    assert summary["counts"]["core_canonical"] == len(core)
+    assert summary["counts"]["styria_core"] == int(core.is_styria.sum())
+
+    # every table the digest and the visual layer read from run_analysis/data_quality is written and carries n
+    for name in ("T01_source_coverage", "T02_role_family_counts", "T03a_state_counts", "T04a_employers_styria",
+                 "T05_skills_all_tech", "T07_german_requirement_by_overall", "T08_seniority_overall", "T09_salary_coverage",
+                 "T10_remote_overall", "T11e_degree_requirement_strength", "T14_family_profiles", "T17_skill_divergence_intern_vs_junior",
+                 "Q01_missingness", "Q02_coverage_by_source_core", "Q04_duplicates", "Q05a_stale"):
+        assert (tab / f"{name}.csv").exists(), name
+    t02 = pd.read_csv(tab / "T02_role_family_counts.csv")
+    assert t02["count"].sum() == t02.n.iloc[0] == len(core)
+    assert abs(t02.share.sum() - 1) < 0.02
+    t05 = pd.read_csv(tab / "T05_skills_all_tech.csv")
+    assert (t05["count"] <= t05.n).all() and ((t05.share - t05["count"] / t05.n).abs() < 0.001).all()
+    assert {"Python", "SQL", "Power BI"} <= set(t05.skill)
+    t03 = pd.read_csv(tab / "T03a_state_counts.csv")
+    assert t03["count"].sum() == len(core)
+    # the Styria employer table counts Styrian core postings, so its column sum equals the Styrian core count
+    t04a = pd.read_csv(tab / "T04a_employers_styria.csv")
+    assert t04a.styria.sum() == summary["counts"]["styria_core"]
+    assert json.loads((out / "data_quality.json").read_text(encoding="utf-8"))

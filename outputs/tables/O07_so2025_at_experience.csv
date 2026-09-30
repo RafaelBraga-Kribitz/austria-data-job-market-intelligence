@@ -1,0 +1,7 @@
+variable,population,n,median,q1,q3,mean,source,source_quality
+YearsCode,all AT respondents,406,15.0,10.0,25.0,17.7,Stack Overflow Developer Survey 2025 (AT),B
+YearsCode,AT data-role respondents,29,11.0,9.0,15.0,12.9,Stack Overflow Developer Survey 2025 (AT),B
+YearsCode,AT professional developers,317,16.0,10.0,25.0,17.8,Stack Overflow Developer Survey 2025 (AT),B
+WorkExp,all AT respondents,392,11.0,5.0,20.0,13.5,Stack Overflow Developer Survey 2025 (AT),B
+WorkExp,AT data-role respondents,29,9.0,6.0,12.0,11.0,Stack Overflow Developer Survey 2025 (AT),B
+WorkExp,AT professional developers,314,10.0,5.0,18.75,12.6,Stack Overflow Developer Survey 2025 (AT),B

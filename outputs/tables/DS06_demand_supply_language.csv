@@ -1,0 +1,4 @@
+dimension,region,demand_english_written_ads,demand_german_required_or_level_stated,demand_n,demand_english_share,demand_german_req_share,supply_n,bio_classified,bio_en,bio_de,readme_classified,readme_any_de,readme_en_only,supply_bio_en_share,supply_readme_en_only_share,demand_table,supply_population,note
+language,Austria,174.0,285.0,719.0,0.242,0.396,1818,1296,1287,6,1448,61,1384,0.993,0.956,T07/T07c/T07e,P_data,"supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"
+language,Steiermark,,,,,,248,125,125,0,227,12,215,1.0,0.947,T07/T07c/T07e,P_data,"supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"
+language,Wien,,,,,,802,623,618,3,611,21,588,0.992,0.962,T07/T07c/T07e,P_data,"supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"

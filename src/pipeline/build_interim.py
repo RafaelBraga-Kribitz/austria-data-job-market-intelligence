@@ -3,18 +3,32 @@
 Input : data/raw/<source>/<date>/listings.jsonl (+ details.jsonl)
 Output: data/processed/interim_postings.parquet + .jsonl
         (raw-ish: source-native fields mapped to a common schema, no
-        interpretation yet; description kept in full).
+        interpretation yet; description kept in full)
+        data/processed/interim_build_manifest.json (run folder used per
+        source, row counts, skipped malformed JSON lines)
 
-Nothing is dropped here. Duplicates across queries are collapsed per source
+Usage: python src/pipeline/build_interim.py [--date YYYY-MM-DD]
+  Without --date the newest folder named exactly YYYY-MM-DD is used per source;
+  folders with a suffix (e.g. a test subset "2026-09-16_test") are never picked
+  automatically. With --date every source must have that folder.
+
+No posting is dropped here. Duplicates across queries are collapsed per source
 (same source_id) keeping the earliest collected envelope and the list of
-queries that surfaced the posting (used for query-coverage analysis).
+queries that surfaced the posting (used for query-coverage analysis). Raw lines
+that are not valid JSON are skipped, counted per file, printed and recorded in
+the manifest.
+
+Scope: the five Layer 1 job-board sources (eures, karriere, linkedin,
+willhaben, jobsat). Arbeitnow and the radar feed (data/raw/arbeitnow,
+data/raw/radar; D-022/D-023) are intentionally a separate supplement
+(src/analysis/supplement_radar.py) and do not go through normalize/dedupe.
 """
 from __future__ import annotations
 
+import argparse
 import html
 import json
 import re
-import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,7 +38,10 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "data" / "processed"
-OUT.mkdir(parents=True, exist_ok=True)
+RUN_DIR_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+RUN_DATE: str | None = None          # set by --date; None = newest dated folder
+SKIPPED_LINES: dict[str, int] = defaultdict(int)   # file -> malformed JSON lines
+RUNS_USED: dict[str, str | None] = {}
 
 
 def strip_html(s: str | None) -> str | None:
@@ -49,14 +66,25 @@ def read_jsonl(p: Path):
                 try:
                     yield json.loads(line)
                 except json.JSONDecodeError:
+                    SKIPPED_LINES[p.relative_to(ROOT).as_posix() if p.is_relative_to(ROOT) else str(p)] += 1
                     continue
 
 
 def latest_run(source: str) -> Path | None:
+    """Run folder for a source: RAW/<source>/<RUN_DATE> when --date is given
+    (missing folder = error), else the newest folder named exactly YYYY-MM-DD."""
     d = RAW / source
+    if RUN_DATE:
+        run = d / RUN_DATE
+        if not run.is_dir():
+            raise SystemExit(f"build_interim: --date {RUN_DATE} given but {run} does not exist")
+        RUNS_USED[source] = run.name
+        return run
     if not d.exists():
+        RUNS_USED[source] = None
         return None
-    runs = sorted([p for p in d.iterdir() if p.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}", p.name)])
+    runs = sorted(p for p in d.iterdir() if p.is_dir() and RUN_DIR_RE.fullmatch(p.name))
+    RUNS_USED[source] = runs[-1].name if runs else None
     return runs[-1] if runs else None
 
 
@@ -81,7 +109,7 @@ def build_eures():
     details = {}
     for env in read_jsonl(run / "details.jsonl"):
         details[env["record"]["id"]] = env["record"]
-    rows, queries, first = {}, defaultdict(set), {}
+    rows, queries = {}, defaultdict(set)
     for env in read_jsonl(run / "listings.jsonl"):
         r = env["record"]
         jid = r["id"]
@@ -105,6 +133,9 @@ def build_eures():
             "title": tr.get("title") or r.get("title"),
             "company": emp.get("name") if emp.get("name") not in (None, "siehe Beschreibung", "see description") else None,
             "company_raw": emp.get("name"),
+            # EURES geography comes from NUTS codes only: the search record has no
+            # place name and details.jsonl carries a city/postcode for ~3 % of
+            # postings (139 of 4,569 on 2026-09-16), so location_text stays empty
             "location_text": None,
             "nuts_codes": nuts,
             "country_codes": list(loc.keys()) if isinstance(loc, dict) else [],
@@ -274,7 +305,6 @@ def build_willhaben():
             "salary_period_raw": e.get("salaryTimeFrame"),
             "salary_overpay_flag": e.get("overpay"),
             "remote_flag_raw": None,
-            "category_raw": None,
             "willhaben_detail_keys": sorted(det.keys()) if det else None,
             "willhaben_detail": det or None,
             "has_detail": bool(det),
@@ -325,12 +355,25 @@ def build_jobsat():
     return list(rows.values())
 
 
-def main():
-    all_rows = []
+def main(argv: list[str] | None = None):
+    global RUN_DATE
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--date", help="run folder date YYYY-MM-DD used for every source (default: newest per source)")
+    args = ap.parse_args(argv)
+    if args.date and not RUN_DIR_RE.fullmatch(args.date):
+        raise SystemExit(f"build_interim: --date must be YYYY-MM-DD, got {args.date!r}")
+    RUN_DATE = args.date
+    all_rows, per_source = [], {}
     for fn in (build_eures, build_karriere, build_linkedin, build_willhaben, build_jobsat):
         rows = fn()
         print(f"{fn.__name__}: {len(rows)} unique postings")
+        per_source[fn.__name__.removeprefix("build_")] = len(rows)
         all_rows.extend(rows)
+    for f, k in sorted(SKIPPED_LINES.items()):
+        print(f"WARNING: skipped {k} malformed JSON line(s) in {f}")
+    if not all_rows:
+        raise SystemExit(f"build_interim: no postings found under {RAW} (runs used: {RUNS_USED}); nothing written")
+    OUT.mkdir(parents=True, exist_ok=True)
     df = pd.DataFrame(all_rows)
     df["posting_uid"] = df["source"] + ":" + df["source_id"].astype(str)
     df.to_json(OUT / "interim_postings.jsonl", orient="records", lines=True, force_ascii=False)
@@ -340,6 +383,15 @@ def main():
         if df2[c].apply(lambda x: isinstance(x, (list, dict))).any():
             df2[c] = df2[c].apply(lambda x: json.dumps(x, ensure_ascii=False) if isinstance(x, (list, dict)) else x)
     df2.to_parquet(OUT / "interim_postings.parquet", index=False)
+    manifest = {
+        "built_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "requested_date": RUN_DATE,
+        "run_folders": {s: (f"data/raw/{s}/{d}" if d else None) for s, d in RUNS_USED.items()},
+        "unique_postings_per_source": per_source,
+        "rows_total": len(df),
+        "skipped_malformed_json_lines": dict(sorted(SKIPPED_LINES.items())),
+    }
+    (OUT / "interim_build_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print("total rows:", len(df), "->", OUT / "interim_postings.parquet")
     print(df.groupby("source").agg(n=("source_id", "count"), with_desc=("description_text", lambda s: s.notna().sum())))
 

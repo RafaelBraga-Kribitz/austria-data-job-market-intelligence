@@ -24,11 +24,28 @@
   "styria_core": 58,
   "graz_area_core": 52,
   "vienna_core": 350,
+  "styria_core_primary_state": 54,
+  "vienna_core_primary_state": 343,
+  "graz_area_core_primary_styria": 48,
   "unique_employers_core": 387,
   "unique_employers_styria": 32
  },
+ "count_basis": {
+  "styria_core": "any listed site: core postings with at least one location in Styria (is_styria flag; multi-site ads count in every state they list). Used by T02 styria_count, T03c, T04a styria, T07e and every *_by_styria table.",
+  "vienna_core": "any listed site: core postings with at least one location in Vienna (is_vienna flag).",
+  "graz_area_core": "any listed site: core postings with at least one location in the Graz commuting area (is_graz_area flag); a subset of styria_core.",
+  "styria_core_primary_state": "primary state: core postings whose primary `state` is Steiermark (one state per ad; T03a_state_counts.csv, DS05).",
+  "vienna_core_primary_state": "primary state: core postings whose primary `state` is Wien (T03a_state_counts.csv, DS05).",
+  "graz_area_core_primary_styria": "Graz commuting area postings whose primary state is Steiermark (subset of styria_core_primary_state)."
+ },
  "posted_date_range": {
+  "scope": "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source",
   "min": "2023-08-17",
+  "max": "2026-09-16"
+ },
+ "posted_date_range_all_rows": {
+  "scope": "all collected rows, all families, before deduplication",
+  "min": "2021-08-04",
   "max": "2026-09-16"
  },
  "collected_at_range": {
@@ -38,63 +55,63 @@
  "sources": [
   {
    "source": "eures",
-   "rows": "4569",
-   "in_scope_rows": "223",
-   "adjacent_rows": "134",
-   "with_description": "4569",
+   "rows": 4569,
+   "in_scope_rows": 223,
+   "adjacent_rows": 134,
+   "with_description": 4569,
    "first_posted": "2022-07-29 00:00:00+00:00",
    "last_posted": "2026-09-15 00:00:00+00:00",
    "collected_from": "2026-09-16 17:00:34+00:00",
    "collected_to": "2026-09-16 17:12:40+00:00",
-   "in_scope_canonical": "202"
+   "in_scope_canonical": 202
   },
   {
    "source": "jobsat",
-   "rows": "105",
-   "in_scope_rows": "65",
-   "adjacent_rows": "12",
-   "with_description": "105",
+   "rows": 105,
+   "in_scope_rows": 65,
+   "adjacent_rows": 12,
+   "with_description": 105,
    "first_posted": "2026-01-23 00:00:00+00:00",
    "last_posted": "2026-09-16 00:00:00+00:00",
    "collected_from": "2026-09-16 17:01:31+00:00",
    "collected_to": "2026-09-16 17:02:04+00:00",
-   "in_scope_canonical": "58"
+   "in_scope_canonical": 58
   },
   {
    "source": "karriere",
-   "rows": "2114",
-   "in_scope_rows": "200",
-   "adjacent_rows": "126",
-   "with_description": "2114",
+   "rows": 2114,
+   "in_scope_rows": 200,
+   "adjacent_rows": 126,
+   "with_description": 2114,
    "first_posted": "2026-08-14 00:00:00+00:00",
    "last_posted": "2026-09-16 00:00:00+00:00",
    "collected_from": "2026-09-16 17:00:41+00:00",
    "collected_to": "2026-09-16 17:09:03+00:00",
-   "in_scope_canonical": "134"
+   "in_scope_canonical": 134
   },
   {
    "source": "linkedin",
-   "rows": "4133",
-   "in_scope_rows": "486",
-   "adjacent_rows": "363",
-   "with_description": "4129",
+   "rows": 4133,
+   "in_scope_rows": 486,
+   "adjacent_rows": 363,
+   "with_description": 4129,
    "first_posted": "2024-03-25 00:00:00+00:00",
    "last_posted": "2026-09-16 00:00:00+00:00",
    "collected_from": "2026-09-16 17:00:47+00:00",
    "collected_to": "2026-09-16 18:39:42+00:00",
-   "in_scope_canonical": "300"
+   "in_scope_canonical": 300
   },
   {
    "source": "willhaben",
-   "rows": "1508",
-   "in_scope_rows": "40",
-   "adjacent_rows": "21",
-   "with_description": "1508",
+   "rows": 1508,
+   "in_scope_rows": 40,
+   "adjacent_rows": 21,
+   "with_description": 1508,
    "first_posted": "2021-08-04 00:00:00+00:00",
    "last_posted": "2026-09-16 00:00:00+00:00",
    "collected_from": "2026-09-16 17:01:07+00:00",
    "collected_to": "2026-09-16 17:02:47+00:00",
-   "in_scope_canonical": "26"
+   "in_scope_canonical": 26
   }
  ]
 }

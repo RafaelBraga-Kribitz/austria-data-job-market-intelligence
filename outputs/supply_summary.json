@@ -1,0 +1,1025 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "coverage": [
+  {
+   "frame": "A",
+   "accounts": 2420,
+   "austrian_location": 2395,
+   "data_signal": 1280,
+   "bio_declared": 865,
+   "data_signal_share": 0.529,
+   "share_with_bio": 0.944,
+   "source": "GitHub REST API",
+   "source_quality": "B",
+   "collection_date": "2026-09-17",
+   "n_search_rows": 14104,
+   "n_repos_listed": 126013,
+   "n_data_repos": 9347,
+   "n_readmes_fetched": 11798,
+   "linkedin_manual_records": 0
+  },
+  {
+   "frame": "B",
+   "accounts": 2026,
+   "austrian_location": 2023,
+   "data_signal": 247,
+   "bio_declared": 52,
+   "data_signal_share": 0.122,
+   "share_with_bio": 0.408,
+   "source": "GitHub REST API",
+   "source_quality": "B",
+   "collection_date": "2026-09-17",
+   "n_search_rows": 14104,
+   "n_repos_listed": 126013,
+   "n_data_repos": 9347,
+   "n_readmes_fetched": 11798,
+   "linkedin_manual_records": 0
+  },
+  {
+   "frame": "C",
+   "accounts": 5674,
+   "austrian_location": 5649,
+   "data_signal": 637,
+   "bio_declared": 164,
+   "data_signal_share": 0.112,
+   "share_with_bio": 0.41,
+   "source": "GitHub REST API",
+   "source_quality": "B",
+   "collection_date": "2026-09-17",
+   "n_search_rows": 14104,
+   "n_repos_listed": 126013,
+   "n_data_repos": 9347,
+   "n_readmes_fetched": 11798,
+   "linkedin_manual_records": 0
+  },
+  {
+   "frame": "all",
+   "accounts": 9457,
+   "austrian_location": 9409,
+   "data_signal": 1818,
+   "bio_declared": 872,
+   "data_signal_share": 0.193,
+   "share_with_bio": 0.512,
+   "source": "GitHub REST API",
+   "source_quality": "B",
+   "collection_date": "2026-09-17",
+   "n_search_rows": 14104,
+   "n_repos_listed": 126013,
+   "n_data_repos": 9347,
+   "n_readmes_fetched": 11798,
+   "linkedin_manual_records": 0
+  }
+ ],
+ "tiers": [
+  {
+   "data_tier": "T0_none",
+   "count": 6383,
+   "n": 9409,
+   "share": 0.678
+  },
+  {
+   "data_tier": "T3_weak_repo_signal",
+   "count": 1208,
+   "n": 9409,
+   "share": 0.128
+  },
+  {
+   "data_tier": "T2_repo_evidenced",
+   "count": 946,
+   "n": 9409,
+   "share": 0.101
+  },
+  {
+   "data_tier": "T1_bio_declared",
+   "count": 872,
+   "n": 9409,
+   "share": 0.093
+  }
+ ],
+ "families": [
+  {
+   "role_family": "data_science",
+   "count": 638,
+   "n": 872,
+   "share": 0.732,
+   "ci_low": 0.701,
+   "ci_high": 0.76,
+   "styria": 38,
+   "vienna": 359,
+   "students": 127
+  },
+  {
+   "role_family": "data_analytics",
+   "count": 129,
+   "n": 872,
+   "share": 0.148,
+   "ci_low": 0.126,
+   "ci_high": 0.173,
+   "styria": 7,
+   "vienna": 76,
+   "students": 16
+  },
+  {
+   "role_family": "data_engineering",
+   "count": 58,
+   "n": 872,
+   "share": 0.067,
+   "ci_low": 0.052,
+   "ci_high": 0.085,
+   "styria": 4,
+   "vienna": 24,
+   "students": 2
+  },
+  {
+   "role_family": "business_analysis",
+   "count": 21,
+   "n": 872,
+   "share": 0.024,
+   "ci_low": 0.016,
+   "ci_high": 0.037,
+   "styria": 2,
+   "vienna": 9,
+   "students": 1
+  },
+  {
+   "role_family": "bi",
+   "count": 15,
+   "n": 872,
+   "share": 0.017,
+   "ci_low": 0.01,
+   "ci_high": 0.028,
+   "styria": 3,
+   "vienna": 5,
+   "students": 0
+  },
+  {
+   "role_family": "data_governance",
+   "count": 7,
+   "n": 872,
+   "share": 0.008,
+   "ci_low": 0.004,
+   "ci_high": 0.016,
+   "styria": 1,
+   "vienna": 3,
+   "students": 1
+  },
+  {
+   "role_family": "marketing_analytics",
+   "count": 2,
+   "n": 872,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.008,
+   "styria": 1,
+   "vienna": 1,
+   "students": 0
+  },
+  {
+   "role_family": "product_analytics",
+   "count": 2,
+   "n": 872,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.008,
+   "styria": 0,
+   "vienna": 1,
+   "students": 0
+  }
+ ],
+ "geo_summary": [
+  {
+   "population": "P_all",
+   "n": 9409,
+   "vienna": 2818,
+   "styria": 2033,
+   "graz_area": 1903,
+   "graz_city": 1822,
+   "austria_only": 1322,
+   "multi_location": 72,
+   "foreign_place_also_named": 42,
+   "hireable_flag": 1091,
+   "hireable_share": 0.116
+  },
+  {
+   "population": "P_data",
+   "n": 1818,
+   "vienna": 802,
+   "styria": 248,
+   "graz_area": 239,
+   "graz_city": 237,
+   "austria_only": 304,
+   "multi_location": 24,
+   "foreign_place_also_named": 13,
+   "hireable_flag": 305,
+   "hireable_share": 0.168
+  },
+  {
+   "population": "P_T1",
+   "n": 872,
+   "vienna": 478,
+   "styria": 56,
+   "graz_area": 54,
+   "graz_city": 54,
+   "austria_only": 193,
+   "multi_location": 11,
+   "foreign_place_also_named": 7,
+   "hireable_flag": 146,
+   "hireable_share": 0.167
+  }
+ ],
+ "styria_complete_frame": {
+  "population": "Styrian accounts, frame-B complete-Styria subset (≥1 public repo)",
+  "n": 2023,
+  "with_bio": 824,
+  "T1_bio_declared": 52,
+  "T2_repo_evidenced": 195,
+  "T3_weak": 267,
+  "data_signal_share": 0.122,
+  "graz_area": 1885,
+  "students_among_T1": 8,
+  "hireable": 227,
+  "active_12m_share": 0.425
+ },
+ "seniority_T1": [
+  {
+   "seniority": "unlabelled",
+   "count": 596,
+   "n": 872,
+   "share": 0.683
+  },
+  {
+   "seniority": "student",
+   "count": 147,
+   "n": 872,
+   "share": 0.169
+  },
+  {
+   "seniority": "senior",
+   "count": 48,
+   "n": 872,
+   "share": 0.055
+  },
+  {
+   "seniority": "lead_head",
+   "count": 42,
+   "n": 872,
+   "share": 0.048
+  },
+  {
+   "seniority": "junior",
+   "count": 39,
+   "n": 872,
+   "share": 0.045
+  }
+ ],
+ "top_technologies": [
+  {
+   "skill": "Python",
+   "any_evidence": 1341,
+   "project_demonstrated": 819,
+   "n": 1818,
+   "any_evidence_share": 0.738,
+   "project_demonstrated_share": 0.45
+  },
+  {
+   "skill": "Jupyter",
+   "any_evidence": 984,
+   "project_demonstrated": 564,
+   "n": 1818,
+   "any_evidence_share": 0.541,
+   "project_demonstrated_share": 0.31
+  },
+  {
+   "skill": "Bash/Shell",
+   "any_evidence": 884,
+   "project_demonstrated": 629,
+   "n": 1818,
+   "any_evidence_share": 0.486,
+   "project_demonstrated_share": 0.346
+  },
+  {
+   "skill": "Data Visualization",
+   "any_evidence": 862,
+   "project_demonstrated": 596,
+   "n": 1818,
+   "any_evidence_share": 0.474,
+   "project_demonstrated_share": 0.328
+  },
+  {
+   "skill": "JavaScript",
+   "any_evidence": 765,
+   "project_demonstrated": 235,
+   "n": 1818,
+   "any_evidence_share": 0.421,
+   "project_demonstrated_share": 0.129
+  },
+  {
+   "skill": "AI (generic)",
+   "any_evidence": 674,
+   "project_demonstrated": 281,
+   "n": 1818,
+   "any_evidence_share": 0.371,
+   "project_demonstrated_share": 0.155
+  },
+  {
+   "skill": "Machine Learning",
+   "any_evidence": 615,
+   "project_demonstrated": 252,
+   "n": 1818,
+   "any_evidence_share": 0.338,
+   "project_demonstrated_share": 0.139
+  },
+  {
+   "skill": "Public Sector/Research",
+   "any_evidence": 523,
+   "project_demonstrated": 261,
+   "n": 1818,
+   "any_evidence_share": 0.288,
+   "project_demonstrated_share": 0.144
+  },
+  {
+   "skill": "REST APIs",
+   "any_evidence": 452,
+   "project_demonstrated": 251,
+   "n": 1818,
+   "any_evidence_share": 0.249,
+   "project_demonstrated_share": 0.138
+  },
+  {
+   "skill": "Generative AI / LLM",
+   "any_evidence": 417,
+   "project_demonstrated": 276,
+   "n": 1818,
+   "any_evidence_share": 0.229,
+   "project_demonstrated_share": 0.152
+  },
+  {
+   "skill": "C/C++",
+   "any_evidence": 409,
+   "project_demonstrated": 74,
+   "n": 1818,
+   "any_evidence_share": 0.225,
+   "project_demonstrated_share": 0.041
+  },
+  {
+   "skill": "Docker",
+   "any_evidence": 379,
+   "project_demonstrated": 224,
+   "n": 1818,
+   "any_evidence_share": 0.208,
+   "project_demonstrated_share": 0.123
+  },
+  {
+   "skill": "NumPy",
+   "any_evidence": 374,
+   "project_demonstrated": 272,
+   "n": 1818,
+   "any_evidence_share": 0.206,
+   "project_demonstrated_share": 0.15
+  },
+  {
+   "skill": "Classification",
+   "any_evidence": 362,
+   "project_demonstrated": 219,
+   "n": 1818,
+   "any_evidence_share": 0.199,
+   "project_demonstrated_share": 0.12
+  },
+  {
+   "skill": "Deep Learning",
+   "any_evidence": 352,
+   "project_demonstrated": 181,
+   "n": 1818,
+   "any_evidence_share": 0.194,
+   "project_demonstrated_share": 0.1
+  },
+  {
+   "skill": "pandas",
+   "any_evidence": 346,
+   "project_demonstrated": 245,
+   "n": 1818,
+   "any_evidence_share": 0.19,
+   "project_demonstrated_share": 0.135
+  },
+  {
+   "skill": "Java",
+   "any_evidence": 344,
+   "project_demonstrated": 55,
+   "n": 1818,
+   "any_evidence_share": 0.189,
+   "project_demonstrated_share": 0.03
+  },
+  {
+   "skill": "R",
+   "any_evidence": 344,
+   "project_demonstrated": 168,
+   "n": 1818,
+   "any_evidence_share": 0.189,
+   "project_demonstrated_share": 0.092
+  },
+  {
+   "skill": "Segmentation/Clustering",
+   "any_evidence": 329,
+   "project_demonstrated": 191,
+   "n": 1818,
+   "any_evidence_share": 0.181,
+   "project_demonstrated_share": 0.105
+  },
+  {
+   "skill": "PyTorch",
+   "any_evidence": 328,
+   "project_demonstrated": 228,
+   "n": 1818,
+   "any_evidence_share": 0.18,
+   "project_demonstrated_share": 0.125
+  },
+  {
+   "skill": "Statistics (general)",
+   "any_evidence": 316,
+   "project_demonstrated": 180,
+   "n": 1818,
+   "any_evidence_share": 0.174,
+   "project_demonstrated_share": 0.099
+  },
+  {
+   "skill": "C#",
+   "any_evidence": 315,
+   "project_demonstrated": 115,
+   "n": 1818,
+   "any_evidence_share": 0.173,
+   "project_demonstrated_share": 0.063
+  },
+  {
+   "skill": "matplotlib/seaborn",
+   "any_evidence": 309,
+   "project_demonstrated": 229,
+   "n": 1818,
+   "any_evidence_share": 0.17,
+   "project_demonstrated_share": 0.126
+  },
+  {
+   "skill": "SQL",
+   "any_evidence": 297,
+   "project_demonstrated": 157,
+   "n": 1818,
+   "any_evidence_share": 0.163,
+   "project_demonstrated_share": 0.086
+  },
+  {
+   "skill": "scikit-learn",
+   "any_evidence": 265,
+   "project_demonstrated": 186,
+   "n": 1818,
+   "any_evidence_share": 0.146,
+   "project_demonstrated_share": 0.102
+  },
+  {
+   "skill": "FastAPI/Flask",
+   "any_evidence": 263,
+   "project_demonstrated": 146,
+   "n": 1818,
+   "any_evidence_share": 0.145,
+   "project_demonstrated_share": 0.08
+  },
+  {
+   "skill": "Regression",
+   "any_evidence": 242,
+   "project_demonstrated": 143,
+   "n": 1818,
+   "any_evidence_share": 0.133,
+   "project_demonstrated_share": 0.079
+  },
+  {
+   "skill": "Predictive Analytics",
+   "any_evidence": 238,
+   "project_demonstrated": 115,
+   "n": 1818,
+   "any_evidence_share": 0.131,
+   "project_demonstrated_share": 0.063
+  },
+  {
+   "skill": "Healthcare/Pharma/Bio",
+   "any_evidence": 210,
+   "project_demonstrated": 94,
+   "n": 1818,
+   "any_evidence_share": 0.116,
+   "project_demonstrated_share": 0.052
+  },
+  {
+   "skill": "Cloud (generic)",
+   "any_evidence": 206,
+   "project_demonstrated": 107,
+   "n": 1818,
+   "any_evidence_share": 0.113,
+   "project_demonstrated_share": 0.059
+  }
+ ],
+ "capabilities": [
+  {
+   "capability": "Software engineering (Java/Scala/C#)",
+   "group": "engineering",
+   "candidates_any": 1397,
+   "candidates_project_demonstrated": 913,
+   "n": 1818,
+   "share_any": 0.768,
+   "share_project_demonstrated": 0.502
+  },
+  {
+   "capability": "Python",
+   "group": "tool",
+   "candidates_any": 1341,
+   "candidates_project_demonstrated": 819,
+   "n": 1818,
+   "share_any": 0.738,
+   "share_project_demonstrated": 0.45
+  },
+  {
+   "capability": "Exploratory analysis",
+   "group": "analytical",
+   "candidates_any": 1099,
+   "candidates_project_demonstrated": 688,
+   "n": 1818,
+   "share_any": 0.605,
+   "share_project_demonstrated": 0.378
+  },
+  {
+   "capability": "Data visualisation / dashboards",
+   "group": "technical",
+   "candidates_any": 988,
+   "candidates_project_demonstrated": 652,
+   "n": 1818,
+   "share_any": 0.543,
+   "share_project_demonstrated": 0.359
+  },
+  {
+   "capability": "Machine learning",
+   "group": "analytical",
+   "candidates_any": 978,
+   "candidates_project_demonstrated": 559,
+   "n": 1818,
+   "share_any": 0.538,
+   "share_project_demonstrated": 0.307
+  },
+  {
+   "capability": "Deep learning / NLP / CV",
+   "group": "analytical",
+   "candidates_any": 899,
+   "candidates_project_demonstrated": 591,
+   "n": 1818,
+   "share_any": 0.494,
+   "share_project_demonstrated": 0.325
+  },
+  {
+   "capability": "AI (generic wording)",
+   "group": "ai",
+   "candidates_any": 773,
+   "candidates_project_demonstrated": 383,
+   "n": 1818,
+   "share_any": 0.425,
+   "share_project_demonstrated": 0.211
+  },
+  {
+   "capability": "Regression / predictive modelling",
+   "group": "analytical",
+   "candidates_any": 742,
+   "candidates_project_demonstrated": 482,
+   "n": 1818,
+   "share_any": 0.408,
+   "share_project_demonstrated": 0.265
+  },
+  {
+   "capability": "REST / APIs",
+   "group": "engineering",
+   "candidates_any": 648,
+   "candidates_project_demonstrated": 352,
+   "n": 1818,
+   "share_any": 0.356,
+   "share_project_demonstrated": 0.194
+  },
+  {
+   "capability": "CI/CD & tests",
+   "group": "engineering",
+   "candidates_any": 619,
+   "candidates_project_demonstrated": 431,
+   "n": 1818,
+   "share_any": 0.34,
+   "share_project_demonstrated": 0.237
+  },
+  {
+   "capability": "GenAI / LLM",
+   "group": "ai",
+   "candidates_any": 611,
+   "candidates_project_demonstrated": 407,
+   "n": 1818,
+   "share_any": 0.336,
+   "share_project_demonstrated": 0.224
+  },
+  {
+   "capability": "Public sector / research",
+   "group": "domain",
+   "candidates_any": 583,
+   "candidates_project_demonstrated": 311,
+   "n": 1818,
+   "share_any": 0.321,
+   "share_project_demonstrated": 0.171
+  },
+  {
+   "capability": "Operations / manufacturing / supply chain",
+   "group": "domain",
+   "candidates_any": 572,
+   "candidates_project_demonstrated": 332,
+   "n": 1818,
+   "share_any": 0.315,
+   "share_project_demonstrated": 0.183
+  },
+  {
+   "capability": "Statistics",
+   "group": "analytical",
+   "candidates_any": 514,
+   "candidates_project_demonstrated": 289,
+   "n": 1818,
+   "share_any": 0.283,
+   "share_project_demonstrated": 0.159
+  },
+  {
+   "capability": "MLOps / deployment",
+   "group": "engineering",
+   "candidates_any": 451,
+   "candidates_project_demonstrated": 281,
+   "n": 1818,
+   "share_any": 0.248,
+   "share_project_demonstrated": 0.155
+  },
+  {
+   "capability": "Docker",
+   "group": "engineering",
+   "candidates_any": 439,
+   "candidates_project_demonstrated": 249,
+   "n": 1818,
+   "share_any": 0.241,
+   "share_project_demonstrated": 0.137
+  },
+  {
+   "capability": "Marketing / CRM / web analytics",
+   "group": "domain",
+   "candidates_any": 431,
+   "candidates_project_demonstrated": 232,
+   "n": 1818,
+   "share_any": 0.237,
+   "share_project_demonstrated": 0.128
+  },
+  {
+   "capability": "ETL / data pipelines",
+   "group": "engineering",
+   "candidates_any": 413,
+   "candidates_project_demonstrated": 262,
+   "n": 1818,
+   "share_any": 0.227,
+   "share_project_demonstrated": 0.144
+  },
+  {
+   "capability": "Cloud (any)",
+   "group": "tool",
+   "candidates_any": 386,
+   "candidates_project_demonstrated": 224,
+   "n": 1818,
+   "share_any": 0.212,
+   "share_project_demonstrated": 0.123
+  },
+  {
+   "capability": "Segmentation / clustering",
+   "group": "analytical",
+   "candidates_any": 367,
+   "candidates_project_demonstrated": 216,
+   "n": 1818,
+   "share_any": 0.202,
+   "share_project_demonstrated": 0.119
+  },
+  {
+   "capability": "R",
+   "group": "tool",
+   "candidates_any": 364,
+   "candidates_project_demonstrated": 172,
+   "n": 1818,
+   "share_any": 0.2,
+   "share_project_demonstrated": 0.095
+  },
+  {
+   "capability": "SQL",
+   "group": "tool",
+   "candidates_any": 347,
+   "candidates_project_demonstrated": 188,
+   "n": 1818,
+   "share_any": 0.191,
+   "share_project_demonstrated": 0.103
+  },
+  {
+   "capability": "Finance / controlling / risk",
+   "group": "domain",
+   "candidates_any": 341,
+   "candidates_project_demonstrated": 179,
+   "n": 1818,
+   "share_any": 0.188,
+   "share_project_demonstrated": 0.098
+  },
+  {
+   "capability": "Healthcare / life sciences",
+   "group": "domain",
+   "candidates_any": 324,
+   "candidates_project_demonstrated": 155,
+   "n": 1818,
+   "share_any": 0.178,
+   "share_project_demonstrated": 0.085
+  },
+  {
+   "capability": "Forecasting / time series",
+   "group": "decision",
+   "candidates_any": 196,
+   "candidates_project_demonstrated": 120,
+   "n": 1818,
+   "share_any": 0.108,
+   "share_project_demonstrated": 0.066
+  },
+  {
+   "capability": "Kafka/Streaming",
+   "group": "engineering",
+   "candidates_any": 189,
+   "candidates_project_demonstrated": 91,
+   "n": 1818,
+   "share_any": 0.104,
+   "share_project_demonstrated": 0.05
+  },
+  {
+   "capability": "Sales / commercial",
+   "group": "domain",
+   "candidates_any": 159,
+   "candidates_project_demonstrated": 119,
+   "n": 1818,
+   "share_any": 0.087,
+   "share_project_demonstrated": 0.065
+  },
+  {
+   "capability": "Experimentation / A/B testing",
+   "group": "decision",
+   "candidates_any": 155,
+   "candidates_project_demonstrated": 38,
+   "n": 1818,
+   "share_any": 0.085,
+   "share_project_demonstrated": 0.021
+  },
+  {
+   "capability": "Data quality / governance",
+   "group": "technical",
+   "candidates_any": 148,
+   "candidates_project_demonstrated": 93,
+   "n": 1818,
+   "share_any": 0.081,
+   "share_project_demonstrated": 0.051
+  },
+  {
+   "capability": "Optimisation / OR",
+   "group": "decision",
+   "candidates_any": 123,
+   "candidates_project_demonstrated": 46,
+   "n": 1818,
+   "share_any": 0.068,
+   "share_project_demonstrated": 0.025
+  },
+  {
+   "capability": "AWS",
+   "group": "tool",
+   "candidates_any": 114,
+   "candidates_project_demonstrated": 48,
+   "n": 1818,
+   "share_any": 0.063,
+   "share_project_demonstrated": 0.026
+  },
+  {
+   "capability": "Databricks/Spark",
+   "group": "tool",
+   "candidates_any": 101,
+   "candidates_project_demonstrated": 52,
+   "n": 1818,
+   "share_any": 0.056,
+   "share_project_demonstrated": 0.029
+  },
+  {
+   "capability": "Product analytics",
+   "group": "domain",
+   "candidates_any": 94,
+   "candidates_project_demonstrated": 49,
+   "n": 1818,
+   "share_any": 0.052,
+   "share_project_demonstrated": 0.027
+  },
+  {
+   "capability": "Azure",
+   "group": "tool",
+   "candidates_any": 93,
+   "candidates_project_demonstrated": 59,
+   "n": 1818,
+   "share_any": 0.051,
+   "share_project_demonstrated": 0.032
+  },
+  {
+   "capability": "Project management / consulting",
+   "group": "business",
+   "candidates_any": 83,
+   "candidates_project_demonstrated": 13,
+   "n": 1818,
+   "share_any": 0.046,
+   "share_project_demonstrated": 0.007
+  },
+  {
+   "capability": "Data warehouse / modelling",
+   "group": "technical",
+   "candidates_any": 75,
+   "candidates_project_demonstrated": 44,
+   "n": 1818,
+   "share_any": 0.041,
+   "share_project_demonstrated": 0.024
+  },
+  {
+   "capability": "Certification (any)",
+   "group": "credential",
+   "candidates_any": 73,
+   "candidates_project_demonstrated": 32,
+   "n": 1818,
+   "share_any": 0.04,
+   "share_project_demonstrated": 0.018
+  },
+  {
+   "capability": "Excel",
+   "group": "tool",
+   "candidates_any": 67,
+   "candidates_project_demonstrated": 31,
+   "n": 1818,
+   "share_any": 0.037,
+   "share_project_demonstrated": 0.017
+  },
+  {
+   "capability": "Kubernetes",
+   "group": "engineering",
+   "candidates_any": 60,
+   "candidates_project_demonstrated": 25,
+   "n": 1818,
+   "share_any": 0.033,
+   "share_project_demonstrated": 0.014
+  },
+  {
+   "capability": "Power BI",
+   "group": "tool",
+   "candidates_any": 57,
+   "candidates_project_demonstrated": 36,
+   "n": 1818,
+   "share_any": 0.031,
+   "share_project_demonstrated": 0.02
+  },
+  {
+   "capability": "Requirements / business analysis",
+   "group": "business",
+   "candidates_any": 51,
+   "candidates_project_demonstrated": 16,
+   "n": 1818,
+   "share_any": 0.028,
+   "share_project_demonstrated": 0.009
+  },
+  {
+   "capability": "Airflow/orchestration",
+   "group": "engineering",
+   "candidates_any": 48,
+   "candidates_project_demonstrated": 32,
+   "n": 1818,
+   "share_any": 0.026,
+   "share_project_demonstrated": 0.018
+  },
+  {
+   "capability": "Causal inference",
+   "group": "decision",
+   "candidates_any": 47,
+   "candidates_project_demonstrated": 25,
+   "n": 1818,
+   "share_any": 0.026,
+   "share_project_demonstrated": 0.014
+  },
+  {
+   "capability": "Looker/Qlik/other BI",
+   "group": "tool",
+   "candidates_any": 44,
+   "candidates_project_demonstrated": 32,
+   "n": 1818,
+   "share_any": 0.024,
+   "share_project_demonstrated": 0.018
+  },
+  {
+   "capability": "GCP",
+   "group": "tool",
+   "candidates_any": 38,
+   "candidates_project_demonstrated": 29,
+   "n": 1818,
+   "share_any": 0.021,
+   "share_project_demonstrated": 0.016
+  },
+  {
+   "capability": "Tableau",
+   "group": "tool",
+   "candidates_any": 37,
+   "candidates_project_demonstrated": 20,
+   "n": 1818,
+   "share_any": 0.02,
+   "share_project_demonstrated": 0.011
+  },
+  {
+   "capability": "Snowflake/BigQuery/Redshift",
+   "group": "tool",
+   "candidates_any": 27,
+   "candidates_project_demonstrated": 18,
+   "n": 1818,
+   "share_any": 0.015,
+   "share_project_demonstrated": 0.01
+  },
+  {
+   "capability": "HR / people analytics",
+   "group": "domain",
+   "candidates_any": 20,
+   "candidates_project_demonstrated": 11,
+   "n": 1818,
+   "share_any": 0.011,
+   "share_project_demonstrated": 0.006
+  },
+  {
+   "capability": "dbt",
+   "group": "tool",
+   "candidates_any": 18,
+   "candidates_project_demonstrated": 9,
+   "n": 1818,
+   "share_any": 0.01,
+   "share_project_demonstrated": 0.005
+  },
+  {
+   "capability": "SAP",
+   "group": "tool",
+   "candidates_any": 11,
+   "candidates_project_demonstrated": 7,
+   "n": 1818,
+   "share_any": 0.006,
+   "share_project_demonstrated": 0.004
+  },
+  {
+   "capability": "Git",
+   "group": "engineering",
+   "candidates_any": 6,
+   "candidates_project_demonstrated": 0,
+   "n": 1818,
+   "share_any": 0.003,
+   "share_project_demonstrated": 0.0
+  },
+  {
+   "capability": "Stakeholder / communication",
+   "group": "business",
+   "candidates_any": 0,
+   "candidates_project_demonstrated": 0,
+   "n": 1818,
+   "share_any": 0.0,
+   "share_project_demonstrated": 0.0
+  }
+ ],
+ "transitions": {
+  "population": "P_T1",
+  "n": 872,
+  "explicit_transition_wording": 30,
+  "share_explicit": 0.034,
+  "any_prior_domain_named": 331,
+  "share_prior_domain": 0.38
+ },
+ "concentration": {
+  "raw_titles": {
+   "distinct": 574,
+   "total": 764,
+   "entropy_bits": 8.586,
+   "normalised_entropy": 0.937,
+   "hhi": 0.0074,
+   "top1_share": 0.062,
+   "top5_share": 0.14
+  },
+  "normalized_titles": {
+   "distinct": 13,
+   "total": 872,
+   "entropy_bits": 2.032,
+   "normalised_entropy": 0.549,
+   "hhi": 0.3618,
+   "top1_share": 0.557,
+   "top5_share": 0.947
+  }
+ }
+}

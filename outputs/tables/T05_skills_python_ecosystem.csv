@@ -2,7 +2,7 @@ skill,count,n,share,ci_low,ci_high
 PyTorch,32,719,0.045,0.032,0.062
 Jupyter,29,719,0.04,0.028,0.057
 scikit-learn,25,719,0.035,0.024,0.051
-LangChain/LLM frameworks,24,719,0.033,0.023,0.049
+LangChain/LLM frameworks,25,719,0.035,0.024,0.051
 TensorFlow/Keras,22,719,0.031,0.02,0.046
 pandas,21,719,0.029,0.019,0.044
 NumPy,11,719,0.015,0.009,0.027

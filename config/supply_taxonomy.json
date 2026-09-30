@@ -1,0 +1,2775 @@
+{
+  "_comment": "Layer 2 (candidate supply) configuration. Extends, never replaces, the Layer 1 taxonomies: role families come from config/role_taxonomy.json (applied to profile bios), skills from config/skills_taxonomy.json (applied to bios, repository metadata and READMEs), geography from config/geo.json. This file adds what Layer 1 does not need: sampling frames for the GitHub user search, the data-repository lexicon, the project topic/format/README taxonomies and the evidence-strength rules. Versioned: see 'version'.",
+  "version": "supply-v1 (2026-09-17)",
+  "github_search": {
+    "_comment": "GitHub user search is token-based on the free-text location field. Each token is searched separately; the union is normalised afterwards with config/geo.json. 'frame' names: A = bio-signal (data keyword in bio, all Austrian tokens); B = complete Styrian population (all users with >=1 public repo whose location matches a Styrian token); C = base-rate sample for other regions (users with >=1 public repo, sliced by account-creation year, capped per token). Frame A runs bio keywords against 'frame_a_tokens' only (the long 'location_tokens_austria' list is used for normalisation and for Frame B/C coverage); the token 'Austria' already matches every location string containing it, e.g. 'Vienna, Austria'.",
+    "location_tokens_austria": [
+      "Austria",
+      "Österreich",
+      "Oesterreich",
+      "Vienna",
+      "Wien",
+      "Graz",
+      "Linz",
+      "Salzburg",
+      "Innsbruck",
+      "Klagenfurt",
+      "Villach",
+      "Wels",
+      "Steyr",
+      "Dornbirn",
+      "Bregenz",
+      "Feldkirch",
+      "St. Pölten",
+      "Sankt Pölten",
+      "Wiener Neustadt",
+      "Krems",
+      "Eisenstadt",
+      "Leoben",
+      "Kapfenberg",
+      "Styria",
+      "Steiermark",
+      "Tyrol",
+      "Tirol",
+      "Carinthia",
+      "Kärnten",
+      "Vorarlberg",
+      "Burgenland",
+      "Niederösterreich",
+      "Oberösterreich",
+      "Upper Austria",
+      "Lower Austria",
+      "Hagenberg",
+      "Leonding",
+      "Traun",
+      "Baden bei Wien",
+      "Mödling",
+      "Klosterneuburg",
+      "Tulln",
+      "Amstetten",
+      "Wolfsberg",
+      "Spittal",
+      "Lienz",
+      "Kufstein",
+      "Schwaz",
+      "Hallein",
+      "Zell am See",
+      "Bruck an der Mur",
+      "Weiz",
+      "Gleisdorf",
+      "Leibnitz",
+      "Deutschlandsberg",
+      "Feldbach",
+      "Judenburg",
+      "Knittelfeld",
+      "Hartberg",
+      "Fürstenfeld",
+      "Liezen",
+      "Voitsberg",
+      "Köflach",
+      "Murau",
+      "Seiersberg",
+      "Gratkorn",
+      "Gratwein",
+      "Kalsdorf",
+      "Lieboch",
+      "Raaba",
+      "Grambach",
+      "Hart bei Graz",
+      "Feldkirchen bei Graz",
+      "Premstätten",
+      "Gössendorf"
+    ],
+    "location_tokens_styria": [
+      "Graz",
+      "Styria",
+      "Steiermark",
+      "Leoben",
+      "Kapfenberg",
+      "Bruck an der Mur",
+      "Weiz",
+      "Gleisdorf",
+      "Leibnitz",
+      "Deutschlandsberg",
+      "Feldbach",
+      "Judenburg",
+      "Knittelfeld",
+      "Hartberg",
+      "Fürstenfeld",
+      "Liezen",
+      "Voitsberg",
+      "Köflach",
+      "Murau",
+      "Seiersberg",
+      "Gratkorn",
+      "Gratwein",
+      "Kalsdorf",
+      "Lieboch",
+      "Raaba",
+      "Grambach",
+      "Hart bei Graz",
+      "Feldkirchen bei Graz",
+      "Premstätten",
+      "Gössendorf",
+      "Mürzzuschlag",
+      "Trofaiach",
+      "Bad Radkersburg",
+      "Schladming"
+    ],
+    "bio_keywords": [
+      "data scientist",
+      "data science",
+      "data analyst",
+      "data analytics",
+      "data analysis",
+      "data engineer",
+      "data engineering",
+      "machine learning",
+      "\"ML engineer\"",
+      "\"AI engineer\"",
+      "analytics engineer",
+      "business intelligence",
+      "\"BI developer\"",
+      "\"BI analyst\"",
+      "statistician",
+      "statistics",
+      "deep learning",
+      "NLP",
+      "computer vision",
+      "MLOps",
+      "LLM",
+      "\"data\"",
+      "analytics",
+      "analyst",
+      "\"AI\"",
+      "\"KI\"",
+      "Datenanalyse",
+      "Datenanalyst",
+      "Data Mining",
+      "quantitative",
+      "econometrics",
+      "Ökonometrie",
+      "forecasting",
+      "kaggle",
+      "data visualization",
+      "dashboard",
+      "Power BI",
+      "tableau",
+      "researcher"
+    ],
+    "base_rate_sample": {
+      "_comment": "Frame C: per token, users with >=1 public repository, sliced by created-year windows so that no slice exceeds the 1,000-result cap; each slice is truncated to 'per_slice_cap' results ordered by 'joined' (deterministic). This is a systematic, not random, sample: it over-represents older accounts within each window only if the window exceeds the cap.",
+      "tokens": [
+        "Vienna",
+        "Wien",
+        "Linz",
+        "Salzburg",
+        "Innsbruck",
+        "Klagenfurt",
+        "Dornbirn",
+        "Wels",
+        "Villach",
+        "St. Pölten",
+        "Austria",
+        "Österreich"
+      ],
+      "created_windows": [
+        [
+          "2008-01-01",
+          "2013-12-31"
+        ],
+        [
+          "2014-01-01",
+          "2017-12-31"
+        ],
+        [
+          "2018-01-01",
+          "2020-12-31"
+        ],
+        [
+          "2021-01-01",
+          "2023-12-31"
+        ],
+        [
+          "2024-01-01",
+          "2026-12-31"
+        ]
+      ],
+      "per_slice_cap": 120
+    },
+    "search_min_repos_frames_bc": 1,
+    "frame_a_tokens": [
+      "Austria",
+      "Österreich",
+      "Vienna",
+      "Wien",
+      "Graz",
+      "Linz",
+      "Salzburg",
+      "Innsbruck",
+      "Klagenfurt",
+      "Styria",
+      "Steiermark",
+      "Tirol",
+      "Tyrol",
+      "Kärnten",
+      "Carinthia",
+      "Vorarlberg",
+      "Dornbirn",
+      "Villach",
+      "Wels",
+      "Leoben",
+      "St. Pölten",
+      "Wiener Neustadt",
+      "Burgenland",
+      "Niederösterreich",
+      "Oberösterreich"
+    ]
+  },
+  "bio_role_overrides": {
+    "_comment": "Bios are not job titles. Before the Layer 1 title rules are applied to a bio, these patterns catch self-descriptions the title rules would miss or misread. First match wins; otherwise config/role_taxonomy.json rules run on the cleaned bio. Rules are ordered strong-role-noun first; the last rule 'ai_ml_generic' catches generic ML/AI/data wording and is ADJACENT (not a declared data role): such accounts only become data-signal candidates through repository evidence (T2).",
+    "rules": [
+      {
+        "family": "marketing_analytics",
+        "normalized": "Marketing Data Scientist",
+        "patterns": [
+          "marketing.{0,20}data scien",
+          "data scien.{0,20}marketing"
+        ]
+      },
+      {
+        "family": "data_science",
+        "normalized": "Machine Learning / AI Engineer",
+        "patterns": [
+          "\\bml engineer",
+          "\\bmachine learning engineer",
+          "\\bai engineer",
+          "\\bmlops\\b",
+          "\\bml ops\\b"
+        ]
+      },
+      {
+        "family": "data_science",
+        "normalized": "Data Scientist",
+        "patterns": [
+          "data scientist",
+          "data science",
+          "datenwissenschaft",
+          "machine learning (?:researcher|scientist|developer|specialist|practitioner|expert)",
+          "\\bml (?:researcher|scientist|developer|specialist)",
+          "\\bai (?:scientist|researcher|developer|specialist)\\b"
+        ]
+      },
+      {
+        "family": "data_science",
+        "normalized": "Statistician / Biostatistician",
+        "patterns": [
+          "statistician",
+          "statistiker",
+          "biostatist",
+          "econometric",
+          "ökonometr"
+        ]
+      },
+      {
+        "family": "data_engineering",
+        "normalized": "Data Engineer",
+        "patterns": [
+          "data engineer",
+          "data engineering",
+          "\\bdata platform (?:engineer|architect|lead)",
+          "data architect",
+          "data infrastructure",
+          "\\bdatabase (?:engineer|developer|administrator)",
+          "\\bdba\\b"
+        ]
+      },
+      {
+        "family": "data_engineering",
+        "normalized": "Analytics Engineer",
+        "patterns": [
+          "analytics engineer",
+          "\\bdbt\\b"
+        ]
+      },
+      {
+        "family": "bi",
+        "normalized": "BI Developer / BI Engineer",
+        "patterns": [
+          "business intelligence",
+          "\\bbi (?:developer|engineer|consultant|analyst|specialist|expert|architect|lead|manager)",
+          "\\bpower ?bi (?:developer|consultant|expert|specialist|architect)",
+          "\\btableau (?:developer|consultant|expert)",
+          "\\bqlik (?:developer|consultant)"
+        ]
+      },
+      {
+        "family": "marketing_analytics",
+        "normalized": "Marketing/Growth/CRM Analyst",
+        "patterns": [
+          "marketing.{0,25}(?:analy|data|scien)",
+          "growth.{0,15}(?:analy|data)",
+          "\\bcrm\\b.{0,15}(?:analy|data)",
+          "web analy",
+          "digital analy",
+          "customer analy",
+          "martech"
+        ]
+      },
+      {
+        "family": "product_analytics",
+        "normalized": "Product Analyst",
+        "patterns": [
+          "product analy",
+          "product data"
+        ]
+      },
+      {
+        "family": "business_analysis",
+        "normalized": "Business Analyst",
+        "patterns": [
+          "business analyst",
+          "business analysis",
+          "requirements engineer"
+        ]
+      },
+      {
+        "family": "data_analytics",
+        "normalized": "Data Analyst",
+        "patterns": [
+          "data analyst",
+          "data analytics",
+          "datenanaly(?:st|tik)",
+          "\\banalytics\\b",
+          "quantitative analy",
+          "\\bquant\\b",
+          "reporting analyst"
+        ]
+      },
+      {
+        "family": "data_governance",
+        "normalized": "Data Governance / Data Steward / Data Manager",
+        "patterns": [
+          "data governance",
+          "data steward",
+          "data manager",
+          "data quality",
+          "master data"
+        ]
+      },
+      {
+        "family": "ai_ml_generic",
+        "normalized": "ML/AI/data-analysis interest (adjacent, generic wording)",
+        "patterns": [
+          "\\bmachine learning\\b",
+          "\\bdeep learning\\b",
+          "\\bnlp\\b",
+          "computer vision",
+          "\\bai research",
+          "\\bai\\b",
+          "\\bml\\b",
+          "data analysis",
+          "\\bdata\\b",
+          "big data",
+          "data visuali",
+          "\\bpower ?bi\\b",
+          "\\btableau\\b",
+          "\\bstatistic"
+        ]
+      }
+    ],
+    "student_patterns": [
+      "\\bstudent\\b",
+      "\\bstudying\\b",
+      "\\bstudiere",
+      "\\bbsc student",
+      "\\bmsc student",
+      "\\bphd student",
+      "\\bphd candidate",
+      "doctoral (?:student|candidate|researcher)",
+      "\\bundergrad",
+      "\\bgraduate student",
+      "\\bstudent at",
+      "\\bcs student",
+      "\\bstudent of"
+    ],
+    "academic_patterns": [
+      "\\bprofessor\\b",
+      "\\bpostdoc\\b",
+      "\\bpost-doc\\b",
+      "\\bresearcher\\b",
+      "\\bresearch (?:associate|fellow|assistant|scientist|group)",
+      "\\buniversity assistant",
+      "\\bwissenschaftliche",
+      "\\bphd\\b(?!\\s*student)",
+      "\\bdr\\.?\\s",
+      "\\blecturer\\b",
+      "\\bfaculty\\b",
+      "\\bacademic\\b"
+    ],
+    "seniority_bio": {
+      "lead_head": [
+        "\\bhead of\\b",
+        "\\bchief\\b",
+        "\\bcto\\b",
+        "\\bcdo\\b",
+        "\\bvp\\b",
+        "\\bdirector\\b",
+        "\\bteam lead",
+        "\\blead (?:data|ml|ai|analytics|engineer|scientist)",
+        "\\bprincipal\\b",
+        "\\bstaff (?:data|ml|engineer|scientist)",
+        "\\bmanager\\b",
+        "\\bfounder\\b",
+        "\\bco-founder\\b",
+        "\\bceo\\b"
+      ],
+      "senior": [
+        "\\bsenior\\b",
+        "\\bsr\\.?\\s",
+        "\\bexperienced\\b",
+        "\\b\\d{2}\\+? years",
+        "\\b(?:1[0-9]|[5-9])\\+? (?:years|jahre)"
+      ],
+      "junior": [
+        "\\bjunior\\b",
+        "\\bentry[- ]level",
+        "\\baspiring\\b",
+        "\\bcareer (?:changer|switch|transition)",
+        "\\bquereinsteiger",
+        "\\blearning (?:data|to code|python)",
+        "\\bbeginner\\b",
+        "\\bself-taught",
+        "\\bbootcamp\\b",
+        "\\btrainee\\b",
+        "\\bintern\\b",
+        "\\bgraduate\\b(?! student)",
+        "\\bopen to work",
+        "\\blooking for (?:a )?(?:job|position|opportunit)",
+        "\\bjob[- ]seeking",
+        "first job",
+        "\\bsoon[- ]to[- ]be\\b",
+        "\\bfuture (?:data|ml|ai)\\b",
+        "\\bwannabe\\b",
+        "\\bnewbie\\b",
+        "\\blooking for (?:an? )?(?:internship|entry)"
+      ]
+    },
+    "transition_patterns": {
+      "_comment": "Bio wording that states a career transition or a prior domain. 'from' groups are the prior field; presence with a data role in the same bio = observed transition signal.",
+      "explicit": [
+        "career (?:changer|change|switch|transition)",
+        "transition(?:ing|ed)? (?:from|into|to)",
+        "quereinsteiger",
+        "former(?:ly)?\\b",
+        "ex-",
+        "moved (?:from|into)",
+        "background in",
+        "turned\\b",
+        "pivot(?:ed|ing)?\\b",
+        "switched (?:from|to)",
+        "after \\d+ years (?:in|of)"
+      ],
+      "from_marketing": [
+        "marketing",
+        "growth",
+        "\\bcrm\\b",
+        "\\bseo\\b",
+        "\\bsem\\b",
+        "e-?commerce",
+        "brand",
+        "advertis",
+        "digital marketing",
+        "performance marketing",
+        "content"
+      ],
+      "from_business": [
+        "business",
+        "consult",
+        "management",
+        "\\bmba\\b",
+        "sales",
+        "entrepreneur",
+        "product manager",
+        "project manager",
+        "operations"
+      ],
+      "from_finance": [
+        "finance",
+        "financ",
+        "accounting",
+        "controlling",
+        "banking",
+        "\\bcfa\\b",
+        "actuar",
+        "trading",
+        "investment"
+      ],
+      "from_engineering": [
+        "mechanical",
+        "electrical",
+        "civil engineer",
+        "chemical engineer",
+        "\\bmaschinenbau",
+        "elektrotechnik",
+        "automotive",
+        "process engineer"
+      ],
+      "from_science": [
+        "physic",
+        "chemist",
+        "biolog",
+        "neuroscien",
+        "astronom",
+        "geolog",
+        "geoscien",
+        "climate",
+        "material science",
+        "bioinformatic",
+        "genomic",
+        "\\bphd in\\b"
+      ],
+      "from_economics": [
+        "economist",
+        "economics",
+        "econometric",
+        "volkswirt",
+        "betriebswirt"
+      ],
+      "from_statistics": [
+        "statistic",
+        "mathematic",
+        "\\bmath\\b",
+        "actuarial"
+      ],
+      "from_software": [
+        "software (?:engineer|developer)",
+        "web developer",
+        "full[- ]stack",
+        "backend",
+        "frontend",
+        "devops",
+        "programmer",
+        "sysadmin"
+      ],
+      "from_social": [
+        "psycholog",
+        "sociolog",
+        "political science",
+        "linguist",
+        "journalis",
+        "philosoph",
+        "history"
+      ]
+    }
+  },
+  "data_repo_lexicon": {
+    "_comment": "A repository is classified as a data project when (a) its primary language is Jupyter Notebook or R, or (b) any keyword below matches its name, description or topics, or (c) a data topic is set. Matching is case-insensitive on word boundaries; 'exclude' patterns veto (e.g. 'database driver', 'metadata'). This is deliberately inclusive at the repo stage; project-level evidence rules are stricter (see evidence_rules). Tightened 2026-09-18 after a private precision review (bare 'data', 'ai', 'experiment', 'pipeline', 'dashboard', 'postgres', 'cv', 'stats' removed; compound forms kept).",
+    "keywords": [
+      "data science",
+      "data-science",
+      "datascience",
+      "data analysis",
+      "data-analysis",
+      "data analytics",
+      "analytics",
+      "machine learning",
+      "machine-learning",
+      "deep learning",
+      "deep-learning",
+      "neural network",
+      "\\bml\\b",
+      "\\bllm\\b",
+      "\\brag\\b",
+      "langchain",
+      "llamaindex",
+      "openai",
+      "gpt",
+      "chatbot",
+      "transformer",
+      "hugging ?face",
+      "\\bnlp\\b",
+      "computer vision",
+      "image classification",
+      "object detection",
+      "\\bkaggle\\b",
+      "\\bpandas\\b",
+      "numpy",
+      "scikit",
+      "sklearn",
+      "pytorch",
+      "tensorflow",
+      "keras",
+      "xgboost",
+      "lightgbm",
+      "catboost",
+      "statsmodels",
+      "\\bpymc\\b",
+      "\\bstan\\b",
+      "bayesian",
+      "regression",
+      "classification",
+      "clustering",
+      "forecast",
+      "time series",
+      "time-series",
+      "prediction",
+      "predictive",
+      "churn",
+      "recommend",
+      "anomaly",
+      "\\betl\\b",
+      "\\belt\\b",
+      "airflow",
+      "\\bdbt\\b",
+      "dagster",
+      "prefect",
+      "spark",
+      "pyspark",
+      "kafka",
+      "data warehouse",
+      "lakehouse",
+      "snowflake",
+      "bigquery",
+      "databricks",
+      "\\bsql\\b",
+      "duckdb",
+      "power ?bi",
+      "tableau",
+      "looker",
+      "streamlit",
+      "gradio",
+      "plotly",
+      "shiny",
+      "visuali[sz]ation",
+      "\\beda\\b",
+      "exploratory",
+      "statistic",
+      "econometric",
+      "\\ba/b test",
+      "ab-test",
+      "causal",
+      "uplift",
+      "monte carlo",
+      "\\bmlops\\b",
+      "mlflow",
+      "feature store",
+      "model serving",
+      "sentiment",
+      "text mining",
+      "topic model",
+      "word2vec",
+      "\\bopencv\\b",
+      "yolo",
+      "\\bcnn\\b",
+      "\\brnn\\b",
+      "\\blstm\\b",
+      "\\bgan\\b",
+      "reinforcement",
+      "\\bdataset\\b",
+      "\\bdata set\\b",
+      "\\bdaten\\b",
+      "\\bbi\\b",
+      "\\bkpi\\b",
+      "customer segmentation",
+      "\\brfm\\b",
+      "\\bclv\\b",
+      "marketing mix",
+      "\\bmmm\\b",
+      "attribution",
+      "web scraping",
+      "scraper",
+      "crawler",
+      "notebook",
+      "jupyter",
+      "\\br\\b markdown",
+      "tidyverse",
+      "ggplot",
+      "matplotlib",
+      "seaborn",
+      "geopandas",
+      "\\bgis\\b",
+      "remote sensing",
+      "bioinformatic",
+      "genomic",
+      "single-cell",
+      "\\bfmri\\b",
+      "\\beeg\\b",
+      "data (?:science|analysis|analytics|engineering|pipeline|warehouse|lake|lakehouse|mining|visuali[sz]ation|processing|cleaning|wrangling|exploration|model(?:l)?ing|quality|platform|product|driven|journalism|story|viz)",
+      "\\bdaten(?:analyse|auswertung|satz|visualisierung|pipeline|bank)",
+      "\\bdatasets?\\b",
+      "artificial intelligence",
+      "\\bgenai\\b",
+      "\\bml[- ](?:model|pipeline|project|ops)",
+      "(?:data|analytics|bi|kpi|sales|finance|covid|power ?bi|tableau|streamlit|shiny|plotly|grafana) dashboard",
+      "\\betl\\b",
+      "\\bdata pipeline",
+      "monte carlo",
+      "operations research",
+      "\\bmilp\\b",
+      "\\blinear programming",
+      "\\bdatenanalyse",
+      "\\bstatistik",
+      "\\bumfrage",
+      "\\bexperiment(?:al)? (?:analysis|design|data|results)",
+      "\\ba/?b[- ]test",
+      "\\bsimulation (?:study|model|of|data)",
+      "\\bkpi\\b"
+    ],
+    "exclude": [
+      "database driver",
+      "\\bmetadata\\b",
+      "data structure",
+      "datastructure",
+      "\\bdata types?\\b",
+      "dotfiles",
+      "\\bconfig\\b",
+      "config files",
+      "vim",
+      "emacs",
+      "homework(?!.*data)",
+      "\\bcv\\b.*(?:resume|lebenslauf)",
+      "curriculum vitae",
+      "\\bresume\\b",
+      "personal website",
+      "portfolio website(?!.*data)",
+      "\\bblog\\b(?!.*data)",
+      "\\bwallet\\b",
+      "minecraft",
+      "\\bgame\\b(?!.*(?:analy|data|ml|ai))"
+    ],
+    "topics": [
+      "data-science",
+      "machine-learning",
+      "deep-learning",
+      "data-analysis",
+      "data-analytics",
+      "data-engineering",
+      "analytics",
+      "ml",
+      "ai",
+      "artificial-intelligence",
+      "nlp",
+      "natural-language-processing",
+      "computer-vision",
+      "llm",
+      "llms",
+      "rag",
+      "generative-ai",
+      "genai",
+      "statistics",
+      "data-visualization",
+      "dataviz",
+      "visualization",
+      "jupyter",
+      "jupyter-notebook",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "sklearn",
+      "pytorch",
+      "tensorflow",
+      "keras",
+      "kaggle",
+      "etl",
+      "airflow",
+      "dbt",
+      "spark",
+      "pyspark",
+      "sql",
+      "dashboard",
+      "power-bi",
+      "powerbi",
+      "tableau",
+      "streamlit",
+      "forecasting",
+      "time-series",
+      "regression",
+      "classification",
+      "clustering",
+      "neural-network",
+      "neural-networks",
+      "reinforcement-learning",
+      "bayesian",
+      "r",
+      "rstats",
+      "tidyverse",
+      "shiny",
+      "mlops",
+      "mlflow",
+      "data-mining",
+      "big-data",
+      "business-intelligence",
+      "eda",
+      "exploratory-data-analysis",
+      "predictive-modeling",
+      "recommender-system",
+      "anomaly-detection",
+      "causal-inference",
+      "ab-testing",
+      "experimentation",
+      "econometrics",
+      "bioinformatics",
+      "geospatial",
+      "gis",
+      "data-pipeline",
+      "data-warehouse",
+      "snowflake",
+      "bigquery",
+      "databricks",
+      "duckdb",
+      "polars",
+      "hugging-face",
+      "transformers",
+      "openai",
+      "langchain",
+      "chatbot",
+      "opencv",
+      "yolo",
+      "marketing-analytics",
+      "customer-segmentation",
+      "churn-prediction",
+      "sentiment-analysis",
+      "web-scraping",
+      "scraping",
+      "dataset",
+      "datasets"
+    ],
+    "data_languages": [
+      "Jupyter Notebook",
+      "R"
+    ],
+    "educational_patterns": {
+      "_comment": "Repositories that look like course work, tutorials or learning logs. They are kept but flagged; archetype = educational/tutorial.",
+      "patterns": [
+        "\\bcourse\\b",
+        "\\bcoursera\\b",
+        "\\budemy\\b",
+        "\\bdatacamp\\b",
+        "\\bedx\\b",
+        "\\bkurs\\b",
+        "\\blecture",
+        "\\bvorlesung",
+        "\\bhomework",
+        "\\bassignment",
+        "\\bexercise",
+        "\\bübung",
+        "\\buebung",
+        "\\btutorial",
+        "\\bworkshop",
+        "\\bbootcamp",
+        "\\bnanodegree",
+        "\\bcapstone\\b",
+        "\\bcertificat",
+        "\\bzertifikat",
+        "100[- ]?days",
+        "\\blearning (?:log|journey|path|notes)",
+        "\\bnotes\\b",
+        "\\bcheat ?sheet",
+        "\\bsemester\\b",
+        "\\bws ?20\\d\\d",
+        "\\bss ?20\\d\\d",
+        "\\bthesis\\b",
+        "\\bmasterarbeit",
+        "\\bbachelorarbeit",
+        "\\bdissertation",
+        "\\buni(?:versity)?[- ]?(?:project|course)",
+        "\\btu[- ]?graz\\b",
+        "\\bjku\\b",
+        "\\btu[- ]?wien\\b",
+        "\\bfh[- ]",
+        "google[- ]data[- ]analytics",
+        "ibm[- ]data[- ]science",
+        "practice",
+        "playground",
+        "sandbox",
+        "\\btest\\b",
+        "\\bdemo\\b",
+        "\\bexample",
+        "\\bbeispiel"
+      ]
+    }
+  },
+  "project_topics": {
+    "_comment": "Project themes (§15 of the brief). Matched on repository name + description + topics + README (when fetched). A project can carry several themes; 'analytics_domain' is the business domain, 'ds_method' the analytical method, 'engineering' the data-engineering component, 'ai' the GenAI component. Rule (2026-09-18): a theme counts when it matches the repository name/description/topics, or when at least two distinct patterns of the theme match the README; single generic README hits are ignored.",
+    "analytics_domain": {
+      "sales": [
+        "\\bsales\\b",
+        "\\bverkauf",
+        "\\bumsatz",
+        "\\brevenue",
+        "\\bretail\\b",
+        "superstore"
+      ],
+      "marketing": [
+        "marketing",
+        "campaign",
+        "kampagne",
+        "\\bads?\\b",
+        "advertis",
+        "\\bseo\\b",
+        "\\bsem\\b",
+        "\\bcrm\\b",
+        "attribution",
+        "marketing mix",
+        "\\bmmm\\b",
+        "\\broas\\b",
+        "\\bcac\\b",
+        "email marketing",
+        "\\bfunnel",
+        "conversion",
+        "\\ba/b",
+        "\\bab test",
+        "uplift"
+      ],
+      "finance": [
+        "\\bfinanc",
+        "\\bstock (?:price|market|data)",
+        "\\baktie",
+        "portfolio optim",
+        "\\bcredit (?:risk|score|card|default)",
+        "\\bloan",
+        "\\bfraud",
+        "\\bbank",
+        "\\btrading",
+        "\\bcrypto",
+        "bitcoin",
+        "\\baccounting",
+        "\\bcontrolling",
+        "\\binsurance",
+        "\\bversicherung",
+        "\\bactuar"
+      ],
+      "hr": [
+        "\\bhr analytics",
+        "human resources",
+        "\\bemployee",
+        "\\battrition",
+        "\\brecruit",
+        "\\bpayroll",
+        "\\bworkforce"
+      ],
+      "operations": [
+        "\\boperations research",
+        "\\blogistic",
+        "\\bsupply chain",
+        "\\binventory",
+        "\\bmanufactur",
+        "\\bproduction (?:line|plan|data|process)",
+        "predictive maintenance",
+        "\\bsensor data",
+        "\\biot\\b",
+        "\\bquality control",
+        "\\bwarehouse (?:cost|ops|robot)",
+        "\\btco\\b",
+        "\\bcost model",
+        "\\bfactory",
+        "\\bindustr(?:y|ial) 4",
+        "\\bmachine data"
+      ],
+      "product": [
+        "\\bproduct analytics",
+        "\\buser behavio",
+        "\\bapp analytics",
+        "\\bfeature usage",
+        "\\bretention\\b",
+        "\\bfunnel",
+        "\\bcohort"
+      ],
+      "customer": [
+        "\\bcustomer",
+        "\\bkunde",
+        "\\bchurn",
+        "\\bsegmentation",
+        "\\brfm\\b",
+        "\\bclv\\b",
+        "lifetime value",
+        "\\bnps\\b",
+        "\\bloyalty",
+        "\\bcohort"
+      ],
+      "supply_chain": [
+        "supply chain",
+        "supply-chain",
+        "procurement",
+        "\\bfreight",
+        "shipping",
+        "\\bdemand planning"
+      ],
+      "real_estate": [
+        "real estate",
+        "\\bhousing",
+        "\\bimmobilien",
+        "\\brent\\b",
+        "\\bmiet",
+        "house price",
+        "airbnb",
+        "\\bzillow"
+      ],
+      "sports": [
+        "\\bsports?\\b",
+        "\\bfootball",
+        "\\bsoccer",
+        "\\bnba\\b",
+        "\\bnfl\\b",
+        "\\bfifa\\b",
+        "\\bbasketball",
+        "\\btennis",
+        "\\bcycling",
+        "\\bstrava\\b",
+        "\\bchess\\b",
+        "formula ?1",
+        "\\bf1\\b",
+        "\\bolympic",
+        "\\bski(?:ing)?\\b",
+        "\\bmarathon"
+      ],
+      "healthcare": [
+        "\\bhealth",
+        "\\bmedical",
+        "\\bmedizin",
+        "\\bpatient",
+        "\\bclinical",
+        "\\bcovid",
+        "\\bcancer",
+        "\\bdiabet",
+        "\\bmri\\b",
+        "\\bct scan",
+        "\\becg\\b",
+        "\\beeg\\b",
+        "\\bdrug",
+        "\\bpharma",
+        "\\bepidemi",
+        "\\bgenom",
+        "\\bprotein",
+        "\\bbioinformatic",
+        "\\bhospital",
+        "\\bdisease"
+      ],
+      "public_policy": [
+        "\\bpolicy\\b",
+        "\\belection",
+        "\\bwahl\\b",
+        "\\bgovernment",
+        "\\bcensus",
+        "\\bopen data\\b",
+        "\\bogd\\b",
+        "statistik austria",
+        "eurostat",
+        "\\bunemploy",
+        "\\barbeitsmarkt",
+        "\\bcrime",
+        "\\bmigration\\b",
+        "\\bpolitic",
+        "\\bparliament",
+        "\\bnationalrat",
+        "\\bpublic sector",
+        "\\bmunicipal"
+      ],
+      "sustainability": [
+        "sustainab",
+        "\\bclimate",
+        "\\bklima",
+        "\\bco2\\b",
+        "emission",
+        "\\benergy (?:consumption|demand|market|price|data|system|grid|efficiency)",
+        "\\bstrom",
+        "\\bsolar",
+        "photovoltaic",
+        "\\bwind (?:power|energy|turbine|farm)",
+        "renewable",
+        "\\bweather",
+        "\\bwetter",
+        "\\bair quality",
+        "\\bflood",
+        "\\bglacier",
+        "biodivers",
+        "\\bemissions?\\b"
+      ],
+      "ecommerce": [
+        "e-?commerce",
+        "\\bonline (?:shop|store)",
+        "\\bamazon (?:review|product|sales)",
+        "\\bcart\\b",
+        "\\bcheckout",
+        "\\bolist\\b",
+        "\\bebay\\b",
+        "\\bwillhaben"
+      ],
+      "mobility": [
+        "\\btraffic",
+        "\\bverkehr",
+        "\\bmobility",
+        "\\btransport",
+        "\\btaxi",
+        "\\buber\\b",
+        "bike ?shar",
+        "\\bcitybike",
+        "\\böbb",
+        "\\bwiener linien",
+        "\\bflight",
+        "\\bairline",
+        "\\bvehicle",
+        "autonomous driv",
+        "\\bev charging",
+        "\\bpublic transport",
+        "\\brail(?:way)?\\b"
+      ],
+      "education_domain": [
+        "\\bstudent performance",
+        "\\bschool",
+        "\\beducation\\b",
+        "\\blearning analytics",
+        "\\bmooc",
+        "\\bexam\\b"
+      ],
+      "media_entertainment": [
+        "\\bmovie",
+        "\\bfilm\\b",
+        "\\bimdb\\b",
+        "\\bnetflix",
+        "\\bspotify",
+        "\\bmusic",
+        "\\bsong",
+        "\\bgoodreads",
+        "\\byoutube",
+        "\\btwitter",
+        "\\breddit",
+        "\\bnews (?:article|data|headline)",
+        "\\bsteam\\b",
+        "\\bpodcast",
+        "\\bwikipedia",
+        "\\bvideo game"
+      ],
+      "labour_market": [
+        "\\bjob (?:market|posting|ad)",
+        "\\bstellen",
+        "\\bsalary",
+        "\\bgehalt",
+        "\\bcareer",
+        "\\blabou?r market",
+        "\\bskills? demand"
+      ]
+    },
+    "ds_method": {
+      "classification": [
+        "classif",
+        "\\bclassifier",
+        "logistic regression",
+        "random forest",
+        "\\bsvm\\b",
+        "\\bxgboost",
+        "lightgbm",
+        "catboost",
+        "decision tree",
+        "\\bknn\\b",
+        "naive bayes",
+        "\\bauc\\b",
+        "\\broc\\b",
+        "\\bf1[- ]score",
+        "confusion matrix",
+        "\\bmnist",
+        "\\bcifar",
+        "\\bimagenet"
+      ],
+      "regression": [
+        "regression(?! test)",
+        "\\blinear model",
+        "\\bols\\b",
+        "\\bglm\\b",
+        "\\bgam\\b",
+        "\\bridge\\b",
+        "\\blasso\\b",
+        "elastic ?net",
+        "\\brmse\\b",
+        "\\bmae\\b",
+        "price prediction",
+        "\\bpredict(?:ing|ion of)? (?:price|sales|demand|revenue|cost)"
+      ],
+      "clustering": [
+        "cluster",
+        "\\bk-?means",
+        "\\bdbscan",
+        "hierarchical",
+        "segmentation",
+        "\\bpca\\b",
+        "\\bt-?sne",
+        "\\bumap\\b",
+        "dimensionality reduction",
+        "topic model",
+        "\\blda\\b"
+      ],
+      "forecasting": [
+        "forecast",
+        "time[- ]series",
+        "\\barima",
+        "\\bsarima",
+        "\\bprophet\\b",
+        "exponential smoothing",
+        "\\bets\\b",
+        "\\bvar\\b model",
+        "seasonal",
+        "\\bnowcast",
+        "demand prediction",
+        "\\blstm\\b.{0,30}(?:series|forecast|predict)"
+      ],
+      "nlp": [
+        "\\bnlp\\b",
+        "natural language",
+        "text (?:mining|classification|analysis|generation)",
+        "sentiment",
+        "\\bner\\b",
+        "named entity",
+        "\\btokeni",
+        "\\bbert\\b",
+        "\\bspacy\\b",
+        "\\bnltk\\b",
+        "\\bgensim",
+        "word2vec",
+        "\\btf-?idf",
+        "transformer",
+        "language model",
+        "\\bllm",
+        "\\bgpt",
+        "\\bchatbot",
+        "speech",
+        "\\bwhisper\\b",
+        "summari[sz]ation",
+        "\\bocr\\b"
+      ],
+      "computer_vision": [
+        "computer vision",
+        "image (?:classification|recognition|segmentation|processing|generation)",
+        "object detection",
+        "\\bopencv",
+        "\\byolo",
+        "\\bcnn\\b",
+        "convolution",
+        "\\bresnet",
+        "\\bvit\\b",
+        "\\bunet\\b",
+        "\\bgan\\b",
+        "diffusion",
+        "stable diffusion",
+        "\\bface\\b (?:detect|recogn)",
+        "\\bpose\\b",
+        "\\bsegment anything",
+        "\\bmedical imag"
+      ],
+      "recommendation": [
+        "recommend",
+        "collaborative filtering",
+        "matrix factori",
+        "\\bimplicit\\b",
+        "\\bals\\b",
+        "ranking model"
+      ],
+      "anomaly_detection": [
+        "anomal",
+        "outlier",
+        "fraud detect",
+        "intrusion",
+        "\\bisolation forest",
+        "novelty detection",
+        "fault detection",
+        "predictive maintenance"
+      ],
+      "causal_inference": [
+        "causal",
+        "\\bdid\\b",
+        "difference[- ]in[- ]difference",
+        "propensity",
+        "instrumental variable",
+        "\\brdd\\b",
+        "regression discontinuity",
+        "synthetic control",
+        "\\bdowhy\\b",
+        "\\beconml\\b",
+        "\\bcausalimpact",
+        "treatment effect",
+        "counterfactual",
+        "uplift"
+      ],
+      "experimentation": [
+        "\\ba/b test",
+        "\\bab test",
+        "\\bab-test",
+        "\\bsplit test",
+        "\\bexperiment design",
+        "\\bhypothesis test",
+        "\\bt-test",
+        "\\bchi-?square",
+        "\\banova\\b",
+        "\\bpower analysis",
+        "\\bbandit",
+        "\\bsequential test",
+        "\\bcuped\\b",
+        "\\brandomi[sz]ed (?:controlled|trial|experiment)"
+      ],
+      "optimization": [
+        "\\blinear programming",
+        "\\bmilp\\b",
+        "\\bmip\\b",
+        "\\binteger programming",
+        "\\bpulp\\b",
+        "\\bgurobi",
+        "\\bcplex",
+        "\\bor-tools",
+        "\\bgenetic algorithm",
+        "\\bsimulated annealing",
+        "\\bvehicle routing",
+        "\\bknapsack",
+        "\\boperations research",
+        "\\bmonte carlo",
+        "\\bdiscrete event",
+        "\\bmathematical optimi[sz]ation",
+        "\\bconstraint (?:programming|solver)",
+        "\\bscheduling problem"
+      ],
+      "bayesian": [
+        "bayesian",
+        "\\bpymc",
+        "\\bstan\\b",
+        "\\bmcmc\\b",
+        "posterior",
+        "hierarchical model",
+        "probabilistic programming",
+        "\\bbambi\\b",
+        "\\bbrms\\b"
+      ],
+      "reinforcement_learning": [
+        "\\breinforcement learning",
+        "\\bq-?learning",
+        "\\bdqn\\b",
+        "\\bppo\\b",
+        "\\bgymnasium\\b",
+        "\\bopenai gym",
+        "\\breward function"
+      ],
+      "descriptive_eda": [
+        "\\beda\\b",
+        "\\bexploratory",
+        "\\bdescriptive (?:statistic|analysis)",
+        "\\bsummary statistic",
+        "\\bdata visuali[sz]ation",
+        "\\bdata exploration"
+      ]
+    },
+    "engineering": {
+      "etl_pipeline": [
+        "\\betl\\b",
+        "\\belt\\b",
+        "\\bdata pipeline",
+        "\\bingest",
+        "\\bdata extraction",
+        "\\bdata flow",
+        "\\bdataflow",
+        "\\bbatch job",
+        "\\bscraper",
+        "\\bscraping",
+        "\\bcrawler",
+        "\\bdata collect(?:ion|or)"
+      ],
+      "warehouse_modelling": [
+        "\\bdata warehouse",
+        "\\bdwh\\b",
+        "\\bstar schema",
+        "\\bdimensional model",
+        "\\bfact table",
+        "\\bdimension table",
+        "\\bkimball",
+        "\\bdata vault",
+        "\\bdbt\\b",
+        "\\bsnowflake",
+        "\\bbigquery",
+        "\\bredshift",
+        "\\bsynapse",
+        "\\bmicrosoft fabric",
+        "\\bdatabricks",
+        "\\blakehouse",
+        "\\bdelta lake",
+        "\\biceberg",
+        "\\bduckdb",
+        "\\bdata model(?:ling|ing)"
+      ],
+      "streaming": [
+        "\\bkafka",
+        "\\bflink",
+        "\\bspark streaming",
+        "\\breal[- ]time (?:data|stream|pipeline|analytics)",
+        "\\bevent stream",
+        "\\bpubsub",
+        "\\bkinesis",
+        "\\bmqtt",
+        "\\bevent[- ]driven"
+      ],
+      "orchestration": [
+        "\\bairflow",
+        "\\bdagster",
+        "\\bprefect",
+        "\\bluigi\\b",
+        "\\bmage\\b",
+        "\\borchestrat",
+        "\\bdag\\b",
+        "\\bkestra"
+      ],
+      "api_serving": [
+        "\\brest ?api",
+        "\\bfastapi",
+        "\\bflask\\b",
+        "\\bdjango",
+        "\\bendpoint",
+        "\\bgraphql",
+        "\\bgrpc",
+        "\\bmodel serving",
+        "\\bbentoml",
+        "\\bmlflow",
+        "\\bmlops",
+        "\\binference server",
+        "\\bmicroservice"
+      ],
+      "infrastructure": [
+        "\\bdocker",
+        "\\bkubernetes",
+        "\\bk8s\\b",
+        "\\bterraform",
+        "\\bhelm\\b",
+        "\\bansible",
+        "\\baws\\b",
+        "\\bazure\\b",
+        "\\bgcp\\b",
+        "google cloud",
+        "\\blambda function",
+        "\\bs3 bucket",
+        "\\bec2\\b",
+        "\\bci/cd",
+        "github actions",
+        "\\bgitlab ci",
+        "\\bjenkins",
+        "infrastructure as code",
+        "\\biac\\b"
+      ]
+    },
+    "ai": {
+      "llm_app": [
+        "\\bllm",
+        "\\bgpt",
+        "\\bopenai",
+        "\\bclaude\\b",
+        "\\bgemini\\b",
+        "\\bmistral\\b",
+        "\\bllama",
+        "\\bollama",
+        "\\bchatbot",
+        "\\bchat ?bot",
+        "\\bcopilot",
+        "\\blanguage model",
+        "\\bprompt engineering"
+      ],
+      "rag": [
+        "\\brag\\b",
+        "retrieval[- ]augmented",
+        "\\bvector (?:db|store|database|search)",
+        "\\bchroma",
+        "\\bpinecone",
+        "\\bfaiss",
+        "\\bweaviate",
+        "\\bqdrant",
+        "\\bpgvector",
+        "\\bembedding",
+        "semantic search",
+        "\\bllamaindex",
+        "\\blangchain"
+      ],
+      "agents": [
+        "\\bai agent",
+        "\\bllm agent",
+        "\\bmulti-agent",
+        "\\bagentic",
+        "\\bautogen",
+        "\\bcrewai",
+        "\\blanggraph",
+        "\\bmcp server",
+        "model context protocol",
+        "\\btool[- ]calling",
+        "\\bfunction calling"
+      ],
+      "fine_tuning": [
+        "fine[- ]?tun",
+        "\\blora\\b",
+        "\\bqlora\\b",
+        "\\bpeft\\b",
+        "\\bsft\\b",
+        "\\brlhf\\b",
+        "\\bdpo\\b",
+        "instruction tun",
+        "\\btrl\\b",
+        "\\bunsloth",
+        "\\baxolotl"
+      ],
+      "evaluation": [
+        "\\bllm eval",
+        "\\bragas\\b",
+        "\\bllm[- ]as[- ]a[- ]judge",
+        "\\bguardrail",
+        "\\bhallucinat",
+        "\\bpromptfoo",
+        "\\bdeepeval",
+        "\\beval(?:uation)? (?:set|harness|dataset|framework) for (?:llm|rag|agent)"
+      ],
+      "genai_media": [
+        "stable diffusion",
+        "\\bdiffusion",
+        "\\bdall-?e",
+        "\\bmidjourney",
+        "image generation",
+        "text[- ]to[- ]image",
+        "\\bcomfyui",
+        "\\bwhisper\\b",
+        "text[- ]to[- ]speech",
+        "\\btts\\b",
+        "voice clon"
+      ]
+    }
+  },
+  "project_formats": {
+    "_comment": "How a project is packaged (§16). Detected from file-tree entries (top level), primary language, homepage URL, description/README keywords. A project can have several formats. Tightened 2026-09-18: bare 'pipeline', 'paper', 'journal' and generic docs/site folders no longer trigger the pipeline, paper and GitHub-Pages formats.",
+    "notebook": {
+      "languages": [
+        "Jupyter Notebook"
+      ],
+      "tree": [
+        "\\.ipynb$"
+      ],
+      "text": [
+        "jupyter",
+        "notebook",
+        "\\bcolab\\b",
+        "\\.ipynb"
+      ]
+    },
+    "r_markdown_quarto": {
+      "tree": [
+        "\\.rmd$",
+        "\\.qmd$",
+        "_quarto\\.yml$"
+      ],
+      "text": [
+        "rmarkdown",
+        "\\bquarto\\b",
+        "\\bknitr\\b",
+        "\\bbookdown\\b"
+      ]
+    },
+    "python_package_or_src": {
+      "tree": [
+        "^src$",
+        "^setup\\.py$",
+        "^pyproject\\.toml$",
+        "^setup\\.cfg$"
+      ],
+      "text": [
+        "pip install",
+        "\\bpackage\\b",
+        "\\blibrary\\b"
+      ]
+    },
+    "streamlit_gradio_app": {
+      "tree": [
+        "^streamlit_app\\.py$",
+        "^app\\.py$",
+        "^\\.streamlit$"
+      ],
+      "text": [
+        "streamlit",
+        "\\bgradio\\b",
+        "\\bpanel\\b app",
+        "\\bvoila\\b",
+        "\\bdash\\b app",
+        "\\bshiny\\b",
+        "\\bshinyapps"
+      ],
+      "homepage": [
+        "streamlit\\.app",
+        "streamlit\\.io",
+        "hf\\.space",
+        "huggingface\\.co/spaces",
+        "shinyapps\\.io",
+        "gradio\\.app",
+        "herokuapp",
+        "render\\.com",
+        "railway\\.app",
+        "fly\\.dev",
+        "vercel\\.app",
+        "azurewebsites",
+        "onrender"
+      ]
+    },
+    "web_app": {
+      "tree": [
+        "^package\\.json$",
+        "^next\\.config",
+        "^index\\.html$",
+        "^templates$",
+        "^static$",
+        "^manage\\.py$"
+      ],
+      "text": [
+        "\\bweb ?app",
+        "\\bfrontend",
+        "\\breact\\b",
+        "\\bvue\\b",
+        "\\bangular\\b",
+        "\\bdjango\\b",
+        "\\bflask\\b app",
+        "\\bfastapi\\b"
+      ]
+    },
+    "api": {
+      "tree": [
+        "^api$",
+        "^main\\.py$",
+        "^openapi",
+        "^swagger"
+      ],
+      "text": [
+        "\\brest ?api",
+        "\\bfastapi",
+        "\\bflask\\b api",
+        "\\bendpoint",
+        "\\bswagger",
+        "\\bopenapi",
+        "\\bgraphql"
+      ]
+    },
+    "dashboard_bi": {
+      "tree": [
+        "\\.pbix$",
+        "\\.pbit$",
+        "\\.twb$",
+        "\\.twbx$",
+        "\\.qvf$",
+        "\\.xlsx?$"
+      ],
+      "text": [
+        "power ?bi",
+        "\\bpbix",
+        "\\btableau",
+        "\\blooker",
+        "\\bqlik",
+        "\\bmetabase",
+        "\\bsuperset",
+        "\\bgrafana",
+        "\\bdashboard",
+        "\\bkpi",
+        "\\bexcel\\b dashboard",
+        "tableau public"
+      ],
+      "homepage": [
+        "public\\.tableau\\.com",
+        "app\\.powerbi\\.com",
+        "lookerstudio",
+        "datastudio\\.google"
+      ]
+    },
+    "pipeline_project": {
+      "tree": [
+        "^dags$",
+        "^airflow",
+        "^dbt_project\\.yml$",
+        "^models$",
+        "^pipelines?$",
+        "^etl$",
+        "^dagster",
+        "^prefect",
+        "^flows?$"
+      ],
+      "text": [
+        "\\betl\\b",
+        "\\belt\\b",
+        "\\bdbt\\b",
+        "\\bairflow",
+        "\\bdagster",
+        "\\bprefect",
+        "\\bdata pipeline",
+        "\\borchestrat",
+        "\\bingestion pipeline",
+        "\\bbatch pipeline"
+      ]
+    },
+    "docker": {
+      "tree": [
+        "^dockerfile$",
+        "^docker-compose\\.ya?ml$",
+        "^compose\\.ya?ml$",
+        "^\\.devcontainer$"
+      ],
+      "text": [
+        "\\bdocker"
+      ]
+    },
+    "tests": {
+      "tree": [
+        "^tests?$",
+        "^test_.*\\.py$",
+        "^pytest\\.ini$",
+        "^tox\\.ini$",
+        "^conftest\\.py$",
+        "^spec$"
+      ],
+      "text": [
+        "\\bpytest\\b",
+        "\\bunit ?tests?\\b",
+        "\\btest suite",
+        "\\btestthat\\b"
+      ]
+    },
+    "ci": {
+      "tree": [
+        "^\\.github$",
+        "^\\.gitlab-ci\\.yml$",
+        "^\\.travis\\.yml$",
+        "^\\.circleci$",
+        "^azure-pipelines\\.yml$",
+        "^Jenkinsfile$",
+        "^\\.pre-commit-config\\.yaml$"
+      ],
+      "text": [
+        "github actions",
+        "\\bci/cd",
+        "continuous integration",
+        "\\bworkflow\\b.*\\byml"
+      ]
+    },
+    "reproducible_env": {
+      "tree": [
+        "^requirements\\.txt$",
+        "^environment\\.ya?ml$",
+        "^pyproject\\.toml$",
+        "^poetry\\.lock$",
+        "^uv\\.lock$",
+        "^pipfile$",
+        "^renv\\.lock$",
+        "^renv$",
+        "^\\.python-version$",
+        "^conda",
+        "^setup\\.py$",
+        "^pixi\\.toml$"
+      ],
+      "text": [
+        "pip install -r",
+        "conda env",
+        "\\bpoetry\\b",
+        "\\buv sync",
+        "\\brenv\\b"
+      ]
+    },
+    "data_included": {
+      "tree": [
+        "^data$",
+        "^datasets?$",
+        "^raw$",
+        "^input$",
+        "\\.csv$",
+        "\\.parquet$",
+        "\\.xlsx?$",
+        "\\.json$",
+        "\\.sqlite$",
+        "\\.db$"
+      ],
+      "text": []
+    },
+    "docs_folder": {
+      "tree": [
+        "^docs?$",
+        "^documentation$",
+        "^wiki$",
+        "^mkdocs\\.yml$",
+        "^sphinx",
+        "^reports?$"
+      ],
+      "text": [
+        "\\bmkdocs",
+        "\\bsphinx",
+        "read the docs",
+        "readthedocs"
+      ]
+    },
+    "report_pdf_slides": {
+      "tree": [
+        "\\.pdf$",
+        "\\.pptx?$",
+        "^slides?$",
+        "^presentation$",
+        "^report$"
+      ],
+      "text": [
+        "\\bpdf report",
+        "\\bslides?\\b",
+        "\\bpresentation\\b",
+        "\\bpitch deck",
+        "\\bcase study",
+        "\\bwhite ?paper"
+      ]
+    },
+    "sql_files": {
+      "tree": [
+        "\\.sql$",
+        "^sql$",
+        "^queries$"
+      ],
+      "text": [
+        "\\bsql\\b"
+      ]
+    },
+    "license": {
+      "tree": [
+        "^license(?:\\.md|\\.txt)?$",
+        "^licence(?:\\.md|\\.txt)?$",
+        "^copying$"
+      ],
+      "text": []
+    },
+    "makefile_scripts": {
+      "tree": [
+        "^makefile$",
+        "^justfile$",
+        "^scripts?$",
+        "^run\\.sh$",
+        "^run\\.py$",
+        "^taskfile",
+        "^bin$"
+      ],
+      "text": []
+    },
+    "model_artifacts": {
+      "tree": [
+        "^models?$",
+        "\\.pkl$",
+        "\\.joblib$",
+        "\\.h5$",
+        "\\.pt$",
+        "\\.onnx$",
+        "^checkpoints?$",
+        "^weights$",
+        "^mlruns$"
+      ],
+      "text": [
+        "\\bmlflow",
+        "\\bwandb",
+        "\\bmodel registry"
+      ]
+    },
+    "paper_academic": {
+      "tree": [
+        "\\.tex$",
+        "^paper$",
+        "^latex$",
+        "\\.bib$",
+        "^CITATION\\.cff$"
+      ],
+      "text": [
+        "\\barxiv",
+        "\\bdoi\\.org",
+        "\\bdoi:",
+        "\\bproceedings",
+        "\\bpreprint",
+        "\\bcitation\\b",
+        "\\bcite (?:as|this)",
+        "\\bpublished in\\b",
+        "\\bbibtex",
+        "@(?:article|inproceedings)\\{"
+      ]
+    },
+    "competition_kaggle": {
+      "tree": [
+        "^submission",
+        "^submissions$"
+      ],
+      "text": [
+        "\\bkaggle\\b",
+        "\\bcompetition",
+        "\\bleaderboard",
+        "\\bsubmission",
+        "\\bdrivendata",
+        "\\bhackathon",
+        "\\bchallenge\\b",
+        "\\bzindi"
+      ]
+    },
+    "gh_pages_site": {
+      "tree": [
+        "^_config\\.yml$",
+        "^_posts$",
+        "^\\.nojekyll$",
+        "^mkdocs\\.yml$"
+      ],
+      "text": [
+        "github\\.io",
+        "\\bgithub pages"
+      ],
+      "homepage": [
+        "github\\.io"
+      ]
+    }
+  },
+  "readme_features": {
+    "_comment": "Section/heading and content features (§17) matched case-insensitively on README text. 'headings' patterns are applied to markdown headings only; 'content' patterns to the whole text.",
+    "headings": {
+      "objective_overview": [
+        "overview",
+        "about",
+        "introduction",
+        "intro",
+        "summary",
+        "project (?:description|goal|objective|overview)",
+        "description",
+        "motivation",
+        "background",
+        "purpose",
+        "what (?:is|does)",
+        "tl;?dr",
+        "abstract",
+        "überblick",
+        "einleitung",
+        "ziel",
+        "beschreibung",
+        "problem statement",
+        "goal",
+        "objective"
+      ],
+      "business_context": [
+        "business (?:context|problem|question|case|value|impact)",
+        "use case",
+        "stakeholder",
+        "problem statement",
+        "context",
+        "why",
+        "motivation",
+        "the question",
+        "decision",
+        "kpi",
+        "hintergrund",
+        "fragestellung",
+        "geschäft"
+      ],
+      "data_source": [
+        "data(?:set)?s?\\b",
+        "data (?:source|description|collection|acquisition|dictionary|overview)",
+        "datasets?",
+        "input",
+        "source",
+        "daten",
+        "datenquelle",
+        "datensatz",
+        "about the data",
+        "the data"
+      ],
+      "methodology": [
+        "method(?:ology|s)?",
+        "approach",
+        "model(?:ing|ling|s)?",
+        "pipeline",
+        "architecture",
+        "how it works",
+        "workflow",
+        "process",
+        "analysis",
+        "feature engineering",
+        "training",
+        "algorithm",
+        "design",
+        "technical (?:details|approach)",
+        "methodik",
+        "vorgehen",
+        "modell",
+        "implementation",
+        "experiments?"
+      ],
+      "results": [
+        "results?",
+        "findings",
+        "outcome",
+        "performance",
+        "evaluation",
+        "metrics",
+        "conclusions?",
+        "insights?",
+        "key (?:findings|takeaways|results|insights)",
+        "what (?:i|we) (?:found|learned)",
+        "summary of results",
+        "ergebnis",
+        "erkenntnis",
+        "fazit",
+        "auswertung",
+        "model performance",
+        "accuracy",
+        "scores?"
+      ],
+      "limitations": [
+        "limitations?",
+        "caveats?",
+        "assumptions?",
+        "known issues",
+        "future work",
+        "next steps",
+        "to ?do",
+        "roadmap",
+        "improvements?",
+        "shortcomings",
+        "threats to validity",
+        "disclaimer",
+        "einschränkung",
+        "annahmen",
+        "ausblick",
+        "grenzen"
+      ],
+      "reproducibility": [
+        "reproduc",
+        "replicat",
+        "how to (?:run|use|reproduce|install)",
+        "setup",
+        "set up",
+        "getting started",
+        "quick ?start",
+        "installation",
+        "install",
+        "usage",
+        "running",
+        "run(?:ning)? (?:the|locally)",
+        "requirements",
+        "prerequisites",
+        "dependencies",
+        "environment",
+        "configuration",
+        "build",
+        "deployment",
+        "docker",
+        "make",
+        "anleitung",
+        "installation",
+        "ausführen",
+        "verwendung",
+        "nutzung"
+      ],
+      "tech_stack": [
+        "tech(?:nology|nical)? ?stack",
+        "stack",
+        "technologies",
+        "tools?( used)?",
+        "built with",
+        "libraries",
+        "frameworks?",
+        "dependencies",
+        "requirements",
+        "technologien",
+        "verwendete"
+      ],
+      "structure": [
+        "(?:project|repo(?:sitory)?|folder|directory|file) structure",
+        "structure",
+        "contents",
+        "layout",
+        "organization",
+        "organisation",
+        "files",
+        "modules",
+        "struktur",
+        "aufbau",
+        "table of contents"
+      ],
+      "author_contact": [
+        "authors?",
+        "contact",
+        "about (?:me|the author)",
+        "team",
+        "contributors?",
+        "credits",
+        "acknowledg",
+        "maintainer",
+        "autor",
+        "kontakt",
+        "license",
+        "licence",
+        "lizenz",
+        "citation",
+        "cite"
+      ],
+      "visuals_section": [
+        "screenshots?",
+        "demo",
+        "preview",
+        "gallery",
+        "visuali[sz]ations?",
+        "plots?",
+        "charts?",
+        "figures?",
+        "dashboard",
+        "example output",
+        "abbildung",
+        "grafik"
+      ]
+    },
+    "content": {
+      "has_image": [
+        "!\\[[^\\]]*\\]\\(",
+        "<img\\s",
+        "\\.(?:png|jpg|jpeg|gif|svg)\\b"
+      ],
+      "has_badge": [
+        "img\\.shields\\.io",
+        "badge\\.svg",
+        "\\[!\\[",
+        "badge"
+      ],
+      "has_code_block": [
+        "```"
+      ],
+      "has_table": [
+        "\\|\\s*-{2,}\\s*\\|",
+        "^\\|.*\\|\\s*$"
+      ],
+      "has_link_dashboard": [
+        "public\\.tableau\\.com",
+        "app\\.powerbi\\.com",
+        "lookerstudio",
+        "streamlit\\.app",
+        "shinyapps\\.io",
+        "hf\\.space",
+        "huggingface\\.co/spaces"
+      ],
+      "has_link_kaggle": [
+        "kaggle\\.com"
+      ],
+      "has_link_linkedin": [
+        "linkedin\\.com"
+      ],
+      "has_link_medium_blog": [
+        "medium\\.com",
+        "towardsdatascience",
+        "substack\\.com",
+        "dev\\.to",
+        "hashnode"
+      ],
+      "has_link_colab_binder": [
+        "colab\\.research\\.google",
+        "mybinder\\.org",
+        "nbviewer"
+      ],
+      "has_doi_arxiv": [
+        "doi\\.org",
+        "arxiv\\.org"
+      ],
+      "mentions_metrics": [
+        "\\b(?:accuracy|precision|recall|f1|auc|rmse|mae|mape|r\\^?2|r-squared|log ?loss|silhouette|lift|uplift|p-value|confidence interval|effect size)\\b"
+      ],
+      "mentions_business_terms": [
+        "\\b(?:revenue|umsatz|profit|cost|kosten|customer|kunde|stakeholder|kpi|roi|conversion|churn|retention|margin|budget|forecast|decision|entscheid)\\b"
+      ],
+      "mentions_limitations": [
+        "\\b(?:limitation|caveat|assumption|bias|not (?:causal|generali[sz])|small sample|out of scope)\\b"
+      ],
+      "mentions_tests_ci": [
+        "\\bpytest\\b",
+        "\\bunit ?tests?\\b",
+        "github actions",
+        "\\bci\\b",
+        "continuous integration",
+        "\\bcoverage\\b"
+      ],
+      "mentions_docker": [
+        "\\bdocker"
+      ],
+      "mentions_deployment": [
+        "\\bdeploy",
+        "\\bhosted\\b",
+        "\\blive demo",
+        "\\bproduction\\b"
+      ],
+      "mentions_reproduce_cmd": [
+        "pip install",
+        "conda ",
+        "python (?:-m )?[a-z_./]+\\.py",
+        "make \\w+",
+        "docker (?:build|run|compose)",
+        "Rscript",
+        "renv::restore",
+        "streamlit run",
+        "uvicorn",
+        "jupyter (?:notebook|lab)"
+      ],
+      "german_text": [
+        "\\b(?:und|der|die|das|mit|für|nicht|eine|wird|werden|sind|auch|dieses|projekt|daten)\\b.*\\b(?:und|der|die|das|mit|für|nicht|eine|wird|werden|sind|auch|dieses|projekt|daten)\\b"
+      ],
+      "first_person_narrative": [
+        "\\b(?:i|my|me|ich|mein)\\b"
+      ]
+    },
+    "length_buckets": [
+      [
+        0,
+        300,
+        "stub (<300 chars)"
+      ],
+      [
+        300,
+        1500,
+        "short (300–1.5k)"
+      ],
+      [
+        1500,
+        5000,
+        "medium (1.5k–5k)"
+      ],
+      [
+        5000,
+        15000,
+        "long (5k–15k)"
+      ],
+      [
+        15000,
+        10000000,
+        "very long (>15k)"
+      ]
+    ]
+  },
+  "repo_archetypes": {
+    "_comment": "Mutually exclusive archetypes assigned per data repository in this priority order (first rule that matches wins). Signals are derived fields computed by src/pipeline/build_supply.py. 'open_source_contribution' is not measurable with the collected fields (contributions to others' repositories are not fetched) and was removed 2026-09-18. Order changed 2026-09-18: ML/AI method themes are checked before production-style and data-engineering signals, so an ML repository with Docker/CI or a CV 'pipeline' stays an ML project.",
+    "order": [
+      "inactive_archive",
+      "educational_tutorial",
+      "ml_project",
+      "production_style_application",
+      "data_engineering_project",
+      "dashboard_project",
+      "analytics_project",
+      "notebook_portfolio",
+      "other_data"
+    ]
+  },
+  "evidence_rules": {
+    "_comment": "Evidence strength for a capability per candidate (§10): 'mentioned' = word in bio only; 'used' = appears in repository language/topic/description of an owned non-fork repo; 'demonstrated' = appears in the README of a documented data project (README >= 1,000 chars) or is the primary language of such a project; 'project_demonstrated' = same and the project is not flagged educational; 'professional' = not observable on GitHub (company field is not evidence of the skill). Numbers here define thresholds.",
+    "documented_readme_min_chars": 1000,
+    "substantive_project_min_readme_chars": 1000,
+    "project_definition": "owned (not fork), not archived, classified data repository, with a README of at least 300 characters OR at least 1 star OR a non-empty description; a bare repository without any of these is counted as 'repository' but not as 'project'.",
+    "data_user_tiers": {
+      "T1_bio_declared": "bio maps to a data role family (bio_role_overrides or Layer 1 title rules)",
+      "T2_repo_evidenced": "not T1, and (>= 1 documented data project AND >= 2 data repositories) OR (>= 1 substantive project with >= 3 stars) — rule tightened 2026-09-18",
+      "T3_weak_repo_signal": "not T1/T2, >= 1 data repository",
+      "T0_none": "no data signal"
+    }
+  },
+  "certification_patterns": {
+    "_comment": "Certification evidence in bios, repository names/descriptions and READMEs. Layer 1 config/skills_taxonomy.json 'certifications' patterns are applied as well; these add the candidate-side phrasings (capstone repos, badge names).",
+    "Google Data Analytics Certificate": [
+      "google (?:data analytics|advanced data analytics)",
+      "google-data-analytics",
+      "google.{0,20}professional certificate",
+      "cyclistic",
+      "bellabeat"
+    ],
+    "IBM Data Science Certificate": [
+      "ibm data science",
+      "ibm-data-science",
+      "ibm.{0,20}professional certificate",
+      "spacex.{0,30}(?:ibm|capstone)"
+    ],
+    "Microsoft/Azure cert": [
+      "\\b(?:dp|az|pl|ai)-?\\d{3}\\b",
+      "azure (?:data|ai|fundamentals).{0,20}certif",
+      "microsoft certified"
+    ],
+    "AWS cert": [
+      "aws certified",
+      "aws.{0,20}(?:cloud practitioner|solutions architect|machine learning specialty)"
+    ],
+    "Google Cloud cert": [
+      "google cloud.{0,20}certif",
+      "gcp.{0,20}certif",
+      "professional (?:data|machine learning) engineer"
+    ],
+    "Databricks cert": [
+      "databricks certified"
+    ],
+    "Snowflake cert": [
+      "snowpro"
+    ],
+    "Tableau cert": [
+      "tableau (?:desktop )?(?:specialist|certified)"
+    ],
+    "Power BI cert": [
+      "pl-300",
+      "power bi data analyst associate"
+    ],
+    "DataCamp": [
+      "datacamp"
+    ],
+    "Coursera/edX/Udemy (any)": [
+      "coursera",
+      "\\bedx\\b",
+      "udemy",
+      "udacity",
+      "nanodegree",
+      "deeplearning\\.ai",
+      "\\bmooc\\b"
+    ],
+    "Bootcamp": [
+      "bootcamp",
+      "le wagon",
+      "ironhack",
+      "wbs coding",
+      "neuefische",
+      "codecademy",
+      "datacraft",
+      "spiced academy"
+    ],
+    "Kaggle rank/medal": [
+      "kaggle (?:master|grandmaster|expert)",
+      "kaggle.{0,15}(?:medal|competition winner)"
+    ],
+    "Scrum/PM cert": [
+      "\\bpsm\\b",
+      "\\bcsm\\b",
+      "\\bpmp\\b",
+      "scrum master",
+      "prince2"
+    ],
+    "CFA/finance cert": [
+      "\\bcfa\\b",
+      "\\bfrm\\b",
+      "\\bacca\\b"
+    ],
+    "Certification (any mention)": [
+      "certif",
+      "zertifi",
+      "certified"
+    ]
+  },
+  "education_bio_patterns": {
+    "_comment": "Education evidence in bios and READMEs (candidate side). Level and field lists mirror Layer 1 education entries so that DS08 can join on the same labels.",
+    "levels": {
+      "PhD": [
+        "\\bphd\\b",
+        "\\bph\\.d",
+        "\\bdr\\.",
+        "\\bdoctor(?:ate|al)",
+        "\\bdissertation",
+        "\\bdoktor"
+      ],
+      "Master": [
+        "\\bmsc\\b",
+        "\\bm\\.sc",
+        "\\bmaster(?:'s| of|s)?\\b",
+        "\\bmba\\b",
+        "\\bm\\.a\\.",
+        "\\bdipl\\.?[- ]?ing",
+        "\\bdiplom",
+        "\\bmag\\.",
+        "\\bmagister",
+        "\\bm\\.eng"
+      ],
+      "Bachelor": [
+        "\\bbsc\\b",
+        "\\bb\\.sc",
+        "\\bbachelor",
+        "\\bb\\.a\\.",
+        "\\bb\\.eng",
+        "\\bundergrad"
+      ],
+      "HTL/Matura": [
+        "\\bhtl\\b",
+        "\\bmatura\\b",
+        "\\bhak\\b"
+      ],
+      "Bootcamp": [
+        "bootcamp",
+        "le wagon",
+        "ironhack",
+        "neuefische",
+        "wbs coding"
+      ],
+      "Student (current)": [
+        "\\bstudent\\b",
+        "\\bstudying",
+        "\\bstudiere"
+      ]
+    },
+    "fields": {
+      "Computer Science/Informatics": [
+        "computer science",
+        "\\bcs\\b",
+        "informatik",
+        "informatics",
+        "software engineering",
+        "\\bsoftware\\b",
+        "information systems",
+        "wirtschaftsinformatik",
+        "information technology",
+        "\\bit\\b"
+      ],
+      "Statistics/Mathematics": [
+        "statistic",
+        "mathematic",
+        "\\bmath\\b",
+        "applied math",
+        "technische mathematik"
+      ],
+      "Data Science": [
+        "data science",
+        "data engineering",
+        "machine learning",
+        "artificial intelligence",
+        "\\bai\\b",
+        "computational"
+      ],
+      "Economics/Business": [
+        "economics",
+        "business",
+        "\\bbwl\\b",
+        "betriebswirt",
+        "volkswirt",
+        "finance",
+        "management",
+        "\\bmba\\b",
+        "wirtschaft"
+      ],
+      "Engineering/Physics": [
+        "physic",
+        "engineering",
+        "mechanical",
+        "electrical",
+        "elektrotechnik",
+        "maschinenbau",
+        "mechatronic",
+        "telematik",
+        "geodesy",
+        "geomatics"
+      ],
+      "Marketing/Communication": [
+        "marketing",
+        "communication",
+        "media",
+        "journalism",
+        "\\bpr\\b"
+      ],
+      "Natural/Life Sciences": [
+        "biolog",
+        "chemist",
+        "bioinformatic",
+        "neuroscien",
+        "geoscien",
+        "earth science",
+        "environmental",
+        "molecular",
+        "pharma",
+        "medicine",
+        "medical"
+      ],
+      "Social Sciences/Psychology": [
+        "psycholog",
+        "sociolog",
+        "political science",
+        "social science",
+        "linguistic",
+        "philosoph",
+        "education science",
+        "cognitive science"
+      ]
+    },
+    "institutions": {
+      "_comment": "Austrian institutions named in bios; used only to count institution mentions in aggregate, never to identify anyone.",
+      "TU Graz": [
+        "tu graz",
+        "tugraz",
+        "graz university of technology",
+        "technische universität graz"
+      ],
+      "Uni Graz": [
+        "uni graz",
+        "university of graz",
+        "karl-franzens",
+        "universität graz"
+      ],
+      "FH Joanneum": [
+        "fh joanneum",
+        "joanneum"
+      ],
+      "Med Uni Graz": [
+        "med ?uni graz",
+        "medical university of graz"
+      ],
+      "Montanuni Leoben": [
+        "montanuni",
+        "leoben"
+      ],
+      "TU Wien": [
+        "tu wien",
+        "tuwien",
+        "vienna university of technology",
+        "technische universität wien"
+      ],
+      "Uni Wien": [
+        "uni wien",
+        "university of vienna",
+        "universität wien",
+        "univie"
+      ],
+      "WU Wien": [
+        "\\bwu\\b",
+        "wu wien",
+        "vienna university of economics"
+      ],
+      "BOKU": [
+        "\\bboku\\b"
+      ],
+      "Med Uni Wien": [
+        "med ?uni wien",
+        "medical university of vienna",
+        "meduniwien"
+      ],
+      "FH Technikum Wien": [
+        "technikum wien"
+      ],
+      "FH Campus Wien": [
+        "fh campus wien"
+      ],
+      "JKU Linz": [
+        "\\bjku\\b",
+        "johannes kepler",
+        "uni linz"
+      ],
+      "FH Oberösterreich / Hagenberg": [
+        "fh oö",
+        "fh ooe",
+        "fh hagenberg",
+        "hagenberg",
+        "fh upper austria"
+      ],
+      "Uni Salzburg": [
+        "uni salzburg",
+        "university of salzburg",
+        "\\bplus\\b salzburg"
+      ],
+      "FH Salzburg": [
+        "fh salzburg"
+      ],
+      "Uni Innsbruck": [
+        "uni innsbruck",
+        "university of innsbruck",
+        "\\buibk\\b"
+      ],
+      "MCI Innsbruck": [
+        "\\bmci\\b"
+      ],
+      "Uni Klagenfurt": [
+        "uni klagenfurt",
+        "\\baau\\b",
+        "alpen-adria"
+      ],
+      "FH Kärnten": [
+        "fh kärnten",
+        "fh carinthia"
+      ],
+      "FH Vorarlberg": [
+        "fh vorarlberg"
+      ],
+      "IST Austria / ISTA": [
+        "ist austria",
+        "\\bista\\b"
+      ],
+      "AIT": [
+        "\\bait\\b",
+        "austrian institute of technology"
+      ],
+      "Joanneum Research": [
+        "joanneum research"
+      ],
+      "Know-Center": [
+        "know-center",
+        "know center"
+      ],
+      "FH Wiener Neustadt": [
+        "fh wiener neustadt"
+      ],
+      "FH St. Pölten": [
+        "fh st\\. ?pölten",
+        "fhstp"
+      ],
+      "FH Burgenland": [
+        "fh burgenland"
+      ],
+      "FH Krems": [
+        "imc krems",
+        "fh krems"
+      ]
+    },
+    "readme_levels": {
+      "PhD": [
+        "\\bphd\\b",
+        "\\bph\\.d",
+        "\\bdoctoral",
+        "\\bdissertation",
+        "\\bdoktorarbeit"
+      ],
+      "Master": [
+        "\\bm\\.?sc\\b",
+        "master(?:'s|s)? (?:degree|thesis|program(?:me)?|project|student|studies|of science|of business|of arts|course)",
+        "\\bmaster of\\b",
+        "masterarbeit",
+        "\\bmba\\b",
+        "\\bdipl\\.?[- ]?ing"
+      ],
+      "Bachelor": [
+        "\\bb\\.?sc\\b",
+        "bachelor(?:'s|s)? (?:degree|thesis|program(?:me)?|project|student|studies|of science|of arts)",
+        "bachelorarbeit"
+      ],
+      "Bootcamp": [
+        "\\bbootcamp\\b",
+        "le wagon",
+        "ironhack",
+        "neuefische",
+        "wbs coding"
+      ],
+      "Student (current)": [
+        "student project",
+        "\\bas part of (?:my|the|a) (?:studies|course|lecture|seminar)",
+        "\\bsemester project",
+        "\\buniversity (?:project|course|assignment)"
+      ]
+    }
+  },
+  "cross_platform_domains": {
+    "_comment": "Domains recognised in profile website/blog fields, social accounts and README links. Presence is counted per candidate; URLs themselves are stored only privately.",
+    "linkedin": [
+      "linkedin\\.com"
+    ],
+    "kaggle": [
+      "kaggle\\.com"
+    ],
+    "personal_site_github_pages": [
+      "github\\.io"
+    ],
+    "personal_site_custom": [
+      "^(?!.*(?:linkedin|kaggle|github|twitter|x\\.com|medium|youtube|instagram|facebook|orcid|scholar|researchgate|xing|mastodon|bsky|t\\.me|discord|huggingface|tableau|streamlit)).+\\.[a-z]{2,}"
+    ],
+    "medium_blog": [
+      "medium\\.com",
+      "towardsdatascience\\.com",
+      "substack\\.com",
+      "dev\\.to",
+      "hashnode",
+      "blog\\."
+    ],
+    "tableau_public": [
+      "public\\.tableau\\.com"
+    ],
+    "huggingface": [
+      "huggingface\\.co"
+    ],
+    "scholar_orcid": [
+      "scholar\\.google",
+      "orcid\\.org",
+      "researchgate\\.net"
+    ],
+    "xing": [
+      "xing\\.com"
+    ],
+    "twitter_x": [
+      "twitter\\.com",
+      "x\\.com"
+    ],
+    "mastodon_bluesky": [
+      "mastodon",
+      "bsky\\.app"
+    ],
+    "youtube": [
+      "youtube\\.com",
+      "youtu\\.be"
+    ],
+    "streamlit_hf_space": [
+      "streamlit\\.app",
+      "hf\\.space",
+      "huggingface\\.co/spaces"
+    ]
+  },
+  "families_adjacent": [
+    "ai_software_engineering",
+    "other_data",
+    "ai_ml_generic"
+  ],
+  "readme_skill_rules": {
+    "_comment": "Layer 1 skill patterns were written for job advertisements; in README prose several generic entries over-fire. For README-derived evidence these skills use the stricter pattern below (replacing the Layer 1 pattern) and/or must match at least twice ('min2'). 'excluded' skills get no README/repo evidence at all: Git is true by construction on GitHub and is reported as such.",
+    "strict": {
+      "A/B Testing / Experimentation": "a/b[- ]?test|\\bab[- ]test|split test|multivariate test|\\bexperiment(?:ation)? (?:design|platform|framework|results?|analysis)|randomi[sz]ed (?:controlled|experiment)",
+      "Segmentation/Clustering": "\\bk-?means|\\bclustering\\b|customer segment|\\bsegmentation\\b|\\bdbscan|hierarchical cluster|\\bgaussian mixture",
+      "Streaming": "\\bkafka|\\bflink|spark streaming|stream processing|streaming (?:data|pipeline|analytics|platform)|real[- ]time (?:data|analytics|pipeline|stream)",
+      "REST APIs": "rest[- ]?api|\\brestful|\\bfastapi|flask (?:api|app)|\\bapi endpoint|\\bendpoints?\\b|\\bopenapi|\\bswagger|\\bgraphql",
+      "Predictive Analytics": "predictive (?:analytics|model|maintenance)|prediction model|\\bpredict(?:ing|ion of|s) (?:the )?(?:price|sales|demand|churn|risk|outcome|default|failure|revenue)",
+      "Public Sector/Research": "public sector|public administration|\\bministr|\\bbehörde|research (?:project|institute|group|paper|question)|\\bacademic (?:paper|project|research)|\\bpublished in|\\bproceedings|\\bjournal\\b",
+      "Risk/Actuarial": "credit (?:risk|scoring)|risk (?:model|analysis|management|assessment|score)|\\bactuar|\\bsolvency|fraud detection|\\bbasel\\b",
+      "Data Governance/Quality": "data quality|data governance|data validation|great expectations|\\bdbt test|data catalog|data lineage|\\bdata steward|schema validation|\\bpandera\\b|\\bpydantic\\b",
+      "Product Analytics": "product analytics|user behavio(?:u)?r|\\bfunnel|\\bmixpanel|\\bamplitude\\b|product metrics|\\bretention analysis|conversion rate",
+      "Operations/Manufacturing": "manufactur|\\bfertigung|industrie ?4\\.0|\\biot\\b|shopfloor|process data|\\bsensor data|predictive maintenance|production (?:line|plant|process)|\\bfactory",
+      "Data Visualization": "visuali[sz]ation|\\bdashboard|\\bplotly|\\bmatplotlib|\\bseaborn|\\bggplot|\\bd3\\.js|\\btableau|power ?bi|\\bgrafana|\\bchart(?:s|ing)?\\b",
+      "Data Mining": "data mining|\\bweb mining|\\btext mining|\\bassociation rules?|\\bapriori",
+      "Marketing": "\\bmarketing\\b|\\bcampaign|\\badvertis|\\bcrm\\b|\\bseo\\b",
+      "Sales/Commercial": "\\bsales (?:data|forecast|analysis|team|pipeline|report)|\\bumsatz|\\bcommercial\\b|\\brevenue\\b",
+      "E-Commerce": "e-?commerce|online (?:shop|store|retail)|\\bshopify|\\bwoocommerce",
+      "Consulting": "\\bconsulting (?:project|firm|engagement)|\\bconsultancy",
+      "Project Management": "project management|\\bscrum\\b|\\bkanban|\\bjira\\b|\\bagile (?:method|team|project)",
+      "Requirements/Business Analysis": "requirements (?:engineering|analysis|specification)|business (?:analysis|analyst|requirement)|\\buser stor(?:y|ies)|\\bbpmn",
+      "RAG": "\\brag\\b|retrieval[- ]augmented",
+      "AI agents / tool-calling": "\\bagentic|multi[- ]agent|tool[- ]calling|function[- ]calling|\\blanggraph|model context protocol|\\bmcp\\b",
+      "Vector DBs": "vector (?:db|store|database)|\\bqdrant|\\bpinecone|\\bweaviate|\\bfaiss|\\bchroma",
+      "Industry 4.0 / MES / OPC UA": "industrie ?4\\.0|industry 4\\.0|opc[- ]?ua|digital twin|digitalen? zwilling"
+    },
+    "min2": [
+      "AI (generic)",
+      "Cloud (generic)",
+      "Statistics (general)",
+      "Mathematics",
+      "Classification",
+      "Regression",
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "Forecasting",
+      "Time Series",
+      "Anomaly Detection",
+      "Recommender Systems",
+      "Healthcare/Pharma/Bio",
+      "Finance/Controlling",
+      "Energy",
+      "Automotive/Mobility",
+      "Banking/Insurance",
+      "Supply Chain/Logistics",
+      "Telecom",
+      "Real Estate/Retail",
+      "HR/People Analytics",
+      "Pricing/Revenue",
+      "Customer Analytics",
+      "Web/Digital Analytics",
+      "Digital/Online Marketing",
+      "CRM",
+      "Optimization/OR",
+      "ETL/ELT",
+      "Data Modeling",
+      "Data Warehouse (generic)",
+      "Data Lake/Lakehouse",
+      "CI/CD",
+      "MLOps",
+      "Hypothesis Testing",
+      "Bayesian",
+      "Causal Inference",
+      "Exploratory Analysis",
+      "Sampling/Survey",
+      "Excel",
+      "SQL"
+    ],
+    "excluded": [
+      "Git"
+    ]
+  }
+}

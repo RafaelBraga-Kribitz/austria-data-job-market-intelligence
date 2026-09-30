@@ -1,14 +1,22 @@
-"""One-off config patch applied during the 2026-09-16 publication/completeness audit (DECISION_LOG D-012).
+"""APPLIED MIGRATION - do not re-run. One-off config patch from the 2026-09-16
+publication/completeness audit (DECISION_LOG D-012).
 
-Run once from the repository root: python src/pipeline/patch_configs_2026-09-16_audit.py
-Idempotent: re-running produces the same configs. Kept in the repository so that the rule change is reproducible.
+Status: applied once on 2026-09-16 to config/role_taxonomy.json and
+config/skills_taxonomy.json; both files have been edited since. The script is
+kept only as a record of the D-012 rule change. It is NOT idempotent: step 4
+renames "Machine Learning Engineer", so a second run would fail on that key,
+and the master-data / actuary rules would be inserted twice. The entry point
+therefore refuses to run when the configs already carry the patch.
+
+Historical invocation (repository root):
+    python src/pipeline/migrations/patch_configs_2026-09-16_audit.py
 """
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 ROLE = ROOT / "config" / "role_taxonomy.json"
 SKILLS = ROOT / "config" / "skills_taxonomy.json"
 
@@ -35,7 +43,6 @@ def patch_roles() -> None:
 
     # 5. Data governance split: operational master/product-data roles get their own normalized title
     gov = by_norm["Data Governance / Data Steward / Data Manager"]
-    gov["normalized"] = "Data Governance / Data Steward / Data Manager"
     gov["patterns"] = [r"data steward", r"data governance", r"data quality", r"datenqualität", r"data catalog", r"\bcdo\b", r"chief data",
                        r"data owner", r"data product (?:manager|owner)", r"data platform (?:manager|owner)", r"(?:head|lead) of data",
                        r"data manager", r"datenmanager", r"data management", r"datenmanagement", r"data & vendor"]
@@ -108,7 +115,16 @@ def patch_skills() -> None:
     SKILLS.write_text(json.dumps(t, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def already_applied() -> bool:
+    """True when role_taxonomy.json already carries the D-012 rename."""
+    t = json.loads(ROLE.read_text(encoding="utf-8"))
+    return any(r.get("normalized") == "Machine Learning / AI Engineer" for r in t.get("rules", []))
+
+
 if __name__ == "__main__":
+    if already_applied():
+        raise SystemExit("D-012 config patch is already applied (config/role_taxonomy.json has "
+                         "'Machine Learning / AI Engineer'); this migration is not re-runnable.")
     patch_roles()
     patch_skills()
     print("configs patched")

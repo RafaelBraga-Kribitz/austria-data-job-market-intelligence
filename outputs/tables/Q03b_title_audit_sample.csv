@@ -1,178 +1,178 @@
 posting_uid,title,title_clean,role_family,normalized_title,role_rule,source
-linkedin:4438579610,QA Data Analyst (m/w/d),qa data analyst,data_analytics,Data Analyst,data analy,linkedin
-jobsat:7899573,Datenanalyst*in mit Fokus Wirkungsmessung (m/w/d),datenanalyst mit fokus wirkungsmessung,data_analytics,Data Analyst,daten[- ]?analy,jobsat
-linkedin:4452470277,Praktikant Process Mining (w/m/x),praktikant process mining,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),process mining,linkedin
-jobsat:7889934,QA Data Analyst (m/w/d),qa data analyst,data_analytics,Data Analyst,data analy,jobsat
-linkedin:4453099707,Data Analyst:in im Meldewesen,data analyst im meldewesen,data_analytics,Data Analyst,data analy,linkedin
-linkedin:4465233192,Senior Data Analyst*,senior data analyst*,data_analytics,Data Analyst,data analy,linkedin
-linkedin:4461312233,Senior Consultant (human) Planung mit IBM Planning Analytics (TM1),senior consultant human planung mit ibm planning analytics tm1,data_analytics,Data Analyst,\banalytics\b,linkedin
-linkedin:4465811811,Team Lead Data & Analytics (m/f/d),team lead data & analytics,data_analytics,Data Analyst,data & analytics,linkedin
-eures:MTczNDM2NTUgNDM,"Ersatzteil- und Bevorratungsanalyst (Parts Data & Inventory Analyst) (m/w/d)
+p_b7b0c5e96d75d7e1,QA Data Analyst (m/w/d),qa data analyst,data_analytics,Data Analyst,data analy,linkedin
+p_b2202b4e87f14cfd,Datenanalyst*in mit Fokus Wirkungsmessung (m/w/d),datenanalyst mit fokus wirkungsmessung,data_analytics,Data Analyst,daten[- ]?analy,jobsat
+p_2430f493d1fddf85,Praktikant Process Mining (w/m/x),praktikant process mining,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),process mining,linkedin
+p_2f3d740d5b7f6a92,QA Data Analyst (m/w/d),qa data analyst,data_analytics,Data Analyst,data analy,jobsat
+p_ddc3d0ecee4afdbc,Data Analyst:in im Meldewesen,data analyst im meldewesen,data_analytics,Data Analyst,data analy,linkedin
+p_838b93e1d83c172d,Senior Data Analyst*,senior data analyst*,data_analytics,Data Analyst,data analy,linkedin
+p_4d24a8c2b095395c,Senior Consultant (human) Planung mit IBM Planning Analytics (TM1),senior consultant human planung mit ibm planning analytics tm1,data_analytics,Data Analyst,\banalytics\b,linkedin
+p_b14d4d71bd21ab80,Team Lead Data & Analytics (m/f/d),team lead data & analytics,data_analytics,Data Analyst,data & analytics,linkedin
+p_ea25181f504ebe94,"Ersatzteil- und Bevorratungsanalyst (Parts Data & Inventory Analyst) (m/w/d)
 Job-ID 84236",ersatzteil und bevorratungsanalyst parts data & inventory analyst job id 84236,data_analytics,Data Analyst,"analyst.{0,10}data",eures
-linkedin:4458877817,Spezialist:in Sortimentsdaten & Analysen,spezialist sortimentsdaten & analysen,data_analytics,Data Analyst,"daten.{0,25}analys",linkedin
-eures:MTczMzcyOTIgNDM,Senior Consultant (human) Planung mit IBM Planning Analytics (TM1),senior consultant human planung mit ibm planning analytics tm1,data_analytics,Data Analyst,\banalytics\b,eures
-eures:MTczMTg0NjkgNDM,Data Analyst_in - Risikomanager_in (w/m/d),data analyst risikomanager,data_analytics,Data Analyst,data analy,eures
-linkedin:4459221971,"CPV and Advanced Analytics Platforms Lead (m/w/d), Hybrid",cpv and advanced analytics platforms lead,data_analytics,Data Analyst,\banalytics\b,linkedin
-karriere:10029965,Data Analyst/Scientist,data analyst / scientist,data_analytics,Data Analyst,data analy,karriere
-jobsat:7896612,Data Analyst:in - Risikomanager:in (m/w/d),data analyst risikomanager,data_analytics,Data Analyst,data analy,jobsat
-eures:MTcwNTY5MTkgNDM,Web Tracking & Analytics - DIN Consultant (w/m/d),web tracking & analytics din consultant,bi,BI Consultant / Analytics Consultant,"analytics.{0,10}(?:consultant|berater)",eures
-linkedin:4450055713,Controller der Zukunft - Business Intelligence & Data Analytics (m/w/d),controller der zukunft business intelligence & data analytics,bi,BI Analyst,"business intelligence.{0,10}analy",linkedin
-eures:MTcyNTAxMDQgNDM,Specialist BI & Business Controller (m/w/x),specialist bi & business controller,bi,BI Analyst,(?<![\w-])bi(?![\w-])(?!.*(?:engineer|developer|consultant)),eures
-eures:MTcxMzQ2MTEgNDM,Senior BI Expert (m/w/x),senior bi expert,bi,BI Developer / BI Engineer,\bbi[- ]?(?:developer|entwickler|engineer|specialist|spezialist|expert|experte|architect|architekt),eures
-eures:MTcyOTMwNTMgNDM,SAP BW & Analytics Cloud Consultant (m/w/d),sap bw & analytics cloud consultant,bi,BI Developer / BI Engineer,sap ?bw,eures
-karriere:10032212,Junior Investment & Client Reporting Analyst (m/w/d),junior investment & client reporting analyst,bi,BI Analyst,reporting analy,karriere
-eures:MTcyNzAyMTcgNDM,Lead Analytics & Business Intelligence (w/m/d),lead analytics & business intelligence,bi,BI Analyst,business intelligence,eures
-linkedin:4416517434,BI Projektleiter Finance (m/w/d),bi projektleiter finance,bi,BI Analyst,(?<![\w-])bi(?![\w-])(?!.*(?:engineer|developer|consultant)),linkedin
-jobsat:7886577,(Senior) BI Engineer (all genders),senior bi engineer,bi,BI Developer / BI Engineer,\bbi[- ]?(?:developer|entwickler|engineer|specialist|spezialist|expert|experte|architect|architekt),jobsat
-linkedin:4453591727,(Senior) Reporting Specialist,senior reporting specialist,bi,BI Developer / BI Engineer,"reporting.{0,10}(?:developer|entwickler|engineer|specialist|spezialist)",linkedin
-eures:MTcyMjY1NTYgNDM,Business Intelligence Advisor (w/m/d),business intelligence advisor,bi,BI Analyst,business intelligence,eures
-karriere:7860904,IT Data & Reporting Engineer w/m/d,it data & reporting engineer,bi,BI Developer / BI Engineer,"reporting.{0,10}(?:developer|entwickler|engineer|specialist|spezialist)",karriere
-eures:MTczMDc5OTMgNDM,Business Intelligence Specialist (m/w/x),business intelligence specialist,bi,BI Developer / BI Engineer,"business intelligence.{0,10}(?:developer|entwickler|engineer|specialist|expert|architect)",eures
-linkedin:4457467455,Business Intelligence & Automations Engineer (w/m/d),business intelligence & automations engineer,bi,BI Analyst,business intelligence,linkedin
-karriere:7876888,Junior Reporting Analyst (m|f|x),junior reporting analyst,bi,BI Analyst,reporting analy,karriere
-willhaben:13244101,AI Engineer / KI-Entwickler (m/w/d),ai engineer / ki entwickler,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,willhaben
-linkedin:4450389256,"(Senior) Forward Deployed AI Scientist, Operations & Optimization, Germany & Austria - BCG X","senior forward deployed ai scientist , operations & optimization , & bcg x",data_science,Data Scientist,\bai scientist,linkedin
-karriere:7872727,AI/ML Ops Engineer (m/w/d),ai / ml ops engineer,data_science,Machine Learning / AI Engineer,\bml ops,karriere
-linkedin:4459109358,Data & AI Engineer (m/w/d),data & ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
-linkedin:4464345058,AI / ML Developer - Vienna,ai / ml developer,data_science,Data Scientist,\bml (?:specialist|expert|developer),linkedin
-linkedin:4454178789,Senior Data Scientist (m/w/d),senior data scientist,data_science,Data Scientist,data scien,linkedin
-linkedin:4406208858,Principal Biostatistician (Immunology) - FSP,principal biostatistician immunology fsp,data_science,Statistician / Biostatistician,statisti(?:ker|ker:in|cian|kerin),linkedin
-linkedin:4368606873,Azure AI / ML Engineer (m/w/d),azure ai / ml engineer,data_science,Machine Learning / AI Engineer,\bml[- ]?engineer,linkedin
-linkedin:4445181005,Computer Vision Engineer,computer vision engineer,data_science,Machine Learning / AI Engineer,computer vision engineer,linkedin
-karriere:10027478,Digital Transformation & AI Expert (w/m/d),digital transformation & ai expert,data_science,Data Scientist,\bai (?:specialist|expert|researcher),karriere
-linkedin:4440089234,AI Engineer (f/m/d),ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
-linkedin:4406211536,Data Scientist (all genders),data scientist,data_science,Data Scientist,data scien,linkedin
-eures:MTczMjU3OTcgNDM,Lead Data & AI Engineer (w/m),lead data & ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,eures
-eures:MTcyODY2MDYgNDM,AI Engineer (m/w/d),ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,eures
-linkedin:4404546868,Senior AI Engineer,senior ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
-linkedin:4459947554,Data Engineer for Databricks Platform (all humans),data engineer for databricks platform all humans,data_engineering,Data Engineer,data engineer,linkedin
-linkedin:4465978988,Data Engineer (w/m/d),data engineer,data_engineering,Data Engineer,data engineer,linkedin
-karriere:10027932,(Senior) Data & Analytics Engineer (m/w/d),senior data & analytics engineer,data_engineering,Analytics Engineer,analytics engineer,karriere
-linkedin:4461604892,CRM & Marketing Automation Data Engineer (d/w/m),crm & marketing automation data engineer,data_engineering,Data Engineer,data engineer,linkedin
-linkedin:4464981555,Senior Data Engineer,senior data engineer,data_engineering,Data Engineer,data engineer,linkedin
-linkedin:4464799983,Data Platform Consultant (m/w/d),data platform consultant,data_engineering,Data Architect / Data Platform,data platform,linkedin
-linkedin:4459193803,BI- und DWH-Entwickler*in,bi und dwh entwickler,data_engineering,Data Engineer,dwh[- ]?(?:entwickler|developer|engineer),linkedin
-linkedin:4462868478,Data Platform Architect,data platform architect,data_engineering,Data Architect / Data Platform,data platform,linkedin
-karriere:7846868,Data Warehouse Developer (m/f/d),data warehouse developer,data_engineering,Data Engineer,data warehouse (?:entwickler|developer|engineer|architect),karriere
-linkedin:4433110925,Senior Data Engineer*,senior data engineer*,data_engineering,Data Engineer,data engineer,linkedin
-eures:MTczMjQ1MjcgNDM,Junior Data Engineer (w/m/d),junior data engineer,data_engineering,Data Engineer,data engineer,eures
-jobsat:7901759,Senior GIS Data Engineer & Architekt (*all humans) (m/w/d),senior gis data engineer & architekt *all humans,data_engineering,Data Engineer,data engineer,jobsat
-eures:MTcyOTg0MTQgNDM,Data Architect mit Data Engineering Hands-on skills (w/m/d),data architect mit data engineering hands on skills,data_engineering,Data Engineer,data engineer,eures
-jobsat:7899519,Data Engineer (all genders),data engineer,data_engineering,Data Engineer,data engineer,jobsat
-linkedin:4430463062,DATENBANKADMINISTRATOR:IN FÜR POSTGRESQL IN LINZ (W/M/X),datenbankadministrator für postgresql,data_engineering,Data Engineer,datenbank(?:entwickler|administrator),linkedin
-karriere:10027387,Specialist Data & Vendor Management (m/w/d),specialist data & vendor management,data_governance,Data Governance / Data Steward / Data Manager,data & vendor,karriere
-eures:MTczMjkyNDMgNDM,Junior Product Data Specialist (w/m/d),junior product data specialist,data_governance,Master / Product Data Management (operational),product data,eures
-linkedin:4447906166,Head of Data Europe,head of data europe,data_governance,Data Governance / Data Steward / Data Manager,(?:head|lead) of data,linkedin
-linkedin:4463959450,Legal Expert in Health Innovation & Data Governance (f/m/d),legal expert in health innovation & data governance,data_governance,Data Governance / Data Steward / Data Manager,data governance,linkedin
-karriere:7849373,Engineering Data Manager – CAD & PLM (m/w/d),engineering data manager cad & plm,data_governance,Master / Product Data Management (operational),engineering data,karriere
-linkedin:4436372565,Master Data Specialist (m|f|x),master data specialist,data_governance,Master / Product Data Management (operational),master data,linkedin
-linkedin:4455953682,Consulting Solution Architect - Data Management,consulting solution architect data management,data_governance,Data Governance / Data Steward / Data Manager,data management,linkedin
-karriere:10029303,Engineering Data Specialist (w/m/x) im Sondermaschinenbau,engineering data specialist im sondermaschinenbau,data_governance,Master / Product Data Management (operational),engineering data,karriere
-karriere:7818323,Product Data & Food Law Professional (all genders),product data & food law professional,data_governance,Master / Product Data Management (operational),product data,karriere
-jobsat:7902379,Clinical Data Manager (m/w/d),clinical data manager,data_governance,Data Governance / Data Steward / Data Manager,data manager,jobsat
-karriere:10032559,(Senior) Geodatenmanager:in (m/w/d),senior geodatenmanager,data_governance,Master / Product Data Management (operational),geodaten,karriere
-eures:MTczMDQzOTggNDM,Mitarbeiter_in Produktdatenmanagement & Datenanalyse,mitarbeiter produktdatenmanagement & datenanalyse,data_governance,Master / Product Data Management (operational),produktdaten,eures
-karriere:7748777,Data Managerin/Manager Spezialisierung Metadatenmodellierung (w/m/d),data managerin / manager spezialisierung metadatenmodellierung,data_governance,Data Governance / Data Steward / Data Manager,data manager,karriere
-linkedin:4448576954,Mitarbeiter:in Produktdatenmanagement & Datenanalyse (m/w/d),mitarbeiter produktdatenmanagement & datenanalyse,data_governance,Master / Product Data Management (operational),produktdaten,linkedin
-karriere:10032941,Projektleitung Datenmanagement & Data Governance,projektleitung datenmanagement & data governance,data_governance,Data Governance / Data Steward / Data Manager,data governance,karriere
-eures:MTcxNzcxMTYgNDM,Data Scientist (Marketing) (m/w/d),data scientist marketing,marketing_analytics,Marketing Data Scientist,"data scien.{0,20}marketing",eures
-eures:MTczMzA0MzcgNDM,Senior Consultant Digital Analytics (m/w/d),senior consultant digital analytics,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,eures
-linkedin:4430367699,"Business & Data Analyst in Sales, Marketing und Distribution Controlling (m/w/d)","business & data analyst in sales , marketing und distribution controlling",marketing_analytics,Marketing/Growth/CRM Analyst,"analy.{0,15}marketing",linkedin
-linkedin:4455872176,"Senior Consultant Digital Analytics (m/w/d), Wien",senior consultant digital analytics,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,linkedin
-eures:MTI4MTEtMjI4OTA5Mi1TIDE,"(Junior) Marketing Analyst*in (m/w/d), Hartlauer Zentrale (Betriebswirt/in (Fachschule) - Absatz/Marketing/Bachelor Professional in Wirtschaft)","junior marketing analyst , hartlauer zentrale (betriebswirt fachschule absatz / marketing / bachelor professional in wirtschaft)",marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",eures
-linkedin:4455622664,MarTech / CRM Marketing Lead,martech / crm marketing lead,marketing_analytics,Marketing/Growth/CRM Analyst,\bmartech\b,linkedin
-karriere:7847885,Junior Martech Manager*in Landingpage & Content (m/w/d) - 30 Stunden/Woche,junior martech manager landingpage & content / woche,marketing_analytics,Marketing/Growth/CRM Analyst,\bmartech\b,karriere
-linkedin:4435961803,TRACKING & WEB ANALYTICS | EXPERT,tracking & web analytics expert,marketing_analytics,Marketing/Growth/CRM Analyst,web[- ]?analy,linkedin
-linkedin:4434632263,(Junior) Marketing Analyst*in (m/w/d),junior marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
-eures:MTczNTE4NjcgNDM,Teamleitung Customer Insights & Data Analytics (w/m/x),teamleitung customer insights & data analytics,marketing_analytics,Marketing/Growth/CRM Analyst,"customer.{0,15}(?:analy|intelligence|insight)",eures
-linkedin:4435970497,Junior Influencer Marketing Analyst (f/m/d),junior influencer marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
-eures:MTcyNzk5NTQgNDM,"Mitarbeiter/in Performance Marketing, Datenanalyse & Technik","mitarbeiter performance marketing , datenanalyse & technik",marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",eures
-linkedin:4435975174,Senior Influencer Marketing Analyst (f/m/d),senior influencer marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
-linkedin:4454778144,Digital Analytics Engineer (m/w/d),digital analytics engineer,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,linkedin
-jobsat:7885690,Data Scientist (Digital Marketing) (m/w/d),data scientist digital marketing,marketing_analytics,Marketing Data Scientist,"data scien.{0,20}marketing",jobsat
-linkedin:4462190932,Product Analyst (all genders),product analyst,product_analytics,Product Analyst,"product(?!.*owner).{0,15}analy(?!.*business)",linkedin
-jobsat:7900443,Business Analyst (all genders),business analyst,business_analysis,Business Analyst,business analy,jobsat
-linkedin:4465692845,Business Analyst (43768),business analyst 43768,business_analysis,Business Analyst,business analy,linkedin
-linkedin:4427729696,Business Analyst - Konstruktion (m/w/d),business analyst konstruktion,business_analysis,Business Analyst,business analy,linkedin
-linkedin:4462511455,MES Business Analyst,mes business analyst,business_analysis,Business Analyst,business analy,linkedin
-linkedin:4464123195,Business Process Owner - Finance and Controlling,business process owner finance and controlling,business_analysis,Business Analyst,business (?:process|solution),linkedin
-eures:MTczMTc2NzcgNDM,"Technical Business Analyst, Finanzberatung (w/m/d)","technical business analyst , finanzberatung",business_analysis,Business Analyst,business analy,eures
-willhaben:13142078,Studentenjob Business Analyst (m/w/d),studentenjob business analyst,business_analysis,Business Analyst,business analy,willhaben
-eures:MTczMjM4NzggNDM,IT-Business Analyst:in mit Fokus Produktion Schienenpersonenverkehr,it business analyst mit fokus produktion schienenpersonenverkehr,business_analysis,Business Analyst,business analy,eures
-willhaben:13268133,Senior Requirements Engineer / Business Analyst (w/m/d),senior requirements engineer / business analyst,business_analysis,Business Analyst,business analy,willhaben
-karriere:7832144,Team Lead Software Requirements Engineering (m/w/d),team lead software requirements engineering,business_analysis,Business Analyst,requirements? engineer,karriere
-jobsat:7895491,Business Analyst (m/w/d) Schwerpunkte ERP & Digitalisierung,business analyst schwerpunkte erp & digitalisierung,business_analysis,Business Analyst,business analy,jobsat
-linkedin:4456939264,Pricing Tools & Systems Business Process Owner,pricing tools & systems business process owner,business_analysis,Business Analyst,business (?:process|solution),linkedin
-karriere:7874392,Business Analyst - Securities Trading*,business analyst securities trading*,business_analysis,Business Analyst,business analy,karriere
-linkedin:4459520695,Business Analyst - HR (m/w/d),business analyst hr,business_analysis,Business Analyst,business analy,linkedin
-eures:MTczMzg4NjcgNDM,System Analyst - Factory Integration (f/m/div),system analyst factory integration,business_analysis,Business Analyst,system analy,eures
-linkedin:4366163299,Versicherungsmathematiker (w/m/d) für die Wirtschaftsprüfung,versicherungsmathematiker für die wirtschaftsprüfung,other_data,Actuary / Mathematician (adjacent),versicherungsmathemat,linkedin
-karriere:7864903,Credit & Treasury Analyst (m/w/d),credit & treasury analyst,other_data,Other data / analytics role,analy(?:st|tics|tiker|tik),karriere
-karriere:10030271,Data Research (m/w/d),data research,other_data,Other data / analytics role,\bdata\b,karriere
-linkedin:4370506125,Professional IT-Consultant - Digitalisierung (all genders) [Graz],professional it consultant digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),linkedin
-eures:MTczNDk3OTcgNDM,Country Performance Analyst (f/m/d),country performance analyst,other_data,Other data / analytics role,analy(?:st|tics|tiker|tik),eures
-karriere:10032216,Consulting Actuary (w/m/d),consulting actuary,other_data,Actuary / Mathematician (adjacent),actuar,karriere
-karriere:10027990,Projektmanager:in Energietechnik und Digitalisierung (m/w/d),projektmanager energietechnik und digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),karriere
-eures:MTczMTAzNzIgNDM,ERP & Data Integration Manager_in,erp & data integration manager,other_data,Other data / analytics role,\bdata\b,eures
-willhaben:13268718,IT-Leitung | Innovator:in für Digitalisierung,it leitung innovator für digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),willhaben
-karriere:7728695,Expertin/Experte Data Architekt (w/m/d),expertin / experte data architekt,other_data,Other data / analytics role,\bdata\b,karriere
-eures:MTczMjIyNDcgNDM,Systems Engineer - Database & Systems Operations (m/w/d),systems engineer database & systems operations,other_data,Other data / analytics role,database,eures
-linkedin:4454191402,Physiker/Mathematiker/Naturwissenschaftler als Berater im Bereich Datenintegration (m/w/d),physiker / mathematiker / naturwissenschaftler als berater im bereich datenintegration,other_data,Actuary / Mathematician (adjacent),mathematiker,linkedin
-jobsat:7878320,Senior IT Service Manager:in - Data Integration (m/w/d),senior it service manager data integration,other_data,Other data / analytics role,\bdata\b,jobsat
-eures:MTY5NjcwOTggNDM,Internship: Digitalization - Software Programmer in the IP Context (f/m/div),internship : digitalization software programmer in the ip context,other_data,Other data / analytics role,digital(?:isierung|ization),eures
-eures:MTcyNzQyOTUgNDM,Application Workload Manager_in - Data Warehouse,application workload manager data warehouse,other_data,Other data / analytics role,\bdata\b,eures
-karriere:7875586,Lead Developer (f/m/d) - Agentic AI Platform,lead developer agentic ai platform,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer","(?:software|backend|platform|devops|cloud|full ?stack|frontend|python|java|\.net|c#|web|app|agent|agentops|solutions?)[^,]{0,40}(?:\bai\b|\bki\b|\bml\b|machine learning|\bllm|genai|generative|deep learning|computer vision|\bnlp\b)",karriere
-linkedin:4435545354,AI-Project Manager & Consultant (m/w/d),ai project manager & consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-linkedin:4434637534,"Visiting Associate - AI Tech Architecture (all genders) - BCG Platinion Vienna, Austria",visiting associate ai tech architecture bcg platinion,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-karriere:7863346,AI Architect (m/w/d),ai architect,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),karriere
-eures:MTcxOTkxNzQgNDM,AI Consultant (m/w/d),ai consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),eures
-karriere:10032335,"Trainer*In gesucht (m/w/d) Lehrgänge im Bereich Künstliche Intelligenz (KI), Online-Unterricht","trainer gesucht lehrgänge im bereich künstliche intelligenz ki , online unterricht",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",künstliche intelligenz,karriere
-linkedin:4462247200,Group AI Learning & Quality Manager (m/w/d) in Teilzeit,group ai learning & quality manager in,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-jobsat:7895956,AI Consultant (m/w/d),ai consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),jobsat
-linkedin:4455889033,"Senior Consultant Search, Content & AI Visibility (SEO/GEO) (m/w/d), Bregenz","senior consultant search , content & ai visibility seo / geo , bregenz",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-linkedin:4461769447,The AITHYRA International PhD Call in AI for Biomedicine (all genders),the aithyra international phd call in ai for biomedicine,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-karriere:7875439,Senior KI Developer:in (m/w/d),senior ki developer,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer","(?:\bai\b|\bki\b|\bml\b|machine learning|\bllm|genai|generative|deep learning|computer vision|\bnlp\b)[^,]{0,40}(?:software|backend|platform|devops|cloud|full ?stack|frontend|developer|entwickler|programmier|agent)",karriere
-karriere:7849274,AI and Digitalization Operations Manager (m/f/d),ai and digitalization operations manager,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,karriere
-linkedin:4412167944,"Director - Hardware Engineering, AI Infrastructure Systems","director hardware engineering , ai infrastructure systems",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
-karriere:10029085,"Sales, Marketing & AI Assistent (w/m/d)","sales , marketing & ai assistent",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,karriere
-willhaben:13260282,AI & Digital Transformation Engineer (m/w/d) I Standort: Graz I Teilzeit,ai & digital transformation engineer i,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,willhaben
-eures:MTczMjMxMTAgNDM,Expert*in für digitalen Datenaustausch,expert für digitalen datenaustausch,out_of_scope,,datenaustausch,eures
-linkedin:4450605904,(Senior) Microsoft Purview / Data Protection Consultant / Architect (w/m/x),senior microsoft purview / data protection consultant / architect,out_of_scope,,datenschutz|data protection|privacy officer|\bdsgvo\b|\bgdpr\b,linkedin
-eures:MTczNTEyNDEgNDM,Key Account Manager - Data & Market Intelligence,key account manager data & market intelligence,out_of_scope,,\bkey account\b,eures
-linkedin:4426860538,Cyber Threat Intelligence Analyst (m/w/x) - Operative Security,cyber threat intelligence analyst operative security,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
-linkedin:4425831207,HR Mitarbeiter:in – Schwerpunkt HR-Administration & Datenpflege (befristet bis 30.12.2028),hr mitarbeiter schwerpunkt hr administration & datenpflege bis 30.12.2028,out_of_scope,,datenpflege,linkedin
-eures:MTcwNjQ4OTkgNDM,Biomedizinische/r Analytiker/in (m/w/d) für das Zentrallabor,biomedizinische / r analytiker für das zentrallabor,out_of_scope,,biomedizinisch,eures
-karriere:7849370,System Solution Engineer - Optical Interconnect CMOS ICs for Datacom (d/​m/​f),system solution engineer optical interconnect cmos ics for datacom d / ​m / ​f,out_of_scope,,no_rule_matched,karriere
-eures:MTcwNjExNzAgNDM,Projektleiter_in Elektrotechnik - Datacenter,projektleiter elektrotechnik datacenter,out_of_scope,,data ?cent(?:er|re),eures
-eures:MTczMzE5MjEgNDM,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
-karriere:10029430,"Water Treatment Technician, Data Centers","water treatment technician , data centers",out_of_scope,,data ?cent(?:er|re),karriere
-willhaben:13268464,IT Specialist – KI & Automatisierung (m/w/d),it specialist ki & automatisierung,out_of_scope,,no_rule_matched,willhaben
-karriere:7857848,Biomedizinische Analytikerin bzw. Biomedizinischer Analytiker,biomedizinische analytikerin bzw. biomedizinischer analytiker,out_of_scope,,biomedizinisch,karriere
-karriere:7809515,Student (m/w/d) für eine Abschlussarbeit im Bereich automatisierte Qualitätsprüfung mit KI und Kamerasystemen,student für eine abschlussarbeit im bereich automatisierte qualitätsprüfung mit ki und kamerasystemen,out_of_scope,,no_rule_matched,karriere
-linkedin:4463577704,Mitarbeiter:in im Fuhrparkmanagement mit Schwerpunkt Performance Management und Analyse,mitarbeiter im fuhrparkmanagement mit schwerpunkt performance management und analyse,out_of_scope,,no_rule_matched,linkedin
-linkedin:4427943256,CYBER SECURITY ANALYST:IN (W/M/D),cyber security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
-linkedin:4456015326,Senior Systems Engineer – Datacenter & Private Cloud (f/m/x),senior systems engineer datacenter & private cloud,out_of_scope,,data ?cent(?:er|re),linkedin
-karriere:7875388,Grafik- & Mediendesign mit KI-Fokus (m/w/x),grafik & mediendesi mit ki fokus,out_of_scope,,grafik,karriere
-karriere:7875235,Senior Lead Security Analyst (m/w/d),senior lead security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,karriere
-linkedin:4461652410,Expert:in Digital Transformation & KI,expert digital transformation & ki,out_of_scope,,no_rule_matched,linkedin
-eures:MTczMDc2NzUgNDM,Biomedizinische:r Analytiker:in,biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
-eures:MTczMzE3MDcgNDM,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
-linkedin:4403400074,Projektleiter für Microsoft 365 und KI Projekte,projektleiter für microsoft 365 und ki projekte,out_of_scope,,no_rule_matched,linkedin
-linkedin:4458589823,Biomedizinische Analytik im Bereich Pathologie (all gender),biomedizinische analytik im bereich pathologie all gender,out_of_scope,,biomedizinisch,linkedin
-eures:MTczNDA0NDIgNDM,Mitarbeiter_in (m/w/d) Labor Analytik,mitarbeiter labor analytik,out_of_scope,,\blabor|\bhplc\b|qualitätskontrolle|\bchemi(?:e|ker|sche)\b,eures
-eures:MTczMzU2OTQgNDM,Mitarbeiter Zutrittskontrolle / Screening Officer Datacenter (m/w/d) - Schwechat - Vollzeit,mitarbeiter zutrittskontrolle / screening officer datacenter schwechat,out_of_scope,,data ?cent(?:er|re),eures
-eures:MTcyNzg3ODYgNDM,Datacenter Systems Engineer (m/w/d),datacenter systems engineer,out_of_scope,,data ?cent(?:er|re),eures
-eures:MTczNTA2NzQgNDM,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
-karriere:7866718,Senior Site Manager Data Center (m/w/d),senior site manager data center,out_of_scope,,data ?cent(?:er|re),karriere
-linkedin:4465715252,Junior Consultant (m/w/d) | KI- & Digitalprojekte | Wien,junior consultant ki & digitalprojekte,out_of_scope,,no_rule_matched,linkedin
-linkedin:4461965328,Spezialist:in Digitale Kommunikation & KI Sichtbarkeit,spezialist digitale kommunikation & ki sichtbarkeit,out_of_scope,,no_rule_matched,linkedin
-karriere:10030908,Junior IT-Security Analyst:in (m/w/d),junior it security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,karriere
-eures:MTczMDQ4OTAgNDM,"Master Thesis ""Bi-Static Sensing of UAVs"" - JOB ID: 269595",master thesis bi static sensing of uavs job id : 269595,out_of_scope,,master thesis|bachelor thesis|masterarbeit|bachelorarbeit|diplomarbeit|\bthesis\b,eures
-eures:MTczMzkyMTggNDM,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
-eures:MTcyOTI4NDYgNDM,Mitarbeiter_in Analysis,mitarbeiter analysis,out_of_scope,,no_rule_matched,eures
-eures:MTcyMzY5NzIgNDM,Biomedizinische_r Analytiker_in (m/w/d),biomedizinische_r analytiker,out_of_scope,,biomedizinisch,eures
-karriere:7846214,Terminplaner:in für Datacenter (all genders),terminplaner für datacenter,out_of_scope,,data ?cent(?:er|re),karriere
-karriere:10032419,IT-ProjektmanagerIn / IT-SpezialistIn Daten & Anwendungen Service & IT (m/w/d),it projektmanagerin / it spezialistin daten & anwendungen service & it,out_of_scope,,\bit[- ]projekt,karriere
-eures:MTczMjgwMjMgNDM,Werkstudent_in für interne KI-Tool Entwicklung und Automatisierung,werkstudent für interne ki tool entwicklung und automatisierung,out_of_scope,,no_rule_matched,eures
-linkedin:4436353240,Principal Embedded Security Vulnerability Analyst (m/f/d),principal embedded security vulnerability analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
-karriere:10029958,Senior KI-Enabler:in,senior ki enabler,out_of_scope,,no_rule_matched,karriere
+p_13628ef21f9f113b,Spezialist:in Sortimentsdaten & Analysen,spezialist sortimentsdaten & analysen,data_analytics,Data Analyst,"daten.{0,25}analys",linkedin
+p_1645981c173800bb,Senior Consultant (human) Planung mit IBM Planning Analytics (TM1),senior consultant human planung mit ibm planning analytics tm1,data_analytics,Data Analyst,\banalytics\b,eures
+p_ad1f750aa9ac7773,Data Analyst_in - Risikomanager_in (w/m/d),data analyst risikomanager,data_analytics,Data Analyst,data analy,eures
+p_fd1b53ba0242b134,"CPV and Advanced Analytics Platforms Lead (m/w/d), Hybrid",cpv and advanced analytics platforms lead,data_analytics,Data Analyst,\banalytics\b,linkedin
+p_deef568f6e734c90,Data Analyst/Scientist,data analyst / scientist,data_analytics,Data Analyst,data analy,karriere
+p_a46b2da2f1e0d4bb,Data Analyst:in - Risikomanager:in (m/w/d),data analyst risikomanager,data_analytics,Data Analyst,data analy,jobsat
+p_33f7890270a21fe5,Web Tracking & Analytics - DIN Consultant (w/m/d),web tracking & analytics din consultant,bi,BI Consultant / Analytics Consultant,"analytics.{0,10}(?:consultant|berater)",eures
+p_2a5b914df1724d48,Controller der Zukunft - Business Intelligence & Data Analytics (m/w/d),controller der zukunft business intelligence & data analytics,bi,BI Analyst,"business intelligence.{0,10}analy",linkedin
+p_4bc687ab1b2a2648,Specialist BI & Business Controller (m/w/x),specialist bi & business controller,bi,BI Analyst,(?<![\w-])bi(?![\w-])(?!.*(?:engineer|developer|consultant)),eures
+p_3c428e43dedb7ebd,Senior BI Expert (m/w/x),senior bi expert,bi,BI Developer / BI Engineer,\bbi[- ]?(?:developer|entwickler|engineer|specialist|spezialist|expert|experte|architect|architekt),eures
+p_ce6fdd1f753dcd06,SAP BW & Analytics Cloud Consultant (m/w/d),sap bw & analytics cloud consultant,bi,BI Developer / BI Engineer,sap ?bw,eures
+p_509fffbbdd2be1ec,Junior Investment & Client Reporting Analyst (m/w/d),junior investment & client reporting analyst,bi,BI Analyst,reporting analy,karriere
+p_9d8cda1b9d8c79cc,Lead Analytics & Business Intelligence (w/m/d),lead analytics & business intelligence,bi,BI Analyst,business intelligence,eures
+p_2aa6a444b484184a,BI Projektleiter Finance (m/w/d),bi projektleiter finance,bi,BI Analyst,(?<![\w-])bi(?![\w-])(?!.*(?:engineer|developer|consultant)),linkedin
+p_03c4592ed5668355,(Senior) BI Engineer (all genders),senior bi engineer,bi,BI Developer / BI Engineer,\bbi[- ]?(?:developer|entwickler|engineer|specialist|spezialist|expert|experte|architect|architekt),jobsat
+p_5b6655f81f7a0166,(Senior) Reporting Specialist,senior reporting specialist,bi,BI Developer / BI Engineer,"reporting.{0,10}(?:developer|entwickler|engineer|specialist|spezialist)",linkedin
+p_fa90c97165cdd03c,Business Intelligence Advisor (w/m/d),business intelligence advisor,bi,BI Analyst,business intelligence,eures
+p_79914246ab0db353,IT Data & Reporting Engineer w/m/d,it data & reporting engineer,bi,BI Developer / BI Engineer,"reporting.{0,10}(?:developer|entwickler|engineer|specialist|spezialist)",karriere
+p_7789eed506098f02,Business Intelligence Specialist (m/w/x),business intelligence specialist,bi,BI Developer / BI Engineer,"business intelligence.{0,10}(?:developer|entwickler|engineer|specialist|expert|architect)",eures
+p_6997a0fdd687772a,Business Intelligence & Automations Engineer (w/m/d),business intelligence & automations engineer,bi,BI Analyst,business intelligence,linkedin
+p_8861c748d9a3f386,Junior Reporting Analyst (m|f|x),junior reporting analyst,bi,BI Analyst,reporting analy,karriere
+p_14863ef3a1f40b42,AI Engineer / KI-Entwickler (m/w/d),ai engineer / ki entwickler,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,willhaben
+p_e36b5b63efd1f3ba,"(Senior) Forward Deployed AI Scientist, Operations & Optimization, Germany & Austria - BCG X","senior forward deployed ai scientist , operations & optimization , & bcg x",data_science,Data Scientist,\bai scientist,linkedin
+p_f4fd680ff91a5f41,AI/ML Ops Engineer (m/w/d),ai / ml ops engineer,data_science,Machine Learning / AI Engineer,\bml ops,karriere
+p_80349a01ee2bed32,Data & AI Engineer (m/w/d),data & ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
+p_579f7e86d9c8e4cc,AI / ML Developer - Vienna,ai / ml developer,data_science,Data Scientist,\bml (?:specialist|expert|developer),linkedin
+p_349d520d6008d7a1,Senior Data Scientist (m/w/d),senior data scientist,data_science,Data Scientist,data scien,linkedin
+p_09b944c5d9881061,Principal Biostatistician (Immunology) - FSP,principal biostatistician immunology fsp,data_science,Statistician / Biostatistician,statisti(?:ker|ker:in|cian|kerin),linkedin
+p_85dff2eac41f77eb,Azure AI / ML Engineer (m/w/d),azure ai / ml engineer,data_science,Machine Learning / AI Engineer,\bml[- ]?engineer,linkedin
+p_77e16dde5fa7cd0d,Computer Vision Engineer,computer vision engineer,data_science,Machine Learning / AI Engineer,computer vision engineer,linkedin
+p_a4a6762554dfb011,Digital Transformation & AI Expert (w/m/d),digital transformation & ai expert,data_science,Data Scientist,\bai (?:specialist|expert|researcher),karriere
+p_0b9d3a95568a5528,AI Engineer (f/m/d),ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
+p_47919f148aa15c87,Data Scientist (all genders),data scientist,data_science,Data Scientist,data scien,linkedin
+p_31ce5d4fd459967f,Lead Data & AI Engineer (w/m),lead data & ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,eures
+p_c6940af74a238375,AI Engineer (m/w/d),ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,eures
+p_a5adda29d5897b1d,Senior AI Engineer,senior ai engineer,data_science,Machine Learning / AI Engineer,\bai[- ]?engineer,linkedin
+p_767e129aa6ccbb4e,Data Engineer for Databricks Platform (all humans),data engineer for databricks platform all humans,data_engineering,Data Engineer,data engineer,linkedin
+p_e66cc21d2f30d0bc,Data Engineer (w/m/d),data engineer,data_engineering,Data Engineer,data engineer,linkedin
+p_e9c9b0b512c00519,(Senior) Data & Analytics Engineer (m/w/d),senior data & analytics engineer,data_engineering,Analytics Engineer,analytics engineer,karriere
+p_6a5715c557ac2468,CRM & Marketing Automation Data Engineer (d/w/m),crm & marketing automation data engineer,data_engineering,Data Engineer,data engineer,linkedin
+p_568678d197f1229a,Senior Data Engineer,senior data engineer,data_engineering,Data Engineer,data engineer,linkedin
+p_34b7465dbab43462,Data Platform Consultant (m/w/d),data platform consultant,data_engineering,Data Architect / Data Platform,data platform,linkedin
+p_0646b8ce4af1ec8b,BI- und DWH-Entwickler*in,bi und dwh entwickler,data_engineering,Data Engineer,dwh[- ]?(?:entwickler|developer|engineer),linkedin
+p_e1a582ca57813b28,Data Platform Architect,data platform architect,data_engineering,Data Architect / Data Platform,data platform,linkedin
+p_ecdfa64fdc4207ea,Data Warehouse Developer (m/f/d),data warehouse developer,data_engineering,Data Engineer,data warehouse (?:entwickler|developer|engineer|architect),karriere
+p_9ed8fe734ffa7d42,Senior Data Engineer*,senior data engineer*,data_engineering,Data Engineer,data engineer,linkedin
+p_46bdd6deefc9afe6,Junior Data Engineer (w/m/d),junior data engineer,data_engineering,Data Engineer,data engineer,eures
+p_0b5ed2a4a9726968,Senior GIS Data Engineer & Architekt (*all humans) (m/w/d),senior gis data engineer & architekt *all humans,data_engineering,Data Engineer,data engineer,jobsat
+p_cab5f49f18a2ce67,Data Architect mit Data Engineering Hands-on skills (w/m/d),data architect mit data engineering hands on skills,data_engineering,Data Engineer,data engineer,eures
+p_436ef5f30324840e,Data Engineer (all genders),data engineer,data_engineering,Data Engineer,data engineer,jobsat
+p_00e410a2adb0743b,DATENBANKADMINISTRATOR:IN FÜR POSTGRESQL IN LINZ (W/M/X),datenbankadministrator für postgresql,data_engineering,Data Engineer,datenbank(?:entwickler|administrator),linkedin
+p_02eca4c30a8e4960,Specialist Data & Vendor Management (m/w/d),specialist data & vendor management,data_governance,Data Governance / Data Steward / Data Manager,data & vendor,karriere
+p_a97e2fb020027030,Junior Product Data Specialist (w/m/d),junior product data specialist,data_governance,Master / Product Data Management (operational),product data,eures
+p_0ccee7cdbaca3b3d,Head of Data Europe,head of data europe,data_governance,Data Governance / Data Steward / Data Manager,(?:head|lead) of data,linkedin
+p_7c77e695512994ed,Legal Expert in Health Innovation & Data Governance (f/m/d),legal expert in health innovation & data governance,data_governance,Data Governance / Data Steward / Data Manager,data governance,linkedin
+p_e22add03548564b8,Engineering Data Manager – CAD & PLM (m/w/d),engineering data manager cad & plm,data_governance,Master / Product Data Management (operational),engineering data,karriere
+p_3e1083ce3e6a4f08,Master Data Specialist (m|f|x),master data specialist,data_governance,Master / Product Data Management (operational),master data,linkedin
+p_b1a15b663f2caabd,Consulting Solution Architect - Data Management,consulting solution architect data management,data_governance,Data Governance / Data Steward / Data Manager,data management,linkedin
+p_bfb958a716ad6caf,Engineering Data Specialist (w/m/x) im Sondermaschinenbau,engineering data specialist im sondermaschinenbau,data_governance,Master / Product Data Management (operational),engineering data,karriere
+p_a896badb29cbc0d9,Product Data & Food Law Professional (all genders),product data & food law professional,data_governance,Master / Product Data Management (operational),product data,karriere
+p_9f74b197ac578acb,Clinical Data Manager (m/w/d),clinical data manager,data_governance,Data Governance / Data Steward / Data Manager,data manager,jobsat
+p_7bdf6e83e0b03ae1,(Senior) Geodatenmanager:in (m/w/d),senior geodatenmanager,data_governance,Master / Product Data Management (operational),geodaten,karriere
+p_e0552e1aada602d6,Mitarbeiter_in Produktdatenmanagement & Datenanalyse,mitarbeiter produktdatenmanagement & datenanalyse,data_governance,Master / Product Data Management (operational),produktdaten,eures
+p_c4d02bcc9885fa04,Data Managerin/Manager Spezialisierung Metadatenmodellierung (w/m/d),data managerin / manager spezialisierung metadatenmodellierung,data_governance,Data Governance / Data Steward / Data Manager,data manager,karriere
+p_e618ff42f32d71fa,Mitarbeiter:in Produktdatenmanagement & Datenanalyse (m/w/d),mitarbeiter produktdatenmanagement & datenanalyse,data_governance,Master / Product Data Management (operational),produktdaten,linkedin
+p_9510b756dfee149d,Projektleitung Datenmanagement & Data Governance,projektleitung datenmanagement & data governance,data_governance,Data Governance / Data Steward / Data Manager,data governance,karriere
+p_8bcfde97fc7bc1bd,Data Scientist (Marketing) (m/w/d),data scientist marketing,marketing_analytics,Marketing Data Scientist,"data scien.{0,20}marketing",eures
+p_9cedba5ae6b73ccc,Senior Consultant Digital Analytics (m/w/d),senior consultant digital analytics,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,eures
+p_f0d5eca5390dd443,"Business & Data Analyst in Sales, Marketing und Distribution Controlling (m/w/d)","business & data analyst in sales , marketing und distribution controlling",marketing_analytics,Marketing/Growth/CRM Analyst,"analy.{0,15}marketing",linkedin
+p_d5a8a51033fd3a9b,"Senior Consultant Digital Analytics (m/w/d), Wien",senior consultant digital analytics,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,linkedin
+p_b7ac6e635d173916,"(Junior) Marketing Analyst*in (m/w/d), Hartlauer Zentrale (Betriebswirt/in (Fachschule) - Absatz/Marketing/Bachelor Professional in Wirtschaft)","junior marketing analyst , hartlauer zentrale (betriebswirt fachschule absatz / marketing / bachelor professional in wirtschaft)",marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",eures
+p_97dc4a5778a2548f,MarTech / CRM Marketing Lead,martech / crm marketing lead,marketing_analytics,Marketing/Growth/CRM Analyst,\bmartech\b,linkedin
+p_1333d61ccc0d151b,Junior Martech Manager*in Landingpage & Content (m/w/d) - 30 Stunden/Woche,junior martech manager landingpage & content / woche,marketing_analytics,Marketing/Growth/CRM Analyst,\bmartech\b,karriere
+p_5db33bcffe3ef289,TRACKING & WEB ANALYTICS | EXPERT,tracking & web analytics expert,marketing_analytics,Marketing/Growth/CRM Analyst,web[- ]?analy,linkedin
+p_afdfe5ccc524caef,(Junior) Marketing Analyst*in (m/w/d),junior marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
+p_ed69a316cb89e9ac,Teamleitung Customer Insights & Data Analytics (w/m/x),teamleitung customer insights & data analytics,marketing_analytics,Marketing/Growth/CRM Analyst,"customer.{0,15}(?:analy|intelligence|insight)",eures
+p_acb4c89f20109716,Junior Influencer Marketing Analyst (f/m/d),junior influencer marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
+p_ee6380b9638c47c2,"Mitarbeiter/in Performance Marketing, Datenanalyse & Technik","mitarbeiter performance marketing , datenanalyse & technik",marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",eures
+p_5f59ee28da21b4cb,Senior Influencer Marketing Analyst (f/m/d),senior influencer marketing analyst,marketing_analytics,Marketing/Growth/CRM Analyst,"marketing.{0,25}analy",linkedin
+p_40d139e4bd2c4f33,Digital Analytics Engineer (m/w/d),digital analytics engineer,marketing_analytics,Marketing/Growth/CRM Analyst,digital analy,linkedin
+p_3c405d598d87c28a,Data Scientist (Digital Marketing) (m/w/d),data scientist digital marketing,marketing_analytics,Marketing Data Scientist,"data scien.{0,20}marketing",jobsat
+p_e5e0089459ef596e,Product Analyst (all genders),product analyst,product_analytics,Product Analyst,"product(?!.*owner).{0,15}analy(?!.*business)",linkedin
+p_5530278d99fbc079,Business Analyst (all genders),business analyst,business_analysis,Business Analyst,business analy,jobsat
+p_ec77eb75e932cf07,Business Analyst (43768),business analyst 43768,business_analysis,Business Analyst,business analy,linkedin
+p_8cd57f5b6fbd489d,Business Analyst - Konstruktion (m/w/d),business analyst konstruktion,business_analysis,Business Analyst,business analy,linkedin
+p_b84104d382e58564,MES Business Analyst,mes business analyst,business_analysis,Business Analyst,business analy,linkedin
+p_6261adb99e949126,Business Process Owner - Finance and Controlling,business process owner finance and controlling,business_analysis,Business Analyst,business (?:process|solution),linkedin
+p_92adbfa87afde72f,"Technical Business Analyst, Finanzberatung (w/m/d)","technical business analyst , finanzberatung",business_analysis,Business Analyst,business analy,eures
+p_992a47e5af34a40e,Studentenjob Business Analyst (m/w/d),studentenjob business analyst,business_analysis,Business Analyst,business analy,willhaben
+p_9a80f28012138fc4,IT-Business Analyst:in mit Fokus Produktion Schienenpersonenverkehr,it business analyst mit fokus produktion schienenpersonenverkehr,business_analysis,Business Analyst,business analy,eures
+p_bce9805e759c567d,Senior Requirements Engineer / Business Analyst (w/m/d),senior requirements engineer / business analyst,business_analysis,Business Analyst,business analy,willhaben
+p_00fb096104909d4f,Team Lead Software Requirements Engineering (m/w/d),team lead software requirements engineering,business_analysis,Business Analyst,requirements? engineer,karriere
+p_39fc76f5ab3f9cee,Business Analyst (m/w/d) Schwerpunkte ERP & Digitalisierung,business analyst schwerpunkte erp & digitalisierung,business_analysis,Business Analyst,business analy,jobsat
+p_0df9bfdb7ae7ecc5,Pricing Tools & Systems Business Process Owner,pricing tools & systems business process owner,business_analysis,Business Analyst,business (?:process|solution),linkedin
+p_aaf228e1cf69ff73,Business Analyst - Securities Trading*,business analyst securities trading*,business_analysis,Business Analyst,business analy,karriere
+p_430004ba0dece6cc,Business Analyst - HR (m/w/d),business analyst hr,business_analysis,Business Analyst,business analy,linkedin
+p_6f3303d1dec98cb2,System Analyst - Factory Integration (f/m/div),system analyst factory integration,business_analysis,Business Analyst,system analy,eures
+p_32bb892789bbc1fe,Versicherungsmathematiker (w/m/d) für die Wirtschaftsprüfung,versicherungsmathematiker für die wirtschaftsprüfung,other_data,Actuary / Mathematician (adjacent),versicherungsmathemat,linkedin
+p_9362ad504fc18b04,Credit & Treasury Analyst (m/w/d),credit & treasury analyst,other_data,Other data / analytics role,analy(?:st|tics|tiker|tik),karriere
+p_02bb2b8789098eea,Data Research (m/w/d),data research,other_data,Other data / analytics role,\bdata\b,karriere
+p_c13fdd87399ed665,Professional IT-Consultant - Digitalisierung (all genders) [Graz],professional it consultant digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),linkedin
+p_34550c0c99636b91,Country Performance Analyst (f/m/d),country performance analyst,other_data,Other data / analytics role,analy(?:st|tics|tiker|tik),eures
+p_6d98074fdec58426,Consulting Actuary (w/m/d),consulting actuary,other_data,Actuary / Mathematician (adjacent),actuar,karriere
+p_5e8c219fee488943,Projektmanager:in Energietechnik und Digitalisierung (m/w/d),projektmanager energietechnik und digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),karriere
+p_401e9c4f8ed9dbed,ERP & Data Integration Manager_in,erp & data integration manager,other_data,Other data / analytics role,\bdata\b,eures
+p_cd30df17aa2aa6c9,IT-Leitung | Innovator:in für Digitalisierung,it leitung innovator für digitalisierung,other_data,Other data / analytics role,digital(?:isierung|ization),willhaben
+p_922db9b94a592a4b,Expertin/Experte Data Architekt (w/m/d),expertin / experte data architekt,other_data,Other data / analytics role,\bdata\b,karriere
+p_4b63f7de6b618409,Systems Engineer - Database & Systems Operations (m/w/d),systems engineer database & systems operations,other_data,Other data / analytics role,database,eures
+p_4fa2764a46043060,Physiker/Mathematiker/Naturwissenschaftler als Berater im Bereich Datenintegration (m/w/d),physiker / mathematiker / naturwissenschaftler als berater im bereich datenintegration,other_data,Actuary / Mathematician (adjacent),mathematiker,linkedin
+p_97284e2e40e01218,Senior IT Service Manager:in - Data Integration (m/w/d),senior it service manager data integration,other_data,Other data / analytics role,\bdata\b,jobsat
+p_a1553fdf069d95df,Internship: Digitalization - Software Programmer in the IP Context (f/m/div),internship : digitalization software programmer in the ip context,other_data,Other data / analytics role,digital(?:isierung|ization),eures
+p_78ed8ed87d4bbd44,Application Workload Manager_in - Data Warehouse,application workload manager data warehouse,other_data,Other data / analytics role,\bdata\b,eures
+p_e317c26a8fc43151,Lead Developer (f/m/d) - Agentic AI Platform,lead developer agentic ai platform,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer","(?:software|backend|platform|devops|cloud|full ?stack|frontend|python|java|\.net|c#|web|app|agent|agentops|solutions?)[^,]{0,40}(?:\bai\b|\bki\b|\bml\b|machine learning|\bllm|genai|generative|deep learning|computer vision|\bnlp\b)",karriere
+p_5a38f59ff832f6b6,AI-Project Manager & Consultant (m/w/d),ai project manager & consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_c9806fa609cc4f32,"Visiting Associate - AI Tech Architecture (all genders) - BCG Platinion Vienna, Austria",visiting associate ai tech architecture bcg platinion,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_9208ecc94353a11e,AI Architect (m/w/d),ai architect,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),karriere
+p_0c8967ffd843cae3,AI Consultant (m/w/d),ai consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),eures
+p_c9a3fef674c2d030,"Trainer*In gesucht (m/w/d) Lehrgänge im Bereich Künstliche Intelligenz (KI), Online-Unterricht","trainer gesucht lehrgänge im bereich künstliche intelligenz ki , online unterricht",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",künstliche intelligenz,karriere
+p_f35b922ef4e1f47e,Group AI Learning & Quality Manager (m/w/d) in Teilzeit,group ai learning & quality manager in,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_2fb4d0b2dd297265,AI Consultant (m/w/d),ai consultant,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai (?:consultant|expert|specialist|manager|lead|architect|advisor),jobsat
+p_cf0a12c25472d861,"Senior Consultant Search, Content & AI Visibility (SEO/GEO) (m/w/d), Bregenz","senior consultant search , content & ai visibility seo / geo , bregenz",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_33020cc357df2b79,The AITHYRA International PhD Call in AI for Biomedicine (all genders),the aithyra international phd call in ai for biomedicine,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_3bf1130706b8a00c,Senior KI Developer:in (m/w/d),senior ki developer,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer","(?:\bai\b|\bki\b|\bml\b|machine learning|\bllm|genai|generative|deep learning|computer vision|\bnlp\b)[^,]{0,40}(?:software|backend|platform|devops|cloud|full ?stack|frontend|developer|entwickler|programmier|agent)",karriere
+p_a5d9be935ed89127,AI and Digitalization Operations Manager (m/f/d),ai and digitalization operations manager,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,karriere
+p_2b10f39180985f32,"Director - Hardware Engineering, AI Infrastructure Systems","director hardware engineering , ai infrastructure systems",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,linkedin
+p_2b06e0c7b8b1c996,"Sales, Marketing & AI Assistent (w/m/d)","sales , marketing & ai assistent",ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,karriere
+p_c202469adaea2f4b,AI & Digital Transformation Engineer (m/w/d) I Standort: Graz I Teilzeit,ai & digital transformation engineer i,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",\bai\b,willhaben
+p_ea26842c831ce727,Expert*in für digitalen Datenaustausch,expert für digitalen datenaustausch,out_of_scope,,datenaustausch,eures
+p_391ba9109c1152fb,(Senior) Microsoft Purview / Data Protection Consultant / Architect (w/m/x),senior microsoft purview / data protection consultant / architect,out_of_scope,,datenschutz|data protection|privacy officer|\bdsgvo\b|\bgdpr\b,linkedin
+p_e729bf3344968a27,Key Account Manager - Data & Market Intelligence,key account manager data & market intelligence,out_of_scope,,\bkey account\b,eures
+p_2a81c02d5cba61c9,Cyber Threat Intelligence Analyst (m/w/x) - Operative Security,cyber threat intelligence analyst operative security,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
+p_f276ea89cef8056a,HR Mitarbeiter:in – Schwerpunkt HR-Administration & Datenpflege (befristet bis 30.12.2028),hr mitarbeiter schwerpunkt hr administration & datenpflege bis 30.12.2028,out_of_scope,,datenpflege,linkedin
+p_a92c29a27921ce9c,Biomedizinische/r Analytiker/in (m/w/d) für das Zentrallabor,biomedizinische / r analytiker für das zentrallabor,out_of_scope,,biomedizinisch,eures
+p_a654f4993956d7d6,System Solution Engineer - Optical Interconnect CMOS ICs for Datacom (d/​m/​f),system solution engineer optical interconnect cmos ics for datacom d / ​m / ​f,out_of_scope,,no_rule_matched,karriere
+p_24c77394ff411bb8,Projektleiter_in Elektrotechnik - Datacenter,projektleiter elektrotechnik datacenter,out_of_scope,,data ?cent(?:er|re),eures
+p_0ebf29a0d6ff25d5,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
+p_844b1e84a7691a1b,"Water Treatment Technician, Data Centers","water treatment technician , data centers",out_of_scope,,data ?cent(?:er|re),karriere
+p_35db23b8cfa635d9,IT Specialist – KI & Automatisierung (m/w/d),it specialist ki & automatisierung,out_of_scope,,no_rule_matched,willhaben
+p_0c184042edc3daca,Biomedizinische Analytikerin bzw. Biomedizinischer Analytiker,biomedizinische analytikerin bzw. biomedizinischer analytiker,out_of_scope,,biomedizinisch,karriere
+p_64c9b73d9b4f668d,Student (m/w/d) für eine Abschlussarbeit im Bereich automatisierte Qualitätsprüfung mit KI und Kamerasystemen,student für eine abschlussarbeit im bereich automatisierte qualitätsprüfung mit ki und kamerasystemen,out_of_scope,,no_rule_matched,karriere
+p_f0471f837614bc5b,Mitarbeiter:in im Fuhrparkmanagement mit Schwerpunkt Performance Management und Analyse,mitarbeiter im fuhrparkmanagement mit schwerpunkt performance management und analyse,out_of_scope,,no_rule_matched,linkedin
+p_62160e1a1e5f9aef,CYBER SECURITY ANALYST:IN (W/M/D),cyber security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
+p_046142ed764ce332,Senior Systems Engineer – Datacenter & Private Cloud (f/m/x),senior systems engineer datacenter & private cloud,out_of_scope,,data ?cent(?:er|re),linkedin
+p_5e1e5478e9b932b0,Grafik- & Mediendesign mit KI-Fokus (m/w/x),grafik & mediendesi mit ki fokus,out_of_scope,,grafik,karriere
+p_f684feea4c44bc42,Senior Lead Security Analyst (m/w/d),senior lead security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,karriere
+p_7fe9307e61a0e4f0,Expert:in Digital Transformation & KI,expert digital transformation & ki,out_of_scope,,no_rule_matched,linkedin
+p_f8d13957e9b61425,Biomedizinische:r Analytiker:in,biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
+p_5a5c982cde796330,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
+p_25c61a0930fa18f8,Projektleiter für Microsoft 365 und KI Projekte,projektleiter für microsoft 365 und ki projekte,out_of_scope,,no_rule_matched,linkedin
+p_5a606f498ae942aa,Biomedizinische Analytik im Bereich Pathologie (all gender),biomedizinische analytik im bereich pathologie all gender,out_of_scope,,biomedizinisch,linkedin
+p_7e3e45e75c9b1b54,Mitarbeiter_in (m/w/d) Labor Analytik,mitarbeiter labor analytik,out_of_scope,,\blabor|\bhplc\b|qualitätskontrolle|\bchemi(?:e|ker|sche)\b,eures
+p_770b8d72421eec87,Mitarbeiter Zutrittskontrolle / Screening Officer Datacenter (m/w/d) - Schwechat - Vollzeit,mitarbeiter zutrittskontrolle / screening officer datacenter schwechat,out_of_scope,,data ?cent(?:er|re),eures
+p_d74081c3f8df118c,Datacenter Systems Engineer (m/w/d),datacenter systems engineer,out_of_scope,,data ?cent(?:er|re),eures
+p_68cd0d14e5a0d650,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
+p_7409655aa08990a7,Senior Site Manager Data Center (m/w/d),senior site manager data center,out_of_scope,,data ?cent(?:er|re),karriere
+p_ac6c38147901e1a3,Junior Consultant (m/w/d) | KI- & Digitalprojekte | Wien,junior consultant ki & digitalprojekte,out_of_scope,,no_rule_matched,linkedin
+p_1a18a13532527e37,Spezialist:in Digitale Kommunikation & KI Sichtbarkeit,spezialist digitale kommunikation & ki sichtbarkeit,out_of_scope,,no_rule_matched,linkedin
+p_373a79b800416002,Junior IT-Security Analyst:in (m/w/d),junior it security analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,karriere
+p_38ed369c9670cc30,"Master Thesis ""Bi-Static Sensing of UAVs"" - JOB ID: 269595",master thesis bi static sensing of uavs job id : 269595,out_of_scope,,master thesis|bachelor thesis|masterarbeit|bachelorarbeit|diplomarbeit|\bthesis\b,eures
+p_6637f9ac28e3c595,Biomedizinische:r Analytiker:in (m/w/d),biomedizinische : r analytiker,out_of_scope,,biomedizinisch,eures
+p_270acbb868d82d78,Mitarbeiter_in Analysis,mitarbeiter analysis,out_of_scope,,no_rule_matched,eures
+p_2e136da7a4732111,Biomedizinische_r Analytiker_in (m/w/d),biomedizinische_r analytiker,out_of_scope,,biomedizinisch,eures
+p_b78374f6d89ec0a1,Terminplaner:in für Datacenter (all genders),terminplaner für datacenter,out_of_scope,,data ?cent(?:er|re),karriere
+p_7bd8e22e8170038c,IT-ProjektmanagerIn / IT-SpezialistIn Daten & Anwendungen Service & IT (m/w/d),it projektmanagerin / it spezialistin daten & anwendungen service & it,out_of_scope,,\bit[- ]projekt,karriere
+p_0223198f9d98b74a,Werkstudent_in für interne KI-Tool Entwicklung und Automatisierung,werkstudent für interne ki tool entwicklung und automatisierung,out_of_scope,,no_rule_matched,eures
+p_488e5a9b8b2609a7,Principal Embedded Security Vulnerability Analyst (m/f/d),principal embedded security vulnerability analyst,out_of_scope,,\bsecurity\b|\bsicherheit|\bcyber|\bsoc\b|\bthreat\b|penetration,linkedin
+p_4f98de5c581e1db6,Senior KI-Enabler:in,senior ki enabler,out_of_scope,,no_rule_matched,karriere

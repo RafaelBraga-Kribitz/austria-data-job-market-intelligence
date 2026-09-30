@@ -1,0 +1,4 @@
+adjacent_family,count,n,share,ci_low,ci_high,family_label,of_which_repo_evidenced_T2,note
+ai_ml_generic,1038,9409,0.11,0.104,0.117,ML/AI/data interest wording (adjacent),335,"population: P_all; bios with generic ML/AI/data wording or AI-software/other-data titles are ADJACENT, not declared data roles; they count as data-signal only via repository evidence (T2)"
+other_data,104,9409,0.011,0.009,0.013,Other data (adjacent),24,"population: P_all; bios with generic ML/AI/data wording or AI-software/other-data titles are ADJACENT, not declared data roles; they count as data-signal only via repository evidence (T2)"
+ai_software_engineering,27,9409,0.003,0.002,0.004,AI software engineering (adjacent),13,"population: P_all; bios with generic ML/AI/data wording or AI-software/other-data titles are ADJACENT, not declared data roles; they count as data-signal only via repository evidence (T2)"

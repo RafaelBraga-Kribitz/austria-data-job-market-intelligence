@@ -1,0 +1,248 @@
+{
+ "run_started": "2026-09-30T18:36:30+00:00",
+ "run_finished": "2026-09-30T19:04:56+00:00",
+ "target": "all",
+ "from_step": null,
+ "status": "ok",
+ "seconds_total": 1705.2,
+ "log": "logs/run_20260930-203630.log",
+ "environment": {
+  "python": "3.12.10",
+  "implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "requirements_installed": {
+   "requests": "2.34.2",
+   "pandas": "2.3.3",
+   "numpy": "2.5.1",
+   "scikit-learn": "1.9.0",
+   "scipy": "1.18.0",
+   "matplotlib": "3.11.1",
+   "networkx": "3.6.1",
+   "pyarrow": "24.0.0",
+   "tzdata": "2026.3",
+   "pytest": "9.1.1"
+  },
+  "requirements_mismatches": [],
+  "git_commit": "f2a64802b4140f0b41339b6698ec13e32db6b731",
+  "git_branch": "audit-fixes-2026-09-30",
+  "git_dirty": false
+ },
+ "steps": [
+  {
+   "step": "build_interim",
+   "target": "layer1",
+   "command": "python src/pipeline/build_interim.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 10.0
+  },
+  {
+   "step": "normalize",
+   "target": "layer1",
+   "command": "python src/pipeline/normalize.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 497.9
+  },
+  {
+   "step": "dedupe",
+   "target": "layer1",
+   "command": "python src/pipeline/dedupe.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 14.8
+  },
+  {
+   "step": "redact_layer1_contacts",
+   "target": "layer1",
+   "command": "python src/pipeline/redact_layer1_contacts.py --confirm",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 348.3
+  },
+  {
+   "step": "run_analysis",
+   "target": "layer1",
+   "command": "python src/analysis/run_analysis.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 4.7
+  },
+  {
+   "step": "cluster_requirements",
+   "target": "layer1",
+   "command": "python src/analysis/cluster_requirements.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 6.8
+  },
+  {
+   "step": "data_quality",
+   "target": "layer1",
+   "command": "python src/analysis/data_quality.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 4.8
+  },
+  {
+   "step": "jobbarometer_analysis",
+   "target": "layer1",
+   "command": "python src/analysis/jobbarometer_analysis.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.9
+  },
+  {
+   "step": "adjacent_demand",
+   "target": "layer1",
+   "command": "python src/analysis/adjacent_demand.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 8.1
+  },
+  {
+   "step": "build_decision_matrix",
+   "target": "layer1",
+   "command": "python src/analysis/build_decision_matrix.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.0
+  },
+  {
+   "step": "make_figures",
+   "target": "layer1",
+   "command": "python src/analysis/make_figures.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 5.4
+  },
+  {
+   "step": "export_agent_json",
+   "target": "layer1",
+   "command": "python src/analysis/export_agent_json.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 0.9
+  },
+  {
+   "step": "seasonality",
+   "target": "layer1",
+   "command": "python src/analysis/seasonality.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 2.5
+  },
+  {
+   "step": "salary_premium",
+   "target": "layer1",
+   "command": "python src/analysis/salary_premium.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.8
+  },
+  {
+   "step": "supplement_radar",
+   "target": "layer1",
+   "command": "python src/analysis/supplement_radar.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.8
+  },
+  {
+   "step": "build_supply",
+   "target": "layer2",
+   "command": "python src/pipeline/build_supply.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 713.1
+  },
+  {
+   "step": "official_supply",
+   "target": "layer2",
+   "command": "python src/analysis/official_supply.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.0
+  },
+  {
+   "step": "supply_analysis",
+   "target": "layer2",
+   "command": "python src/analysis/supply_analysis.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 7.8
+  },
+  {
+   "step": "project_analysis",
+   "target": "layer2",
+   "command": "python src/analysis/project_analysis.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 12.9
+  },
+  {
+   "step": "demand_supply",
+   "target": "layer3",
+   "command": "python src/analysis/demand_supply.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 5.6
+  },
+  {
+   "step": "supply_quality",
+   "target": "layer2",
+   "command": "python src/analysis/supply_quality.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 2.8
+  },
+  {
+   "step": "supply_figures",
+   "target": "layer3",
+   "command": "python src/analysis/supply_figures.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 7.4
+  },
+  {
+   "step": "export_supply_json",
+   "target": "layer3",
+   "command": "python src/analysis/export_supply_json.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.0
+  },
+  {
+   "step": "make_visual_layer",
+   "target": "visual",
+   "command": "python src/analysis/make_visual_layer.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 25.6
+  },
+  {
+   "step": "embed_figures",
+   "target": "visual",
+   "command": "python src/analysis/embed_figures.py",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 0.1
+  },
+  {
+   "step": "digest",
+   "target": "digest",
+   "command": "python src/reporting/digest.py --strict",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 1.3
+  },
+  {
+   "step": "pytest",
+   "target": "tests",
+   "command": "python -m pytest tests -q",
+   "status": "ok",
+   "returncode": 0,
+   "seconds": 15.8
+  }
+ ]
+}

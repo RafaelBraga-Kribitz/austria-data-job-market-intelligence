@@ -1,0 +1,91 @@
+population,feature,count,n,share,ci_low,ci_high
+projects,section: objective_overview,1563,6677,0.234,0.224,0.244
+projects,section: business_context,435,6677,0.065,0.059,0.071
+projects,section: data_source,1794,6677,0.269,0.258,0.279
+projects,section: methodology,2178,6677,0.326,0.315,0.338
+projects,section: results,1026,6677,0.154,0.145,0.163
+projects,section: limitations,489,6677,0.073,0.067,0.08
+projects,section: reproducibility,2843,6677,0.426,0.414,0.438
+projects,section: tech_stack,1380,6677,0.207,0.197,0.217
+projects,section: structure,1266,6677,0.19,0.18,0.199
+projects,section: author_contact,1420,6677,0.213,0.203,0.223
+projects,section: visuals_section,886,6677,0.133,0.125,0.141
+projects,content: has_image,2160,6677,0.323,0.312,0.335
+projects,content: has_badge,876,6677,0.131,0.123,0.14
+projects,content: has_code_block,2587,6677,0.387,0.376,0.399
+projects,content: has_table,787,6677,0.118,0.11,0.126
+projects,content: has_link_dashboard,87,6677,0.013,0.011,0.016
+projects,content: has_link_kaggle,211,6677,0.032,0.028,0.036
+projects,content: has_link_linkedin,156,6677,0.023,0.02,0.027
+projects,content: has_link_medium_blog,77,6677,0.012,0.009,0.014
+projects,content: has_link_colab_binder,136,6677,0.02,0.017,0.024
+projects,content: has_doi_arxiv,525,6677,0.079,0.072,0.085
+projects,content: mentions_metrics,848,6677,0.127,0.119,0.135
+projects,content: mentions_business_terms,928,6677,0.139,0.131,0.147
+projects,content: mentions_limitations,228,6677,0.034,0.03,0.039
+projects,content: mentions_tests_ci,581,6677,0.087,0.08,0.094
+projects,content: mentions_docker,451,6677,0.068,0.062,0.074
+projects,content: mentions_deployment,793,6677,0.119,0.111,0.127
+projects,content: mentions_reproduce_cmd,2504,6677,0.375,0.363,0.387
+projects,content: german_text,239,6677,0.036,0.032,0.041
+projects,content: first_person_narrative,1802,6677,0.27,0.259,0.281
+documented projects,section: objective_overview,1442,3959,0.364,0.349,0.379
+documented projects,section: business_context,420,3959,0.106,0.097,0.116
+documented projects,section: data_source,1627,3959,0.411,0.396,0.426
+documented projects,section: methodology,1967,3959,0.497,0.481,0.512
+documented projects,section: results,987,3959,0.249,0.236,0.263
+documented projects,section: limitations,481,3959,0.121,0.112,0.132
+documented projects,section: reproducibility,2616,3959,0.661,0.646,0.675
+documented projects,section: tech_stack,1280,3959,0.323,0.309,0.338
+documented projects,section: structure,1221,3959,0.308,0.294,0.323
+documented projects,section: author_contact,1339,3959,0.338,0.324,0.353
+documented projects,section: visuals_section,787,3959,0.199,0.187,0.212
+documented projects,content: has_image,1906,3959,0.481,0.466,0.497
+documented projects,content: has_badge,785,3959,0.198,0.186,0.211
+documented projects,content: has_code_block,2409,3959,0.608,0.593,0.624
+documented projects,content: has_table,774,3959,0.196,0.183,0.208
+documented projects,content: has_link_dashboard,69,3959,0.017,0.014,0.022
+documented projects,content: has_link_kaggle,181,3959,0.046,0.04,0.053
+documented projects,content: has_link_linkedin,155,3959,0.039,0.034,0.046
+documented projects,content: has_link_medium_blog,69,3959,0.017,0.014,0.022
+documented projects,content: has_link_colab_binder,107,3959,0.027,0.022,0.033
+documented projects,content: has_doi_arxiv,475,3959,0.12,0.11,0.13
+documented projects,content: mentions_metrics,815,3959,0.206,0.194,0.219
+documented projects,content: mentions_business_terms,868,3959,0.219,0.207,0.232
+documented projects,content: mentions_limitations,219,3959,0.055,0.049,0.063
+documented projects,content: mentions_tests_ci,560,3959,0.141,0.131,0.153
+documented projects,content: mentions_docker,410,3959,0.104,0.094,0.113
+documented projects,content: mentions_deployment,742,3959,0.187,0.176,0.2
+documented projects,content: mentions_reproduce_cmd,2283,3959,0.577,0.561,0.592
+documented projects,content: german_text,215,3959,0.054,0.048,0.062
+documented projects,content: first_person_narrative,1523,3959,0.385,0.37,0.4
+substantive projects,section: objective_overview,1021,2605,0.392,0.373,0.411
+substantive projects,section: business_context,313,2605,0.12,0.108,0.133
+substantive projects,section: data_source,1181,2605,0.453,0.434,0.473
+substantive projects,section: methodology,1428,2605,0.548,0.529,0.567
+substantive projects,section: results,749,2605,0.288,0.27,0.305
+substantive projects,section: limitations,379,2605,0.145,0.132,0.16
+substantive projects,section: reproducibility,1797,2605,0.69,0.672,0.707
+substantive projects,section: tech_stack,935,2605,0.359,0.341,0.378
+substantive projects,section: structure,895,2605,0.344,0.326,0.362
+substantive projects,section: author_contact,1010,2605,0.388,0.369,0.407
+substantive projects,section: visuals_section,574,2605,0.22,0.205,0.237
+substantive projects,content: has_image,1378,2605,0.529,0.51,0.548
+substantive projects,content: has_badge,606,2605,0.233,0.217,0.249
+substantive projects,content: has_code_block,1702,2605,0.653,0.635,0.671
+substantive projects,content: has_table,635,2605,0.244,0.228,0.261
+substantive projects,content: has_link_dashboard,50,2605,0.019,0.015,0.025
+substantive projects,content: has_link_kaggle,128,2605,0.049,0.041,0.058
+substantive projects,content: has_link_linkedin,111,2605,0.043,0.036,0.051
+substantive projects,content: has_link_medium_blog,45,2605,0.017,0.013,0.023
+substantive projects,content: has_link_colab_binder,56,2605,0.021,0.017,0.028
+substantive projects,content: has_doi_arxiv,359,2605,0.138,0.125,0.152
+substantive projects,content: mentions_metrics,592,2605,0.227,0.212,0.244
+substantive projects,content: mentions_business_terms,665,2605,0.255,0.239,0.272
+substantive projects,content: mentions_limitations,168,2605,0.064,0.056,0.075
+substantive projects,content: mentions_tests_ci,455,2605,0.175,0.161,0.19
+substantive projects,content: mentions_docker,310,2605,0.119,0.107,0.132
+substantive projects,content: mentions_deployment,564,2605,0.217,0.201,0.233
+substantive projects,content: mentions_reproduce_cmd,1558,2605,0.598,0.579,0.617
+substantive projects,content: german_text,161,2605,0.062,0.053,0.072
+substantive projects,content: first_person_narrative,1055,2605,0.405,0.386,0.424

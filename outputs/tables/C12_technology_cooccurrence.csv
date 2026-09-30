@@ -1,0 +1,151 @@
+skill_a,skill_b,both,n,share_both,share_of_a,share_of_b,lift,note
+Jupyter,Python,887,1818,0.488,0.901,0.661,1.22,population: P_data; skills_any
+Bash/Shell,Python,795,1818,0.437,0.899,0.593,1.22,population: P_data; skills_any
+Data Visualization,Python,765,1818,0.421,0.887,0.57,1.2,population: P_data; skills_any
+JavaScript,Python,646,1818,0.355,0.844,0.482,1.14,population: P_data; skills_any
+Data Visualization,Jupyter,593,1818,0.326,0.688,0.603,1.27,population: P_data; skills_any
+AI (generic),Python,586,1818,0.322,0.869,0.437,1.18,population: P_data; skills_any
+Bash/Shell,Jupyter,571,1818,0.314,0.646,0.58,1.19,population: P_data; skills_any
+Bash/Shell,Data Visualization,560,1818,0.308,0.633,0.65,1.34,population: P_data; skills_any
+Machine Learning,Python,540,1818,0.297,0.878,0.403,1.19,population: P_data; skills_any
+Bash/Shell,JavaScript,505,1818,0.278,0.571,0.66,1.36,population: P_data; skills_any
+AI (generic),Bash/Shell,466,1818,0.256,0.691,0.527,1.42,population: P_data; skills_any
+Data Visualization,JavaScript,457,1818,0.251,0.53,0.597,1.26,population: P_data; skills_any
+Public Sector/Research,Python,453,1818,0.249,0.866,0.338,1.17,population: P_data; skills_any
+Jupyter,Machine Learning,445,1818,0.245,0.452,0.724,1.34,population: P_data; skills_any
+JavaScript,Jupyter,434,1818,0.239,0.567,0.441,1.05,population: P_data; skills_any
+AI (generic),Jupyter,417,1818,0.229,0.619,0.424,1.14,population: P_data; skills_any
+Python,REST APIs,402,1818,0.221,0.3,0.889,1.21,population: P_data; skills_any
+AI (generic),Data Visualization,387,1818,0.213,0.574,0.449,1.21,population: P_data; skills_any
+AI (generic),JavaScript,385,1818,0.212,0.571,0.503,1.36,population: P_data; skills_any
+Generative AI / LLM,Python,381,1818,0.21,0.914,0.284,1.24,population: P_data; skills_any
+NumPy,Python,369,1818,0.203,0.987,0.275,1.34,population: P_data; skills_any
+Jupyter,Public Sector/Research,364,1818,0.2,0.37,0.696,1.29,population: P_data; skills_any
+Bash/Shell,Machine Learning,361,1818,0.199,0.408,0.587,1.21,population: P_data; skills_any
+Bash/Shell,REST APIs,359,1818,0.197,0.406,0.794,1.63,population: P_data; skills_any
+C/C++,Python,356,1818,0.196,0.87,0.265,1.18,population: P_data; skills_any
+Data Visualization,Machine Learning,353,1818,0.194,0.41,0.574,1.21,population: P_data; skills_any
+Docker,Python,347,1818,0.191,0.916,0.259,1.24,population: P_data; skills_any
+JavaScript,REST APIs,345,1818,0.19,0.451,0.763,1.81,population: P_data; skills_any
+Python,pandas,343,1818,0.189,0.256,0.991,1.34,population: P_data; skills_any
+Classification,Python,342,1818,0.188,0.945,0.255,1.28,population: P_data; skills_any
+Deep Learning,Python,336,1818,0.185,0.955,0.251,1.29,population: P_data; skills_any
+Bash/Shell,Generative AI / LLM,328,1818,0.18,0.371,0.787,1.62,population: P_data; skills_any
+Bash/Shell,Docker,326,1818,0.179,0.369,0.86,1.77,population: P_data; skills_any
+PyTorch,Python,322,1818,0.177,0.982,0.24,1.33,population: P_data; skills_any
+Jupyter,NumPy,317,1818,0.174,0.322,0.848,1.57,population: P_data; skills_any
+Bash/Shell,Public Sector/Research,314,1818,0.173,0.355,0.6,1.23,population: P_data; skills_any
+AI (generic),Generative AI / LLM,312,1818,0.172,0.463,0.748,2.02,population: P_data; skills_any
+Data Visualization,NumPy,312,1818,0.172,0.362,0.834,1.76,population: P_data; skills_any
+Python,Segmentation/Clustering,311,1818,0.171,0.232,0.945,1.28,population: P_data; skills_any
+Data Visualization,Public Sector/Research,309,1818,0.17,0.358,0.591,1.25,population: P_data; skills_any
+Jupyter,pandas,306,1818,0.168,0.311,0.884,1.63,population: P_data; skills_any
+Data Visualization,matplotlib/seaborn,306,1818,0.168,0.355,0.99,2.09,population: P_data; skills_any
+Python,matplotlib/seaborn,306,1818,0.168,0.228,0.99,1.34,population: P_data; skills_any
+AI (generic),Machine Learning,305,1818,0.168,0.453,0.496,1.34,population: P_data; skills_any
+Data Visualization,pandas,302,1818,0.166,0.35,0.873,1.84,population: P_data; skills_any
+Classification,Jupyter,301,1818,0.166,0.831,0.306,1.54,population: P_data; skills_any
+Java,Python,293,1818,0.161,0.852,0.218,1.15,population: P_data; skills_any
+Data Visualization,REST APIs,285,1818,0.157,0.331,0.631,1.33,population: P_data; skills_any
+Deep Learning,Jupyter,284,1818,0.156,0.807,0.289,1.49,population: P_data; skills_any
+AI (generic),REST APIs,280,1818,0.154,0.415,0.619,1.67,population: P_data; skills_any
+Bash/Shell,NumPy,280,1818,0.154,0.317,0.749,1.54,population: P_data; skills_any
+Jupyter,matplotlib/seaborn,274,1818,0.151,0.278,0.887,1.64,population: P_data; skills_any
+Bash/Shell,C/C++,273,1818,0.15,0.309,0.667,1.37,population: P_data; skills_any
+Docker,JavaScript,270,1818,0.149,0.712,0.353,1.69,population: P_data; skills_any
+Generative AI / LLM,JavaScript,269,1818,0.148,0.645,0.352,1.53,population: P_data; skills_any
+Generative AI / LLM,Jupyter,268,1818,0.147,0.643,0.272,1.19,population: P_data; skills_any
+JavaScript,Machine Learning,267,1818,0.147,0.349,0.434,1.03,population: P_data; skills_any
+Data Visualization,Generative AI / LLM,266,1818,0.146,0.309,0.638,1.35,population: P_data; skills_any
+Python,Statistics (general),263,1818,0.145,0.196,0.832,1.13,population: P_data; skills_any
+Python,scikit-learn,263,1818,0.145,0.196,0.992,1.35,population: P_data; skills_any
+C#,Python,262,1818,0.144,0.832,0.195,1.13,population: P_data; skills_any
+Jupyter,PyTorch,261,1818,0.144,0.265,0.796,1.47,population: P_data; skills_any
+Python,R,258,1818,0.142,0.192,0.75,1.02,population: P_data; skills_any
+Jupyter,REST APIs,258,1818,0.142,0.262,0.571,1.05,population: P_data; skills_any
+Python,SQL,257,1818,0.141,0.192,0.865,1.17,population: P_data; skills_any
+Bash/Shell,PyTorch,256,1818,0.141,0.29,0.78,1.61,population: P_data; skills_any
+Jupyter,Segmentation/Clustering,255,1818,0.14,0.259,0.775,1.43,population: P_data; skills_any
+NumPy,matplotlib/seaborn,246,1818,0.135,0.658,0.796,3.87,population: P_data; skills_any
+NumPy,pandas,245,1818,0.135,0.655,0.708,3.44,population: P_data; skills_any
+JavaScript,Public Sector/Research,241,1818,0.133,0.315,0.461,1.1,population: P_data; skills_any
+Bash/Shell,pandas,240,1818,0.132,0.271,0.694,1.43,population: P_data; skills_any
+Jupyter,scikit-learn,239,1818,0.131,0.243,0.902,1.67,population: P_data; skills_any
+C/C++,Jupyter,238,1818,0.131,0.582,0.242,1.08,population: P_data; skills_any
+AI (generic),Public Sector/Research,237,1818,0.13,0.352,0.453,1.22,population: P_data; skills_any
+Data Visualization,Segmentation/Clustering,237,1818,0.13,0.275,0.72,1.52,population: P_data; skills_any
+Data Visualization,Docker,235,1818,0.129,0.273,0.62,1.31,population: P_data; skills_any
+Bash/Shell,Classification,235,1818,0.129,0.266,0.649,1.34,population: P_data; skills_any
+Classification,Data Visualization,234,1818,0.129,0.646,0.271,1.36,population: P_data; skills_any
+C/C++,JavaScript,232,1818,0.128,0.567,0.303,1.35,population: P_data; skills_any
+Machine Learning,Public Sector/Research,231,1818,0.127,0.376,0.442,1.31,population: P_data; skills_any
+Docker,Jupyter,231,1818,0.127,0.609,0.235,1.13,population: P_data; skills_any
+Bash/Shell,Deep Learning,228,1818,0.125,0.258,0.648,1.33,population: P_data; skills_any
+Java,JavaScript,227,1818,0.125,0.66,0.297,1.57,population: P_data; skills_any
+Bash/Shell,Java,222,1818,0.122,0.251,0.645,1.33,population: P_data; skills_any
+matplotlib/seaborn,pandas,222,1818,0.122,0.718,0.642,3.77,population: P_data; skills_any
+Data Visualization,Statistics (general),221,1818,0.122,0.256,0.699,1.47,population: P_data; skills_any
+Classification,Machine Learning,219,1818,0.12,0.605,0.356,1.79,population: P_data; skills_any
+Docker,REST APIs,218,1818,0.12,0.575,0.482,2.31,population: P_data; skills_any
+Data Visualization,scikit-learn,218,1818,0.12,0.253,0.823,1.73,population: P_data; skills_any
+Deep Learning,Machine Learning,218,1818,0.12,0.619,0.354,1.83,population: P_data; skills_any
+Generative AI / LLM,REST APIs,216,1818,0.119,0.518,0.478,2.08,population: P_data; skills_any
+Bash/Shell,C#,216,1818,0.119,0.244,0.686,1.41,population: P_data; skills_any
+Data Visualization,PyTorch,215,1818,0.118,0.249,0.655,1.38,population: P_data; skills_any
+Bash/Shell,matplotlib/seaborn,213,1818,0.117,0.241,0.689,1.42,population: P_data; skills_any
+Bash/Shell,Segmentation/Clustering,213,1818,0.117,0.241,0.647,1.33,population: P_data; skills_any
+AI (generic),Docker,212,1818,0.117,0.315,0.559,1.51,population: P_data; skills_any
+Data Visualization,Deep Learning,212,1818,0.117,0.246,0.602,1.27,population: P_data; skills_any
+Machine Learning,NumPy,212,1818,0.117,0.345,0.567,1.68,population: P_data; skills_any
+C/C++,Data Visualization,210,1818,0.116,0.513,0.244,1.08,population: P_data; skills_any
+AI (generic),Deep Learning,210,1818,0.116,0.312,0.597,1.61,population: P_data; skills_any
+Data Visualization,R,208,1818,0.114,0.241,0.605,1.28,population: P_data; skills_any
+AI (generic),PyTorch,208,1818,0.114,0.309,0.634,1.71,population: P_data; skills_any
+C#,JavaScript,206,1818,0.113,0.654,0.269,1.55,population: P_data; skills_any
+Jupyter,Statistics (general),205,1818,0.113,0.208,0.649,1.2,population: P_data; skills_any
+Jupyter,R,201,1818,0.111,0.204,0.584,1.08,population: P_data; skills_any
+Data Visualization,SQL,201,1818,0.111,0.233,0.677,1.43,population: P_data; skills_any
+Java,Jupyter,201,1818,0.111,0.584,0.204,1.08,population: P_data; skills_any
+AI (generic),Classification,196,1818,0.108,0.291,0.541,1.46,population: P_data; skills_any
+Bash/Shell,scikit-learn,195,1818,0.107,0.221,0.736,1.51,population: P_data; skills_any
+NumPy,scikit-learn,189,1818,0.104,0.505,0.713,3.47,population: P_data; skills_any
+pandas,scikit-learn,189,1818,0.104,0.546,0.713,3.75,population: P_data; skills_any
+Machine Learning,scikit-learn,189,1818,0.104,0.307,0.713,2.11,population: P_data; skills_any
+Machine Learning,PyTorch,188,1818,0.103,0.306,0.573,1.69,population: P_data; skills_any
+Bash/Shell,SQL,186,1818,0.102,0.21,0.626,1.29,population: P_data; skills_any
+AI (generic),NumPy,185,1818,0.102,0.274,0.495,1.33,population: P_data; skills_any
+Machine Learning,pandas,184,1818,0.101,0.299,0.532,1.57,population: P_data; skills_any
+C#,Data Visualization,183,1818,0.101,0.581,0.212,1.23,population: P_data; skills_any
+C#,Jupyter,183,1818,0.101,0.581,0.186,1.07,population: P_data; skills_any
+JavaScript,SQL,182,1818,0.1,0.238,0.613,1.46,population: P_data; skills_any
+Machine Learning,REST APIs,182,1818,0.1,0.296,0.403,1.19,population: P_data; skills_any
+Bash/Shell,Statistics (general),181,1818,0.1,0.205,0.573,1.18,population: P_data; skills_any
+Machine Learning,Segmentation/Clustering,180,1818,0.099,0.293,0.547,1.62,population: P_data; skills_any
+Jupyter,SQL,177,1818,0.097,0.18,0.596,1.1,population: P_data; skills_any
+AI (generic),C/C++,176,1818,0.097,0.261,0.43,1.16,population: P_data; skills_any
+Classification,JavaScript,175,1818,0.096,0.483,0.229,1.15,population: P_data; skills_any
+Generative AI / LLM,Machine Learning,174,1818,0.096,0.417,0.283,1.23,population: P_data; skills_any
+Data Visualization,Java,171,1818,0.094,0.198,0.497,1.05,population: P_data; skills_any
+Classification,Deep Learning,171,1818,0.094,0.472,0.486,2.44,population: P_data; skills_any
+Deep Learning,PyTorch,171,1818,0.094,0.486,0.521,2.69,population: P_data; skills_any
+Deep Learning,JavaScript,170,1818,0.094,0.483,0.222,1.15,population: P_data; skills_any
+matplotlib/seaborn,scikit-learn,168,1818,0.092,0.544,0.634,3.73,population: P_data; skills_any
+Deep Learning,Public Sector/Research,168,1818,0.092,0.477,0.321,1.66,population: P_data; skills_any
+Classification,Public Sector/Research,167,1818,0.092,0.461,0.319,1.6,population: P_data; skills_any
+JavaScript,NumPy,166,1818,0.091,0.217,0.444,1.05,population: P_data; skills_any
+AI (generic),Segmentation/Clustering,166,1818,0.091,0.246,0.505,1.36,population: P_data; skills_any
+AI (generic),Java,164,1818,0.09,0.243,0.477,1.29,population: P_data; skills_any
+AI (generic),pandas,164,1818,0.09,0.243,0.474,1.28,population: P_data; skills_any
+Bash/Shell,R,163,1818,0.09,0.184,0.474,0.97,population: P_data; skills_any
+Docker,Machine Learning,162,1818,0.089,0.427,0.263,1.26,population: P_data; skills_any
+JavaScript,PyTorch,161,1818,0.089,0.21,0.491,1.17,population: P_data; skills_any
+Machine Learning,matplotlib/seaborn,159,1818,0.087,0.259,0.515,1.52,population: P_data; skills_any
+Generative AI / LLM,Public Sector/Research,158,1818,0.087,0.379,0.302,1.32,population: P_data; skills_any
+C/C++,Public Sector/Research,155,1818,0.085,0.379,0.296,1.32,population: P_data; skills_any
+C/C++,Java,155,1818,0.085,0.379,0.451,2.0,population: P_data; skills_any
+JavaScript,Segmentation/Clustering,155,1818,0.085,0.203,0.471,1.12,population: P_data; skills_any
+NumPy,PyTorch,154,1818,0.085,0.412,0.47,2.28,population: P_data; skills_any
+JavaScript,pandas,154,1818,0.085,0.201,0.445,1.06,population: P_data; skills_any
+Docker,Generative AI / LLM,152,1818,0.084,0.401,0.365,1.75,population: P_data; skills_any
+C/C++,Machine Learning,151,1818,0.083,0.369,0.246,1.09,population: P_data; skills_any
+Machine Learning,Statistics (general),150,1818,0.083,0.244,0.475,1.4,population: P_data; skills_any

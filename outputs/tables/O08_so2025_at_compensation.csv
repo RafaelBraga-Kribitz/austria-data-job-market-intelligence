@@ -1,0 +1,2 @@
+population,n,median_usd,q1_usd,q3_usd,note,source,source_quality
+all AT respondents reporting compensation,280,78310.0,57021.0,98612.0,"self-reported, SO conversion to USD; data-role subgroup not reported (n < 30)",Stack Overflow Developer Survey 2025 (AT),B

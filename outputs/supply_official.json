@@ -1,0 +1,475 @@
+{
+ "generated": "2026-09-30T21:17:36.674255",
+ "eurostat": {
+  "vintage_collected": "2026-09-17",
+  "graduates": {
+   "ICT (F06) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 2142,
+    "change_5y_pct": 37.0
+   },
+   "ICT (F06) / Master": {
+    "latest_year": "2024",
+    "graduates": 1507,
+    "change_5y_pct": 45.2
+   },
+   "ICT (F06) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 5257,
+    "change_5y_pct": 38.7
+   },
+   "software & applications development (F0613) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 537,
+    "change_5y_pct": 76.1
+   },
+   "software & applications development (F0613) / Master": {
+    "latest_year": "2024",
+    "graduates": 187,
+    "change_5y_pct": 85.1
+   },
+   "software & applications development (F0613) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 724,
+    "change_5y_pct": 78.3
+   },
+   "database & network design (F0612) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 493,
+    "change_5y_pct": -1.2
+   },
+   "database & network design (F0612) / Master": {
+    "latest_year": "2024",
+    "graduates": 426,
+    "change_5y_pct": -6.2
+   },
+   "database & network design (F0612) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 925,
+    "change_5y_pct": -4.1
+   },
+   "Mathematics & statistics (F054) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 227,
+    "change_5y_pct": -7.0
+   },
+   "Mathematics & statistics (F054) / Master": {
+    "latest_year": "2024",
+    "graduates": 139,
+    "change_5y_pct": -6.1
+   },
+   "Mathematics & statistics (F054) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 450,
+    "change_5y_pct": -0.9
+   },
+   "statistics (F0542) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 39,
+    "change_5y_pct": 39.3
+   },
+   "statistics (F0542) / Master": {
+    "latest_year": "2024",
+    "graduates": 16,
+    "change_5y_pct": 100.0
+   },
+   "statistics (F0542) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 57,
+    "change_5y_pct": 50.0
+   },
+   "mathematics (F0541) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 188,
+    "change_5y_pct": -13.0
+   },
+   "mathematics (F0541) / Master": {
+    "latest_year": "2024",
+    "graduates": 124,
+    "change_5y_pct": -11.4
+   },
+   "mathematics (F0541) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 394,
+    "change_5y_pct": -5.3
+   },
+   "Business & administration (F041) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 4382,
+    "change_5y_pct": -4.7
+   },
+   "Business & administration (F041) / Master": {
+    "latest_year": "2024",
+    "graduates": 5747,
+    "change_5y_pct": 18.4
+   },
+   "Business & administration (F041) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 10204,
+    "change_5y_pct": 7.4
+   },
+   "marketing & advertising (F0414) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 156,
+    "change_5y_pct": -19.6
+   },
+   "marketing & advertising (F0414) / Master": {
+    "latest_year": "2024",
+    "graduates": 620,
+    "change_5y_pct": 27.0
+   },
+   "marketing & advertising (F0414) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 776,
+    "change_5y_pct": 13.8
+   },
+   "management & administration (F0413) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 2446,
+    "change_5y_pct": 0.8
+   },
+   "management & administration (F0413) / Master": {
+    "latest_year": "2024",
+    "graduates": 4110,
+    "change_5y_pct": 14.0
+   },
+   "management & administration (F0413) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 6614,
+    "change_5y_pct": 8.9
+   },
+   "finance, banking, insurance (F0412) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 70,
+    "change_5y_pct": -20.5
+   },
+   "finance, banking, insurance (F0412) / Master": {
+    "latest_year": "2024",
+    "graduates": 376,
+    "change_5y_pct": 80.8
+   },
+   "finance, banking, insurance (F0412) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 449,
+    "change_5y_pct": 50.2
+   },
+   "Economics (F0311) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 460,
+    "change_5y_pct": 20.1
+   },
+   "Economics (F0311) / Master": {
+    "latest_year": "2024",
+    "graduates": 176,
+    "change_5y_pct": -16.2
+   },
+   "Economics (F0311) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 658,
+    "change_5y_pct": 8.0
+   },
+   "Engineering & engineering trades (F071) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 1815,
+    "change_5y_pct": -8.0
+   },
+   "Engineering & engineering trades (F071) / Master": {
+    "latest_year": "2024",
+    "graduates": 1741,
+    "change_5y_pct": 8.4
+   },
+   "Engineering & engineering trades (F071) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 8060,
+    "change_5y_pct": -5.7
+   },
+   "Physical sciences (F053) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 938,
+    "change_5y_pct": -1.9
+   },
+   "Physical sciences (F053) / Master": {
+    "latest_year": "2024",
+    "graduates": 688,
+    "change_5y_pct": 3.5
+   },
+   "Physical sciences (F053) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 1895,
+    "change_5y_pct": 3.2
+   },
+   "physics (F0533) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 442,
+    "change_5y_pct": 7.0
+   },
+   "physics (F0533) / Master": {
+    "latest_year": "2024",
+    "graduates": 232,
+    "change_5y_pct": -11.1
+   },
+   "physics (F0533) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 813,
+    "change_5y_pct": 2.7
+   },
+   "Psychology (F0313) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 1577,
+    "change_5y_pct": 16.6
+   },
+   "Psychology (F0313) / Master": {
+    "latest_year": "2024",
+    "graduates": 1478,
+    "change_5y_pct": 37.9
+   },
+   "Psychology (F0313) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 3147,
+    "change_5y_pct": 26.9
+   },
+   "Sociology & cultural studies (F0314) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 534,
+    "change_5y_pct": -23.8
+   },
+   "Sociology & cultural studies (F0314) / Master": {
+    "latest_year": "2024",
+    "graduates": 373,
+    "change_5y_pct": 18.8
+   },
+   "Sociology & cultural studies (F0314) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 940,
+    "change_5y_pct": -9.4
+   },
+   "All fields (TOTAL) / Bachelor": {
+    "latest_year": "2024",
+    "graduates": 33319,
+    "change_5y_pct": 9.6
+   },
+   "All fields (TOTAL) / Master": {
+    "latest_year": "2024",
+    "graduates": 29337,
+    "change_5y_pct": 11.7
+   },
+   "All fields (TOTAL) / All tertiary": {
+    "latest_year": "2024",
+    "graduates": 90736,
+    "change_5y_pct": 7.2
+   }
+  },
+  "employment_isco_latest": {
+   "OC1 Managers": {
+    "year": "2025",
+    "thousand": 242.3,
+    "change_pct_since_2011": 20.5
+   },
+   "OC2 Professionals": {
+    "year": "2025",
+    "thousand": 1000.0,
+    "change_pct_since_2011": 77.0
+   },
+   "OC21 Science and engineering professionals": {
+    "year": "2025",
+    "thousand": 140.3,
+    "change_pct_since_2011": 80.6
+   },
+   "OC24 Business and administration professionals": {
+    "year": "2025",
+    "thousand": 159.6,
+    "change_pct_since_2011": 102.0
+   },
+   "OC25 Information and communications technology professionals": {
+    "year": "2025",
+    "thousand": 137.1,
+    "change_pct_since_2011": 140.5
+   },
+   "OC3 Technicians and associate professionals": {
+    "year": "2025",
+    "thousand": 809.2,
+    "change_pct_since_2011": 8.5
+   },
+   "OC33 Business and administration associate professionals": {
+    "year": "2025",
+    "thousand": 366.8,
+    "change_pct_since_2011": 17.3
+   },
+   "OC35 Information and communications technicians": {
+    "year": "2025",
+    "thousand": 41.4,
+    "change_pct_since_2011": 16.9
+   },
+   "TOTAL Total": {
+    "year": "2025",
+    "thousand": 4399.2,
+    "change_pct_since_2011": 10.5
+   }
+  },
+  "ict_specialists": [
+   {
+    "year": "2023",
+    "ict_specialists_pct_of_employment": 5.3,
+    "ict_specialists_thousand": 237.4,
+    "source": "Eurostat isoc_sks_itspt (AT)",
+    "source_quality": "A"
+   },
+   {
+    "year": "2024",
+    "ict_specialists_pct_of_employment": 5.3,
+    "ict_specialists_thousand": 237.0,
+    "source": "Eurostat isoc_sks_itspt (AT)",
+    "source_quality": "A"
+   },
+   {
+    "year": "2025",
+    "ict_specialists_pct_of_employment": 5.4,
+    "ict_specialists_thousand": 242.1,
+    "source": "Eurostat isoc_sks_itspt (AT)",
+    "source_quality": "A"
+   }
+  ]
+ },
+ "stackoverflow_2025": {
+  "available": true,
+  "survey_year": "2025",
+  "rows_total_survey": 49123,
+  "rows_austria": 410,
+  "austria_data_role_respondents": 29,
+  "austria_data_role_share": 0.071,
+  "austria_data_role_share_ci": [
+   0.05,
+   0.1
+  ],
+  "data_families": {
+   "data_science": 18,
+   "data_engineering": 7,
+   "data_analytics": 4
+  },
+  "professional_developers_austria": 319,
+  "top_languages_data_roles": [
+   {
+    "item": "Python",
+    "count_data": 27.0,
+    "n_data": 28,
+    "share_data": 0.964
+   },
+   {
+    "item": "SQL",
+    "count_data": 16.0,
+    "n_data": 28,
+    "share_data": 0.571
+   },
+   {
+    "item": "HTML/CSS",
+    "count_data": 15.0,
+    "n_data": 28,
+    "share_data": 0.536
+   },
+   {
+    "item": "Bash/Shell (all shells)",
+    "count_data": 15.0,
+    "n_data": 28,
+    "share_data": 0.536
+   },
+   {
+    "item": "JavaScript",
+    "count_data": 14.0,
+    "n_data": 28,
+    "share_data": 0.5
+   },
+   {
+    "item": "PowerShell",
+    "count_data": 9.0,
+    "n_data": 28,
+    "share_data": 0.321
+   },
+   {
+    "item": "TypeScript",
+    "count_data": 8.0,
+    "n_data": 28,
+    "share_data": 0.286
+   },
+   {
+    "item": "C#",
+    "count_data": 8.0,
+    "n_data": 28,
+    "share_data": 0.286
+   }
+  ],
+  "licence": "ODbL 1.0 (stated on survey.stackoverflow.co/2025)",
+  "source_quality": "B",
+  "caveat": "data-role subgroup n ≈ 20: report as indicative only; survey is self-selected, English-language, developer-centric"
+ },
+ "stackoverflow": {
+  "available": true,
+  "survey_year": "2025",
+  "rows_total_survey": 49123,
+  "rows_austria": 410,
+  "austria_data_role_respondents": 29,
+  "austria_data_role_share": 0.071,
+  "austria_data_role_share_ci": [
+   0.05,
+   0.1
+  ],
+  "data_families": {
+   "data_science": 18,
+   "data_engineering": 7,
+   "data_analytics": 4
+  },
+  "professional_developers_austria": 319,
+  "top_languages_data_roles": [
+   {
+    "item": "Python",
+    "count_data": 27.0,
+    "n_data": 28,
+    "share_data": 0.964
+   },
+   {
+    "item": "SQL",
+    "count_data": 16.0,
+    "n_data": 28,
+    "share_data": 0.571
+   },
+   {
+    "item": "HTML/CSS",
+    "count_data": 15.0,
+    "n_data": 28,
+    "share_data": 0.536
+   },
+   {
+    "item": "Bash/Shell (all shells)",
+    "count_data": 15.0,
+    "n_data": 28,
+    "share_data": 0.536
+   },
+   {
+    "item": "JavaScript",
+    "count_data": 14.0,
+    "n_data": 28,
+    "share_data": 0.5
+   },
+   {
+    "item": "PowerShell",
+    "count_data": 9.0,
+    "n_data": 28,
+    "share_data": 0.321
+   },
+   {
+    "item": "TypeScript",
+    "count_data": 8.0,
+    "n_data": 28,
+    "share_data": 0.286
+   },
+   {
+    "item": "C#",
+    "count_data": 8.0,
+    "n_data": 28,
+    "share_data": 0.286
+   }
+  ],
+  "licence": "ODbL 1.0 (stated on survey.stackoverflow.co/2025)",
+  "source_quality": "B",
+  "caveat": "data-role subgroup n ≈ 20: report as indicative only; survey is self-selected, English-language, developer-centric"
+ }
+}

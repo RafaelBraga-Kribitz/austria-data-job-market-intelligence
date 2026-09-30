@@ -1,0 +1,4 @@
+population,n,vienna,styria,graz_area,graz_city,austria_only,multi_location,foreign_place_also_named,hireable_flag,hireable_share,note
+P_all,9409,2818,2033,1903,1822,1322,72,42,1091,0.116,styria / graz_area = location-resolved accounts (resolved location in Styria): the canonical Styrian denominators (OQ-19); the frame-B complete-Styria subset is C05c
+P_data,1818,802,248,239,237,304,24,13,305,0.168,styria / graz_area = location-resolved accounts (resolved location in Styria): the canonical Styrian denominators (OQ-19); the frame-B complete-Styria subset is C05c
+P_T1,872,478,56,54,54,193,11,7,146,0.167,styria / graz_area = location-resolved accounts (resolved location in Styria): the canonical Styrian denominators (OQ-19); the frame-B complete-Styria subset is C05c

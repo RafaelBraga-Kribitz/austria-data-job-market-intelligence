@@ -1,0 +1,2 @@
+duplicate_logins,duplicate_candidate_ids,duplicate_project_ids,accounts_in_multiple_frames,frame_combinations,median_search_hits_per_account,cross_source_dedup
+0,0,0,662,"{""C"": 5156, ""A"": 1832, ""B"": 1807, ""A+C"": 443, ""A+B"": 144, ""B+C"": 74, ""A+B+C"": 1}",1.0,not applicable: GitHub is the only automated source; Stack Overflow survey is anonymous; manual LinkedIn records use observer-assigned pseudo ids and cannot be matched

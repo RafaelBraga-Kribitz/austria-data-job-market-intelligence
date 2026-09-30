@@ -1,0 +1,437 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "by_state": [
+  {
+   "state": "Wien",
+   "count": 2818,
+   "n": 9409,
+   "share": 0.3,
+   "ci_low": 0.29,
+   "ci_high": 0.309,
+   "population": "P_all"
+  },
+  {
+   "state": "Steiermark",
+   "count": 2033,
+   "n": 9409,
+   "share": 0.216,
+   "ci_low": 0.208,
+   "ci_high": 0.225,
+   "population": "P_all"
+  },
+  {
+   "state": "unspecified (Austria)",
+   "count": 1322,
+   "n": 9409,
+   "share": 0.141,
+   "ci_low": 0.134,
+   "ci_high": 0.148,
+   "population": "P_all"
+  },
+  {
+   "state": "Oberösterreich",
+   "count": 1079,
+   "n": 9409,
+   "share": 0.115,
+   "ci_low": 0.108,
+   "ci_high": 0.121,
+   "population": "P_all"
+  },
+  {
+   "state": "Salzburg",
+   "count": 829,
+   "n": 9409,
+   "share": 0.088,
+   "ci_low": 0.083,
+   "ci_high": 0.094,
+   "population": "P_all"
+  },
+  {
+   "state": "Tirol",
+   "count": 762,
+   "n": 9409,
+   "share": 0.081,
+   "ci_low": 0.076,
+   "ci_high": 0.087,
+   "population": "P_all"
+  },
+  {
+   "state": "Kärnten",
+   "count": 359,
+   "n": 9409,
+   "share": 0.038,
+   "ci_low": 0.034,
+   "ci_high": 0.042,
+   "population": "P_all"
+  },
+  {
+   "state": "Vorarlberg",
+   "count": 109,
+   "n": 9409,
+   "share": 0.012,
+   "ci_low": 0.01,
+   "ci_high": 0.014,
+   "population": "P_all"
+  },
+  {
+   "state": "Niederösterreich",
+   "count": 91,
+   "n": 9409,
+   "share": 0.01,
+   "ci_low": 0.008,
+   "ci_high": 0.012,
+   "population": "P_all"
+  },
+  {
+   "state": "Burgenland",
+   "count": 7,
+   "n": 9409,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.002,
+   "population": "P_all"
+  },
+  {
+   "state": "Wien",
+   "count": 802,
+   "n": 1818,
+   "share": 0.441,
+   "ci_low": 0.418,
+   "ci_high": 0.464,
+   "population": "P_data"
+  },
+  {
+   "state": "unspecified (Austria)",
+   "count": 304,
+   "n": 1818,
+   "share": 0.167,
+   "ci_low": 0.151,
+   "ci_high": 0.185,
+   "population": "P_data"
+  },
+  {
+   "state": "Steiermark",
+   "count": 248,
+   "n": 1818,
+   "share": 0.136,
+   "ci_low": 0.121,
+   "ci_high": 0.153,
+   "population": "P_data"
+  },
+  {
+   "state": "Oberösterreich",
+   "count": 168,
+   "n": 1818,
+   "share": 0.092,
+   "ci_low": 0.08,
+   "ci_high": 0.107,
+   "population": "P_data"
+  },
+  {
+   "state": "Tirol",
+   "count": 108,
+   "n": 1818,
+   "share": 0.059,
+   "ci_low": 0.049,
+   "ci_high": 0.071,
+   "population": "P_data"
+  },
+  {
+   "state": "Salzburg",
+   "count": 96,
+   "n": 1818,
+   "share": 0.053,
+   "ci_low": 0.043,
+   "ci_high": 0.064,
+   "population": "P_data"
+  },
+  {
+   "state": "Kärnten",
+   "count": 54,
+   "n": 1818,
+   "share": 0.03,
+   "ci_low": 0.023,
+   "ci_high": 0.039,
+   "population": "P_data"
+  },
+  {
+   "state": "Niederösterreich",
+   "count": 25,
+   "n": 1818,
+   "share": 0.014,
+   "ci_low": 0.009,
+   "ci_high": 0.02,
+   "population": "P_data"
+  },
+  {
+   "state": "Vorarlberg",
+   "count": 11,
+   "n": 1818,
+   "share": 0.006,
+   "ci_low": 0.003,
+   "ci_high": 0.011,
+   "population": "P_data"
+  },
+  {
+   "state": "Burgenland",
+   "count": 2,
+   "n": 1818,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.004,
+   "population": "P_data"
+  },
+  {
+   "state": "Wien",
+   "count": 478,
+   "n": 872,
+   "share": 0.548,
+   "ci_low": 0.515,
+   "ci_high": 0.581,
+   "population": "P_T1"
+  },
+  {
+   "state": "unspecified (Austria)",
+   "count": 193,
+   "n": 872,
+   "share": 0.221,
+   "ci_low": 0.195,
+   "ci_high": 0.25,
+   "population": "P_T1"
+  },
+  {
+   "state": "Steiermark",
+   "count": 56,
+   "n": 872,
+   "share": 0.064,
+   "ci_low": 0.05,
+   "ci_high": 0.082,
+   "population": "P_T1"
+  },
+  {
+   "state": "Oberösterreich",
+   "count": 53,
+   "n": 872,
+   "share": 0.061,
+   "ci_low": 0.047,
+   "ci_high": 0.079,
+   "population": "P_T1"
+  },
+  {
+   "state": "Salzburg",
+   "count": 32,
+   "n": 872,
+   "share": 0.037,
+   "ci_low": 0.026,
+   "ci_high": 0.051,
+   "population": "P_T1"
+  },
+  {
+   "state": "Tirol",
+   "count": 30,
+   "n": 872,
+   "share": 0.034,
+   "ci_low": 0.024,
+   "ci_high": 0.049,
+   "population": "P_T1"
+  },
+  {
+   "state": "Kärnten",
+   "count": 13,
+   "n": 872,
+   "share": 0.015,
+   "ci_low": 0.009,
+   "ci_high": 0.025,
+   "population": "P_T1"
+  },
+  {
+   "state": "Niederösterreich",
+   "count": 13,
+   "n": 872,
+   "share": 0.015,
+   "ci_low": 0.009,
+   "ci_high": 0.025,
+   "population": "P_T1"
+  },
+  {
+   "state": "Vorarlberg",
+   "count": 3,
+   "n": 872,
+   "share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.01,
+   "population": "P_T1"
+  },
+  {
+   "state": "Burgenland",
+   "count": 1,
+   "n": 872,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.006,
+   "population": "P_T1"
+  }
+ ],
+ "summary": [
+  {
+   "population": "P_all",
+   "n": 9409,
+   "vienna": 2818,
+   "styria": 2033,
+   "graz_area": 1903,
+   "graz_city": 1822,
+   "austria_only": 1322,
+   "multi_location": 72,
+   "foreign_place_also_named": 42,
+   "hireable_flag": 1091,
+   "hireable_share": 0.116
+  },
+  {
+   "population": "P_data",
+   "n": 1818,
+   "vienna": 802,
+   "styria": 248,
+   "graz_area": 239,
+   "graz_city": 237,
+   "austria_only": 304,
+   "multi_location": 24,
+   "foreign_place_also_named": 13,
+   "hireable_flag": 305,
+   "hireable_share": 0.168
+  },
+  {
+   "population": "P_T1",
+   "n": 872,
+   "vienna": 478,
+   "styria": 56,
+   "graz_area": 54,
+   "graz_city": 54,
+   "austria_only": 193,
+   "multi_location": 11,
+   "foreign_place_also_named": 7,
+   "hireable_flag": 146,
+   "hireable_share": 0.167
+  }
+ ],
+ "family_by_region_T1": [
+  {
+   "family": "bi",
+   "Oberösterreich": 0,
+   "Salzburg": 1,
+   "Steiermark": 3,
+   "Tirol": 1,
+   "Wien": 5,
+   "other Bundesland": 1,
+   "unspecified (Austria)": 4,
+   "family_label": "BI",
+   "total": 15
+  },
+  {
+   "family": "business_analysis",
+   "Oberösterreich": 1,
+   "Salzburg": 0,
+   "Steiermark": 2,
+   "Tirol": 0,
+   "Wien": 9,
+   "other Bundesland": 1,
+   "unspecified (Austria)": 8,
+   "family_label": "Business analysis",
+   "total": 21
+  },
+  {
+   "family": "data_analytics",
+   "Oberösterreich": 8,
+   "Salzburg": 3,
+   "Steiermark": 7,
+   "Tirol": 3,
+   "Wien": 76,
+   "other Bundesland": 4,
+   "unspecified (Austria)": 28,
+   "family_label": "Data analytics",
+   "total": 129
+  },
+  {
+   "family": "data_engineering",
+   "Oberösterreich": 7,
+   "Salzburg": 3,
+   "Steiermark": 4,
+   "Tirol": 0,
+   "Wien": 24,
+   "other Bundesland": 2,
+   "unspecified (Austria)": 18,
+   "family_label": "Data engineering",
+   "total": 58
+  },
+  {
+   "family": "data_governance",
+   "Oberösterreich": 0,
+   "Salzburg": 0,
+   "Steiermark": 1,
+   "Tirol": 0,
+   "Wien": 3,
+   "other Bundesland": 1,
+   "unspecified (Austria)": 2,
+   "family_label": "Data governance",
+   "total": 7
+  },
+  {
+   "family": "data_science",
+   "Oberösterreich": 37,
+   "Salzburg": 25,
+   "Steiermark": 38,
+   "Tirol": 26,
+   "Wien": 359,
+   "other Bundesland": 21,
+   "unspecified (Austria)": 132,
+   "family_label": "Data science",
+   "total": 638
+  },
+  {
+   "family": "marketing_analytics",
+   "Oberösterreich": 0,
+   "Salzburg": 0,
+   "Steiermark": 1,
+   "Tirol": 0,
+   "Wien": 1,
+   "other Bundesland": 0,
+   "unspecified (Austria)": 0,
+   "family_label": "Marketing analytics",
+   "total": 2
+  },
+  {
+   "family": "product_analytics",
+   "Oberösterreich": 0,
+   "Salzburg": 0,
+   "Steiermark": 0,
+   "Tirol": 0,
+   "Wien": 1,
+   "other Bundesland": 0,
+   "unspecified (Austria)": 1,
+   "family_label": "Product analytics",
+   "total": 2
+  }
+ ],
+ "styria_complete_frame": {
+  "population": "Styrian accounts, frame-B complete-Styria subset (≥1 public repo)",
+  "n": 2023,
+  "with_bio": 824,
+  "T1_bio_declared": 52,
+  "T2_repo_evidenced": 195,
+  "T3_weak": 267,
+  "data_signal_share": 0.122,
+  "graz_area": 1885,
+  "students_among_T1": 8,
+  "hireable": 227,
+  "active_12m_share": 0.425
+ }
+}

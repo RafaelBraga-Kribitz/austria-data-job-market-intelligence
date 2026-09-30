@@ -1,0 +1,174 @@
+{
+ "generated": "2026-09-30T21:04:01.972660",
+ "demand_vintage": "2026-09-16 (Layer 1 snapshot, 720 core postings)",
+ "supply_vintage": "2026-09-17",
+ "supply_populations": {
+  "P_data": 1818,
+  "P_T1": 872,
+  "styria_location_resolved_accounts": 2033,
+  "styria_T1_location_resolved": 56,
+  "styria_frame_B_accounts": 2023,
+  "styria_T1_frame_B_subset": 52
+ },
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "reading_rules": [
+  "demand share = share of postings mentioning an item",
+  "supply share = share of observed GitHub data-signal candidates with evidence",
+  "different universes: compare orders of magnitude and rankings, not exact percentages",
+  "quadrant thresholds are medians of the joined set",
+  "no single composite score is computed"
+ ],
+ "rows": [
+  {
+   "dimension": "language",
+   "region": "Austria",
+   "demand_english_written_ads": 174.0,
+   "demand_german_required_or_level_stated": 285.0,
+   "demand_n": 719.0,
+   "demand_english_share": 0.242,
+   "demand_german_req_share": 0.396,
+   "supply_n": 1818,
+   "bio_classified": 1296,
+   "bio_en": 1287,
+   "bio_de": 6,
+   "readme_classified": 1448,
+   "readme_any_de": 61,
+   "readme_en_only": 1384,
+   "supply_bio_en_share": 0.993,
+   "supply_readme_en_only_share": 0.956,
+   "demand_table": "T07/T07c/T07e",
+   "supply_population": "P_data",
+   "note": "supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"
+  },
+  {
+   "dimension": "language",
+   "region": "Steiermark",
+   "demand_english_written_ads": NaN,
+   "demand_german_required_or_level_stated": NaN,
+   "demand_n": NaN,
+   "demand_english_share": NaN,
+   "demand_german_req_share": NaN,
+   "supply_n": 248,
+   "bio_classified": 125,
+   "bio_en": 125,
+   "bio_de": 0,
+   "readme_classified": 227,
+   "readme_any_de": 12,
+   "readme_en_only": 215,
+   "supply_bio_en_share": 1.0,
+   "supply_readme_en_only_share": 0.947,
+   "demand_table": "T07/T07c/T07e",
+   "supply_population": "P_data",
+   "note": "supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"
+  },
+  {
+   "dimension": "language",
+   "region": "Wien",
+   "demand_english_written_ads": NaN,
+   "demand_german_required_or_level_stated": NaN,
+   "demand_n": NaN,
+   "demand_english_share": NaN,
+   "demand_german_req_share": NaN,
+   "supply_n": 802,
+   "bio_classified": 623,
+   "bio_en": 618,
+   "bio_de": 3,
+   "readme_classified": 611,
+   "readme_any_de": 21,
+   "readme_en_only": 588,
+   "supply_bio_en_share": 0.992,
+   "supply_readme_en_only_share": 0.962,
+   "demand_table": "T07/T07c/T07e",
+   "supply_population": "P_data",
+   "note": "supply side measures the language candidates WRITE in, not proficiency; regional demand figures are in T07 by-state tables"
+  }
+ ],
+ "addressable_scenarios": [
+  {
+   "scope": "Austria",
+   "n": 719,
+   "english_posting_no_german_req": 141,
+   "no_explicit_german_requirement": 434,
+   "german_not_required_at_C1_or_above": 512
+  },
+  {
+   "scope": "Styria",
+   "n": 58,
+   "english_posting_no_german_req": 8,
+   "no_explicit_german_requirement": 30,
+   "german_not_required_at_C1_or_above": 37
+  },
+  {
+   "scope": "Graz area",
+   "n": 52,
+   "english_posting_no_german_req": 6,
+   "no_explicit_german_requirement": 25,
+   "german_not_required_at_C1_or_above": 32
+  },
+  {
+   "scope": "Vienna",
+   "n": 349,
+   "english_posting_no_german_req": 86,
+   "no_explicit_german_requirement": 205,
+   "german_not_required_at_C1_or_above": 233
+  },
+  {
+   "scope": "family:bi",
+   "n": 85,
+   "english_posting_no_german_req": 7,
+   "no_explicit_german_requirement": 42,
+   "german_not_required_at_C1_or_above": 52
+  },
+  {
+   "scope": "family:business_analysis",
+   "n": 120,
+   "english_posting_no_german_req": 15,
+   "no_explicit_german_requirement": 67,
+   "german_not_required_at_C1_or_above": 78
+  },
+  {
+   "scope": "family:data_analytics",
+   "n": 107,
+   "english_posting_no_german_req": 20,
+   "no_explicit_german_requirement": 62,
+   "german_not_required_at_C1_or_above": 79
+  },
+  {
+   "scope": "family:data_engineering",
+   "n": 160,
+   "english_posting_no_german_req": 29,
+   "no_explicit_german_requirement": 102,
+   "german_not_required_at_C1_or_above": 120
+  },
+  {
+   "scope": "family:data_governance",
+   "n": 65,
+   "english_posting_no_german_req": 10,
+   "no_explicit_german_requirement": 39,
+   "german_not_required_at_C1_or_above": 45
+  },
+  {
+   "scope": "family:data_science",
+   "n": 157,
+   "english_posting_no_german_req": 55,
+   "no_explicit_german_requirement": 105,
+   "german_not_required_at_C1_or_above": 119
+  },
+  {
+   "scope": "family:marketing_analytics",
+   "n": 24,
+   "english_posting_no_german_req": 4,
+   "no_explicit_german_requirement": 16,
+   "german_not_required_at_C1_or_above": 18
+  },
+  {
+   "scope": "family:product_analytics",
+   "n": 1,
+   "english_posting_no_german_req": 1,
+   "no_explicit_german_requirement": 1,
+   "german_not_required_at_C1_or_above": 1
+  }
+ ],
+ "styria_english_presenting_data_candidates": 125,
+ "styria_data_candidates": 248
+}

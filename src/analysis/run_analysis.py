@@ -20,7 +20,6 @@ ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
 TAB = ROOT / "outputs" / "tables"
 OUT = ROOT / "outputs"
-TAB.mkdir(parents=True, exist_ok=True)
 
 CORE_FAMILIES = ["data_analytics", "bi", "data_science", "data_engineering", "data_governance", "marketing_analytics", "product_analytics", "business_analysis"]
 ADJACENT = ["ai_software_engineering", "other_data"]
@@ -58,6 +57,7 @@ def share_table(df: pd.DataFrame, col: str, name: str, groupcol: str | None = No
 
 
 def main():
+    TAB.mkdir(parents=True, exist_ok=True)
     df = pd.read_json(PROC / "postings_dedup.jsonl", lines=True)
     for c in ["posted_date", "collected_at"]:
         df[c] = pd.to_datetime(df[c], errors="coerce", utc=True)
@@ -128,6 +128,29 @@ def main():
                             int(core[(core.source == "eures") & core.company_norm.isna()].shape[0]), int(core[core.is_styria & core.company_norm.isna()].shape[0])]}).to_csv(TAB / "T04b_employer_concentration.csv", index=False)
     pd.crosstab(core.source, core.industry_raw.fillna("unspecified")).T.sort_values("linkedin", ascending=False).head(40).to_csv(TAB / "T04c_linkedin_industry_raw.csv")
 
+    # ---------------- T04d dual-track employers (intern_student AND trainee_junior in the snapshot)
+    emp_tr = core[core.company_norm.notna()]
+    dual_rows = []
+    for cname, g in emp_tr.groupby("company_norm"):
+        n_i = int((g.seniority == "intern_student").sum())
+        n_j = int((g.seniority == "trainee_junior").sum())
+        if n_i > 0 and n_j > 0:
+            dual_rows.append({
+                "company_norm": cname, "example_company": g.company.dropna().astype(str).iloc[0],
+                "intern_student_postings": n_i, "trainee_junior_postings": n_j,
+                "postings": int(len(g)), "styria_postings": int(g.is_styria.sum()),
+                "families": ",".join(sorted(set(g.role_family))),
+                "states": ",".join(sorted({x for x in g.state.dropna() if isinstance(x, str)})),
+                "is_agency": bool(g.is_agency.max()),
+            })
+    dual = pd.DataFrame(dual_rows).sort_values(["intern_student_postings", "trainee_junior_postings"], ascending=False) if dual_rows else pd.DataFrame(
+        columns=["company_norm", "example_company", "intern_student_postings", "trainee_junior_postings", "postings", "styria_postings", "families", "states", "is_agency"])
+    dual.to_csv(TAB / "T04d_dual_track_employers.csv", index=False)
+    pd.DataFrame({"metric": ["named_employers_core", "dual_track_employers", "dual_track_styria",
+                             "intern_student_core", "trainee_junior_core"],
+                  "value": [int(emp_tr.company_norm.nunique()), int(len(dual)), int((dual.styria_postings > 0).sum()) if len(dual) else 0,
+                            int((core.seniority == "intern_student").sum()), int((core.seniority == "trainee_junior").sum())]}).to_csv(TAB / "T04d_dual_track_summary.csv", index=False)
+
     # ---------------- T05 skills
     for cat in SKILL_CATS:
         col = f"skills_{cat}"
@@ -142,6 +165,30 @@ def main():
     share_table(desc, "skills_all_tech", "skill", "role_family").to_csv(TAB / "T05_skills_all_tech_by_family.csv", index=False)
     share_table(desc, "skills_all_tech", "skill", "styria_flag").to_csv(TAB / "T05_skills_all_tech_by_styria.csv", index=False)
     share_table(desc, "skills_all_tech", "skill", "seniority").to_csv(TAB / "T05_skills_all_tech_by_seniority.csv", index=False)
+
+    # ---------------- T05f topic demand (additive GenAI/MLOps slices; D-023)
+    topics = json.load(open(ROOT / "config" / "topic_stacks.json", encoding="utf-8")).get("topics", {})
+    sets = desc.skills_all_tech.apply(set)
+    biz = desc.skills_business_domain.apply(lambda l: set(l) if isinstance(l, list) else set())
+    n_desc = len(desc)
+    t05f = []
+    for skill, stack in topics.items():
+        has = [(skill in s) or (skill in b) for s, b in zip(sets, biz)]
+        cnt = int(sum(has))
+        if n_desc == 0:
+            continue
+        lo, hi = wilson(cnt, n_desc)
+        row = {"skill": skill, "stack": stack, "count": cnt, "n": n_desc, "share": round(cnt / n_desc, 3), "ci_low": lo, "ci_high": hi, "small_n_flag": cnt < 3}
+        for track, mask in [("intern_student", desc.seniority == "intern_student"),
+                            ("trainee_junior", desc.seniority == "trainee_junior"),
+                            ("rest", ~desc.seniority.isin(["intern_student", "trainee_junior"]))]:
+            sub_n = int(mask.sum())
+            sub_c = int(sum(h for h, m in zip(has, mask) if m))
+            row[f"{track}_count"] = sub_c
+            row[f"{track}_n"] = sub_n
+            row[f"{track}_share"] = round(sub_c / sub_n, 3) if sub_n else None
+        t05f.append(row)
+    pd.DataFrame(t05f).sort_values(["stack", "count"], ascending=[True, False]).to_csv(TAB / "T05f_topic_demand.csv", index=False)
 
     # ---------------- T06 co-occurrence
     top = [s for s in st.skill.head(30) if s not in ("Cloud (generic)", "AI (generic)", "Statistics (general)", "Data Visualization", "Machine Learning")]
@@ -205,6 +252,35 @@ def main():
     pd.DataFrame({"metric": ["with_description", "explicit_years_stated", "multi_year_phrase", "entry_level_phrase"],
                   "count": [len(desc), len(ex), int(desc.experience_multi_year_phrase.sum()), int(desc.experience_entry_level_phrase.sum())]}).to_csv(TAB / "T08c_experience_coverage.csv", index=False)
     pd.crosstab(desc.seniority, pd.cut(desc.experience_min_years, [-1, 0, 1, 2, 3, 5, 8, 30], labels=["0", "1", "2", "3", "4-5", "6-8", "9+"])).to_csv(TAB / "T08d_seniority_x_years.csv")
+
+    # ---------------- T17 intern vs junior vs rest (skill / language / family divergence)
+    desc = desc.copy()
+    desc["entry_track"] = np.where(desc.seniority == "intern_student", "intern_student",
+                                   np.where(desc.seniority == "trainee_junior", "trainee_junior", "rest"))
+    core_tr = core.copy()
+    core_tr["entry_track"] = np.where(core.seniority == "intern_student", "intern_student",
+                                      np.where(core.seniority == "trainee_junior", "trainee_junior", "rest"))
+    share_table(desc, "skills_all_tech", "skill", "entry_track").to_csv(TAB / "T17_skills_by_entry_track.csv", index=False)
+    sk_tr = pd.read_csv(TAB / "T17_skills_by_entry_track.csv")
+    piv_tr = sk_tr.pivot_table(index="skill", columns="entry_track", values="share")
+    n_tr = sk_tr.groupby("entry_track").n.first()
+    cnt_tr = sk_tr.pivot_table(index="skill", columns="entry_track", values="count")
+    div = []
+    for skill, row in piv_tr.iterrows():
+        si, sj, sr = row.get("intern_student"), row.get("trainee_junior"), row.get("rest")
+        ci, cj = (cnt_tr.loc[skill].get("intern_student") if skill in cnt_tr.index else None), (cnt_tr.loc[skill].get("trainee_junior") if skill in cnt_tr.index else None)
+        if pd.isna(si) and pd.isna(sj):
+            continue
+        pp = None if (pd.isna(si) or pd.isna(sj)) else round(100 * (float(sj) - float(si)), 1)
+        div.append({"skill": skill, "intern_share": None if pd.isna(si) else round(float(si), 3), "junior_share": None if pd.isna(sj) else round(float(sj), 3),
+                    "rest_share": None if pd.isna(sr) else round(float(sr), 3), "junior_minus_intern_pp": pp,
+                    "intern_count": None if pd.isna(ci) else int(ci), "junior_count": None if pd.isna(cj) else int(cj),
+                    "intern_n": int(n_tr.get("intern_student", 0) or 0), "junior_n": int(n_tr.get("trainee_junior", 0) or 0),
+                    "rest_n": int(n_tr.get("rest", 0) or 0),
+                    "small_n_flag": int(n_tr.get("intern_student", 0) or 0) < 30 or int(n_tr.get("trainee_junior", 0) or 0) < 30})
+    pd.DataFrame(div).sort_values("junior_minus_intern_pp", ascending=False, na_position="last").to_csv(TAB / "T17_skill_divergence_intern_vs_junior.csv", index=False)
+    share_table(desc, "german_requirement", "german_requirement", "entry_track").to_csv(TAB / "T17b_german_by_entry_track.csv", index=False)
+    share_table(core_tr, "role_family", "role_family", "entry_track").to_csv(TAB / "T17c_family_mix_by_entry_track.csv", index=False)
 
     # ---------------- T09 salary
     sal = core[core.salary_min_annual_eur.notna()].copy()
@@ -285,15 +361,35 @@ def main():
     pd.DataFrame(prof).to_csv(TAB / "T14_family_profiles.csv", index=False)
 
     # ---------------- machine-readable summary
+    def date_range(s: pd.Series, scope: str) -> dict:
+        ok = s.notna().any()
+        return {"scope": scope, "min": str(s.min().date()) if ok else None, "max": str(s.max().date()) if ok else None}
+
+    src = t.reset_index()
+    for c in ["first_posted", "last_posted", "collected_from", "collected_to"]:
+        src[c] = src[c].astype(str)
+    src["in_scope_canonical"] = src["in_scope_canonical"].fillna(0).astype(int)
     summary = {
         "generated_from": "data/processed/postings_dedup.jsonl", "analysis_set_definition": "canonical rows with role_family in CORE_FAMILIES",
         "core_families": CORE_FAMILIES, "adjacent_families": ADJACENT,
         "counts": {"raw_rows_all_sources": int(len(df)), "canonical_groups_all": int(df.is_canonical.sum()), "core_canonical": int(len(core)), "core_with_description": int(len(desc)),
                    "adjacent_canonical": int(len(adj)), "styria_core": int(core.is_styria.sum()), "graz_area_core": int(core.is_graz_area.sum()), "vienna_core": int(core.is_vienna.sum()),
+                   "styria_core_primary_state": int((core.state == "Steiermark").sum()), "vienna_core_primary_state": int((core.state == "Wien").sum()),
+                   "graz_area_core_primary_styria": int((core.is_graz_area & (core.state == "Steiermark")).sum()),
                    "unique_employers_core": int(e.shape[0]), "unique_employers_styria": int((e.styria > 0).sum())},
-        "posted_date_range": {"min": str(core.posted_date.min().date()) if core.posted_date.notna().any() else None, "max": str(core.posted_date.max().date()) if core.posted_date.notna().any() else None},
+        # OQ-19 / M43: two regional bases exist; every sentence that quotes a regional count names its basis
+        "count_basis": {
+            "styria_core": "any listed site: core postings with at least one location in Styria (is_styria flag; multi-site ads count in every state they list). Used by T02 styria_count, T03c, T04a styria, T07e and every *_by_styria table.",
+            "vienna_core": "any listed site: core postings with at least one location in Vienna (is_vienna flag).",
+            "graz_area_core": "any listed site: core postings with at least one location in the Graz commuting area (is_graz_area flag); a subset of styria_core.",
+            "styria_core_primary_state": "primary state: core postings whose primary `state` is Steiermark (one state per ad; T03a_state_counts.csv, DS05).",
+            "vienna_core_primary_state": "primary state: core postings whose primary `state` is Wien (T03a_state_counts.csv, DS05).",
+            "graz_area_core_primary_styria": "Graz commuting area postings whose primary state is Steiermark (subset of styria_core_primary_state).",
+        },
+        "posted_date_range": date_range(core.posted_date, "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source"),
+        "posted_date_range_all_rows": date_range(df.posted_date, "all collected rows, all families, before deduplication"),
         "collected_at_range": {"min": str(df.collected_at.min()), "max": str(df.collected_at.max())},
-        "sources": t.reset_index().astype(str).to_dict(orient="records"),
+        "sources": json.loads(src.to_json(orient="records")),
     }
     json.dump(summary, open(OUT / "market_summary.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2, default=str)
     print(json.dumps(summary["counts"], indent=1))

@@ -1,0 +1,9 @@
+family,junior,lead_head,senior,student,unlabelled,family_label
+bi,0,1,1,0,13,BI
+business_analysis,3,2,3,1,12,Business analysis
+data_analytics,17,9,7,16,80,Data analytics
+data_engineering,1,3,5,2,47,Data engineering
+data_governance,0,1,0,1,5,Data governance
+data_science,18,25,30,127,438,Data science
+marketing_analytics,0,1,1,0,0,Marketing analytics
+product_analytics,0,0,1,0,1,Product analytics

@@ -1,0 +1,10 @@
+readme_length,count,n,share,ci_low,ci_high,population
+medium (1.5k–5k),2138,6677,0.32,0.309,0.331,projects
+stub (<300 chars),1792,6677,0.268,0.258,0.279,projects
+short (300–1.5k),1509,6677,0.226,0.216,0.236,projects
+long (5k–15k),1023,6677,0.153,0.145,0.162,projects
+very long (>15k),215,6677,0.032,0.028,0.037,projects
+medium (1.5k–5k),2138,3959,0.54,0.524,0.556,documented projects
+long (5k–15k),1023,3959,0.258,0.245,0.272,documented projects
+short (300–1.5k),583,3959,0.147,0.137,0.159,documented projects
+very long (>15k),215,3959,0.054,0.048,0.062,documented projects

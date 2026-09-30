@@ -1,0 +1,6 @@
+seniority_bio,n,median_account_age_years,median_projects,share_student,note
+junior,39,4.3,1.0,0.0,title-to-experience mismatch is not measurable on GitHub (no years of experience); account age and project counts are the only tenure-like signals
+lead_head,42,8.05,0.5,0.0,title-to-experience mismatch is not measurable on GitHub (no years of experience); account age and project counts are the only tenure-like signals
+senior,48,7.8,2.0,0.0,title-to-experience mismatch is not measurable on GitHub (no years of experience); account age and project counts are the only tenure-like signals
+student,147,5.4,2.0,1.0,title-to-experience mismatch is not measurable on GitHub (no years of experience); account age and project counts are the only tenure-like signals
+unlabelled,596,6.5,1.0,0.0,title-to-experience mismatch is not measurable on GitHub (no years of experience); account age and project counts are the only tenure-like signals

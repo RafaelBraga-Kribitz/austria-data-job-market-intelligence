@@ -1,0 +1,31 @@
+format_combination,projects,n,share
+notebook,1504,6677,0.225
+(none of the packaging formats),1235,6677,0.185
+python_package_or_src,550,6677,0.082
+notebook + python_package_or_src,547,6677,0.082
+ci + python_package_or_src + tests,117,6677,0.018
+web_app,110,6677,0.016
+dashboard_bi,103,6677,0.015
+python_package_or_src + tests,96,6677,0.014
+python_package_or_src + web_app,84,6677,0.013
+r_markdown_quarto,72,6677,0.011
+ci + python_package_or_src,71,6677,0.011
+dashboard_bi + notebook,60,6677,0.009
+api,60,6677,0.009
+notebook + pipeline_project,56,6677,0.008
+api + python_package_or_src,54,6677,0.008
+streamlit_gradio_app,51,6677,0.008
+docker,44,6677,0.007
+pipeline_project,40,6677,0.006
+notebook + python_package_or_src + tests,40,6677,0.006
+notebook + pipeline_project + python_package_or_src,40,6677,0.006
+notebook + web_app,38,6677,0.006
+docker + notebook,36,6677,0.005
+ci,35,6677,0.005
+pipeline_project + python_package_or_src,34,6677,0.005
+docker + notebook + python_package_or_src,33,6677,0.005
+ci + python_package_or_src + web_app,32,6677,0.005
+python_package_or_src + r_markdown_quarto,32,6677,0.005
+api + notebook,32,6677,0.005
+api + notebook + python_package_or_src,31,6677,0.005
+ci + notebook + python_package_or_src,31,6677,0.005

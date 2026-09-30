@@ -1,0 +1,8 @@
+skill,count,n,share,ci_low,ci_high
+AI (generic),25,109,0.229,0.16,0.317
+Data Visualization,9,109,0.083,0.044,0.15
+Power BI,3,109,0.028,0.009,0.078
+SAP BW/BO,2,109,0.018,0.005,0.064
+Data Warehouse (generic),1,109,0.009,0.002,0.05
+Generative AI / LLM,1,109,0.009,0.002,0.05
+MLOps,1,109,0.009,0.002,0.05

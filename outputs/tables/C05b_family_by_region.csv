@@ -1,0 +1,9 @@
+family,Oberösterreich,Salzburg,Steiermark,Tirol,Wien,other Bundesland,unspecified (Austria),family_label,total,note
+bi,0,1,3,1,5,1,4,BI,15,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+business_analysis,1,0,2,0,9,1,8,Business analysis,21,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+data_analytics,8,3,7,3,76,4,28,Data analytics,129,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+data_engineering,7,3,4,0,24,2,18,Data engineering,58,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+data_governance,0,0,1,0,3,1,2,Data governance,7,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+data_science,37,25,38,26,359,21,132,Data science,638,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+marketing_analytics,0,0,1,0,1,0,0,Marketing analytics,2,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"
+product_analytics,0,0,0,0,1,0,1,Product analytics,2,"population: P_T1 counts (not shares): frame B makes Styria complete, other regions are samples"

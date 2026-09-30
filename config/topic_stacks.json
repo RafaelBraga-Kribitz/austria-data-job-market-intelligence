@@ -1,0 +1,33 @@
+{
+  "_comment": "Topic catalogue for T05f / D04b (D-023). Canonical skill names must exist in config/skills_taxonomy.json. Umbrella Generative AI / LLM is kept as a market-level skill; topics below are additive slices.",
+  "topics": {
+    "RAG": "LLM/GenAI",
+    "Vector DBs": "LLM/GenAI",
+    "LangChain/LLM frameworks": "LLM/GenAI",
+    "AI agents / tool-calling": "LLM/GenAI",
+    "Fine-tuning / LoRA / PEFT": "LLM/GenAI",
+    "Local LLM serving": "LLM/GenAI",
+    "Multimodal / VLM": "LLM/GenAI",
+    "Prompt engineering": "LLM/GenAI",
+    "EU AI Act / AI governance": "LLM/GenAI",
+    "Generative AI / LLM": "LLM/GenAI",
+    "MLOps": "MLOps/Cloud",
+    "Experiment tracking": "MLOps/Cloud",
+    "Airflow": "MLOps/Cloud",
+    "Kubernetes": "MLOps/Cloud",
+    "CI/CD": "MLOps/Cloud",
+    "REST APIs": "MLOps/Cloud",
+    "Spark": "MLOps/Cloud",
+    "Kafka": "MLOps/Cloud",
+    "Power BI": "MLOps/Cloud",
+    "Streamlit": "MLOps/Cloud",
+    "ROS / ROS 2": "Robotics/CV",
+    "Computer Vision": "Robotics/CV",
+    "Industry 4.0 / MES / OPC UA": "Robotics/CV",
+    "SQL": "Data",
+    "ETL/ELT": "Data",
+    "Python": "Data",
+    "A/B Testing / Experimentation": "Data",
+    "Excel": "Data"
+  }
+}

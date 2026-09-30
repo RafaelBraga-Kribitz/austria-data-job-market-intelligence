@@ -1,0 +1,5 @@
+data_tier,n,frame_a,frame_b,frame_c
+T0_none,6383,833,1509,4269
+T1_bio_declared,872,865,52,164
+T2_repo_evidenced,946,415,195,473
+T3_weak_repo_signal,1208,282,267,743

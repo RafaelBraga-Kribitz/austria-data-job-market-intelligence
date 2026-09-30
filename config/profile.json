@@ -1,22 +1,20 @@
 {
-  "_comment": "The user's profile as stated in the project brief (2026-09-16). Used ONLY by build_decision_matrix.py to compute skill overlap / gap per role family. Skill names must match canonical names in config/skills_taxonomy.json. 'have' = demonstrable now; 'developing' = actively learning, partially demonstrable; 'structural' = would need substantial time/education to demonstrate credibly. Update this file when the profile changes.",
-  "summary": "≈20 years marketing/growth/performance marketing/CRO/experimentation/analytics/automation; English fluent; Portuguese native; German A2-B1; based Greater Graz; developing Python, SQL, R, statistics, ML, visualization.",
-  "german_level": "A2-B1",
+  "_comment": "NEUTRAL EXAMPLE PROFILE (not a real person). The owner's own profile is private and is not part of the public repository (owner decision 2026-09-30, D-026); the public export ships this file as config/profile.json so that build_decision_matrix.py, visual_questions_demand.py and the tests run. The published D01-D04 tables and the BQ08/BQ17 figures were computed from the private profile, so re-running them with this example gives different overlap/gap values. Replace the lists with your own profile to read the market through it. Skill names must match canonical names in config/skills_taxonomy.json. 'have' = demonstrable now; 'developing' = actively learning, partially demonstrable; 'structural' = would need substantial time/education to demonstrate credibly.",
+  "summary": "Example: career changer with several years of business/marketing analytics experience moving into a data-analyst role in Austria; English fluent; German intermediate; developing Python, SQL and statistics.",
+  "german_level": "B1",
   "have": [
-    "Marketing", "Digital/Online Marketing", "CRM", "Customer Analytics", "Product Analytics", "Web/Digital Analytics", "E-Commerce", "Sales/Commercial",
-    "A/B Testing / Experimentation", "Segmentation/Clustering", "Data Visualization", "Google Analytics", "Adobe Analytics", "Matomo", "Excel",
-    "Communication", "Analytical Thinking", "Stakeholder Management", "Business Acumen", "Leadership", "Project Management", "Self-organisation", "Customer Orientation",
-    "Pricing/Revenue", "Forecasting", "Requirements/Business Analysis", "Consulting"
+    "Excel", "Data Visualization", "Web/Digital Analytics", "Google Analytics", "A/B Testing / Experimentation", "Marketing", "CRM",
+    "Communication", "Analytical Thinking", "Stakeholder Management", "Business Acumen", "Project Management", "Customer Orientation"
   ],
   "developing": [
-    "Python", "SQL", "R", "pandas", "NumPy", "scikit-learn", "matplotlib/seaborn", "Jupyter", "Statistics (general)", "Regression", "Hypothesis Testing",
-    "Machine Learning", "Predictive Analytics", "Classification", "Time Series", "Causal Inference", "Power BI", "Tableau", "Looker", "Git", "Plotly/Dash", "Streamlit",
-    "Exploratory Analysis", "Data Mining", "statsmodels", "SciPy", "XGBoost/LightGBM", "Bayesian", "DAX/M", "Data Modeling", "PostgreSQL", "MySQL/MariaDB", "BigQuery", "Snowflake", "Cloud (generic)", "AI (generic)", "Generative AI / LLM", "REST APIs", "ETL/ELT", "Data Governance/Quality", "Finance/Controlling"
+    "Python", "SQL", "pandas", "NumPy", "Jupyter", "Statistics (general)", "Regression", "Hypothesis Testing", "Exploratory Analysis",
+    "Power BI", "Git", "PostgreSQL", "Data Modeling", "ETL/ELT", "Machine Learning", "scikit-learn",
+    "Generative AI / LLM", "LangChain/LLM frameworks", "RAG", "Prompt engineering"
   ],
   "structural": [
-    "Java", "Scala", "C#", "C/C++", "Rust", "Go", "Spark", "Kafka", "Kubernetes", "Docker", "Airflow", "dbt", "Databricks", "Azure Synapse", "Microsoft Fabric", "Azure Data Factory", "Terraform/IaC", "CI/CD", "MLOps",
-    "Deep Learning", "PyTorch", "TensorFlow/Keras", "Computer Vision", "NLP", "Hugging Face/Transformers", "SAP BW/BO", "SAP HANA", "SAP (ERP)", "Oracle", "SQL Server", "Hadoop", "Cassandra", "Elasticsearch", "Neo4j", "Teradata",
-    "Operations/Manufacturing", "Automotive/Mobility", "Healthcare/Pharma/Bio", "Risk/Actuarial", "Banking/Insurance", "Energy", "Supply Chain/Logistics", "Optimization/OR", "Simulation", "Mathematics", "Bash/Shell", "MATLAB", "SAS", "Streaming", "Talend/Informatica", "Fivetran/Airbyte", "Azure", "AWS", "GCP", "Redshift", "Data Lake/Lakehouse", "Data Warehouse (generic)", "Qlik", "MicroStrategy", "Cognos", "SSRS"
+    "Java", "Scala", "Spark", "Kafka", "Kubernetes", "Docker", "Airflow", "dbt", "Databricks", "Terraform/IaC", "CI/CD", "MLOps",
+    "Experiment tracking", "Vector DBs", "Fine-tuning / LoRA / PEFT", "Local LLM serving", "Deep Learning", "PyTorch", "TensorFlow/Keras",
+    "Computer Vision", "NLP", "SAP (ERP)", "Azure", "AWS", "GCP", "Data Lake/Lakehouse", "Streaming", "Mathematics"
   ],
-  "_notes": "Azure/AWS/GCP are placed under structural because credible demonstration needs hands-on platform work; move to 'developing' once a cloud project exists. Docker/Git basics are learnable quickly but are listed conservatively."
+  "_notes": "Illustrative only. Skills not listed in any of the three lists are reported as unclassified by build_decision_matrix.py."
 }

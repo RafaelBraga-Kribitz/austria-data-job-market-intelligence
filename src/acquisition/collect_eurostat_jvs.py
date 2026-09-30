@@ -12,8 +12,9 @@ Access  : documented public REST API, no key, no restriction on automated access
 Grain   : quarter × NACE aggregate (B-F industry & construction, G-N market services, O-S public/
           education/health, B-N, B-S), non-seasonally-adjusted, 2009-Q1 onwards.
 
-Usage: python src/acquisition/collect_eurostat_jvs.py
-Writes: data/raw/eurostat_jvs/<today>/jvs_q_nace2_at.jsonl  (one envelope per indicator)
+Usage: python src/acquisition/collect_eurostat_jvs.py [--date YYYY-MM-DD]
+Writes: data/raw/eurostat_jvs/<date>/jvs_q_nace2_at.jsonl  (one envelope per indicator; <date> defaults
+        to today in Europe/Vienna. The 2026-09-16 folder was named by the UTC day: fetched 00:24 Vienna time on 09-17)
 """
 from __future__ import annotations
 
@@ -21,7 +22,7 @@ import json
 import urllib.parse
 import urllib.request
 
-from common import RawWriter, now_iso
+from common import RawWriter, cli
 
 BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_nace2"
 INDICATORS = ("JOBVAC", "JOBRATE")  # number of job vacancies; job vacancy rate (%)
@@ -29,7 +30,7 @@ GEO = "AT"
 ADJ = "NSA"  # non-seasonally-adjusted: required, seasonally adjusted data would erase the signal
 
 
-def fetch(indicator: str) -> dict:
+def fetch(indicator: str) -> tuple[dict, str]:
     q = urllib.parse.urlencode({"geo": GEO, "s_adj": ADJ, "indic_em": indicator, "format": "JSON", "lang": "EN"})
     url = f"{BASE}?{q}"
     req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "austria-data-job-market-intelligence/1.0"})
@@ -64,8 +65,13 @@ def decode(doc: dict) -> list[dict]:
     return rows
 
 
-def main() -> None:
-    w = RawWriter("eurostat_jvs")
+def main(run_date: str | None = None) -> None:
+    # Fetch every indicator before touching disk: a network failure then leaves an earlier file intact.
+    fetched = []
+    for ind in INDICATORS:
+        doc, url = fetch(ind)
+        fetched.append((ind, doc, url, decode(doc)))
+    w = RawWriter("eurostat_jvs", run_date)
     # This dataset is fetched whole on every run, not paged like the posting collectors, so the
     # append-only RawWriter would duplicate every observation when the collector runs twice on the
     # same day. Start from a clean file instead.
@@ -73,13 +79,11 @@ def main() -> None:
     if stale.exists():
         stale.unlink()
     total = 0
-    for ind in INDICATORS:
-        doc, url = fetch(ind)
-        rows = decode(doc)
+    for ind, doc, url, rows in fetched:
         w.write("jvs_q_nace2_at", {"indicator": ind, "url": url, "label": doc.get("label"),
                                    "updated": doc.get("updated"), "n_rows": len(rows), "rows": rows},
                 indicator=ind)
-        w.log_query(ts=now_iso(), dataset="jvs_q_nace2", indicator=ind, geo=GEO, s_adj=ADJ, returned=len(rows))
+        w.log_query(dataset="jvs_q_nace2", indicator=ind, geo=GEO, s_adj=ADJ, returned=len(rows))
         print(f"[eurostat] {ind}: {len(rows)} observations")
         total += len(rows)
     w.close()
@@ -87,4 +91,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    main(cli(__doc__).date)

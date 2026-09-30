@@ -1,0 +1,67 @@
+format,count,n,share,ci_low,ci_high,population
+notebook,2896,6677,0.434,0.422,0.446,projects
+python_package_or_src,2711,6677,0.406,0.394,0.418,projects
+license,2283,6677,0.342,0.331,0.353,projects
+data_included,2029,6677,0.304,0.293,0.315,projects
+reproducible_env,1926,6677,0.288,0.278,0.299,projects
+web_app,872,6677,0.131,0.123,0.139,projects
+report_pdf_slides,848,6677,0.127,0.119,0.135,projects
+paper_academic,831,6677,0.124,0.117,0.133,projects
+tests,775,6677,0.116,0.109,0.124,projects
+ci,756,6677,0.113,0.106,0.121,projects
+docs_folder,747,6677,0.112,0.105,0.12,projects
+competition_kaggle,698,6677,0.105,0.097,0.112,projects
+makefile_scripts,636,6677,0.095,0.088,0.103,projects
+api,616,6677,0.092,0.086,0.099,projects
+docker,588,6677,0.088,0.082,0.095,projects
+dashboard_bi,536,6677,0.08,0.074,0.087,projects
+pipeline_project,494,6677,0.074,0.068,0.081,projects
+gh_pages_site,485,6677,0.073,0.067,0.079,projects
+streamlit_gradio_app,431,6677,0.065,0.059,0.071,projects
+model_artifacts,391,6677,0.059,0.053,0.064,projects
+r_markdown_quarto,218,6677,0.033,0.029,0.037,projects
+sql_files,81,6677,0.012,0.01,0.015,projects
+python_package_or_src,2280,3959,0.576,0.56,0.591,documented projects
+notebook,1728,3959,0.436,0.421,0.452,documented projects
+license,1695,3959,0.428,0.413,0.444,documented projects
+reproducible_env,1574,3959,0.398,0.382,0.413,documented projects
+data_included,1442,3959,0.364,0.349,0.379,documented projects
+paper_academic,720,3959,0.182,0.17,0.194,documented projects
+web_app,696,3959,0.176,0.164,0.188,documented projects
+tests,684,3959,0.173,0.161,0.185,documented projects
+docs_folder,668,3959,0.169,0.157,0.181,documented projects
+ci,657,3959,0.166,0.155,0.178,documented projects
+report_pdf_slides,593,3959,0.15,0.139,0.161,documented projects
+competition_kaggle,567,3959,0.143,0.133,0.154,documented projects
+api,541,3959,0.137,0.126,0.148,documented projects
+makefile_scripts,533,3959,0.135,0.124,0.146,documented projects
+docker,491,3959,0.124,0.114,0.135,documented projects
+dashboard_bi,437,3959,0.11,0.101,0.121,documented projects
+pipeline_project,433,3959,0.109,0.1,0.119,documented projects
+gh_pages_site,402,3959,0.102,0.093,0.111,documented projects
+model_artifacts,318,3959,0.08,0.072,0.089,documented projects
+streamlit_gradio_app,306,3959,0.077,0.069,0.086,documented projects
+r_markdown_quarto,121,3959,0.031,0.026,0.036,documented projects
+sql_files,56,3959,0.014,0.011,0.018,documented projects
+python_package_or_src,1085,1818,0.597,0.574,0.619,P_data candidates (≥1 project with format)
+data_included,998,1818,0.549,0.526,0.572,P_data candidates (≥1 project with format)
+notebook,994,1818,0.547,0.524,0.57,P_data candidates (≥1 project with format)
+license,873,1818,0.48,0.457,0.503,P_data candidates (≥1 project with format)
+reproducible_env,811,1818,0.446,0.423,0.469,P_data candidates (≥1 project with format)
+report_pdf_slides,526,1818,0.289,0.269,0.311,P_data candidates (≥1 project with format)
+web_app,523,1818,0.288,0.267,0.309,P_data candidates (≥1 project with format)
+competition_kaggle,457,1818,0.251,0.232,0.272,P_data candidates (≥1 project with format)
+tests,449,1818,0.247,0.228,0.267,P_data candidates (≥1 project with format)
+docs_folder,446,1818,0.245,0.226,0.266,P_data candidates (≥1 project with format)
+paper_academic,430,1818,0.237,0.218,0.257,P_data candidates (≥1 project with format)
+api,407,1818,0.224,0.205,0.244,P_data candidates (≥1 project with format)
+ci,405,1818,0.223,0.204,0.242,P_data candidates (≥1 project with format)
+makefile_scripts,388,1818,0.213,0.195,0.233,P_data candidates (≥1 project with format)
+dashboard_bi,370,1818,0.204,0.186,0.223,P_data candidates (≥1 project with format)
+docker,352,1818,0.194,0.176,0.212,P_data candidates (≥1 project with format)
+pipeline_project,318,1818,0.175,0.158,0.193,P_data candidates (≥1 project with format)
+gh_pages_site,306,1818,0.168,0.152,0.186,P_data candidates (≥1 project with format)
+model_artifacts,295,1818,0.162,0.146,0.18,P_data candidates (≥1 project with format)
+streamlit_gradio_app,276,1818,0.152,0.136,0.169,P_data candidates (≥1 project with format)
+r_markdown_quarto,130,1818,0.072,0.061,0.084,P_data candidates (≥1 project with format)
+sql_files,80,1818,0.044,0.035,0.054,P_data candidates (≥1 project with format)

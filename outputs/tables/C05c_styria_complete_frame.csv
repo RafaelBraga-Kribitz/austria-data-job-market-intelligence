@@ -1,0 +1,2 @@
+population,n,with_bio,T1_bio_declared,T2_repo_evidenced,T3_weak,data_signal_share,graz_area,students_among_T1,hireable,active_12m_share,note
+"Styrian accounts, frame-B complete-Styria subset (≥1 public repo)",2023,824,52,195,267,0.122,1885,8,227,0.425,"frame-B complete-Styria subset: accounts found by the Styrian place-name search with ≥1 public repo; the canonical location-resolved Styrian counts (all accounts, P_data, P_T1) are in C05a"

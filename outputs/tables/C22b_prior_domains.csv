@@ -1,0 +1,16 @@
+prior_domain,count,n,share,ci_low,ci_high,population
+business,106,872,0.122,0.102,0.145,P_T1
+software,84,872,0.096,0.078,0.118,P_T1
+science,71,872,0.081,0.065,0.101,P_T1
+statistics,44,872,0.05,0.038,0.067,P_T1
+economics,28,872,0.032,0.022,0.046,P_T1
+finance,18,872,0.021,0.013,0.032,P_T1
+social,16,872,0.018,0.011,0.03,P_T1
+engineering,13,872,0.015,0.009,0.025,P_T1
+marketing,10,872,0.011,0.006,0.021,P_T1
+business,7,30,0.233,0.118,0.409,P_T1 with explicit transition wording
+science,5,30,0.167,0.073,0.336,P_T1 with explicit transition wording
+statistics,5,30,0.167,0.073,0.336,P_T1 with explicit transition wording
+software,3,30,0.1,0.035,0.256,P_T1 with explicit transition wording
+economics,2,30,0.067,0.018,0.213,P_T1 with explicit transition wording
+social,2,30,0.067,0.018,0.213,P_T1 with explicit transition wording

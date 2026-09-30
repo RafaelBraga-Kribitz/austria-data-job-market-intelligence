@@ -1,0 +1,6 @@
+dimension,category,demand_count,demand_n,demand_share,supply_count,supply_n,supply_share,supply_ci_low,supply_ci_high,difference_pp,supply_styria_T1,demand_table,supply_population,note
+seniority,intern_student ↔ student,42,720,0.058,147,872,0.169,0.145,0.195,11.0,9,T08,P_T1,demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides
+seniority,trainee_junior ↔ junior,31,720,0.043,39,872,0.045,0.033,0.061,0.2,3,T08,P_T1,demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides
+seniority,unspecified ↔ unlabelled,414,720,0.575,596,872,0.683,0.652,0.713,10.8,40,T08,P_T1,demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides
+seniority,senior ↔ senior,136,720,0.189,48,872,0.055,0.042,0.072,-13.4,2,T08,P_T1,demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides
+seniority,lead_head ↔ lead_head,97,720,0.135,42,872,0.048,0.036,0.064,-8.7,2,T08,P_T1,demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides

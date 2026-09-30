@@ -4,10 +4,19 @@
   "max": "2026-09-16 18:39:42+00:00"
  },
  "posted_date_range": {
+  "scope": "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source",
   "min": "2023-08-17",
   "max": "2026-09-16"
  },
  "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "regional_count_basis": {
+  "styria_core": "any listed site: core postings with at least one location in Styria (is_styria flag; multi-site ads count in every state they list). Used by T02 styria_count, T03c, T04a styria, T07e and every *_by_styria table.",
+  "vienna_core": "any listed site: core postings with at least one location in Vienna (is_vienna flag).",
+  "graz_area_core": "any listed site: core postings with at least one location in the Graz commuting area (is_graz_area flag); a subset of styria_core.",
+  "styria_core_primary_state": "primary state: core postings whose primary `state` is Steiermark (one state per ad; T03a_state_counts.csv, DS05).",
+  "vienna_core_primary_state": "primary state: core postings whose primary `state` is Wien (T03a_state_counts.csv, DS05).",
+  "graz_area_core_primary_styria": "Graz commuting area postings whose primary state is Steiermark (subset of styria_core_primary_state)."
+ },
  "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
  "denominator": 719,
  "top_tech_overall": [
@@ -132,7 +141,7 @@
    "ci_high": 0.163
   },
   {
-   "skill": "Databricks",
+   "skill": "REST APIs",
    "count": 83,
    "n": 719,
    "share": 0.115,
@@ -140,7 +149,7 @@
    "ci_high": 0.141
   },
   {
-   "skill": "REST APIs",
+   "skill": "Databricks",
    "count": 83,
    "n": 719,
    "share": 0.115,
@@ -196,6 +205,14 @@
    "ci_high": 0.092
   },
   {
+   "skill": "Java",
+   "count": 51,
+   "n": 719,
+   "share": 0.071,
+   "ci_low": 0.054,
+   "ci_high": 0.092
+  },
+  {
    "skill": "Data Lake/Lakehouse",
    "count": 51,
    "n": 719,
@@ -204,12 +221,20 @@
    "ci_high": 0.092
   },
   {
-   "skill": "Java",
+   "skill": "AI agents / tool-calling",
    "count": 51,
    "n": 719,
    "share": 0.071,
    "ci_low": 0.054,
    "ci_high": 0.092
+  },
+  {
+   "skill": "RAG",
+   "count": 50,
+   "n": 719,
+   "share": 0.07,
+   "ci_low": 0.053,
+   "ci_high": 0.091
   },
   {
    "skill": "Spark",
@@ -236,7 +261,7 @@
    "ci_high": 0.081
   },
   {
-   "skill": "Oracle",
+   "skill": "Forecasting",
    "count": 41,
    "n": 719,
    "share": 0.057,
@@ -245,6 +270,14 @@
   },
   {
    "skill": "Microsoft Fabric",
+   "count": 41,
+   "n": 719,
+   "share": 0.057,
+   "ci_low": 0.042,
+   "ci_high": 0.076
+  },
+  {
+   "skill": "Oracle",
    "count": 41,
    "n": 719,
    "share": 0.057,
@@ -268,14 +301,6 @@
    "ci_high": 0.076
   },
   {
-   "skill": "Forecasting",
-   "count": 41,
-   "n": 719,
-   "share": 0.057,
-   "ci_low": 0.042,
-   "ci_high": 0.076
-  },
-  {
    "skill": "Kubernetes",
    "count": 40,
    "n": 719,
@@ -292,7 +317,7 @@
    "ci_high": 0.075
   },
   {
-   "skill": "SAP BW/BO",
+   "skill": "SQL Server",
    "count": 38,
    "n": 719,
    "share": 0.053,
@@ -300,7 +325,7 @@
    "ci_high": 0.072
   },
   {
-   "skill": "SQL Server",
+   "skill": "SAP BW/BO",
    "count": 38,
    "n": 719,
    "share": 0.053,
@@ -314,22 +339,6 @@
    "share": 0.049,
    "ci_low": 0.035,
    "ci_high": 0.067
-  },
-  {
-   "skill": "C#",
-   "count": 34,
-   "n": 719,
-   "share": 0.047,
-   "ci_low": 0.034,
-   "ci_high": 0.065
-  },
-  {
-   "skill": "PostgreSQL",
-   "count": 33,
-   "n": 719,
-   "share": 0.046,
-   "ci_low": 0.033,
-   "ci_high": 0.064
   }
  ],
  "by_category": {
@@ -776,11 +785,11 @@
    },
    {
     "skill": "LangChain/LLM frameworks",
-    "count": 24,
+    "count": 25,
     "n": 719,
-    "share": 0.033,
-    "ci_low": 0.023,
-    "ci_high": 0.049
+    "share": 0.035,
+    "ci_low": 0.024,
+    "ci_high": 0.051
    },
    {
     "skill": "TensorFlow/Keras",
@@ -986,11 +995,19 @@
    },
    {
     "skill": "Airflow",
-    "count": 12,
+    "count": 16,
     "n": 719,
-    "share": 0.017,
-    "ci_low": 0.01,
-    "ci_high": 0.029
+    "share": 0.022,
+    "ci_low": 0.014,
+    "ci_high": 0.036
+   },
+   {
+    "skill": "Experiment tracking",
+    "count": 11,
+    "n": 719,
+    "share": 0.015,
+    "ci_low": 0.009,
+    "ci_high": 0.027
    },
    {
     "skill": "Fivetran/Airbyte",
@@ -1027,6 +1044,22 @@
     "ci_high": 0.191
    },
    {
+    "skill": "AI agents / tool-calling",
+    "count": 51,
+    "n": 719,
+    "share": 0.071,
+    "ci_low": 0.054,
+    "ci_high": 0.092
+   },
+   {
+    "skill": "RAG",
+    "count": 50,
+    "n": 719,
+    "share": 0.07,
+    "ci_low": 0.053,
+    "ci_high": 0.091
+   },
+   {
     "skill": "Forecasting",
     "count": 41,
     "n": 719,
@@ -1043,6 +1076,22 @@
     "ci_high": 0.051
    },
    {
+    "skill": "Prompt engineering",
+    "count": 22,
+    "n": 719,
+    "share": 0.031,
+    "ci_low": 0.02,
+    "ci_high": 0.046
+   },
+   {
+    "skill": "EU AI Act / AI governance",
+    "count": 20,
+    "n": 719,
+    "share": 0.028,
+    "ci_low": 0.018,
+    "ci_high": 0.043
+   },
+   {
     "skill": "Deep Learning",
     "count": 16,
     "n": 719,
@@ -1051,7 +1100,15 @@
     "ci_high": 0.036
    },
    {
-    "skill": "Anomaly Detection",
+    "skill": "Vector DBs",
+    "count": 14,
+    "n": 719,
+    "share": 0.019,
+    "ci_low": 0.012,
+    "ci_high": 0.032
+   },
+   {
+    "skill": "NLP",
     "count": 13,
     "n": 719,
     "share": 0.018,
@@ -1059,7 +1116,7 @@
     "ci_high": 0.031
    },
    {
-    "skill": "NLP",
+    "skill": "Anomaly Detection",
     "count": 13,
     "n": 719,
     "share": 0.018,
@@ -1075,6 +1132,14 @@
     "ci_high": 0.029
    },
    {
+    "skill": "Fine-tuning / LoRA / PEFT",
+    "count": 11,
+    "n": 719,
+    "share": 0.015,
+    "ci_low": 0.009,
+    "ci_high": 0.027
+   },
+   {
     "skill": "Time Series",
     "count": 5,
     "n": 719,
@@ -1084,6 +1149,14 @@
    },
    {
     "skill": "Reinforcement Learning",
+    "count": 5,
+    "n": 719,
+    "share": 0.007,
+    "ci_low": 0.003,
+    "ci_high": 0.016
+   },
+   {
+    "skill": "Multimodal / VLM",
     "count": 5,
     "n": 719,
     "share": 0.007,
@@ -1303,7 +1376,7 @@
     "ci_high": 0.123
    },
    {
-    "skill": "Healthcare/Pharma/Bio",
+    "skill": "Automotive/Mobility",
     "count": 62,
     "n": 719,
     "share": 0.086,
@@ -1311,7 +1384,7 @@
     "ci_high": 0.109
    },
    {
-    "skill": "Automotive/Mobility",
+    "skill": "Healthcare/Pharma/Bio",
     "count": 62,
     "n": 719,
     "share": 0.086,
@@ -1632,7 +1705,7 @@
    },
    {
     "role_family": "bi",
-    "skill": "Data Warehouse (generic)",
+    "skill": "Data Governance/Quality",
     "count": 15,
     "n": 85,
     "share": 0.176,
@@ -1641,7 +1714,7 @@
    },
    {
     "role_family": "bi",
-    "skill": "Data Governance/Quality",
+    "skill": "Data Warehouse (generic)",
     "count": 15,
     "n": 85,
     "share": 0.176,
@@ -1668,6 +1741,15 @@
    },
    {
     "role_family": "bi",
+    "skill": "SQL Server",
+    "count": 9,
+    "n": 85,
+    "share": 0.106,
+    "ci_low": 0.057,
+    "ci_high": 0.189
+   },
+   {
+    "role_family": "bi",
     "skill": "Python",
     "count": 9,
     "n": 85,
@@ -1686,7 +1768,7 @@
    },
    {
     "role_family": "bi",
-    "skill": "SQL Server",
+    "skill": "Oracle",
     "count": 9,
     "n": 85,
     "share": 0.106,
@@ -1704,16 +1786,7 @@
    },
    {
     "role_family": "bi",
-    "skill": "Oracle",
-    "count": 9,
-    "n": 85,
-    "share": 0.106,
-    "ci_low": 0.057,
-    "ci_high": 0.189
-   },
-   {
-    "role_family": "bi",
-    "skill": "Forecasting",
+    "skill": "Qlik",
     "count": 8,
     "n": 85,
     "share": 0.094,
@@ -1722,7 +1795,7 @@
    },
    {
     "role_family": "bi",
-    "skill": "Qlik",
+    "skill": "Forecasting",
     "count": 8,
     "n": 85,
     "share": 0.094,
@@ -1796,7 +1869,7 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "Cloud (generic)",
+    "skill": "R",
     "count": 7,
     "n": 120,
     "share": 0.058,
@@ -1805,7 +1878,7 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "R",
+    "skill": "Cloud (generic)",
     "count": 7,
     "n": 120,
     "share": 0.058,
@@ -1832,7 +1905,7 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "C#",
+    "skill": "Mathematics",
     "count": 5,
     "n": 120,
     "share": 0.042,
@@ -1850,7 +1923,7 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "Mathematics",
+    "skill": "C#",
     "count": 5,
     "n": 120,
     "share": 0.042,
@@ -1865,6 +1938,24 @@
     "share": 0.042,
     "ci_low": 0.018,
     "ci_high": 0.094
+   },
+   {
+    "role_family": "business_analysis",
+    "skill": "Exploratory Analysis",
+    "count": 4,
+    "n": 120,
+    "share": 0.033,
+    "ci_low": 0.013,
+    "ci_high": 0.083
+   },
+   {
+    "role_family": "business_analysis",
+    "skill": "Python",
+    "count": 4,
+    "n": 120,
+    "share": 0.033,
+    "ci_low": 0.013,
+    "ci_high": 0.083
    },
    {
     "role_family": "business_analysis",
@@ -1886,24 +1977,6 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "Python",
-    "count": 4,
-    "n": 120,
-    "share": 0.033,
-    "ci_low": 0.013,
-    "ci_high": 0.083
-   },
-   {
-    "role_family": "business_analysis",
-    "skill": "Exploratory Analysis",
-    "count": 4,
-    "n": 120,
-    "share": 0.033,
-    "ci_low": 0.013,
-    "ci_high": 0.083
-   },
-   {
-    "role_family": "business_analysis",
     "skill": "SAP BW/BO",
     "count": 3,
     "n": 120,
@@ -1913,7 +1986,7 @@
    },
    {
     "role_family": "business_analysis",
-    "skill": "Streaming",
+    "skill": "VBA",
     "count": 2,
     "n": 120,
     "share": 0.017,
@@ -2342,6 +2415,15 @@
    },
    {
     "role_family": "data_governance",
+    "skill": "Mathematics",
+    "count": 6,
+    "n": 65,
+    "share": 0.092,
+    "ci_low": 0.043,
+    "ci_high": 0.187
+   },
+   {
+    "role_family": "data_governance",
     "skill": "Python",
     "count": 6,
     "n": 65,
@@ -2351,12 +2433,12 @@
    },
    {
     "role_family": "data_governance",
-    "skill": "Mathematics",
-    "count": 6,
+    "skill": "Power BI",
+    "count": 5,
     "n": 65,
-    "share": 0.092,
-    "ci_low": 0.043,
-    "ci_high": 0.187
+    "share": 0.077,
+    "ci_low": 0.033,
+    "ci_high": 0.168
    },
    {
     "role_family": "data_governance",
@@ -2369,12 +2451,12 @@
    },
    {
     "role_family": "data_governance",
-    "skill": "Power BI",
-    "count": 5,
+    "skill": "Azure",
+    "count": 3,
     "n": 65,
-    "share": 0.077,
-    "ci_low": 0.033,
-    "ci_high": 0.168
+    "share": 0.046,
+    "ci_low": 0.016,
+    "ci_high": 0.127
    },
    {
     "role_family": "data_governance",
@@ -2423,12 +2505,21 @@
    },
    {
     "role_family": "data_governance",
-    "skill": "Azure",
+    "skill": "EU AI Act / AI governance",
     "count": 3,
     "n": 65,
     "share": 0.046,
     "ci_low": 0.016,
     "ci_high": 0.127
+   },
+   {
+    "role_family": "data_governance",
+    "skill": "REST APIs",
+    "count": 2,
+    "n": 65,
+    "share": 0.031,
+    "ci_low": 0.008,
+    "ci_high": 0.105
    },
    {
     "role_family": "data_governance",
@@ -2441,25 +2532,7 @@
    },
    {
     "role_family": "data_governance",
-    "skill": "ETL/ELT",
-    "count": 2,
-    "n": 65,
-    "share": 0.031,
-    "ci_low": 0.008,
-    "ci_high": 0.105
-   },
-   {
-    "role_family": "data_governance",
     "skill": "Git",
-    "count": 2,
-    "n": 65,
-    "share": 0.031,
-    "ci_low": 0.008,
-    "ci_high": 0.105
-   },
-   {
-    "role_family": "data_governance",
-    "skill": "Databricks",
     "count": 2,
     "n": 65,
     "share": 0.031,
@@ -2560,6 +2633,24 @@
    },
    {
     "role_family": "data_science",
+    "skill": "RAG",
+    "count": 44,
+    "n": 157,
+    "share": 0.28,
+    "ci_low": 0.216,
+    "ci_high": 0.355
+   },
+   {
+    "role_family": "data_science",
+    "skill": "AI agents / tool-calling",
+    "count": 39,
+    "n": 157,
+    "share": 0.248,
+    "ci_low": 0.187,
+    "ci_high": 0.321
+   },
+   {
+    "role_family": "data_science",
     "skill": "AWS",
     "count": 37,
     "n": 157,
@@ -2569,7 +2660,7 @@
    },
    {
     "role_family": "data_science",
-    "skill": "Git",
+    "skill": "MLOps",
     "count": 36,
     "n": 157,
     "share": 0.229,
@@ -2578,7 +2669,7 @@
    },
    {
     "role_family": "data_science",
-    "skill": "MLOps",
+    "skill": "Git",
     "count": 36,
     "n": 157,
     "share": 0.229,
@@ -2596,7 +2687,7 @@
    },
    {
     "role_family": "data_science",
-    "skill": "Mathematics",
+    "skill": "Data Visualization",
     "count": 35,
     "n": 157,
     "share": 0.223,
@@ -2605,7 +2696,7 @@
    },
    {
     "role_family": "data_science",
-    "skill": "Data Visualization",
+    "skill": "Mathematics",
     "count": 35,
     "n": 157,
     "share": 0.223,
@@ -2629,24 +2720,6 @@
     "share": 0.204,
     "ci_low": 0.148,
     "ci_high": 0.274
-   },
-   {
-    "role_family": "data_science",
-    "skill": "Data Governance/Quality",
-    "count": 27,
-    "n": 157,
-    "share": 0.172,
-    "ci_low": 0.121,
-    "ci_high": 0.239
-   },
-   {
-    "role_family": "data_science",
-    "skill": "Kubernetes",
-    "count": 27,
-    "n": 157,
-    "share": 0.172,
-    "ci_low": 0.121,
-    "ci_high": 0.239
    }
   ],
   "marketing_analytics": [
@@ -2852,6 +2925,15 @@
    },
    {
     "role_family": "product_analytics",
+    "skill": "AI agents / tool-calling",
+    "count": 1,
+    "n": 1,
+    "share": 1.0,
+    "ci_low": 0.207,
+    "ci_high": 1.0
+   },
+   {
+    "role_family": "product_analytics",
     "skill": "Data Governance/Quality",
     "count": 1,
     "n": 1,
@@ -3026,6 +3108,15 @@
   },
   {
    "styria_flag": "Rest of Austria",
+   "skill": "Data Modeling",
+   "count": 110,
+   "n": 661,
+   "share": 0.166,
+   "ci_low": 0.14,
+   "ci_high": 0.197
+  },
+  {
+   "styria_flag": "Rest of Austria",
    "skill": "Generative AI / LLM",
    "count": 110,
    "n": 661,
@@ -3036,15 +3127,6 @@
   {
    "styria_flag": "Rest of Austria",
    "skill": "Machine Learning",
-   "count": 110,
-   "n": 661,
-   "share": 0.166,
-   "ci_low": 0.14,
-   "ci_high": 0.197
-  },
-  {
-   "styria_flag": "Rest of Austria",
-   "skill": "Data Modeling",
    "count": 110,
    "n": 661,
    "share": 0.166,
@@ -3161,7 +3243,25 @@
   },
   {
    "styria_flag": "Rest of Austria",
+   "skill": "RAG",
+   "count": 45,
+   "n": 661,
+   "share": 0.068,
+   "ci_low": 0.051,
+   "ci_high": 0.09
+  },
+  {
+   "styria_flag": "Rest of Austria",
    "skill": "Spark",
+   "count": 44,
+   "n": 661,
+   "share": 0.067,
+   "ci_low": 0.05,
+   "ci_high": 0.088
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "AI agents / tool-calling",
    "count": 44,
    "n": 661,
    "share": 0.067,
@@ -3188,15 +3288,6 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Oracle",
-   "count": 39,
-   "n": 661,
-   "share": 0.059,
-   "ci_low": 0.043,
-   "ci_high": 0.08
-  },
-  {
-   "styria_flag": "Rest of Austria",
    "skill": "Forecasting",
    "count": 39,
    "n": 661,
@@ -3207,6 +3298,15 @@
   {
    "styria_flag": "Rest of Austria",
    "skill": "Snowflake",
+   "count": 39,
+   "n": 661,
+   "share": 0.059,
+   "ci_low": 0.043,
+   "ci_high": 0.08
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "Oracle",
    "count": 39,
    "n": 661,
    "share": 0.059,
@@ -3260,7 +3360,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "C#",
+   "skill": "SQL Server",
    "count": 32,
    "n": 661,
    "share": 0.048,
@@ -3269,7 +3369,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "SQL Server",
+   "skill": "C#",
    "count": 32,
    "n": 661,
    "share": 0.048,
@@ -3323,6 +3423,15 @@
   },
   {
    "styria_flag": "Rest of Austria",
+   "skill": "LangChain/LLM frameworks",
+   "count": 24,
+   "n": 661,
+   "share": 0.036,
+   "ci_low": 0.025,
+   "ci_high": 0.053
+  },
+  {
+   "styria_flag": "Rest of Austria",
    "skill": "scikit-learn",
    "count": 24,
    "n": 661,
@@ -3338,24 +3447,6 @@
    "share": 0.036,
    "ci_low": 0.025,
    "ci_high": 0.053
-  },
-  {
-   "styria_flag": "Rest of Austria",
-   "skill": "LangChain/LLM frameworks",
-   "count": 23,
-   "n": 661,
-   "share": 0.035,
-   "ci_low": 0.023,
-   "ci_high": 0.052
-  },
-  {
-   "styria_flag": "Rest of Austria",
-   "skill": "Qlik",
-   "count": 22,
-   "n": 661,
-   "share": 0.033,
-   "ci_low": 0.022,
-   "ci_high": 0.05
   },
   {
    "styria_flag": "Rest of Austria",
@@ -3377,7 +3468,16 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "A/B Testing / Experimentation",
+   "skill": "Qlik",
+   "count": 22,
+   "n": 661,
+   "share": 0.033,
+   "ci_low": 0.022,
+   "ci_high": 0.05
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "Prompt engineering",
    "count": 21,
    "n": 661,
    "share": 0.032,
@@ -3395,7 +3495,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Tableau",
+   "skill": "A/B Testing / Experimentation",
    "count": 21,
    "n": 661,
    "share": 0.032,
@@ -3404,12 +3504,12 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Jupyter",
-   "count": 20,
+   "skill": "Tableau",
+   "count": 21,
    "n": 661,
-   "share": 0.03,
-   "ci_low": 0.02,
-   "ci_high": 0.046
+   "share": 0.032,
+   "ci_low": 0.021,
+   "ci_high": 0.048
   },
   {
    "styria_flag": "Rest of Austria",
@@ -3422,12 +3522,12 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "TensorFlow/Keras",
-   "count": 19,
+   "skill": "Jupyter",
+   "count": 20,
    "n": 661,
-   "share": 0.029,
-   "ci_low": 0.018,
-   "ci_high": 0.044
+   "share": 0.03,
+   "ci_low": 0.02,
+   "ci_high": 0.046
   },
   {
    "styria_flag": "Rest of Austria",
@@ -3437,6 +3537,24 @@
    "share": 0.029,
    "ci_low": 0.018,
    "ci_high": 0.044
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "TensorFlow/Keras",
+   "count": 19,
+   "n": 661,
+   "share": 0.029,
+   "ci_low": 0.018,
+   "ci_high": 0.044
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "EU AI Act / AI governance",
+   "count": 18,
+   "n": 661,
+   "share": 0.027,
+   "ci_low": 0.017,
+   "ci_high": 0.043
   },
   {
    "styria_flag": "Rest of Austria",
@@ -3458,7 +3576,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Kafka",
+   "skill": "Azure Synapse",
    "count": 16,
    "n": 661,
    "share": 0.024,
@@ -3467,7 +3585,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Azure Synapse",
+   "skill": "Kafka",
    "count": 16,
    "n": 661,
    "share": 0.024,
@@ -3485,7 +3603,16 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Deep Learning",
+   "skill": "Airflow",
+   "count": 15,
+   "n": 661,
+   "share": 0.023,
+   "ci_low": 0.014,
+   "ci_high": 0.037
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "Vector DBs",
    "count": 14,
    "n": 661,
    "share": 0.021,
@@ -3495,6 +3622,15 @@
   {
    "styria_flag": "Rest of Austria",
    "skill": "Scala",
+   "count": 14,
+   "n": 661,
+   "share": 0.021,
+   "ci_low": 0.013,
+   "ci_high": 0.035
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "Deep Learning",
    "count": 14,
    "n": 661,
    "share": 0.021,
@@ -3521,7 +3657,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Airflow",
+   "skill": "Experiment tracking",
    "count": 11,
    "n": 661,
    "share": 0.017,
@@ -3539,6 +3675,15 @@
   },
   {
    "styria_flag": "Rest of Austria",
+   "skill": "Fine-tuning / LoRA / PEFT",
+   "count": 11,
+   "n": 661,
+   "share": 0.017,
+   "ci_low": 0.009,
+   "ci_high": 0.03
+  },
+  {
+   "styria_flag": "Rest of Austria",
    "skill": "Anomaly Detection",
    "count": 11,
    "n": 661,
@@ -3548,7 +3693,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "MySQL/MariaDB",
+   "skill": "MongoDB",
    "count": 10,
    "n": 661,
    "share": 0.015,
@@ -3557,7 +3702,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "MongoDB",
+   "skill": "MySQL/MariaDB",
    "count": 10,
    "n": 661,
    "share": 0.015,
@@ -3584,7 +3729,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Grafana",
+   "skill": "Looker",
    "count": 8,
    "n": 661,
    "share": 0.012,
@@ -3602,12 +3747,21 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Looker",
+   "skill": "Grafana",
    "count": 8,
    "n": 661,
    "share": 0.012,
    "ci_low": 0.006,
    "ci_high": 0.024
+  },
+  {
+   "styria_flag": "Rest of Austria",
+   "skill": "Regression",
+   "count": 6,
+   "n": 661,
+   "share": 0.009,
+   "ci_low": 0.004,
+   "ci_high": 0.02
   },
   {
    "styria_flag": "Rest of Austria",
@@ -3621,15 +3775,6 @@
   {
    "styria_flag": "Rest of Austria",
    "skill": "Hadoop",
-   "count": 6,
-   "n": 661,
-   "share": 0.009,
-   "ci_low": 0.004,
-   "ci_high": 0.02
-  },
-  {
-   "styria_flag": "Rest of Austria",
-   "skill": "Regression",
    "count": 6,
    "n": 661,
    "share": 0.009,
@@ -3656,6 +3801,15 @@
   },
   {
    "styria_flag": "Rest of Austria",
+   "skill": "Rust",
+   "count": 5,
+   "n": 661,
+   "share": 0.008,
+   "ci_low": 0.003,
+   "ci_high": 0.018
+  },
+  {
+   "styria_flag": "Rest of Austria",
    "skill": "Time Series",
    "count": 5,
    "n": 661,
@@ -3665,7 +3819,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Rust",
+   "skill": "Multimodal / VLM",
    "count": 5,
    "n": 661,
    "share": 0.008,
@@ -3746,7 +3900,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Bayesian",
+   "skill": "SAS",
    "count": 3,
    "n": 661,
    "share": 0.005,
@@ -3755,7 +3909,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "SAS",
+   "skill": "Bayesian",
    "count": 3,
    "n": 661,
    "share": 0.005,
@@ -3791,7 +3945,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "Fivetran/Airbyte",
+   "skill": "MATLAB",
    "count": 2,
    "n": 661,
    "share": 0.003,
@@ -3800,7 +3954,7 @@
   },
   {
    "styria_flag": "Rest of Austria",
-   "skill": "MATLAB",
+   "skill": "Fivetran/Airbyte",
    "count": 2,
    "n": 661,
    "share": 0.003,
@@ -3944,15 +4098,6 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Data Visualization",
-   "count": 20,
-   "n": 58,
-   "share": 0.345,
-   "ci_low": 0.236,
-   "ci_high": 0.473
-  },
-  {
-   "styria_flag": "Styria",
    "skill": "ETL/ELT",
    "count": 20,
    "n": 58,
@@ -3971,21 +4116,21 @@
   },
   {
    "styria_flag": "Styria",
+   "skill": "Data Visualization",
+   "count": 20,
+   "n": 58,
+   "share": 0.345,
+   "ci_low": 0.236,
+   "ci_high": 0.473
+  },
+  {
+   "styria_flag": "Styria",
    "skill": "CI/CD",
    "count": 13,
    "n": 58,
    "share": 0.224,
    "ci_low": 0.136,
    "ci_high": 0.347
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Git",
-   "count": 11,
-   "n": 58,
-   "share": 0.19,
-   "ci_low": 0.109,
-   "ci_high": 0.309
   },
   {
    "styria_flag": "Styria",
@@ -3998,7 +4143,16 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Data Warehouse (generic)",
+   "skill": "Git",
+   "count": 11,
+   "n": 58,
+   "share": 0.19,
+   "ci_low": 0.109,
+   "ci_high": 0.309
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "GCP",
    "count": 10,
    "n": 58,
    "share": 0.172,
@@ -4007,7 +4161,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "GCP",
+   "skill": "Data Warehouse (generic)",
    "count": 10,
    "n": 58,
    "share": 0.172,
@@ -4025,7 +4179,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "REST APIs",
+   "skill": "Machine Learning",
    "count": 8,
    "n": 58,
    "share": 0.138,
@@ -4043,7 +4197,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Machine Learning",
+   "skill": "REST APIs",
    "count": 8,
    "n": 58,
    "share": 0.138,
@@ -4061,7 +4215,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "AWS",
+   "skill": "AI agents / tool-calling",
    "count": 7,
    "n": 58,
    "share": 0.121,
@@ -4070,7 +4224,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Generative AI / LLM",
+   "skill": "AWS",
    "count": 7,
    "n": 58,
    "share": 0.121,
@@ -4088,7 +4242,16 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Mathematics",
+   "skill": "Generative AI / LLM",
+   "count": 7,
+   "n": 58,
+   "share": 0.121,
+   "ci_low": 0.06,
+   "ci_high": 0.229
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Microsoft Fabric",
    "count": 6,
    "n": 58,
    "share": 0.103,
@@ -4106,7 +4269,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Microsoft Fabric",
+   "skill": "Mathematics",
    "count": 6,
    "n": 58,
    "share": 0.103,
@@ -4115,7 +4278,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Java",
+   "skill": "Terraform/IaC",
    "count": 5,
    "n": 58,
    "share": 0.086,
@@ -4142,7 +4305,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Terraform/IaC",
+   "skill": "RAG",
    "count": 5,
    "n": 58,
    "share": 0.086,
@@ -4151,7 +4314,25 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Azure Data Factory",
+   "skill": "Java",
+   "count": 5,
+   "n": 58,
+   "share": 0.086,
+   "ci_low": 0.037,
+   "ci_high": 0.186
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "MLOps",
+   "count": 4,
+   "n": 58,
+   "share": 0.069,
+   "ci_low": 0.027,
+   "ci_high": 0.164
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "PostgreSQL",
    "count": 4,
    "n": 58,
    "share": 0.069,
@@ -4169,6 +4350,15 @@
   },
   {
    "styria_flag": "Styria",
+   "skill": "Azure Data Factory",
+   "count": 4,
+   "n": 58,
+   "share": 0.069,
+   "ci_low": 0.027,
+   "ci_high": 0.164
+  },
+  {
+   "styria_flag": "Styria",
    "skill": "Scala",
    "count": 4,
    "n": 58,
@@ -4178,25 +4368,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "MLOps",
-   "count": 4,
-   "n": 58,
-   "share": 0.069,
-   "ci_low": 0.027,
-   "ci_high": 0.164
-  },
-  {
-   "styria_flag": "Styria",
    "skill": "R",
-   "count": 4,
-   "n": 58,
-   "share": 0.069,
-   "ci_low": 0.027,
-   "ci_high": 0.164
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "PostgreSQL",
    "count": 4,
    "n": 58,
    "share": 0.069,
@@ -4223,52 +4395,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Spark",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Statistics (general)",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "BigQuery",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Streaming",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "PyTorch",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Predictive Analytics",
+   "skill": "TensorFlow/Keras",
    "count": 3,
    "n": 58,
    "share": 0.052,
@@ -4286,7 +4413,52 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "TensorFlow/Keras",
+   "skill": "Statistics (general)",
+   "count": 3,
+   "n": 58,
+   "share": 0.052,
+   "ci_low": 0.018,
+   "ci_high": 0.141
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Spark",
+   "count": 3,
+   "n": 58,
+   "share": 0.052,
+   "ci_low": 0.018,
+   "ci_high": 0.141
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Streaming",
+   "count": 3,
+   "n": 58,
+   "share": 0.052,
+   "ci_low": 0.018,
+   "ci_high": 0.141
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Predictive Analytics",
+   "count": 3,
+   "n": 58,
+   "share": 0.052,
+   "ci_low": 0.018,
+   "ci_high": 0.141
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "BigQuery",
+   "count": 3,
+   "n": 58,
+   "share": 0.052,
+   "ci_low": 0.018,
+   "ci_high": 0.141
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "PyTorch",
    "count": 3,
    "n": 58,
    "share": 0.052,
@@ -4304,16 +4476,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Segmentation/Clustering",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "DAX/M",
+   "skill": "MongoDB",
    "count": 2,
    "n": 58,
    "share": 0.034,
@@ -4331,7 +4494,52 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "MongoDB",
+   "skill": "EU AI Act / AI governance",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Segmentation/Clustering",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Docker",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Snowflake",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Kubernetes",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Forecasting",
    "count": 2,
    "n": 58,
    "share": 0.034,
@@ -4358,52 +4566,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Snowflake",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Forecasting",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
    "skill": "Anomaly Detection",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Oracle",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Docker",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Kubernetes",
    "count": 2,
    "n": 58,
    "share": 0.034,
@@ -4430,7 +4593,25 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Hugging Face/Transformers",
+   "skill": "Oracle",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "DAX/M",
+   "count": 2,
+   "n": 58,
+   "share": 0.034,
+   "ci_low": 0.01,
+   "ci_high": 0.117
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Reinforcement Learning",
    "count": 1,
    "n": 58,
    "share": 0.017,
@@ -4440,6 +4621,24 @@
   {
    "styria_flag": "Styria",
    "skill": "A/B Testing / Experimentation",
+   "count": 1,
+   "n": 58,
+   "share": 0.017,
+   "ci_low": 0.003,
+   "ci_high": 0.091
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Hugging Face/Transformers",
+   "count": 1,
+   "n": 58,
+   "share": 0.017,
+   "ci_low": 0.003,
+   "ci_high": 0.091
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "MySQL/MariaDB",
    "count": 1,
    "n": 58,
    "share": 0.017,
@@ -4466,25 +4665,7 @@
   },
   {
    "styria_flag": "Styria",
-   "skill": "Reinforcement Learning",
-   "count": 1,
-   "n": 58,
-   "share": 0.017,
-   "ci_low": 0.003,
-   "ci_high": 0.091
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "MySQL/MariaDB",
-   "count": 1,
-   "n": 58,
-   "share": 0.017,
-   "ci_low": 0.003,
-   "ci_high": 0.091
-  },
-  {
-   "styria_flag": "Styria",
-   "skill": "Airflow",
+   "skill": "Prompt engineering",
    "count": 1,
    "n": 58,
    "share": 0.017,
@@ -4494,6 +4675,15 @@
   {
    "styria_flag": "Styria",
    "skill": "pandas",
+   "count": 1,
+   "n": 58,
+   "share": 0.017,
+   "ci_low": 0.003,
+   "ci_high": 0.091
+  },
+  {
+   "styria_flag": "Styria",
+   "skill": "Airflow",
    "count": 1,
    "n": 58,
    "share": 0.017,
@@ -4642,17 +4832,6 @@
    "lift": 0.91
   },
   {
-   "skill_a": "Python",
-   "skill_b": "Azure",
-   "both": 100,
-   "n": 719,
-   "share_of_postings": 0.139,
-   "p_b_given_a": 0.395,
-   "p_a_given_b": 0.719,
-   "jaccard": 0.342,
-   "lift": 2.04
-  },
-  {
    "skill_a": "Data Visualization",
    "skill_b": "Data Governance/Quality",
    "both": 100,
@@ -4662,6 +4841,17 @@
    "p_a_given_b": 0.455,
    "jaccard": 0.254,
    "lift": 1.19
+  },
+  {
+   "skill_a": "Python",
+   "skill_b": "Azure",
+   "both": 100,
+   "n": 719,
+   "share_of_postings": 0.139,
+   "p_b_given_a": 0.395,
+   "p_a_given_b": 0.719,
+   "jaccard": 0.342,
+   "lift": 2.04
   },
   {
    "skill_a": "AI (generic)",
@@ -4719,17 +4909,6 @@
    "lift": 0.86
   },
   {
-   "skill_a": "Data Governance/Quality",
-   "skill_b": "ETL/ELT",
-   "both": 90,
-   "n": 719,
-   "share_of_postings": 0.125,
-   "p_b_given_a": 0.409,
-   "p_a_given_b": 0.566,
-   "jaccard": 0.311,
-   "lift": 1.85
-  },
-  {
    "skill_a": "AI (generic)",
    "skill_b": "Data Governance/Quality",
    "both": 90,
@@ -4739,6 +4918,17 @@
    "p_a_given_b": 0.409,
    "jaccard": 0.222,
    "lift": 1.07
+  },
+  {
+   "skill_a": "Data Governance/Quality",
+   "skill_b": "ETL/ELT",
+   "both": 90,
+   "n": 719,
+   "share_of_postings": 0.125,
+   "p_b_given_a": 0.409,
+   "p_a_given_b": 0.566,
+   "jaccard": 0.311,
+   "lift": 1.85
   },
   {
    "skill_a": "Python",
@@ -4763,6 +4953,28 @@
    "lift": 1.87
   },
   {
+   "skill_a": "SQL",
+   "skill_b": "Power BI",
+   "both": 84,
+   "n": 719,
+   "share_of_postings": 0.117,
+   "p_b_given_a": 0.289,
+   "p_a_given_b": 0.636,
+   "jaccard": 0.248,
+   "lift": 1.57
+  },
+  {
+   "skill_a": "AI (generic)",
+   "skill_b": "Azure",
+   "both": 84,
+   "n": 719,
+   "share_of_postings": 0.117,
+   "p_b_given_a": 0.304,
+   "p_a_given_b": 0.604,
+   "jaccard": 0.254,
+   "lift": 1.57
+  },
+  {
    "skill_a": "Python",
    "skill_b": "Data Governance/Quality",
    "both": 84,
@@ -4775,17 +4987,6 @@
   },
   {
    "skill_a": "SQL",
-   "skill_b": "Power BI",
-   "both": 84,
-   "n": 719,
-   "share_of_postings": 0.117,
-   "p_b_given_a": 0.289,
-   "p_a_given_b": 0.636,
-   "jaccard": 0.248,
-   "lift": 1.57
-  },
-  {
-   "skill_a": "SQL",
    "skill_b": "Azure",
    "both": 84,
    "n": 719,
@@ -4794,17 +4995,6 @@
    "p_a_given_b": 0.604,
    "jaccard": 0.243,
    "lift": 1.49
-  },
-  {
-   "skill_a": "AI (generic)",
-   "skill_b": "Azure",
-   "both": 84,
-   "n": 719,
-   "share_of_postings": 0.117,
-   "p_b_given_a": 0.304,
-   "p_a_given_b": 0.604,
-   "jaccard": 0.254,
-   "lift": 1.57
   },
   {
    "skill_a": "SQL",
@@ -4939,26 +5129,1082 @@
    "lift": 1.86
   },
   {
-   "skill_a": "ETL/ELT",
-   "skill_b": "Data Modeling",
+   "skill_a": "Python",
+   "skill_b": "Git",
    "both": 66,
    "n": 719,
    "share_of_postings": 0.092,
-   "p_b_given_a": 0.415,
-   "p_a_given_b": 0.559,
-   "jaccard": 0.313,
-   "lift": 2.53
+   "p_b_given_a": 0.261,
+   "p_a_given_b": 0.93,
+   "jaccard": 0.256,
+   "lift": 2.64
   },
   {
-   "skill_a": "AI (generic)",
-   "skill_b": "CI/CD",
+   "skill_a": "Azure",
+   "skill_b": "Databricks",
    "both": 66,
    "n": 719,
    "share_of_postings": 0.092,
-   "p_b_given_a": 0.239,
-   "p_a_given_b": 0.606,
-   "jaccard": 0.207,
-   "lift": 1.58
+   "p_b_given_a": 0.475,
+   "p_a_given_b": 0.795,
+   "jaccard": 0.423,
+   "lift": 4.11
+  }
+ ],
+ "topic_demand": [
+  {
+   "skill": "SQL",
+   "stack": "Data",
+   "count": 291,
+   "n": 719,
+   "share": 0.405,
+   "ci_low": 0.369,
+   "ci_high": 0.441,
+   "small_n_flag": false,
+   "intern_student_count": 20,
+   "intern_student_n": 42,
+   "intern_student_share": 0.476,
+   "trainee_junior_count": 12,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.387,
+   "rest_count": 259,
+   "rest_n": 646,
+   "rest_share": 0.401
+  },
+  {
+   "skill": "Python",
+   "stack": "Data",
+   "count": 253,
+   "n": 719,
+   "share": 0.352,
+   "ci_low": 0.318,
+   "ci_high": 0.387,
+   "small_n_flag": false,
+   "intern_student_count": 13,
+   "intern_student_n": 42,
+   "intern_student_share": 0.31,
+   "trainee_junior_count": 10,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.323,
+   "rest_count": 230,
+   "rest_n": 646,
+   "rest_share": 0.356
+  },
+  {
+   "skill": "ETL/ELT",
+   "stack": "Data",
+   "count": 159,
+   "n": 719,
+   "share": 0.221,
+   "ci_low": 0.192,
+   "ci_high": 0.253,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 7,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.226,
+   "rest_count": 150,
+   "rest_n": 646,
+   "rest_share": 0.232
+  },
+  {
+   "skill": "Excel",
+   "stack": "Data",
+   "count": 128,
+   "n": 719,
+   "share": 0.178,
+   "ci_low": 0.152,
+   "ci_high": 0.208,
+   "small_n_flag": false,
+   "intern_student_count": 22,
+   "intern_student_n": 42,
+   "intern_student_share": 0.524,
+   "trainee_junior_count": 10,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.323,
+   "rest_count": 96,
+   "rest_n": 646,
+   "rest_share": 0.149
+  },
+  {
+   "skill": "A/B Testing / Experimentation",
+   "stack": "Data",
+   "count": 22,
+   "n": 719,
+   "share": 0.031,
+   "ci_low": 0.02,
+   "ci_high": 0.046,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 2,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.065,
+   "rest_count": 18,
+   "rest_n": 646,
+   "rest_share": 0.028
+  },
+  {
+   "skill": "Generative AI / LLM",
+   "stack": "LLM/GenAI",
+   "count": 117,
+   "n": 719,
+   "share": 0.163,
+   "ci_low": 0.138,
+   "ci_high": 0.191,
+   "small_n_flag": false,
+   "intern_student_count": 6,
+   "intern_student_n": 42,
+   "intern_student_share": 0.143,
+   "trainee_junior_count": 5,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.161,
+   "rest_count": 106,
+   "rest_n": 646,
+   "rest_share": 0.164
+  },
+  {
+   "skill": "AI agents / tool-calling",
+   "stack": "LLM/GenAI",
+   "count": 51,
+   "n": 719,
+   "share": 0.071,
+   "ci_low": 0.054,
+   "ci_high": 0.092,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 3,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.097,
+   "rest_count": 47,
+   "rest_n": 646,
+   "rest_share": 0.073
+  },
+  {
+   "skill": "RAG",
+   "stack": "LLM/GenAI",
+   "count": 50,
+   "n": 719,
+   "share": 0.07,
+   "ci_low": 0.053,
+   "ci_high": 0.091,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 2,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.065,
+   "rest_count": 46,
+   "rest_n": 646,
+   "rest_share": 0.071
+  },
+  {
+   "skill": "LangChain/LLM frameworks",
+   "stack": "LLM/GenAI",
+   "count": 25,
+   "n": 719,
+   "share": 0.035,
+   "ci_low": 0.024,
+   "ci_high": 0.051,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 24,
+   "rest_n": 646,
+   "rest_share": 0.037
+  },
+  {
+   "skill": "Prompt engineering",
+   "stack": "LLM/GenAI",
+   "count": 22,
+   "n": 719,
+   "share": 0.031,
+   "ci_low": 0.02,
+   "ci_high": 0.046,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 20,
+   "rest_n": 646,
+   "rest_share": 0.031
+  },
+  {
+   "skill": "EU AI Act / AI governance",
+   "stack": "LLM/GenAI",
+   "count": 20,
+   "n": 719,
+   "share": 0.028,
+   "ci_low": 0.018,
+   "ci_high": 0.043,
+   "small_n_flag": false,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 19,
+   "rest_n": 646,
+   "rest_share": 0.029
+  },
+  {
+   "skill": "Vector DBs",
+   "stack": "LLM/GenAI",
+   "count": 14,
+   "n": 719,
+   "share": 0.019,
+   "ci_low": 0.012,
+   "ci_high": 0.032,
+   "small_n_flag": false,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 13,
+   "rest_n": 646,
+   "rest_share": 0.02
+  },
+  {
+   "skill": "Fine-tuning / LoRA / PEFT",
+   "stack": "LLM/GenAI",
+   "count": 11,
+   "n": 719,
+   "share": 0.015,
+   "ci_low": 0.009,
+   "ci_high": 0.027,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 10,
+   "rest_n": 646,
+   "rest_share": 0.015
+  },
+  {
+   "skill": "Multimodal / VLM",
+   "stack": "LLM/GenAI",
+   "count": 5,
+   "n": 719,
+   "share": 0.007,
+   "ci_low": 0.003,
+   "ci_high": 0.016,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 4,
+   "rest_n": 646,
+   "rest_share": 0.006
+  },
+  {
+   "skill": "Local LLM serving",
+   "stack": "LLM/GenAI",
+   "count": 0,
+   "n": 719,
+   "share": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.005,
+   "small_n_flag": true,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 0,
+   "rest_n": 646,
+   "rest_share": 0.0
+  },
+  {
+   "skill": "Power BI",
+   "stack": "MLOps/Cloud",
+   "count": 132,
+   "n": 719,
+   "share": 0.184,
+   "ci_low": 0.157,
+   "ci_high": 0.214,
+   "small_n_flag": false,
+   "intern_student_count": 17,
+   "intern_student_n": 42,
+   "intern_student_share": 0.405,
+   "trainee_junior_count": 4,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.129,
+   "rest_count": 111,
+   "rest_n": 646,
+   "rest_share": 0.172
+  },
+  {
+   "skill": "CI/CD",
+   "stack": "MLOps/Cloud",
+   "count": 109,
+   "n": 719,
+   "share": 0.152,
+   "ci_low": 0.127,
+   "ci_high": 0.18,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 2,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.065,
+   "rest_count": 105,
+   "rest_n": 646,
+   "rest_share": 0.163
+  },
+  {
+   "skill": "REST APIs",
+   "stack": "MLOps/Cloud",
+   "count": 83,
+   "n": 719,
+   "share": 0.115,
+   "ci_low": 0.094,
+   "ci_high": 0.141,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 5,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.161,
+   "rest_count": 76,
+   "rest_n": 646,
+   "rest_share": 0.118
+  },
+  {
+   "skill": "Spark",
+   "stack": "MLOps/Cloud",
+   "count": 47,
+   "n": 719,
+   "share": 0.065,
+   "ci_low": 0.05,
+   "ci_high": 0.086,
+   "small_n_flag": false,
+   "intern_student_count": 3,
+   "intern_student_n": 42,
+   "intern_student_share": 0.071,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 44,
+   "rest_n": 646,
+   "rest_share": 0.068
+  },
+  {
+   "skill": "MLOps",
+   "stack": "MLOps/Cloud",
+   "count": 46,
+   "n": 719,
+   "share": 0.064,
+   "ci_low": 0.048,
+   "ci_high": 0.084,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 43,
+   "rest_n": 646,
+   "rest_share": 0.067
+  },
+  {
+   "skill": "Kubernetes",
+   "stack": "MLOps/Cloud",
+   "count": 40,
+   "n": 719,
+   "share": 0.056,
+   "ci_low": 0.041,
+   "ci_high": 0.075,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 38,
+   "rest_n": 646,
+   "rest_share": 0.059
+  },
+  {
+   "skill": "Kafka",
+   "stack": "MLOps/Cloud",
+   "count": 18,
+   "n": 719,
+   "share": 0.025,
+   "ci_low": 0.016,
+   "ci_high": 0.039,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 16,
+   "rest_n": 646,
+   "rest_share": 0.025
+  },
+  {
+   "skill": "Airflow",
+   "stack": "MLOps/Cloud",
+   "count": 16,
+   "n": 719,
+   "share": 0.022,
+   "ci_low": 0.014,
+   "ci_high": 0.036,
+   "small_n_flag": false,
+   "intern_student_count": 1,
+   "intern_student_n": 42,
+   "intern_student_share": 0.024,
+   "trainee_junior_count": 1,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.032,
+   "rest_count": 14,
+   "rest_n": 646,
+   "rest_share": 0.022
+  },
+  {
+   "skill": "Experiment tracking",
+   "stack": "MLOps/Cloud",
+   "count": 11,
+   "n": 719,
+   "share": 0.015,
+   "ci_low": 0.009,
+   "ci_high": 0.027,
+   "small_n_flag": false,
+   "intern_student_count": 2,
+   "intern_student_n": 42,
+   "intern_student_share": 0.048,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 9,
+   "rest_n": 646,
+   "rest_share": 0.014
+  },
+  {
+   "skill": "Streamlit",
+   "stack": "MLOps/Cloud",
+   "count": 1,
+   "n": 719,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.008,
+   "small_n_flag": true,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 1,
+   "rest_n": 646,
+   "rest_share": 0.002
+  },
+  {
+   "skill": "Industry 4.0 / MES / OPC UA",
+   "stack": "Robotics/CV",
+   "count": 13,
+   "n": 719,
+   "share": 0.018,
+   "ci_low": 0.011,
+   "ci_high": 0.031,
+   "small_n_flag": false,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 13,
+   "rest_n": 646,
+   "rest_share": 0.02
+  },
+  {
+   "skill": "Computer Vision",
+   "stack": "Robotics/CV",
+   "count": 12,
+   "n": 719,
+   "share": 0.017,
+   "ci_low": 0.01,
+   "ci_high": 0.029,
+   "small_n_flag": false,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 12,
+   "rest_n": 646,
+   "rest_share": 0.019
+  },
+  {
+   "skill": "ROS / ROS 2",
+   "stack": "Robotics/CV",
+   "count": 0,
+   "n": 719,
+   "share": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.005,
+   "small_n_flag": true,
+   "intern_student_count": 0,
+   "intern_student_n": 42,
+   "intern_student_share": 0.0,
+   "trainee_junior_count": 0,
+   "trainee_junior_n": 31,
+   "trainee_junior_share": 0.0,
+   "rest_count": 0,
+   "rest_n": 646,
+   "rest_share": 0.0
+  }
+ ],
+ "intern_vs_junior": [
+  {
+   "skill": "Data Governance/Quality",
+   "intern_share": 0.262,
+   "junior_share": 0.452,
+   "rest_share": 0.302,
+   "junior_minus_intern_pp": 19.0,
+   "intern_count": 11.0,
+   "junior_count": 14.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "ETL/ELT",
+   "intern_share": 0.048,
+   "junior_share": 0.226,
+   "rest_share": 0.232,
+   "junior_minus_intern_pp": 17.8,
+   "intern_count": 2.0,
+   "junior_count": 7.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "AI (generic)",
+   "intern_share": 0.357,
+   "junior_share": 0.516,
+   "rest_share": 0.379,
+   "junior_minus_intern_pp": 15.9,
+   "intern_count": 15.0,
+   "junior_count": 16.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Cloud (generic)",
+   "intern_share": 0.071,
+   "junior_share": 0.194,
+   "rest_share": 0.305,
+   "junior_minus_intern_pp": 12.3,
+   "intern_count": 3.0,
+   "junior_count": 6.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "REST APIs",
+   "intern_share": 0.048,
+   "junior_share": 0.161,
+   "rest_share": 0.118,
+   "junior_minus_intern_pp": 11.3,
+   "intern_count": 2.0,
+   "junior_count": 5.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "AI agents / tool-calling",
+   "intern_share": 0.024,
+   "junior_share": 0.097,
+   "rest_share": 0.073,
+   "junior_minus_intern_pp": 7.3,
+   "intern_count": 1.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Data Warehouse (generic)",
+   "intern_share": 0.024,
+   "junior_share": 0.097,
+   "rest_share": 0.105,
+   "junior_minus_intern_pp": 7.3,
+   "intern_count": 1.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Streaming",
+   "intern_share": 0.024,
+   "junior_share": 0.097,
+   "rest_share": 0.073,
+   "junior_minus_intern_pp": 7.3,
+   "intern_count": 1.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Azure",
+   "intern_share": 0.048,
+   "junior_share": 0.097,
+   "rest_share": 0.207,
+   "junior_minus_intern_pp": 4.9,
+   "intern_count": 2.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "PostgreSQL",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.046,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Predictive Analytics",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.034,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "PyTorch",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.045,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Forecasting",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.059,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "TensorFlow/Keras",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.029,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "SQL Server",
+   "intern_share": 0.024,
+   "junior_share": 0.065,
+   "rest_share": 0.054,
+   "junior_minus_intern_pp": 4.1,
+   "intern_count": 1.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Mathematics",
+   "intern_share": 0.167,
+   "junior_share": 0.194,
+   "rest_share": 0.099,
+   "junior_minus_intern_pp": 2.7,
+   "intern_count": 7.0,
+   "junior_count": 6.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Qlik",
+   "intern_share": 0.071,
+   "junior_share": 0.097,
+   "rest_share": 0.025,
+   "junior_minus_intern_pp": 2.6,
+   "intern_count": 3.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Generative AI / LLM",
+   "intern_share": 0.143,
+   "junior_share": 0.161,
+   "rest_share": 0.164,
+   "junior_minus_intern_pp": 1.8,
+   "intern_count": 6.0,
+   "junior_count": 5.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "RAG",
+   "intern_share": 0.048,
+   "junior_share": 0.065,
+   "rest_share": 0.071,
+   "junior_minus_intern_pp": 1.7,
+   "intern_count": 2.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "CI/CD",
+   "intern_share": 0.048,
+   "junior_share": 0.065,
+   "rest_share": 0.163,
+   "junior_minus_intern_pp": 1.7,
+   "intern_count": 2.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "A/B Testing / Experimentation",
+   "intern_share": 0.048,
+   "junior_share": 0.065,
+   "rest_share": 0.028,
+   "junior_minus_intern_pp": 1.7,
+   "intern_count": 2.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Python",
+   "intern_share": 0.31,
+   "junior_share": 0.323,
+   "rest_share": 0.356,
+   "junior_minus_intern_pp": 1.3,
+   "intern_count": 13.0,
+   "junior_count": 10.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Machine Learning",
+   "intern_share": 0.119,
+   "junior_share": 0.129,
+   "rest_share": 0.169,
+   "junior_minus_intern_pp": 1.0,
+   "intern_count": 5.0,
+   "junior_count": 4.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Kubernetes",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.059,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Kafka",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.025,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "VBA",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.006,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Oracle",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.06,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Java",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.076,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Airflow",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.022,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Hugging Face/Transformers",
+   "intern_share": 0.024,
+   "junior_share": 0.032,
+   "rest_share": 0.006,
+   "junior_minus_intern_pp": 0.8,
+   "intern_count": 1.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Data Modeling",
+   "intern_share": 0.095,
+   "junior_share": 0.097,
+   "rest_share": 0.172,
+   "junior_minus_intern_pp": 0.2,
+   "intern_count": 4.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Git",
+   "intern_share": 0.095,
+   "junior_share": 0.097,
+   "rest_share": 0.099,
+   "junior_minus_intern_pp": 0.2,
+   "intern_count": 4.0,
+   "junior_count": 3.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Snowflake",
+   "intern_share": 0.071,
+   "junior_share": 0.065,
+   "rest_share": 0.056,
+   "junior_minus_intern_pp": -0.6,
+   "intern_count": 3.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Tableau",
+   "intern_share": 0.071,
+   "junior_share": 0.065,
+   "rest_share": 0.029,
+   "junior_minus_intern_pp": -0.6,
+   "intern_count": 3.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "SAP HANA",
+   "intern_share": 0.071,
+   "junior_share": 0.065,
+   "rest_share": 0.023,
+   "junior_minus_intern_pp": -0.6,
+   "intern_count": 3.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "SAP BW/BO",
+   "intern_share": 0.071,
+   "junior_share": 0.065,
+   "rest_share": 0.051,
+   "junior_minus_intern_pp": -0.6,
+   "intern_count": 3.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "MLOps",
+   "intern_share": 0.048,
+   "junior_share": 0.032,
+   "rest_share": 0.067,
+   "junior_minus_intern_pp": -1.6,
+   "intern_count": 2.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Exploratory Analysis",
+   "intern_share": 0.095,
+   "junior_share": 0.065,
+   "rest_share": 0.037,
+   "junior_minus_intern_pp": -3.0,
+   "intern_count": 4.0,
+   "junior_count": 2.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "dbt",
+   "intern_share": 0.071,
+   "junior_share": 0.032,
+   "rest_share": 0.033,
+   "junior_minus_intern_pp": -3.9,
+   "intern_count": 3.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
+  },
+  {
+   "skill": "Segmentation/Clustering",
+   "intern_share": 0.095,
+   "junior_share": 0.032,
+   "rest_share": 0.054,
+   "junior_minus_intern_pp": -6.3,
+   "intern_count": 4.0,
+   "junior_count": 1.0,
+   "intern_n": 42,
+   "junior_n": 31,
+   "rest_n": 646,
+   "small_n_flag": false
   }
  ]
 }

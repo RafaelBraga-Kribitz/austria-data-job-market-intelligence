@@ -1,0 +1,2 @@
+status,collected_date,material_n_threshold,arbeitnow_austria_rows,radar_db_rows,radar_austria_rows,core_data_role_rows,core_with_description,note
+published_aggregates,2026-09-18,20,1,337,325,109,0,Separate universe from the 2026-09-16 720-core snapshot; never merged. No URLs or JD text. StepStone.at and Indeed.at live harvests stopped on HTTP 403. Hunter volume is python-jobspy LinkedIn jobs (Austria location strings) plus Arbeitnow.

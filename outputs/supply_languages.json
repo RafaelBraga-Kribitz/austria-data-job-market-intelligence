@@ -1,0 +1,166 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "presentation_language": [
+  {
+   "population": "P_all",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "en",
+   "count": 3752,
+   "n": 3842,
+   "share": 0.977,
+   "ci_low": 0.971,
+   "ci_high": 0.981
+  },
+  {
+   "population": "P_all",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "de",
+   "count": 79,
+   "n": 3842,
+   "share": 0.021,
+   "ci_low": 0.017,
+   "ci_high": 0.026
+  },
+  {
+   "population": "P_all",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "mixed",
+   "count": 11,
+   "n": 3842,
+   "share": 0.003,
+   "ci_low": 0.002,
+   "ci_high": 0.005
+  },
+  {
+   "population": "P_all",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "any German README",
+   "count": 98,
+   "n": 2145,
+   "share": 0.046,
+   "ci_low": 0.038,
+   "ci_high": 0.055
+  },
+  {
+   "population": "P_all",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "English-only READMEs",
+   "count": 2033,
+   "n": 2145,
+   "share": 0.948,
+   "ci_low": 0.938,
+   "ci_high": 0.956
+  },
+  {
+   "population": "P_data",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "en",
+   "count": 1287,
+   "n": 1296,
+   "share": 0.993,
+   "ci_low": 0.987,
+   "ci_high": 0.996
+  },
+  {
+   "population": "P_data",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "de",
+   "count": 6,
+   "n": 1296,
+   "share": 0.005,
+   "ci_low": 0.002,
+   "ci_high": 0.01
+  },
+  {
+   "population": "P_data",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "mixed",
+   "count": 3,
+   "n": 1296,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.007
+  },
+  {
+   "population": "P_data",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "any German README",
+   "count": 61,
+   "n": 1448,
+   "share": 0.042,
+   "ci_low": 0.033,
+   "ci_high": 0.054
+  },
+  {
+   "population": "P_data",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "English-only READMEs",
+   "count": 1384,
+   "n": 1448,
+   "share": 0.956,
+   "ci_low": 0.944,
+   "ci_high": 0.965
+  },
+  {
+   "population": "P_T1",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "en",
+   "count": 740,
+   "n": 747,
+   "share": 0.991,
+   "ci_low": 0.981,
+   "ci_high": 0.995
+  },
+  {
+   "population": "P_T1",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "de",
+   "count": 4,
+   "n": 747,
+   "share": 0.005,
+   "ci_low": 0.002,
+   "ci_high": 0.014
+  },
+  {
+   "population": "P_T1",
+   "signal": "bio language (bios > 40 chars)",
+   "value": "mixed",
+   "count": 3,
+   "n": 747,
+   "share": 0.004,
+   "ci_low": 0.001,
+   "ci_high": 0.012
+  },
+  {
+   "population": "P_T1",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "any German README",
+   "count": 14,
+   "n": 502,
+   "share": 0.028,
+   "ci_low": 0.017,
+   "ci_high": 0.046
+  },
+  {
+   "population": "P_T1",
+   "signal": "README language (candidates with ≥1 classified README)",
+   "value": "English-only READMEs",
+   "count": 487,
+   "n": 502,
+   "share": 0.97,
+   "ci_low": 0.951,
+   "ci_high": 0.982
+  }
+ ],
+ "proficiency_note": "CEFR-type language proficiency is not observable on GitHub; see docs/supply-methodology.md §6 and the manual LinkedIn slot"
+}

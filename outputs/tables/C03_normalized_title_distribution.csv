@@ -1,0 +1,14 @@
+normalized_title,count,n,share,ci_low,ci_high,styria,vienna,family,note
+Data Scientist,486,872,0.557,0.524,0.59,25,284,data_science,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Machine Learning / AI Engineer,140,872,0.161,0.138,0.186,11,69,data_science,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Data Analyst,124,872,0.142,0.121,0.167,7,72,data_analytics,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Data Engineer,55,872,0.063,0.049,0.081,4,23,data_engineering,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Business Analyst,21,872,0.024,0.016,0.037,2,9,business_analysis,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+BI Developer / BI Engineer,15,872,0.017,0.01,0.028,3,5,bi,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Statistician / Biostatistician,12,872,0.014,0.008,0.024,2,6,data_science,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Data Governance / Data Steward / Data Manager,6,872,0.007,0.003,0.015,0,3,data_governance,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Financial / Risk / Controlling Analyst (data-heavy),5,872,0.006,0.002,0.013,0,4,data_analytics,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Analytics Engineer,3,872,0.003,0.001,0.01,0,1,data_engineering,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Marketing/Growth/CRM Analyst,2,872,0.002,0.001,0.008,1,1,marketing_analytics,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Product Analyst,2,872,0.002,0.001,0.008,0,1,product_analytics,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio
+Master / Product Data Management (operational),1,872,0.001,0.0,0.006,1,0,data_governance,population: P_T1 (bio-declared); title = Layer 1 normalized title assigned from the bio

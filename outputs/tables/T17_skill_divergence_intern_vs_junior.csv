@@ -1,0 +1,78 @@
+skill,intern_share,junior_share,rest_share,junior_minus_intern_pp,intern_count,junior_count,intern_n,junior_n,rest_n,small_n_flag
+Data Governance/Quality,0.262,0.452,0.302,19.0,11.0,14.0,42,31,646,False
+ETL/ELT,0.048,0.226,0.232,17.8,2.0,7.0,42,31,646,False
+AI (generic),0.357,0.516,0.379,15.9,15.0,16.0,42,31,646,False
+Cloud (generic),0.071,0.194,0.305,12.3,3.0,6.0,42,31,646,False
+REST APIs,0.048,0.161,0.118,11.3,2.0,5.0,42,31,646,False
+AI agents / tool-calling,0.024,0.097,0.073,7.3,1.0,3.0,42,31,646,False
+Data Warehouse (generic),0.024,0.097,0.105,7.3,1.0,3.0,42,31,646,False
+Streaming,0.024,0.097,0.073,7.3,1.0,3.0,42,31,646,False
+Azure,0.048,0.097,0.207,4.9,2.0,3.0,42,31,646,False
+PostgreSQL,0.024,0.065,0.046,4.1,1.0,2.0,42,31,646,False
+Predictive Analytics,0.024,0.065,0.034,4.1,1.0,2.0,42,31,646,False
+PyTorch,0.024,0.065,0.045,4.1,1.0,2.0,42,31,646,False
+Forecasting,0.024,0.065,0.059,4.1,1.0,2.0,42,31,646,False
+TensorFlow/Keras,0.024,0.065,0.029,4.1,1.0,2.0,42,31,646,False
+SQL Server,0.024,0.065,0.054,4.1,1.0,2.0,42,31,646,False
+Mathematics,0.167,0.194,0.099,2.7,7.0,6.0,42,31,646,False
+Qlik,0.071,0.097,0.025,2.6,3.0,3.0,42,31,646,False
+Generative AI / LLM,0.143,0.161,0.164,1.8,6.0,5.0,42,31,646,False
+RAG,0.048,0.065,0.071,1.7,2.0,2.0,42,31,646,False
+CI/CD,0.048,0.065,0.163,1.7,2.0,2.0,42,31,646,False
+A/B Testing / Experimentation,0.048,0.065,0.028,1.7,2.0,2.0,42,31,646,False
+Python,0.31,0.323,0.356,1.3,13.0,10.0,42,31,646,False
+Machine Learning,0.119,0.129,0.169,1.0,5.0,4.0,42,31,646,False
+Kubernetes,0.024,0.032,0.059,0.8,1.0,1.0,42,31,646,False
+Kafka,0.024,0.032,0.025,0.8,1.0,1.0,42,31,646,False
+VBA,0.024,0.032,0.006,0.8,1.0,1.0,42,31,646,False
+Oracle,0.024,0.032,0.06,0.8,1.0,1.0,42,31,646,False
+Java,0.024,0.032,0.076,0.8,1.0,1.0,42,31,646,False
+Airflow,0.024,0.032,0.022,0.8,1.0,1.0,42,31,646,False
+Hugging Face/Transformers,0.024,0.032,0.006,0.8,1.0,1.0,42,31,646,False
+Data Modeling,0.095,0.097,0.172,0.2,4.0,3.0,42,31,646,False
+Git,0.095,0.097,0.099,0.2,4.0,3.0,42,31,646,False
+Snowflake,0.071,0.065,0.056,-0.6,3.0,2.0,42,31,646,False
+Tableau,0.071,0.065,0.029,-0.6,3.0,2.0,42,31,646,False
+SAP HANA,0.071,0.065,0.023,-0.6,3.0,2.0,42,31,646,False
+SAP BW/BO,0.071,0.065,0.051,-0.6,3.0,2.0,42,31,646,False
+MLOps,0.048,0.032,0.067,-1.6,2.0,1.0,42,31,646,False
+Exploratory Analysis,0.095,0.065,0.037,-3.0,4.0,2.0,42,31,646,False
+dbt,0.071,0.032,0.033,-3.9,3.0,1.0,42,31,646,False
+Segmentation/Clustering,0.095,0.032,0.054,-6.3,4.0,1.0,42,31,646,False
+Statistics (general),0.214,0.129,0.132,-8.5,9.0,4.0,42,31,646,False
+R,0.119,0.032,0.07,-8.7,5.0,1.0,42,31,646,False
+SQL,0.476,0.387,0.401,-8.9,20.0,12.0,42,31,646,False
+Databricks,0.143,0.032,0.118,-11.1,6.0,1.0,42,31,646,False
+Data Visualization,0.571,0.452,0.365,-11.9,24.0,14.0,42,31,646,False
+Excel,0.524,0.323,0.149,-20.1,22.0,10.0,42,31,646,False
+Power BI,0.405,0.129,0.172,-27.6,17.0,4.0,42,31,646,False
+AWS,0.071,,0.091,,3.0,,42,31,646,False
+Anomaly Detection,,0.032,0.019,,,1.0,42,31,646,False
+Azure Data Factory,,0.032,0.033,,,1.0,42,31,646,False
+Bash/Shell,,0.032,0.053,,,1.0,42,31,646,False
+BigQuery,0.024,,0.037,,1.0,,42,31,646,False
+C#,,0.065,0.05,,,2.0,42,31,646,False
+DAX/M,0.024,,0.031,,1.0,,42,31,646,False
+Deep Learning,,0.032,0.023,,,1.0,42,31,646,False
+Docker,,0.032,0.067,,,1.0,42,31,646,False
+EU AI Act / AI governance,,0.032,0.029,,,1.0,42,31,646,False
+Experiment tracking,0.048,,0.014,,2.0,,42,31,646,False
+Fine-tuning / LoRA / PEFT,0.024,,0.015,,1.0,,42,31,646,False
+Fivetran/Airbyte,0.024,,0.002,,1.0,,42,31,646,False
+GCP,0.024,,0.062,,1.0,,42,31,646,False
+Google Analytics,0.048,,0.022,,2.0,,42,31,646,False
+JavaScript,,0.032,0.045,,,1.0,42,31,646,False
+LangChain/LLM frameworks,0.024,,0.037,,1.0,,42,31,646,False
+MATLAB,0.048,,,,2.0,,42,31,646,False
+Microsoft Fabric,0.024,,0.062,,1.0,,42,31,646,False
+Multimodal / VLM,0.024,,0.006,,1.0,,42,31,646,False
+MySQL/MariaDB,0.024,,0.015,,1.0,,42,31,646,False
+NumPy,0.048,,0.014,,2.0,,42,31,646,False
+Prompt engineering,0.048,,0.031,,2.0,,42,31,646,False
+Regression,0.024,,0.008,,1.0,,42,31,646,False
+Reinforcement Learning,,0.032,0.006,,,1.0,42,31,646,False
+SAS,0.024,,0.003,,1.0,,42,31,646,False
+Spark,0.071,,0.068,,3.0,,42,31,646,False
+Vector DBs,,0.032,0.02,,,1.0,42,31,646,False
+pandas,0.048,,0.029,,2.0,,42,31,646,False
+scikit-learn,0.048,,0.036,,2.0,,42,31,646,False

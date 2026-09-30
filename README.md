@@ -1,75 +1,134 @@
 # Austria Data-Job Market Intelligence
 
-![Austria Data-Job Market Intelligence — One-day snapshot of 720 core data-role postings from five public sources, the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality.](docs/assets/hero.png)
+![Austria Data-Job Market Intelligence: employer demand (720 core postings, 2026-09-16) against observed GitHub supply (1,818 Austrian data-signal accounts), answered in 45 decision charts.](docs/assets/hero.png)
 
+[![tests](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml)
+[![README quality gate](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Docs and aggregates: CC BY 4.0](https://img.shields.io/badge/docs%20%26%20aggregates-CC%20BY%204.0-lightgrey)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue)](requirements.txt)
 [![Status: Complete](https://img.shields.io/badge/status-Complete-brightgreen)](#status)
 
 **Status:** Complete
 
-An evidence base for data-career decisions in Austria, with a Styria/Graz focus: a one-day snapshot (2026-09-16) of open data-role advertisements from five public sources, the AMS JobBarometer yearly series 2020–2025, transparent rule-based normalisation, aggregated statistics with confidence intervals, and two decision documents (`CAREER_DECISION_MAP.md`, `AGENT_CONTEXT.md`). It is a labour-market intelligence and decision-support project, not a portfolio dashboard.
+Which data roles do Austrian employers advertise, who publicly competes for them, and which demanded capabilities are rarely demonstrated? This repository answers that for data-career decisions in Austria, with a Styria/Graz focus, in three evidence layers — employer demand (open data-role ads on 2026-09-16, the AMS JobBarometer, Eurostat), observed candidate supply (public GitHub accounts located in Austria, 2026-09-17) and demand × supply — plus a visual layer of 45 decision questions, each answered by one chart.
 
-![Austria Data-Job Market Intelligence — One-day snapshot of 720 core data-role postings from five public sources, the AMS JobBarometer 2020–2025, and Eurostat vacancy seasonality.](outputs/figures/F03_styria_vs_austria_families.png)
+![Scatter of about 30 capabilities: share of Austrian ads mentioning each (x axis) against share of GitHub candidates with project evidence (y axis). SQL, finance context, data quality, warehouse modelling, Azure and Power BI sit far below the diagonal; Python, machine learning, exploratory analysis and software engineering sit above it.](outputs/figures/BQ21_evidence_gap.png)
+
+*SQL is named in 41 % of ads and shown in a project by 10 % of observed candidates, the largest gap a public portfolio can close (DS10, CALIBRATED). Power BI, Excel and SAP are demanded as often but invisible on GitHub.*
 
 ## Key findings
 
-Evidence in `docs/market-guide.md`; all shares = share of ads that mention an item. In one paragraph: open core data postings are concentrated in Vienna, data engineering and data science are the largest families, the advertised stack is Microsoft-centred, 40 % of ads state a German requirement, advertised salaries are mostly collective-agreement floors, and Styria is small in the snapshot but the only large region above its 2020 level on the official yearly series. Each bullet below is traced to a table id in `docs/market-guide.md`; Styrian figures are tentative (n = 58) and quoted as counts.
+Every number below is copied from a table in `outputs/tables/` (id in brackets) and reprinted by [`src/reporting/digest.py`](src/reporting/digest.py) into [`outputs/reports/digest.txt`](outputs/reports/digest.txt). "Share" means share of ads or accounts that *mention* an item, not that require it. Styria and Vienna are counted on two bases: **by primary state 54 / 343** of 720 core postings (T03a), or **any listed site 58 / 350** (T02, `market_summary.json`); regional shares use the first, the Styrian family and language cells the second. Styrian candidates: **56 bio-declared and 248 data-signal accounts, location-resolved** (C05a); the frame-B complete-Styria subset gives 52 / 247 (C05c). Every Styrian cell is small and quoted as a count.
 
-* Vienna holds 48 % of open core postings; Styria 7.5 % of the snapshot but 13.6 % of the official yearly flow, and the only large region above its 2020 level (AMS "Data Scientist" class: Austria −28 % vs 2020, Styria +34 %).
-* Data engineering and data science are the largest families (22 % each); "Data Engineer" is the largest title (134); marketing- and product-analytics titles are rare (25 of 720, none in Styria).
-* SQL (40 %) and Python (35 %) lead; the stack is Microsoft-centred (Azure 19 %, Power BI 18 %; Tableau 3 %); SQL and Python co-occur in 24 % of ads; Python libraries and statistical methods are rarely named; specific certifications ≤ 3 % each; PhD 2 %.
-* 40 % of ads state a German requirement, mostly with "sehr gut"/C1-equivalent wording; 24 % are written in English (data science 44 %), but 19 % of those still state a German requirement. In Styria 8 of 58 ads are English-written without a stated German requirement.
-* Advertised salary figures are collective-agreement minimums in 81 % of cases (medians by family €42k–€55k; senior ≈ €60k floors); actual pay cannot be estimated from ads. Hybrid is the norm in ads that say anything; fully remote 2 %.
-* Seasonality (Eurostat vacancy series, 17 years, quarterly): Q4 is the weakest quarter in every sector aggregate and Q1 the most frequent peak, but the amplitude is only 5–14 % against 255–567 % between years — the cycle dominates the calendar. The project's own one-day snapshot cannot measure seasonality, and `docs/seasonality.md` shows why.
+### Layer 1 · employer demand: 720 core postings, 48 % of them in Vienna
+
+* Vienna holds 343 of 720 open core postings (48 %), Styria 54 (7.5 %) by primary state [T03a]. On the official yearly series Styria is 13.6 % of the national flow and +34 % against 2020 (224 → 300 ads) while Austria is −28 % [JB05].
+* Data engineering (160) and data science (158) are the largest families, 22 % each; "Data Engineer" is the largest title (134); marketing and product analytics are 25 of 720 and absent from Styria [T02, T02b].
+* SQL is named in 40.5 % of the 719 ads with a description (95 % CI 36.9–44.1 %), Python in 35 %; the stack is Microsoft-centred: Azure 19 % vs AWS 9 %, Power BI 18 % vs Tableau 3 % [T05].
+* 40 % of ads state a German requirement and 24 % are written in English (data science 44 %, BI 8 %); 19 % of the English-written ads still state one. In Styria 8 of 58 are English-written without a stated German requirement [T07, T07c, T07e].
+* 569 of 720 ads state a salary figure and 460 of those are a single collective-agreement minimum: floors, not pay. Median advertised minimum €47.8k in data analytics vs €55.4k in data engineering and data science [T09, T09b]. Fully remote: 2 % (14 ads) [T10].
+* Seasonality (Eurostat vacancies, 2009–2025): Q4 is the weakest quarter in every sector aggregate, but the seasonal amplitude of 5–14 % is small against 255–567 % between years [S01, S06].
+
+![Horizontal bars of open core data-role postings by primary state on 2026-09-16: Wien 343, Oberösterreich 122, Steiermark 54 (highlighted), then Vorarlberg 46 down to Kärnten 22.](outputs/figures/BQ01_reachable_market.png)
+
+*Staying in Graz means competing for 54 of 720 open postings by primary state; 58 ads list a Styrian site, 52 of them inside the Graz commuting area (T03a, T03c).*
+
+![Line chart of yearly AMS "Data Scientist" class ads indexed to 2020 = 100 for Austria, Vienna, Upper Austria and Styria, 2020 to 2025: all peak in 2022, Styria ends at 134, Vienna 115, Upper Austria 89, Austria 72.](outputs/figures/BQ02_regional_trend.png)
+
+*Styria is the only large region above its 2020 level on the official series (JB01, VERIFIED); an AMS occupation class, coarser than this project's titles.*
+
+### Layer 2 · observed candidate supply: 1,818 Austrian GitHub accounts with a data signal
+
+* 9,409 accounts with an Austrian location → 1,818 with a data signal → 872 with a bio-declared data role [C01]. A public-profile sample, not a census of the workforce.
+* Bio-declared roles are 73 % data science (638 of 872, 95 % CI 70–76 %) against 7 % data engineering, 2 % BI and 2 % business analysis [C04].
+* Python appears for 74 % of data-signal accounts (45 % in a project), SQL for 16 % (9 % in a project), Azure 5 %, Power BI 3 % [C10].
+* 76 % have a documented project, the median is 2 projects; data repositories are 28 % inactive archives, 23 % ML projects and 21 % course or tutorial work [C14, C14b, C14c].
+* Of 3,959 documented READMEs, 66 % say how to run the code but 25 % state a result, 12 % limitations and 11 % a business question [C19].
+* 99 % of classified bios are written in English; language proficiency is not observable on GitHub [C07].
+
+![Horizontal bars with Wilson 95 % intervals: share of 3,959 documented READMEs carrying each section, from reproducibility 66 % down to results 25 %, limitations 12 % and business context 11 %, the last three highlighted.](outputs/figures/BQ24_readme_anatomy.png)
+
+*A result, a limitation and a business question are the rarest README sections in the Austrian pool (C19).*
+
+### Layer 3 · demand × supply: data science is 3.3× its demand share
+
+* Relative representation (supply share ÷ demand share): data science 3.3× (4.0 declared candidates per posting; Styria 2.9), analytics 1.0×, engineering 0.30×, BI 0.15×, business analysis 0.14×, governance 0.09× [DS01].
+* Demanded often, demonstrated rarely (share of ads vs share of candidates with project evidence): SQL 41 % vs 10 %, data quality 31 % vs 5 %, warehouse/modelling 25 % vs 2 %, Azure 19 % vs 3 %, Power BI 18.5 % vs 2 % [DS10].
+* Abundant relative to demand: exploratory analysis 10 % of ads vs 38 % of candidates with a project, deep learning/NLP/CV 6 % vs 32.5 %, Java/Scala/C# 13 % vs 50 % [DS10].
+* Styria: 54 ads by primary state against 56 bio-declared accounts (1.04 per posting) [DS05]; over the 58 ads listing a Styrian site 0.97 [DS13]. Vienna: 343 ads against at least 478 declared accounts (a lower bound) [DS13].
+* Two universes joined on shared taxonomies: read rankings and orders of magnitude, not exact ratios. No composite score is computed; the supply side's language levels are unmeasured (open question OQ-02).
+
+![Dot plot on a log scale: bio-declared GitHub candidates per open posting by family, Austria and Styria. Data science 4.04 (Styria 2.9), analytics 1.21, engineering 0.36, BI 0.18, business analysis 0.17, governance 0.11, marketing analytics 0.08.](outputs/figures/BQ20_competition_density.png)
+
+*The label decides the queue: 4.0 declared data scientists per data-science posting against 0.36 engineers per engineering posting (DS01).*
+
+### Layer V · 45 questions, one chart each
+
+[`docs/visual-decision-board.md`](docs/visual-decision-board.md) restates every decision-bearing finding as a question and answers it with one chart (`outputs/figures/BQ01–BQ45`, PNG plus SHA-256-sealed SVG). [`outputs/visual_questions.json`](outputs/visual_questions.json) maps each question to its answer, source tables and caveat; [`docs/question-coverage-audit.md`](docs/question-coverage-audit.md) and [`docs/open-questions.md`](docs/open-questions.md) register what the data cannot answer (24 entries). One reading was corrected by D-025: raw skill "premiums" in advertised floors are mostly composition.
+
+![Error-bar chart for 16 skills: raw difference in the advertised annual minimum (squares) and the premium after controlling for family, seniority and state with 95 % intervals (dots). Only Databricks (+13 %) and Excel (−9 %) stay clear of zero.](outputs/figures/BQ45_skill_premium_controlled.png)
+
+*After controls, 14 of 16 skill premiums straddle zero; Python's raw +8 % becomes −7 % (D05, OLS with HC1 errors, association not causation).*
 
 ## Explore this project
 
 | Audience | Start here |
 |---|---|
-| Recruiter | [Key findings](#key-findings) above, then the decision document [CAREER_DECISION_MAP.md](CAREER_DECISION_MAP.md) |
-| Hiring manager | [Method](#method) and [Limitations](#limitations-docslimitationsmd), then the findings table by table in [docs/market-guide.md](docs/market-guide.md) |
-| Technical reviewer | [Architecture](#architecture), the rule engine [src/pipeline/normalize.py](src/pipeline/normalize.py), the tests [tests/test_pipeline.py](tests/test_pipeline.py) and [Reproduction](#reproduction) |
-| Auditor | [Data](#data) with its epistemic tags, [docs/data-quality.md](docs/data-quality.md), [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md) and [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md) |
+| Recruiter | [Key findings](#key-findings), then [docs/visual-decision-board.md](docs/visual-decision-board.md) (45 questions, one chart each) |
+| Hiring manager | [CAREER_DECISION_MAP.md](CAREER_DECISION_MAP.md) (demand) and [CAREER_SUPPLY_DEMAND_MAP.md](CAREER_SUPPLY_DEMAND_MAP.md) (demand × supply), then [Method](#method) and [Limitations](#limitations) |
+| Technical reviewer | [Architecture](#architecture), [run_all.py](run_all.py), the rule engine [src/pipeline/normalize.py](src/pipeline/normalize.py), the [tests](tests/) and [Reproduction](#reproduction) |
+| Auditor | [Data](#data) with its epistemic tags, [docs/data-quality.md](docs/data-quality.md), [docs/supply-data-quality.md](docs/supply-data-quality.md), [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md), [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md) and the export guard [src/publish/export_public.py](src/publish/export_public.py) |
+| AI agent | [AGENT_CONTEXT.md](AGENT_CONTEXT.md), then [outputs/visual_questions.json](outputs/visual_questions.json) and [outputs/operational_career_context.json](outputs/operational_career_context.json) |
 
 ## Why this project
 
-The decision documents are written for one specific profile (senior marketing/growth professional moving into data roles; English-fluent; German A2–B1; Graz-based; `config/profile.json`) and for the AI agents that help that person. `CAREER_DECISION_MAP.md` states its purpose as the one document to open before a major career decision, with every statement traced to a table. The standard the project tries to meet: a technically competent, professionally sceptical reader should be able to audit the methodology, the provenance, the limitations and the conclusions.
+The decision documents were written for one specific profile (a senior marketing and growth professional moving into data roles, English-fluent, German A2–B1, based near Graz) and for the AI agents that help that person. The profile itself stays private; the public tree ships a neutral example as `config/profile.json`, so the profile-dependent outputs (D01–D04, BQ08, BQ17) reproduce with different overlap values. The standard the project tries to meet: a technically competent, professionally sceptical reader can audit the methodology, the provenance, the limitations and the conclusions.
 
 ## What is in this repository (public) and what is not
 
 | Public (this repository) | Private (retained by the author, not redistributed) |
 |---|---|
-| Pipeline, analysis, reporting and publication code (`src/pipeline`, `src/analysis`, `src/reporting`, `src/publish`), the AMS JobBarometer and Eurostat collectors, **and the Eurostat raw data** (openly licensed, so the seasonality layer is fully reproducible) | The six posting collectors (EURES, karriere.at, LinkedIn, willhaben, jobs.at, EURES regional sweep) |
-| Rule configurations (`config/`): role taxonomy, skill vocabulary, geography, queries, profile | Raw source records (`data/raw`, 1.3 GB), processed posting files (`data/processed`), fetched third-party reference pages (`data/external`), run logs |
-| Methodology, source inventory, data-quality, limitations, legal/publication audit, specification audit, decision framework (`docs/`) | Per-posting tables that carry advertisement text, contact data or source URLs |
-| Aggregated tables (`outputs/tables`, 140+ CSVs, with every text/URL column removed), figures, JSON summaries, the digest of every quoted number | The git history of the private repository |
-| Decision documents, decision log, tests (rule tests run anywhere; integrity tests skip without the private data) | |
+| Pipeline, analysis, visual-layer, reporting and publication code for all layers; the AMS JobBarometer, Eurostat (vacancies, graduates, occupations), GitHub API, Stack Overflow ingestion, manual-LinkedIn-slot ingestion and Arbeitnow API collectors; the Eurostat raw data (openly licensed) | The six Layer 1 posting collectors (EURES incl. its regional text sweep, karriere.at, LinkedIn, willhaben, jobs.at) and the git-ignored hunter under `src/private/` |
+| Rule configurations (`config/`): role taxonomy, skill vocabulary, geography, queries, supply taxonomy, capability map, and a neutral example profile | The owner's profile configuration, `library_strategy/`, `docs/linkedin-slot-interface.md`, the profile-specific analysis document and the assumptions review |
+| Methodology, source inventory, data-quality, limitations, legal and publication audits, research and completeness audits, labelling protocol (`docs/`) | Raw source records and processed postings (`data/raw` except Eurostat, `data/processed`, `data/external`), run logs, `data/labels`, `data/private` |
+| Aggregated tables (`outputs/tables`: T*/JB*/S*/D*/Q* for Layer 1, C*/O*/SQ* for Layer 2, DS* for Layer 3) with every text and URL column removed, figures, JSON summaries, the digest | Layer 2 individual records: GitHub profiles, repositories, READMEs, links, candidate and project tables, review samples, the Stack Overflow extract, any LinkedIn slot records |
+| The visual layer: `src/viz/` (house style, vendored Lato under SIL OFL 1.1), the BQ builders, `outputs/figures/BQ*`, `FIGURE-MANIFEST.yaml`, `outputs/visual_questions.json` | Per-posting and per-account tables of any kind; the private repository's git history |
 
-Why the split, in one paragraph: the advertisements are third-party text, the sources hold database rights and restrict automated extraction in their terms, and the ads contain contact persons' names, e-mails and phone numbers. Aggregated statistics contain none of that. The full reasoning, with the clauses and statutes fetched on 2026-09-16, is in `docs/legal-and-publication-audit.md`; the decision is in `PUBLICATION_DECISION.md`. This is a publication-readiness analysis, not legal advice.
+Why the split: the advertisements are third-party text with contact persons, and the job boards hold database rights and restrict automated extraction in their terms; the GitHub profiles carry personal information and the READMEs are third-party text. Aggregated statistics contain none of that. The reasoning, with the clauses fetched on 2026-09-16/17, is in [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md) (§10 for Layer 2) and the decisions in [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md). This is a publication-readiness analysis, not legal advice.
 
 ## Research questions
 
-What does the Austrian data-job market contain — which titles, where, with which technologies, languages, education, advertised pay and work model — how does Styria/Graz differ from Vienna, and what does that imply for what to learn, build, demonstrate, target or deprioritise? The answers, each traced to a table, are in `CAREER_DECISION_MAP.md`; the evidence is in `docs/market-guide.md`.
+**Layer 1.** What does the Austrian data-job market contain (titles, locations, technologies, languages, education, advertised pay, work model), and how does Styria/Graz differ from Vienna? ([docs/market-guide.md](docs/market-guide.md))
 
-## Sources and collection period
+**Layer 2.** Who is publicly observable as a candidate for those roles: what do they call themselves, where are they, how senior, what do they build, and how do they document it? ([docs/supply-findings.md](docs/supply-findings.md))
 
-Postings collected on **2026-09-16** (17:00–18:40 UTC), Austria-wide, 45 title keywords in English and German, no login, no CAPTCHA or paywall bypass, polite throttling: EURES portal (mirror of the AMS "PES Austria" feed), karriere.at, LinkedIn logged-out job pages, willhaben Jobs, jobs.at. Official series: AMS JobBarometer (online ads per occupation class × Bundesland, 2020–2025). Taxonomy: ESCO. Blocked and excluded: StepStone.at, Indeed.at, hokify, Glassdoor, the AMS API. Inventory and terms-of-use findings: `docs/data-sources.md`. **The audit found that all five posting sources restrict automated extraction in their terms; the dataset is therefore a one-off private research collection and this repository does not claim it can be refreshed the same way** (`DECISION_LOG.md` D-013).
+**Layer 3.** Where do supply and demand converge or diverge, which demanded capabilities are rarely demonstrated in public evidence, and what should a project demonstrate? ([CAREER_SUPPLY_DEMAND_MAP.md](CAREER_SUPPLY_DEMAND_MAP.md), [docs/project-evidence-map.md](docs/project-evidence-map.md))
+
+**Layer V.** Which business question does each finding answer, and which chart shows it? ([docs/visual-decision-board.md](docs/visual-decision-board.md))
 
 ## Data
 
-What each published artifact rests on. Table ids refer to `outputs/tables/`; JSON files to `outputs/`. No artifact is SIMULATED: nothing in the repository is a synthetic or generated series, and every quoted number is copied from a table.
+### Sources and collection
+
+* **Layer 1 (2026-09-16, 17:00–18:40 UTC).** EURES/AMS, karriere.at, LinkedIn job listings (logged-out job pages), willhaben and jobs.at, Austria-wide, 45 title keywords in English and German, no login and no CAPTCHA or paywall bypass: 12,429 raw rows → 10,945 unique postings → **720 core data-role postings** plus 546 adjacent titles reported separately. AMS JobBarometer 2020–2025 (590 pages); Eurostat job-vacancy series 2009–2025. StepStone.at and Indeed.at returned HTTP 403 and are missing. The five boards restrict automated extraction, so collectors and raw records stay unpublished; private re-collection goes into new dated folders and is never merged with this snapshot (D-013, D-022). Arbeitnow (documented API) is a dated supplement only (T19).
+* **Layer 2 (2026-09-17/18).** GitHub REST API (no names or e-mails requested): 1,075 user searches in three frames → 9,457 accounts → 9,409 with an Austrian location → 1,818 with a data signal, 872 bio-declared; 11,798 READMEs and file trees [SQ01, C01]. Stack Overflow Developer Survey 2025 (ODbL; 410 Austrian respondents). Eurostat graduates, employment by occupation and ICT specialists. **LinkedIn member and people data is never collected by automation** (D-018, D-026); a private slot for hand-coded or licensed records exists and is still empty. LinkedIn *job listings* were collected (Layer 1, and the dated T19 supplement under D-022). Kaggle was not collected (D-030).
+
+### What each artifact rests on
 
 | Artifact | Tag | Basis |
 |---|---|---|
-| Raw and unique posting counts, per-source coverage and overlap (12,429 raw rows → 10,945 unique; T01, T01b, Q04) | VERIFIED | Records collected 2026-09-16; duplicate groups formed by the documented keys in `dedupe.py` (in-scope duplicate rate 24 %) |
-| AMS JobBarometer yearly series 2020–2025 (JB01–JB05, `jobbarometer.json`; 590 pages) | VERIFIED | Official counts copied from the AMS pages; "<20" censored; an occupation class, not this project's titles |
-| Eurostat job-vacancy series and seasonal indices (S01–S06, `seasonality.json`; raw response in `data/raw/eurostat_jvs/`) | VERIFIED | Open API, aggregation only, re-runnable end to end from this repository |
-| Role families, core/adjacent sets and geography flags (720 core, 546 adjacent, 58 Styria; T02, T03, `roles.json`, `locations.json`) | CALIBRATED | Ordered regex rules in `config/role_taxonomy.json` and `config/geo.json`; title precision 83 % strict / 95 % lenient on a 177-title hand-labelled sample; recall unmeasured |
-| Skill, language, education, experience and work-model shares (T05–T08, T10–T11, T14, `skills.json`, `languages.json`) | CALIBRATED | Bilingual regex vocabulary (~250 canonical skills, 13 categories) and ±120-character context windows; spot-checks only, no measured precision/recall |
-| Advertised salary floors (T09, `salaries.json`) | CALIBRATED | Parsed figures, monthly ×14 → annual gross; 81 % are collective-agreement minimums; floors on ads, not pay |
-| Requirement clusters (T15, `clusters.json`) | CALIBRATED | k-means / NMF on the binary skill matrix; silhouette 0.07; reading aids, not occupational categories |
-| Decision matrix and learning priorities (D01–D04, `career_paths.json`) | CALIBRATED | Transparent weighted scoring of the tables against the self-declared profile (`config/profile.json`), with a sensitivity check under alternative weights |
-| Figures F01–F13 | as the table each one plots | Title, n, source and period printed on each chart |
+| Posting counts, source coverage and overlap (T01, T01b, Q04) | `VERIFIED` | Records collected 2026-09-16; duplicate groups from the documented keys in `dedupe.py` (in-scope duplicate rate 24 %) |
+| AMS JobBarometer 2020–2025 (JB01–JB05); Eurostat vacancies (S01–S06), graduates and occupations (O tables) | `VERIFIED` | Official counts, aggregation only; Eurostat raw responses are in `data/raw/` |
+| GitHub collection counts, frames and tiers (C01, SQ01, SQ09) | `VERIFIED` | API records collected 2026-09-17/18; Styria complete (frame B), Vienna a lower bound |
+| Role families, geography, skills, languages, education, work model (T02–T14) | `CALIBRATED` | Ordered regex rules in `config/`; title precision 83 % strict / 95 % lenient on 177 hand-labelled titles (Q03c); recall unmeasured |
+| Advertised salary floors (T09) and the controlled skill premium (D05) | `CALIBRATED` | Monthly × 14 → annual gross; D05 = OLS on log minimum with family, seniority and state controls, 95 % intervals, Holm and Benjamini-Hochberg |
+| Requirement clusters (T15) and decision matrix (D01–D04) | `CALIBRATED` | k-means / NMF (silhouette 0.075, reading aids only); weighted scoring against the private profile with a sensitivity check |
+| Supply families, skills, projects, READMEs (C03–C24) | `CALIBRATED` | Bio → family 78 % strict / 90 % lenient (SQ10); repository → project 75 % / 92.5 % (SQ11) |
+| Demand × supply (DS01–DS13) | `CALIBRATED` | Two universes joined on shared taxonomies |
+| Figures BQ01–BQ45 | as the table each one plots | Answer computed from the tables at render time; SVG bytes sealed in `FIGURE-MANIFEST.yaml` |
+
+Nothing in the repository is `SIMULATED` or `ILLUSTRATIVE`: there is no synthetic or generated series, and every quoted number is copied from a table.
 
 | Tag | Meaning |
 |---|---|
@@ -80,183 +139,178 @@ What each published artifact rests on. Table ids refer to `outputs/tables/`; JSO
 
 ## Method
 
-Every step is a script in `src/`; every rule lives in `config/`; every intermediate file is kept in `data/` (full description in `docs/methodology.md`).
+Every step is a script run in a fixed order by [`run_all.py`](run_all.py); every rule lives in `config/` (full descriptions: [docs/methodology.md](docs/methodology.md), [docs/supply-methodology.md](docs/supply-methodology.md), [docs/demand-supply-methodology.md](docs/demand-supply-methodology.md)).
 
-1. **Input.** The collectors (`src/acquisition/collect_*.py`) write `data/raw/<source>/<date>/*.jsonl`; every record keeps a collection envelope (`source`, `collected_at`, `query`). About 45 title keywords in English and German (`config/queries.json`) run Austria-wide on each source; the keyword set is deliberately broad, and inclusion is decided by title normalisation, not by the query (`DECISION_LOG.md` D-002). The JobBarometer collector reads the server-rendered AMS pages; the Eurostat collector reads the open API.
-2. **Interim schema** (`src/pipeline/build_interim.py`). One row per source posting mapped to a common field set (title, company, location text, NUTS codes, dates, full description, employment type, raw salary, remote flag, the queries that surfaced it). Duplicates of the same `source_id` across queries are collapsed; nothing else is dropped.
-3. **Normalisation** (`src/pipeline/normalize.py`, rules in `config/*.json`). Title cleaning (gender markers, hours, location noise); the first matching ordered regex rule assigns `normalized_title` and `role_family` (`role_taxonomy.json`); seniority from title words; geography from explicit fields → NUTS-3 → postcode/city in the text (`geo.json`); work model from phrase classes; salary from structured fields or figures near salary words, monthly ×14 → annual gross, with flags for collective-agreement wording; German/English requirements from ±120-character windows around language mentions; posting language from the German/English stop-word ratio; experience years, degree requirement and skills from a bilingual vocabulary (`skills_taxonomy.json`). Every heuristic field carries an evidence or confidence field.
-4. **Deduplication** (`src/pipeline/dedupe.py`). Union-find over (company, title, state), (title, description fingerprint) and (company, title) when the state is missing; the canonical row is the longest description, ties broken by source priority; all rows are kept with a group id and `is_canonical`.
-5. **Aggregation** (`src/analysis/`). Core set = canonical rows in eight data families; the adjacent set is reported separately; text-derived shares use postings with a description longer than 300 characters as denominator; every table stores `n`; Wilson 95 % confidence intervals on proportions that feed decisions; k-means/NMF requirement clusters as descriptive archetypes only; JobBarometer and Eurostat series are analysed as their own units and never merged with posting-level statistics.
-6. **Validation.** `tests/test_pipeline.py` checks rule behaviour on known inputs and the internal consistency of the processed outputs; the 177-title manual precision audit (Q03c) measures the taxonomy; `src/reporting/digest.py` reprints every number quoted in the documents from `outputs/`.
-7. **Decision documents.** `docs/market-guide.md` reports the findings table by table; `CAREER_DECISION_MAP.md` and `docs/career-map.md` score each path on transparent variables (postings, Styria postings, English-posting share, German-required share, skill overlap with the profile, median advertised minimum salary, remote share) with stated normalisation and weights plus a sensitivity check with alternative weights (`docs/decision-framework.md`, `src/analysis/build_decision_matrix.py`). No hidden scoring.
+1. **Input.** Collectors write dated raw folders with a collection envelope per record. Inclusion is decided by title normalisation, not by the query (D-002).
+2. **Layer 1 pipeline.** `build_interim.py` maps each source to a common schema; `normalize.py` assigns family, seniority, geography, work model, salary, language requirements and skills from ordered rules and ±120-character context windows, each with an evidence field; `dedupe.py` forms union-find duplicate groups and keeps a canonical row.
+3. **Layer 2 pipeline.** `build_supply.py` classifies accounts into tiers (bio-declared, repository-evidenced, weak, none) and repositories into projects, with an evidence strength per skill (mentioned < used < demonstrated < project-demonstrated).
+4. **Aggregation.** Core set = canonical postings in eight data families; text-derived shares use the 719 postings with a description; every table stores `n`; Wilson 95 % confidence intervals on proportions that feed decisions. Official series are analysed as their own units and never merged with posting-level statistics.
+5. **Layer 3.** `demand_supply.py` joins both sides on the Layer 1 taxonomies and a capability map; it reports ratios and quadrants, never a composite score or an individual ranking.
+6. **Layer V.** `make_visual_layer.py` renders BQ01–BQ45 from the tables and seals each SVG; `embed_figures.py` attaches each chart to the passage it answers.
+7. **Decision documents.** `CAREER_DECISION_MAP.md`, `CAREER_SUPPLY_DEMAND_MAP.md` and `AGENT_CONTEXT.md` are hand-written from the digest, with a table id next to every number.
 
-## Coverage and quality (docs/data-quality.md)
+## Validation
 
-12,429 raw rows → 10,945 unique postings → **720 core data-role postings** (719 with description; 58 in Styria, 52 in the Graz area, 350 in Vienna incl. multi-site ads), plus 546 adjacent titles reported separately; 387 named employers nationally (140 core postings carry no employer name); in-scope duplicate rate 24 %; title-classification precision 83 % strict / 95 % lenient on a 177-title hand-labelled sample; 590 JobBarometer pages; a 12,000-posting full-text sweep of the AMS feed for Styria/Vienna/Upper Austria to measure adjacent demand.
+* **Hand-labelled audits.** Title classification 83 % strict / 95 % lenient precision on 177 titles (Q03c); bio → family 78 % / 90 % and repository → project 75 % / 92.5 % on 40-item random samples (SQ10, SQ11). Recall is not measured (OQ-09).
+* **Tests.** `python -m pytest -q` runs unit tests of the rule modules, value checks of the visual layer's answer sentences against the cited tables, and integrity checks of the processed data; in the public tree the integrity checks that need `data/processed` skip and are listed in a summary banner.
+* **Digest.** `src/reporting/digest.py` reprints every quoted number from `outputs/`; its last section reports missing inputs or failed sections.
+* **Export guard.** `src/publish/export_public.py` builds this public tree in a staging folder and blocks it on any e-mail address, phone number, job-advertisement link, secret-like token, source posting id, over-long free-text cell, suppression-threshold breach or private path.
 
 ## Architecture
 
-The repository has two evidence streams that meet in `outputs/tables/`. The first is the
-posting snapshot: private collectors write raw ads, and the pipeline puts them into a common
-schema, applies the rule-based taxonomies from `config/`, and collapses duplicate postings
-before any analysis runs.
+The repository has two evidence streams that meet in `outputs/tables/`. The first is employer demand: private posting collectors write raw ads, the Layer 1 pipeline puts them into a common schema, applies the rule-based taxonomies and collapses duplicates; the official AMS and Eurostat series are already aggregated at source and land in the same tables.
 
 ```mermaid
 flowchart TD
-  A3["posting collectors (private)<br/>EURES · karriere.at · LinkedIn · willhaben · jobs.at"]
-  C["config/<br/>role_taxonomy · skills_taxonomy · geo · queries · profile"]
-  subgraph pipe["src/pipeline"]
+  A1["posting collectors (private)<br/>EURES · karriere.at · LinkedIn job listings · willhaben · jobs.at"]
+  A2["collect_jobbarometer.py · collect_eurostat_jvs.py<br/>AMS JobBarometer · Eurostat vacancies"]
+  C["config/<br/>role_taxonomy · skills_taxonomy · geo · queries"]
+  subgraph pipe["src/pipeline · Layer 1"]
     P1["build_interim.py<br/>common schema"] --> P2["normalize.py<br/>rule-based fields"] --> P3["dedupe.py<br/>union-find groups"]
   end
-  N1["run_analysis.py · cluster_requirements.py<br/>data_quality.py · adjacent_demand.py · precision_audit.py"]
-  O1["outputs/tables/ T* JB* S* D* Q*"]
-  A3 -->|"data/raw (private)"| P1
+  N1["src/analysis<br/>run_analysis · data_quality · salary_premium<br/>jobbarometer_analysis · seasonality · build_decision_matrix"]
+  O1["outputs/tables/<br/>T* JB* S* D* Q*"]
+  A1 -->|"data/raw (private)"| P1
   C --> P2
   P3 -->|"data/processed (private)"| N1
+  A2 --> N1
   N1 --> O1
 ```
 
-*The posting stream. Everything upstream of `outputs/tables/` is the 720-ad snapshot; the
-normalisation and dedupe steps are what `precision_audit.py` and `data_quality.py` report on.*
+*Layer 1. Everything upstream of `outputs/tables/` is the 720-ad snapshot and the official series.*
 
-The second stream is the official series. The AMS JobBarometer and Eurostat vacancy figures are
-already aggregated at source, so they bypass the pipeline and land in the same tables. From
-there every published artifact is derived: figures, the digest, the sanitised public export, and
-the hand-written decision documents that cite table ids.
+The second stream is observed supply. The GitHub collector and the survey and Eurostat ingesters feed the Layer 2 build; Layer 3 joins its tables with the Layer 1 tables; the visual layer, the digest and the export read only the tables.
 
 ```mermaid
 flowchart TD
-  subgraph acq["src/acquisition — official series"]
-    A1["collect_jobbarometer.py<br/>AMS JobBarometer pages"]
-    A2["collect_eurostat_jvs.py<br/>Eurostat vacancy API"]
+  G["collect_github_supply.py<br/>GitHub REST API"]
+  E["collect_eurostat_supply.py · ingest_stackoverflow_survey.py<br/>ingest_linkedin_manual.py (slot, empty)"]
+  C2["config/<br/>supply_taxonomy · capability_map · topic_stacks"]
+  subgraph l2["Layer 2 · observed supply"]
+    B["build_supply.py<br/>tiers · projects · evidence strength"] --> S["supply_analysis · project_analysis<br/>official_supply · supply_quality"]
   end
-  N2["jobbarometer_analysis.py"]
-  N3["seasonality.py"]
-  O1["outputs/tables/ T* JB* S* D* Q*"]
-  C["config/<br/>role_taxonomy · skills_taxonomy · geo · queries · profile"]
-  N4["build_decision_matrix.py · make_figures.py<br/>export_agent_json.py"]
-  O2["outputs/figures/ F01–F13 · *.json"]
-  subgraph rep["src/reporting · src/publish"]
-    R1["digest.py<br/>outputs/reports/digest.txt"]
-    R2["export_public.py<br/>sanitised public tree"]
-  end
-  D["CAREER_DECISION_MAP.md · AGENT_CONTEXT.md<br/>docs/market-guide.md (hand-written synthesis, numbers with table ids)"]
-  A1 --> N2
-  A2 --> N3
-  N2 --> O1
-  N3 --> O1
-  C -->|"profile.json"| N4
-  O1 --> N4
-  N4 --> O2
-  O1 --> R1
+  O1["outputs/tables/ T* (Layer 1)"]
+  J["demand_supply.py<br/>Layer 3 join"]
+  O2["outputs/tables/<br/>C* O* SQ* DS*"]
+  V["make_visual_layer.py · embed_figures.py<br/>BQ01–BQ45 · FIGURE-MANIFEST.yaml"]
+  R1["src/reporting/digest.py<br/>outputs/reports/digest.txt"]
+  R2["src/publish/export_public.py<br/>scanned public tree"]
+  D["CAREER_DECISION_MAP.md · CAREER_SUPPLY_DEMAND_MAP.md<br/>AGENT_CONTEXT.md (numbers with table ids)"]
+  G -->|"data/raw (private)"| B
+  C2 --> B
+  E --> S
+  S --> O2
+  O1 --> J
+  O2 --> J
+  J --> O2
+  O1 --> V
+  O2 --> V
   O2 --> R1
-  O1 --> R2
-  O2 --> R2
+  V --> R1
   R1 --> D
+  R1 --> R2
 ```
 
-*The official series and everything published from the tables. `outputs/tables/` and `config/`
-are repeated from the diagram above — they are the handoff between the two streams.*
+*Both diagrams are drawn by hand from the step order in `run_all.py` (2026-09-30), not generated by gitdiagram.*
+
+## Reproduction
+
+Environment: Python 3.12 (tested with 3.12.10 on Windows 11); `pip install -r requirements.txt` (pinned). A Layer 2 re-collection needs a GitHub token (`GH_TOKEN`/`GITHUB_TOKEN`, or a logged-in `gh`).
+
+```bash
+pip install -r requirements.txt
+python -m pytest -q                 # unit + value checks; integrity checks skip without the private data
+python src/reporting/digest.py      # reprint every quoted number from outputs/
+python run_all.py --list            # targets, steps, inputs, one-off tools
+python run_all.py all --dry-run     # preflight + the exact commands, nothing is run
+python run_all.py all               # layer1 -> layer2 -> layer3 -> visual -> digest -> tests
+python run_all.py layer2            # any single target: layer1 layer2 layer3 visual digest tests
+python run_all.py collect           # PRINTS the collection commands (network; never run from here)
+python run_all.py tools             # PRINTS the one-off tools (redaction, precision audit, publication)
+```
+
+Reproducible from this repository alone: every rule (tests), every aggregation step (code), the consistency of every quoted number with the tables (digest, tests), the JobBarometer and Eurostat layers end to end, and with a GitHub token the whole Layer 2 collection (~5–7 hours at the API rate limits; [docs/supply-methodology.md](docs/supply-methodology.md) §8). Requires the private data: the Layer 1 build and the Layer 2 build from the stored collection; the preflight of `run_all.py` names the missing folder within a second. Each run writes `outputs/run_manifest.json` (versions, commit, steps, status). Snapshots of different dates are compared table to table, never merged.
+
+**Public export.** `python src/publish/export_public.py <target>` builds this tree in a staging folder next to the target, copies the public-only presentation files (this README, its banner and portrait, the README-gate workflow) over it, scans everything and moves it into the target only when nothing is found. Posting ids become keyed hashes; the key is the private `EXPORT_UID_KEY` environment variable, which never enters the repository.
+
+**CI.** [`tests.yml`](.github/workflows/tests.yml) runs `python -m pytest -q` on Ubuntu and Windows with the pinned requirements. [`readme-quality.yml`](.github/workflows/readme-quality.yml) audits this README against the author's portfolio README contract and fails only on a required item.
+
+## Limitations
+
+* **Demand is a one-day stock** of open ads (2026-09-16), not yearly flow, vacancies or hires; StepStone/Indeed and company career pages are missing ([docs/limitations.md](docs/limitations.md)).
+* **Extraction is rule-based:** title precision is measured, recall is not; skills, languages and salary rest on spot-checks. Salary figures are legal floors.
+* **Supply is a public-profile sample:** GitHub over-represents engineers, researchers and students and cannot see BI, Excel or SAP work, private repositories, proficiency or hiring; Vienna is a lower bound ([docs/supply-research-audit.md](docs/supply-research-audit.md)).
+* **Layer 3 joins two universes** on shared taxonomies: rankings and orders of magnitude, not exact ratios.
+* **Styrian cells are small:** the largest Styrian family cell is 20 postings against the project's robustness threshold of 30, so Styrian statements are counts and directions.
+* No causal claims about any skill, language or salary.
+
+**Reconsider the conclusions if** a larger Styrian sample moves a family count above 30, StepStone.at or Indeed data shows a different family, language or salary mix, the English-written share in Styria rises above ~25 %, JobBarometer 2026 reverses Styria's relative resilience, a LinkedIn or survey source measures candidates' German levels (OQ-02), or actual application outcomes arrive, the only observation that turns requirement patterns into evidence about hiring. The full list closes [CAREER_DECISION_MAP.md](CAREER_DECISION_MAP.md).
+
+## How future agents should use it
+
+1. Read [AGENT_CONTEXT.md](AGENT_CONTEXT.md), then `CAREER_DECISION_MAP.md` (demand) and `CAREER_SUPPLY_DEMAND_MAP.md` (demand × supply).
+2. For a specific question open the named table or JSON; `outputs/visual_questions.json` maps each decision question to its chart and tables.
+3. Check the vintage (demand 2026-09-16, supply 2026-09-17); if it is older than ~3 months, ask the owner before any new collection.
+4. Never treat supply shares as workforce shares, a missing public trace as a missing skill, or bio language as proficiency; never rank or score individuals; never run automation against LinkedIn member data. For a question the data cannot answer, quote its entry in [docs/open-questions.md](docs/open-questions.md).
+
+## Maintenance
+
+Highest-value additions, in order: fill the LinkedIn slot for Graz and Vienna by hand or from a licensed export (languages with levels, titles, transitions; D-026); repeat the GitHub collection in 3–6 months for a first time series; raise the Vienna base-rate slices; StepStone.at coverage through a permitted channel; record actual application outcomes (OQ-01).
 
 ## Repository map
 
 ```text
-CAREER_DECISION_MAP.md      decision document (read first) — ends with "What would change this map?"
-AGENT_CONTEXT.md            canonical compact context for AI agents (numbers, definitions, confidence, publication status)
-DECISION_LOG.md             why each analytical and publication decision was made (D-001 … D-014)
-PUBLICATION_DECISION.md     publication-readiness conclusion and public/private boundary
-docs/                       methodology · data-sources · research-landscape · role-taxonomy · posting-bias · salary-context
-                            market-guide (findings) · data-quality · limitations · career-map · decision-framework
-                            seasonality · legal-and-publication-audit · original-specification-audit
-config/                     queries.json · role_taxonomy.json · skills_taxonomy.json · geo.json · profile.json
-src/acquisition/            common.py · collect_jobbarometer.py · collect_eurostat_jvs.py   (posting collectors: private)
-src/pipeline/               build_interim.py → normalize.py → dedupe.py · patch_configs_2026-09-16_audit.py
-src/analysis/               run_analysis.py · cluster_requirements.py · jobbarometer_analysis.py · adjacent_demand.py
-                            data_quality.py · build_decision_matrix.py · make_figures.py · export_agent_json.py · precision_audit.py · seasonality.py
-src/reporting/digest.py     prints every figure quoted in the documents (outputs/reports/digest.txt)
-src/publish/export_public.py builds the sanitised public tree and refuses to export personal data or free text
-outputs/tables/             T* posting tables · JB* JobBarometer · S* seasonality · D* decision matrix · Q* quality (incl. Q03c precision audit)
-outputs/figures/            F01–F13 charts (title, n, source, period on each)
-outputs/*.json              market_summary · skills · roles · locations · languages · salaries · career_paths · jobbarometer · adjacent_demand · clusters · data_quality · seasonality
-schemas/postings_schema.md  field dictionary of the (private) processed posting file
-tests/test_pipeline.py      67 tests: rule behaviour on known inputs + integrity of processed outputs (skipped when data is absent)
-data/raw/eurostat_jvs/      Eurostat vacancy series (public; the rest of data/ is private, see PUBLICATION_DECISION.md)
+CAREER_DECISION_MAP.md          Layer 1 decision document
+CAREER_SUPPLY_DEMAND_MAP.md     Layer 3 decision document (20 questions + "so what")
+AGENT_CONTEXT.md                canonical context for AI agents, all layers
+DECISION_LOG.md                 D-001 … D-030
+PUBLICATION_DECISION.md         publication-readiness conclusions and the public/private boundary
+run_all.py                      single entry point: layer1 layer2 layer3 visual digest tests
+docs/                           visual-decision-board · question-coverage-audit · open-questions · market-guide
+                                methodology · supply-methodology · demand-supply-methodology · data-quality · limitations
+                                supply-findings · supply-data-quality · legal-and-publication-audit · labelling-protocol …
+config/                         role_taxonomy · skills_taxonomy · geo · queries · supply_taxonomy · capability_map
+                                topic_stacks · profile.json (neutral example)
+schemas/                        postings_schema.md · supply_schema.md · application_log_schema.md
+src/acquisition/                common · collect_jobbarometer · collect_eurostat_jvs · collect_github_supply
+                                collect_eurostat_supply · ingest_stackoverflow_survey · ingest_linkedin_manual · collect_arbeitnow
+src/pipeline/                   build_interim → normalize → dedupe · build_supply · snapshot_tracking · redaction steps
+src/analysis/                   Layer 1, 2 and 3 analysis · make_visual_layer · visual_questions_* · embed_figures
+src/viz/                        house style, vendored Lato (SIL OFL 1.1), figure engine
+src/reporting/digest.py         prints every quoted figure → outputs/reports/digest.txt
+src/publish/export_public.py    builds the scanned public tree
+outputs/tables/                 T* JB* S* D* Q* (Layer 1) · C* O* SQ* (Layer 2) · DS* (Layer 3)
+outputs/figures/                BQ01–BQ45 (.png + sealed .svg), FIGURE-MANIFEST.yaml; legacy F*, SF*, DSF* PNGs
+outputs/*.json                  summaries per layer · visual_questions · run_manifest
+data/raw/eurostat_jvs/          public Eurostat raw data (also eurostat_supply/); the rest of data/ is private
+tests/                          pytest suite, one file per module family
 ```
 
-## Reproduction
-
-Environment: Python 3.12 (any OS); `pip install -r requirements.txt`.
-
-What an outside reader can reproduce from this repository: every rule (run the unit tests), every aggregation step (read `src/analysis`), the consistency of the quoted numbers with the tables (`python src/reporting/digest.py` prints the digest from `outputs/`; `python -m pytest tests -q` checks table internal consistency), the JobBarometer series (`python src/acquisition/collect_jobbarometer.py` then `python src/analysis/jobbarometer_analysis.py`), and **the entire seasonality analysis end to end** (`python src/acquisition/collect_eurostat_jvs.py` then `python src/analysis/seasonality.py`), because the Eurostat API is open and its raw response is in the repository.
-
-What requires the private data: steps 2–4 below, which are deterministic given `data/raw`.
-
-```bash
-# 1. acquisition (posting collectors are private; see DECISION_LOG D-013 before re-running any of them)
-python src/acquisition/collect_jobbarometer.py    # public body statistics, permitted
-python src/acquisition/collect_eurostat_jvs.py    # open Eurostat API, permitted, runnable by anyone
-# 2. pipeline (deterministic given data/raw; ~5 min)
-python src/pipeline/build_interim.py && python src/pipeline/normalize.py && python src/pipeline/dedupe.py
-# 3. analysis
-python src/analysis/run_analysis.py && python src/analysis/cluster_requirements.py && python src/analysis/data_quality.py
-python src/analysis/jobbarometer_analysis.py && python src/analysis/adjacent_demand.py && python src/analysis/build_decision_matrix.py
-python src/analysis/make_figures.py && python src/analysis/export_agent_json.py && python src/analysis/seasonality.py
-python src/reporting/digest.py > outputs/reports/digest.txt
-# 4. validation and publication
-python -m pytest tests -q
-python src/publish/export_public.py ../austria-data-job-market-intelligence-public
-```
-
-After a re-run, update the numbers in `docs/market-guide.md`, `CAREER_DECISION_MAP.md` and `AGENT_CONTEXT.md` from `outputs/reports/digest.txt`, and record rule changes in `DECISION_LOG.md`.
+**Legacy figures.** The F/SF/DSF PNGs predate the visual layer, carry no SVG seal and are embedded in no document. Read the BQ figure that answers the same question: F02 → BQ01, F03 → BQ06, F04 → BQ08, F06 → BQ13, F07 → BQ15, F08 → BQ18, F10 → BQ04, F11 → BQ02, F12 → BQ10, F13 → BQ03, F14 → BQ11; SF01 → BQ20, SF02 → BQ39, SF05 → BQ41, SF06 → BQ23, SF07 → BQ40, SF08 → BQ24, SF12 → BQ37, SF13 → BQ26, SF14 → BQ44; DSF01 → BQ20, DSF03 → BQ21, DSF04 → BQ22, DSF05 → BQ37, DSF07 → BQ25, DSF08 → BQ38. No BQ counterpart (read the table): F01 (T02), F05 (T05), F09 (T08), SF09 (C14), SF10 (C15), SF11 (C12), SF15 (O01), SF16 (O04), DSF02 (DS04), DSF06 (DS06).
 
 ## Stack
 
-Versions as pinned in `requirements.txt` for the 2026-09-16 run (tested with Python 3.12.10 on Windows 11).
+Versions as pinned in `requirements.txt` for the 2026-09-30 re-run (Python 3.12.10, Windows 11).
 
 | Technology | Role in this project |
 |---|---|
-| Python 3.12 | Every step from acquisition to publication is a plain script |
-| pandas 2.3.3, numpy 2.5.1 | Interim/normalised/deduplicated posting tables and all aggregations |
-| pyarrow ≥ 17 | Parquet copies of the intermediate posting files written by the pipeline |
-| scikit-learn 1.9.0 (scipy ≥ 1.14) | k-means, NMF and silhouette score for the requirement clusters |
-| matplotlib ≥ 3.9 | Figures F01–F13 |
-| requests ≥ 2.32, lxml ≥ 5, beautifulsoup4 ≥ 4.12 | Collectors and HTML parsing (posting collectors are private) |
-| pytest ≥ 8 | Rule tests and output-integrity tests in `tests/test_pipeline.py` |
-
-## Limitations (docs/limitations.md)
-
-* One-day stock, not yearly flow, not vacancies, not hires.
-* StepStone/Indeed and company career pages missing.
-* Title-based inclusion with measured precision but unmeasured recall.
-* Rule-based extraction with spot-checks.
-* 19 % of core postings without employer name.
-* Salary = legal floors.
-* "C1-equivalent" is mostly "sehr gut" wording.
-* Styrian cells small (n = 58, reported as counts).
-* No hiring outcomes and no causal claims.
-
-What would change this map: `CAREER_DECISION_MAP.md` ends with a table of the observations that would change its conclusions, among them a larger Styrian sample moving any Styrian family count above 30 (which would remove the "tentative" label on Styrian statements), StepStone.at/Indeed data with a different family, language or salary mix, the English-written share in Styria rising above ~25 % or C1 wording falling (which would change the "German is the largest stated barrier" conclusion), JobBarometer 2026 reversing Styria's relative resilience, and actual interview/hiring outcomes for this profile — the only observation that can turn requirement patterns into evidence about hiring. Reconsider the map if any of these observations arrives.
-
-## How future agents should use it
-
-1. Read `AGENT_CONTEXT.md` (numbers, definitions, confidence, publication status) and `CAREER_DECISION_MAP.md` (decisions).
-2. For any specific question, open the named table in `outputs/tables/` or the JSON in `outputs/`.
-3. Check the data vintage; if older than ~3 months, ask the owner before any new collection (D-013).
-4. Do not quote Styria-only percentages without the n; do not mix advertised salary floors with survey medians; do not read "share" as "required"; do not read the snapshot as yearly demand; do not present language requirements as causal evidence about hiring.
-
-## Maintenance
-
-The highest-value additions, in order: StepStone.at coverage through a permitted channel; Styrian employer career pages where terms allow; a 100-posting manual extraction audit for skills/language/salary (the title audit exists, Q03c); recording actual application outcomes; a permitted longitudinal refresh (JobBarometer yearly, AMS open data).
+| Python 3.12 | Every step from acquisition to publication is a plain script run by `run_all.py` |
+| pandas 2.3.3, numpy 2.5.1, pyarrow 24.0.0 | Posting and supply tables, all aggregations, Parquet intermediates |
+| scikit-learn 1.9.0, scipy 1.18.0 | Requirement clusters (k-means, NMF, silhouette), intervals and the D05 regression |
+| matplotlib 3.11.1 + `src/viz` (Lato) | BQ01–BQ45 in one house style, legacy F/SF/DSF figures |
+| networkx 3.6.1 | Technology co-occurrence network (SF11) |
+| requests 2.34.2, tzdata | Public collectors (AMS JobBarometer pages; Eurostat, GitHub and Arbeitnow APIs) |
+| pytest 9.1.1 | Unit, value and integrity tests |
 
 ## Status
 
 **Status:** Complete
 
-Repository last updated 2026-09-17 (last commit on `main`).
+Release 2026-09-30.1 (`CITATION.cff`): all layers re-run with `python run_all.py all` on 2026-09-30; decisions D-001 to D-030. Data vintages: demand 2026-09-16, supply 2026-09-17.
 
 ## Licence and citation
 
-Code: MIT. Documents and aggregated outputs: CC BY 4.0. No licence is granted for third-party content (see `LICENSE`). Cite as in `CITATION.cff`.
+Code (`src/`, `tests/`, `config/`): MIT License. Documents and aggregated outputs (tables, JSON summaries, figures, digest): CC BY 4.0. Eurostat raw data: Commission reuse policy, attribution required. Tables derived from the Stack Overflow survey: produced works of ODbL data. Vendored Lato fonts: SIL OFL 1.1. No licence is granted for third-party content; the exact split is in [LICENSE](LICENSE). Cite as in [CITATION.cff](CITATION.cff) (version 2026-09-30.1); there is no DOI.
 
 ## Author
 
@@ -273,8 +327,6 @@ Code: MIT. Documents and aggregated outputs: CC BY 4.0. No licence is granted fo
       <strong>Rafael Braga-Kribitz</strong><br />
       Seiersberg-Pirka, Austria · Portfolio project, 2026<br />
       <a href="https://www.linkedin.com/in/rafaelbragakribitz/">LinkedIn</a>
-      ·
-      <a href="mailto:rafaelbragakribitz@gmail.com">rafaelbragakribitz@gmail.com</a>
     </td>
   </tr>
 </table>

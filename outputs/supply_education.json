@@ -1,0 +1,368 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "levels": [
+  {
+   "education_level": "Master",
+   "count": 255,
+   "n": 1818,
+   "share": 0.14,
+   "ci_low": 0.125,
+   "ci_high": 0.157,
+   "population": "P_data"
+  },
+  {
+   "education_level": "Student (current)",
+   "count": 246,
+   "n": 1818,
+   "share": 0.135,
+   "ci_low": 0.12,
+   "ci_high": 0.152,
+   "population": "P_data"
+  },
+  {
+   "education_level": "PhD",
+   "count": 163,
+   "n": 1818,
+   "share": 0.09,
+   "ci_low": 0.077,
+   "ci_high": 0.104,
+   "population": "P_data"
+  },
+  {
+   "education_level": "Bachelor",
+   "count": 93,
+   "n": 1818,
+   "share": 0.051,
+   "ci_low": 0.042,
+   "ci_high": 0.062,
+   "population": "P_data"
+  },
+  {
+   "education_level": "Bootcamp",
+   "count": 17,
+   "n": 1818,
+   "share": 0.009,
+   "ci_low": 0.006,
+   "ci_high": 0.015,
+   "population": "P_data"
+  },
+  {
+   "education_level": "HTL/Matura",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005,
+   "population": "P_data"
+  },
+  {
+   "education_level": "Master",
+   "count": 145,
+   "n": 872,
+   "share": 0.166,
+   "ci_low": 0.143,
+   "ci_high": 0.192,
+   "population": "P_T1"
+  },
+  {
+   "education_level": "Student (current)",
+   "count": 141,
+   "n": 872,
+   "share": 0.162,
+   "ci_low": 0.139,
+   "ci_high": 0.188,
+   "population": "P_T1"
+  },
+  {
+   "education_level": "PhD",
+   "count": 63,
+   "n": 872,
+   "share": 0.072,
+   "ci_low": 0.057,
+   "ci_high": 0.091,
+   "population": "P_T1"
+  },
+  {
+   "education_level": "Bachelor",
+   "count": 49,
+   "n": 872,
+   "share": 0.056,
+   "ci_low": 0.043,
+   "ci_high": 0.074,
+   "population": "P_T1"
+  },
+  {
+   "education_level": "Bootcamp",
+   "count": 10,
+   "n": 872,
+   "share": 0.011,
+   "ci_low": 0.006,
+   "ci_high": 0.021,
+   "population": "P_T1"
+  },
+  {
+   "education_level": "no education wording observable",
+   "count": 1259,
+   "n": 1818,
+   "share": 0.693,
+   "ci_low": 0.671,
+   "ci_high": 0.713,
+   "population": "P_data"
+  },
+  {
+   "education_level": "no education wording observable",
+   "count": 571,
+   "n": 872,
+   "share": 0.655,
+   "ci_low": 0.623,
+   "ci_high": 0.686,
+   "population": "P_T1"
+  }
+ ],
+ "fields_T1": [
+  {
+   "education_field": "Data Science",
+   "count": 495,
+   "n": 872,
+   "share": 0.568,
+   "ci_low": 0.535,
+   "ci_high": 0.6
+  },
+  {
+   "education_field": "Computer Science/Informatics",
+   "count": 144,
+   "n": 872,
+   "share": 0.165,
+   "ci_low": 0.142,
+   "ci_high": 0.191
+  },
+  {
+   "education_field": "Economics/Business",
+   "count": 107,
+   "n": 872,
+   "share": 0.123,
+   "ci_low": 0.103,
+   "ci_high": 0.146
+  },
+  {
+   "education_field": "Engineering/Physics",
+   "count": 98,
+   "n": 872,
+   "share": 0.112,
+   "ci_low": 0.093,
+   "ci_high": 0.135
+  },
+  {
+   "education_field": "Natural/Life Sciences",
+   "count": 61,
+   "n": 872,
+   "share": 0.07,
+   "ci_low": 0.055,
+   "ci_high": 0.089
+  },
+  {
+   "education_field": "Statistics/Mathematics",
+   "count": 44,
+   "n": 872,
+   "share": 0.05,
+   "ci_low": 0.038,
+   "ci_high": 0.067
+  },
+  {
+   "education_field": "Social Sciences/Psychology",
+   "count": 11,
+   "n": 872,
+   "share": 0.013,
+   "ci_low": 0.007,
+   "ci_high": 0.022
+  },
+  {
+   "education_field": "Marketing/Communication",
+   "count": 8,
+   "n": 872,
+   "share": 0.009,
+   "ci_low": 0.005,
+   "ci_high": 0.018
+  }
+ ],
+ "institutions_min3": [
+  {
+   "institution": "TU Wien",
+   "count": 91,
+   "n": 1818,
+   "share": 0.05,
+   "ci_low": 0.041,
+   "ci_high": 0.061
+  },
+  {
+   "institution": "JKU Linz",
+   "count": 78,
+   "n": 1818,
+   "share": 0.043,
+   "ci_low": 0.035,
+   "ci_high": 0.053
+  },
+  {
+   "institution": "Uni Wien",
+   "count": 67,
+   "n": 1818,
+   "share": 0.037,
+   "ci_low": 0.029,
+   "ci_high": 0.047
+  },
+  {
+   "institution": "TU Graz",
+   "count": 56,
+   "n": 1818,
+   "share": 0.031,
+   "ci_low": 0.024,
+   "ci_high": 0.04
+  },
+  {
+   "institution": "Uni Graz",
+   "count": 30,
+   "n": 1818,
+   "share": 0.017,
+   "ci_low": 0.012,
+   "ci_high": 0.023
+  },
+  {
+   "institution": "Uni Innsbruck",
+   "count": 26,
+   "n": 1818,
+   "share": 0.014,
+   "ci_low": 0.01,
+   "ci_high": 0.021
+  },
+  {
+   "institution": "WU Wien",
+   "count": 25,
+   "n": 1818,
+   "share": 0.014,
+   "ci_low": 0.009,
+   "ci_high": 0.02
+  },
+  {
+   "institution": "Uni Salzburg",
+   "count": 11,
+   "n": 1818,
+   "share": 0.006,
+   "ci_low": 0.003,
+   "ci_high": 0.011
+  },
+  {
+   "institution": "Uni Klagenfurt",
+   "count": 11,
+   "n": 1818,
+   "share": 0.006,
+   "ci_low": 0.003,
+   "ci_high": 0.011
+  },
+  {
+   "institution": "FH Joanneum",
+   "count": 9,
+   "n": 1818,
+   "share": 0.005,
+   "ci_low": 0.003,
+   "ci_high": 0.009
+  },
+  {
+   "institution": "FH Technikum Wien",
+   "count": 8,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.009
+  },
+  {
+   "institution": "AIT",
+   "count": 8,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.009
+  },
+  {
+   "institution": "Med Uni Wien",
+   "count": 7,
+   "n": 1818,
+   "share": 0.004,
+   "ci_low": 0.002,
+   "ci_high": 0.008
+  },
+  {
+   "institution": "FH Oberösterreich / Hagenberg",
+   "count": 5,
+   "n": 1818,
+   "share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.006
+  },
+  {
+   "institution": "IST Austria / ISTA",
+   "count": 5,
+   "n": 1818,
+   "share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.006
+  },
+  {
+   "institution": "Montanuni Leoben",
+   "count": 4,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.006
+  },
+  {
+   "institution": "FH Kärnten",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005
+  },
+  {
+   "institution": "FH Campus Wien",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005
+  },
+  {
+   "institution": "BOKU",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005
+  },
+  {
+   "institution": "FH St. Pölten",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005
+  },
+  {
+   "institution": "FH Krems",
+   "count": 3,
+   "n": 1818,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.005
+  }
+ ]
+}

@@ -1,4 +1,8 @@
 Built by src/publish/export_public.py
 Excluded tables: Q07a_salary_audit_sample.csv, Q07b_salary_implausible.csv, Q09_skill_spotcheck_sample.csv, T09e_salary_observations.csv, T16a_adjacent_titles_styria.csv
 Excluded collectors: collect_eures.py, collect_eures_styria_text.py, collect_karriere.py, collect_jobsat.py, collect_linkedin.py, collect_willhaben.py
-Dropped column pattern: snippet|^description$|description_text|description_html|source_url|\burl\b|company_url|raw_html|\bhtml\b
+Excluded documents and paths: config/profile.example.json, config/profile.json, linkedin-slot-interface.md, profile-specific-demand-supply-analysis.md, src/publish/public_overlay/, tests/fixtures/radar/
+Pseudonymised columns (keyed hash): posting_uid
+config/profile.json is a neutral example (config/profile.example.json in the private repository)
+Public overlay (src/publish/public_overlay, copied over the tree): .github/workflows/readme-quality.yml, docs/assets/Author_MDS_Rafael_Braga-Kribitz_kroped.png, docs/assets/hero.layout.json, docs/assets/hero.png, README.md
+Dropped column pattern: snippet|^description$|description_text|description_html|(^|_)urls?($|_)|(^|_)html($|_)

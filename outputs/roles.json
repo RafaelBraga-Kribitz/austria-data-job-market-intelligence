@@ -4,10 +4,19 @@
   "max": "2026-09-16 18:39:42+00:00"
  },
  "posted_date_range": {
+  "scope": "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source",
   "min": "2023-08-17",
   "max": "2026-09-16"
  },
  "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
+ "regional_count_basis": {
+  "styria_core": "any listed site: core postings with at least one location in Styria (is_styria flag; multi-site ads count in every state they list). Used by T02 styria_count, T03c, T04a styria, T07e and every *_by_styria table.",
+  "vienna_core": "any listed site: core postings with at least one location in Vienna (is_vienna flag).",
+  "graz_area_core": "any listed site: core postings with at least one location in the Graz commuting area (is_graz_area flag); a subset of styria_core.",
+  "styria_core_primary_state": "primary state: core postings whose primary `state` is Steiermark (one state per ad; T03a_state_counts.csv, DS05).",
+  "vienna_core_primary_state": "primary state: core postings whose primary `state` is Wien (T03a_state_counts.csv, DS05).",
+  "graz_area_core_primary_styria": "Graz commuting area postings whose primary state is Steiermark (subset of styria_core_primary_state)."
+ },
  "note": "Derived from outputs/tables; regenerate with src/analysis/export_agent_json.py after re-running the pipeline.",
  "families": [
   {
@@ -503,7 +512,7 @@
   {
    "role_family": "bi",
    "n_with_description": 85,
-   "top_tech_skills": "Data Visualization (86%); SQL (52%); Power BI (51%); Data Modeling (33%); AI (generic) (31%); SAP BW/BO (28%); Cloud (generic) (26%); Excel (20%); Data Warehouse (generic) (18%); Data Governance/Quality (18%); ETL/ELT (16%); Azure (14%); Python (11%); Statistics (general) (11%); SQL Server (11%)",
+   "top_tech_skills": "Data Visualization (86%); SQL (52%); Power BI (51%); Data Modeling (33%); AI (generic) (31%); SAP BW/BO (28%); Cloud (generic) (26%); Excel (20%); Data Governance/Quality (18%); Data Warehouse (generic) (18%); ETL/ELT (16%); Azure (14%); SQL Server (11%); Python (11%); Statistics (general) (11%)",
    "top_business": "Consulting (55%); Finance/Controlling (45%); SAP (ERP) (38%); Sales/Commercial (18%); Requirements/Business Analysis (16%); Banking/Insurance (15%); Operations/Manufacturing (13%); Project Management (13%)",
    "top_soft": "Communication (68%); Self-organisation (67%); Analytical Thinking (61%); Teamwork (60%); Stakeholder Management (58%); Curiosity/Learning (56%)",
    "german_required_share": 0.51,
@@ -517,7 +526,7 @@
   {
    "role_family": "business_analysis",
    "n_with_description": 120,
-   "top_tech_skills": "AI (generic) (24%); Data Visualization (17%); Excel (14%); SQL (13%); Data Governance/Quality (9%); REST APIs (7%); Cloud (generic) (6%); R (6%); Bash/Shell (5%); Generative AI / LLM (5%); C# (4%); CI/CD (4%); Mathematics (4%); Java (4%); Statistics (general) (3%)",
+   "top_tech_skills": "AI (generic) (24%); Data Visualization (17%); Excel (14%); SQL (13%); Data Governance/Quality (9%); REST APIs (7%); R (6%); Cloud (generic) (6%); Bash/Shell (5%); Generative AI / LLM (5%); Mathematics (4%); CI/CD (4%); C# (4%); Java (4%); Exploratory Analysis (3%)",
    "top_business": "Requirements/Business Analysis (82%); Project Management (51%); Consulting (37%); SAP (ERP) (27%); Public Sector/Research (25%); Finance/Controlling (24%); Supply Chain/Logistics (21%); Operations/Manufacturing (18%)",
    "top_soft": "Communication (77%); Stakeholder Management (75%); Self-organisation (72%); Teamwork (62%); Analytical Thinking (59%); Curiosity/Learning (46%)",
    "german_required_share": 0.44,
@@ -532,7 +541,7 @@
    "role_family": "data_analytics",
    "n_with_description": 107,
    "top_tech_skills": "Data Visualization (64%); Excel (47%); SQL (38%); Power BI (34%); Data Governance/Quality (28%); Python (26%); AI (generic) (21%); Statistics (general) (19%); Forecasting (18%); Cloud (generic) (17%); Mathematics (16%); Data Modeling (14%); Exploratory Analysis (12%); Segmentation/Clustering (10%); R (10%)",
-   "top_business": "Finance/Controlling (55%); Sales/Commercial (33%); Consulting (27%); Banking/Insurance (22%); SAP (ERP) (21%); Operations/Manufacturing (21%); Risk/Actuarial (21%); Supply Chain/Logistics (18%)",
+   "top_business": "Finance/Controlling (55%); Sales/Commercial (33%); Consulting (27%); Banking/Insurance (22%); Operations/Manufacturing (21%); SAP (ERP) (21%); Risk/Actuarial (21%); Supply Chain/Logistics (18%)",
    "top_soft": "Analytical Thinking (82%); Communication (75%); Self-organisation (70%); Teamwork (68%); Stakeholder Management (50%); Curiosity/Learning (36%)",
    "german_required_share": 0.42,
    "english_posting_share": 0.23,
@@ -559,8 +568,8 @@
   {
    "role_family": "data_governance",
    "n_with_description": 65,
-   "top_tech_skills": "Data Governance/Quality (82%); Excel (26%); AI (generic) (23%); Data Visualization (18%); SQL (14%); Statistics (general) (12%); Python (9%); Mathematics (9%); Cloud (generic) (8%); Power BI (8%); Classification (5%); Data Modeling (5%); Data Warehouse (generic) (5%); Streaming (5%); Generative AI / LLM (5%)",
-   "top_business": "SAP (ERP) (29%); Banking/Insurance (26%); Consulting (22%); Requirements/Business Analysis (20%); Public Sector/Research (20%); Operations/Manufacturing (18%); Finance/Controlling (18%); Marketing (17%)",
+   "top_tech_skills": "Data Governance/Quality (82%); Excel (26%); AI (generic) (23%); Data Visualization (18%); SQL (14%); Statistics (general) (12%); Mathematics (9%); Python (9%); Power BI (8%); Cloud (generic) (8%); Azure (5%); Classification (5%); Data Modeling (5%); Data Warehouse (generic) (5%); Streaming (5%)",
+   "top_business": "SAP (ERP) (29%); Banking/Insurance (26%); Consulting (22%); Public Sector/Research (20%); Requirements/Business Analysis (20%); Finance/Controlling (18%); Operations/Manufacturing (18%); Sales/Commercial (17%)",
    "top_soft": "Teamwork (77%); Self-organisation (74%); Communication (68%); Stakeholder Management (57%); Analytical Thinking (52%); Curiosity/Learning (43%)",
    "german_required_share": 0.4,
    "english_posting_share": 0.2,
@@ -573,7 +582,7 @@
   {
    "role_family": "data_science",
    "n_with_description": 157,
-   "top_tech_skills": "AI (generic) (82%); Python (73%); Machine Learning (55%); Generative AI / LLM (53%); Cloud (generic) (48%); SQL (36%); Azure (34%); CI/CD (31%); Statistics (general) (29%); REST APIs (29%); AWS (24%); Git (23%); MLOps (23%); Docker (23%); Mathematics (22%)",
+   "top_tech_skills": "AI (generic) (82%); Python (73%); Machine Learning (55%); Generative AI / LLM (53%); Cloud (generic) (48%); SQL (36%); Azure (34%); CI/CD (31%); Statistics (general) (29%); REST APIs (29%); RAG (28%); AI agents / tool-calling (25%); AWS (24%); MLOps (23%); Git (23%)",
    "top_business": "Requirements/Business Analysis (27%); Consulting (25%); Public Sector/Research (24%); Project Management (23%); Operations/Manufacturing (22%); Banking/Insurance (19%); Risk/Actuarial (13%); Sales/Commercial (12%)",
    "top_soft": "Teamwork (66%); Communication (57%); Analytical Thinking (48%); Self-organisation (48%); Stakeholder Management (43%); Curiosity/Learning (38%)",
    "german_required_share": 0.33,
@@ -601,7 +610,7 @@
   {
    "role_family": "product_analytics",
    "n_with_description": 1,
-   "top_tech_skills": "A/B Testing / Experimentation (100%); AI (generic) (100%); Data Governance/Quality (100%); Data Visualization (100%); ETL/ELT (100%); Hypothesis Testing (100%); Machine Learning (100%); Python (100%); SQL (100%); Segmentation/Clustering (100%); Statistics (general) (100%)",
+   "top_tech_skills": "A/B Testing / Experimentation (100%); AI (generic) (100%); AI agents / tool-calling (100%); Data Governance/Quality (100%); Data Visualization (100%); ETL/ELT (100%); Hypothesis Testing (100%); Machine Learning (100%); Python (100%); SQL (100%); Segmentation/Clustering (100%); Statistics (general) (100%)",
    "top_business": "Marketing (100%); Customer Analytics (100%); Product Analytics (100%); Web/Digital Analytics (100%); Public Sector/Research (100%)",
    "top_soft": "Communication (100%); Analytical Thinking (100%); Leadership (100%)",
    "german_required_share": 0.0,

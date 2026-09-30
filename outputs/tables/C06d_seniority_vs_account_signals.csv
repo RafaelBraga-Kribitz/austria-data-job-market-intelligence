@@ -1,0 +1,6 @@
+seniority_bio,n,median_account_age_years,median_public_repos,median_followers,share_hireable,share_student,share_academic,note
+junior,39,4.3,3.0,0.0,0.128,0.0,0.0,"account age is tenure on GitHub, not years of experience"
+lead_head,42,8.05,6.0,2.0,0.119,0.0,0.143,"account age is tenure on GitHub, not years of experience"
+senior,48,7.8,9.5,2.0,0.208,0.0,0.083,"account age is tenure on GitHub, not years of experience"
+student,147,5.4,6.0,1.0,0.136,1.0,0.095,"account age is tenure on GitHub, not years of experience"
+unlabelled,596,6.5,7.0,2.0,0.178,0.0,0.114,"account age is tenure on GitHub, not years of experience"

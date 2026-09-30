@@ -1,0 +1,26 @@
+seniority_bio,item,count,n,share,ci_low,ci_high
+junior,Coursera/edX/Udemy (any),1,39,0.026,0.005,0.132
+lead_head,Coursera/edX/Udemy (any),4,42,0.095,0.038,0.221
+lead_head,Certification (any mention),1,42,0.024,0.004,0.123
+lead_head,Bootcamp,1,42,0.024,0.004,0.123
+senior,Coursera/edX/Udemy (any),8,48,0.167,0.087,0.296
+senior,Certification (any mention),2,48,0.042,0.012,0.14
+senior,Scrum/PM cert,1,48,0.021,0.004,0.109
+senior,DataCamp,1,48,0.021,0.004,0.109
+senior,Bootcamp,1,48,0.021,0.004,0.109
+student,Coursera/edX/Udemy (any),5,147,0.034,0.015,0.077
+student,Certification (any mention),4,147,0.027,0.011,0.068
+student,Bootcamp,3,147,0.02,0.007,0.058
+student,IBM Data Science Certificate,1,147,0.007,0.001,0.038
+student,AWS cert,1,147,0.007,0.001,0.038
+unlabelled,Coursera/edX/Udemy (any),39,596,0.065,0.048,0.088
+unlabelled,Certification (any mention),19,596,0.032,0.021,0.049
+unlabelled,Bootcamp,8,596,0.013,0.007,0.026
+unlabelled,IBM Data Science Certificate,5,596,0.008,0.004,0.019
+unlabelled,DataCamp,5,596,0.008,0.004,0.019
+unlabelled,Scrum/PM cert,3,596,0.005,0.002,0.015
+unlabelled,Microsoft cert (generic),2,596,0.003,0.001,0.012
+unlabelled,Google Data Analytics Certificate,1,596,0.002,0.0,0.009
+unlabelled,Microsoft/Azure cert,1,596,0.002,0.0,0.009
+unlabelled,Snowflake cert,1,596,0.002,0.0,0.009
+unlabelled,Google cert,1,596,0.002,0.0,0.009

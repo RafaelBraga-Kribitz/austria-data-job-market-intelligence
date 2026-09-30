@@ -1,0 +1,101 @@
+seniority_bio,item,count,n,share,ci_low,ci_high
+junior,Python,20,39,0.513,0.362,0.661
+junior,Jupyter,18,39,0.462,0.316,0.614
+junior,Data Visualization,15,39,0.385,0.249,0.541
+junior,SQL,13,39,0.333,0.206,0.49
+junior,pandas,10,39,0.256,0.146,0.411
+junior,Machine Learning,10,39,0.256,0.146,0.411
+junior,JavaScript,9,39,0.231,0.126,0.383
+junior,Classification,7,39,0.179,0.09,0.327
+junior,Predictive Analytics,6,39,0.154,0.072,0.297
+junior,NumPy,6,39,0.154,0.072,0.297
+junior,Sales/Commercial,6,39,0.154,0.072,0.297
+junior,AI (generic),5,39,0.128,0.056,0.267
+junior,Exploratory Analysis,5,39,0.128,0.056,0.267
+junior,Bash/Shell,5,39,0.128,0.056,0.267
+junior,R,5,39,0.128,0.056,0.267
+junior,Requirements/Business Analysis,4,39,0.103,0.041,0.236
+junior,Excel,4,39,0.103,0.041,0.236
+junior,Statistics (general),4,39,0.103,0.041,0.236
+junior,MySQL/MariaDB,4,39,0.103,0.041,0.236
+junior,Marketing,4,39,0.103,0.041,0.236
+lead_head,Python,21,42,0.5,0.355,0.645
+lead_head,JavaScript,15,42,0.357,0.23,0.508
+lead_head,Data Visualization,13,42,0.31,0.191,0.46
+lead_head,Jupyter,13,42,0.31,0.191,0.46
+lead_head,AI (generic),12,42,0.286,0.172,0.436
+lead_head,Machine Learning,9,42,0.214,0.117,0.359
+lead_head,Java,8,42,0.19,0.1,0.333
+lead_head,Bash/Shell,8,42,0.19,0.1,0.333
+lead_head,SQL,7,42,0.167,0.083,0.306
+lead_head,C/C++,7,42,0.167,0.083,0.306
+lead_head,C#,7,42,0.167,0.083,0.306
+lead_head,Deep Learning,6,42,0.143,0.067,0.278
+lead_head,NumPy,6,42,0.143,0.067,0.278
+lead_head,Statistics (general),6,42,0.143,0.067,0.278
+lead_head,R,6,42,0.143,0.067,0.278
+lead_head,Public Sector/Research,6,42,0.143,0.067,0.278
+lead_head,REST APIs,5,42,0.119,0.052,0.25
+lead_head,matplotlib/seaborn,5,42,0.119,0.052,0.25
+lead_head,scikit-learn,5,42,0.119,0.052,0.25
+lead_head,pandas,5,42,0.119,0.052,0.25
+senior,Python,34,48,0.708,0.568,0.818
+senior,Jupyter,22,48,0.458,0.326,0.597
+senior,Machine Learning,20,48,0.417,0.288,0.557
+senior,AI (generic),18,48,0.375,0.252,0.516
+senior,Data Visualization,18,48,0.375,0.252,0.516
+senior,Bash/Shell,17,48,0.354,0.234,0.496
+senior,JavaScript,16,48,0.333,0.217,0.475
+senior,REST APIs,13,48,0.271,0.166,0.41
+senior,scikit-learn,11,48,0.229,0.133,0.365
+senior,Public Sector/Research,10,48,0.208,0.117,0.343
+senior,Docker,10,48,0.208,0.117,0.343
+senior,Java,10,48,0.208,0.117,0.343
+senior,pandas,10,48,0.208,0.117,0.343
+senior,Generative AI / LLM,10,48,0.208,0.117,0.343
+senior,Statistics (general),9,48,0.188,0.102,0.319
+senior,C#,9,48,0.188,0.102,0.319
+senior,SQL,9,48,0.188,0.102,0.319
+senior,Predictive Analytics,9,48,0.188,0.102,0.319
+senior,NumPy,9,48,0.188,0.102,0.319
+senior,FastAPI/Flask,9,48,0.188,0.102,0.319
+student,Python,97,147,0.66,0.58,0.732
+student,Jupyter,78,147,0.531,0.45,0.609
+student,Data Visualization,67,147,0.456,0.377,0.536
+student,Machine Learning,58,147,0.395,0.319,0.475
+student,Public Sector/Research,55,147,0.374,0.3,0.455
+student,Bash/Shell,52,147,0.354,0.281,0.434
+student,AI (generic),50,147,0.34,0.268,0.42
+student,JavaScript,46,147,0.313,0.244,0.392
+student,pandas,34,147,0.231,0.17,0.306
+student,Generative AI / LLM,33,147,0.224,0.165,0.298
+student,matplotlib/seaborn,33,147,0.224,0.165,0.298
+student,NumPy,30,147,0.204,0.147,0.276
+student,Statistics (general),29,147,0.197,0.141,0.269
+student,R,29,147,0.197,0.141,0.269
+student,Predictive Analytics,28,147,0.19,0.135,0.262
+student,Segmentation/Clustering,27,147,0.184,0.129,0.254
+student,scikit-learn,26,147,0.177,0.124,0.247
+student,Classification,26,147,0.177,0.124,0.247
+student,REST APIs,26,147,0.177,0.124,0.247
+student,Deep Learning,24,147,0.163,0.112,0.231
+unlabelled,Python,366,596,0.614,0.574,0.652
+unlabelled,Jupyter,284,596,0.477,0.437,0.517
+unlabelled,Data Visualization,220,596,0.369,0.331,0.409
+unlabelled,Machine Learning,212,596,0.356,0.318,0.395
+unlabelled,Bash/Shell,203,596,0.341,0.304,0.38
+unlabelled,AI (generic),185,596,0.31,0.275,0.349
+unlabelled,JavaScript,177,596,0.297,0.262,0.335
+unlabelled,Public Sector/Research,115,596,0.193,0.163,0.227
+unlabelled,R,113,596,0.19,0.16,0.223
+unlabelled,pandas,110,596,0.185,0.155,0.218
+unlabelled,REST APIs,106,596,0.178,0.149,0.211
+unlabelled,Generative AI / LLM,101,596,0.169,0.141,0.202
+unlabelled,NumPy,99,596,0.166,0.138,0.198
+unlabelled,Classification,99,596,0.166,0.138,0.198
+unlabelled,Docker,97,596,0.163,0.135,0.195
+unlabelled,PyTorch,93,596,0.156,0.129,0.187
+unlabelled,SQL,92,596,0.154,0.128,0.186
+unlabelled,Statistics (general),88,596,0.148,0.121,0.178
+unlabelled,Segmentation/Clustering,86,596,0.144,0.118,0.175
+unlabelled,Deep Learning,84,596,0.141,0.115,0.171

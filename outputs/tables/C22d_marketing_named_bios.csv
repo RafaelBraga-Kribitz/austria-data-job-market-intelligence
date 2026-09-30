@@ -1,0 +1,2 @@
+population,n,explicit_transition,families,seniority,regions,median_projects,top_skills
+P_T1 bios naming marketing,10,0,"{""data_science"": 5, ""data_analytics"": 3, ""marketing_analytics"": 1, ""bi"": 1}","{""unlabelled"": 6, ""lead_head"": 3, ""senior"": 1}","{""unspecified (Austria)"": 4, ""Wien"": 4, ""Steiermark"": 1, ""Nieder\u00f6sterreich"": 1}",2.5,Jupyter (6); Data Visualization (5); Marketing (5); Python (5); Machine Learning (4); NumPy (3); AI (generic) (3); Classification (3); Fine-tuning / LoRA / PEFT (3); SQL (3)

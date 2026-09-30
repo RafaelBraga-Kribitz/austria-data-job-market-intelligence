@@ -1,0 +1,154 @@
+item,count_all,n_all,share_all,count_data,n_data,share_data,question,source,source_quality
+openAI GPT (chatbot models),159,187,0.85,22.0,22,1.0,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Gemini (Flash general purpose models),78,187,0.417,11.0,22,0.5,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Anthropic: Claude Sonnet,70,187,0.374,6.0,22,0.273,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+openAI Reasoning models,64,187,0.342,12.0,22,0.545,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+openAI Image generating models,52,187,0.278,8.0,22,0.364,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Gemini (Pro Reasoning models),51,187,0.273,8.0,22,0.364,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Meta Llama (all models),44,187,0.235,10.0,22,0.455,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+DeepSeek (R- Reasoning models),43,187,0.23,4.0,22,0.182,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Mistral AI models,32,187,0.171,6.0,22,0.273,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+DeepSeek (V- General purpose models),17,187,0.091,3.0,22,0.136,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Perplexity Sonar models,12,187,0.064,2.0,22,0.091,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+X Grok models,11,187,0.059,3.0,22,0.136,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Alibaba Cloud Qwen models,10,187,0.053,4.0,22,0.182,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Microsoft Phi-4 models,8,187,0.043,1.0,22,0.045,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Amazon Titan models,3,187,0.016,1.0,22,0.045,AIModelsHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+PostgreSQL,197,326,0.604,21.0,26,0.808,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+SQLite,135,326,0.414,8.0,26,0.308,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MySQL,118,326,0.362,7.0,26,0.269,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Microsoft SQL Server,114,326,0.35,8.0,26,0.308,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MariaDB,110,326,0.337,5.0,26,0.192,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MongoDB,68,326,0.209,10.0,26,0.385,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Redis,67,326,0.206,4.0,26,0.154,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Elasticsearch,60,326,0.184,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Oracle,53,326,0.163,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+H2,37,326,0.113,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+InfluxDB,27,326,0.083,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Neo4J,17,326,0.052,6.0,26,0.231,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cloud Firestore,16,326,0.049,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cosmos DB,15,326,0.046,2.0,26,0.077,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Dynamodb,13,326,0.04,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Supabase,13,326,0.04,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Firebase Realtime Database,10,326,0.031,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Microsoft Access,10,326,0.031,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+IBM DB2,9,326,0.028,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+BigQuery,7,326,0.021,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Databricks SQL,7,326,0.021,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cassandra,6,326,0.018,2.0,26,0.077,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Valkey,6,326,0.018,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Clickhouse,5,326,0.015,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+DuckDB,4,326,0.012,3.0,26,0.115,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cockroachdb,3,326,0.009,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Pocketbase,2,326,0.006,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Snowflake,2,326,0.006,1.0,26,0.038,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Datomic,1,326,0.003,0.0,26,0.0,DatabaseHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+JavaScript,271,389,0.697,14.0,28,0.5,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+HTML/CSS,256,389,0.658,15.0,28,0.536,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+SQL,241,389,0.62,16.0,28,0.571,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Python,222,389,0.571,27.0,28,0.964,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Bash/Shell (all shells),201,389,0.517,15.0,28,0.536,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+TypeScript,191,389,0.491,8.0,28,0.286,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Java,144,389,0.37,5.0,28,0.179,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+C#,124,389,0.319,8.0,28,0.286,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+PowerShell,117,389,0.301,9.0,28,0.321,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+C++,102,389,0.262,4.0,28,0.143,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+C,96,389,0.247,4.0,28,0.143,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+PHP,84,389,0.216,4.0,28,0.143,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Rust,68,389,0.175,4.0,28,0.143,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Go,56,389,0.144,3.0,28,0.107,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Kotlin,44,389,0.113,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Assembly,30,389,0.077,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Groovy,28,389,0.072,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Lua,26,389,0.067,3.0,28,0.107,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+R,21,389,0.054,5.0,28,0.179,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MATLAB,20,389,0.051,2.0,28,0.071,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+VBA,20,389,0.051,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Perl,15,389,0.039,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Swift,14,389,0.036,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Dart,13,389,0.033,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Zig,10,389,0.026,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MicroPython,9,389,0.023,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Ruby,9,389,0.023,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Visual Basic (.Net),9,389,0.023,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+GDScript,7,389,0.018,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Lisp,7,389,0.018,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Scala,7,389,0.018,2.0,28,0.071,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Delphi,5,389,0.013,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+F#,5,389,0.013,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+OCaml,5,389,0.013,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Elixir,4,389,0.01,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Prolog,4,389,0.01,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+COBOL,2,389,0.005,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Erlang,2,389,0.005,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Fortran,2,389,0.005,1.0,28,0.036,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Ada,1,389,0.003,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Gleam,1,389,0.003,0.0,28,0.0,LanguageHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Docker,239,292,0.818,17.0,20,0.85,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+npm,177,292,0.606,8.0,20,0.4,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Pip,113,292,0.387,14.0,20,0.7,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Kubernetes,95,292,0.325,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Vite,89,292,0.305,6.0,20,0.3,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Microsoft Azure,79,292,0.271,10.0,20,0.5,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Make,78,292,0.267,5.0,20,0.25,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Amazon Web Services (AWS),74,292,0.253,7.0,20,0.35,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Maven (build tool),72,292,0.247,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+NuGet,71,292,0.243,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+APT,69,292,0.236,6.0,20,0.3,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cloudflare,64,292,0.219,4.0,20,0.2,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Homebrew,64,292,0.219,6.0,20,0.3,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Google Cloud,62,292,0.212,4.0,20,0.2,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Webpack,57,292,0.195,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Gradle,51,292,0.175,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Yarn,50,292,0.171,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Podman,48,292,0.164,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Cargo,47,292,0.161,5.0,20,0.25,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Prometheus,47,292,0.161,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Ansible,45,292,0.154,1.0,20,0.05,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+MSBuild,41,292,0.14,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Terraform,40,292,0.137,1.0,20,0.05,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Chocolatey,39,292,0.134,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+pnpm,39,292,0.134,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Pacman,31,292,0.106,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Composer,29,292,0.099,1.0,20,0.05,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Digital Ocean,24,292,0.082,2.0,20,0.1,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Firebase,24,292,0.082,1.0,20,0.05,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Bun,23,292,0.079,4.0,20,0.2,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Ninja,22,292,0.075,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Poetry,21,292,0.072,4.0,20,0.2,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Vercel,16,292,0.055,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Supabase,12,292,0.041,3.0,20,0.15,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Datadog,8,292,0.027,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Netlify,5,292,0.017,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+New Relic,5,292,0.017,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Splunk,5,292,0.017,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Heroku,3,292,0.01,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+IBM Cloud,1,292,0.003,0.0,20,0.0,PlatformHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Node.js,147,298,0.493,8.0,17,0.471,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+React,100,298,0.336,6.0,17,0.353,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Angular,79,298,0.265,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+ASP.NET Core,67,298,0.225,3.0,17,0.176,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Spring Boot,66,298,0.221,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+jQuery,65,298,0.218,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Vue.js,62,298,0.208,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+FastAPI,45,298,0.151,7.0,17,0.412,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+WordPress,43,298,0.144,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Next.js,42,298,0.141,3.0,17,0.176,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Express,41,298,0.138,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+ASP.NET,39,298,0.131,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Blazor,35,298,0.117,3.0,17,0.176,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Flask,34,298,0.114,6.0,17,0.353,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Django,24,298,0.081,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Svelte,23,298,0.077,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Laravel,22,298,0.074,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+AngularJS,20,298,0.067,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+NestJS,17,298,0.057,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Symfony,17,298,0.057,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Nuxt.js,14,298,0.047,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Axum,12,298,0.04,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Astro,11,298,0.037,1.0,17,0.059,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Deno,9,298,0.03,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Fastify,9,298,0.03,2.0,17,0.118,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Drupal,7,298,0.023,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Ruby on Rails,7,298,0.023,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B
+Phoenix,3,298,0.01,0.0,17,0.0,WebframeHaveWorkedWith,Stack Overflow Developer Survey 2025 (AT),B

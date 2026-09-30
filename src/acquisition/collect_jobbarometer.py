@@ -9,17 +9,17 @@ most demanded competencies (Austria-wide). Pages are server-rendered HTML.
 URL: https://jobbarometer.ams.at/berufe/{group_id}/{beruf_id}/{bl}
      bl in AT11..AT34 (NUTS-2) or omitted for all of Austria.
 Politeness: 2s delay (the site timed out once during a fast probe).
+
+Usage: python src/acquisition/collect_jobbarometer.py [--date YYYY-MM-DD]
+  --date continues an existing collection folder (default: today, Europe/Vienna). An existing
+  catalogue.jsonl is reused as-is; occupation pages already in details.jsonl are skipped.
 """
 from __future__ import annotations
 
 import html
-import json
 import re
-import sys
-import time
-from pathlib import Path
 
-from common import RawWriter, Session
+from common import RawWriter, Session, cli, status_of
 
 BASE = "https://jobbarometer.ams.at"
 GROUP_IDS = list(range(270, 335))
@@ -101,27 +101,27 @@ def catalogue(s: Session, w: RawWriter) -> dict:
     cat = {}
     for gid in GROUP_IDS:
         r = s.get(f"{BASE}/berufe/{gid}")
-        if r is None or r.status_code != 200:
+        if r is None or r.status_code != 200:  # the id range is a guess: 404s are expected gaps
+            w.log_query(url=f"{BASE}/berufe/{gid}", group_id=gid, status=status_of(r), error=True)
             continue
         t = r.text
         m = re.search(r"<title>AMS JobBarometer - Details zu (.+?) in Österreich</title>", t)
         gname = html.unescape(m.group(1)) if m else None
         berufe = {b: html.unescape(n) for b, n in re.findall(r'data-beruf-id="(\d+)"\s*title="([^"]+)"', t)}
-        m2 = re.search(r"Elektrotechnik.*?|Büro.*?", t)
         cat[gid] = {"group_name": gname, "berufe": berufe}
         w.write("catalogue", {"group_id": gid, "group_name": gname, "berufe": berufe})
         print(f"[jb] group {gid} {gname}: {len(berufe)} berufe", flush=True)
     return cat
 
 
-def main():
-    w = RawWriter("jobbarometer")
+def main(run_date: str | None = None):
+    w = RawWriter("jobbarometer", run_date)
     s = Session(delay=2.0)
     cat_path = w.dir / "catalogue.jsonl"
     if cat_path.exists():
         cat = {}
-        for line in open(cat_path, encoding="utf-8"):
-            e = json.loads(line)["record"]; cat[e["group_id"]] = e
+        for e in w.read(cat_path):
+            cat[e["record"]["group_id"]] = e["record"]
     else:
         cat = catalogue(s, w)
     targets = []
@@ -139,15 +139,16 @@ def main():
                 continue
             url = f"{BASE}/berufe/{gid}/{bid}" + (f"/{bl}" if bl else "")
             r = s.get(url)
-            if r is None or r.status_code != 200:
-                w.log_query(url=url, status=(r.status_code if r else None), error=True)
+            if r is None or r.status_code != 200:  # not written, so the next run retries it
+                w.log_query(url=url, status=status_of(r), error=True)
                 continue
             d = parse_detail(r.text)
             d.update({"group_id": gid, "beruf_id": bid, "beruf_name_catalogue": name, "bl": bl or "AT", "url": url, "html": r.text})
             w.write("details", d)
         print(f"[jb] done {name} ({gid}/{bid})", flush=True)
     w.close()
+    print(f"done. {s.summary()}")
 
 
 if __name__ == "__main__":
-    main()
+    main(cli(__doc__).date)

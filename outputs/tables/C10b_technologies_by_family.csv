@@ -1,0 +1,116 @@
+family,item,count,n,share,ci_low,ci_high
+bi,Data Visualization,7,15,0.467,0.248,0.699
+bi,SQL,7,15,0.467,0.248,0.699
+bi,Python,6,15,0.4,0.198,0.643
+bi,Power BI,5,15,0.333,0.152,0.583
+bi,Jupyter,4,15,0.267,0.109,0.52
+bi,Machine Learning,3,15,0.2,0.07,0.452
+bi,AI (generic),3,15,0.2,0.07,0.452
+bi,Java,2,15,0.133,0.037,0.379
+bi,Finance/Controlling,2,15,0.133,0.037,0.379
+bi,Data Governance/Quality,2,15,0.133,0.037,0.379
+bi,Generative AI / LLM,2,15,0.133,0.037,0.379
+bi,DAX/M,2,15,0.133,0.037,0.379
+bi,C#,1,15,0.067,0.012,0.298
+bi,Bash/Shell,1,15,0.067,0.012,0.298
+bi,Requirements/Business Analysis,1,15,0.067,0.012,0.298
+bi,Prompt engineering,1,15,0.067,0.012,0.298
+bi,AI agents / tool-calling,1,15,0.067,0.012,0.298
+bi,JavaScript,1,15,0.067,0.012,0.298
+bi,Docker,1,15,0.067,0.012,0.298
+bi,PostgreSQL,1,15,0.067,0.012,0.298
+business_analysis,Requirements/Business Analysis,18,21,0.857,0.654,0.95
+business_analysis,Data Visualization,5,21,0.238,0.106,0.451
+business_analysis,JavaScript,5,21,0.238,0.106,0.451
+business_analysis,Consulting,4,21,0.19,0.077,0.4
+business_analysis,Jupyter,3,21,0.143,0.05,0.346
+business_analysis,Finance/Controlling,3,21,0.143,0.05,0.346
+business_analysis,AI (generic),3,21,0.143,0.05,0.346
+business_analysis,Bash/Shell,2,21,0.095,0.027,0.289
+business_analysis,Predictive Analytics,2,21,0.095,0.027,0.289
+business_analysis,PostgreSQL,2,21,0.095,0.027,0.289
+business_analysis,Python,2,21,0.095,0.027,0.289
+business_analysis,Streaming,2,21,0.095,0.027,0.289
+business_analysis,SQL,2,21,0.095,0.027,0.289
+business_analysis,pandas,2,21,0.095,0.027,0.289
+business_analysis,Streamlit,2,21,0.095,0.027,0.289
+business_analysis,Banking/Insurance,1,21,0.048,0.008,0.227
+business_analysis,C/C++,1,21,0.048,0.008,0.227
+business_analysis,Causal Inference,1,21,0.048,0.008,0.227
+business_analysis,Pricing/Revenue,1,21,0.048,0.008,0.227
+business_analysis,R,1,21,0.048,0.008,0.227
+data_analytics,Python,64,129,0.496,0.411,0.581
+data_analytics,Data Visualization,51,129,0.395,0.315,0.482
+data_analytics,Jupyter,50,129,0.388,0.308,0.474
+data_analytics,SQL,33,129,0.256,0.188,0.337
+data_analytics,pandas,28,129,0.217,0.155,0.296
+data_analytics,JavaScript,25,129,0.194,0.135,0.27
+data_analytics,Bash/Shell,23,129,0.178,0.122,0.253
+data_analytics,Machine Learning,22,129,0.171,0.115,0.245
+data_analytics,Statistics (general),22,129,0.171,0.115,0.245
+data_analytics,NumPy,19,129,0.147,0.096,0.219
+data_analytics,AI (generic),19,129,0.147,0.096,0.219
+data_analytics,R,19,129,0.147,0.096,0.219
+data_analytics,Power BI,18,129,0.14,0.09,0.21
+data_analytics,Sales/Commercial,18,129,0.14,0.09,0.21
+data_analytics,Public Sector/Research,17,129,0.132,0.084,0.201
+data_analytics,matplotlib/seaborn,17,129,0.132,0.084,0.201
+data_analytics,Predictive Analytics,17,129,0.132,0.084,0.201
+data_analytics,Excel,15,129,0.116,0.072,0.183
+data_analytics,Marketing,14,129,0.109,0.066,0.174
+data_analytics,Regression,14,129,0.109,0.066,0.174
+data_engineering,Python,31,58,0.534,0.408,0.657
+data_engineering,Jupyter,22,58,0.379,0.266,0.508
+data_engineering,JavaScript,17,58,0.293,0.192,0.42
+data_engineering,Bash/Shell,17,58,0.293,0.192,0.42
+data_engineering,SQL,16,58,0.276,0.178,0.402
+data_engineering,Data Visualization,16,58,0.276,0.178,0.402
+data_engineering,Java,12,58,0.207,0.123,0.328
+data_engineering,ETL/ELT,11,58,0.19,0.109,0.309
+data_engineering,Docker,11,58,0.19,0.109,0.309
+data_engineering,pandas,11,58,0.19,0.109,0.309
+data_engineering,AI (generic),10,58,0.172,0.096,0.289
+data_engineering,Cloud (generic),10,58,0.172,0.096,0.289
+data_engineering,Data Governance/Quality,9,58,0.155,0.084,0.269
+data_engineering,CI/CD,9,58,0.155,0.084,0.269
+data_engineering,Spark,9,58,0.155,0.084,0.269
+data_engineering,C#,9,58,0.155,0.084,0.269
+data_engineering,Machine Learning,8,58,0.138,0.072,0.249
+data_engineering,REST APIs,8,58,0.138,0.072,0.249
+data_engineering,Streaming,8,58,0.138,0.072,0.249
+data_engineering,Azure,7,58,0.121,0.06,0.229
+data_governance,Data Governance/Quality,5,7,0.714,0.359,0.918
+data_governance,Python,4,7,0.571,0.25,0.842
+data_governance,Jupyter,4,7,0.571,0.25,0.842
+data_governance,Data Visualization,3,7,0.429,0.158,0.75
+data_governance,Public Sector/Research,2,7,0.286,0.082,0.641
+data_governance,Bash/Shell,1,7,0.143,0.026,0.513
+data_governance,Docker,1,7,0.143,0.026,0.513
+data_governance,R,1,7,0.143,0.026,0.513
+data_governance,Statistics (general),1,7,0.143,0.026,0.513
+data_governance,Cloud (generic),1,7,0.143,0.026,0.513
+data_governance,Healthcare/Pharma/Bio,1,7,0.143,0.026,0.513
+data_governance,MATLAB,1,7,0.143,0.026,0.513
+data_governance,Segmentation/Clustering,1,7,0.143,0.026,0.513
+data_governance,Java,1,7,0.143,0.026,0.513
+data_governance,JavaScript,1,7,0.143,0.026,0.513
+data_science,Python,429,638,0.672,0.635,0.708
+data_science,Jupyter,330,638,0.517,0.478,0.556
+data_science,Machine Learning,276,638,0.433,0.395,0.471
+data_science,Data Visualization,249,638,0.39,0.353,0.429
+data_science,Bash/Shell,241,638,0.378,0.341,0.416
+data_science,AI (generic),235,638,0.368,0.332,0.406
+data_science,JavaScript,214,638,0.335,0.3,0.373
+data_science,Public Sector/Research,163,638,0.255,0.223,0.291
+data_science,R,135,638,0.212,0.182,0.245
+data_science,Generative AI / LLM,131,638,0.205,0.176,0.238
+data_science,REST APIs,131,638,0.205,0.176,0.238
+data_science,Classification,128,638,0.201,0.171,0.233
+data_science,NumPy,125,638,0.196,0.167,0.229
+data_science,pandas,125,638,0.196,0.167,0.229
+data_science,PyTorch,119,638,0.187,0.158,0.219
+data_science,Deep Learning,111,638,0.174,0.147,0.205
+data_science,Statistics (general),110,638,0.172,0.145,0.204
+data_science,Docker,110,638,0.172,0.145,0.204
+data_science,Segmentation/Clustering,109,638,0.171,0.144,0.202
+data_science,scikit-learn,106,638,0.166,0.139,0.197

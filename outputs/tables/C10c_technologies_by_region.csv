@@ -1,0 +1,76 @@
+reg,item,count,n,share,ci_low,ci_high
+Steiermark,Python,204,248,0.823,0.77,0.865
+Steiermark,Jupyter,139,248,0.56,0.498,0.621
+Steiermark,Bash/Shell,135,248,0.544,0.482,0.605
+Steiermark,Data Visualization,123,248,0.496,0.434,0.558
+Steiermark,JavaScript,106,248,0.427,0.367,0.49
+Steiermark,Machine Learning,92,248,0.371,0.313,0.433
+Steiermark,Public Sector/Research,90,248,0.363,0.306,0.424
+Steiermark,C/C++,86,248,0.347,0.29,0.408
+Steiermark,AI (generic),83,248,0.335,0.279,0.396
+Steiermark,NumPy,64,248,0.258,0.208,0.316
+Steiermark,Deep Learning,58,248,0.234,0.185,0.29
+Steiermark,Docker,58,248,0.234,0.185,0.29
+Steiermark,REST APIs,57,248,0.23,0.182,0.286
+Steiermark,PyTorch,56,248,0.226,0.178,0.282
+Steiermark,C#,56,248,0.226,0.178,0.282
+Steiermark,Classification,54,248,0.218,0.171,0.273
+Steiermark,Java,52,248,0.21,0.164,0.265
+Steiermark,Segmentation/Clustering,51,248,0.206,0.16,0.26
+Steiermark,matplotlib/seaborn,49,248,0.198,0.153,0.252
+Steiermark,R,48,248,0.194,0.149,0.247
+Steiermark,Generative AI / LLM,48,248,0.194,0.149,0.247
+Steiermark,pandas,39,248,0.157,0.117,0.208
+Steiermark,scikit-learn,35,248,0.141,0.103,0.19
+Steiermark,FastAPI/Flask,35,248,0.141,0.103,0.19
+Steiermark,TensorFlow/Keras,34,248,0.137,0.1,0.185
+Wien,Python,578,802,0.721,0.689,0.751
+Wien,Jupyter,440,802,0.549,0.514,0.583
+Wien,Data Visualization,380,802,0.474,0.439,0.508
+Wien,Bash/Shell,366,802,0.456,0.422,0.491
+Wien,JavaScript,321,802,0.4,0.367,0.435
+Wien,AI (generic),287,802,0.358,0.325,0.392
+Wien,Machine Learning,282,802,0.352,0.319,0.385
+Wien,Public Sector/Research,212,802,0.264,0.235,0.296
+Wien,Generative AI / LLM,181,802,0.226,0.198,0.256
+Wien,REST APIs,180,802,0.224,0.197,0.255
+Wien,pandas,173,802,0.216,0.189,0.245
+Wien,R,171,802,0.213,0.186,0.243
+Wien,C/C++,166,802,0.207,0.18,0.236
+Wien,NumPy,164,802,0.204,0.178,0.234
+Wien,Statistics (general),159,802,0.198,0.172,0.227
+Wien,Docker,156,802,0.195,0.169,0.223
+Wien,Classification,150,802,0.187,0.162,0.215
+Wien,Segmentation/Clustering,147,802,0.183,0.158,0.212
+Wien,SQL,146,802,0.182,0.157,0.21
+Wien,Java,142,802,0.177,0.152,0.205
+Wien,Deep Learning,139,802,0.173,0.149,0.201
+Wien,matplotlib/seaborn,135,802,0.168,0.144,0.196
+Wien,PyTorch,126,802,0.157,0.134,0.184
+Wien,scikit-learn,126,802,0.157,0.134,0.184
+Wien,C#,122,802,0.152,0.129,0.179
+other/unspecified,Python,559,768,0.728,0.695,0.758
+other/unspecified,Jupyter,405,768,0.527,0.492,0.562
+other/unspecified,Bash/Shell,383,768,0.499,0.463,0.534
+other/unspecified,Data Visualization,359,768,0.467,0.432,0.503
+other/unspecified,JavaScript,338,768,0.44,0.405,0.475
+other/unspecified,AI (generic),304,768,0.396,0.362,0.431
+other/unspecified,Machine Learning,241,768,0.314,0.282,0.347
+other/unspecified,Public Sector/Research,221,768,0.288,0.257,0.321
+other/unspecified,REST APIs,215,768,0.28,0.249,0.313
+other/unspecified,Generative AI / LLM,188,768,0.245,0.216,0.276
+other/unspecified,Docker,165,768,0.215,0.187,0.245
+other/unspecified,Classification,158,768,0.206,0.179,0.236
+other/unspecified,C/C++,157,768,0.204,0.177,0.234
+other/unspecified,Deep Learning,155,768,0.202,0.175,0.232
+other/unspecified,Java,150,768,0.195,0.169,0.225
+other/unspecified,PyTorch,146,768,0.19,0.164,0.219
+other/unspecified,NumPy,146,768,0.19,0.164,0.219
+other/unspecified,C#,137,768,0.178,0.153,0.207
+other/unspecified,pandas,134,768,0.174,0.149,0.203
+other/unspecified,Segmentation/Clustering,131,768,0.171,0.146,0.199
+other/unspecified,R,125,768,0.163,0.138,0.191
+other/unspecified,matplotlib/seaborn,125,768,0.163,0.138,0.191
+other/unspecified,SQL,124,768,0.161,0.137,0.189
+other/unspecified,Statistics (general),124,768,0.161,0.137,0.189
+other/unspecified,FastAPI/Flask,118,768,0.154,0.13,0.181

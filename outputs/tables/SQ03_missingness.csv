@@ -1,0 +1,28 @@
+population,missing,count,n,share
+P_all,bio,4587,9409,0.488
+P_all,company,4889,9409,0.52
+P_all,location with state,1322,9409,0.141
+P_all,website/blog,5933,9409,0.631
+P_all,no owned repository,1327,9409,0.141
+P_all,education wording,8157,9409,0.867
+P_all,seniority wording,8028,9409,0.853
+P_all,any skill evidence,2260,9409,0.24
+P_all,bio language (bio ≤ 40 chars),5567,9409,0.592
+P_data,bio,295,1818,0.162
+P_data,company,904,1818,0.497
+P_data,location with state,304,1818,0.167
+P_data,website/blog,1030,1818,0.567
+P_data,no owned repository,147,1818,0.081
+P_data,education wording,1259,1818,0.693
+P_data,seniority wording,1354,1818,0.745
+P_data,any skill evidence,78,1818,0.043
+P_data,bio language (bio ≤ 40 chars),522,1818,0.287
+P_T1,bio,0,872,0.0
+P_T1,company,483,872,0.554
+P_T1,location with state,193,872,0.221
+P_T1,website/blog,559,872,0.641
+P_T1,no owned repository,147,872,0.169
+P_T1,education wording,571,872,0.655
+P_T1,seniority wording,596,872,0.683
+P_T1,any skill evidence,78,872,0.089
+P_T1,bio language (bio ≤ 40 chars),125,872,0.143

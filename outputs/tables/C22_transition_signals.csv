@@ -1,0 +1,2 @@
+population,n,explicit_transition_wording,share_explicit,any_prior_domain_named,share_prior_domain,note
+P_T1,872,30,0.034,331,0.38,"prior domain named in the same bio as a data role is a weak signal (it may be the current domain, not a former one); explicit wording ('former', 'turned', 'career change') is the strong signal"

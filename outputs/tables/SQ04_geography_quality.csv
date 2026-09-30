@@ -1,0 +1,2 @@
+population,n,austrian_signal,dropped_no_austrian_signal,foreign_place_also_named,multi_location,austria_only_no_state,state_and_city,state_only,styria_frame_B_but_state_not_styria,note
+all GitHub accounts fetched,9457,9409,48,89,112,1322,8012,119,11,"frame B tokens include Styrian town names that also exist elsewhere (e.g. Weiz≠, Baden), and 'Graz' inside other strings; state is decided by geo.json"

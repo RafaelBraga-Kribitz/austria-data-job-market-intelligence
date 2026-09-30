@@ -1,0 +1,9 @@
+education_field,count,n,share,ci_low,ci_high,note
+Data Science,495,872,0.568,0.535,0.6,population: P_T1; field wording in bios
+Computer Science/Informatics,144,872,0.165,0.142,0.191,population: P_T1; field wording in bios
+Economics/Business,107,872,0.123,0.103,0.146,population: P_T1; field wording in bios
+Engineering/Physics,98,872,0.112,0.093,0.135,population: P_T1; field wording in bios
+Natural/Life Sciences,61,872,0.07,0.055,0.089,population: P_T1; field wording in bios
+Statistics/Mathematics,44,872,0.05,0.038,0.067,population: P_T1; field wording in bios
+Social Sciences/Psychology,11,872,0.013,0.007,0.022,population: P_T1; field wording in bios
+Marketing/Communication,8,872,0.009,0.005,0.018,population: P_T1; field wording in bios

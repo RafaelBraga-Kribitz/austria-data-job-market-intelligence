@@ -1,0 +1,306 @@
+{
+ "generated": "2026-09-30T21:03:43.338122",
+ "collection_date": "2026-09-17",
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "source": "GitHub REST API (profiles, repositories, READMEs)",
+ "source_quality": "B",
+ "populations": {
+  "P_all": 9409,
+  "P_data": 1818,
+  "P_T1": 872
+ },
+ "unit": "public GitHub account with an Austrian location signal; not a census of the Austrian workforce",
+ "raw_bio_titles_min3": [
+  {
+   "raw_bio_title": "data scientist",
+   "count": 47,
+   "n": 872,
+   "share": 0.054
+  },
+  {
+   "raw_bio_title": "data science student",
+   "count": 16,
+   "n": 872,
+   "share": 0.018
+  },
+  {
+   "raw_bio_title": "data analyst",
+   "count": 15,
+   "n": 872,
+   "share": 0.017
+  },
+  {
+   "raw_bio_title": "data science",
+   "count": 15,
+   "n": 872,
+   "share": 0.017
+  },
+  {
+   "raw_bio_title": "ai engineer",
+   "count": 14,
+   "n": 872,
+   "share": 0.016
+  },
+  {
+   "raw_bio_title": "data engineer",
+   "count": 13,
+   "n": 872,
+   "share": 0.015
+  },
+  {
+   "raw_bio_title": "machine learning engineer",
+   "count": 12,
+   "n": 872,
+   "share": 0.014
+  },
+  {
+   "raw_bio_title": "software engineer",
+   "count": 9,
+   "n": 872,
+   "share": 0.01
+  },
+  {
+   "raw_bio_title": "ml engineer",
+   "count": 7,
+   "n": 872,
+   "share": 0.008
+  },
+  {
+   "raw_bio_title": "senior data scientist",
+   "count": 6,
+   "n": 872,
+   "share": 0.007
+  },
+  {
+   "raw_bio_title": "junior data analyst",
+   "count": 5,
+   "n": 872,
+   "share": 0.006
+  },
+  {
+   "raw_bio_title": "msc data science",
+   "count": 4,
+   "n": 872,
+   "share": 0.005
+  },
+  {
+   "raw_bio_title": "phd student",
+   "count": 4,
+   "n": 872,
+   "share": 0.005
+  },
+  {
+   "raw_bio_title": "ai researcher",
+   "count": 4,
+   "n": 872,
+   "share": 0.005
+  },
+  {
+   "raw_bio_title": "senior ml engineer",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "researcher",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "junior data scientist",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "phd candidate",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "student",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "aspiring data analyst",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  },
+  {
+   "raw_bio_title": "business analyst",
+   "count": 3,
+   "n": 872,
+   "share": 0.003
+  }
+ ],
+ "normalized_titles": [
+  {
+   "normalized_title": "Data Scientist",
+   "family": "data_science",
+   "count": 486,
+   "n": 872,
+   "share": 0.557,
+   "ci_low": 0.524,
+   "ci_high": 0.59,
+   "styria": 25,
+   "vienna": 284
+  },
+  {
+   "normalized_title": "Machine Learning / AI Engineer",
+   "family": "data_science",
+   "count": 140,
+   "n": 872,
+   "share": 0.161,
+   "ci_low": 0.138,
+   "ci_high": 0.186,
+   "styria": 11,
+   "vienna": 69
+  },
+  {
+   "normalized_title": "Data Analyst",
+   "family": "data_analytics",
+   "count": 124,
+   "n": 872,
+   "share": 0.142,
+   "ci_low": 0.121,
+   "ci_high": 0.167,
+   "styria": 7,
+   "vienna": 72
+  },
+  {
+   "normalized_title": "Data Engineer",
+   "family": "data_engineering",
+   "count": 55,
+   "n": 872,
+   "share": 0.063,
+   "ci_low": 0.049,
+   "ci_high": 0.081,
+   "styria": 4,
+   "vienna": 23
+  },
+  {
+   "normalized_title": "Business Analyst",
+   "family": "business_analysis",
+   "count": 21,
+   "n": 872,
+   "share": 0.024,
+   "ci_low": 0.016,
+   "ci_high": 0.037,
+   "styria": 2,
+   "vienna": 9
+  },
+  {
+   "normalized_title": "BI Developer / BI Engineer",
+   "family": "bi",
+   "count": 15,
+   "n": 872,
+   "share": 0.017,
+   "ci_low": 0.01,
+   "ci_high": 0.028,
+   "styria": 3,
+   "vienna": 5
+  },
+  {
+   "normalized_title": "Statistician / Biostatistician",
+   "family": "data_science",
+   "count": 12,
+   "n": 872,
+   "share": 0.014,
+   "ci_low": 0.008,
+   "ci_high": 0.024,
+   "styria": 2,
+   "vienna": 6
+  },
+  {
+   "normalized_title": "Data Governance / Data Steward / Data Manager",
+   "family": "data_governance",
+   "count": 6,
+   "n": 872,
+   "share": 0.007,
+   "ci_low": 0.003,
+   "ci_high": 0.015,
+   "styria": 0,
+   "vienna": 3
+  },
+  {
+   "normalized_title": "Financial / Risk / Controlling Analyst (data-heavy)",
+   "family": "data_analytics",
+   "count": 5,
+   "n": 872,
+   "share": 0.006,
+   "ci_low": 0.002,
+   "ci_high": 0.013,
+   "styria": 0,
+   "vienna": 4
+  },
+  {
+   "normalized_title": "Analytics Engineer",
+   "family": "data_engineering",
+   "count": 3,
+   "n": 872,
+   "share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.01,
+   "styria": 0,
+   "vienna": 1
+  },
+  {
+   "normalized_title": "Marketing/Growth/CRM Analyst",
+   "family": "marketing_analytics",
+   "count": 2,
+   "n": 872,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.008,
+   "styria": 1,
+   "vienna": 1
+  },
+  {
+   "normalized_title": "Product Analyst",
+   "family": "product_analytics",
+   "count": 2,
+   "n": 872,
+   "share": 0.002,
+   "ci_low": 0.001,
+   "ci_high": 0.008,
+   "styria": 0,
+   "vienna": 1
+  },
+  {
+   "normalized_title": "Master / Product Data Management (operational)",
+   "family": "data_governance",
+   "count": 1,
+   "n": 872,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.006,
+   "styria": 1,
+   "vienna": 0
+  }
+ ],
+ "concentration": {
+  "raw": {
+   "distinct": 574,
+   "total": 764,
+   "entropy_bits": 8.586,
+   "normalised_entropy": 0.937,
+   "hhi": 0.0074,
+   "top1_share": 0.062,
+   "top5_share": 0.14
+  },
+  "normalized": {
+   "distinct": 13,
+   "total": 872,
+   "entropy_bits": 2.032,
+   "normalised_entropy": 0.549,
+   "hhi": 0.3618,
+   "top1_share": 0.557,
+   "top5_share": 0.947
+  }
+ }
+}

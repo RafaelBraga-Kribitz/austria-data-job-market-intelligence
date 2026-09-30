@@ -1,0 +1,1794 @@
+{
+ "generated": "2026-09-30T21:17:37.655203",
+ "demand_vintage": "2026-09-16",
+ "supply_vintage": "2026-09-17",
+ "reading": "per family: what ads mention (Layer 1), what bio-declared candidates show (Layer 2), what projects commonly/rarely contain, and which demanded capabilities are rarely project-demonstrated. No number of projects is prescribed.",
+ "families": {
+  "data_analytics": {
+   "label": "Data analytics",
+   "employer_requirements": {
+    "open_postings_AT": 107,
+    "styria": 11,
+    "top_tech_skills": [
+     "Data Visualization (64%)",
+     "Excel (47%)",
+     "SQL (38%)",
+     "Power BI (34%)",
+     "Data Governance/Quality (28%)",
+     "Python (26%)",
+     "AI (generic) (21%)",
+     "Statistics (general) (19%)",
+     "Forecasting (18%)",
+     "Cloud (generic) (17%)",
+     "Mathematics (16%)",
+     "Data Modeling (14%)",
+     "Exploratory Analysis (12%)",
+     "Segmentation/Clustering (10%)",
+     "R (10%)"
+    ],
+    "top_business_context": [
+     "Finance/Controlling (55%)",
+     "Sales/Commercial (33%)",
+     "Consulting (27%)",
+     "Banking/Insurance (22%)",
+     "Operations/Manufacturing (21%)",
+     "SAP (ERP) (21%)",
+     "Risk/Actuarial (21%)",
+     "Supply Chain/Logistics (18%)"
+    ],
+    "german_required_share": 0.42,
+    "english_posting_share": 0.23,
+    "degree_required_share": 0.4,
+    "median_advertised_min_salary_eur": 47810.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 129,
+    "share_of_bio_declared": 0.148,
+    "styria": 7,
+    "vienna": 76,
+    "students": 16,
+    "relative_representation_vs_demand": 1.0,
+    "top_skills_any_evidence": [
+     "Python (50%)",
+     "Data Visualization (40%)",
+     "Jupyter (39%)",
+     "SQL (26%)",
+     "pandas (22%)",
+     "JavaScript (19%)",
+     "Bash/Shell (18%)",
+     "Machine Learning (17%)",
+     "Statistics (general) (17%)",
+     "NumPy (15%)",
+     "AI (generic) (15%)",
+     "R (15%)"
+    ],
+    "seniority_wording": {
+     "junior": 17,
+     "lead_head": 9,
+     "senior": 7,
+     "student": 16,
+     "unlabelled": 80
+    },
+    "education_wording": [
+     "Master (15%)",
+     "Student (current) (12%)",
+     "Bachelor (5%)",
+     "PhD (4%)",
+     "Bootcamp (2%)"
+    ],
+    "certification_wording": [
+     "Coursera/edX/Udemy (any) (5%)",
+     "Certification (any mention) (5%)",
+     "Bootcamp (2%)",
+     "DataCamp (1%)",
+     "Google cert (1%)"
+    ],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [
+     "ds_method:classification (13%)",
+     "ds_method:nlp (10%)",
+     "ds_method:descriptive_eda (9%)",
+     "analytics_domain:sales (9%)",
+     "analytics_domain:marketing (8%)",
+     "analytics_domain:customer (7%)",
+     "ds_method:regression (7%)",
+     "ds_method:forecasting (7%)",
+     "ai:llm_app (6%)",
+     "analytics_domain:sustainability (5%)"
+    ],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "Stakeholder / communication",
+     "demand_share": 0.803,
+     "supply_any_share": 0.0,
+     "project_share": 0.0,
+     "evidence_gap_pp": 80.3,
+     "suggested_evidence": "READMEs with a business-context section, a one-page summary, a case study"
+    },
+    {
+     "capability": "Project management / consulting",
+     "demand_share": 0.438,
+     "supply_any_share": 0.046,
+     "project_share": 0.007,
+     "evidence_gap_pp": 43.1,
+     "suggested_evidence": null
+    },
+    {
+     "capability": "Finance / controlling / risk",
+     "demand_share": 0.409,
+     "supply_any_share": 0.188,
+     "project_share": 0.098,
+     "evidence_gap_pp": 31.1,
+     "suggested_evidence": "a controlling/forecast or risk dataset project with KPI definitions"
+    },
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Data quality / governance",
+     "demand_share": 0.306,
+     "supply_any_share": 0.081,
+     "project_share": 0.051,
+     "evidence_gap_pp": 25.5,
+     "suggested_evidence": "explicit validation rules, data-quality tests (e.g. Great Expectations/dbt tests) and a lineage note"
+    },
+    {
+     "capability": "Requirements / business analysis",
+     "demand_share": 0.291,
+     "supply_any_share": 0.028,
+     "project_share": 0.009,
+     "evidence_gap_pp": 28.2,
+     "suggested_evidence": "a requirements/case-study document alongside the code"
+    },
+    {
+     "capability": "Data warehouse / modelling",
+     "demand_share": 0.252,
+     "supply_any_share": 0.041,
+     "project_share": 0.024,
+     "evidence_gap_pp": 22.8,
+     "suggested_evidence": "a dimensional model (dbt or SQL) with documentation of grain, facts and dimensions"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Excel",
+     "demand_share": 0.178,
+     "supply_any_share": 0.037,
+     "project_share": 0.017,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "not worth a project; mention as a tool"
+    },
+    {
+     "capability": "Sales / commercial",
+     "demand_share": 0.157,
+     "supply_any_share": 0.087,
+     "project_share": 0.065,
+     "evidence_gap_pp": 9.2,
+     "suggested_evidence": null
+    },
+    {
+     "capability": "Databricks/Spark",
+     "demand_share": 0.139,
+     "supply_any_share": 0.056,
+     "project_share": 0.029,
+     "evidence_gap_pp": 11.0,
+     "suggested_evidence": "a notebook/pipeline on Databricks or PySpark with cluster/cost notes"
+    },
+    {
+     "capability": "Certification (any)",
+     "demand_share": 0.128,
+     "supply_any_share": 0.04,
+     "project_share": 0.018,
+     "evidence_gap_pp": 11.0,
+     "suggested_evidence": null
+    }
+   ],
+   "suggested_evidence_categories": [
+    "READMEs with a business-context section, a one-page summary, a case study",
+    "a DAG with retries, schedules and logging",
+    "a DiD/propensity/synthetic-control analysis with identification assumptions written out",
+    "a Dockerfile/compose that reproduces the project",
+    "a FastAPI/Flask endpoint serving a model or data product",
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a controlling/forecast or risk dataset project with KPI definitions",
+    "a deployed dashboard or app (Streamlit/Power BI) with a screenshot and the questions it answers"
+   ]
+  },
+  "data_science": {
+   "label": "Data science",
+   "employer_requirements": {
+    "open_postings_AT": 158,
+    "styria": 13,
+    "top_tech_skills": [
+     "AI (generic) (82%)",
+     "Python (73%)",
+     "Machine Learning (55%)",
+     "Generative AI / LLM (53%)",
+     "Cloud (generic) (48%)",
+     "SQL (36%)",
+     "Azure (34%)",
+     "CI/CD (31%)",
+     "Statistics (general) (29%)",
+     "REST APIs (29%)",
+     "RAG (28%)",
+     "AI agents / tool-calling (25%)",
+     "AWS (24%)",
+     "MLOps (23%)",
+     "Git (23%)"
+    ],
+    "top_business_context": [
+     "Requirements/Business Analysis (27%)",
+     "Consulting (25%)",
+     "Public Sector/Research (24%)",
+     "Project Management (23%)",
+     "Operations/Manufacturing (22%)",
+     "Banking/Insurance (19%)",
+     "Risk/Actuarial (13%)",
+     "Sales/Commercial (12%)"
+    ],
+    "german_required_share": 0.33,
+    "english_posting_share": 0.44,
+    "degree_required_share": 0.34,
+    "median_advertised_min_salary_eur": 55356.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 638,
+    "share_of_bio_declared": 0.732,
+    "styria": 38,
+    "vienna": 359,
+    "students": 127,
+    "relative_representation_vs_demand": 3.33,
+    "top_skills_any_evidence": [
+     "Python (67%)",
+     "Jupyter (52%)",
+     "Machine Learning (43%)",
+     "Data Visualization (39%)",
+     "Bash/Shell (38%)",
+     "AI (generic) (37%)",
+     "JavaScript (34%)",
+     "Public Sector/Research (26%)",
+     "R (21%)",
+     "Generative AI / LLM (20%)",
+     "REST APIs (20%)",
+     "Classification (20%)"
+    ],
+    "seniority_wording": {
+     "junior": 18,
+     "lead_head": 25,
+     "senior": 30,
+     "student": 127,
+     "unlabelled": 438
+    },
+    "education_wording": [
+     "Student (current) (19%)",
+     "Master (18%)",
+     "PhD (9%)",
+     "Bachelor (6%)",
+     "Bootcamp (1%)"
+    ],
+    "certification_wording": [
+     "Coursera/edX/Udemy (any) (7%)",
+     "Certification (any mention) (3%)",
+     "Bootcamp (2%)",
+     "IBM Data Science Certificate (1%)",
+     "Scrum/PM cert (1%)",
+     "DataCamp (1%)"
+    ],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [
+     "ds_method:classification (15%)",
+     "ds_method:nlp (14%)",
+     "ai:llm_app (9%)",
+     "ds_method:computer_vision (7%)",
+     "analytics_domain:healthcare (6%)",
+     "ds_method:clustering (5%)",
+     "ds_method:descriptive_eda (5%)",
+     "analytics_domain:media_entertainment (5%)",
+     "ds_method:regression (4%)",
+     "ds_method:forecasting (4%)"
+    ],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "GitHub Actions running tests on every push",
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a model with baseline comparison, evaluation and a leakage note",
+    "a pipeline or model deployed on Azure with infrastructure notes",
+    "a repository with modules, tests and a README that states the question and the result",
+    "commit history and branches on every project (visible by construction)",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  },
+  "data_engineering": {
+   "label": "Data engineering",
+   "employer_requirements": {
+    "open_postings_AT": 160,
+    "styria": 20,
+    "top_tech_skills": [
+     "SQL (69%)",
+     "ETL/ELT (60%)",
+     "Python (55%)",
+     "Cloud (generic) (45%)",
+     "Data Governance/Quality (44%)",
+     "Azure (38%)",
+     "Data Modeling (38%)",
+     "CI/CD (34%)",
+     "Data Visualization (32%)",
+     "Databricks (29%)",
+     "AI (generic) (28%)",
+     "Data Warehouse (generic) (28%)",
+     "Data Lake/Lakehouse (24%)",
+     "Power BI (19%)",
+     "Microsoft Fabric (18%)"
+    ],
+    "top_business_context": [
+     "Consulting (24%)",
+     "Operations/Manufacturing (22%)",
+     "Public Sector/Research (19%)",
+     "Finance/Controlling (14%)",
+     "Requirements/Business Analysis (14%)",
+     "Risk/Actuarial (12%)",
+     "SAP (ERP) (11%)",
+     "Banking/Insurance (11%)"
+    ],
+    "german_required_share": 0.36,
+    "english_posting_share": 0.22,
+    "degree_required_share": 0.26,
+    "median_advertised_min_salary_eur": 55356.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 58,
+    "share_of_bio_declared": 0.067,
+    "styria": 4,
+    "vienna": 24,
+    "students": 2,
+    "relative_representation_vs_demand": 0.3,
+    "top_skills_any_evidence": [
+     "Python (53%)",
+     "Jupyter (38%)",
+     "JavaScript (29%)",
+     "Bash/Shell (29%)",
+     "SQL (28%)",
+     "Data Visualization (28%)",
+     "Java (21%)",
+     "ETL/ELT (19%)",
+     "Docker (19%)",
+     "pandas (19%)",
+     "AI (generic) (17%)",
+     "Cloud (generic) (17%)"
+    ],
+    "seniority_wording": {
+     "junior": 1,
+     "lead_head": 3,
+     "senior": 5,
+     "student": 2,
+     "unlabelled": 47
+    },
+    "education_wording": [
+     "Master (16%)",
+     "Student (current) (5%)",
+     "Bachelor (3%)",
+     "PhD (2%)",
+     "Bootcamp (2%)"
+    ],
+    "certification_wording": [
+     "Coursera/edX/Udemy (any) (5%)",
+     "IBM Data Science Certificate (2%)",
+     "DataCamp (2%)",
+     "Certification (any mention) (2%)",
+     "Bootcamp (2%)"
+    ],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [
+     "engineering:etl_pipeline (18%)",
+     "engineering:warehouse_modelling (17%)",
+     "engineering:infrastructure (15%)",
+     "ds_method:nlp (10%)",
+     "engineering:orchestration (8%)",
+     "engineering:streaming (7%)",
+     "ds_method:descriptive_eda (6%)",
+     "analytics_domain:healthcare (5%)",
+     "analytics_domain:sales (5%)",
+     "analytics_domain:sustainability (5%)"
+    ],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Databricks/Spark",
+     "demand_share": 0.139,
+     "supply_any_share": 0.056,
+     "project_share": 0.029,
+     "evidence_gap_pp": 11.0,
+     "suggested_evidence": "a notebook/pipeline on Databricks or PySpark with cluster/cost notes"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "GitHub Actions running tests on every push",
+    "a notebook/pipeline on Databricks or PySpark with cluster/cost notes",
+    "a pipeline or model deployed on Azure with infrastructure notes",
+    "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)",
+    "a repository with modules, tests and a README that states the question and the result",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  },
+  "bi": {
+   "label": "BI",
+   "employer_requirements": {
+    "open_postings_AT": 85,
+    "styria": 5,
+    "top_tech_skills": [
+     "Data Visualization (86%)",
+     "SQL (52%)",
+     "Power BI (51%)",
+     "Data Modeling (33%)",
+     "AI (generic) (31%)",
+     "SAP BW/BO (28%)",
+     "Cloud (generic) (26%)",
+     "Excel (20%)",
+     "Data Governance/Quality (18%)",
+     "Data Warehouse (generic) (18%)",
+     "ETL/ELT (16%)",
+     "Azure (14%)",
+     "SQL Server (11%)",
+     "Python (11%)",
+     "Statistics (general) (11%)"
+    ],
+    "top_business_context": [
+     "Consulting (55%)",
+     "Finance/Controlling (45%)",
+     "SAP (ERP) (38%)",
+     "Sales/Commercial (18%)",
+     "Requirements/Business Analysis (16%)",
+     "Banking/Insurance (15%)",
+     "Operations/Manufacturing (13%)",
+     "Project Management (13%)"
+    ],
+    "german_required_share": 0.51,
+    "english_posting_share": 0.08,
+    "degree_required_share": 0.34,
+    "median_advertised_min_salary_eur": 52648.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 15,
+    "share_of_bio_declared": 0.017,
+    "styria": 3,
+    "vienna": 5,
+    "students": 0,
+    "relative_representation_vs_demand": 0.15,
+    "top_skills_any_evidence": [
+     "Data Visualization (47%)",
+     "SQL (47%)",
+     "Python (40%)",
+     "Power BI (33%)",
+     "Jupyter (27%)",
+     "Machine Learning (20%)",
+     "AI (generic) (20%)",
+     "Java (13%)",
+     "Finance/Controlling (13%)",
+     "Data Governance/Quality (13%)",
+     "Generative AI / LLM (13%)",
+     "DAX/M (13%)"
+    ],
+    "seniority_wording": {
+     "junior": 0,
+     "lead_head": 1,
+     "senior": 1,
+     "student": 0,
+     "unlabelled": 13
+    },
+    "education_wording": [
+     "Master (13%)"
+    ],
+    "certification_wording": [
+     "Coursera/edX/Udemy (any) (7%)"
+    ],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [
+     "ai:llm_app (19%)",
+     "analytics_domain:customer (12%)",
+     "analytics_domain:sales (12%)",
+     "analytics_domain:healthcare (6%)",
+     "analytics_domain:mobility (6%)",
+     "analytics_domain:labour_market (6%)",
+     "ds_method:nlp (6%)",
+     "ds_method:forecasting (6%)",
+     "engineering:api_serving (6%)",
+     "engineering:infrastructure (6%)"
+    ],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Excel",
+     "demand_share": 0.178,
+     "supply_any_share": 0.037,
+     "project_share": 0.017,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "not worth a project; mention as a tool"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a pipeline or model deployed on Azure with infrastructure notes",
+    "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)",
+    "a repository with modules, tests and a README that states the question and the result",
+    "not worth a project; mention as a tool",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  },
+  "business_analysis": {
+   "label": "Business analysis",
+   "employer_requirements": {
+    "open_postings_AT": 120,
+    "styria": 4,
+    "top_tech_skills": [
+     "AI (generic) (24%)",
+     "Data Visualization (17%)",
+     "Excel (14%)",
+     "SQL (13%)",
+     "Data Governance/Quality (9%)",
+     "REST APIs (7%)",
+     "R (6%)",
+     "Cloud (generic) (6%)",
+     "Bash/Shell (5%)",
+     "Generative AI / LLM (5%)",
+     "Mathematics (4%)",
+     "CI/CD (4%)",
+     "C# (4%)",
+     "Java (4%)",
+     "Exploratory Analysis (3%)"
+    ],
+    "top_business_context": [
+     "Requirements/Business Analysis (82%)",
+     "Project Management (51%)",
+     "Consulting (37%)",
+     "SAP (ERP) (27%)",
+     "Public Sector/Research (25%)",
+     "Finance/Controlling (24%)",
+     "Supply Chain/Logistics (21%)",
+     "Operations/Manufacturing (18%)"
+    ],
+    "german_required_share": 0.44,
+    "english_posting_share": 0.17,
+    "degree_required_share": 0.32,
+    "median_advertised_min_salary_eur": 55000.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 21,
+    "share_of_bio_declared": 0.024,
+    "styria": 2,
+    "vienna": 9,
+    "students": 1,
+    "relative_representation_vs_demand": 0.14,
+    "top_skills_any_evidence": [
+     "Requirements/Business Analysis (86%)",
+     "Data Visualization (24%)",
+     "JavaScript (24%)",
+     "Consulting (19%)",
+     "Jupyter (14%)",
+     "Finance/Controlling (14%)",
+     "AI (generic) (14%)",
+     "Bash/Shell (10%)",
+     "Predictive Analytics (10%)",
+     "PostgreSQL (10%)",
+     "Python (10%)",
+     "Streaming (10%)"
+    ],
+    "seniority_wording": {
+     "junior": 3,
+     "lead_head": 2,
+     "senior": 3,
+     "student": 1,
+     "unlabelled": 12
+    },
+    "education_wording": [
+     "Master (5%)",
+     "Student (current) (5%)"
+    ],
+    "certification_wording": [],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "Stakeholder / communication",
+     "demand_share": 0.803,
+     "supply_any_share": 0.0,
+     "project_share": 0.0,
+     "evidence_gap_pp": 80.3,
+     "suggested_evidence": "READMEs with a business-context section, a one-page summary, a case study"
+    },
+    {
+     "capability": "Project management / consulting",
+     "demand_share": 0.438,
+     "supply_any_share": 0.046,
+     "project_share": 0.007,
+     "evidence_gap_pp": 43.1,
+     "suggested_evidence": null
+    },
+    {
+     "capability": "Finance / controlling / risk",
+     "demand_share": 0.409,
+     "supply_any_share": 0.188,
+     "project_share": 0.098,
+     "evidence_gap_pp": 31.1,
+     "suggested_evidence": "a controlling/forecast or risk dataset project with KPI definitions"
+    },
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Data quality / governance",
+     "demand_share": 0.306,
+     "supply_any_share": 0.081,
+     "project_share": 0.051,
+     "evidence_gap_pp": 25.5,
+     "suggested_evidence": "explicit validation rules, data-quality tests (e.g. Great Expectations/dbt tests) and a lineage note"
+    },
+    {
+     "capability": "Requirements / business analysis",
+     "demand_share": 0.291,
+     "supply_any_share": 0.028,
+     "project_share": 0.009,
+     "evidence_gap_pp": 28.2,
+     "suggested_evidence": "a requirements/case-study document alongside the code"
+    },
+    {
+     "capability": "Data warehouse / modelling",
+     "demand_share": 0.252,
+     "supply_any_share": 0.041,
+     "project_share": 0.024,
+     "evidence_gap_pp": 22.8,
+     "suggested_evidence": "a dimensional model (dbt or SQL) with documentation of grain, facts and dimensions"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Excel",
+     "demand_share": 0.178,
+     "supply_any_share": 0.037,
+     "project_share": 0.017,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "not worth a project; mention as a tool"
+    },
+    {
+     "capability": "Sales / commercial",
+     "demand_share": 0.157,
+     "supply_any_share": 0.087,
+     "project_share": 0.065,
+     "evidence_gap_pp": 9.2,
+     "suggested_evidence": null
+    },
+    {
+     "capability": "Databricks/Spark",
+     "demand_share": 0.139,
+     "supply_any_share": 0.056,
+     "project_share": 0.029,
+     "evidence_gap_pp": 11.0,
+     "suggested_evidence": "a notebook/pipeline on Databricks or PySpark with cluster/cost notes"
+    },
+    {
+     "capability": "Certification (any)",
+     "demand_share": 0.128,
+     "supply_any_share": 0.04,
+     "project_share": 0.018,
+     "evidence_gap_pp": 11.0,
+     "suggested_evidence": null
+    }
+   ],
+   "suggested_evidence_categories": [
+    "GitHub Actions running tests on every push",
+    "READMEs with a business-context section, a one-page summary, a case study",
+    "a DAG with retries, schedules and logging",
+    "a DiD/propensity/synthetic-control analysis with identification assumptions written out",
+    "a Dockerfile/compose that reproduces the project",
+    "a FastAPI/Flask endpoint serving a model or data product",
+    "a controlling/forecast or risk dataset project with KPI definitions",
+    "a deployed dashboard or app (Streamlit/Power BI) with a screenshot and the questions it answers"
+   ]
+  },
+  "data_governance": {
+   "label": "Data governance",
+   "employer_requirements": {
+    "open_postings_AT": 65,
+    "styria": 5,
+    "top_tech_skills": [
+     "Data Governance/Quality (82%)",
+     "Excel (26%)",
+     "AI (generic) (23%)",
+     "Data Visualization (18%)",
+     "SQL (14%)",
+     "Statistics (general) (12%)",
+     "Mathematics (9%)",
+     "Python (9%)",
+     "Power BI (8%)",
+     "Cloud (generic) (8%)",
+     "Azure (5%)",
+     "Classification (5%)",
+     "Data Modeling (5%)",
+     "Data Warehouse (generic) (5%)",
+     "Streaming (5%)"
+    ],
+    "top_business_context": [
+     "SAP (ERP) (29%)",
+     "Banking/Insurance (26%)",
+     "Consulting (22%)",
+     "Public Sector/Research (20%)",
+     "Requirements/Business Analysis (20%)",
+     "Finance/Controlling (18%)",
+     "Operations/Manufacturing (18%)",
+     "Sales/Commercial (17%)"
+    ],
+    "german_required_share": 0.4,
+    "english_posting_share": 0.2,
+    "degree_required_share": 0.34,
+    "median_advertised_min_salary_eur": 45500.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 7,
+    "share_of_bio_declared": 0.008,
+    "styria": 1,
+    "vienna": 3,
+    "students": 1,
+    "relative_representation_vs_demand": 0.09,
+    "top_skills_any_evidence": [
+     "Data Governance/Quality (71%)",
+     "Python (57%)",
+     "Jupyter (57%)",
+     "Data Visualization (43%)",
+     "Public Sector/Research (29%)",
+     "Bash/Shell (14%)",
+     "Docker (14%)",
+     "R (14%)",
+     "Statistics (general) (14%)",
+     "Cloud (generic) (14%)",
+     "Healthcare/Pharma/Bio (14%)",
+     "MATLAB (14%)"
+    ],
+    "seniority_wording": {
+     "junior": 0,
+     "lead_head": 1,
+     "senior": 0,
+     "student": 1,
+     "unlabelled": 5
+    },
+    "education_wording": [
+     "Bachelor (14%)",
+     "Master (14%)"
+    ],
+    "certification_wording": [],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [
+     "analytics_domain:finance (13%)",
+     "ds_method:classification (13%)",
+     "engineering:infrastructure (13%)",
+     "analytics_domain:customer (7%)",
+     "ds_method:anomaly_detection (7%)",
+     "ds_method:descriptive_eda (7%)",
+     "ds_method:clustering (7%)",
+     "ds_method:computer_vision (7%)"
+    ],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Azure",
+     "demand_share": 0.193,
+     "supply_any_share": 0.051,
+     "project_share": 0.032,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "a pipeline or model deployed on Azure with infrastructure notes"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Excel",
+     "demand_share": 0.178,
+     "supply_any_share": 0.037,
+     "project_share": 0.017,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "not worth a project; mention as a tool"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a pipeline or model deployed on Azure with infrastructure notes",
+    "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)",
+    "a repository with modules, tests and a README that states the question and the result",
+    "not worth a project; mention as a tool",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  },
+  "marketing_analytics": {
+   "label": "Marketing analytics",
+   "employer_requirements": {
+    "open_postings_AT": 24,
+    "styria": 0,
+    "top_tech_skills": [
+     "SQL (54%)",
+     "Data Visualization (50%)",
+     "Data Governance/Quality (50%)",
+     "Google Analytics (46%)",
+     "AI (generic) (42%)",
+     "Excel (38%)",
+     "Power BI (33%)",
+     "Cloud (generic) (29%)",
+     "BigQuery (25%)",
+     "Generative AI / LLM (25%)",
+     "Matomo (25%)",
+     "Statistics (general) (25%)",
+     "Segmentation/Clustering (21%)",
+     "JavaScript (21%)",
+     "Mathematics (17%)"
+    ],
+    "top_business_context": [
+     "Marketing (100%)",
+     "Digital/Online Marketing (71%)",
+     "Web/Digital Analytics (54%)",
+     "Consulting (50%)",
+     "CRM (46%)",
+     "Sales/Commercial (42%)",
+     "Customer Analytics (42%)",
+     "Product Analytics (38%)"
+    ],
+    "german_required_share": 0.33,
+    "english_posting_share": 0.17,
+    "degree_required_share": 0.21,
+    "median_advertised_min_salary_eur": 42000.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 2,
+    "share_of_bio_declared": 0.002,
+    "styria": 1,
+    "vienna": 1,
+    "students": 0,
+    "relative_representation_vs_demand": 0.07,
+    "top_skills_any_evidence": [],
+    "seniority_wording": {
+     "junior": 0,
+     "lead_head": 1,
+     "senior": 1,
+     "student": 0,
+     "unlabelled": 0
+    },
+    "education_wording": [],
+    "certification_wording": [],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    },
+    {
+     "capability": "Power BI",
+     "demand_share": 0.185,
+     "supply_any_share": 0.031,
+     "project_share": 0.02,
+     "evidence_gap_pp": 16.5,
+     "suggested_evidence": "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)"
+    },
+    {
+     "capability": "Excel",
+     "demand_share": 0.178,
+     "supply_any_share": 0.037,
+     "project_share": 0.017,
+     "evidence_gap_pp": 16.1,
+     "suggested_evidence": "not worth a project; mention as a tool"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a published report or screenshots plus the data model and DAX in the repo (Power BI itself leaves no code trace)",
+    "a warehouse project on a free tier with cost notes",
+    "not worth a project; mention as a tool",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  },
+  "product_analytics": {
+   "label": "Product analytics",
+   "employer_requirements": {
+    "open_postings_AT": 1,
+    "styria": 0,
+    "top_tech_skills": [
+     "A/B Testing / Experimentation (100%)",
+     "AI (generic) (100%)",
+     "AI agents / tool-calling (100%)",
+     "Data Governance/Quality (100%)",
+     "Data Visualization (100%)",
+     "ETL/ELT (100%)",
+     "Hypothesis Testing (100%)",
+     "Machine Learning (100%)",
+     "Python (100%)",
+     "SQL (100%)",
+     "Segmentation/Clustering (100%)",
+     "Statistics (general) (100%)"
+    ],
+    "top_business_context": [
+     "Marketing (100%)",
+     "Customer Analytics (100%)",
+     "Product Analytics (100%)",
+     "Web/Digital Analytics (100%)",
+     "Public Sector/Research (100%)"
+    ],
+    "german_required_share": 0.0,
+    "english_posting_share": 1.0,
+    "degree_required_share": 1.0,
+    "median_advertised_min_salary_eur": 63000.0,
+    "source": "T14/T02"
+   },
+   "candidate_supply": {
+    "bio_declared_candidates": 2,
+    "share_of_bio_declared": 0.002,
+    "styria": 0,
+    "vienna": 1,
+    "students": 0,
+    "relative_representation_vs_demand": 1.65,
+    "top_skills_any_evidence": [],
+    "seniority_wording": {
+     "junior": 0,
+     "lead_head": 0,
+     "senior": 1,
+     "student": 0,
+     "unlabelled": 1
+    },
+    "education_wording": [],
+    "certification_wording": [],
+    "source": "C04/C10b/C06b/C08d/C09c"
+   },
+   "common_candidate_evidence": {
+    "project_topics_by_family": [],
+    "formats_all_projects": [
+     "notebook (43%)",
+     "python_package_or_src (41%)",
+     "license (34%)",
+     "data_included (30%)",
+     "reproducible_env (29%)"
+    ],
+    "source": "C18b/C17"
+   },
+   "rare_candidate_evidence": {
+    "formats_under_10pct": [
+     "sql_files (1%)",
+     "r_markdown_quarto (3%)",
+     "model_artifacts (6%)",
+     "streamlit_gradio_app (6%)",
+     "gh_pages_site (7%)",
+     "pipeline_project (7%)",
+     "dashboard_bi (8%)",
+     "docker (9%)",
+     "api (9%)",
+     "makefile_scripts (10%)"
+    ],
+    "capabilities_rarely_project_demonstrated": [
+     "Stakeholder / communication",
+     "Project management / consulting",
+     "Finance / controlling / risk",
+     "SQL",
+     "Cloud (any)",
+     "Data quality / governance",
+     "Requirements / business analysis",
+     "Data warehouse / modelling",
+     "SAP",
+     "Azure",
+     "Power BI",
+     "Excel",
+     "Sales / commercial"
+    ],
+    "source": "C17/DS10"
+   },
+   "potential_evidence_gaps_for_this_family": [
+    {
+     "capability": "SQL",
+     "demand_share": 0.406,
+     "supply_any_share": 0.191,
+     "project_share": 0.103,
+     "evidence_gap_pp": 30.3,
+     "suggested_evidence": "queries over a modelled schema (star schema, window functions) with results in the README"
+    }
+   ],
+   "suggested_evidence_categories": [
+    "a README results section with intervals, effect sizes and stated assumptions",
+    "a model with baseline comparison, evaluation and a leakage note",
+    "a repository with modules, tests and a README that states the question and the result",
+    "queries over a modelled schema (star schema, window functions) with results in the README"
+   ]
+  }
+ },
+ "cross_family": {
+  "demanded_rarely_project_demonstrated": [
+   {
+    "category": "Stakeholder / communication",
+    "group": "business",
+    "demand_share": 0.803,
+    "supply_any_share": 0.0,
+    "supply_project_share": 0.0,
+    "evidence_gap_pp": 80.3
+   },
+   {
+    "category": "Project management / consulting",
+    "group": "business",
+    "demand_share": 0.438,
+    "supply_any_share": 0.046,
+    "supply_project_share": 0.007,
+    "evidence_gap_pp": 43.1
+   },
+   {
+    "category": "Finance / controlling / risk",
+    "group": "domain",
+    "demand_share": 0.409,
+    "supply_any_share": 0.188,
+    "supply_project_share": 0.098,
+    "evidence_gap_pp": 31.1
+   },
+   {
+    "category": "SQL",
+    "group": "tool",
+    "demand_share": 0.406,
+    "supply_any_share": 0.191,
+    "supply_project_share": 0.103,
+    "evidence_gap_pp": 30.3
+   },
+   {
+    "category": "Cloud (any)",
+    "group": "tool",
+    "demand_share": 0.349,
+    "supply_any_share": 0.212,
+    "supply_project_share": 0.123,
+    "evidence_gap_pp": 22.6
+   },
+   {
+    "category": "Data quality / governance",
+    "group": "technical",
+    "demand_share": 0.306,
+    "supply_any_share": 0.081,
+    "supply_project_share": 0.051,
+    "evidence_gap_pp": 25.5
+   },
+   {
+    "category": "Requirements / business analysis",
+    "group": "business",
+    "demand_share": 0.291,
+    "supply_any_share": 0.028,
+    "supply_project_share": 0.009,
+    "evidence_gap_pp": 28.2
+   },
+   {
+    "category": "Data warehouse / modelling",
+    "group": "technical",
+    "demand_share": 0.252,
+    "supply_any_share": 0.041,
+    "supply_project_share": 0.024,
+    "evidence_gap_pp": 22.8
+   },
+   {
+    "category": "SAP",
+    "group": "tool",
+    "demand_share": 0.195,
+    "supply_any_share": 0.006,
+    "supply_project_share": 0.004,
+    "evidence_gap_pp": 19.1
+   },
+   {
+    "category": "Azure",
+    "group": "tool",
+    "demand_share": 0.193,
+    "supply_any_share": 0.051,
+    "supply_project_share": 0.032,
+    "evidence_gap_pp": 16.1
+   },
+   {
+    "category": "Power BI",
+    "group": "tool",
+    "demand_share": 0.185,
+    "supply_any_share": 0.031,
+    "supply_project_share": 0.02,
+    "evidence_gap_pp": 16.5
+   },
+   {
+    "category": "Excel",
+    "group": "tool",
+    "demand_share": 0.178,
+    "supply_any_share": 0.037,
+    "supply_project_share": 0.017,
+    "evidence_gap_pp": 16.1
+   },
+   {
+    "category": "Sales / commercial",
+    "group": "domain",
+    "demand_share": 0.157,
+    "supply_any_share": 0.087,
+    "supply_project_share": 0.065,
+    "evidence_gap_pp": 9.2
+   },
+   {
+    "category": "Databricks/Spark",
+    "group": "tool",
+    "demand_share": 0.139,
+    "supply_any_share": 0.056,
+    "supply_project_share": 0.029,
+    "evidence_gap_pp": 11.0
+   },
+   {
+    "category": "Certification (any)",
+    "group": "credential",
+    "demand_share": 0.128,
+    "supply_any_share": 0.04,
+    "supply_project_share": 0.018,
+    "evidence_gap_pp": 11.0
+   }
+  ],
+  "core_market_capabilities": [
+   {
+    "category": "AI (generic wording)",
+    "demand_share": 0.384,
+    "supply_any_share": 0.425,
+    "supply_project_share": 0.211
+   },
+   {
+    "category": "Data visualisation / dashboards",
+    "demand_share": 0.381,
+    "supply_any_share": 0.543,
+    "supply_project_share": 0.359
+   },
+   {
+    "category": "Python",
+    "demand_share": 0.352,
+    "supply_any_share": 0.738,
+    "supply_project_share": 0.45
+   },
+   {
+    "category": "Operations / manufacturing / supply chain",
+    "demand_share": 0.339,
+    "supply_any_share": 0.315,
+    "supply_project_share": 0.183
+   },
+   {
+    "category": "ETL / data pipelines",
+    "demand_share": 0.223,
+    "supply_any_share": 0.227,
+    "supply_project_share": 0.144
+   },
+   {
+    "category": "GenAI / LLM",
+    "demand_share": 0.193,
+    "supply_any_share": 0.336,
+    "supply_project_share": 0.224
+   },
+   {
+    "category": "Public sector / research",
+    "demand_share": 0.191,
+    "supply_any_share": 0.321,
+    "supply_project_share": 0.171
+   },
+   {
+    "category": "Marketing / CRM / web analytics",
+    "demand_share": 0.185,
+    "supply_any_share": 0.237,
+    "supply_project_share": 0.128
+   },
+   {
+    "category": "Statistics",
+    "demand_share": 0.179,
+    "supply_any_share": 0.283,
+    "supply_project_share": 0.159
+   },
+   {
+    "category": "Machine learning",
+    "demand_share": 0.175,
+    "supply_any_share": 0.538,
+    "supply_project_share": 0.307
+   },
+   {
+    "category": "CI/CD & tests",
+    "demand_share": 0.152,
+    "supply_any_share": 0.34,
+    "supply_project_share": 0.237
+   }
+  ],
+  "commonly_evidenced_less_demanded": [
+   {
+    "category": "Software engineering (Java/Scala/C#)",
+    "demand_share": 0.127,
+    "supply_any_share": 0.768
+   },
+   {
+    "category": "Exploratory analysis",
+    "demand_share": 0.102,
+    "supply_any_share": 0.605
+   },
+   {
+    "category": "Deep learning / NLP / CV",
+    "demand_share": 0.064,
+    "supply_any_share": 0.494
+   },
+   {
+    "category": "Regression / predictive modelling",
+    "demand_share": 0.082,
+    "supply_any_share": 0.408
+   },
+   {
+    "category": "REST / APIs",
+    "demand_share": 0.118,
+    "supply_any_share": 0.356
+   },
+   {
+    "category": "MLOps / deployment",
+    "demand_share": 0.089,
+    "supply_any_share": 0.248
+   },
+   {
+    "category": "Docker",
+    "demand_share": 0.061,
+    "supply_any_share": 0.241
+   },
+   {
+    "category": "Segmentation / clustering",
+    "demand_share": 0.056,
+    "supply_any_share": 0.202
+   },
+   {
+    "category": "R",
+    "demand_share": 0.071,
+    "supply_any_share": 0.2
+   },
+   {
+    "category": "Healthcare / life sciences",
+    "demand_share": 0.086,
+    "supply_any_share": 0.178
+   },
+   {
+    "category": "Forecasting / time series",
+    "demand_share": 0.061,
+    "supply_any_share": 0.108
+   },
+   {
+    "category": "Kafka/Streaming",
+    "demand_share": 0.076,
+    "supply_any_share": 0.104
+   }
+  ],
+  "portfolio_evidence_prevalence": [
+   {
+    "evidence": "LinkedIn link on profile/READMEs",
+    "count": 662,
+    "n": 1818,
+    "share": 0.364
+   },
+   {
+    "evidence": "Kaggle link",
+    "count": 168,
+    "n": 1818,
+    "share": 0.092
+   },
+   {
+    "evidence": "personal website (custom domain)",
+    "count": 659,
+    "n": 1818,
+    "share": 0.362
+   },
+   {
+    "evidence": "GitHub Pages site",
+    "count": 343,
+    "n": 1818,
+    "share": 0.189
+   },
+   {
+    "evidence": "Medium/Substack/dev.to blog link",
+    "count": 107,
+    "n": 1818,
+    "share": 0.059
+   },
+   {
+    "evidence": "Tableau Public link",
+    "count": 10,
+    "n": 1818,
+    "share": 0.006
+   },
+   {
+    "evidence": "Hugging Face link",
+    "count": 102,
+    "n": 1818,
+    "share": 0.056
+   },
+   {
+    "evidence": "Streamlit/HF Space app link",
+    "count": 44,
+    "n": 1818,
+    "share": 0.024
+   },
+   {
+    "evidence": "Google Scholar/ORCID/ResearchGate",
+    "count": 74,
+    "n": 1818,
+    "share": 0.041
+   },
+   {
+    "evidence": "X/Twitter",
+    "count": 257,
+    "n": 1818,
+    "share": 0.141
+   },
+   {
+    "evidence": "XING",
+    "count": 0,
+    "n": 1818,
+    "share": 0.0
+   },
+   {
+    "evidence": "≥1 notebook-format project",
+    "count": 994,
+    "n": 1818,
+    "share": 0.547
+   },
+   {
+    "evidence": "≥1 dashboard/BI-format project",
+    "count": 370,
+    "n": 1818,
+    "share": 0.204
+   },
+   {
+    "evidence": "≥1 deployed app (Streamlit/Gradio/Shiny)",
+    "count": 276,
+    "n": 1818,
+    "share": 0.152
+   },
+   {
+    "evidence": "≥1 API project",
+    "count": 407,
+    "n": 1818,
+    "share": 0.224
+   },
+   {
+    "evidence": "≥1 project with tests",
+    "count": 449,
+    "n": 1818,
+    "share": 0.247
+   },
+   {
+    "evidence": "≥1 project with CI",
+    "count": 405,
+    "n": 1818,
+    "share": 0.223
+   },
+   {
+    "evidence": "≥1 project with Docker",
+    "count": 352,
+    "n": 1818,
+    "share": 0.194
+   },
+   {
+    "evidence": "≥1 academic paper/thesis repo",
+    "count": 430,
+    "n": 1818,
+    "share": 0.237
+   },
+   {
+    "evidence": "≥1 Kaggle/competition repo",
+    "count": 457,
+    "n": 1818,
+    "share": 0.251
+   },
+   {
+    "evidence": "≥1 pipeline/dbt/Airflow project",
+    "count": 318,
+    "n": 1818,
+    "share": 0.175
+   },
+   {
+    "evidence": "≥1 report/slides format",
+    "count": 526,
+    "n": 1818,
+    "share": 0.289
+   }
+  ]
+ }
+}

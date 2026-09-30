@@ -1,0 +1,121 @@
+capability_a,capability_b,both,n,share_both,lift
+Python,Software engineering (Java/Scala/C#),1184,1818,0.651,1.15
+Exploratory analysis,Python,985,1818,0.542,1.22
+Exploratory analysis,Software engineering (Java/Scala/C#),968,1818,0.532,1.15
+Data visualisation / dashboards,Software engineering (Java/Scala/C#),900,1818,0.495,1.19
+Data visualisation / dashboards,Python,868,1818,0.477,1.19
+Machine learning,Python,860,1818,0.473,1.19
+Machine learning,Software engineering (Java/Scala/C#),859,1818,0.472,1.14
+Deep learning / NLP / CV,Software engineering (Java/Scala/C#),837,1818,0.46,1.21
+Deep learning / NLP / CV,Python,817,1818,0.449,1.23
+Exploratory analysis,Machine learning,768,1818,0.422,1.3
+Data visualisation / dashboards,Exploratory analysis,766,1818,0.421,1.28
+AI (generic wording),Software engineering (Java/Scala/C#),702,1818,0.386,1.18
+Deep learning / NLP / CV,Exploratory analysis,697,1818,0.383,1.28
+Machine learning,Regression / predictive modelling,690,1818,0.38,1.73
+Python,Regression / predictive modelling,689,1818,0.379,1.26
+Regression / predictive modelling,Software engineering (Java/Scala/C#),685,1818,0.377,1.2
+Deep learning / NLP / CV,Machine learning,682,1818,0.375,1.41
+AI (generic wording),Python,680,1818,0.374,1.19
+Data visualisation / dashboards,Machine learning,654,1818,0.36,1.23
+REST / APIs,Software engineering (Java/Scala/C#),637,1818,0.35,1.28
+Exploratory analysis,Regression / predictive modelling,629,1818,0.346,1.4
+CI/CD & tests,Software engineering (Java/Scala/C#),604,1818,0.332,1.27
+Data visualisation / dashboards,Deep learning / NLP / CV,602,1818,0.331,1.23
+Python,REST / APIs,593,1818,0.326,1.24
+AI (generic wording),Deep learning / NLP / CV,592,1818,0.326,1.55
+GenAI / LLM,Software engineering (Java/Scala/C#),581,1818,0.32,1.24
+GenAI / LLM,Python,561,1818,0.309,1.24
+Deep learning / NLP / CV,Regression / predictive modelling,556,1818,0.306,1.52
+Data visualisation / dashboards,Regression / predictive modelling,548,1818,0.301,1.36
+CI/CD & tests,Python,534,1818,0.294,1.17
+AI (generic wording),Exploratory analysis,533,1818,0.293,1.14
+Operations / manufacturing / supply chain,Software engineering (Java/Scala/C#),533,1818,0.293,1.21
+Deep learning / NLP / CV,GenAI / LLM,521,1818,0.287,1.72
+Operations / manufacturing / supply chain,Python,516,1818,0.284,1.22
+AI (generic wording),GenAI / LLM,515,1818,0.283,1.98
+Public sector / research,Software engineering (Java/Scala/C#),515,1818,0.283,1.15
+AI (generic wording),Data visualisation / dashboards,514,1818,0.283,1.22
+AI (generic wording),Machine learning,514,1818,0.283,1.24
+Public sector / research,Python,502,1818,0.276,1.17
+Deep learning / NLP / CV,REST / APIs,469,1818,0.258,1.46
+Data visualisation / dashboards,REST / APIs,464,1818,0.255,1.32
+Exploratory analysis,REST / APIs,452,1818,0.249,1.15
+Software engineering (Java/Scala/C#),Statistics,449,1818,0.247,1.14
+Python,Statistics,448,1818,0.246,1.18
+Exploratory analysis,GenAI / LLM,448,1818,0.246,1.21
+Exploratory analysis,Public sector / research,445,1818,0.245,1.26
+Data visualisation / dashboards,GenAI / LLM,442,1818,0.243,1.33
+CI/CD & tests,Data visualisation / dashboards,440,1818,0.242,1.31
+Exploratory analysis,Operations / manufacturing / supply chain,440,1818,0.242,1.27
+MLOps / deployment,Software engineering (Java/Scala/C#),437,1818,0.24,1.26
+CI/CD & tests,Exploratory analysis,432,1818,0.238,1.15
+Machine learning,REST / APIs,431,1818,0.237,1.24
+GenAI / LLM,Machine learning,430,1818,0.237,1.31
+Docker,Software engineering (Java/Scala/C#),429,1818,0.236,1.27
+MLOps / deployment,Python,429,1818,0.236,1.29
+AI (generic wording),REST / APIs,428,1818,0.235,1.55
+Data visualisation / dashboards,Operations / manufacturing / supply chain,428,1818,0.235,1.38
+AI (generic wording),Regression / predictive modelling,421,1818,0.232,1.33
+CI/CD & tests,Deep learning / NLP / CV,406,1818,0.223,1.33
+Exploratory analysis,Statistics,404,1818,0.222,1.3
+Machine learning,Public sector / research,401,1818,0.221,1.28
+Docker,Python,398,1818,0.219,1.23
+Data visualisation / dashboards,Public sector / research,397,1818,0.218,1.25
+ETL / data pipelines,Software engineering (Java/Scala/C#),394,1818,0.217,1.24
+Data visualisation / dashboards,Statistics,392,1818,0.216,1.4
+Machine learning,Operations / manufacturing / supply chain,392,1818,0.216,1.27
+Marketing / CRM / web analytics,Software engineering (Java/Scala/C#),390,1818,0.215,1.18
+ETL / data pipelines,Python,387,1818,0.213,1.27
+CI/CD & tests,Machine learning,385,1818,0.212,1.16
+Deep learning / NLP / CV,Public sector / research,384,1818,0.211,1.33
+Deep learning / NLP / CV,MLOps / deployment,380,1818,0.209,1.7
+Machine learning,Statistics,379,1818,0.208,1.37
+Deep learning / NLP / CV,Operations / manufacturing / supply chain,379,1818,0.208,1.34
+Marketing / CRM / web analytics,Python,379,1818,0.208,1.19
+Cloud (any),Software engineering (Java/Scala/C#),368,1818,0.202,1.24
+AI (generic wording),CI/CD & tests,366,1818,0.201,1.39
+GenAI / LLM,REST / APIs,366,1818,0.201,1.68
+Exploratory analysis,MLOps / deployment,366,1818,0.201,1.34
+GenAI / LLM,Regression / predictive modelling,361,1818,0.199,1.45
+CI/CD & tests,REST / APIs,354,1818,0.195,1.6
+MLOps / deployment,Machine learning,350,1818,0.193,1.44
+REST / APIs,Regression / predictive modelling,348,1818,0.191,1.32
+Cloud (any),Python,345,1818,0.19,1.21
+Python,Segmentation / clustering,343,1818,0.189,1.27
+Operations / manufacturing / supply chain,Regression / predictive modelling,342,1818,0.188,1.46
+Segmentation / clustering,Software engineering (Java/Scala/C#),341,1818,0.188,1.21
+Machine learning,Segmentation / clustering,337,1818,0.185,1.71
+Data visualisation / dashboards,Marketing / CRM / web analytics,336,1818,0.185,1.43
+Public sector / research,Regression / predictive modelling,335,1818,0.184,1.41
+CI/CD & tests,GenAI / LLM,332,1818,0.183,1.6
+Data visualisation / dashboards,MLOps / deployment,332,1818,0.183,1.35
+Regression / predictive modelling,Statistics,325,1818,0.179,1.55
+Exploratory analysis,Marketing / CRM / web analytics,322,1818,0.177,1.24
+ETL / data pipelines,Exploratory analysis,318,1818,0.175,1.27
+CI/CD & tests,Regression / predictive modelling,317,1818,0.174,1.25
+Machine learning,Marketing / CRM / web analytics,316,1818,0.174,1.36
+AI (generic wording),MLOps / deployment,313,1818,0.172,1.63
+Exploratory analysis,Segmentation / clustering,313,1818,0.172,1.41
+Data visualisation / dashboards,Docker,312,1818,0.172,1.31
+Data visualisation / dashboards,ETL / data pipelines,307,1818,0.169,1.37
+Deep learning / NLP / CV,Statistics,307,1818,0.169,1.21
+Deep learning / NLP / CV,ETL / data pipelines,306,1818,0.168,1.5
+Docker,REST / APIs,304,1818,0.167,1.94
+AI (generic wording),Public sector / research,304,1818,0.167,1.23
+Docker,Exploratory analysis,304,1818,0.167,1.15
+AI (generic wording),Operations / manufacturing / supply chain,303,1818,0.167,1.25
+Deep learning / NLP / CV,Docker,301,1818,0.166,1.39
+R,Software engineering (Java/Scala/C#),300,1818,0.165,1.07
+MLOps / deployment,REST / APIs,299,1818,0.164,1.86
+MLOps / deployment,Regression / predictive modelling,299,1818,0.164,1.62
+Finance / controlling / risk,Python,299,1818,0.164,1.19
+ETL / data pipelines,Machine learning,297,1818,0.163,1.34
+SQL,Software engineering (Java/Scala/C#),297,1818,0.163,1.11
+Python,SQL,296,1818,0.163,1.16
+Finance / controlling / risk,Software engineering (Java/Scala/C#),294,1818,0.162,1.12
+Cloud (any),Data visualisation / dashboards,291,1818,0.16,1.39
+Deep learning / NLP / CV,Marketing / CRM / web analytics,291,1818,0.16,1.37
+Docker,Machine learning,287,1818,0.158,1.22
+Data visualisation / dashboards,Segmentation / clustering,286,1818,0.157,1.43
+AI (generic wording),Docker,284,1818,0.156,1.52

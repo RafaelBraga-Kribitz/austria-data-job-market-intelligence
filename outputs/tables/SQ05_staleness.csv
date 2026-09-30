@@ -1,0 +1,3 @@
+population,n,profile_updated_within_12m,share_updated_12m,any_push_12m,share_push_12m,no_push_3y,median_account_age_years,note
+P_all,9409,7440,0.791,4289,0.456,2194,7.7,profile_updated changes with any account activity; a location string may be years old
+P_data,1818,1618,0.89,1187,0.653,209,7.2,profile_updated changes with any account activity; a location string may be years old

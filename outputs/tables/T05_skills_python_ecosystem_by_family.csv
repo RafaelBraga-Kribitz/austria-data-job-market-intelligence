@@ -15,8 +15,8 @@ data_engineering,NumPy,2,160,0.013,0.003,0.044
 data_engineering,scikit-learn,1,160,0.006,0.001,0.035
 data_engineering,FastAPI/Flask,1,160,0.006,0.001,0.035
 data_science,PyTorch,32,157,0.204,0.148,0.274
+data_science,LangChain/LLM frameworks,22,157,0.14,0.094,0.203
 data_science,TensorFlow/Keras,22,157,0.14,0.094,0.203
-data_science,LangChain/LLM frameworks,21,157,0.134,0.089,0.196
 data_science,scikit-learn,20,157,0.127,0.084,0.189
 data_science,pandas,13,157,0.083,0.049,0.137
 data_science,Jupyter,11,157,0.07,0.04,0.121

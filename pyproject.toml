@@ -1,0 +1,20 @@
+# Project metadata and tool configuration only. The code is a set of scripts run in order by run_all.py, not an
+# installable package, so there is no [build-system]; the tested environment is pinned in requirements.txt.
+[project]
+name = "austria-data-job-market-intelligence"
+version = "2026.9.30"
+description = "Austrian data-role job market: employer demand (Layer 1), observed candidate supply (Layer 2), demand x supply (Layer 3)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT (code); CC BY 4.0 (documents and aggregated outputs)" }
+authors = [{ name = "Rafael Braga-Kribitz" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# -rs prints the reason of every skipped test; tests/conftest.py adds a banner listing the skipped integrity checks
+addopts = "-rs"
+# the scripts import each other by module name (e.g. `import normalize`); these folders replace per-file sys.path hacks
+pythonpath = ["src/pipeline", "src/analysis", "src/acquisition", "src/viz", "src/reporting", "src/publish", "."]
+markers = [
+    "value_check: an answer sentence of the visual layer checked against the number in its cited table (tests/test_manifest_values.py)",
+]

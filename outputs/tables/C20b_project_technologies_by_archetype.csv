@@ -1,0 +1,91 @@
+archetype,skill,count,n,share,ci_low,ci_high
+analytics_project,Python,109,206,0.529,0.461,0.596
+analytics_project,Jupyter,99,206,0.481,0.413,0.549
+analytics_project,Data Visualization,95,206,0.461,0.394,0.529
+analytics_project,Bash/Shell,71,206,0.345,0.283,0.412
+analytics_project,matplotlib/seaborn,53,206,0.257,0.202,0.321
+analytics_project,R,51,206,0.248,0.194,0.311
+analytics_project,pandas,45,206,0.218,0.167,0.28
+analytics_project,NumPy,45,206,0.218,0.167,0.28
+analytics_project,Healthcare/Pharma/Bio,30,206,0.146,0.104,0.2
+analytics_project,Statistics (general),25,206,0.121,0.084,0.173
+dashboard_project,Data Visualization,94,116,0.81,0.73,0.871
+dashboard_project,Power BI,42,116,0.362,0.28,0.453
+dashboard_project,Python,40,116,0.345,0.265,0.435
+dashboard_project,Jupyter,30,116,0.259,0.188,0.345
+dashboard_project,Sales/Commercial,27,116,0.233,0.165,0.317
+dashboard_project,SQL,21,116,0.181,0.122,0.261
+dashboard_project,DAX/M,19,116,0.164,0.107,0.242
+dashboard_project,pandas,19,116,0.164,0.107,0.242
+dashboard_project,Tableau,17,116,0.147,0.094,0.222
+dashboard_project,Bash/Shell,17,116,0.147,0.094,0.222
+data_engineering_project,Python,68,133,0.511,0.427,0.595
+data_engineering_project,Jupyter,47,133,0.353,0.277,0.438
+data_engineering_project,Bash/Shell,43,133,0.323,0.25,0.407
+data_engineering_project,Data Visualization,42,133,0.316,0.243,0.399
+data_engineering_project,ETL/ELT,24,133,0.18,0.124,0.254
+data_engineering_project,SQL,22,133,0.165,0.112,0.238
+data_engineering_project,Sales/Commercial,19,133,0.143,0.093,0.212
+data_engineering_project,pandas,18,133,0.135,0.087,0.204
+data_engineering_project,Kafka,15,133,0.113,0.07,0.178
+data_engineering_project,Streaming,15,133,0.113,0.07,0.178
+educational_tutorial,Jupyter,771,1565,0.493,0.468,0.517
+educational_tutorial,Python,770,1565,0.492,0.467,0.517
+educational_tutorial,Bash/Shell,420,1565,0.268,0.247,0.291
+educational_tutorial,Data Visualization,376,1565,0.24,0.22,0.262
+educational_tutorial,Machine Learning,181,1565,0.116,0.101,0.132
+educational_tutorial,AI (generic),178,1565,0.114,0.099,0.13
+educational_tutorial,Generative AI / LLM,173,1565,0.111,0.096,0.127
+educational_tutorial,PyTorch,169,1565,0.108,0.094,0.124
+educational_tutorial,NumPy,168,1565,0.107,0.093,0.124
+educational_tutorial,R,160,1565,0.102,0.088,0.118
+inactive_archive,Jupyter,741,1714,0.432,0.409,0.456
+inactive_archive,Python,557,1714,0.325,0.303,0.348
+inactive_archive,R,332,1714,0.194,0.176,0.213
+inactive_archive,Data Visualization,323,1714,0.188,0.171,0.208
+inactive_archive,Machine Learning,182,1714,0.106,0.092,0.122
+inactive_archive,pandas,129,1714,0.075,0.064,0.089
+inactive_archive,Bash/Shell,127,1714,0.074,0.063,0.087
+inactive_archive,NumPy,122,1714,0.071,0.06,0.084
+inactive_archive,matplotlib/seaborn,117,1714,0.068,0.057,0.081
+inactive_archive,Deep Learning,113,1714,0.066,0.055,0.079
+ml_project,Python,1028,1610,0.639,0.615,0.662
+ml_project,Bash/Shell,682,1610,0.424,0.4,0.448
+ml_project,Jupyter,617,1610,0.383,0.36,0.407
+ml_project,Data Visualization,494,1610,0.307,0.285,0.33
+ml_project,Generative AI / LLM,452,1610,0.281,0.259,0.303
+ml_project,AI (generic),354,1610,0.22,0.2,0.241
+ml_project,Classification,263,1610,0.163,0.146,0.182
+ml_project,REST APIs,257,1610,0.16,0.143,0.178
+ml_project,PyTorch,250,1610,0.155,0.138,0.174
+ml_project,Machine Learning,238,1610,0.148,0.131,0.166
+notebook_portfolio,Jupyter,451,457,0.987,0.972,0.994
+notebook_portfolio,Python,167,457,0.365,0.323,0.411
+notebook_portfolio,Data Visualization,72,457,0.158,0.127,0.194
+notebook_portfolio,Bash/Shell,68,457,0.149,0.119,0.184
+notebook_portfolio,NumPy,42,457,0.092,0.069,0.122
+notebook_portfolio,pandas,35,457,0.077,0.056,0.105
+notebook_portfolio,matplotlib/seaborn,34,457,0.074,0.054,0.102
+notebook_portfolio,Public Sector/Research,32,457,0.07,0.05,0.097
+notebook_portfolio,Machine Learning,29,457,0.063,0.045,0.09
+notebook_portfolio,PyTorch,28,457,0.061,0.043,0.087
+other_data,R,196,529,0.371,0.33,0.412
+other_data,Python,168,529,0.318,0.279,0.358
+other_data,Data Visualization,109,529,0.206,0.174,0.243
+other_data,Bash/Shell,79,529,0.149,0.121,0.182
+other_data,Statistics (general),37,529,0.07,0.051,0.095
+other_data,JavaScript,37,529,0.07,0.051,0.095
+other_data,Public Sector/Research,33,529,0.062,0.045,0.086
+other_data,PyTorch,30,529,0.057,0.04,0.08
+other_data,AI (generic),28,529,0.053,0.037,0.075
+other_data,Machine Learning,27,529,0.051,0.035,0.073
+production_style_application,Python,205,347,0.591,0.538,0.641
+production_style_application,Bash/Shell,191,347,0.55,0.498,0.602
+production_style_application,Data Visualization,152,347,0.438,0.387,0.491
+production_style_application,Docker,98,347,0.282,0.238,0.332
+production_style_application,JavaScript,88,347,0.254,0.211,0.302
+production_style_application,Jupyter,79,347,0.228,0.187,0.275
+production_style_application,REST APIs,74,347,0.213,0.173,0.259
+production_style_application,R,61,347,0.176,0.139,0.219
+production_style_application,SQL,54,347,0.156,0.121,0.198
+production_style_application,PostgreSQL,42,347,0.121,0.091,0.16

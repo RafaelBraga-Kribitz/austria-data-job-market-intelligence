@@ -22,25 +22,27 @@ Rest of Austria,E-Commerce,20,661,0.03,0.02,0.046
 Rest of Austria,Product Analytics,19,661,0.029,0.018,0.044
 Rest of Austria,HR/People Analytics,19,661,0.029,0.018,0.044
 Rest of Austria,Telecom,16,661,0.024,0.015,0.039
-Rest of Austria,Pricing/Revenue,15,661,0.023,0.014,0.037
 Rest of Austria,Energy,15,661,0.023,0.014,0.037
+Rest of Austria,Pricing/Revenue,15,661,0.023,0.014,0.037
+Rest of Austria,Industry 4.0 / MES / OPC UA,12,661,0.018,0.01,0.031
 Rest of Austria,Optimization/OR,8,661,0.012,0.006,0.024
 Styria,Consulting,23,58,0.397,0.281,0.525
 Styria,Requirements/Business Analysis,15,58,0.259,0.163,0.384
 Styria,Public Sector/Research,14,58,0.241,0.15,0.365
-Styria,Project Management,11,58,0.19,0.109,0.309
 Styria,Operations/Manufacturing,11,58,0.19,0.109,0.309
+Styria,Project Management,11,58,0.19,0.109,0.309
 Styria,SAP (ERP),9,58,0.155,0.084,0.269
-Styria,Finance/Controlling,9,58,0.155,0.084,0.269
 Styria,Banking/Insurance,9,58,0.155,0.084,0.269
+Styria,Finance/Controlling,9,58,0.155,0.084,0.269
 Styria,Automotive/Mobility,9,58,0.155,0.084,0.269
-Styria,Healthcare/Pharma/Bio,6,58,0.103,0.048,0.208
 Styria,Sales/Commercial,6,58,0.103,0.048,0.208
+Styria,Healthcare/Pharma/Bio,6,58,0.103,0.048,0.208
 Styria,Risk/Actuarial,5,58,0.086,0.037,0.186
-Styria,Supply Chain/Logistics,3,58,0.052,0.018,0.141
 Styria,E-Commerce,3,58,0.052,0.018,0.141
-Styria,HR/People Analytics,2,58,0.034,0.01,0.117
+Styria,Supply Chain/Logistics,3,58,0.052,0.018,0.141
 Styria,Real Estate/Retail,2,58,0.034,0.01,0.117
+Styria,HR/People Analytics,2,58,0.034,0.01,0.117
+Styria,Industry 4.0 / MES / OPC UA,1,58,0.017,0.003,0.091
 Styria,Energy,1,58,0.017,0.003,0.091
 Styria,Web/Digital Analytics,1,58,0.017,0.003,0.091
 Styria,Marketing,1,58,0.017,0.003,0.091

@@ -1,0 +1,69 @@
+field,field_code,level,latest_year,graduates_latest,graduates_5y_before,change_5y_pct,mean_last_3y,years_available,source,source_quality
+ICT (F06),F06,Bachelor,2024,2142,1563,37.0,2039.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+ICT (F06),F06,Master,2024,1507,1038,45.2,1380.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+ICT (F06),F06,Doctoral,2024,135,118,14.4,123.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+ICT (F06),F06,All tertiary,2024,5257,3790,38.7,4914.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A
+software & applications development (F0613),F0613,Bachelor,2024,537,305,76.1,462.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+software & applications development (F0613),F0613,Master,2024,187,101,85.1,155.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+software & applications development (F0613),F0613,Doctoral,2024,0,0,,0.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+software & applications development (F0613),F0613,All tertiary,2024,724,406,78.3,617.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+database & network design (F0612),F0612,Bachelor,2024,493,499,-1.2,509.0,2015–2024,Eurostat educ_uoe_grad02 (AT),A
+database & network design (F0612),F0612,Master,2024,426,454,-6.2,457.0,2015–2024,Eurostat educ_uoe_grad02 (AT),A
+database & network design (F0612),F0612,Doctoral,2024,7,12,-41.7,15.0,2015–2024,Eurostat educ_uoe_grad02 (AT),A
+database & network design (F0612),F0612,All tertiary,2024,925,965,-4.1,980.0,2015–2024,Eurostat educ_uoe_grad02 (AT),A
+Mathematics & statistics (F054),F054,Bachelor,2024,227,244,-7.0,257.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Mathematics & statistics (F054),F054,Master,2024,139,148,-6.1,144.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Mathematics & statistics (F054),F054,Doctoral,2024,84,62,35.5,73.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Mathematics & statistics (F054),F054,All tertiary,2024,450,454,-0.9,474.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A
+statistics (F0542),F0542,Bachelor,2024,39,28,39.3,52.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+statistics (F0542),F0542,Master,2024,16,8,100.0,14.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+statistics (F0542),F0542,Doctoral,2024,2,2,0.0,2.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+statistics (F0542),F0542,All tertiary,2024,57,38,50.0,68.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+mathematics (F0541),F0541,Bachelor,2024,188,216,-13.0,206.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+mathematics (F0541),F0541,Master,2024,124,140,-11.4,131.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+mathematics (F0541),F0541,Doctoral,2024,82,60,36.7,71.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+mathematics (F0541),F0541,All tertiary,2024,394,416,-5.3,407.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Business & administration (F041),F041,Bachelor,2024,4382,4599,-4.7,4485.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Business & administration (F041),F041,Master,2024,5747,4853,18.4,5542.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Business & administration (F041),F041,Doctoral,2024,56,33,69.7,44.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Business & administration (F041),F041,All tertiary,2024,10204,9500,7.4,10088.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A
+marketing & advertising (F0414),F0414,Bachelor,2024,156,194,-19.6,164.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+marketing & advertising (F0414),F0414,Master,2024,620,488,27.0,620.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+marketing & advertising (F0414),F0414,Doctoral,2024,0,0,,0.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+marketing & advertising (F0414),F0414,All tertiary,2024,776,682,13.8,784.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+management & administration (F0413),F0413,Bachelor,2024,2446,2427,0.8,2457.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+management & administration (F0413),F0413,Master,2024,4110,3605,14.0,4005.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+management & administration (F0413),F0413,Doctoral,2024,39,25,56.0,33.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+management & administration (F0413),F0413,All tertiary,2024,6614,6071,8.9,6511.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+"finance, banking, insurance (F0412)",F0412,Bachelor,2024,70,88,-20.5,75.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+"finance, banking, insurance (F0412)",F0412,Master,2024,376,208,80.8,346.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+"finance, banking, insurance (F0412)",F0412,Doctoral,2024,3,3,0.0,1.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+"finance, banking, insurance (F0412)",F0412,All tertiary,2024,449,299,50.2,423.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Economics (F0311),F0311,Bachelor,2024,460,383,20.1,453.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Economics (F0311),F0311,Master,2024,176,210,-16.2,187.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Economics (F0311),F0311,Doctoral,2024,23,16,43.8,22.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Economics (F0311),F0311,All tertiary,2024,658,609,8.0,661.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Engineering & engineering trades (F071),F071,Bachelor,2024,1815,1972,-8.0,1861.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Engineering & engineering trades (F071),F071,Master,2024,1741,1606,8.4,1698.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Engineering & engineering trades (F071),F071,Doctoral,2024,441,369,19.5,374.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Engineering & engineering trades (F071),F071,All tertiary,2024,8060,8547,-5.7,8075.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A
+Physical sciences (F053),F053,Bachelor,2024,938,956,-1.9,886.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Physical sciences (F053),F053,Master,2024,688,665,3.5,675.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Physical sciences (F053),F053,Doctoral,2024,269,215,25.1,226.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+Physical sciences (F053),F053,All tertiary,2024,1895,1836,3.2,1787.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A
+physics (F0533),F0533,Bachelor,2024,442,413,7.0,421.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+physics (F0533),F0533,Master,2024,232,261,-11.1,242.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+physics (F0533),F0533,Doctoral,2024,139,119,16.8,123.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+physics (F0533),F0533,All tertiary,2024,813,792,2.7,786.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Psychology (F0313),F0313,Bachelor,2024,1577,1352,16.6,1508.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Psychology (F0313),F0313,Master,2024,1478,1072,37.9,1382.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Psychology (F0313),F0313,Doctoral,2024,93,56,66.1,72.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Psychology (F0313),F0313,All tertiary,2024,3147,2480,26.9,2962.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Sociology & cultural studies (F0314),F0314,Bachelor,2024,534,701,-23.8,524.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Sociology & cultural studies (F0314),F0314,Master,2024,373,314,18.8,339.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Sociology & cultural studies (F0314),F0314,Doctoral,2024,33,23,43.5,31.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+Sociology & cultural studies (F0314),F0314,All tertiary,2024,940,1038,-9.4,894.0,2013–2024,Eurostat educ_uoe_grad02 (AT),A
+All fields (TOTAL),TOTAL,Bachelor,2024,33319,30409,9.6,32709.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+All fields (TOTAL),TOTAL,Master,2024,29337,26256,11.7,28190.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+All fields (TOTAL),TOTAL,Doctoral,2024,2457,2215,10.9,2243.0,2005–2024,Eurostat educ_uoe_grad02 (AT),A
+All fields (TOTAL),TOTAL,All tertiary,2024,90736,84641,7.2,88192.0,2010–2024,Eurostat educ_uoe_grad02 (AT),A

@@ -1,0 +1,31 @@
+item,count,n,share,population,is_data_role,ci_low,ci_high,source,source_quality
+"Developer, full-stack",128,410,0.312,Austria respondents with DevType,False,0.269,0.359,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, back-end",62,410,0.151,Austria respondents with DevType,False,0.12,0.189,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, desktop or enterprise applications",27,410,0.066,Austria respondents with DevType,False,0.046,0.094,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Architect, software or solutions",26,410,0.063,Austria respondents with DevType,False,0.044,0.091,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Student,21,410,0.051,Austria respondents with DevType,False,0.034,0.077,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Other (please specify):,18,410,0.044,Austria respondents with DevType,False,0.028,0.068,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, front-end",14,410,0.034,Austria respondents with DevType,False,0.02,0.056,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, embedded applications or devices",14,410,0.034,Austria respondents with DevType,False,0.02,0.056,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Academic researcher,12,410,0.029,Austria respondents with DevType,False,0.017,0.05,"Stack Overflow Developer Survey 2025, Country == Austria",B
+DevOps engineer or professional,11,410,0.027,Austria respondents with DevType,False,0.015,0.047,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, mobile",9,410,0.022,Austria respondents with DevType,False,0.012,0.041,"Stack Overflow Developer Survey 2025, Country == Austria",B
+AI/ML engineer,7,410,0.017,Austria respondents with DevType,True,0.008,0.035,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Data scientist,7,410,0.017,Austria respondents with DevType,True,0.008,0.035,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Cybersecurity or InfoSec professional,6,410,0.015,Austria respondents with DevType,False,0.007,0.032,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Engineering manager,6,410,0.015,Austria respondents with DevType,False,0.007,0.032,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Senior executive (C-suite, VP, etc.)",5,410,0.012,Austria respondents with DevType,False,0.005,0.028,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Cloud infrastructure engineer,4,410,0.01,Austria respondents with DevType,False,0.004,0.025,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Support engineer or analyst,4,410,0.01,Austria respondents with DevType,False,0.004,0.025,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Data or business analyst,4,410,0.01,Austria respondents with DevType,True,0.004,0.025,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Applied scientist,4,410,0.01,Austria respondents with DevType,True,0.004,0.025,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Data engineer,4,410,0.01,Austria respondents with DevType,True,0.004,0.025,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, game or graphics",3,410,0.007,Austria respondents with DevType,False,0.002,0.021,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Database administrator or engineer,3,410,0.007,Austria respondents with DevType,True,0.002,0.021,"Stack Overflow Developer Survey 2025, Country == Austria",B
+System administrator,3,410,0.007,Austria respondents with DevType,False,0.002,0.021,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, AI apps or physical AI",2,410,0.005,Austria respondents with DevType,False,0.001,0.018,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Founder, technology or otherwise",2,410,0.005,Austria respondents with DevType,False,0.001,0.018,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Project manager,1,410,0.002,Austria respondents with DevType,False,0.0,0.014,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Product manager,1,410,0.002,Austria respondents with DevType,False,0.0,0.014,"Stack Overflow Developer Survey 2025, Country == Austria",B
+"Developer, QA or test",1,410,0.002,Austria respondents with DevType,False,0.0,0.014,"Stack Overflow Developer Survey 2025, Country == Austria",B
+Retired,1,410,0.002,Austria respondents with DevType,False,0.0,0.014,"Stack Overflow Developer Survey 2025, Country == Austria",B

@@ -35,7 +35,7 @@ Soft exclusions (only when no specific family matched, `config/role_taxonomy.jso
   * "Data Manager" → data_governance even when the job is really a project-management role; "Stammdaten" maintenance clerks → the operational master-data title.
   * "AI Engineer" → Machine Learning / AI Engineer (data_science) while "AI Developer"/"AI Consultant" → ai_software_engineering; the boundary is a judgement.
   * German "Analytiker:in" is ambiguous (lab vs. data); lab contexts are excluded by keyword, so a few clinical-data analysts may be lost.
-  * Recall is not measured: data roles with unusual titles sit in `other_data` (235) or `out_of_scope`.
+  * Recall is not measured: data roles with unusual titles sit in `other_data` (235) or `out_of_scope`. Protocol to measure it: `docs/labelling-protocol.md` (OQ-09).
 * The AMS occupation label attached to EURES titles (e.g. "(Data-Warehouse-Analyst/in)") is kept in `ams_occupation_label` and cross-tabulated with our family in `T02d`/`Q03` to show where the two classifications disagree.
 
 ## German compounds and synonyms

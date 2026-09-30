@@ -1,0 +1,5 @@
+data_tier,count,n,share,ci_low,ci_high,note
+T0_none,6383,9409,0.678,0.669,0.688,population: P_all (Austrian-located GitHub accounts across all frames; frame mix is not a random sample of Austria)
+T3_weak_repo_signal,1208,9409,0.128,0.122,0.135,population: P_all (Austrian-located GitHub accounts across all frames; frame mix is not a random sample of Austria)
+T2_repo_evidenced,946,9409,0.101,0.095,0.107,population: P_all (Austrian-located GitHub accounts across all frames; frame mix is not a random sample of Austria)
+T1_bio_declared,872,9409,0.093,0.087,0.099,population: P_all (Austrian-located GitHub accounts across all frames; frame mix is not a random sample of Austria)

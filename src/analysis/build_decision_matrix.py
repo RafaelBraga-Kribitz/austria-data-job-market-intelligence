@@ -119,10 +119,54 @@ def main():
         return "do not prioritise (low evidence)"
     L["priority"] = L.apply(prio, axis=1)
     L.sort_values("share", ascending=False).to_csv(TAB / "D04_learning_priorities.csv", index=False)
+
+    # D04b: topic/skill learn-priority with junior-track heat (D-023)
+    sen_sk = pd.read_csv(TAB / "T05_skills_all_tech_by_seniority.csv")
+    jun = sen_sk[sen_sk.seniority == "trainee_junior"].set_index("skill") if "seniority" in sen_sk.columns else pd.DataFrame()
+    intern = sen_sk[sen_sk.seniority == "intern_student"].set_index("skill") if "seniority" in sen_sk.columns else pd.DataFrame()
+    B = L.copy()
+    if (TAB / "T05f_topic_demand.csv").exists():
+        tf = pd.read_csv(TAB / "T05f_topic_demand.csv")
+        extra = tf[~tf.skill.isin(B.skill)].rename(columns={"count": "count", "n": "n", "share": "share"})
+        if len(extra):
+            extra["ci_low"] = extra.get("ci_low")
+            extra["ci_high"] = extra.get("ci_high")
+            extra["styria_share"] = None
+            extra["families_where_top(>=15%)"] = 0
+            extra["profile_status"] = extra.skill.map(lambda s: "have" if s in HAVE else "developing" if s in DEV else "structural" if s in STRUCT else "unclassified")
+            extra["priority"] = ""
+            B = pd.concat([B, extra[["skill", "count", "n", "share", "ci_low", "ci_high", "styria_share", "families_where_top(>=15%)", "profile_status", "priority"]]], ignore_index=True)
+            B = B.drop_duplicates("skill", keep="first")
+    B["junior_share"] = B.skill.map(lambda s: float(jun.loc[s, "share"]) if len(jun) and s in jun.index else None)
+    B["intern_share"] = B.skill.map(lambda s: float(intern.loc[s, "share"]) if len(intern) and s in intern.index else None)
+    if (TAB / "T05f_topic_demand.csv").exists():
+        tf = pd.read_csv(TAB / "T05f_topic_demand.csv").set_index("skill")
+        B["stack"] = B.skill.map(lambda s: tf.loc[s, "stack"] if s in tf.index else None)
+        B["junior_share"] = B.apply(lambda r: float(tf.loc[r.skill, "trainee_junior_share"]) if r.skill in tf.index and pd.notna(tf.loc[r.skill, "trainee_junior_share"]) else r.junior_share, axis=1)
+        B["intern_share"] = B.apply(lambda r: float(tf.loc[r.skill, "intern_student_share"]) if r.skill in tf.index and pd.notna(tf.loc[r.skill, "intern_student_share"]) else r.intern_share, axis=1)
+
+    def prio_b(r):
+        j = r.junior_share if pd.notna(r.junior_share) else 0
+        if r.profile_status == "have":
+            return "already have (demonstrate)"
+        if r.profile_status in ("structural", "unclassified") and (r.share >= 0.10 or j >= 0.25):
+            return "HIGH (junior-market or high demand, not yet in profile as developing)"
+        if r.share >= 0.20 and r.profile_status == "developing":
+            return "NOW"
+        if (r.share >= 0.10 or j >= 0.25) and r.profile_status == "developing":
+            return "NEXT"
+        if r.share >= 0.08:
+            return "LATER"
+        return "do not prioritise (low evidence)"
+
+    B["priority"] = B.apply(prio_b, axis=1)
+    B.sort_values("share", ascending=False).to_csv(TAB / "D04b_learn_priority_topics.csv", index=False)
+
     json.dump({"note": "Scores are a transparent weighted sum of min-max-normalised variables (docs/decision-framework.md). Not a hiring probability.",
                "profile": PROF["summary"], "weights": WEIGHTS, "matrix": json.loads(D.reset_index().to_json(orient="records")),
                "sensitivity": json.loads(sens.round(3).reset_index().to_json(orient="records")),
-               "learning_priorities": json.loads(L.sort_values("share", ascending=False).head(60).to_json(orient="records"))},
+               "learning_priorities": json.loads(L.sort_values("share", ascending=False).head(60).to_json(orient="records")),
+               "learn_priority_topics": json.loads(B.sort_values("share", ascending=False).head(80).to_json(orient="records"))},
               open(OUT / "career_paths.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(D[["V1_postings_at", "V2_postings_styria", "V3_english_posting_share", "V4_german_required_share", "V5_profile_overlap_top15", "V6_structural_gap_top15", "score_default", "rank_default", "robust_top3"]].sort_values("score_default", ascending=False).to_string())
     print(sens.filter(like="rank_").to_string())

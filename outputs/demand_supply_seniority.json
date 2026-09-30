@@ -1,0 +1,145 @@
+{
+ "generated": "2026-09-30T21:04:01.972660",
+ "demand_vintage": "2026-09-16 (Layer 1 snapshot, 720 core postings)",
+ "supply_vintage": "2026-09-17",
+ "supply_populations": {
+  "P_data": 1818,
+  "P_T1": 872,
+  "styria_location_resolved_accounts": 2033,
+  "styria_T1_location_resolved": 56,
+  "styria_frame_B_accounts": 2023,
+  "styria_T1_frame_B_subset": 52
+ },
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "reading_rules": [
+  "demand share = share of postings mentioning an item",
+  "supply share = share of observed GitHub data-signal candidates with evidence",
+  "different universes: compare orders of magnitude and rankings, not exact percentages",
+  "quadrant thresholds are medians of the joined set",
+  "no single composite score is computed"
+ ],
+ "rows": [
+  {
+   "dimension": "seniority",
+   "category": "intern_student ↔ student",
+   "demand_count": 42,
+   "demand_n": 720,
+   "demand_share": 0.058,
+   "supply_count": 147,
+   "supply_n": 872,
+   "supply_share": 0.169,
+   "supply_ci_low": 0.145,
+   "supply_ci_high": 0.195,
+   "difference_pp": 11.0,
+   "supply_styria_T1": 9,
+   "demand_table": "T08",
+   "supply_population": "P_T1",
+   "note": "demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides"
+  },
+  {
+   "dimension": "seniority",
+   "category": "trainee_junior ↔ junior",
+   "demand_count": 31,
+   "demand_n": 720,
+   "demand_share": 0.043,
+   "supply_count": 39,
+   "supply_n": 872,
+   "supply_share": 0.045,
+   "supply_ci_low": 0.033,
+   "supply_ci_high": 0.061,
+   "difference_pp": 0.2,
+   "supply_styria_T1": 3,
+   "demand_table": "T08",
+   "supply_population": "P_T1",
+   "note": "demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides"
+  },
+  {
+   "dimension": "seniority",
+   "category": "unspecified ↔ unlabelled",
+   "demand_count": 414,
+   "demand_n": 720,
+   "demand_share": 0.575,
+   "supply_count": 596,
+   "supply_n": 872,
+   "supply_share": 0.683,
+   "supply_ci_low": 0.652,
+   "supply_ci_high": 0.713,
+   "difference_pp": 10.8,
+   "supply_styria_T1": 40,
+   "demand_table": "T08",
+   "supply_population": "P_T1",
+   "note": "demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides"
+  },
+  {
+   "dimension": "seniority",
+   "category": "senior ↔ senior",
+   "demand_count": 136,
+   "demand_n": 720,
+   "demand_share": 0.189,
+   "supply_count": 48,
+   "supply_n": 872,
+   "supply_share": 0.055,
+   "supply_ci_low": 0.042,
+   "supply_ci_high": 0.072,
+   "difference_pp": -13.4,
+   "supply_styria_T1": 2,
+   "demand_table": "T08",
+   "supply_population": "P_T1",
+   "note": "demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides"
+  },
+  {
+   "dimension": "seniority",
+   "category": "lead_head ↔ lead_head",
+   "demand_count": 97,
+   "demand_n": 720,
+   "demand_share": 0.135,
+   "supply_count": 42,
+   "supply_n": 872,
+   "supply_share": 0.048,
+   "supply_ci_low": 0.036,
+   "supply_ci_high": 0.064,
+   "difference_pp": -8.7,
+   "supply_styria_T1": 2,
+   "demand_table": "T08",
+   "supply_population": "P_T1",
+   "note": "demand = seniority word in the ad title; supply = seniority word in the bio; 'unspecified/unlabelled' dominate both sides"
+  }
+ ],
+ "supply_signals": [
+  {
+   "seniority_bio": "junior",
+   "n": 39,
+   "median_account_age_years": 4.3,
+   "median_projects": 1.0,
+   "share_student": 0.0
+  },
+  {
+   "seniority_bio": "lead_head",
+   "n": 42,
+   "median_account_age_years": 8.05,
+   "median_projects": 0.5,
+   "share_student": 0.0
+  },
+  {
+   "seniority_bio": "senior",
+   "n": 48,
+   "median_account_age_years": 7.8,
+   "median_projects": 2.0,
+   "share_student": 0.0
+  },
+  {
+   "seniority_bio": "student",
+   "n": 147,
+   "median_account_age_years": 5.4,
+   "median_projects": 2.0,
+   "share_student": 1.0
+  },
+  {
+   "seniority_bio": "unlabelled",
+   "n": 596,
+   "median_account_age_years": 6.5,
+   "median_projects": 1.0,
+   "share_student": 0.0
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+family,item,count,n,share,ci_low,ci_high
+bi,Master,2,15,0.133,0.037,0.379
+business_analysis,Master,1,21,0.048,0.008,0.227
+business_analysis,Student (current),1,21,0.048,0.008,0.227
+data_analytics,Master,19,129,0.147,0.096,0.219
+data_analytics,Student (current),15,129,0.116,0.072,0.183
+data_analytics,Bachelor,6,129,0.047,0.021,0.098
+data_analytics,PhD,5,129,0.039,0.017,0.088
+data_analytics,Bootcamp,2,129,0.016,0.004,0.055
+data_engineering,Master,9,58,0.155,0.084,0.269
+data_engineering,Student (current),3,58,0.052,0.018,0.141
+data_engineering,Bachelor,2,58,0.034,0.01,0.117
+data_engineering,PhD,1,58,0.017,0.003,0.091
+data_engineering,Bootcamp,1,58,0.017,0.003,0.091
+data_governance,Bachelor,1,7,0.143,0.026,0.513
+data_governance,Master,1,7,0.143,0.026,0.513
+data_science,Student (current),122,638,0.191,0.163,0.224
+data_science,Master,112,638,0.176,0.148,0.207
+data_science,PhD,57,638,0.089,0.07,0.114
+data_science,Bachelor,39,638,0.061,0.045,0.082
+data_science,Bootcamp,7,638,0.011,0.005,0.022

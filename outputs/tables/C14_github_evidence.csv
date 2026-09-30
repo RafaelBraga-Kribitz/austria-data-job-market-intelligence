@@ -1,0 +1,29 @@
+population,signal,count,n,share,ci_low,ci_high,note
+P_data,≥1 owned non-fork repository,1671,1818,0.919,0.906,0.931,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥1 data repository,1522,1818,0.837,0.82,0.853,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥1 project (definition),1502,1818,0.826,0.808,0.843,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥1 documented project (README ≥ 1k),1378,1818,0.758,0.738,0.777,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,"≥1 substantive project (documented, not educational)",1131,1818,0.622,0.6,0.644,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥1 educational/tutorial data repo,1002,1818,0.551,0.528,0.574,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,any push in last 12 months,1187,1818,0.653,0.631,0.674,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥1 star on any owned repo,1172,1818,0.645,0.622,0.666,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,≥10 stars on any owned repo,377,1818,0.207,0.189,0.227,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,has forks of others' repos,1143,1818,0.629,0.606,0.651,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,bio present,1523,1818,0.838,0.82,0.854,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,company field present,914,1818,0.503,0.48,0.526,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,available-for-hire flag,305,1818,0.168,0.151,0.186,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_data,website/blog field present,788,1818,0.433,0.411,0.456,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 owned non-fork repository,725,872,0.831,0.805,0.855,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 data repository,576,872,0.661,0.628,0.691,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 project (definition),556,872,0.638,0.605,0.669,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 documented project (README ≥ 1k),432,872,0.495,0.462,0.529,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,"≥1 substantive project (documented, not educational)",353,872,0.405,0.373,0.438,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 educational/tutorial data repo,369,872,0.423,0.391,0.456,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,any push in last 12 months,454,872,0.521,0.487,0.554,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥1 star on any owned repo,399,872,0.458,0.425,0.491,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,≥10 stars on any owned repo,82,872,0.094,0.076,0.115,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,has forks of others' repos,439,872,0.503,0.47,0.537,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,bio present,872,872,1.0,0.996,1.0,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,company field present,389,872,0.446,0.413,0.479,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,available-for-hire flag,146,872,0.167,0.144,0.194,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %
+P_T1,website/blog field present,313,872,0.359,0.328,0.391,GitHub presence is 100 % by construction (the frame is GitHub); the informative shares are those below 100 %

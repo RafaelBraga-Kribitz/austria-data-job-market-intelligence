@@ -1,0 +1,381 @@
+{
+ "generated": "2026-09-30T21:04:01.972660",
+ "demand_vintage": "2026-09-16 (Layer 1 snapshot, 720 core postings)",
+ "supply_vintage": "2026-09-17",
+ "supply_populations": {
+  "P_data": 1818,
+  "P_T1": 872,
+  "styria_location_resolved_accounts": 2033,
+  "styria_T1_location_resolved": 56,
+  "styria_frame_B_accounts": 2023,
+  "styria_T1_frame_B_subset": 52
+ },
+ "taxonomy_version": "supply-v1 (2026-09-17)",
+ "reading_rules": [
+  "demand share = share of postings mentioning an item",
+  "supply share = share of observed GitHub data-signal candidates with evidence",
+  "different universes: compare orders of magnitude and rankings, not exact percentages",
+  "quadrant thresholds are medians of the joined set",
+  "no single composite score is computed"
+ ],
+ "by_state": [
+  {
+   "dimension": "state",
+   "category": "Wien",
+   "demand_count": 343,
+   "demand_n": 720,
+   "demand_share": 0.476,
+   "supply_all_accounts": 2818,
+   "supply_count": 802,
+   "supply_n": 1818,
+   "supply_share": 0.441,
+   "supply_T1": 478,
+   "supply_T1_share": 0.548,
+   "difference_pp": -3.5,
+   "candidate_density_data_per_posting": 2.34,
+   "candidate_density_T1_per_posting": 1.39,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Oberösterreich",
+   "demand_count": 122,
+   "demand_n": 720,
+   "demand_share": 0.169,
+   "supply_all_accounts": 1079,
+   "supply_count": 168,
+   "supply_n": 1818,
+   "supply_share": 0.092,
+   "supply_T1": 53,
+   "supply_T1_share": 0.061,
+   "difference_pp": -7.7,
+   "candidate_density_data_per_posting": 1.38,
+   "candidate_density_T1_per_posting": 0.43,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Steiermark",
+   "demand_count": 54,
+   "demand_n": 720,
+   "demand_share": 0.075,
+   "supply_all_accounts": 2033,
+   "supply_count": 248,
+   "supply_n": 1818,
+   "supply_share": 0.136,
+   "supply_T1": 56,
+   "supply_T1_share": 0.064,
+   "difference_pp": 6.1,
+   "candidate_density_data_per_posting": 4.59,
+   "candidate_density_T1_per_posting": 1.04,
+   "supply_frame": "complete (frame B)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Vorarlberg",
+   "demand_count": 46,
+   "demand_n": 720,
+   "demand_share": 0.064,
+   "supply_all_accounts": 109,
+   "supply_count": 11,
+   "supply_n": 1818,
+   "supply_share": 0.006,
+   "supply_T1": 3,
+   "supply_T1_share": 0.003,
+   "difference_pp": -5.8,
+   "candidate_density_data_per_posting": 0.24,
+   "candidate_density_T1_per_posting": 0.07,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Niederösterreich",
+   "demand_count": 44,
+   "demand_n": 720,
+   "demand_share": 0.061,
+   "supply_all_accounts": 91,
+   "supply_count": 25,
+   "supply_n": 1818,
+   "supply_share": 0.014,
+   "supply_T1": 13,
+   "supply_T1_share": 0.015,
+   "difference_pp": -4.7,
+   "candidate_density_data_per_posting": 0.57,
+   "candidate_density_T1_per_posting": 0.3,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Salzburg",
+   "demand_count": 37,
+   "demand_n": 720,
+   "demand_share": 0.051,
+   "supply_all_accounts": 829,
+   "supply_count": 96,
+   "supply_n": 1818,
+   "supply_share": 0.053,
+   "supply_T1": 32,
+   "supply_T1_share": 0.037,
+   "difference_pp": 0.2,
+   "candidate_density_data_per_posting": 2.59,
+   "candidate_density_T1_per_posting": 0.86,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Tirol",
+   "demand_count": 30,
+   "demand_n": 720,
+   "demand_share": 0.042,
+   "supply_all_accounts": 762,
+   "supply_count": 108,
+   "supply_n": 1818,
+   "supply_share": 0.059,
+   "supply_T1": 30,
+   "supply_T1_share": 0.034,
+   "difference_pp": 1.7,
+   "candidate_density_data_per_posting": 3.6,
+   "candidate_density_T1_per_posting": 1.0,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "Kärnten",
+   "demand_count": 22,
+   "demand_n": 720,
+   "demand_share": 0.031,
+   "supply_all_accounts": 359,
+   "supply_count": 54,
+   "supply_n": 1818,
+   "supply_share": 0.03,
+   "supply_T1": 13,
+   "supply_T1_share": 0.015,
+   "difference_pp": -0.1,
+   "candidate_density_data_per_posting": 2.45,
+   "candidate_density_T1_per_posting": 0.59,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  },
+  {
+   "dimension": "state",
+   "category": "unspecified",
+   "demand_count": 22,
+   "demand_n": 720,
+   "demand_share": 0.031,
+   "supply_all_accounts": 1322,
+   "supply_count": 304,
+   "supply_n": 1818,
+   "supply_share": 0.167,
+   "supply_T1": 193,
+   "supply_T1_share": 0.221,
+   "difference_pp": 13.6,
+   "candidate_density_data_per_posting": 13.82,
+   "candidate_density_T1_per_posting": 8.77,
+   "supply_frame": "keyword + base-rate sample (lower bound)",
+   "demand_table": "T03a"
+  }
+ ],
+ "family_by_region": [
+  {
+   "family": "data_engineering",
+   "label": "Data engineering",
+   "demand_AT": 160,
+   "demand_styria": 20,
+   "demand_graz_area": 16,
+   "demand_vienna": 80,
+   "supply_T1_AT": 58,
+   "supply_T1_styria": 4,
+   "supply_T1_graz_area": 4,
+   "supply_T1_vienna": 24,
+   "density_styria_T1_per_posting": 0.2,
+   "density_vienna_T1_per_posting_lower_bound": 0.3
+  },
+  {
+   "family": "data_science",
+   "label": "Data science",
+   "demand_AT": 158,
+   "demand_styria": 13,
+   "demand_graz_area": 13,
+   "demand_vienna": 81,
+   "supply_T1_AT": 638,
+   "supply_T1_styria": 38,
+   "supply_T1_graz_area": 36,
+   "supply_T1_vienna": 359,
+   "density_styria_T1_per_posting": 2.92,
+   "density_vienna_T1_per_posting_lower_bound": 4.43
+  },
+  {
+   "family": "business_analysis",
+   "label": "Business analysis",
+   "demand_AT": 120,
+   "demand_styria": 4,
+   "demand_graz_area": 3,
+   "demand_vienna": 75,
+   "supply_T1_AT": 21,
+   "supply_T1_styria": 2,
+   "supply_T1_graz_area": 2,
+   "supply_T1_vienna": 9,
+   "density_styria_T1_per_posting": 0.5,
+   "density_vienna_T1_per_posting_lower_bound": 0.12
+  },
+  {
+   "family": "data_analytics",
+   "label": "Data analytics",
+   "demand_AT": 107,
+   "demand_styria": 11,
+   "demand_graz_area": 11,
+   "demand_vienna": 42,
+   "supply_T1_AT": 129,
+   "supply_T1_styria": 7,
+   "supply_T1_graz_area": 7,
+   "supply_T1_vienna": 76,
+   "density_styria_T1_per_posting": 0.64,
+   "density_vienna_T1_per_posting_lower_bound": 1.81
+  },
+  {
+   "family": "bi",
+   "label": "BI",
+   "demand_AT": 85,
+   "demand_styria": 5,
+   "demand_graz_area": 5,
+   "demand_vienna": 35,
+   "supply_T1_AT": 15,
+   "supply_T1_styria": 3,
+   "supply_T1_graz_area": 3,
+   "supply_T1_vienna": 5,
+   "density_styria_T1_per_posting": 0.6,
+   "density_vienna_T1_per_posting_lower_bound": 0.14
+  },
+  {
+   "family": "data_governance",
+   "label": "Data governance",
+   "demand_AT": 65,
+   "demand_styria": 5,
+   "demand_graz_area": 4,
+   "demand_vienna": 23,
+   "supply_T1_AT": 7,
+   "supply_T1_styria": 1,
+   "supply_T1_graz_area": 1,
+   "supply_T1_vienna": 3,
+   "density_styria_T1_per_posting": 0.2,
+   "density_vienna_T1_per_posting_lower_bound": 0.13
+  },
+  {
+   "family": "marketing_analytics",
+   "label": "Marketing analytics",
+   "demand_AT": 24,
+   "demand_styria": 0,
+   "demand_graz_area": 0,
+   "demand_vienna": 13,
+   "supply_T1_AT": 2,
+   "supply_T1_styria": 1,
+   "supply_T1_graz_area": 1,
+   "supply_T1_vienna": 1,
+   "density_styria_T1_per_posting": null,
+   "density_vienna_T1_per_posting_lower_bound": 0.08
+  },
+  {
+   "family": "product_analytics",
+   "label": "Product analytics",
+   "demand_AT": 1,
+   "demand_styria": 0,
+   "demand_graz_area": 0,
+   "demand_vienna": 1,
+   "supply_T1_AT": 2,
+   "supply_T1_styria": 0,
+   "supply_T1_graz_area": 0,
+   "supply_T1_vienna": 1,
+   "density_styria_T1_per_posting": null,
+   "density_vienna_T1_per_posting_lower_bound": 1.0
+  }
+ ],
+ "styria": [
+  {
+   "measure": "core data postings listing a Styrian site (T02, any-site basis)",
+   "value": 58
+  },
+  {
+   "measure": "core data postings with Styria as primary state (T03a)",
+   "value": 54
+  },
+  {
+   "measure": "core data postings, Graz area (T02, any-site basis)",
+   "value": 52
+  },
+  {
+   "measure": "Styrian GitHub accounts, location-resolved (canonical)",
+   "value": 2033
+  },
+  {
+   "measure": "  of which data-signal (T1+T2), location-resolved",
+   "value": 248
+  },
+  {
+   "measure": "  of which bio-declared data role (T1), location-resolved (canonical)",
+   "value": 56
+  },
+  {
+   "measure": "  of which T1 in Graz area, location-resolved",
+   "value": 54
+  },
+  {
+   "measure": "Styrian GitHub accounts with ≥1 public repo (frame-B complete-Styria subset)",
+   "value": 2023
+  },
+  {
+   "measure": "  of which data-signal (T1+T2), frame-B subset",
+   "value": 247
+  },
+  {
+   "measure": "  of which bio-declared data role (T1), frame-B subset",
+   "value": 52
+  },
+  {
+   "measure": "  of which T1 in Graz area, frame-B subset",
+   "value": 50
+  },
+  {
+   "measure": "  T1 students, frame-B subset",
+   "value": 8
+  },
+  {
+   "measure": "  T1 with ≥1 documented project, frame-B subset",
+   "value": 28
+  },
+  {
+   "measure": "  data-signal with any push in 12 months, frame-B subset",
+   "value": 174
+  },
+  {
+   "measure": "  data-signal with English bio, frame-B subset",
+   "value": 124
+  },
+  {
+   "measure": "  data-signal with hireable flag, frame-B subset",
+   "value": 42
+  },
+  {
+   "measure": "T1 candidates (location-resolved) per core posting listing a Styrian site",
+   "value": 0.97
+  },
+  {
+   "measure": "data-signal candidates (location-resolved) per core posting listing a Styrian site",
+   "value": 4.28
+  },
+  {
+   "measure": "English-written Styrian ads without stated German requirement (T07e, any-site basis)",
+   "value": "8 of 58 (Layer 1)"
+  },
+  {
+   "measure": "Vienna: core postings (T03a) / T1 candidates in sample (lower bound)",
+   "value": "343 / 478"
+  }
+ ]
+}

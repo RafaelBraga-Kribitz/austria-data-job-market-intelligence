@@ -1,0 +1,121 @@
+skill,count,n,share,ci_low,ci_high,population
+Python,3112,6677,0.466,0.454,0.478,projects
+Jupyter,2835,6677,0.425,0.413,0.436,projects
+Data Visualization,1757,6677,0.263,0.253,0.274,projects
+Bash/Shell,1698,6677,0.254,0.244,0.265,projects
+R,939,6677,0.141,0.132,0.149,projects
+Machine Learning,706,6677,0.106,0.099,0.113,projects
+NumPy,688,6677,0.103,0.096,0.111,projects
+Generative AI / LLM,673,6677,0.101,0.094,0.108,projects
+AI (generic),669,6677,0.1,0.093,0.108,projects
+pandas,640,6677,0.096,0.089,0.103,projects
+JavaScript,584,6677,0.087,0.081,0.094,projects
+PyTorch,583,6677,0.087,0.081,0.094,projects
+matplotlib/seaborn,579,6677,0.087,0.08,0.094,projects
+Public Sector/Research,558,6677,0.084,0.077,0.09,projects
+Deep Learning,526,6677,0.079,0.073,0.085,projects
+Classification,510,6677,0.076,0.07,0.083,projects
+REST APIs,486,6677,0.073,0.067,0.079,projects
+Docker,462,6677,0.069,0.063,0.076,projects
+scikit-learn,430,6677,0.064,0.059,0.071,projects
+Segmentation/Clustering,418,6677,0.063,0.057,0.069,projects
+Statistics (general),410,6677,0.061,0.056,0.067,projects
+Regression,344,6677,0.052,0.046,0.057,projects
+SQL,328,6677,0.049,0.044,0.055,projects
+Predictive Analytics,322,6677,0.048,0.043,0.054,projects
+Hugging Face/Transformers,300,6677,0.045,0.04,0.05,projects
+TensorFlow/Keras,292,6677,0.044,0.039,0.049,projects
+FastAPI/Flask,258,6677,0.039,0.034,0.044,projects
+C#,256,6677,0.038,0.034,0.043,projects
+Fine-tuning / LoRA / PEFT,226,6677,0.034,0.03,0.038,projects
+Healthcare/Pharma/Bio,211,6677,0.032,0.028,0.036,projects
+AI agents / tool-calling,198,6677,0.03,0.026,0.034,projects
+Exploratory Analysis,191,6677,0.029,0.025,0.033,projects
+Sales/Commercial,189,6677,0.028,0.025,0.033,projects
+Streaming,185,6677,0.028,0.024,0.032,projects
+Streamlit,181,6677,0.027,0.023,0.031,projects
+Computer Vision,179,6677,0.027,0.023,0.031,projects
+Operations/Manufacturing,177,6677,0.027,0.023,0.031,projects
+SciPy,175,6677,0.026,0.023,0.03,projects
+PostgreSQL,165,6677,0.025,0.021,0.029,projects
+C/C++,163,6677,0.024,0.021,0.028,projects
+Cloud (generic),162,6677,0.024,0.021,0.028,projects
+Forecasting,160,6677,0.024,0.021,0.028,projects
+NLP,154,6677,0.023,0.02,0.027,projects
+Plotly/Dash,153,6677,0.023,0.02,0.027,projects
+Data Governance/Quality,152,6677,0.023,0.019,0.027,projects
+XGBoost/LightGBM,150,6677,0.022,0.019,0.026,projects
+Java,150,6677,0.022,0.019,0.026,projects
+Experiment tracking,146,6677,0.022,0.019,0.026,projects
+RAG,141,6677,0.021,0.018,0.025,projects
+Marketing,133,6677,0.02,0.017,0.024,projects
+Spark,133,6677,0.02,0.017,0.024,projects
+Web/Digital Analytics,123,6677,0.018,0.015,0.022,projects
+Reinforcement Learning,122,6677,0.018,0.015,0.022,projects
+Energy,119,6677,0.018,0.015,0.021,projects
+Finance/Controlling,116,6677,0.017,0.015,0.021,projects
+AWS,114,6677,0.017,0.014,0.02,projects
+Risk/Actuarial,112,6677,0.017,0.014,0.02,projects
+ETL/ELT,111,6677,0.017,0.014,0.02,projects
+Supply Chain/Logistics,106,6677,0.016,0.013,0.019,projects
+Banking/Insurance,104,6677,0.016,0.013,0.019,projects
+Python,1610,2605,0.618,0.599,0.637,substantive projects
+Bash/Shell,1144,2605,0.439,0.42,0.458,substantive projects
+Data Visualization,1050,2605,0.403,0.384,0.422,substantive projects
+Jupyter,1042,2605,0.4,0.381,0.419,substantive projects
+Generative AI / LLM,432,2605,0.166,0.152,0.181,substantive projects
+NumPy,415,2605,0.159,0.146,0.174,substantive projects
+AI (generic),408,2605,0.157,0.143,0.171,substantive projects
+pandas,370,2605,0.142,0.129,0.156,substantive projects
+REST APIs,351,2605,0.135,0.122,0.148,substantive projects
+matplotlib/seaborn,350,2605,0.134,0.122,0.148,substantive projects
+R,339,2605,0.13,0.118,0.144,substantive projects
+Public Sector/Research,338,2605,0.13,0.117,0.143,substantive projects
+PyTorch,338,2605,0.13,0.117,0.143,substantive projects
+Machine Learning,333,2605,0.128,0.116,0.141,substantive projects
+JavaScript,328,2605,0.126,0.114,0.139,substantive projects
+Docker,310,2605,0.119,0.107,0.132,substantive projects
+Classification,274,2605,0.105,0.094,0.118,substantive projects
+scikit-learn,255,2605,0.098,0.087,0.11,substantive projects
+Segmentation/Clustering,239,2605,0.092,0.081,0.103,substantive projects
+Deep Learning,236,2605,0.091,0.08,0.102,substantive projects
+Statistics (general),229,2605,0.088,0.078,0.099,substantive projects
+SQL,209,2605,0.08,0.07,0.091,substantive projects
+Hugging Face/Transformers,197,2605,0.076,0.066,0.086,substantive projects
+FastAPI/Flask,191,2605,0.073,0.064,0.084,substantive projects
+Regression,184,2605,0.071,0.061,0.081,substantive projects
+Fine-tuning / LoRA / PEFT,160,2605,0.061,0.053,0.071,substantive projects
+AI agents / tool-calling,150,2605,0.058,0.049,0.067,substantive projects
+Predictive Analytics,149,2605,0.057,0.049,0.067,substantive projects
+TensorFlow/Keras,148,2605,0.057,0.049,0.066,substantive projects
+C#,144,2605,0.055,0.047,0.065,substantive projects
+Sales/Commercial,140,2605,0.054,0.046,0.063,substantive projects
+Healthcare/Pharma/Bio,137,2605,0.053,0.045,0.062,substantive projects
+Cloud (generic),127,2605,0.049,0.041,0.058,substantive projects
+PostgreSQL,125,2605,0.048,0.04,0.057,substantive projects
+SciPy,120,2605,0.046,0.039,0.055,substantive projects
+Operations/Manufacturing,120,2605,0.046,0.039,0.055,substantive projects
+Streaming,115,2605,0.044,0.037,0.053,substantive projects
+Data Governance/Quality,113,2605,0.043,0.036,0.052,substantive projects
+Exploratory Analysis,111,2605,0.043,0.036,0.051,substantive projects
+XGBoost/LightGBM,105,2605,0.04,0.033,0.049,substantive projects
+Forecasting,104,2605,0.04,0.033,0.048,substantive projects
+Plotly/Dash,104,2605,0.04,0.033,0.048,substantive projects
+Streamlit,100,2605,0.038,0.032,0.046,substantive projects
+Marketing,100,2605,0.038,0.032,0.046,substantive projects
+RAG,95,2605,0.036,0.03,0.044,substantive projects
+Energy,95,2605,0.036,0.03,0.044,substantive projects
+C/C++,94,2605,0.036,0.03,0.044,substantive projects
+Experiment tracking,89,2605,0.034,0.028,0.042,substantive projects
+Web/Digital Analytics,80,2605,0.031,0.025,0.038,substantive projects
+Risk/Actuarial,80,2605,0.031,0.025,0.038,substantive projects
+Local LLM serving,79,2605,0.03,0.024,0.038,substantive projects
+Finance/Controlling,79,2605,0.03,0.024,0.038,substantive projects
+Vector DBs,78,2605,0.03,0.024,0.037,substantive projects
+Computer Vision,76,2605,0.029,0.023,0.036,substantive projects
+Java,72,2605,0.028,0.022,0.035,substantive projects
+NLP,71,2605,0.027,0.022,0.034,substantive projects
+Power BI,66,2605,0.025,0.02,0.032,substantive projects
+Spark,65,2605,0.025,0.02,0.032,substantive projects
+Azure,64,2605,0.025,0.019,0.031,substantive projects
+Supply Chain/Logistics,64,2605,0.025,0.019,0.031,substantive projects

@@ -9,6 +9,8 @@ The script re-classifies the same titles with the CURRENT rules so that the effe
 measured on the same sample. Labels are stored inline below (they are judgements, not extraction output).
 
 Usage: python src/analysis/precision_audit.py  [path to the pre-D-012 postings_dedup.parquet]
+       default: data/processed/_pre_D012/postings_dedup.parquet (the snapshot the labels were drawn from; the
+       current post-D-012 file would draw a different sample and misalign the inline labels)
 Output: outputs/tables/Q03c_manual_precision_audit.csv and Q03c_precision_summary.csv
 """
 from __future__ import annotations
@@ -76,5 +78,10 @@ def main(src: str) -> None:
     print(S.to_string())
 
 
+PRE_D012 = ROOT / "data" / "processed" / "_pre_D012" / "postings_dedup.parquet"
+
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else str(ROOT / "data" / "processed" / "postings_dedup.parquet"))
+    src = Path(sys.argv[1]) if len(sys.argv) > 1 else PRE_D012
+    if not src.exists():
+        raise SystemExit(f"precision_audit: {src} not found - pass the pre-D-012 postings_dedup.parquet the labels were drawn from")
+    main(str(src))

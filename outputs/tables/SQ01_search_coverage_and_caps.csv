@@ -1,0 +1,2 @@
+queries_run,frame_A,frame_B,frame_C,queries_hitting_1000_cap,frame_C_truncated_slices,frame_C_total_available,frame_C_retrieved,search_rows,unique_accounts_searched,profiles_fetched,profiles_failed,organisations_or_bots_dropped,note
+1075,975,40,60,10,17,34813,6187,14104,9464,9464,0,0,"profiles_failed = profile records without an id in profiles.jsonl; collection runs after 2026-09-30 log transient failures to retry.jsonl instead, so from those runs on it counts definitive failures only"

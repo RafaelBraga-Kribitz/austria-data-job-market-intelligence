@@ -1,0 +1,5 @@
+last_push,count,n,share,ci_low,ci_high,note
+> 3 years,3332,7508,0.444,0.433,0.455,population: all data repositories of P_data; 'unknown' = no push date recorded
+1–3 years,2032,7508,0.271,0.261,0.281,population: all data repositories of P_data; 'unknown' = no push date recorded
+4–12 months,1287,7508,0.171,0.163,0.18,population: all data repositories of P_data; 'unknown' = no push date recorded
+≤3 months,857,7508,0.114,0.107,0.122,population: all data repositories of P_data; 'unknown' = no push date recorded

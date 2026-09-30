@@ -1,0 +1,18 @@
+dimension,category,demand_count,demand_n,demand_share,supply_count,supply_n,supply_share,supply_ci_low,supply_ci_high,difference_pp,relative_representation,demand_styria,supply_styria_T1,demand_table,supply_population
+normalized_title,Data Engineer,134,720,0.186,55,872,0.063,0.049,0.081,-12.3,0.34,18,4,T02b,P_T1
+normalized_title,Business Analyst,120,720,0.167,21,872,0.024,0.016,0.037,-14.3,0.14,4,2,T02b,P_T1
+normalized_title,Data Scientist,79,720,0.11,486,872,0.557,0.524,0.59,44.8,5.08,5,25,T02b,P_T1
+normalized_title,Data Analyst,77,720,0.107,124,872,0.142,0.121,0.167,3.5,1.33,11,7,T02b,P_T1
+normalized_title,Machine Learning / AI Engineer,76,720,0.106,140,872,0.161,0.138,0.186,5.5,1.52,8,11,T02b,P_T1
+normalized_title,Master / Product Data Management (operational),34,720,0.047,1,872,0.001,0.0,0.006,-4.6,0.02,3,1,T02b,P_T1
+normalized_title,BI Developer / BI Engineer,33,720,0.046,15,872,0.017,0.01,0.028,-2.9,0.38,2,3,T02b,P_T1
+normalized_title,BI Analyst,32,720,0.044,0,872,0.0,0.0,0.004,-4.4,0.0,1,0,T02b,P_T1
+normalized_title,Data Governance / Data Steward / Data Manager,31,720,0.043,6,872,0.007,0.003,0.015,-3.6,0.16,2,0,T02b,P_T1
+normalized_title,Financial / Risk / Controlling Analyst (data-heavy),30,720,0.042,5,872,0.006,0.002,0.013,-3.6,0.14,0,0,T02b,P_T1
+normalized_title,Marketing/Growth/CRM Analyst,22,720,0.031,2,872,0.002,0.001,0.008,-2.8,0.08,0,1,T02b,P_T1
+normalized_title,Data Architect / Data Platform,21,720,0.029,0,872,0.0,0.0,0.004,-2.9,0.0,2,0,T02b,P_T1
+normalized_title,BI Consultant / Analytics Consultant,20,720,0.028,0,872,0.0,0.0,0.004,-2.8,0.0,2,0,T02b,P_T1
+normalized_title,Analytics Engineer,5,720,0.007,3,872,0.003,0.001,0.01,-0.4,0.5,0,0,T02b,P_T1
+normalized_title,Statistician / Biostatistician,3,720,0.004,12,872,0.014,0.008,0.024,1.0,3.3,0,2,T02b,P_T1
+normalized_title,Marketing Data Scientist,2,720,0.003,0,872,0.0,0.0,0.004,-0.3,0.0,0,0,T02b,P_T1
+normalized_title,Product Analyst,1,720,0.001,2,872,0.002,0.001,0.008,0.1,1.65,0,0,T02b,P_T1

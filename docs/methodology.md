@@ -15,11 +15,13 @@ data/processed/postings_normalized.jsonl
       ▼  dedupe.py             cross-source duplicate groups, canonical row per group
 data/processed/postings_dedup.jsonl
       │
-      ├─► run_analysis.py      outputs/tables/T*.csv, outputs/market_summary.json
+      ├─► run_analysis.py      outputs/tables/T*.csv (incl. T04d, T05f, T17), outputs/market_summary.json
       ├─► cluster_requirements.py   outputs/tables/T15_*.csv, outputs/clusters.json
       ├─► jobbarometer_analysis.py  outputs/tables/JB*.csv, outputs/jobbarometer.json
-      ├─► make_figures.py      outputs/figures/*.png
-      └─► export_agent_json.py outputs/{skills,roles,locations,languages,salaries,career_paths}.json
+      ├─► build_decision_matrix.py  D01–D04b, career_paths.json
+      ├─► supplement_radar.py  T19 dated Arbeitnow/hunter aggregates (never merged into 720; needs the private hunter DB)
+      ├─► make_figures.py      outputs/figures/*.png (F14 intern vs junior)
+      └─► export_agent_json.py outputs/{skills,roles,locations,languages,salaries}.json
       │
       ▼  hand-written synthesis (numbers copied from tables, each with table id)
 docs/market-guide.md · docs/career-map.md · CAREER_DECISION_MAP.md · AGENT_CONTEXT.md
@@ -31,12 +33,14 @@ docs/market-guide.md · docs/career-map.md · CAREER_DECISION_MAP.md · AGENT_CO
 |---|---|---|---|
 | EURES portal | EU mirror of AMS "PES Austria" feed (+ a few private boards) | public JSON search API used by the portal SPA; detail endpoint for reference id | full search hit (title, HTML description, NUTS-3 codes, ESCO occupation URIs, schedule/offering codes, employer, dates) + facets per query + detail record |
 | karriere.at | generalist board | listing JSON (same payload as the site's own SPA, header `X-Requested-With`) + detail HTML with schema.org JobPosting JSON-LD | listing item (title, company, size, locations, salary string, home-office flag, date) + JSON-LD (description, baseSalary, employmentType, jobLocation) + Vue detail state |
-| LinkedIn | professional network | logged-out "jobs-guest" HTML endpoints (list + jobPosting) | card (title, company, location, date, url) + detail (description, seniority level, employment type, function, industry, applicant count) + raw HTML |
+| LinkedIn | professional network — **job listings only** | logged-out "jobs-guest" HTML endpoints (list + jobPosting) | card (title, company, location, date, url) + detail (description, seniority level, employment type, function, industry, applicant count) + raw HTML; no member profiles, people search or hiring-team data |
 | willhaben Jobs | classifieds board | `__NEXT_DATA__` JSON embedded in search and detail pages | entry (title, company, locations, salary, time frame, employment modes, dates) + detail data (description, attributes) |
 | jobs.at | generalist board | HTML cards + detail HTML | card + detail (title, company, meta, description) + raw HTML |
 | AMS JobBarometer | official aggregate | server-rendered HTML per occupation × Bundesland | yearly ad counts 2020–2025, trend rating, share label, similar occupations, Bundesland distribution, competencies + raw HTML |
+| Arbeitnow Job Board API | documented public API (no key) | `collect_arbeitnow.py`; Austria filter client-side | dated supplement only — never merged into 2026-09-16; raw gitignored; 2026-09-18 probe: 1 Austria / 0 core |
+| Private hunter (gitignored) | python-jobspy on LinkedIn **job listings** (the library requests the same logged-out `jobs-guest` search endpoint as the LinkedIn row above) + StepStone.at/Indeed.at attempts (HTTP 403, stopped) | `src/private/radar/` (not published); `supplement_radar.py` reads its database and skips with a notice without it | T19 2026-09-18: 109 Austrian core titles, 0 JD texts, 100 % jobspy LinkedIn; never merged into 720; terms position in docs/legal-and-publication-audit.md §11.2 |
 
-Rules: no login, token, CAPTCHA or paywall bypass; fixed delays (0.8–2 s) and exponential backoff on 429/5xx; every request is logged in `query_log.jsonl`; every record keeps a collection envelope (`source`, `collected_at`, `query`). Blocked sources are listed in `docs/data-sources.md`.
+Rules: no login, token, CAPTCHA or paywall bypass; fixed delays (0.8–2 s) and exponential backoff on 429/5xx; every request is logged in `query_log.jsonl`; every record keeps a collection envelope (`source`, `collected_at`, `query`). Blocked sources are listed in `docs/data-sources.md`. Private research re-collection of posting boards (including StepStone/Indeed/LinkedIn jobs) lives in the gitignored hunter and in new dated folders (D-022); it is never published. **LinkedIn scope:** job *listings* were collected by automation (2026-09-16 with `collect_linkedin.py`, 2026-09-18 with the hunter); LinkedIn *member/people* data was never collected by automation — the Layer 2 LinkedIn slot accepts only permitted channels (D-018, D-026).
 
 Queries: ~45 title keywords in English and German (`config/queries.json`) run Austria-wide on each source; LinkedIn additionally per major city because it caps results at 1,000 per query. The keyword superset is deliberately broad; inclusion in the analysis is decided by title normalization, not by the query (DECISION_LOG D-002).
 
@@ -73,6 +77,17 @@ Union-find over (company_norm, title_clean, state), (title_clean, description fi
 * **Text-derived features** (skills, languages, education, remote, experience) use the sub-set with `description_length > 300` as denominator; structural features use the whole core set. Every table stores `n`.
 * Proportions carry Wilson 95% confidence intervals where they feed decisions.
 
+
+<!-- BQ27_population_funnel:start (figure generated by src/analysis/make_visual_layer.py - do not edit by hand) -->
+**Q. When I read '40 % of ads', 40 % of what exactly - and how did 12,429 rows become that denominator?**
+
+12,429 raw rows deduplicate to 10,945 unique postings, of which 720 carry a core data-role title - that is the denominator behind almost every share in the project, and only 58 of them list a Styrian site (52 of those in the Graz commuting area).
+
+[![BQ27_population_funnel](../outputs/figures/BQ27_population_funnel.png)](../outputs/figures/BQ27_population_funnel.png)
+
+<sub>**Figure BQ27** · part to whole shown as `horizontal_bar` (bivariate-simple) · built from `outputs/market_summary.json`, `Q04_duplicates.csv`, `T01_source_coverage.csv` · units: postings. **Read with:** Each bar is a subset of the one above it, so the bars must never be summed. Text-derived shares use the 719 postings with a description, not all 720. The Styria steps count every ad that lists a Styrian site; by primary state Styria has 54.</sub>
+<!-- BQ27_population_funnel:end -->
+
 ## 6. Requirement clusters (`cluster_requirements.py`)
 
 Binary skill matrix (tech + statistics + business vocabulary, skills with ≥8 occurrences, postings with ≥2 skills) → L2-normalised k-means, k ∈ 4…10 chosen by silhouette, plus NMF(6) for additive topics. Clusters are described by over-represented skills (lift) and family/geo mix. The silhouette is low (reported in `outputs/clusters.json`); clusters are used as descriptive archetypes only, never as "real professions".
@@ -87,9 +102,12 @@ AMS JobBarometer counts are yearly online-ad counts per AMS occupation class (Be
 
 ## 9. Reproduction
 
+Run from the repository root. The six posting-collector scripts (first six lines) exist only in the private repository; the public tree starts at `collect_jobbarometer.py`. Every collector accepts `--date YYYY-MM-DD` to continue an existing dated folder.
+
 ```bash
 pip install -r requirements.txt
 python src/acquisition/collect_eures.py && python src/acquisition/collect_eures.py details
+python src/acquisition/collect_eures_styria_text.py     # full-text sweep Styria/Vienna/Upper Austria -> data/raw/eures_textsearch (input of adjacent_demand.py)
 python src/acquisition/collect_karriere.py && python src/acquisition/collect_karriere.py details
 python src/acquisition/collect_linkedin.py && python src/acquisition/collect_linkedin.py details
 python src/acquisition/collect_willhaben.py && python src/acquisition/collect_willhaben.py details
@@ -97,11 +115,12 @@ python src/acquisition/collect_jobsat.py && python src/acquisition/collect_jobsa
 python src/acquisition/collect_jobbarometer.py
 python src/pipeline/build_interim.py && python src/pipeline/normalize.py && python src/pipeline/dedupe.py
 python src/analysis/run_analysis.py && python src/analysis/cluster_requirements.py
-python src/analysis/jobbarometer_analysis.py && python src/analysis/make_figures.py && python src/analysis/export_agent_json.py
+python src/analysis/jobbarometer_analysis.py && python src/analysis/adjacent_demand.py
+python src/analysis/make_figures.py && python src/analysis/export_agent_json.py
 python -m pytest tests -q
 ```
 
-Acquisition is not bit-reproducible (postings change daily); everything from `build_interim.py` onward is deterministic given `data/raw`. Raw data is kept in the **private** repository for that reason; the public repository ships the pipeline, configs and aggregated outputs but neither the raw data nor the posting collectors (PUBLICATION_DECISION.md). The acquisition commands above therefore run only in the private repository, and the posting collectors should not be re-run without the owner's decision (DECISION_LOG D-013): all five posting sources restrict automated extraction in their terms (docs/legal-and-publication-audit.md §2).
+Acquisition is not bit-reproducible (postings change daily); everything from `build_interim.py` onward is deterministic given `data/raw`. Raw data and posting collectors stay **unpublished** (PUBLICATION_DECISION.md, D-022): the public tree ships pipeline, configs and aggregates. Private research re-collection is allowed when the owner asks; new runs go in a new dated folder and are never merged with 2026-09-16. Do not bypass CAPTCHA, login, WAF or paywalls. Source terms still restrict automated extraction (docs/legal-and-publication-audit.md §2); that is why collectors are dark, not why they must be absent from the author's machine.
 
 ## 10. Collection conduct (for the record)
 

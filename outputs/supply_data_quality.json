@@ -1,0 +1,98 @@
+{
+ "generated": "2026-09-30T21:04:04.718439",
+ "search": {
+  "queries_run": 1075,
+  "frame_A": 975,
+  "frame_B": 40,
+  "frame_C": 60,
+  "queries_hitting_1000_cap": 10,
+  "frame_C_truncated_slices": 17,
+  "frame_C_total_available": 34813,
+  "frame_C_retrieved": 6187,
+  "search_rows": 14104,
+  "unique_accounts_searched": 9464,
+  "profiles_fetched": 9464,
+  "profiles_failed": 0,
+  "organisations_or_bots_dropped": 0
+ },
+ "duplicates": {
+  "duplicate_logins": 0,
+  "duplicate_candidate_ids": 0,
+  "duplicate_project_ids": 0,
+  "accounts_in_multiple_frames": 662,
+  "frame_combinations": "{\"C\": 5156, \"A\": 1832, \"B\": 1807, \"A+C\": 443, \"A+B\": 144, \"B+C\": 74, \"A+B+C\": 1}",
+  "median_search_hits_per_account": 1.0,
+  "cross_source_dedup": "not applicable: GitHub is the only automated source; Stack Overflow survey is anonymous; manual LinkedIn records use observer-assigned pseudo ids and cannot be matched"
+ },
+ "geography": {
+  "population": "all GitHub accounts fetched",
+  "n": 9457,
+  "austrian_signal": 9409,
+  "dropped_no_austrian_signal": 48,
+  "foreign_place_also_named": 89,
+  "multi_location": 112,
+  "austria_only_no_state": 1322,
+  "state_and_city": 8012,
+  "state_only": 119,
+  "styria_frame_B_but_state_not_styria": 11,
+  "note": "frame B tokens include Styrian town names that also exist elsewhere (e.g. Weiz≠, Baden), and 'Graz' inside other strings; state is decided by geo.json"
+ },
+ "staleness": [
+  {
+   "frame": "A",
+   "n": 2395,
+   "has_bio": 0.944,
+   "T1": 0.361,
+   "data_signal": 0.534,
+   "median_repos": 4.0,
+   "push_12m": 0.538,
+   "student_T1": 0.169
+  },
+  {
+   "frame": "B",
+   "n": 2023,
+   "has_bio": 0.407,
+   "T1": 0.026,
+   "data_signal": 0.122,
+   "median_repos": 3.0,
+   "push_12m": 0.425,
+   "student_T1": 0.154
+  },
+  {
+   "frame": "C",
+   "n": 5649,
+   "has_bio": 0.41,
+   "T1": 0.029,
+   "data_signal": 0.113,
+   "median_repos": 3.0,
+   "push_12m": 0.45,
+   "student_T1": 0.195
+  }
+ ],
+ "taxonomy": {
+  "bios_with_data_word": 1940,
+  "of_which_T1": 863,
+  "unmatched": 1077,
+  "unmatched_share": 0.555,
+  "rule_provenance_T1": "[[\"override\", 833], [\"after_transition\", 28], [\"layer1\", 11]]",
+  "after_transition_reclassified": 28
+ },
+ "projects": {
+  "data_repos": 9347,
+  "by_reason": "[[\"language\", 4776], [\"keyword\", 3702], [\"topic\", 869]]",
+  "readme_fetched": 8656,
+  "readme_404_or_missing": 1915,
+  "tree_fetched": 8586,
+  "is_project": 8127,
+  "documented": 4392,
+  "educational": 2762,
+  "substantive": 2865,
+  "archived": 179,
+  "no_theme": 4168,
+  "keyword_only_with_empty_readme": 1467
+ },
+ "review_samples_private": [
+  "data/processed/supply_quality_bio_review_sample.csv",
+  "data/processed/supply_quality_repo_review_sample.csv"
+ ]
+}

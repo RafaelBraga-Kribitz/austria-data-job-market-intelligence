@@ -1,0 +1,23 @@
+family,item,count,n,share,ci_low,ci_high
+bi,Coursera/edX/Udemy (any),1,15,0.067,0.012,0.298
+data_analytics,Coursera/edX/Udemy (any),6,129,0.047,0.021,0.098
+data_analytics,Certification (any mention),6,129,0.047,0.021,0.098
+data_analytics,Bootcamp,2,129,0.016,0.004,0.055
+data_analytics,DataCamp,1,129,0.008,0.001,0.043
+data_analytics,Google cert,1,129,0.008,0.001,0.043
+data_engineering,Coursera/edX/Udemy (any),3,58,0.052,0.018,0.141
+data_engineering,IBM Data Science Certificate,1,58,0.017,0.003,0.091
+data_engineering,DataCamp,1,58,0.017,0.003,0.091
+data_engineering,Certification (any mention),1,58,0.017,0.003,0.091
+data_engineering,Bootcamp,1,58,0.017,0.003,0.091
+data_science,Coursera/edX/Udemy (any),46,638,0.072,0.054,0.095
+data_science,Certification (any mention),19,638,0.03,0.019,0.046
+data_science,Bootcamp,10,638,0.016,0.009,0.029
+data_science,IBM Data Science Certificate,5,638,0.008,0.003,0.018
+data_science,Scrum/PM cert,4,638,0.006,0.002,0.016
+data_science,DataCamp,4,638,0.006,0.002,0.016
+data_science,Microsoft cert (generic),2,638,0.003,0.001,0.011
+data_science,Google Data Analytics Certificate,1,638,0.002,0.0,0.009
+data_science,Microsoft/Azure cert,1,638,0.002,0.0,0.009
+data_science,Snowflake cert,1,638,0.002,0.0,0.009
+data_science,AWS cert,1,638,0.002,0.0,0.009

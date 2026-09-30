@@ -1,0 +1,2 @@
+sample,n,strict_correct,strict_precision,lenient_correct,lenient_precision,error_types,reviewer
+"P_T1 random sample (seed 11), reviewed 2026-09-18",40,31,0.775,36,0.9,company/organisation account read as person (2); engineering bio with ML words read as data science (1); finance/quant wording read as data science (1); students/researchers counted as declared roles (lenient only),repository author

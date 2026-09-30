@@ -1,5 +1,7 @@
 # Original-specification audit
 
+> **Frozen record (2026-09-16).** Counts in this document are as of that date and are superseded, not wrong: the decision log now runs D-001 … D-030, the figures of record are BQ01–BQ45 (`FIGURE-MANIFEST.yaml`), and the test count is in the run manifest. Items left open here are registered in `docs/open-questions.md` (updated 2026-09-30): OQ-09, OQ-16, OQ-20–OQ-23.
+
 Audit date 2026-09-16. The original one-shot brief ("Austria Data Job Market Intelligence") is used as a literal checklist. Each requirement is classified COMPLETE / PARTIALLY COMPLETE / WEAK / MISSING / NOT APPLICABLE after verifying the implementation and the evidence in the repository, not the previous run's report. Where the audit changed something, the action is named. Counts refer to the post-audit run (DECISION_LOG D-012).
 
 ## A. Second-pass verification of the previous report's claims
@@ -26,7 +28,7 @@ Audit date 2026-09-16. The original one-shot brief ("Austria Data Job Market Int
 | Job titles (exist, overlap, common, rare) | COMPLETE | T02, T02b (20 normalized titles), T02c raw titles, Q03c precision | Recall unmeasured | Precision audit added; 22 FP removed |
 | Skills | COMPLETE | 13 categories, ~260 items (T05_*) | Rule-based; no discovery of unknown tools | Aliases added (D-012) |
 | Technologies | COMPLETE | cloud_platforms, data_platforms, bi_tools, data_engineering categories reported separately | — | — |
-| Frameworks | PARTIALLY COMPLETE | ml frameworks (PyTorch, TensorFlow, scikit-learn, LangChain, Hugging Face), web (FastAPI/Flask), orchestration (Airflow, dbt) exist inside python_ecosystem / data_engineering | No separate "frameworks" table; ads name frameworks in < 5 % of cases, so a dedicated table would be mostly zeros | Documented; categories listed in market-guide §5 |
+| Frameworks | PARTIALLY COMPLETE | ml frameworks (PyTorch, TensorFlow, scikit-learn, LangChain, Hugging Face), web (FastAPI/Flask), orchestration (Airflow, dbt) exist inside python_ecosystem / data_engineering | No separate "frameworks" table; ads name frameworks in < 5 % of cases, so a dedicated table would be mostly zeros | Documented; categories listed in market-guide §5. Since 2026-09-21 **BQ35** shows languages/tools vs frameworks/libraries as separate vocabularies (`docs/question-coverage-audit.md`) |
 | Libraries | COMPLETE (as observed) | python_ecosystem category (16 items) | Libraries are almost never named (pandas 3 %) — a finding, not a gap | — |
 | Programming languages | COMPLETE | programming_languages category (16 items; SQL now includes SQL Server) | — | D-012 |
 | Cloud platforms / databases / BI tools / ML tools | COMPLETE | separate categories and tables | — | — |
@@ -41,7 +43,7 @@ Audit date 2026-09-16. The original one-shot brief ("Austria Data Job Market Int
 | Education | COMPLETE | see degrees | — | — |
 | Locations; geographic concentration; commuting geography | COMPLETE | T03a–e, config/geo.json commuting list, multi-site handling | Commuting list is an assumption | — |
 | Frequency / keyword frequency / title / location / language / certification / degree / tool frequency | COMPLETE | T02, T03, T05, T07, T11 with n, count, share and Wilson CI in every table | — | Denominators restated at the top of market-guide |
-| Requirement co-occurrence; technology and skill combinations; rare/high-value combinations | COMPLETE | T06 pairs (lift, conditional shares), T06b size-3 stacks, T15 clusters/NMF; specific pairs (Python+SQL, SQL+Power BI, Azure+Databricks, Power BI+DAX, dbt+SQL) quoted | Clusters weak (silhouette 0.07) | Pair section expanded in market-guide §5 |
+| Requirement co-occurrence; technology and skill combinations; rare/high-value combinations | COMPLETE | T06 pairs (lift, conditional shares), T06b size-3 stacks, T15 clusters/NMF; specific pairs (Python+SQL, SQL+Power BI, Azure+Databricks, Power BI+DAX, dbt+SQL) quoted | Clusters weak (silhouette 0.075) | Pair section expanded in market-guide §5 |
 | Career paths | COMPLETE | docs/career-map.md §5, D01/D02 | No family robust (Styria < 30) | Ranking re-explained as size/openness/floor ranking, not ease of entry |
 | Learning roadmap | COMPLETE | D04, career-map §7 | — | Re-derived from new tables |
 | Project implications | COMPLETE | career-map §8 | — | — |
@@ -49,17 +51,17 @@ Audit date 2026-09-16. The original one-shot brief ("Austria Data Job Market Int
 | Agent context (AGENT_CONTEXT.md with derived-from-evidence statement and date) | COMPLETE | AGENT_CONTEXT.md §0 and §21 | — | Publication status, data boundary, collection restrictions and update procedure added |
 | Machine-readable JSON outputs | COMPLETE | 11 JSON files | — | URL/snippet keys scrubbed in the public export |
 | Reproducibility | PARTIALLY COMPLETE (by design) | Deterministic pipeline from raw data; raw data private; posting collectors private | Outsiders cannot regenerate the aggregates; they can audit rules, code and table consistency | Stated in README and limitations §13 |
-| Data quality report | COMPLETE | docs/data-quality.md with measured title precision | Extraction precision/recall for skills/language/salary still spot-checks only | Follow-up listed |
+| Data quality report | COMPLETE | docs/data-quality.md with measured title precision | Extraction precision/recall for skills/language/salary still spot-checks only | Follow-up listed; registered as OQ-16 (skills) and OQ-22 (language, salary); protocol `docs/labelling-protocol.md` |
 | Uncertainty | COMPLETE | Wilson CIs, robust/tentative rule, small-n flags, "What would change this map?" | — | Section added to CAREER_DECISION_MAP |
 | Market/posting bias | COMPLETE | docs/posting-bias.md | — | — |
 | Source provenance | COMPLETE | envelopes with source, collected_at, query, page; query logs; source_url per row (private) | — | — |
-| Employer analysis; employer concentration; agencies; anonymised employers | COMPLETE after fix | T04, T04a, T04b now with named vs unnamed counts | Agency-client linkage impossible | "421 employers" wording replaced by "387 named employers nationally / 32 Styria; 140 postings unnamed" |
-| Industry concentration | PARTIALLY COMPLETE | business_domain wording; LinkedIn industry field (T04c) for LinkedIn rows only | No industry field for AMS/karriere rows | Documented |
+| Employer analysis; employer concentration; agencies; anonymised employers | COMPLETE after fix | T04, T04a, T04b now with named vs unnamed counts | Agency-client linkage impossible (OQ-21, structural) | "421 employers" wording replaced by "387 named employers nationally / 32 Styria; 140 postings unnamed" |
+| Industry concentration | PARTIALLY COMPLETE | business_domain wording; LinkedIn industry field (T04c) for LinkedIn rows only | No industry field for AMS/karriere rows | Documented; registered as OQ-20 |
 | Time dimension / longitudinal | PARTIALLY COMPLETE | T13 posted-by-week, T13b age by source; JobBarometer 2020–2025 | Single snapshot; permitted refresh channels only | Stock/flow wording audited; refresh re-scoped (D-013) |
 | Salary normalisation (monthly × 14, plausibility) | COMPLETE | D-005; T09 | ×14 assumed uniformly (4 % of ads state it) | Assumption disclosed |
 | Language bifurcation (German-written vs English-written; German required vs English-only) | COMPLETE after fix | T07c, T07d, T07e | — | Wording corrected |
 | Austrian regional comparison (Vienna, Upper Austria, Salzburg, Tyrol, Styria) | COMPLETE | T03a, T03_family_by_state, T09b by state, JB05 | Small n outside Vienna/UA/Styria | — |
-| Multinational vs Austrian companies | WEAK | Only proxied by posting language and LinkedIn industry; no ownership field | Would need an employer-attribute table | Listed as a follow-up; not claimed |
+| Multinational vs Austrian companies | WEAK | Only proxied by posting language and LinkedIn industry; no ownership field | Would need an employer-attribute table | Listed as a follow-up; not claimed; registered as OQ-23 |
 | Contract types; full-time vs part-time; internships/working-student | COMPLETE | T12, T12a | — | — |
 | Employer/board overlap and platform bias | COMPLETE | T01b, T03e, T07 by source, T09a | — | — |
 | Research-landscape survey (GitHub/Kaggle/HF/ESCO/O*NET) | COMPLETE | docs/research-landscape.md | AMS open-data catalogue not verifiable (JS) | — |
@@ -89,8 +91,8 @@ Audit date 2026-09-16. The original one-shot brief ("Austria Data Job Market Int
 
 ## D. Areas that remain weak or out of reach
 
-* Multinational vs Austrian employer comparison (no ownership attribute).
-* Recall of the title rules; precision/recall of skill, language and salary extraction (spot-checks only).
+* Multinational vs Austrian employer comparison (no ownership attribute) — OQ-23.
+* Recall of the title rules; precision/recall of skill, language and salary extraction (spot-checks only) — OQ-09, OQ-16, OQ-22.
 * StepStone/Indeed coverage and Styrian career pages.
 * Longitudinal evidence beyond the JobBarometer series.
 * Hiring outcomes — the only observation that can turn requirement patterns into evidence about hiring.
