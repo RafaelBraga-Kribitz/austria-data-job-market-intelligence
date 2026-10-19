@@ -69,11 +69,11 @@ From 2026-09-30 every release is recorded as a dated checklist; nothing is ticke
 
 - [x] Tests pass in the private repository: `python -m pytest tests -q` → 400 passed (2026-09-30, after the redaction; `run_all.py all` before it: 399 passed)
 - [x] Digest regenerated with `--strict` (no missing input) as the last `run_all.py all` step; prose numbers reconciled against it on 2026-09-30
-- [ ] Export completes with zero problems (staged; the public tree is replaced only on success): `python src/publish/export_public.py ../austria-data-job-market-intelligence-public` → <<EXPORT_OUTPUT>>
-- [ ] Suppression thresholds re-verified by the export (C02 `count` ≥ 3, C19e `projects` ≥ 5) — part of the export output above
-- [ ] Private paths absent from the public tree: `config/profile.json` is the neutral example; no `library_strategy/`, `docs/linkedin-slot-interface.md`, `src/private/` or posting collector — part of the export output above
-- [ ] Clean clone of the public tree in a temporary directory: `pip install -r requirements.txt`, `python -m pytest tests -q`, `python src/reporting/digest.py`
-- [ ] Public commit pushed and visible: <<PUBLIC_COMMIT>>
+- [x] Export completes with zero problems (staged; the public tree is replaced only on success): `python src/publish/export_public.py ../austria-data-job-market-intelligence-public` → `public export OK: 564 files` (2026-09-30, with the private `EXPORT_UID_KEY`; the GitHub-login check ran on a pre-redaction test export the same evening, 560 files OK, and is skipped once logins are pseudonymised)
+- [x] Suppression thresholds re-verified by the export (C02 `count` ≥ 3, C19e `projects` ≥ 5) — part of the export output above
+- [x] Private paths absent from the public tree: `config/profile.json` is the neutral example; no `library_strategy/`, `docs/linkedin-slot-interface.md`, `src/private/` or posting collector — part of the export output above
+- [x] Clean clone of the public tree in a temporary directory: fresh `git clone` from GitHub → `python -m pytest -q` 385 passed, 18 skipped (private data absent); `python src/reporting/digest.py` writes the digest (2,284 lines). Dependencies were the pinned ones already installed, not a fresh `pip install`
+- [x] Public commit pushed and visible: `f6dd775` on `main` (fast-forward on top of the owner's public-only README/CI commits up to `287bde1`, which are now kept in `src/publish/public_overlay/`); README quality gate passed on GitHub
 
 Decision recorded in `DECISION_LOG.md` D-014.
 

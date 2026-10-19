@@ -10,8 +10,8 @@ joined set as thresholds and are labels for market structure, not judgements.
 
 Regional bases (OQ-19). Demand: DS01/DS05b/DS13 Styria and Vienna columns come from T02 (ads listing at least one site
 in the region, market_summary styria_core); DS05 comes from T03a (primary state). Supply: the canonical Styrian
-denominators are location-resolved (every account whose resolved location is Styria: P_T1 56 / P_data 248 / all 2,033
-in the 2026-09-17 collection); the frame-B complete-Styria subset (52 / 247 / 2,023) is reported in DS13 under that label.
+denominators are location-resolved (every account whose resolved location is Styria; counts in C05a and DS13, outputs/metrics.json
+keys supply_geo__*); the frame-B complete-Styria subset (C05c) is reported in DS13 under that label.
 
 Usage: python src/analysis/demand_supply.py
 """

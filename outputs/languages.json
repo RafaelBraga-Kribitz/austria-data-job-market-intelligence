@@ -1,12 +1,12 @@
 {
  "vintage": {
-  "min": "2026-09-16 17:00:34+00:00",
-  "max": "2026-09-16 18:39:42+00:00"
+  "min": "2026-10-18 18:30:36+00:00",
+  "max": "2026-10-18 21:29:58+00:00"
  },
  "posted_date_range": {
   "scope": "core canonical postings only (the analysis set); per-source first_posted/last_posted in `sources` cover all rows of the source",
-  "min": "2023-08-17",
-  "max": "2026-09-16"
+  "min": "2022-12-05",
+  "max": "2026-10-18"
  },
  "analysis_set": "canonical rows with role_family in CORE_FAMILIES",
  "regional_count_basis": {
@@ -21,59 +21,51 @@
  "german_overall": [
   {
    "german_requirement": "not_mentioned",
-   "count": 298,
-   "n": 719,
-   "share": 0.414,
-   "ci_low": 0.379,
-   "ci_high": 0.451
+   "count": 260,
+   "n": 699,
+   "share": 0.372,
+   "ci_low": 0.337,
+   "ci_high": 0.408
   },
   {
    "german_requirement": "required_implied",
    "count": 224,
-   "n": 719,
-   "share": 0.312,
-   "ci_low": 0.279,
-   "ci_high": 0.346
+   "n": 699,
+   "share": 0.32,
+   "ci_low": 0.287,
+   "ci_high": 0.356
   },
   {
    "german_requirement": "preferred",
-   "count": 88,
-   "n": 719,
-   "share": 0.122,
-   "ci_low": 0.1,
-   "ci_high": 0.148
+   "count": 109,
+   "n": 699,
+   "share": 0.156,
+   "ci_low": 0.131,
+   "ci_high": 0.185
   },
   {
    "german_requirement": "required",
-   "count": 61,
-   "n": 719,
-   "share": 0.085,
-   "ci_low": 0.067,
-   "ci_high": 0.107
+   "count": 71,
+   "n": 699,
+   "share": 0.102,
+   "ci_low": 0.081,
+   "ci_high": 0.126
   },
   {
    "german_requirement": "mentioned",
-   "count": 42,
-   "n": 719,
-   "share": 0.058,
-   "ci_low": 0.044,
-   "ci_high": 0.078
+   "count": 32,
+   "n": 699,
+   "share": 0.046,
+   "ci_low": 0.033,
+   "ci_high": 0.064
   },
   {
    "german_requirement": "german_or_english",
-   "count": 4,
-   "n": 719,
-   "share": 0.006,
-   "ci_low": 0.002,
-   "ci_high": 0.014
-  },
-  {
-   "german_requirement": "explicitly_not_required",
-   "count": 2,
-   "n": 719,
-   "share": 0.003,
+   "count": 3,
+   "n": 699,
+   "share": 0.004,
    "ci_low": 0.001,
-   "ci_high": 0.01
+   "ci_high": 0.013
   }
  ],
  "german_by_family": [
@@ -81,1076 +73,1067 @@
    "role_family": "bi",
    "german_requirement": "required_implied",
    "count": 39,
-   "n": 85,
-   "share": 0.459,
-   "ci_low": 0.357,
-   "ci_high": 0.564
+   "n": 92,
+   "share": 0.424,
+   "ci_low": 0.328,
+   "ci_high": 0.526
   },
   {
    "role_family": "bi",
    "german_requirement": "not_mentioned",
-   "count": 23,
-   "n": 85,
-   "share": 0.271,
-   "ci_low": 0.188,
-   "ci_high": 0.373
-  },
-  {
-   "role_family": "bi",
-   "german_requirement": "preferred",
-   "count": 13,
-   "n": 85,
-   "share": 0.153,
-   "ci_low": 0.092,
-   "ci_high": 0.244
-  },
-  {
-   "role_family": "bi",
-   "german_requirement": "mentioned",
-   "count": 5,
-   "n": 85,
-   "share": 0.059,
-   "ci_low": 0.025,
-   "ci_high": 0.13
-  },
-  {
-   "role_family": "bi",
-   "german_requirement": "required",
-   "count": 4,
-   "n": 85,
-   "share": 0.047,
-   "ci_low": 0.018,
-   "ci_high": 0.115
-  },
-  {
-   "role_family": "bi",
-   "german_requirement": "german_or_english",
-   "count": 1,
-   "n": 85,
-   "share": 0.012,
-   "ci_low": 0.002,
-   "ci_high": 0.064
-  },
-  {
-   "role_family": "business_analysis",
-   "german_requirement": "not_mentioned",
-   "count": 44,
-   "n": 120,
-   "share": 0.367,
-   "ci_low": 0.286,
-   "ci_high": 0.456
-  },
-  {
-   "role_family": "business_analysis",
-   "german_requirement": "required_implied",
-   "count": 38,
-   "n": 120,
-   "share": 0.317,
-   "ci_low": 0.24,
-   "ci_high": 0.404
-  },
-  {
-   "role_family": "business_analysis",
-   "german_requirement": "required",
-   "count": 15,
-   "n": 120,
-   "share": 0.125,
-   "ci_low": 0.077,
-   "ci_high": 0.196
-  },
-  {
-   "role_family": "business_analysis",
-   "german_requirement": "preferred",
-   "count": 12,
-   "n": 120,
-   "share": 0.1,
-   "ci_low": 0.058,
-   "ci_high": 0.167
-  },
-  {
-   "role_family": "business_analysis",
-   "german_requirement": "mentioned",
-   "count": 11,
-   "n": 120,
-   "share": 0.092,
-   "ci_low": 0.052,
-   "ci_high": 0.157
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "not_mentioned",
-   "count": 46,
-   "n": 107,
-   "share": 0.43,
-   "ci_low": 0.34,
-   "ci_high": 0.525
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "required_implied",
-   "count": 35,
-   "n": 107,
-   "share": 0.327,
-   "ci_low": 0.246,
-   "ci_high": 0.421
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "preferred",
-   "count": 11,
-   "n": 107,
-   "share": 0.103,
-   "ci_low": 0.058,
-   "ci_high": 0.175
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "required",
-   "count": 10,
-   "n": 107,
-   "share": 0.093,
-   "ci_low": 0.052,
-   "ci_high": 0.164
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "german_or_english",
-   "count": 3,
-   "n": 107,
-   "share": 0.028,
-   "ci_low": 0.01,
-   "ci_high": 0.079
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "mentioned",
-   "count": 1,
-   "n": 107,
-   "share": 0.009,
-   "ci_low": 0.002,
-   "ci_high": 0.051
-  },
-  {
-   "role_family": "data_analytics",
-   "german_requirement": "explicitly_not_required",
-   "count": 1,
-   "n": 107,
-   "share": 0.009,
-   "ci_low": 0.002,
-   "ci_high": 0.051
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "not_mentioned",
-   "count": 82,
-   "n": 160,
-   "share": 0.512,
-   "ci_low": 0.436,
-   "ci_high": 0.589
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "required_implied",
-   "count": 45,
-   "n": 160,
-   "share": 0.281,
-   "ci_low": 0.217,
-   "ci_high": 0.355
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "preferred",
-   "count": 14,
-   "n": 160,
-   "share": 0.087,
-   "ci_low": 0.053,
-   "ci_high": 0.142
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "required",
-   "count": 13,
-   "n": 160,
-   "share": 0.081,
-   "ci_low": 0.048,
-   "ci_high": 0.134
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "mentioned",
-   "count": 5,
-   "n": 160,
-   "share": 0.031,
-   "ci_low": 0.013,
-   "ci_high": 0.071
-  },
-  {
-   "role_family": "data_engineering",
-   "german_requirement": "explicitly_not_required",
-   "count": 1,
-   "n": 160,
-   "share": 0.006,
-   "ci_low": 0.001,
-   "ci_high": 0.035
-  },
-  {
-   "role_family": "data_governance",
-   "german_requirement": "not_mentioned",
-   "count": 34,
-   "n": 65,
-   "share": 0.523,
-   "ci_low": 0.404,
-   "ci_high": 0.64
-  },
-  {
-   "role_family": "data_governance",
-   "german_requirement": "required_implied",
-   "count": 22,
-   "n": 65,
-   "share": 0.338,
-   "ci_low": 0.235,
-   "ci_high": 0.46
-  },
-  {
-   "role_family": "data_governance",
-   "german_requirement": "preferred",
-   "count": 4,
-   "n": 65,
-   "share": 0.062,
-   "ci_low": 0.024,
-   "ci_high": 0.148
-  },
-  {
-   "role_family": "data_governance",
-   "german_requirement": "required",
-   "count": 4,
-   "n": 65,
-   "share": 0.062,
-   "ci_low": 0.024,
-   "ci_high": 0.148
-  },
-  {
-   "role_family": "data_governance",
-   "german_requirement": "mentioned",
-   "count": 1,
-   "n": 65,
-   "share": 0.015,
-   "ci_low": 0.003,
-   "ci_high": 0.082
-  },
-  {
-   "role_family": "data_science",
-   "german_requirement": "not_mentioned",
-   "count": 57,
-   "n": 157,
-   "share": 0.363,
-   "ci_low": 0.292,
-   "ci_high": 0.441
-  },
-  {
-   "role_family": "data_science",
-   "german_requirement": "required_implied",
-   "count": 39,
-   "n": 157,
-   "share": 0.248,
-   "ci_low": 0.187,
-   "ci_high": 0.321
-  },
-  {
-   "role_family": "data_science",
-   "german_requirement": "preferred",
-   "count": 30,
-   "n": 157,
-   "share": 0.191,
-   "ci_low": 0.137,
-   "ci_high": 0.26
-  },
-  {
-   "role_family": "data_science",
-   "german_requirement": "mentioned",
-   "count": 18,
-   "n": 157,
-   "share": 0.115,
-   "ci_low": 0.074,
-   "ci_high": 0.174
-  },
-  {
-   "role_family": "data_science",
-   "german_requirement": "required",
-   "count": 13,
-   "n": 157,
-   "share": 0.083,
-   "ci_low": 0.049,
-   "ci_high": 0.137
-  },
-  {
-   "role_family": "marketing_analytics",
-   "german_requirement": "not_mentioned",
-   "count": 12,
-   "n": 24,
-   "share": 0.5,
-   "ci_low": 0.314,
-   "ci_high": 0.686
-  },
-  {
-   "role_family": "marketing_analytics",
-   "german_requirement": "required_implied",
-   "count": 6,
-   "n": 24,
-   "share": 0.25,
-   "ci_low": 0.12,
+   "count": 32,
+   "n": 92,
+   "share": 0.348,
+   "ci_low": 0.258,
    "ci_high": 0.449
   },
   {
+   "role_family": "bi",
+   "german_requirement": "preferred",
+   "count": 10,
+   "n": 92,
+   "share": 0.109,
+   "ci_low": 0.06,
+   "ci_high": 0.189
+  },
+  {
+   "role_family": "bi",
+   "german_requirement": "required",
+   "count": 9,
+   "n": 92,
+   "share": 0.098,
+   "ci_low": 0.052,
+   "ci_high": 0.176
+  },
+  {
+   "role_family": "bi",
+   "german_requirement": "mentioned",
+   "count": 2,
+   "n": 92,
+   "share": 0.022,
+   "ci_low": 0.006,
+   "ci_high": 0.076
+  },
+  {
+   "role_family": "business_analysis",
+   "german_requirement": "required_implied",
+   "count": 35,
+   "n": 106,
+   "share": 0.33,
+   "ci_low": 0.248,
+   "ci_high": 0.424
+  },
+  {
+   "role_family": "business_analysis",
+   "german_requirement": "not_mentioned",
+   "count": 32,
+   "n": 106,
+   "share": 0.302,
+   "ci_low": 0.223,
+   "ci_high": 0.395
+  },
+  {
+   "role_family": "business_analysis",
+   "german_requirement": "preferred",
+   "count": 21,
+   "n": 106,
+   "share": 0.198,
+   "ci_low": 0.133,
+   "ci_high": 0.284
+  },
+  {
+   "role_family": "business_analysis",
+   "german_requirement": "required",
+   "count": 11,
+   "n": 106,
+   "share": 0.104,
+   "ci_low": 0.059,
+   "ci_high": 0.176
+  },
+  {
+   "role_family": "business_analysis",
+   "german_requirement": "mentioned",
+   "count": 7,
+   "n": 106,
+   "share": 0.066,
+   "ci_low": 0.032,
+   "ci_high": 0.13
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "not_mentioned",
+   "count": 42,
+   "n": 107,
+   "share": 0.393,
+   "ci_low": 0.305,
+   "ci_high": 0.487
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "required_implied",
+   "count": 31,
+   "n": 107,
+   "share": 0.29,
+   "ci_low": 0.212,
+   "ci_high": 0.382
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "preferred",
+   "count": 18,
+   "n": 107,
+   "share": 0.168,
+   "ci_low": 0.109,
+   "ci_high": 0.25
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "required",
+   "count": 12,
+   "n": 107,
+   "share": 0.112,
+   "ci_low": 0.065,
+   "ci_high": 0.186
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "mentioned",
+   "count": 2,
+   "n": 107,
+   "share": 0.019,
+   "ci_low": 0.005,
+   "ci_high": 0.066
+  },
+  {
+   "role_family": "data_analytics",
+   "german_requirement": "german_or_english",
+   "count": 2,
+   "n": 107,
+   "share": 0.019,
+   "ci_low": 0.005,
+   "ci_high": 0.066
+  },
+  {
+   "role_family": "data_engineering",
+   "german_requirement": "not_mentioned",
+   "count": 56,
+   "n": 137,
+   "share": 0.409,
+   "ci_low": 0.33,
+   "ci_high": 0.492
+  },
+  {
+   "role_family": "data_engineering",
+   "german_requirement": "required_implied",
+   "count": 43,
+   "n": 137,
+   "share": 0.314,
+   "ci_low": 0.242,
+   "ci_high": 0.396
+  },
+  {
+   "role_family": "data_engineering",
+   "german_requirement": "preferred",
+   "count": 18,
+   "n": 137,
+   "share": 0.131,
+   "ci_low": 0.085,
+   "ci_high": 0.198
+  },
+  {
+   "role_family": "data_engineering",
+   "german_requirement": "required",
+   "count": 15,
+   "n": 137,
+   "share": 0.109,
+   "ci_low": 0.067,
+   "ci_high": 0.173
+  },
+  {
+   "role_family": "data_engineering",
+   "german_requirement": "mentioned",
+   "count": 5,
+   "n": 137,
+   "share": 0.036,
+   "ci_low": 0.016,
+   "ci_high": 0.083
+  },
+  {
+   "role_family": "data_governance",
+   "german_requirement": "required_implied",
+   "count": 25,
+   "n": 60,
+   "share": 0.417,
+   "ci_low": 0.301,
+   "ci_high": 0.543
+  },
+  {
+   "role_family": "data_governance",
+   "german_requirement": "not_mentioned",
+   "count": 23,
+   "n": 60,
+   "share": 0.383,
+   "ci_low": 0.271,
+   "ci_high": 0.51
+  },
+  {
+   "role_family": "data_governance",
+   "german_requirement": "preferred",
+   "count": 6,
+   "n": 60,
+   "share": 0.1,
+   "ci_low": 0.047,
+   "ci_high": 0.201
+  },
+  {
+   "role_family": "data_governance",
+   "german_requirement": "required",
+   "count": 3,
+   "n": 60,
+   "share": 0.05,
+   "ci_low": 0.017,
+   "ci_high": 0.137
+  },
+  {
+   "role_family": "data_governance",
+   "german_requirement": "mentioned",
+   "count": 3,
+   "n": 60,
+   "share": 0.05,
+   "ci_low": 0.017,
+   "ci_high": 0.137
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "not_mentioned",
+   "count": 66,
+   "n": 176,
+   "share": 0.375,
+   "ci_low": 0.307,
+   "ci_high": 0.448
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "required_implied",
+   "count": 43,
+   "n": 176,
+   "share": 0.244,
+   "ci_low": 0.187,
+   "ci_high": 0.313
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "preferred",
+   "count": 34,
+   "n": 176,
+   "share": 0.193,
+   "ci_low": 0.142,
+   "ci_high": 0.258
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "required",
+   "count": 20,
+   "n": 176,
+   "share": 0.114,
+   "ci_low": 0.075,
+   "ci_high": 0.169
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "mentioned",
+   "count": 12,
+   "n": 176,
+   "share": 0.068,
+   "ci_low": 0.039,
+   "ci_high": 0.115
+  },
+  {
+   "role_family": "data_science",
+   "german_requirement": "german_or_english",
+   "count": 1,
+   "n": 176,
+   "share": 0.006,
+   "ci_low": 0.001,
+   "ci_high": 0.031
+  },
+  {
+   "role_family": "marketing_analytics",
+   "german_requirement": "not_mentioned",
+   "count": 8,
+   "n": 18,
+   "share": 0.444,
+   "ci_low": 0.246,
+   "ci_high": 0.663
+  },
+  {
+   "role_family": "marketing_analytics",
+   "german_requirement": "required_implied",
+   "count": 8,
+   "n": 18,
+   "share": 0.444,
+   "ci_low": 0.246,
+   "ci_high": 0.663
+  },
+  {
    "role_family": "marketing_analytics",
    "german_requirement": "preferred",
-   "count": 4,
-   "n": 24,
-   "share": 0.167,
-   "ci_low": 0.067,
-   "ci_high": 0.359
+   "count": 1,
+   "n": 18,
+   "share": 0.056,
+   "ci_low": 0.01,
+   "ci_high": 0.258
   },
   {
    "role_family": "marketing_analytics",
    "german_requirement": "required",
-   "count": 2,
-   "n": 24,
-   "share": 0.083,
-   "ci_low": 0.023,
+   "count": 1,
+   "n": 18,
+   "share": 0.056,
+   "ci_low": 0.01,
    "ci_high": 0.258
   },
   {
    "role_family": "product_analytics",
    "german_requirement": "mentioned",
    "count": 1,
-   "n": 1,
-   "share": 1.0,
-   "ci_low": 0.207,
-   "ci_high": 1.0
+   "n": 3,
+   "share": 0.333,
+   "ci_low": 0.061,
+   "ci_high": 0.792
+  },
+  {
+   "role_family": "product_analytics",
+   "german_requirement": "not_mentioned",
+   "count": 1,
+   "n": 3,
+   "share": 0.333,
+   "ci_low": 0.061,
+   "ci_high": 0.792
+  },
+  {
+   "role_family": "product_analytics",
+   "german_requirement": "preferred",
+   "count": 1,
+   "n": 3,
+   "share": 0.333,
+   "ci_low": 0.061,
+   "ci_high": 0.792
   }
  ],
  "german_by_styria": [
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "not_mentioned",
-   "count": 276,
-   "n": 661,
-   "share": 0.418,
-   "ci_low": 0.381,
-   "ci_high": 0.456
+   "count": 241,
+   "n": 631,
+   "share": 0.382,
+   "ci_low": 0.345,
+   "ci_high": 0.42
   },
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "required_implied",
-   "count": 199,
-   "n": 661,
-   "share": 0.301,
-   "ci_low": 0.267,
-   "ci_high": 0.337
+   "count": 198,
+   "n": 631,
+   "share": 0.314,
+   "ci_low": 0.279,
+   "ci_high": 0.351
   },
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "preferred",
-   "count": 82,
-   "n": 661,
-   "share": 0.124,
-   "ci_low": 0.101,
-   "ci_high": 0.151
+   "count": 98,
+   "n": 631,
+   "share": 0.155,
+   "ci_low": 0.129,
+   "ci_high": 0.186
   },
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "required",
-   "count": 58,
-   "n": 661,
-   "share": 0.088,
-   "ci_low": 0.068,
-   "ci_high": 0.112
+   "count": 64,
+   "n": 631,
+   "share": 0.101,
+   "ci_low": 0.08,
+   "ci_high": 0.127
   },
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "mentioned",
-   "count": 40,
-   "n": 661,
-   "share": 0.061,
-   "ci_low": 0.045,
-   "ci_high": 0.081
+   "count": 27,
+   "n": 631,
+   "share": 0.043,
+   "ci_low": 0.03,
+   "ci_high": 0.062
   },
   {
    "styria_flag": "Rest of Austria",
    "german_requirement": "german_or_english",
-   "count": 4,
-   "n": 661,
-   "share": 0.006,
+   "count": 3,
+   "n": 631,
+   "share": 0.005,
    "ci_low": 0.002,
-   "ci_high": 0.015
-  },
-  {
-   "styria_flag": "Rest of Austria",
-   "german_requirement": "explicitly_not_required",
-   "count": 2,
-   "n": 661,
-   "share": 0.003,
-   "ci_low": 0.001,
-   "ci_high": 0.011
+   "ci_high": 0.014
   },
   {
    "styria_flag": "Styria",
    "german_requirement": "required_implied",
-   "count": 25,
-   "n": 58,
-   "share": 0.431,
-   "ci_low": 0.312,
-   "ci_high": 0.559
+   "count": 26,
+   "n": 68,
+   "share": 0.382,
+   "ci_low": 0.276,
+   "ci_high": 0.501
   },
   {
    "styria_flag": "Styria",
    "german_requirement": "not_mentioned",
-   "count": 22,
-   "n": 58,
-   "share": 0.379,
-   "ci_low": 0.266,
-   "ci_high": 0.508
+   "count": 19,
+   "n": 68,
+   "share": 0.279,
+   "ci_low": 0.187,
+   "ci_high": 0.396
   },
   {
    "styria_flag": "Styria",
    "german_requirement": "preferred",
-   "count": 6,
-   "n": 58,
-   "share": 0.103,
-   "ci_low": 0.048,
-   "ci_high": 0.208
+   "count": 11,
+   "n": 68,
+   "share": 0.162,
+   "ci_low": 0.093,
+   "ci_high": 0.267
   },
   {
    "styria_flag": "Styria",
    "german_requirement": "required",
-   "count": 3,
-   "n": 58,
-   "share": 0.052,
-   "ci_low": 0.018,
-   "ci_high": 0.141
+   "count": 7,
+   "n": 68,
+   "share": 0.103,
+   "ci_low": 0.051,
+   "ci_high": 0.198
   },
   {
    "styria_flag": "Styria",
    "german_requirement": "mentioned",
-   "count": 2,
-   "n": 58,
-   "share": 0.034,
-   "ci_low": 0.01,
-   "ci_high": 0.117
+   "count": 5,
+   "n": 68,
+   "share": 0.074,
+   "ci_low": 0.032,
+   "ci_high": 0.161
   }
  ],
  "german_by_source": [
   {
    "source": "eures",
    "german_requirement": "not_mentioned",
-   "count": 93,
-   "n": 202,
-   "share": 0.46,
-   "ci_low": 0.393,
-   "ci_high": 0.529
+   "count": 66,
+   "n": 175,
+   "share": 0.377,
+   "ci_low": 0.309,
+   "ci_high": 0.451
   },
   {
    "source": "eures",
    "german_requirement": "required_implied",
-   "count": 56,
-   "n": 202,
-   "share": 0.277,
-   "ci_low": 0.22,
-   "ci_high": 0.343
+   "count": 63,
+   "n": 175,
+   "share": 0.36,
+   "ci_low": 0.293,
+   "ci_high": 0.433
   },
   {
    "source": "eures",
    "german_requirement": "preferred",
-   "count": 23,
-   "n": 202,
-   "share": 0.114,
-   "ci_low": 0.077,
-   "ci_high": 0.165
+   "count": 25,
+   "n": 175,
+   "share": 0.143,
+   "ci_low": 0.099,
+   "ci_high": 0.202
   },
   {
    "source": "eures",
    "german_requirement": "mentioned",
-   "count": 20,
-   "n": 202,
-   "share": 0.099,
-   "ci_low": 0.065,
-   "ci_high": 0.148
+   "count": 13,
+   "n": 175,
+   "share": 0.074,
+   "ci_low": 0.044,
+   "ci_high": 0.123
   },
   {
    "source": "eures",
    "german_requirement": "required",
-   "count": 8,
-   "n": 202,
+   "count": 7,
+   "n": 175,
    "share": 0.04,
    "ci_low": 0.02,
-   "ci_high": 0.076
+   "ci_high": 0.08
   },
   {
    "source": "eures",
    "german_requirement": "german_or_english",
-   "count": 2,
-   "n": 202,
-   "share": 0.01,
-   "ci_low": 0.003,
-   "ci_high": 0.035
-  },
-  {
-   "source": "jobsat",
-   "german_requirement": "not_mentioned",
-   "count": 21,
-   "n": 58,
-   "share": 0.362,
-   "ci_low": 0.251,
-   "ci_high": 0.491
+   "count": 1,
+   "n": 175,
+   "share": 0.006,
+   "ci_low": 0.001,
+   "ci_high": 0.032
   },
   {
    "source": "jobsat",
    "german_requirement": "required_implied",
-   "count": 20,
-   "n": 58,
-   "share": 0.345,
-   "ci_low": 0.236,
-   "ci_high": 0.473
+   "count": 16,
+   "n": 45,
+   "share": 0.356,
+   "ci_low": 0.232,
+   "ci_high": 0.502
   },
   {
    "source": "jobsat",
-   "german_requirement": "preferred",
-   "count": 9,
-   "n": 58,
-   "share": 0.155,
-   "ci_low": 0.084,
-   "ci_high": 0.269
+   "german_requirement": "not_mentioned",
+   "count": 12,
+   "n": 45,
+   "share": 0.267,
+   "ci_low": 0.16,
+   "ci_high": 0.41
   },
   {
    "source": "jobsat",
    "german_requirement": "required",
-   "count": 7,
-   "n": 58,
-   "share": 0.121,
-   "ci_low": 0.06,
+   "count": 12,
+   "n": 45,
+   "share": 0.267,
+   "ci_low": 0.16,
+   "ci_high": 0.41
+  },
+  {
+   "source": "jobsat",
+   "german_requirement": "preferred",
+   "count": 5,
+   "n": 45,
+   "share": 0.111,
+   "ci_low": 0.048,
+   "ci_high": 0.235
+  },
+  {
+   "source": "karriere",
+   "german_requirement": "not_mentioned",
+   "count": 42,
+   "n": 133,
+   "share": 0.316,
+   "ci_low": 0.243,
+   "ci_high": 0.399
+  },
+  {
+   "source": "karriere",
+   "german_requirement": "required_implied",
+   "count": 42,
+   "n": 133,
+   "share": 0.316,
+   "ci_low": 0.243,
+   "ci_high": 0.399
+  },
+  {
+   "source": "karriere",
+   "german_requirement": "preferred",
+   "count": 25,
+   "n": 133,
+   "share": 0.188,
+   "ci_low": 0.131,
+   "ci_high": 0.263
+  },
+  {
+   "source": "karriere",
+   "german_requirement": "required",
+   "count": 21,
+   "n": 133,
+   "share": 0.158,
+   "ci_low": 0.106,
    "ci_high": 0.229
   },
   {
-   "source": "jobsat",
-   "german_requirement": "mentioned",
-   "count": 1,
-   "n": 58,
-   "share": 0.017,
-   "ci_low": 0.003,
-   "ci_high": 0.091
-  },
-  {
-   "source": "karriere",
-   "german_requirement": "not_mentioned",
-   "count": 50,
-   "n": 134,
-   "share": 0.373,
-   "ci_low": 0.296,
-   "ci_high": 0.457
-  },
-  {
-   "source": "karriere",
-   "german_requirement": "required_implied",
-   "count": 50,
-   "n": 134,
-   "share": 0.373,
-   "ci_low": 0.296,
-   "ci_high": 0.457
-  },
-  {
-   "source": "karriere",
-   "german_requirement": "required",
-   "count": 16,
-   "n": 134,
-   "share": 0.119,
-   "ci_low": 0.075,
-   "ci_high": 0.185
-  },
-  {
-   "source": "karriere",
-   "german_requirement": "preferred",
-   "count": 13,
-   "n": 134,
-   "share": 0.097,
-   "ci_low": 0.058,
-   "ci_high": 0.159
-  },
-  {
-   "source": "karriere",
-   "german_requirement": "mentioned",
-   "count": 4,
-   "n": 134,
-   "share": 0.03,
-   "ci_low": 0.012,
-   "ci_high": 0.074
-  },
-  {
    "source": "karriere",
    "german_requirement": "german_or_english",
+   "count": 2,
+   "n": 133,
+   "share": 0.015,
+   "ci_low": 0.004,
+   "ci_high": 0.053
+  },
+  {
+   "source": "karriere",
+   "german_requirement": "mentioned",
    "count": 1,
-   "n": 134,
-   "share": 0.007,
+   "n": 133,
+   "share": 0.008,
    "ci_low": 0.001,
    "ci_high": 0.041
   },
   {
    "source": "linkedin",
    "german_requirement": "not_mentioned",
-   "count": 126,
-   "n": 299,
-   "share": 0.421,
-   "ci_low": 0.367,
-   "ci_high": 0.478
+   "count": 135,
+   "n": 325,
+   "share": 0.415,
+   "ci_low": 0.363,
+   "ci_high": 0.47
   },
   {
    "source": "linkedin",
    "german_requirement": "required_implied",
-   "count": 84,
-   "n": 299,
-   "share": 0.281,
-   "ci_low": 0.233,
-   "ci_high": 0.334
+   "count": 91,
+   "n": 325,
+   "share": 0.28,
+   "ci_low": 0.234,
+   "ci_high": 0.331
   },
   {
    "source": "linkedin",
    "german_requirement": "preferred",
-   "count": 40,
-   "n": 299,
-   "share": 0.134,
-   "ci_low": 0.1,
-   "ci_high": 0.177
+   "count": 52,
+   "n": 325,
+   "share": 0.16,
+   "ci_low": 0.124,
+   "ci_high": 0.204
   },
   {
    "source": "linkedin",
    "german_requirement": "required",
-   "count": 29,
-   "n": 299,
-   "share": 0.097,
-   "ci_low": 0.068,
-   "ci_high": 0.136
+   "count": 30,
+   "n": 325,
+   "share": 0.092,
+   "ci_low": 0.065,
+   "ci_high": 0.129
   },
   {
    "source": "linkedin",
    "german_requirement": "mentioned",
    "count": 17,
-   "n": 299,
-   "share": 0.057,
-   "ci_low": 0.036,
-   "ci_high": 0.089
-  },
-  {
-   "source": "linkedin",
-   "german_requirement": "explicitly_not_required",
-   "count": 2,
-   "n": 299,
-   "share": 0.007,
-   "ci_low": 0.002,
-   "ci_high": 0.024
-  },
-  {
-   "source": "linkedin",
-   "german_requirement": "german_or_english",
-   "count": 1,
-   "n": 299,
-   "share": 0.003,
-   "ci_low": 0.001,
-   "ci_high": 0.019
+   "n": 325,
+   "share": 0.052,
+   "ci_low": 0.033,
+   "ci_high": 0.082
   },
   {
    "source": "willhaben",
    "german_requirement": "required_implied",
-   "count": 14,
-   "n": 26,
-   "share": 0.538,
-   "ci_low": 0.355,
-   "ci_high": 0.712
+   "count": 12,
+   "n": 21,
+   "share": 0.571,
+   "ci_low": 0.365,
+   "ci_high": 0.755
   },
   {
    "source": "willhaben",
    "german_requirement": "not_mentioned",
-   "count": 8,
-   "n": 26,
-   "share": 0.308,
-   "ci_low": 0.165,
-   "ci_high": 0.5
+   "count": 5,
+   "n": 21,
+   "share": 0.238,
+   "ci_low": 0.106,
+   "ci_high": 0.451
   },
   {
    "source": "willhaben",
    "german_requirement": "preferred",
-   "count": 3,
-   "n": 26,
-   "share": 0.115,
-   "ci_low": 0.04,
-   "ci_high": 0.29
+   "count": 2,
+   "n": 21,
+   "share": 0.095,
+   "ci_low": 0.027,
+   "ci_high": 0.289
   },
   {
    "source": "willhaben",
    "german_requirement": "required",
    "count": 1,
-   "n": 26,
-   "share": 0.038,
-   "ci_low": 0.007,
-   "ci_high": 0.189
+   "n": 21,
+   "share": 0.048,
+   "ci_low": 0.008,
+   "ci_high": 0.227
+  },
+  {
+   "source": "willhaben",
+   "german_requirement": "mentioned",
+   "count": 1,
+   "n": 21,
+   "share": 0.048,
+   "ci_low": 0.008,
+   "ci_high": 0.227
   }
  ],
  "german_levels": [
   {
    "german_level_bucket": "C1/fluent",
-   "count": 261,
-   "n": 719,
-   "share": 0.363,
-   "ci_low": 0.329,
-   "ci_high": 0.399
+   "count": 285,
+   "n": 699,
+   "share": 0.408,
+   "ci_low": 0.372,
+   "ci_high": 0.445
   },
   {
    "german_level_bucket": "B2/good",
-   "count": 86,
-   "n": 719,
-   "share": 0.12,
-   "ci_low": 0.098,
-   "ci_high": 0.145
+   "count": 89,
+   "n": 699,
+   "share": 0.127,
+   "ci_low": 0.105,
+   "ci_high": 0.154
   },
   {
    "german_level_bucket": "C2/native",
-   "count": 9,
-   "n": 719,
-   "share": 0.013,
-   "ci_low": 0.007,
-   "ci_high": 0.024
+   "count": 8,
+   "n": 699,
+   "share": 0.011,
+   "ci_low": 0.006,
+   "ci_high": 0.022
   },
   {
    "german_level_bucket": "B1",
-   "count": 4,
-   "n": 719,
-   "share": 0.006,
-   "ci_low": 0.002,
-   "ci_high": 0.014
+   "count": 5,
+   "n": 699,
+   "share": 0.007,
+   "ci_low": 0.003,
+   "ci_high": 0.017
   },
   {
    "german_level_bucket": "A1-A2",
-   "count": 2,
-   "n": 719,
-   "share": 0.003,
-   "ci_low": 0.001,
-   "ci_high": 0.01
+   "count": 1,
+   "n": 699,
+   "share": 0.001,
+   "ci_low": 0.0,
+   "ci_high": 0.008
   }
  ],
  "english": [
   {
    "english_requirement": "not_mentioned",
-   "count": 272,
-   "n": 719,
-   "share": 0.378,
-   "ci_low": 0.344,
-   "ci_high": 0.414
+   "count": 249,
+   "n": 699,
+   "share": 0.356,
+   "ci_low": 0.322,
+   "ci_high": 0.392
   },
   {
    "english_requirement": "required_implied",
-   "count": 232,
-   "n": 719,
-   "share": 0.323,
-   "ci_low": 0.29,
-   "ci_high": 0.358
+   "count": 222,
+   "n": 699,
+   "share": 0.318,
+   "ci_low": 0.284,
+   "ci_high": 0.353
   },
   {
    "english_requirement": "preferred",
-   "count": 110,
-   "n": 719,
-   "share": 0.153,
-   "ci_low": 0.129,
-   "ci_high": 0.181
+   "count": 126,
+   "n": 699,
+   "share": 0.18,
+   "ci_low": 0.154,
+   "ci_high": 0.21
   },
   {
    "english_requirement": "required",
-   "count": 59,
-   "n": 719,
-   "share": 0.082,
-   "ci_low": 0.064,
-   "ci_high": 0.104
+   "count": 62,
+   "n": 699,
+   "share": 0.089,
+   "ci_low": 0.07,
+   "ci_high": 0.112
   },
   {
    "english_requirement": "mentioned",
-   "count": 46,
-   "n": 719,
-   "share": 0.064,
-   "ci_low": 0.048,
-   "ci_high": 0.084
+   "count": 40,
+   "n": 699,
+   "share": 0.057,
+   "ci_low": 0.042,
+   "ci_high": 0.077
   }
  ],
  "posting_language": [
   {
    "posting_language": "de",
-   "count": 542,
-   "n": 719,
-   "share": 0.754,
-   "ci_low": 0.721,
-   "ci_high": 0.784
+   "count": 508,
+   "n": 699,
+   "share": 0.727,
+   "ci_low": 0.693,
+   "ci_high": 0.758
   },
   {
    "posting_language": "en",
-   "count": 174,
-   "n": 719,
-   "share": 0.242,
-   "ci_low": 0.212,
-   "ci_high": 0.275
+   "count": 184,
+   "n": 699,
+   "share": 0.263,
+   "ci_low": 0.232,
+   "ci_high": 0.297
   },
   {
    "posting_language": "mixed",
-   "count": 3,
-   "n": 719,
-   "share": 0.004,
-   "ci_low": 0.001,
-   "ci_high": 0.012
+   "count": 7,
+   "n": 699,
+   "share": 0.01,
+   "ci_low": 0.005,
+   "ci_high": 0.021
   }
  ],
  "posting_language_by_family": [
   {
    "role_family": "bi",
    "posting_language": "de",
-   "count": 78,
-   "n": 85,
-   "share": 0.918,
-   "ci_low": 0.84,
-   "ci_high": 0.96
+   "count": 80,
+   "n": 92,
+   "share": 0.87,
+   "ci_low": 0.786,
+   "ci_high": 0.924
   },
   {
    "role_family": "bi",
    "posting_language": "en",
-   "count": 7,
-   "n": 85,
-   "share": 0.082,
-   "ci_low": 0.04,
-   "ci_high": 0.16
+   "count": 12,
+   "n": 92,
+   "share": 0.13,
+   "ci_low": 0.076,
+   "ci_high": 0.214
   },
   {
    "role_family": "business_analysis",
    "posting_language": "de",
-   "count": 99,
-   "n": 120,
-   "share": 0.825,
-   "ci_low": 0.747,
-   "ci_high": 0.883
+   "count": 79,
+   "n": 106,
+   "share": 0.745,
+   "ci_low": 0.655,
+   "ci_high": 0.819
   },
   {
    "role_family": "business_analysis",
    "posting_language": "en",
-   "count": 20,
-   "n": 120,
-   "share": 0.167,
-   "ci_low": 0.111,
-   "ci_high": 0.243
+   "count": 24,
+   "n": 106,
+   "share": 0.226,
+   "ci_low": 0.157,
+   "ci_high": 0.315
   },
   {
    "role_family": "business_analysis",
    "posting_language": "mixed",
-   "count": 1,
-   "n": 120,
-   "share": 0.008,
-   "ci_low": 0.001,
-   "ci_high": 0.046
+   "count": 3,
+   "n": 106,
+   "share": 0.028,
+   "ci_low": 0.01,
+   "ci_high": 0.08
   },
   {
    "role_family": "data_analytics",
    "posting_language": "de",
-   "count": 81,
+   "count": 76,
    "n": 107,
-   "share": 0.757,
-   "ci_low": 0.668,
-   "ci_high": 0.828
+   "share": 0.71,
+   "ci_low": 0.618,
+   "ci_high": 0.788
   },
   {
    "role_family": "data_analytics",
    "posting_language": "en",
-   "count": 25,
+   "count": 31,
    "n": 107,
-   "share": 0.234,
-   "ci_low": 0.164,
-   "ci_high": 0.322
-  },
-  {
-   "role_family": "data_analytics",
-   "posting_language": "mixed",
-   "count": 1,
-   "n": 107,
-   "share": 0.009,
-   "ci_low": 0.002,
-   "ci_high": 0.051
+   "share": 0.29,
+   "ci_low": 0.212,
+   "ci_high": 0.382
   },
   {
    "role_family": "data_engineering",
    "posting_language": "de",
-   "count": 124,
-   "n": 160,
-   "share": 0.775,
-   "ci_low": 0.704,
-   "ci_high": 0.833
+   "count": 106,
+   "n": 137,
+   "share": 0.774,
+   "ci_low": 0.697,
+   "ci_high": 0.836
   },
   {
    "role_family": "data_engineering",
    "posting_language": "en",
-   "count": 35,
-   "n": 160,
+   "count": 30,
+   "n": 137,
    "share": 0.219,
-   "ci_low": 0.162,
-   "ci_high": 0.289
+   "ci_low": 0.158,
+   "ci_high": 0.295
   },
   {
    "role_family": "data_engineering",
    "posting_language": "mixed",
    "count": 1,
-   "n": 160,
-   "share": 0.006,
+   "n": 137,
+   "share": 0.007,
    "ci_low": 0.001,
-   "ci_high": 0.035
+   "ci_high": 0.04
   },
   {
    "role_family": "data_governance",
    "posting_language": "de",
-   "count": 52,
-   "n": 65,
-   "share": 0.8,
-   "ci_low": 0.687,
-   "ci_high": 0.879
+   "count": 49,
+   "n": 60,
+   "share": 0.817,
+   "ci_low": 0.701,
+   "ci_high": 0.894
   },
   {
    "role_family": "data_governance",
    "posting_language": "en",
-   "count": 13,
-   "n": 65,
-   "share": 0.2,
-   "ci_low": 0.121,
-   "ci_high": 0.313
-  },
-  {
-   "role_family": "data_science",
-   "posting_language": "de",
-   "count": 88,
-   "n": 157,
-   "share": 0.561,
-   "ci_low": 0.482,
-   "ci_high": 0.636
-  },
-  {
-   "role_family": "data_science",
-   "posting_language": "en",
-   "count": 69,
-   "n": 157,
-   "share": 0.439,
-   "ci_low": 0.364,
-   "ci_high": 0.518
-  },
-  {
-   "role_family": "marketing_analytics",
-   "posting_language": "de",
-   "count": 20,
-   "n": 24,
-   "share": 0.833,
-   "ci_low": 0.641,
-   "ci_high": 0.933
-  },
-  {
-   "role_family": "marketing_analytics",
-   "posting_language": "en",
-   "count": 4,
-   "n": 24,
+   "count": 10,
+   "n": 60,
    "share": 0.167,
-   "ci_low": 0.067,
-   "ci_high": 0.359
+   "ci_low": 0.093,
+   "ci_high": 0.28
+  },
+  {
+   "role_family": "data_governance",
+   "posting_language": "mixed",
+   "count": 1,
+   "n": 60,
+   "share": 0.017,
+   "ci_low": 0.003,
+   "ci_high": 0.089
+  },
+  {
+   "role_family": "data_science",
+   "posting_language": "de",
+   "count": 102,
+   "n": 176,
+   "share": 0.58,
+   "ci_low": 0.506,
+   "ci_high": 0.65
+  },
+  {
+   "role_family": "data_science",
+   "posting_language": "en",
+   "count": 72,
+   "n": 176,
+   "share": 0.409,
+   "ci_low": 0.339,
+   "ci_high": 0.483
+  },
+  {
+   "role_family": "data_science",
+   "posting_language": "mixed",
+   "count": 2,
+   "n": 176,
+   "share": 0.011,
+   "ci_low": 0.003,
+   "ci_high": 0.04
+  },
+  {
+   "role_family": "marketing_analytics",
+   "posting_language": "de",
+   "count": 15,
+   "n": 18,
+   "share": 0.833,
+   "ci_low": 0.608,
+   "ci_high": 0.942
+  },
+  {
+   "role_family": "marketing_analytics",
+   "posting_language": "en",
+   "count": 3,
+   "n": 18,
+   "share": 0.167,
+   "ci_low": 0.058,
+   "ci_high": 0.392
   },
   {
    "role_family": "product_analytics",
    "posting_language": "en",
+   "count": 2,
+   "n": 3,
+   "share": 0.667,
+   "ci_low": 0.208,
+   "ci_high": 0.939
+  },
+  {
+   "role_family": "product_analytics",
+   "posting_language": "de",
    "count": 1,
-   "n": 1,
-   "share": 1.0,
-   "ci_low": 0.207,
-   "ci_high": 1.0
+   "n": 3,
+   "share": 0.333,
+   "ci_low": 0.061,
+   "ci_high": 0.792
   }
  ],
  "addressable_market_scenarios": [
   {
    "scope": "Austria",
-   "n": 719,
-   "english_posting_no_german_req": 141,
-   "no_explicit_german_requirement": 434,
-   "german_not_required_at_C1_or_above": 512
+   "n": 699,
+   "english_posting_no_german_req": 147,
+   "no_explicit_german_requirement": 404,
+   "german_not_required_at_C1_or_above": 488
   },
   {
    "scope": "Styria",
-   "n": 58,
+   "n": 68,
    "english_posting_no_german_req": 8,
-   "no_explicit_german_requirement": 30,
-   "german_not_required_at_C1_or_above": 37
+   "no_explicit_german_requirement": 35,
+   "german_not_required_at_C1_or_above": 42
   },
   {
    "scope": "Graz area",
-   "n": 52,
+   "n": 60,
    "english_posting_no_german_req": 6,
-   "no_explicit_german_requirement": 25,
-   "german_not_required_at_C1_or_above": 32
+   "no_explicit_german_requirement": 30,
+   "german_not_required_at_C1_or_above": 36
   },
   {
    "scope": "Vienna",
-   "n": 349,
-   "english_posting_no_german_req": 86,
-   "no_explicit_german_requirement": 205,
-   "german_not_required_at_C1_or_above": 233
+   "n": 321,
+   "english_posting_no_german_req": 78,
+   "no_explicit_german_requirement": 174,
+   "german_not_required_at_C1_or_above": 207
   },
   {
    "scope": "family:bi",
-   "n": 85,
-   "english_posting_no_german_req": 7,
-   "no_explicit_german_requirement": 42,
-   "german_not_required_at_C1_or_above": 52
+   "n": 92,
+   "english_posting_no_german_req": 11,
+   "no_explicit_german_requirement": 44,
+   "german_not_required_at_C1_or_above": 56
   },
   {
    "scope": "family:business_analysis",
-   "n": 120,
-   "english_posting_no_german_req": 15,
-   "no_explicit_german_requirement": 67,
-   "german_not_required_at_C1_or_above": 78
+   "n": 106,
+   "english_posting_no_german_req": 18,
+   "no_explicit_german_requirement": 60,
+   "german_not_required_at_C1_or_above": 71
   },
   {
    "scope": "family:data_analytics",
    "n": 107,
-   "english_posting_no_german_req": 20,
-   "no_explicit_german_requirement": 62,
-   "german_not_required_at_C1_or_above": 79
+   "english_posting_no_german_req": 22,
+   "no_explicit_german_requirement": 64,
+   "german_not_required_at_C1_or_above": 78
   },
   {
    "scope": "family:data_engineering",
-   "n": 160,
-   "english_posting_no_german_req": 29,
-   "no_explicit_german_requirement": 102,
-   "german_not_required_at_C1_or_above": 120
+   "n": 137,
+   "english_posting_no_german_req": 23,
+   "no_explicit_german_requirement": 79,
+   "german_not_required_at_C1_or_above": 95
   },
   {
    "scope": "family:data_governance",
-   "n": 65,
-   "english_posting_no_german_req": 10,
-   "no_explicit_german_requirement": 39,
-   "german_not_required_at_C1_or_above": 45
+   "n": 60,
+   "english_posting_no_german_req": 9,
+   "no_explicit_german_requirement": 32,
+   "german_not_required_at_C1_or_above": 40
   },
   {
    "scope": "family:data_science",
-   "n": 157,
-   "english_posting_no_german_req": 55,
-   "no_explicit_german_requirement": 105,
-   "german_not_required_at_C1_or_above": 119
+   "n": 176,
+   "english_posting_no_german_req": 59,
+   "no_explicit_german_requirement": 113,
+   "german_not_required_at_C1_or_above": 134
   },
   {
    "scope": "family:marketing_analytics",
-   "n": 24,
-   "english_posting_no_german_req": 4,
-   "no_explicit_german_requirement": 16,
-   "german_not_required_at_C1_or_above": 18
+   "n": 18,
+   "english_posting_no_german_req": 3,
+   "no_explicit_german_requirement": 9,
+   "german_not_required_at_C1_or_above": 11
   },
   {
    "scope": "family:product_analytics",
-   "n": 1,
-   "english_posting_no_german_req": 1,
-   "no_explicit_german_requirement": 1,
-   "german_not_required_at_C1_or_above": 1
+   "n": 3,
+   "english_posting_no_german_req": 2,
+   "no_explicit_german_requirement": 3,
+   "german_not_required_at_C1_or_above": 3
   }
  ],
  "definitions": {

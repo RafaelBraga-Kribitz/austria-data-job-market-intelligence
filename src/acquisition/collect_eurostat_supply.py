@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import Session, cli, is_transient, status_of, today  # noqa: E402
+from common import Session, cli, is_transient, run_guarded, status_of, today  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/"
@@ -113,4 +113,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    run_guarded(main)

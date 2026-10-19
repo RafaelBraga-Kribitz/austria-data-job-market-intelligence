@@ -51,7 +51,7 @@ from engine import (  # noqa: E402
     spread_labels,
     styria_basis_note,
 )
-from visual_questions_demand import FAMILY_LABEL, n_desc, table  # noqa: E402
+from visual_questions_demand import FAMILY_LABEL, ceil_pct, n_desc, num_word, pct_txt, table  # noqa: E402
 
 JOINT_SOURCE = f"{DEMAND_SOURCE}; {SUPPLY_SOURCE}"
 JOINT_NOTE = ("Two different universes joined on shared taxonomies - read rankings and orders of magnitude, "
@@ -234,6 +234,7 @@ def bq36():
     ax.annotate("share of candidates", (frame.supply.iloc[top], top), textcoords="offset points",
                 xytext=(0, -20), ha="center", fontsize=9, color=HILITE)
     any_dem = frame[frame.label == "Any certification wording"].iloc[0]
+    max_specific = ceil_pct(dem[dem.certification != "Certification (any mention)"].share.max())
     finalise(
         fig,
         title=f"Certifications are rare on both sides: {any_dem.demand:.0%} of ads mention any certification and "
@@ -247,7 +248,7 @@ def bq36():
         chart_id="BQ36_certifications_both_sides",
         question="Is a certification worth the money and the weeks - does either side of this market care?",
         answer=f"No evidence that it is: {any_dem.demand:.0%} of ads mention any certification at all and each "
-               f"specific one stays at or under 3 %, while {any_dem.supply:.1%} of observed candidates show one and "
+               f"specific one stays at or under {max_specific} %, while {any_dem.supply:.1%} of observed candidates show one and "
                "MOOC certificates outnumber vendor ones - certifications differentiate in neither direction here, "
                "which makes them the cheapest item to drop from a learning plan.",
         relationship="deviation from target",
@@ -338,6 +339,9 @@ def bq37():
 # --------------------------------------------------------------------------------------------
 def bq38():
     edu = table("DS08_demand_supply_education.csv").copy()
+    any_deg = edu[edu.category.str.startswith("any degree wording")].iloc[0]
+    ads_silent = pct_txt(1 - any_deg.demand_share)
+    cand_silent = pct_txt(1 - any_deg.supply_share)
     edu = edu[edu.dimension.isin(["education_level", "education_field"])]
     edu = edu[(edu.demand_share >= 0.02) | (edu.supply_share >= 0.02)]
     edu = edu.reindex(edu.difference_pp.abs().sort_values(ascending=False).index).head(14)
@@ -367,8 +371,8 @@ def bq38():
         units="percentage points",
         n=f"n = {int(edu.demand_n.max())} core postings with a description / {int(edu.supply_n.max()):,} data-signal "
           "candidates",
-        note=JOINT_NOTE + " Silence dominates both sides: 35 % of ads carry no education wording and 69 % of "
-                          "candidates show none, so this compares wording, not qualifications.",
+        note=JOINT_NOTE + f" Silence dominates both sides: {ads_silent} of ads carry no education wording and "
+                          f"{cand_silent} of candidates show none, so this compares wording, not qualifications.",
     )
     return Spec(
         chart_id="BQ38_education_both_sides",
@@ -384,7 +388,7 @@ def bq38():
         data_signature="categorical-value",
         tables=["DS08_demand_supply_education.csv"],
         units="percentage points",
-        caveat="Absence of education wording is not absence of a degree on either side; 69 % of candidates write "
+        caveat=f"Absence of education wording is not absence of a degree on either side; {cand_silent} of candidates write "
                "nothing about education at all, so these shares are lower bounds of very different kinds.",
         anchors=[
             ("CAREER_SUPPLY_DEMAND_MAP.md", "after_heading", "## 12. How does education alter the picture? (DS08, O01)"),
@@ -469,9 +473,10 @@ def bq40():
     ax.legend(fontsize=8.5)
     cumulative = sub.set_index("bucket").share.cumsum()
     none_share = float(sub[sub.bucket == "0"].share.iloc[0])
+    median_projects = num_word(table("C14b_github_medians.csv").query("population == 'P_data'").median_projects.iloc[0])
     finalise(
         fig,
-        title=f"{none_share:.0%} of observed candidates show no project at all and the median holds two - "
+        title=f"{none_share:.0%} of observed candidates show no project at all and the median holds {median_projects} - "
               "three documented projects already places an account in the upper part of the pool",
         source=SUPPLY_SOURCE,
         units="share of data-signal candidates",
@@ -483,7 +488,7 @@ def bq40():
         chart_id="BQ40_project_counts",
         question="How many projects does a candidate actually show - what would put me above the pool?",
         answer=f"Not many: {none_share:.0%} of observed candidates show no project at all, "
-               f"{float(cumulative.get('2–3', float('nan'))):.0%} hold three or fewer, and the median is two - so "
+               f"{float(cumulative.get('2–3', float('nan'))):.0%} hold three or fewer, and the median is {median_projects} - so "
                "two or three finished, documented projects is not a modest portfolio in this pool, it is an "
                "above-median one, and the differentiator is documentation rather than count.",
         relationship="comparison across categories",
@@ -504,8 +509,8 @@ def bq40():
 # BQ41 - what candidates actually build
 # --------------------------------------------------------------------------------------------
 def bq41():
-    top = table("C18_project_topics.csv")
-    top = top[top.population == "projects"].sort_values("share", ascending=False).head(18).sort_values("share")
+    topics_all = table("C18_project_topics.csv")
+    top = topics_all[topics_all.population == "projects"].sort_values("share", ascending=False).head(18).sort_values("share")
     group_color = {"ds_method": BASE, "ai": FOURTH, "engineering": THIRD, "analytics_domain": HILITE}
     group_label = {"ds_method": "data-science method", "ai": "AI / LLM",
                    "engineering": "engineering", "analytics_domain": "business domain"}
@@ -519,6 +524,9 @@ def bq41():
     label_bars(ax, list(top.share), [f"{s:.1%} ({int(c):,})" for s, c in zip(top.share, top["count"])])
     handles = [ax.barh(0, 0, color=color, label=group_label[key]) for key, color in group_color.items()]
     ax.legend(fontsize=8.5, loc="lower right")
+    rare = topics_all[(topics_all.population == "projects")
+                      & topics_all.theme.isin(["experimentation", "causal_inference", "product"])]
+    rare_cap = ceil_pct(rare.share.max())
     method_share = top[top.group.isin(["ds_method", "ai"])].share.sum()
     domain_share = top[top.group == "analytics_domain"].share.sum()
     finalise(
@@ -529,7 +537,7 @@ def bq41():
         units="share of projects (themes overlap; a project can carry several)",
         n=f"n = {int(top.n.iloc[0]):,} public projects by data-signal accounts",
         note="Themes are not mutually exclusive, so shares do not sum to 100 %. Experimentation, causal inference and "
-             "product analytics each stay under 1 % and do not appear in this top list at all.",
+             f"product analytics each stay under {rare_cap} % and do not appear in this top list at all.",
     )
     return Spec(
         chart_id="BQ41_project_topics",
@@ -570,6 +578,7 @@ def bq42():
     inactive = arch[arch.archetype == "inactive_archive"]
     edu = arch[arch.archetype == "educational_tutorial"]
     analytics = arch[arch.archetype == "analytics_project"]
+    eng_cap = ceil_pct(float(arch[arch.archetype == "data_engineering_project"].share_of_data_repos.iloc[0]))
     finalise(
         fig,
         title=f"{float(inactive.share_of_data_repos.iloc[0]):.0%} of public Austrian data repositories are inactive "
@@ -587,7 +596,7 @@ def bq42():
         answer=f"Mostly abandoned or educational material: {float(inactive.share_of_data_repos.iloc[0]):.0%} of "
                f"public Austrian data repositories are inactive archives and "
                f"{float(edu.share_of_data_repos.iloc[0]):.0%} are course or tutorial work, while analytics projects "
-               f"are {float(analytics.share_of_data_repos.iloc[0]):.1%} and data-engineering projects under 2 % - the "
+               f"are {float(analytics.share_of_data_repos.iloc[0]):.1%} and data-engineering projects under {eng_cap} % - the "
                "bar for a maintained, business-shaped repository is far lower than the raw repository counts suggest.",
         relationship="ranking",
         mark="horizontal_bar",
@@ -636,14 +645,14 @@ def bq43():
               f"{int(biggest.median_projects)} projects - crowding and evidence are not the same axis",
         source=SUPPLY_SOURCE,
         units="candidates per cluster",
-        n=f"n = {int(cl['size'].sum()):,} data-signal candidates in 8 k-means clusters",
+        n=f"n = {int(cl['size'].sum()):,} data-signal candidates in {len(cl)} k-means clusters",
         note="Descriptive archetypes from k-means over binary skill/theme/format indicators - not a classification of "
              "people and not a ranking. Cluster labels name the features that define them, not job titles.",
     )
     return Spec(
         chart_id="BQ43_positioning_clusters",
         question="Which positioning spaces actually exist in the pool, and which of them is least crowded?",
-        answer=f"Eight descriptive clusters, of which the largest holds {int(biggest['size'])} of "
+        answer=f"{num_word(len(cl)).capitalize()} descriptive clusters, of which the largest holds {int(biggest['size'])} of "
                f"{int(cl['size'].sum()):,} candidates with a median of {int(biggest.median_projects)} projects; the "
                "notebook-ML and deep-learning clusters are the dense ones, while clusters defined by pipelines, "
                "dashboards or business domains are both smaller and better evidenced - the space is chosen by what "
@@ -682,6 +691,8 @@ def bq44():
     marketing = dom[dom.prior_domain.str.lower().str.startswith("marketing")]
     marketing_count = int(marketing["count"].iloc[0]) if len(marketing) else 0
     business = dom[dom.prior_domain == "business"]
+    trans = table("C22_transition_signals.csv").iloc[0]
+    explicit_share = pct_txt(trans.explicit_transition_wording / trans.n, 1)
     finalise(
         fig,
         title=f"Prior domains are named by a minority of profiles, and marketing by "
@@ -690,7 +701,7 @@ def bq44():
         source=SUPPLY_SOURCE,
         units="share of bio-declared accounts",
         n=f"n = {int(dom.n.iloc[0])} bio-declared accounts",
-        note="GitHub bios rarely narrate a career change (3.4 % state one explicitly), so this measures what people "
+        note=f"GitHub bios rarely narrate a career change ({explicit_share} state one explicitly), so this measures what people "
              "write about their past, not how they actually arrived.",
     )
     return Spec(
@@ -700,7 +711,7 @@ def bq44():
                + (f"{float(business.share.iloc[0]):.1%} of bio-declared accounts name a business background, "
                   if len(business) else "")
                + f"while marketing is named by {marketing_count} of {int(dom.n.iloc[0])} - but GitHub does not "
-               "narrate careers (3.4 % state a transition at all), so this is evidence of silence, not evidence of "
+               f"narrate careers ({explicit_share} state a transition at all), so this is evidence of silence, not evidence of "
                "absence, and the transition story is one the CV and LinkedIn must carry because the code cannot.",
         relationship="ranking",
         mark="horizontal_bar",

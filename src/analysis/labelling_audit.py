@@ -632,7 +632,11 @@ def cmd_sample(a: argparse.Namespace) -> None:
     _guard_overwrite(files, a.force)
     df = load_postings()
     n_canon = int(df["is_canonical"].sum())
-    print(f"canonical postings in frame: {n_canon} (docs quote 10,945)")
+    try:
+        quoted = json.loads((ROOT / "outputs" / "market_summary.json").read_text(encoding="utf-8"))["counts"]["canonical_groups_all"]
+    except (OSError, KeyError, ValueError):
+        quoted = "n/a"
+    print(f"canonical postings in frame: {n_canon} (market_summary.json canonical_groups_all: {quoted})")
     sheet, key, texts = draw_recall_sample(df, a.n_recall, a.design, a.seed)
     write_sheet(sheet, files[0])
     write_sheet(key, files[1])

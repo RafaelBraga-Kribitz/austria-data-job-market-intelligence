@@ -1,6 +1,6 @@
 {
  "source": "AMS JobBarometer (jobbarometer.ams.at), 'Inserate aus dem Internet' = online job ads per year, AMS occupation classification",
- "collected": "2026-09-16",
+ "collected": "2026-10-18",
  "latest_year": 2025,
  "note": "Counts '<20' are censored by AMS and stored as null. Occupation = AMS Berufsuntergruppe, which is coarser than job titles.",
  "data_occupations": [

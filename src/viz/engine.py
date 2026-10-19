@@ -40,6 +40,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dsx_plotstyle import finalise_figure, save_deterministic  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "src" / "reporting"))
+import vintages  # noqa: E402  (single definition of the data vintages)
 TABLES = ROOT / "outputs" / "tables"
 FIGURES = ROOT / "outputs" / "figures"
 STYLE = Path(__file__).resolve().parent / "styles" / "dsx-urban.mplstyle"
@@ -69,21 +71,11 @@ def _read_json(path: Path) -> dict | None:
 
 
 def _demand_vintage(default: str = "2026-09-16") -> str:
-    summary = _read_json(ROOT / "outputs" / "market_summary.json") or {}
-    first = str((summary.get("collected_at_range") or {}).get("min") or "")[:10]
-    return first or default
+    return vintages.demand_vintage(ROOT, default)   # FALLBACK default only when outputs/market_summary.json is absent
 
 
 def _supply_vintage(default: str = "2026-09-17/18") -> str:
-    manifest = _read_json(ROOT / "data" / "processed" / "supply_build_manifest.json") or {}
-    collected = str(manifest.get("collection_date") or "")[:10]
-    built = str(manifest.get("built_at") or "")[:10]
-    if not collected:
-        return default
-    # the README/profile fetch runs past midnight: "2026-09-17/18" = collected on the 17th, built on the 18th
-    if built and built != collected and built[:8] == collected[:8]:
-        return f"{collected}/{built[8:]}"
-    return collected
+    return vintages.supply_vintage_label(ROOT, default)   # collection day / next day; FALLBACK default only when supply_summary.json is absent
 
 
 def _year_span(table_name: str, default: str) -> str:

@@ -1,433 +1,422 @@
 skill_a,skill_b,both,n,share_of_postings,p_b_given_a,p_a_given_b,jaccard,lift
-SQL,Python,171,719,0.238,0.588,0.676,0.458,1.67
-SQL,Data Visualization,148,719,0.206,0.509,0.54,0.355,1.33
-AI (generic),Python,135,719,0.188,0.489,0.534,0.343,1.39
-AI (generic),Cloud (generic),127,719,0.177,0.46,0.617,0.358,1.61
-Python,Cloud (generic),121,719,0.168,0.478,0.587,0.358,1.67
-SQL,ETL/ELT,117,719,0.163,0.402,0.736,0.351,1.82
-Data Visualization,Power BI,115,719,0.16,0.42,0.871,0.395,2.29
-AI (generic),Generative AI / LLM,114,719,0.159,0.413,0.974,0.409,2.54
-SQL,Cloud (generic),111,719,0.154,0.381,0.539,0.288,1.33
-Python,ETL/ELT,103,719,0.143,0.407,0.648,0.333,1.84
-SQL,AI (generic),102,719,0.142,0.351,0.37,0.219,0.91
-Data Visualization,Data Governance/Quality,100,719,0.139,0.365,0.455,0.254,1.19
-Python,Azure,100,719,0.139,0.395,0.719,0.342,2.04
-AI (generic),Machine Learning,99,719,0.138,0.359,0.839,0.336,2.19
-Cloud (generic),Azure,98,719,0.136,0.476,0.705,0.397,2.46
-SQL,Data Governance/Quality,97,719,0.135,0.333,0.441,0.234,1.09
-Python,Machine Learning,93,719,0.129,0.368,0.788,0.335,2.24
-AI (generic),Data Visualization,90,719,0.125,0.326,0.328,0.196,0.86
-AI (generic),Data Governance/Quality,90,719,0.125,0.326,0.409,0.222,1.07
-Data Governance/Quality,ETL/ELT,90,719,0.125,0.409,0.566,0.311,1.85
-Python,CI/CD,89,719,0.124,0.352,0.817,0.326,2.32
-Cloud (generic),ETL/ELT,85,719,0.118,0.413,0.535,0.304,1.87
-SQL,Power BI,84,719,0.117,0.289,0.636,0.248,1.57
-AI (generic),Azure,84,719,0.117,0.304,0.604,0.254,1.57
-Python,Data Governance/Quality,84,719,0.117,0.332,0.382,0.216,1.09
-SQL,Azure,84,719,0.117,0.289,0.604,0.243,1.49
-SQL,Data Modeling,84,719,0.117,0.289,0.712,0.258,1.76
-Data Visualization,Python,83,719,0.115,0.303,0.328,0.187,0.86
-Python,Generative AI / LLM,80,719,0.111,0.316,0.684,0.276,1.94
-Cloud (generic),CI/CD,74,719,0.103,0.359,0.679,0.307,2.37
-AI (generic),ETL/ELT,73,719,0.102,0.264,0.459,0.202,1.2
-Data Visualization,Cloud (generic),72,719,0.1,0.263,0.35,0.176,0.92
-Data Visualization,ETL/ELT,72,719,0.1,0.263,0.453,0.199,1.19
-Data Visualization,Excel,71,719,0.099,0.259,0.555,0.215,1.46
-Data Visualization,Data Modeling,70,719,0.097,0.255,0.593,0.217,1.56
-Data Governance/Quality,Cloud (generic),69,719,0.096,0.314,0.335,0.193,1.09
-ETL/ELT,Azure,68,719,0.095,0.428,0.489,0.296,2.21
-Data Governance/Quality,Data Modeling,67,719,0.093,0.305,0.568,0.247,1.86
-Python,Git,66,719,0.092,0.261,0.93,0.256,2.64
-Azure,Databricks,66,719,0.092,0.475,0.795,0.423,4.11
-SQL,Statistics (general),66,719,0.092,0.227,0.673,0.204,1.66
-Cloud (generic),Machine Learning,66,719,0.092,0.32,0.559,0.256,1.95
-ETL/ELT,Data Modeling,66,719,0.092,0.415,0.559,0.313,2.53
-AI (generic),CI/CD,66,719,0.092,0.239,0.606,0.207,1.58
-Python,Statistics (general),64,719,0.089,0.253,0.653,0.223,1.86
-Cloud (generic),Generative AI / LLM,63,719,0.088,0.306,0.538,0.242,1.88
-Python,REST APIs,62,719,0.086,0.245,0.747,0.226,2.12
-Azure,CI/CD,60,719,0.083,0.432,0.55,0.319,2.85
-Cloud (generic),AWS,59,719,0.082,0.286,0.952,0.282,3.32
-AI (generic),REST APIs,58,719,0.081,0.21,0.699,0.193,1.82
-Machine Learning,Generative AI / LLM,58,719,0.081,0.492,0.496,0.328,3.02
-Python,Databricks,58,719,0.081,0.229,0.699,0.209,1.99
-Python,Data Modeling,58,719,0.081,0.229,0.492,0.185,1.4
-Power BI,Data Modeling,56,719,0.078,0.424,0.475,0.289,2.59
-SQL,Databricks,56,719,0.078,0.192,0.675,0.176,1.67
-Cloud (generic),Databricks,55,719,0.076,0.267,0.663,0.235,2.31
-Data Governance/Quality,Power BI,55,719,0.076,0.25,0.417,0.185,1.36
-Data Governance/Quality,Azure,55,719,0.076,0.25,0.396,0.181,1.29
-SQL,Data Warehouse (generic),55,719,0.076,0.189,0.764,0.179,1.89
-SQL,CI/CD,54,719,0.075,0.186,0.495,0.156,1.22
-ETL/ELT,CI/CD,53,719,0.074,0.333,0.486,0.247,2.2
-Cloud (generic),Data Modeling,52,719,0.072,0.252,0.441,0.191,1.54
-Data Visualization,Statistics (general),52,719,0.072,0.19,0.531,0.163,1.39
-SQL,Machine Learning,52,719,0.072,0.179,0.441,0.146,1.09
-Statistics (general),Mathematics,51,719,0.071,0.52,0.662,0.411,4.86
-Python,Mathematics,50,719,0.07,0.198,0.649,0.179,1.85
-AI (generic),RAG,50,719,0.07,0.181,1.0,0.181,2.61
-Generative AI / LLM,RAG,50,719,0.07,0.427,1.0,0.427,6.15
-AI (generic),AI agents / tool-calling,50,719,0.07,0.181,0.98,0.181,2.55
-Azure,Data Modeling,50,719,0.07,0.36,0.424,0.242,2.19
-Python,AWS,49,719,0.068,0.194,0.79,0.184,2.25
-SQL,Generative AI / LLM,49,719,0.068,0.168,0.419,0.136,1.03
-Machine Learning,CI/CD,47,719,0.065,0.398,0.431,0.261,2.63
-SQL,Mathematics,47,719,0.065,0.162,0.61,0.146,1.51
-Azure,Generative AI / LLM,47,719,0.065,0.338,0.402,0.225,2.08
-Data Visualization,Azure,47,719,0.065,0.172,0.338,0.128,0.89
-AI (generic),Data Modeling,45,719,0.063,0.163,0.381,0.129,0.99
-SQL,Git,45,719,0.063,0.155,0.634,0.142,1.57
-Generative AI / LLM,REST APIs,45,719,0.063,0.385,0.542,0.29,3.33
-Data Governance/Quality,Excel,45,719,0.063,0.205,0.352,0.149,1.15
-SQL,Excel,45,719,0.063,0.155,0.352,0.12,0.87
-Azure,Machine Learning,44,719,0.061,0.317,0.373,0.207,1.93
-Python,AI agents / tool-calling,44,719,0.061,0.174,0.863,0.169,2.45
-SQL,REST APIs,44,719,0.061,0.151,0.53,0.133,1.31
-Python,Spark,43,719,0.06,0.17,0.915,0.167,2.6
-Generative AI / LLM,AI agents / tool-calling,43,719,0.06,0.368,0.843,0.344,5.18
-AI (generic),Databricks,43,719,0.06,0.156,0.518,0.136,1.35
-CI/CD,Git,43,719,0.06,0.394,0.606,0.314,3.99
-AI (generic),Power BI,42,719,0.058,0.152,0.318,0.115,0.83
-Python,Power BI,42,719,0.058,0.166,0.318,0.122,0.9
-Azure,AWS,42,719,0.058,0.302,0.677,0.264,3.5
-Data Visualization,Data Warehouse (generic),42,719,0.058,0.153,0.583,0.138,1.53
-Azure,Data Lake/Lakehouse,42,719,0.058,0.302,0.824,0.284,4.26
-Python,RAG,41,719,0.057,0.162,0.82,0.156,2.33
-Data Governance/Quality,Databricks,41,719,0.057,0.186,0.494,0.156,1.61
-Cloud (generic),Git,41,719,0.057,0.199,0.577,0.174,2.02
-AI (generic),MLOps,40,719,0.056,0.145,0.87,0.142,2.27
-ETL/ELT,Data Warehouse (generic),40,719,0.056,0.252,0.556,0.209,2.51
-Cloud (generic),REST APIs,40,719,0.056,0.194,0.482,0.161,1.68
-Power BI,Excel,40,719,0.056,0.303,0.312,0.182,1.7
-AI (generic),Git,40,719,0.056,0.145,0.563,0.13,1.47
-Azure,Power BI,39,719,0.054,0.281,0.295,0.168,1.53
-Python,Data Lake/Lakehouse,39,719,0.054,0.154,0.765,0.147,2.17
-Python,MLOps,39,719,0.054,0.154,0.848,0.15,2.41
-ETL/ELT,Power BI,39,719,0.054,0.245,0.295,0.155,1.34
-CI/CD,Databricks,39,719,0.054,0.358,0.47,0.255,3.1
-Machine Learning,MLOps,38,719,0.053,0.322,0.826,0.302,5.03
-CI/CD,MLOps,38,719,0.053,0.349,0.826,0.325,5.45
-AI (generic),AWS,38,719,0.053,0.138,0.613,0.127,1.6
-ETL/ELT,Databricks,38,719,0.053,0.239,0.458,0.186,2.07
-Python,Java,38,719,0.053,0.15,0.745,0.143,2.12
-Data Governance/Quality,CI/CD,38,719,0.053,0.173,0.349,0.131,1.14
-AI (generic),Statistics (general),37,719,0.051,0.134,0.378,0.11,0.98
-Python,Docker,37,719,0.051,0.146,0.841,0.142,2.39
-AI (generic),Docker,37,719,0.051,0.134,0.841,0.131,2.19
-Machine Learning,Statistics (general),37,719,0.051,0.314,0.378,0.207,2.3
-Azure,REST APIs,37,719,0.051,0.266,0.446,0.2,2.31
-ETL/ELT,Machine Learning,37,719,0.051,0.233,0.314,0.154,1.42
-Data Governance/Quality,Data Warehouse (generic),37,719,0.051,0.168,0.514,0.145,1.68
-Generative AI / LLM,CI/CD,35,719,0.049,0.299,0.321,0.183,1.97
-Azure,Spark,35,719,0.049,0.252,0.745,0.232,3.85
-Data Visualization,Mathematics,35,719,0.049,0.128,0.455,0.111,1.19
-Data Modeling,Databricks,35,719,0.049,0.297,0.422,0.211,2.57
-Cloud (generic),Power BI,35,719,0.049,0.17,0.265,0.116,0.93
-SQL,AWS,35,719,0.049,0.12,0.565,0.11,1.39
-SQL,Java,34,719,0.047,0.117,0.667,0.11,1.65
-Python,Streaming,34,719,0.047,0.134,0.667,0.126,1.89
-Cloud (generic),Data Lake/Lakehouse,34,719,0.047,0.165,0.667,0.152,2.33
-ETL/ELT,Git,34,719,0.047,0.214,0.479,0.173,2.17
-CI/CD,REST APIs,34,719,0.047,0.312,0.41,0.215,2.7
-Python,R,33,719,0.046,0.13,0.647,0.122,1.84
-Cloud (generic),Data Warehouse (generic),33,719,0.046,0.16,0.458,0.135,1.6
-Cloud (generic),Spark,33,719,0.046,0.16,0.702,0.15,2.45
-Databricks,Spark,33,719,0.046,0.398,0.702,0.34,6.08
-SQL,Data Lake/Lakehouse,33,719,0.046,0.113,0.647,0.107,1.6
-Cloud (generic),MLOps,33,719,0.046,0.16,0.717,0.151,2.5
-Azure,Git,33,719,0.046,0.237,0.465,0.186,2.4
-Machine Learning,AWS,33,719,0.046,0.28,0.532,0.224,3.24
-Machine Learning,AI agents / tool-calling,33,719,0.046,0.28,0.647,0.243,3.94
-CI/CD,Spark,32,719,0.045,0.294,0.681,0.258,4.49
-ETL/ELT,Data Lake/Lakehouse,32,719,0.045,0.201,0.627,0.18,2.84
-AI (generic),Excel,32,719,0.045,0.116,0.25,0.086,0.65
-Machine Learning,Git,32,719,0.045,0.271,0.451,0.204,2.75
-Data Visualization,Machine Learning,32,719,0.045,0.117,0.271,0.089,0.71
-SQL,R,32,719,0.045,0.11,0.627,0.103,1.55
-Cloud (generic),RAG,32,719,0.045,0.155,0.64,0.143,2.23
-Databricks,Data Lake/Lakehouse,32,719,0.045,0.386,0.627,0.314,5.44
-Data Governance/Quality,Statistics (general),31,719,0.043,0.141,0.316,0.108,1.03
-AI agents / tool-calling,RAG,31,719,0.043,0.608,0.62,0.443,8.74
-CI/CD,AWS,30,719,0.042,0.275,0.484,0.213,3.19
-SQL,Spark,30,719,0.042,0.103,0.638,0.097,1.58
-Data Visualization,R,30,719,0.042,0.109,0.588,0.102,1.54
-Data Visualization,Databricks,30,719,0.042,0.109,0.361,0.092,0.95
-Machine Learning,REST APIs,30,719,0.042,0.254,0.361,0.175,2.2
-CI/CD,Data Lake/Lakehouse,30,719,0.042,0.275,0.588,0.231,3.88
-Cloud (generic),Statistics (general),29,719,0.04,0.141,0.296,0.105,1.03
-ETL/ELT,Generative AI / LLM,29,719,0.04,0.182,0.248,0.117,1.12
-Data Governance/Quality,REST APIs,29,719,0.04,0.132,0.349,0.106,1.14
-Python,Data Warehouse (generic),29,719,0.04,0.115,0.403,0.098,1.14
-Cloud (generic),Docker,29,719,0.04,0.141,0.659,0.131,2.3
-AI (generic),Spark,29,719,0.04,0.105,0.617,0.099,1.61
-Machine Learning,Mathematics,29,719,0.04,0.246,0.377,0.175,2.29
-AI (generic),Streaming,29,719,0.04,0.105,0.569,0.097,1.48
-REST APIs,Git,29,719,0.04,0.349,0.408,0.232,3.54
-AI (generic),Mathematics,28,719,0.039,0.101,0.364,0.086,0.95
-Statistics (general),R,28,719,0.039,0.286,0.549,0.231,4.03
-Azure,RAG,28,719,0.039,0.201,0.56,0.174,2.9
-Generative AI / LLM,Git,28,719,0.039,0.239,0.394,0.175,2.42
-REST APIs,RAG,28,719,0.039,0.337,0.56,0.267,4.85
-Cloud (generic),AI agents / tool-calling,28,719,0.039,0.136,0.549,0.122,1.92
-Azure,AI agents / tool-calling,28,719,0.039,0.201,0.549,0.173,2.84
-Data Governance/Quality,Data Lake/Lakehouse,28,719,0.039,0.127,0.549,0.115,1.79
-ETL/ELT,REST APIs,27,719,0.038,0.17,0.325,0.126,1.47
-Azure,Data Warehouse (generic),27,719,0.038,0.194,0.375,0.147,1.94
-ETL/ELT,AWS,27,719,0.038,0.17,0.435,0.139,1.97
-Databricks,Git,27,719,0.038,0.325,0.38,0.213,3.29
-REST APIs,AI agents / tool-calling,27,719,0.038,0.325,0.529,0.252,4.59
-Cloud (generic),Java,27,719,0.038,0.131,0.529,0.117,1.85
-Data Governance/Quality,Machine Learning,27,719,0.038,0.123,0.229,0.087,0.75
-SQL,Streaming,27,719,0.038,0.093,0.529,0.086,1.31
-Machine Learning,RAG,27,719,0.038,0.229,0.54,0.191,3.29
-Data Lake/Lakehouse,Spark,27,719,0.038,0.529,0.574,0.38,8.1
-Data Governance/Quality,Generative AI / LLM,26,719,0.036,0.118,0.222,0.084,0.73
-CI/CD,AI agents / tool-calling,26,719,0.036,0.239,0.51,0.194,3.36
-AI (generic),Java,26,719,0.036,0.094,0.51,0.086,1.33
-Generative AI / LLM,Docker,26,719,0.036,0.222,0.591,0.193,3.63
-Data Visualization,Generative AI / LLM,26,719,0.036,0.095,0.222,0.071,0.58
-AI (generic),Data Lake/Lakehouse,26,719,0.036,0.094,0.51,0.086,1.33
-Generative AI / LLM,AWS,26,719,0.036,0.222,0.419,0.17,2.58
-Data Modeling,Data Lake/Lakehouse,25,719,0.035,0.212,0.49,0.174,2.99
-Mathematics,R,25,719,0.035,0.325,0.49,0.243,4.58
-Data Visualization,REST APIs,25,719,0.035,0.091,0.301,0.075,0.79
-Data Modeling,Data Warehouse (generic),25,719,0.035,0.212,0.347,0.152,2.12
-Data Governance/Quality,Mathematics,24,719,0.033,0.109,0.312,0.088,1.02
-CI/CD,Java,24,719,0.033,0.22,0.471,0.176,3.1
-ETL/ELT,Statistics (general),24,719,0.033,0.151,0.245,0.103,1.11
-Azure,MLOps,24,719,0.033,0.173,0.522,0.149,2.7
-SQL,Docker,24,719,0.033,0.082,0.545,0.077,1.35
-Cloud (generic),Mathematics,24,719,0.033,0.117,0.312,0.093,1.09
-ETL/ELT,Spark,23,719,0.032,0.145,0.489,0.126,2.21
-Machine Learning,Spark,23,719,0.032,0.195,0.489,0.162,2.98
-Power BI,Data Warehouse (generic),23,719,0.032,0.174,0.319,0.127,1.74
-CI/CD,Docker,23,719,0.032,0.211,0.523,0.177,3.45
-Machine Learning,Databricks,23,719,0.032,0.195,0.277,0.129,1.69
-SQL,MLOps,23,719,0.032,0.079,0.5,0.073,1.24
-Machine Learning,Docker,23,719,0.032,0.195,0.523,0.165,3.19
-Data Modeling,CI/CD,23,719,0.032,0.195,0.211,0.113,1.29
-Databricks,AWS,22,719,0.031,0.265,0.355,0.179,3.07
-Power BI,Databricks,22,719,0.031,0.167,0.265,0.114,1.44
-ETL/ELT,Java,22,719,0.031,0.138,0.431,0.117,1.95
-Data Governance/Quality,Git,21,719,0.029,0.095,0.296,0.078,0.97
-CI/CD,RAG,21,719,0.029,0.193,0.42,0.152,2.77
-Azure,Docker,21,719,0.029,0.151,0.477,0.13,2.47
-Power BI,Statistics (general),21,719,0.029,0.159,0.214,0.1,1.17
-Generative AI / LLM,MLOps,21,719,0.029,0.179,0.457,0.148,2.81
-Data Governance/Quality,Spark,20,719,0.028,0.091,0.426,0.081,1.39
-Data Warehouse (generic),Data Lake/Lakehouse,20,719,0.028,0.278,0.392,0.194,3.92
-Cloud (generic),Streaming,20,719,0.028,0.097,0.392,0.084,1.37
-Machine Learning,Streaming,20,719,0.028,0.169,0.392,0.134,2.39
-CI/CD,Streaming,20,719,0.028,0.183,0.392,0.143,2.59
-Git,Spark,20,719,0.028,0.282,0.426,0.204,4.31
-Excel,Mathematics,20,719,0.028,0.156,0.26,0.108,1.46
-Excel,Statistics (general),20,719,0.028,0.156,0.204,0.097,1.15
-Data Modeling,Machine Learning,19,719,0.026,0.161,0.161,0.088,0.98
-Spark,MLOps,19,719,0.026,0.404,0.413,0.257,6.32
-Data Visualization,Data Lake/Lakehouse,19,719,0.026,0.069,0.373,0.062,0.98
-AI (generic),Data Warehouse (generic),19,719,0.026,0.069,0.264,0.058,0.69
-Git,AWS,19,719,0.026,0.268,0.306,0.167,3.1
-Azure,Java,18,719,0.025,0.129,0.353,0.105,1.83
-AWS,MLOps,18,719,0.025,0.29,0.391,0.2,4.54
-Generative AI / LLM,Statistics (general),18,719,0.025,0.154,0.184,0.091,1.13
-ETL/ELT,Streaming,18,719,0.025,0.113,0.353,0.094,1.6
-REST APIs,Docker,18,719,0.025,0.217,0.409,0.165,3.54
-SQL,AI agents / tool-calling,18,719,0.025,0.062,0.353,0.056,0.87
-Databricks,Data Warehouse (generic),18,719,0.025,0.217,0.25,0.131,2.17
-Databricks,MLOps,18,719,0.025,0.217,0.391,0.162,3.39
-Data Modeling,Git,18,719,0.025,0.153,0.254,0.105,1.54
-SQL,RAG,17,719,0.024,0.058,0.34,0.052,0.84
-REST APIs,Java,17,719,0.024,0.205,0.333,0.145,2.89
-Data Visualization,Git,17,719,0.024,0.062,0.239,0.052,0.63
-Generative AI / LLM,Java,17,719,0.024,0.145,0.333,0.113,2.05
-Power BI,Generative AI / LLM,17,719,0.024,0.129,0.145,0.073,0.79
-ETL/ELT,MLOps,17,719,0.024,0.107,0.37,0.09,1.67
-Generative AI / LLM,Databricks,17,719,0.024,0.145,0.205,0.093,1.26
-Data Visualization,CI/CD,17,719,0.024,0.062,0.156,0.046,0.41
-Data Modeling,Streaming,17,719,0.024,0.144,0.333,0.112,2.03
-Data Governance/Quality,AWS,16,719,0.022,0.073,0.258,0.06,0.84
-Data Governance/Quality,MLOps,16,719,0.022,0.073,0.348,0.064,1.14
-Git,MLOps,16,719,0.022,0.225,0.348,0.158,3.52
-CI/CD,Data Warehouse (generic),16,719,0.022,0.147,0.222,0.097,1.47
-AI agents / tool-calling,MLOps,16,719,0.022,0.314,0.348,0.198,4.9
-Excel,R,16,719,0.022,0.125,0.314,0.098,1.76
-ETL/ELT,RAG,16,719,0.022,0.101,0.32,0.083,1.45
-REST APIs,MLOps,16,719,0.022,0.193,0.348,0.142,3.01
-REST APIs,AWS,15,719,0.021,0.181,0.242,0.115,2.1
-AWS,AI agents / tool-calling,15,719,0.021,0.242,0.294,0.153,3.41
-AWS,RAG,15,719,0.021,0.242,0.3,0.155,3.48
-Power BI,Data Lake/Lakehouse,15,719,0.021,0.114,0.294,0.089,1.6
-Git,Docker,15,719,0.021,0.211,0.341,0.15,3.45
-Python,Excel,15,719,0.021,0.059,0.117,0.041,0.33
-AWS,Docker,15,719,0.021,0.242,0.341,0.165,3.95
-Git,Java,15,719,0.021,0.211,0.294,0.14,2.98
-REST APIs,Databricks,15,719,0.021,0.181,0.181,0.099,1.57
-Java,Docker,15,719,0.021,0.294,0.341,0.188,4.81
-Generative AI / LLM,Spark,15,719,0.021,0.128,0.319,0.101,1.96
-Machine Learning,Data Lake/Lakehouse,15,719,0.021,0.127,0.294,0.097,1.79
-AI (generic),R,15,719,0.021,0.054,0.294,0.048,0.77
-ETL/ELT,Docker,14,719,0.019,0.088,0.318,0.074,1.44
-Data Visualization,AWS,14,719,0.019,0.051,0.226,0.043,0.59
-Data Modeling,Spark,14,719,0.019,0.119,0.298,0.093,1.82
-AWS,Spark,14,719,0.019,0.226,0.298,0.147,3.45
-Azure,Mathematics,14,719,0.019,0.101,0.182,0.069,0.94
-Power BI,Machine Learning,14,719,0.019,0.106,0.119,0.059,0.65
-RAG,MLOps,14,719,0.019,0.28,0.304,0.171,4.38
-Data Governance/Quality,Streaming,14,719,0.019,0.064,0.275,0.054,0.9
-MLOps,Docker,14,719,0.019,0.304,0.318,0.184,4.97
-Azure,Statistics (general),14,719,0.019,0.101,0.143,0.063,0.74
-AI agents / tool-calling,Docker,14,719,0.019,0.275,0.318,0.173,4.49
-Cloud (generic),Excel,13,719,0.018,0.063,0.102,0.04,0.35
-Git,RAG,13,719,0.018,0.183,0.26,0.12,2.63
-Git,AI agents / tool-calling,13,719,0.018,0.183,0.255,0.119,2.58
-Data Visualization,Spark,13,719,0.018,0.047,0.277,0.042,0.73
-Statistics (general),Git,13,719,0.018,0.133,0.183,0.083,1.34
-AWS,Java,13,719,0.018,0.21,0.255,0.13,2.96
-Streaming,Data Lake/Lakehouse,13,719,0.018,0.255,0.255,0.146,3.59
-Data Modeling,Statistics (general),13,719,0.018,0.11,0.133,0.064,0.81
-Machine Learning,R,13,719,0.018,0.11,0.255,0.083,1.55
-Data Governance/Quality,AI agents / tool-calling,13,719,0.018,0.059,0.255,0.05,0.83
-Databricks,AI agents / tool-calling,12,719,0.017,0.145,0.235,0.098,2.04
-Machine Learning,Java,12,719,0.017,0.102,0.235,0.076,1.43
-REST APIs,Spark,12,719,0.017,0.145,0.255,0.102,2.21
-Mathematics,AWS,12,719,0.017,0.156,0.194,0.094,1.81
-Data Governance/Quality,RAG,12,719,0.017,0.055,0.24,0.047,0.78
-Cloud (generic),R,12,719,0.017,0.058,0.235,0.049,0.82
-Mathematics,Git,12,719,0.017,0.156,0.169,0.088,1.58
-AI agents / tool-calling,Spark,12,719,0.017,0.235,0.255,0.14,3.6
-Git,Data Lake/Lakehouse,12,719,0.017,0.169,0.235,0.109,2.38
-Statistics (general),AWS,12,719,0.017,0.122,0.194,0.081,1.42
-CI/CD,Mathematics,12,719,0.017,0.11,0.156,0.069,1.03
-Streaming,Java,12,719,0.017,0.235,0.235,0.133,3.32
-REST APIs,Streaming,12,719,0.017,0.145,0.235,0.098,2.04
-RAG,Docker,12,719,0.017,0.24,0.273,0.146,3.92
-Data Warehouse (generic),Streaming,11,719,0.015,0.153,0.216,0.098,2.15
-REST APIs,Data Lake/Lakehouse,11,719,0.015,0.133,0.216,0.089,1.87
-Git,Streaming,11,719,0.015,0.155,0.216,0.099,2.18
-Power BI,R,11,719,0.015,0.083,0.216,0.064,1.17
-Data Visualization,Streaming,11,719,0.015,0.04,0.216,0.035,0.57
-ETL/ELT,AI agents / tool-calling,11,719,0.015,0.069,0.216,0.055,0.98
-REST APIs,Data Warehouse (generic),11,719,0.015,0.133,0.153,0.076,1.32
-Power BI,Mathematics,11,719,0.015,0.083,0.143,0.056,0.78
-Data Lake/Lakehouse,MLOps,11,719,0.015,0.216,0.239,0.128,3.37
-AWS,Streaming,10,719,0.014,0.161,0.196,0.097,2.27
-AWS,R,10,719,0.014,0.161,0.196,0.097,2.27
-Generative AI / LLM,Streaming,10,719,0.014,0.085,0.196,0.063,1.2
-Data Modeling,Generative AI / LLM,10,719,0.014,0.085,0.085,0.044,0.52
-Data Modeling,AWS,10,719,0.014,0.085,0.161,0.059,0.98
-Generative AI / LLM,R,10,719,0.014,0.085,0.196,0.063,1.2
-Generative AI / LLM,Mathematics,10,719,0.014,0.085,0.13,0.054,0.8
-Data Modeling,MLOps,10,719,0.014,0.085,0.217,0.065,1.32
-Streaming,MLOps,10,719,0.014,0.196,0.217,0.115,3.06
-Statistics (general),Databricks,10,719,0.014,0.102,0.12,0.058,0.88
-Power BI,Spark,10,719,0.014,0.076,0.213,0.059,1.16
-CI/CD,Statistics (general),10,719,0.014,0.092,0.102,0.051,0.67
-Data Governance/Quality,Docker,10,719,0.014,0.045,0.227,0.039,0.74
-Data Visualization,AI agents / tool-calling,10,719,0.014,0.036,0.196,0.032,0.51
-Databricks,Mathematics,10,719,0.014,0.12,0.13,0.067,1.13
-Azure,Streaming,10,719,0.014,0.072,0.196,0.056,1.01
-Statistics (general),Java,10,719,0.014,0.102,0.196,0.072,1.44
-Mathematics,Spark,10,719,0.014,0.13,0.213,0.088,1.99
-Mathematics,MLOps,10,719,0.014,0.13,0.217,0.088,2.03
-Data Governance/Quality,R,10,719,0.014,0.045,0.196,0.038,0.64
-Generative AI / LLM,Data Warehouse (generic),9,719,0.013,0.077,0.125,0.05,0.77
-Statistics (general),REST APIs,9,719,0.013,0.092,0.108,0.052,0.8
-Data Modeling,REST APIs,9,719,0.013,0.076,0.108,0.047,0.66
-Streaming,Spark,9,719,0.013,0.176,0.191,0.101,2.7
-Machine Learning,Data Warehouse (generic),9,719,0.013,0.076,0.125,0.05,0.76
-Excel,Data Modeling,9,719,0.013,0.07,0.076,0.038,0.43
-Statistics (general),MLOps,9,719,0.013,0.092,0.196,0.067,1.44
-Statistics (general),Docker,9,719,0.013,0.092,0.205,0.068,1.5
-Power BI,CI/CD,9,719,0.013,0.068,0.083,0.039,0.45
-Databricks,Streaming,9,719,0.013,0.108,0.176,0.072,1.53
-Data Governance/Quality,Java,9,719,0.013,0.041,0.176,0.034,0.58
-ETL/ELT,Mathematics,9,719,0.013,0.057,0.117,0.04,0.53
-Databricks,RAG,9,719,0.013,0.108,0.18,0.073,1.56
-Data Warehouse (generic),Spark,9,719,0.013,0.125,0.191,0.082,1.91
-Azure,R,9,719,0.013,0.065,0.176,0.05,0.91
-REST APIs,Mathematics,9,719,0.013,0.108,0.117,0.06,1.01
-Data Warehouse (generic),Git,9,719,0.013,0.125,0.127,0.067,1.27
-Data Modeling,Mathematics,8,719,0.011,0.068,0.104,0.043,0.63
-AWS,Data Lake/Lakehouse,8,719,0.011,0.129,0.157,0.076,1.82
-Statistics (general),AI agents / tool-calling,8,719,0.011,0.082,0.157,0.057,1.15
-Statistics (general),Spark,8,719,0.011,0.082,0.17,0.058,1.25
-Excel,Generative AI / LLM,8,719,0.011,0.062,0.068,0.034,0.38
-RAG,Spark,8,719,0.011,0.16,0.17,0.09,2.45
-Power BI,Streaming,7,719,0.01,0.053,0.137,0.04,0.75
-Power BI,REST APIs,7,719,0.01,0.053,0.084,0.034,0.46
-Generative AI / LLM,Data Lake/Lakehouse,7,719,0.01,0.06,0.137,0.043,0.84
-Mathematics,Java,7,719,0.01,0.091,0.137,0.058,1.28
-Databricks,Java,7,719,0.01,0.084,0.137,0.055,1.19
-Statistics (general),Streaming,7,719,0.01,0.071,0.137,0.049,1.01
-Data Visualization,MLOps,7,719,0.01,0.026,0.152,0.022,0.4
-Data Visualization,Docker,7,719,0.01,0.026,0.159,0.023,0.42
-Power BI,Git,7,719,0.01,0.053,0.099,0.036,0.54
-Streaming,Docker,7,719,0.01,0.137,0.159,0.08,2.24
-Data Lake/Lakehouse,AI agents / tool-calling,7,719,0.01,0.137,0.137,0.074,1.94
-Data Modeling,Java,7,719,0.01,0.059,0.137,0.043,0.84
-R,Spark,6,719,0.008,0.118,0.128,0.065,1.8
-Data Modeling,RAG,6,719,0.008,0.051,0.12,0.037,0.73
-Java,RAG,6,719,0.008,0.118,0.12,0.063,1.69
-ETL/ELT,Excel,6,719,0.008,0.038,0.047,0.021,0.21
-ETL/ELT,R,6,719,0.008,0.038,0.118,0.029,0.53
-Data Warehouse (generic),Java,6,719,0.008,0.083,0.118,0.051,1.17
-Databricks,Docker,6,719,0.008,0.072,0.136,0.05,1.18
-Java,Spark,5,719,0.007,0.098,0.106,0.054,1.5
-Java,MLOps,5,719,0.007,0.098,0.109,0.054,1.53
-Mathematics,Docker,5,719,0.007,0.065,0.114,0.043,1.06
-Data Visualization,RAG,5,719,0.007,0.018,0.1,0.016,0.26
-Data Warehouse (generic),R,5,719,0.007,0.069,0.098,0.042,0.98
-Data Warehouse (generic),AWS,5,719,0.007,0.069,0.081,0.039,0.81
-Mathematics,RAG,5,719,0.007,0.065,0.1,0.041,0.93
-R,Docker,5,719,0.007,0.098,0.114,0.056,1.6
-R,Java,5,719,0.007,0.098,0.098,0.052,1.38
-R,Streaming,5,719,0.007,0.098,0.098,0.052,1.38
-Data Visualization,Java,5,719,0.007,0.018,0.098,0.016,0.26
-Data Modeling,Docker,5,719,0.007,0.042,0.114,0.032,0.69
-Java,AI agents / tool-calling,5,719,0.007,0.098,0.098,0.052,1.38
-Java,Data Lake/Lakehouse,5,719,0.007,0.098,0.098,0.052,1.38
-Streaming,AI agents / tool-calling,5,719,0.007,0.098,0.098,0.052,1.38
-Excel,Databricks,5,719,0.007,0.039,0.06,0.024,0.34
-Statistics (general),Data Warehouse (generic),5,719,0.007,0.051,0.069,0.03,0.51
-Spark,Docker,5,719,0.007,0.106,0.114,0.058,1.74
-Data Lake/Lakehouse,Docker,4,719,0.006,0.078,0.091,0.044,1.28
-Git,R,4,719,0.006,0.056,0.078,0.034,0.79
-Mathematics,AI agents / tool-calling,4,719,0.006,0.052,0.078,0.032,0.73
-Data Warehouse (generic),AI agents / tool-calling,4,719,0.006,0.056,0.078,0.034,0.78
-Excel,Git,4,719,0.006,0.031,0.056,0.021,0.32
-REST APIs,R,4,719,0.006,0.048,0.078,0.031,0.68
-Statistics (general),Data Lake/Lakehouse,4,719,0.006,0.041,0.078,0.028,0.58
-Statistics (general),RAG,4,719,0.006,0.041,0.08,0.028,0.59
-Databricks,R,4,719,0.006,0.048,0.078,0.031,0.68
-Streaming,RAG,3,719,0.004,0.059,0.06,0.031,0.85
-Data Lake/Lakehouse,RAG,3,719,0.004,0.059,0.06,0.031,0.85
-Data Modeling,AI agents / tool-calling,3,719,0.004,0.025,0.059,0.018,0.36
-Power BI,MLOps,3,719,0.004,0.023,0.065,0.017,0.36
-R,AI agents / tool-calling,3,719,0.004,0.059,0.059,0.03,0.83
-Azure,Excel,3,719,0.004,0.022,0.023,0.011,0.12
-R,MLOps,3,719,0.004,0.059,0.065,0.032,0.92
-Mathematics,Streaming,3,719,0.004,0.039,0.059,0.024,0.55
-Data Warehouse (generic),Docker,3,719,0.004,0.042,0.068,0.027,0.68
-Power BI,AI agents / tool-calling,3,719,0.004,0.023,0.059,0.017,0.32
-Excel,REST APIs,3,719,0.004,0.023,0.036,0.014,0.2
-CI/CD,R,3,719,0.004,0.028,0.059,0.019,0.39
-Excel,Data Warehouse (generic),3,719,0.004,0.023,0.042,0.015,0.23
-Excel,CI/CD,3,719,0.004,0.023,0.028,0.013,0.15
-Power BI,AWS,3,719,0.004,0.023,0.048,0.016,0.26
-Power BI,RAG,2,719,0.003,0.015,0.04,0.011,0.22
-Excel,Machine Learning,2,719,0.003,0.016,0.017,0.008,0.1
-R,RAG,2,719,0.003,0.039,0.04,0.02,0.56
-Mathematics,Data Warehouse (generic),2,719,0.003,0.026,0.028,0.014,0.26
-Mathematics,Data Lake/Lakehouse,2,719,0.003,0.026,0.039,0.016,0.37
-Data Warehouse (generic),MLOps,2,719,0.003,0.028,0.043,0.017,0.43
-R,Data Lake/Lakehouse,2,719,0.003,0.039,0.039,0.02,0.55
-Power BI,Java,2,719,0.003,0.015,0.039,0.011,0.21
-Excel,Streaming,2,719,0.003,0.016,0.039,0.011,0.22
-Excel,Data Lake/Lakehouse,1,719,0.001,0.008,0.02,0.006,0.11
-Excel,MLOps,1,719,0.001,0.008,0.022,0.006,0.12
-Excel,Spark,1,719,0.001,0.008,0.021,0.006,0.12
-Excel,Java,1,719,0.001,0.008,0.02,0.006,0.11
-Excel,AWS,1,719,0.001,0.008,0.016,0.005,0.09
-Data Modeling,R,1,719,0.001,0.008,0.02,0.006,0.12
-Power BI,Docker,1,719,0.001,0.008,0.023,0.006,0.12
-Data Warehouse (generic),RAG,1,719,0.001,0.014,0.02,0.008,0.2
+SQL,Python,175,699,0.25,0.625,0.639,0.462,1.59
+AI (generic),Python,166,699,0.237,0.551,0.606,0.406,1.41
+SQL,Data Visualization,143,699,0.205,0.511,0.563,0.366,1.41
+AI (generic),Cloud (generic),138,699,0.197,0.458,0.611,0.355,1.42
+Python,Cloud (generic),135,699,0.193,0.493,0.597,0.37,1.52
+AI (generic),Generative AI / LLM,123,699,0.176,0.409,0.976,0.405,2.27
+AI (generic),Machine Learning,115,699,0.165,0.382,0.891,0.365,2.07
+SQL,Cloud (generic),108,699,0.155,0.386,0.478,0.271,1.19
+Data Visualization,Data Governance/Quality,106,699,0.152,0.417,0.482,0.288,1.33
+Python,Machine Learning,104,699,0.149,0.38,0.806,0.348,2.06
+SQL,Data Governance/Quality,103,699,0.147,0.368,0.468,0.259,1.17
+Data Visualization,Power BI,102,699,0.146,0.402,0.864,0.378,2.38
+AI (generic),SQL,102,699,0.146,0.339,0.364,0.213,0.85
+Python,Generative AI / LLM,99,699,0.142,0.361,0.786,0.329,2.0
+Cloud (generic),Azure,96,699,0.137,0.425,0.727,0.366,2.25
+Python,Azure,95,699,0.136,0.347,0.72,0.305,1.84
+SQL,ETL/ELT,94,699,0.134,0.336,0.662,0.287,1.65
+Python,CI/CD,93,699,0.133,0.339,0.861,0.322,2.2
+Python,Data Visualization,92,699,0.132,0.336,0.362,0.211,0.92
+Python,ETL/ELT,92,699,0.132,0.336,0.648,0.284,1.65
+Python,Data Governance/Quality,90,699,0.129,0.328,0.409,0.223,1.04
+AI (generic),Data Governance/Quality,88,699,0.126,0.292,0.4,0.203,0.93
+AI (generic),Data Visualization,87,699,0.124,0.289,0.343,0.186,0.8
+Python,REST APIs,85,699,0.122,0.31,0.833,0.292,2.13
+Python,Statistics (general),84,699,0.12,0.307,0.757,0.279,1.93
+Cloud (generic),ETL/ELT,83,699,0.119,0.367,0.585,0.291,1.81
+SQL,Power BI,82,699,0.117,0.293,0.695,0.259,1.73
+Data Visualization,Cloud (generic),82,699,0.117,0.323,0.363,0.206,1.0
+AI (generic),Azure,81,699,0.116,0.269,0.614,0.23,1.43
+AI (generic),REST APIs,80,699,0.114,0.266,0.784,0.248,1.82
+SQL,Data Modeling,80,699,0.114,0.286,0.69,0.253,1.72
+Cloud (generic),CI/CD,78,699,0.112,0.345,0.722,0.305,2.23
+Data Governance/Quality,ETL/ELT,78,699,0.112,0.355,0.549,0.275,1.75
+Machine Learning,Generative AI / LLM,77,699,0.11,0.597,0.611,0.433,3.31
+Cloud (generic),Data Governance/Quality,75,699,0.107,0.332,0.341,0.202,1.05
+Cloud (generic),Machine Learning,73,699,0.104,0.323,0.566,0.259,1.75
+AI (generic),CI/CD,73,699,0.104,0.243,0.676,0.217,1.57
+AI (generic),ETL/ELT,73,699,0.104,0.243,0.514,0.197,1.19
+SQL,Azure,73,699,0.104,0.261,0.553,0.215,1.38
+Cloud (generic),Generative AI / LLM,72,699,0.103,0.319,0.571,0.257,1.77
+Data Visualization,Data Modeling,71,699,0.102,0.28,0.612,0.237,1.68
+Data Visualization,ETL/ELT,68,699,0.097,0.268,0.479,0.207,1.32
+Python,Git,67,699,0.096,0.245,0.985,0.244,2.51
+Data Governance/Quality,Azure,66,699,0.094,0.3,0.5,0.231,1.59
+Data Governance/Quality,Data Modeling,66,699,0.094,0.3,0.569,0.244,1.81
+Cloud (generic),Data Modeling,66,699,0.094,0.292,0.569,0.239,1.76
+SQL,Statistics (general),64,699,0.092,0.229,0.577,0.196,1.44
+Python,Data Modeling,62,699,0.089,0.226,0.534,0.189,1.36
+ETL/ELT,Azure,62,699,0.089,0.437,0.47,0.292,2.31
+Data Governance/Quality,Power BI,61,699,0.087,0.277,0.517,0.22,1.64
+Azure,CI/CD,61,699,0.087,0.462,0.565,0.341,2.99
+Generative AI / LLM,REST APIs,61,699,0.087,0.484,0.598,0.365,3.32
+Python,Mathematics,60,699,0.086,0.219,0.732,0.203,1.87
+AI (generic),AI agents / tool-calling,59,699,0.084,0.196,0.967,0.195,2.25
+Cloud (generic),AWS,59,699,0.084,0.261,0.952,0.258,2.94
+ETL/ELT,Data Modeling,59,699,0.084,0.415,0.509,0.296,2.5
+Azure,Databricks,57,699,0.082,0.432,0.792,0.388,4.19
+Cloud (generic),REST APIs,55,699,0.079,0.243,0.539,0.201,1.67
+Cloud (generic),Databricks,55,699,0.079,0.243,0.764,0.226,2.36
+Statistics (general),Mathematics,54,699,0.077,0.486,0.659,0.388,4.15
+Data Visualization,Statistics (general),53,699,0.076,0.209,0.477,0.17,1.31
+SQL,CI/CD,52,699,0.074,0.186,0.481,0.155,1.2
+CI/CD,REST APIs,52,699,0.074,0.481,0.51,0.329,3.3
+Python,AI agents / tool-calling,52,699,0.074,0.19,0.852,0.184,2.17
+SQL,REST APIs,52,699,0.074,0.186,0.51,0.158,1.27
+Azure,Data Modeling,50,699,0.072,0.379,0.431,0.253,2.28
+SQL,Mathematics,50,699,0.072,0.179,0.61,0.16,1.52
+AI (generic),Data Modeling,50,699,0.072,0.166,0.431,0.136,1.0
+AI (generic),Statistics (general),50,699,0.072,0.166,0.45,0.138,1.05
+Data Visualization,Excel,49,699,0.07,0.193,0.516,0.163,1.42
+AI (generic),RAG,49,699,0.07,0.163,1.0,0.163,2.32
+SQL,Machine Learning,49,699,0.07,0.175,0.38,0.136,0.95
+Generative AI / LLM,RAG,49,699,0.07,0.389,1.0,0.389,5.55
+SQL,Data Warehouse (generic),49,699,0.07,0.175,0.817,0.168,2.04
+Python,Databricks,47,699,0.067,0.172,0.653,0.157,1.67
+Python,AWS,47,699,0.067,0.172,0.758,0.163,1.93
+Machine Learning,Statistics (general),46,699,0.066,0.357,0.414,0.237,2.25
+AI (generic),AWS,46,699,0.066,0.153,0.742,0.145,1.72
+Python,Power BI,46,699,0.066,0.168,0.39,0.133,0.99
+ETL/ELT,CI/CD,46,699,0.066,0.324,0.426,0.225,2.1
+Generative AI / LLM,AI agents / tool-calling,46,699,0.066,0.365,0.754,0.326,4.18
+CI/CD,Git,45,699,0.064,0.417,0.662,0.344,4.28
+Power BI,Data Modeling,45,699,0.064,0.381,0.388,0.238,2.3
+SQL,Databricks,45,699,0.064,0.161,0.625,0.147,1.56
+SQL,Git,44,699,0.063,0.157,0.647,0.145,1.62
+AI (generic),Git,44,699,0.063,0.146,0.647,0.135,1.5
+Azure,Generative AI / LLM,44,699,0.063,0.333,0.349,0.206,1.85
+Python,Spark,43,699,0.062,0.157,0.977,0.156,2.49
+Generative AI / LLM,CI/CD,43,699,0.062,0.341,0.398,0.225,2.21
+SQL,Excel,43,699,0.062,0.154,0.453,0.13,1.13
+Data Visualization,Azure,43,699,0.062,0.169,0.326,0.125,0.9
+Machine Learning,CI/CD,42,699,0.06,0.326,0.389,0.215,2.11
+Python,RAG,42,699,0.06,0.153,0.857,0.149,2.19
+Python,R,41,699,0.059,0.15,0.788,0.144,2.01
+Data Modeling,Databricks,41,699,0.059,0.353,0.569,0.279,3.43
+Machine Learning,REST APIs,41,699,0.059,0.318,0.402,0.216,2.18
+Azure,REST APIs,41,699,0.059,0.311,0.402,0.212,2.13
+Azure,Power BI,41,699,0.059,0.311,0.347,0.196,1.84
+AI (generic),MLOps,40,699,0.057,0.133,0.93,0.132,2.16
+Data Visualization,Data Warehouse (generic),40,699,0.057,0.157,0.667,0.146,1.83
+Cloud (generic),AI agents / tool-calling,40,699,0.057,0.177,0.656,0.162,2.03
+AI (generic),Databricks,40,699,0.057,0.133,0.556,0.12,1.29
+Data Governance/Quality,Excel,40,699,0.057,0.182,0.421,0.145,1.34
+SQL,Generative AI / LLM,39,699,0.056,0.139,0.31,0.106,0.77
+Python,Data Lake/Lakehouse,39,699,0.056,0.142,0.78,0.137,1.99
+Azure,Data Lake/Lakehouse,39,699,0.056,0.295,0.78,0.273,4.13
+AI (generic),Power BI,39,699,0.056,0.13,0.331,0.103,0.77
+Data Governance/Quality,CI/CD,39,699,0.056,0.177,0.361,0.135,1.15
+Cloud (generic),SAP BW/BO,39,699,0.056,0.173,0.848,0.167,2.62
+Azure,AWS,39,699,0.056,0.295,0.629,0.252,3.33
+Cloud (generic),Git,38,699,0.054,0.168,0.559,0.148,1.73
+REST APIs,Git,38,699,0.054,0.373,0.559,0.288,3.83
+Data Visualization,Mathematics,38,699,0.054,0.15,0.463,0.128,1.28
+Statistics (general),R,38,699,0.054,0.342,0.731,0.304,4.6
+ETL/ELT,Data Warehouse (generic),38,699,0.054,0.268,0.633,0.232,3.12
+ETL/ELT,Power BI,38,699,0.054,0.268,0.322,0.171,1.59
+ETL/ELT,Machine Learning,37,699,0.053,0.261,0.287,0.158,1.41
+Machine Learning,AI agents / tool-calling,37,699,0.053,0.287,0.607,0.242,3.29
+Python,MLOps,37,699,0.053,0.135,0.86,0.132,2.2
+Machine Learning,MLOps,37,699,0.053,0.287,0.86,0.274,4.66
+Data Governance/Quality,Databricks,37,699,0.053,0.168,0.514,0.145,1.63
+Data Governance/Quality,Data Warehouse (generic),36,699,0.052,0.164,0.6,0.148,1.91
+AI (generic),Mathematics,36,699,0.052,0.12,0.439,0.104,1.02
+Generative AI / LLM,Git,36,699,0.052,0.286,0.529,0.228,2.94
+Data Visualization,SAP BW/BO,36,699,0.052,0.142,0.783,0.136,2.15
+SQL,R,36,699,0.052,0.129,0.692,0.122,1.73
+Data Governance/Quality,REST APIs,36,699,0.052,0.164,0.353,0.126,1.12
+Azure,Machine Learning,35,699,0.05,0.265,0.271,0.155,1.44
+Cloud (generic),MLOps,35,699,0.05,0.155,0.814,0.15,2.52
+CI/CD,Databricks,35,699,0.05,0.324,0.486,0.241,3.15
+ETL/ELT,Databricks,35,699,0.05,0.246,0.486,0.196,2.39
+SQL,Data Lake/Lakehouse,34,699,0.049,0.121,0.68,0.115,1.7
+Machine Learning,AWS,34,699,0.049,0.264,0.548,0.217,2.97
+Cloud (generic),Power BI,34,699,0.049,0.15,0.288,0.11,0.89
+ETL/ELT,REST APIs,33,699,0.047,0.232,0.324,0.156,1.59
+REST APIs,AI agents / tool-calling,33,699,0.047,0.324,0.541,0.254,3.71
+Data Visualization,Machine Learning,33,699,0.047,0.13,0.256,0.094,0.7
+REST APIs,RAG,33,699,0.047,0.324,0.673,0.28,4.62
+Cloud (generic),RAG,32,699,0.046,0.142,0.653,0.132,2.02
+ETL/ELT,Data Lake/Lakehouse,32,699,0.046,0.225,0.64,0.2,3.15
+Machine Learning,Mathematics,32,699,0.046,0.248,0.39,0.179,2.11
+Cloud (generic),Mathematics,31,699,0.044,0.137,0.378,0.112,1.17
+Cloud (generic),Statistics (general),31,699,0.044,0.137,0.279,0.101,0.86
+Data Visualization,REST APIs,31,699,0.044,0.122,0.304,0.095,0.84
+SQL,Spark,31,699,0.044,0.111,0.705,0.106,1.76
+Data Governance/Quality,Data Lake/Lakehouse,31,699,0.044,0.141,0.62,0.13,1.97
+Cloud (generic),Data Lake/Lakehouse,31,699,0.044,0.137,0.62,0.127,1.92
+ETL/ELT,Generative AI / LLM,31,699,0.044,0.218,0.246,0.131,1.21
+CI/CD,MLOps,31,699,0.044,0.287,0.721,0.258,4.67
+AI (generic),Kubernetes,31,699,0.044,0.103,0.721,0.099,1.67
+SQL,AWS,30,699,0.043,0.107,0.484,0.096,1.21
+Python,Kubernetes,30,699,0.043,0.109,0.698,0.105,1.78
+CI/CD,AI agents / tool-calling,29,699,0.041,0.269,0.475,0.207,3.08
+Cloud (generic),Data Warehouse (generic),29,699,0.041,0.128,0.483,0.113,1.49
+Python,Data Warehouse (generic),29,699,0.041,0.106,0.483,0.095,1.23
+AI (generic),Spark,29,699,0.041,0.096,0.659,0.092,1.53
+Generative AI / LLM,AWS,29,699,0.041,0.23,0.468,0.182,2.59
+Data Governance/Quality,Statistics (general),29,699,0.041,0.132,0.261,0.096,0.83
+AI (generic),Data Lake/Lakehouse,28,699,0.04,0.093,0.56,0.087,1.3
+Machine Learning,RAG,28,699,0.04,0.217,0.571,0.187,3.1
+Azure,Spark,28,699,0.04,0.212,0.636,0.189,3.37
+Power BI,Excel,28,699,0.04,0.237,0.295,0.151,1.75
+Data Visualization,R,27,699,0.039,0.106,0.519,0.097,1.43
+Azure,Git,27,699,0.039,0.205,0.397,0.156,2.1
+Machine Learning,Git,27,699,0.039,0.209,0.397,0.159,2.15
+Data Modeling,CI/CD,27,699,0.039,0.233,0.25,0.137,1.51
+ETL/ELT,Statistics (general),26,699,0.037,0.183,0.234,0.115,1.15
+AI (generic),Segmentation/Clustering,26,699,0.037,0.086,0.542,0.08,1.26
+ETL/ELT,AWS,26,699,0.037,0.183,0.419,0.146,2.06
+Data Modeling,SAP BW/BO,26,699,0.037,0.224,0.565,0.191,3.41
+ETL/ELT,Git,26,699,0.037,0.183,0.382,0.141,1.88
+Power BI,Data Warehouse (generic),26,699,0.037,0.22,0.433,0.171,2.57
+Python,Segmentation/Clustering,26,699,0.037,0.095,0.542,0.088,1.38
+Mathematics,R,26,699,0.037,0.317,0.5,0.241,4.26
+CI/CD,Data Lake/Lakehouse,25,699,0.036,0.231,0.5,0.188,3.24
+Data Modeling,Data Lake/Lakehouse,25,699,0.036,0.216,0.5,0.177,3.01
+SQL,Segmentation/Clustering,25,699,0.036,0.089,0.521,0.083,1.3
+CI/CD,Spark,25,699,0.036,0.231,0.568,0.197,3.68
+Cloud (generic),Spark,25,699,0.036,0.111,0.568,0.102,1.76
+Databricks,Data Lake/Lakehouse,25,699,0.036,0.347,0.5,0.258,4.85
+Data Lake/Lakehouse,Spark,24,699,0.034,0.48,0.545,0.343,7.63
+Azure,Data Warehouse (generic),24,699,0.034,0.182,0.4,0.143,2.12
+AI agents / tool-calling,RAG,24,699,0.034,0.393,0.49,0.279,5.61
+Data Visualization,Databricks,24,699,0.034,0.094,0.333,0.079,0.92
+Azure,RAG,24,699,0.034,0.182,0.49,0.153,2.59
+CI/CD,AWS,24,699,0.034,0.222,0.387,0.164,2.51
+Azure,AI agents / tool-calling,23,699,0.033,0.174,0.377,0.135,2.0
+Cloud (generic),Kubernetes,23,699,0.033,0.102,0.535,0.093,1.65
+Generative AI / LLM,MLOps,23,699,0.033,0.183,0.535,0.158,2.97
+Data Governance/Quality,Mathematics,23,699,0.033,0.105,0.28,0.082,0.89
+CI/CD,RAG,23,699,0.033,0.213,0.469,0.172,3.04
+Data Governance/Quality,Generative AI / LLM,23,699,0.033,0.105,0.183,0.071,0.58
+ETL/ELT,Spark,22,699,0.031,0.155,0.5,0.134,2.46
+Data Visualization,Generative AI / LLM,22,699,0.031,0.087,0.175,0.061,0.48
+AI (generic),Excel,22,699,0.031,0.073,0.232,0.059,0.54
+Data Governance/Quality,Machine Learning,22,699,0.031,0.1,0.171,0.067,0.54
+CI/CD,Kubernetes,22,699,0.031,0.204,0.512,0.171,3.31
+Data Visualization,Git,22,699,0.031,0.087,0.324,0.073,0.89
+Data Governance/Quality,Git,22,699,0.031,0.1,0.324,0.083,1.03
+Generative AI / LLM,Statistics (general),22,699,0.031,0.175,0.198,0.102,1.1
+Databricks,Spark,21,699,0.03,0.292,0.477,0.221,4.63
+Data Warehouse (generic),Data Lake/Lakehouse,21,699,0.03,0.35,0.42,0.236,4.89
+Data Governance/Quality,Spark,21,699,0.03,0.095,0.477,0.086,1.52
+SQL,SAP BW/BO,21,699,0.03,0.075,0.457,0.069,1.14
+REST APIs,MLOps,21,699,0.03,0.206,0.488,0.169,3.35
+SQL,AI agents / tool-calling,21,699,0.03,0.075,0.344,0.066,0.86
+REST APIs,Kubernetes,21,699,0.03,0.206,0.488,0.169,3.35
+Data Modeling,Statistics (general),21,699,0.03,0.181,0.189,0.102,1.14
+Data Visualization,CI/CD,20,699,0.029,0.079,0.185,0.058,0.51
+SQL,Kubernetes,20,699,0.029,0.071,0.465,0.066,1.16
+Databricks,AWS,20,699,0.029,0.278,0.323,0.175,3.13
+Data Visualization,Segmentation/Clustering,20,699,0.029,0.079,0.417,0.071,1.15
+Data Modeling,Data Warehouse (generic),20,699,0.029,0.172,0.333,0.128,2.01
+ETL/ELT,MLOps,20,699,0.029,0.141,0.465,0.121,2.29
+Generative AI / LLM,Kubernetes,20,699,0.029,0.159,0.465,0.134,2.58
+Machine Learning,Data Modeling,19,699,0.027,0.147,0.164,0.084,0.89
+Azure,MLOps,19,699,0.027,0.144,0.442,0.122,2.34
+Power BI,Statistics (general),19,699,0.027,0.161,0.171,0.09,1.01
+SQL,RAG,19,699,0.027,0.068,0.388,0.061,0.97
+Data Governance/Quality,AWS,19,699,0.027,0.086,0.306,0.072,0.97
+Statistics (general),Excel,19,699,0.027,0.171,0.2,0.102,1.26
+Git,AI agents / tool-calling,18,699,0.026,0.265,0.295,0.162,3.03
+Data Modeling,REST APIs,18,699,0.026,0.155,0.176,0.09,1.06
+Data Modeling,Git,18,699,0.026,0.155,0.265,0.108,1.6
+AI (generic),R,18,699,0.026,0.06,0.346,0.054,0.8
+Data Modeling,Spark,17,699,0.024,0.147,0.386,0.119,2.33
+Machine Learning,Databricks,17,699,0.024,0.132,0.236,0.092,1.28
+Git,Spark,17,699,0.024,0.25,0.386,0.179,3.97
+Power BI,Databricks,17,699,0.024,0.144,0.236,0.098,1.4
+Python,Excel,17,699,0.024,0.062,0.179,0.048,0.46
+Cloud (generic),Segmentation/Clustering,17,699,0.024,0.075,0.354,0.066,1.1
+AWS,MLOps,17,699,0.024,0.274,0.395,0.193,4.46
+SQL,MLOps,17,699,0.024,0.061,0.395,0.056,0.99
+Mathematics,AWS,16,699,0.023,0.195,0.258,0.125,2.2
+CI/CD,Data Warehouse (generic),16,699,0.023,0.148,0.267,0.105,1.73
+Data Visualization,Data Lake/Lakehouse,16,699,0.023,0.063,0.32,0.056,0.88
+REST APIs,Databricks,16,699,0.023,0.157,0.222,0.101,1.52
+Machine Learning,Spark,16,699,0.023,0.124,0.364,0.102,1.97
+Data Governance/Quality,R,16,699,0.023,0.073,0.308,0.062,0.98
+Azure,Mathematics,16,699,0.023,0.121,0.195,0.081,1.03
+Generative AI / LLM,Databricks,16,699,0.023,0.127,0.222,0.088,1.23
+Power BI,REST APIs,16,699,0.023,0.136,0.157,0.078,0.93
+REST APIs,AWS,15,699,0.021,0.147,0.242,0.101,1.66
+Excel,R,15,699,0.021,0.158,0.288,0.114,2.12
+AWS,AI agents / tool-calling,15,699,0.021,0.242,0.246,0.139,2.77
+Data Modeling,Mathematics,15,699,0.021,0.129,0.183,0.082,1.1
+Power BI,SAP BW/BO,14,699,0.02,0.119,0.304,0.093,1.8
+Power BI,Data Lake/Lakehouse,14,699,0.02,0.119,0.28,0.091,1.66
+Machine Learning,Segmentation/Clustering,14,699,0.02,0.109,0.292,0.086,1.58
+Azure,Statistics (general),14,699,0.02,0.106,0.126,0.061,0.67
+REST APIs,Mathematics,14,699,0.02,0.137,0.171,0.082,1.17
+ETL/ELT,Mathematics,14,699,0.02,0.099,0.171,0.067,0.84
+Generative AI / LLM,Spark,14,699,0.02,0.111,0.318,0.09,1.77
+AI agents / tool-calling,MLOps,14,699,0.02,0.23,0.326,0.156,3.73
+AWS,RAG,14,699,0.02,0.226,0.286,0.144,3.22
+Databricks,Git,14,699,0.02,0.194,0.206,0.111,2.0
+Data Governance/Quality,Segmentation/Clustering,14,699,0.02,0.064,0.292,0.055,0.93
+Statistics (general),REST APIs,14,699,0.02,0.126,0.137,0.07,0.86
+Generative AI / LLM,Power BI,13,699,0.019,0.103,0.11,0.056,0.61
+ETL/ELT,RAG,13,699,0.019,0.092,0.265,0.073,1.31
+Machine Learning,Power BI,13,699,0.019,0.101,0.11,0.056,0.6
+Generative AI / LLM,Mathematics,13,699,0.019,0.103,0.159,0.067,0.88
+Statistics (general),Segmentation/Clustering,13,699,0.019,0.117,0.271,0.089,1.71
+Statistics (general),AWS,13,699,0.019,0.117,0.21,0.081,1.32
+Databricks,MLOps,13,699,0.019,0.181,0.302,0.127,2.94
+Git,RAG,13,699,0.019,0.191,0.265,0.125,2.73
+Git,Kubernetes,13,699,0.019,0.191,0.302,0.133,3.11
+Data Visualization,AWS,13,699,0.019,0.051,0.21,0.043,0.58
+Mathematics,Git,13,699,0.019,0.159,0.191,0.095,1.63
+Statistics (general),MLOps,12,699,0.017,0.108,0.279,0.085,1.76
+Power BI,CI/CD,12,699,0.017,0.102,0.111,0.056,0.66
+ETL/ELT,Segmentation/Clustering,12,699,0.017,0.085,0.25,0.067,1.23
+ETL/ELT,R,12,699,0.017,0.085,0.231,0.066,1.14
+Machine Learning,R,12,699,0.017,0.093,0.231,0.071,1.25
+RAG,MLOps,12,699,0.017,0.245,0.279,0.15,3.98
+ETL/ELT,AI agents / tool-calling,12,699,0.017,0.085,0.197,0.063,0.97
+Power BI,Git,12,699,0.017,0.102,0.176,0.069,1.05
+Machine Learning,Data Lake/Lakehouse,12,699,0.017,0.093,0.24,0.072,1.3
+Machine Learning,Kubernetes,12,699,0.017,0.093,0.279,0.075,1.51
+REST APIs,Spark,12,699,0.017,0.118,0.273,0.09,1.87
+Excel,Mathematics,12,699,0.017,0.126,0.146,0.073,1.08
+Data Governance/Quality,SAP BW/BO,12,699,0.017,0.055,0.261,0.047,0.83
+Data Governance/Quality,RAG,12,699,0.017,0.055,0.245,0.047,0.78
+Git,MLOps,12,699,0.017,0.176,0.279,0.121,2.87
+Git,AWS,12,699,0.017,0.176,0.194,0.102,1.99
+AI (generic),Data Warehouse (generic),12,699,0.017,0.04,0.2,0.034,0.46
+AI (generic),SAP BW/BO,12,699,0.017,0.04,0.261,0.036,0.61
+Data Modeling,AWS,11,699,0.016,0.095,0.177,0.066,1.07
+Azure,Kubernetes,11,699,0.016,0.083,0.256,0.067,1.35
+Data Modeling,MLOps,11,699,0.016,0.095,0.256,0.074,1.54
+Data Governance/Quality,MLOps,11,699,0.016,0.05,0.256,0.044,0.81
+Cloud (generic),R,11,699,0.016,0.049,0.212,0.041,0.65
+CI/CD,Mathematics,11,699,0.016,0.102,0.134,0.061,0.87
+AI agents / tool-calling,Spark,11,699,0.016,0.18,0.25,0.117,2.86
+AI agents / tool-calling,Kubernetes,11,699,0.016,0.18,0.256,0.118,2.93
+Statistics (general),CI/CD,11,699,0.016,0.099,0.102,0.053,0.64
+Data Governance/Quality,AI agents / tool-calling,11,699,0.016,0.05,0.18,0.041,0.57
+REST APIs,Data Warehouse (generic),10,699,0.014,0.098,0.167,0.066,1.14
+Mathematics,Databricks,10,699,0.014,0.122,0.139,0.069,1.18
+Spark,MLOps,10,699,0.014,0.227,0.233,0.13,3.69
+Databricks,Data Warehouse (generic),10,699,0.014,0.139,0.167,0.082,1.62
+Statistics (general),Git,10,699,0.014,0.09,0.147,0.059,0.93
+Data Visualization,AI agents / tool-calling,10,699,0.014,0.039,0.164,0.033,0.45
+Generative AI / LLM,Data Modeling,10,699,0.014,0.079,0.086,0.043,0.48
+Power BI,Spark,9,699,0.013,0.076,0.205,0.059,1.21
+Power BI,R,9,699,0.013,0.076,0.173,0.056,1.03
+Power BI,Mathematics,9,699,0.013,0.076,0.11,0.047,0.65
+Statistics (general),Databricks,9,699,0.013,0.081,0.125,0.052,0.79
+RAG,Kubernetes,9,699,0.013,0.184,0.209,0.108,2.99
+Kubernetes,MLOps,9,699,0.013,0.209,0.209,0.117,3.4
+Data Warehouse (generic),Spark,9,699,0.013,0.15,0.205,0.095,2.38
+Data Visualization,Spark,9,699,0.013,0.035,0.205,0.031,0.56
+Spark,Kubernetes,9,699,0.013,0.205,0.209,0.115,3.33
+Git,Data Warehouse (generic),9,699,0.013,0.132,0.15,0.076,1.54
+Databricks,AI agents / tool-calling,9,699,0.013,0.125,0.148,0.073,1.43
+Mathematics,Segmentation/Clustering,9,699,0.013,0.11,0.188,0.074,1.6
+Excel,Segmentation/Clustering,9,699,0.013,0.095,0.188,0.067,1.38
+AWS,Data Lake/Lakehouse,8,699,0.011,0.129,0.16,0.077,1.8
+REST APIs,Data Lake/Lakehouse,8,699,0.011,0.078,0.16,0.056,1.1
+Statistics (general),Spark,8,699,0.011,0.072,0.182,0.054,1.14
+Statistics (general),Data Warehouse (generic),8,699,0.011,0.072,0.133,0.049,0.84
+AWS,Spark,8,699,0.011,0.129,0.182,0.082,2.05
+ETL/ELT,SAP BW/BO,8,699,0.011,0.056,0.174,0.044,0.86
+ETL/ELT,Kubernetes,8,699,0.011,0.056,0.186,0.045,0.92
+Cloud (generic),Excel,8,699,0.011,0.035,0.084,0.026,0.26
+Data Modeling,R,8,699,0.011,0.069,0.154,0.05,0.93
+Generative AI / LLM,Data Lake/Lakehouse,8,699,0.011,0.063,0.16,0.048,0.89
+ETL/ELT,Excel,7,699,0.01,0.049,0.074,0.03,0.36
+Generative AI / LLM,R,7,699,0.01,0.056,0.135,0.041,0.75
+RAG,Spark,7,699,0.01,0.143,0.159,0.081,2.27
+Mathematics,MLOps,7,699,0.01,0.085,0.163,0.059,1.39
+Mathematics,Spark,7,699,0.01,0.085,0.159,0.059,1.36
+Data Governance/Quality,Kubernetes,7,699,0.01,0.032,0.163,0.027,0.52
+Data Visualization,MLOps,7,699,0.01,0.028,0.163,0.024,0.45
+Databricks,RAG,7,699,0.01,0.097,0.143,0.061,1.39
+Segmentation/Clustering,MLOps,7,699,0.01,0.146,0.163,0.083,2.37
+AWS,R,7,699,0.01,0.113,0.135,0.065,1.52
+Git,Data Lake/Lakehouse,7,699,0.01,0.103,0.14,0.063,1.44
+AWS,Data Warehouse (generic),6,699,0.009,0.097,0.1,0.052,1.13
+AI agents / tool-calling,Data Lake/Lakehouse,6,699,0.009,0.098,0.12,0.057,1.38
+AWS,Kubernetes,6,699,0.009,0.097,0.14,0.061,1.57
+Databricks,SAP BW/BO,6,699,0.009,0.083,0.13,0.054,1.27
+AI agents / tool-calling,Segmentation/Clustering,6,699,0.009,0.098,0.125,0.058,1.43
+Data Visualization,RAG,6,699,0.009,0.024,0.122,0.02,0.34
+Machine Learning,Data Warehouse (generic),6,699,0.009,0.047,0.1,0.033,0.54
+Azure,R,6,699,0.009,0.045,0.115,0.034,0.61
+Data Lake/Lakehouse,MLOps,6,699,0.009,0.12,0.14,0.069,1.95
+R,Spark,6,699,0.009,0.115,0.136,0.067,1.83
+Power BI,RAG,6,699,0.009,0.051,0.122,0.037,0.73
+Segmentation/Clustering,Kubernetes,6,699,0.009,0.125,0.14,0.071,2.03
+Generative AI / LLM,Segmentation/Clustering,6,699,0.009,0.048,0.125,0.036,0.69
+Data Modeling,Segmentation/Clustering,6,699,0.009,0.052,0.125,0.038,0.75
+Statistics (general),AI agents / tool-calling,5,699,0.007,0.045,0.082,0.03,0.52
+Python,SAP BW/BO,5,699,0.007,0.018,0.109,0.016,0.28
+REST APIs,Excel,5,699,0.007,0.049,0.053,0.026,0.36
+Data Modeling,Excel,5,699,0.007,0.043,0.053,0.024,0.32
+Data Modeling,RAG,5,699,0.007,0.043,0.102,0.031,0.61
+R,Segmentation/Clustering,5,699,0.007,0.096,0.104,0.053,1.4
+Mathematics,RAG,5,699,0.007,0.061,0.102,0.04,0.87
+Git,Segmentation/Clustering,5,699,0.007,0.074,0.104,0.045,1.07
+Mathematics,AI agents / tool-calling,5,699,0.007,0.061,0.082,0.036,0.7
+Statistics (general),Data Lake/Lakehouse,5,699,0.007,0.045,0.1,0.032,0.63
+CI/CD,Segmentation/Clustering,5,699,0.007,0.046,0.104,0.033,0.67
+Generative AI / LLM,Excel,4,699,0.006,0.032,0.042,0.018,0.23
+Generative AI / LLM,Data Warehouse (generic),4,699,0.006,0.032,0.067,0.022,0.37
+REST APIs,Segmentation/Clustering,4,699,0.006,0.039,0.083,0.027,0.57
+Mathematics,Data Warehouse (generic),4,699,0.006,0.049,0.067,0.029,0.57
+Git,R,4,699,0.006,0.059,0.077,0.034,0.79
+Mathematics,Kubernetes,3,699,0.004,0.037,0.07,0.025,0.59
+SAP BW/BO,MLOps,3,699,0.004,0.065,0.07,0.035,1.06
+Data Warehouse (generic),SAP BW/BO,3,699,0.004,0.05,0.065,0.029,0.76
+AWS,Segmentation/Clustering,3,699,0.004,0.048,0.062,0.028,0.7
+Data Modeling,AI agents / tool-calling,3,699,0.004,0.026,0.049,0.017,0.3
+Segmentation/Clustering,Spark,3,699,0.004,0.062,0.068,0.034,0.99
+Data Lake/Lakehouse,RAG,3,699,0.004,0.06,0.061,0.031,0.86
+Azure,Segmentation/Clustering,3,699,0.004,0.023,0.062,0.017,0.33
+R,MLOps,3,699,0.004,0.058,0.07,0.033,0.94
+Mathematics,SAP BW/BO,3,699,0.004,0.037,0.065,0.024,0.56
+R,Data Lake/Lakehouse,3,699,0.004,0.058,0.06,0.03,0.81
+AI agents / tool-calling,Data Warehouse (generic),3,699,0.004,0.049,0.05,0.025,0.57
+Mathematics,Data Lake/Lakehouse,3,699,0.004,0.037,0.06,0.023,0.51
+Statistics (general),Kubernetes,3,699,0.004,0.027,0.07,0.02,0.44
+Data Visualization,Kubernetes,3,699,0.004,0.012,0.07,0.01,0.19
+Excel,Data Warehouse (generic),3,699,0.004,0.032,0.05,0.02,0.37
+Power BI,AI agents / tool-calling,3,699,0.004,0.025,0.049,0.017,0.29
+Machine Learning,Excel,3,699,0.004,0.023,0.032,0.014,0.17
+Power BI,AWS,3,699,0.004,0.025,0.048,0.017,0.29
+Power BI,Segmentation/Clustering,3,699,0.004,0.025,0.062,0.018,0.37
+Statistics (general),RAG,3,699,0.004,0.027,0.061,0.019,0.39
+Data Warehouse (generic),Segmentation/Clustering,2,699,0.003,0.033,0.042,0.019,0.49
+Data Warehouse (generic),R,2,699,0.003,0.033,0.038,0.018,0.45
+Databricks,Kubernetes,2,699,0.003,0.028,0.047,0.018,0.45
+Excel,Databricks,2,699,0.003,0.021,0.028,0.012,0.2
+REST APIs,R,2,699,0.003,0.02,0.038,0.013,0.26
+Statistics (general),SAP BW/BO,2,699,0.003,0.018,0.043,0.013,0.27
+Azure,SAP BW/BO,2,699,0.003,0.015,0.043,0.011,0.23
+Data Modeling,Kubernetes,2,699,0.003,0.017,0.047,0.013,0.28
+Machine Learning,SAP BW/BO,2,699,0.003,0.016,0.043,0.012,0.24
+Data Lake/Lakehouse,Kubernetes,2,699,0.003,0.04,0.047,0.022,0.65
+Data Lake/Lakehouse,Segmentation/Clustering,2,699,0.003,0.04,0.042,0.021,0.58
+Excel,Git,2,699,0.003,0.021,0.029,0.012,0.22
+Excel,SAP BW/BO,2,699,0.003,0.021,0.043,0.014,0.32
+R,SAP BW/BO,1,699,0.001,0.019,0.022,0.01,0.29
+R,Kubernetes,1,699,0.001,0.019,0.023,0.011,0.31
+Segmentation/Clustering,SAP BW/BO,1,699,0.001,0.021,0.022,0.011,0.32
+Power BI,MLOps,1,699,0.001,0.008,0.023,0.006,0.14
+Azure,Excel,1,699,0.001,0.008,0.011,0.004,0.06
+Data Lake/Lakehouse,SAP BW/BO,1,699,0.001,0.02,0.022,0.011,0.3
+Excel,Spark,1,699,0.001,0.011,0.023,0.007,0.17
+CI/CD,SAP BW/BO,1,699,0.001,0.009,0.022,0.007,0.14
+CI/CD,R,1,699,0.001,0.009,0.019,0.006,0.12
+CI/CD,Excel,1,699,0.001,0.009,0.011,0.005,0.07
+Excel,Data Lake/Lakehouse,1,699,0.001,0.011,0.02,0.007,0.15
+Excel,Kubernetes,1,699,0.001,0.011,0.023,0.007,0.17
+Excel,MLOps,1,699,0.001,0.011,0.023,0.007,0.17
+Databricks,Segmentation/Clustering,1,699,0.001,0.014,0.021,0.008,0.2
+Databricks,R,1,699,0.001,0.014,0.019,0.008,0.19
+AI agents / tool-calling,R,1,699,0.001,0.016,0.019,0.009,0.22
+AWS,SAP BW/BO,1,699,0.001,0.016,0.022,0.009,0.25
+AI agents / tool-calling,SAP BW/BO,1,699,0.001,0.016,0.022,0.009,0.25
+R,RAG,1,699,0.001,0.019,0.02,0.01,0.27

@@ -1,28 +1,28 @@
 skill,count,n,share,ci_low,ci_high
-Consulting,225,719,0.313,0.28,0.348
-Requirements/Business Analysis,209,719,0.291,0.259,0.325
-Finance/Controlling,180,719,0.25,0.22,0.283
-Project Management,151,719,0.21,0.182,0.241
-Operations/Manufacturing,140,719,0.195,0.167,0.225
-Public Sector/Research,137,719,0.191,0.164,0.221
-SAP (ERP),137,719,0.191,0.164,0.221
-Banking/Insurance,122,719,0.17,0.144,0.199
-Sales/Commercial,113,719,0.157,0.132,0.186
-Risk/Actuarial,85,719,0.118,0.097,0.144
-Supply Chain/Logistics,75,719,0.104,0.084,0.129
-Marketing,71,719,0.099,0.079,0.123
-Automotive/Mobility,62,719,0.086,0.068,0.109
-Healthcare/Pharma/Bio,62,719,0.086,0.068,0.109
-CRM,48,719,0.067,0.051,0.087
-Customer Analytics,36,719,0.05,0.036,0.069
-Digital/Online Marketing,35,719,0.049,0.035,0.067
-Web/Digital Analytics,33,719,0.046,0.033,0.064
-Real Estate/Retail,31,719,0.043,0.031,0.061
-E-Commerce,23,719,0.032,0.021,0.048
-HR/People Analytics,21,719,0.029,0.019,0.044
-Product Analytics,19,719,0.026,0.017,0.041
-Telecom,16,719,0.022,0.014,0.036
-Energy,16,719,0.022,0.014,0.036
-Pricing/Revenue,15,719,0.021,0.013,0.034
-Industry 4.0 / MES / OPC UA,13,719,0.018,0.011,0.031
-Optimization/OR,8,719,0.011,0.006,0.022
+Consulting,227,699,0.325,0.291,0.36
+Requirements/Business Analysis,181,699,0.259,0.228,0.293
+Finance/Controlling,170,699,0.243,0.213,0.276
+Operations/Manufacturing,137,699,0.196,0.168,0.227
+SAP (ERP),136,699,0.195,0.167,0.226
+Public Sector/Research,132,699,0.189,0.162,0.22
+Sales/Commercial,128,699,0.183,0.156,0.213
+Project Management,123,699,0.176,0.15,0.206
+Banking/Insurance,112,699,0.16,0.135,0.189
+Healthcare/Pharma/Bio,88,699,0.126,0.103,0.153
+Risk/Actuarial,79,699,0.113,0.092,0.139
+Supply Chain/Logistics,71,699,0.102,0.081,0.126
+Marketing,60,699,0.086,0.067,0.109
+Automotive/Mobility,57,699,0.082,0.063,0.104
+CRM,44,699,0.063,0.047,0.083
+Customer Analytics,35,699,0.05,0.036,0.069
+HR/People Analytics,33,699,0.047,0.034,0.066
+Digital/Online Marketing,31,699,0.044,0.031,0.062
+Web/Digital Analytics,31,699,0.044,0.031,0.062
+E-Commerce,29,699,0.041,0.029,0.059
+Real Estate/Retail,28,699,0.04,0.028,0.057
+Product Analytics,25,699,0.036,0.024,0.052
+Energy,21,699,0.03,0.02,0.045
+Pricing/Revenue,21,699,0.03,0.02,0.045
+Industry 4.0 / MES / OPC UA,18,699,0.026,0.016,0.04
+Telecom,14,699,0.02,0.012,0.033
+Optimization/OR,8,699,0.011,0.006,0.022

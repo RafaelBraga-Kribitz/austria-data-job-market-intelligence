@@ -1,9 +1,9 @@
 role_family,count,n,share,styria_count,graz_area_count,vienna_count
-data_engineering,160,720,0.222,20,16,80
-data_science,158,720,0.219,13,13,81
-business_analysis,120,720,0.167,4,3,75
-data_analytics,107,720,0.149,11,11,42
-bi,85,720,0.118,5,5,35
-data_governance,65,720,0.09,5,4,23
-marketing_analytics,24,720,0.033,0,0,13
-product_analytics,1,720,0.001,0,0,1
+data_science,176,699,0.252,16,16,90
+data_engineering,137,699,0.196,28,24,59
+data_analytics,107,699,0.153,9,8,40
+business_analysis,106,699,0.152,6,5,63
+bi,92,699,0.132,8,6,39
+data_governance,60,699,0.086,1,1,18
+marketing_analytics,18,699,0.026,0,0,9
+product_analytics,3,699,0.004,0,0,3

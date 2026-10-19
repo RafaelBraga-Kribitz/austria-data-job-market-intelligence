@@ -222,7 +222,7 @@ Archetype order was changed so an ML repository with Docker/CI stays an ML proje
 
 **Why.** Layer 2/3 publication was decided (PUBLICATION_DECISION §8, D-024) but the public tree was two layers behind.
 
-**Effect.** The public tree matches this repository's aggregates as of 2026-09-30; `config/profile.json`, `library_strategy/` and `docs/linkedin-slot-interface.md` are not in it.
+**Effect.** The public tree matches this repository's aggregates as of 2026-09-30; `config/profile.json`, `library_strategy/` and `docs/linkedin-slot-interface.md` are not in it. The public repository had its own commits (portfolio README v1.2, README quality-gate workflow, banner/portrait assets, a figure-footnote fix); they are now kept in `src/publish/public_overlay/` (applied by every export before its scans), the footnote fix was ported into `make_figures.py`, and the README was rewritten for Layers 1–3 + V on the portfolio structure (gate: PASS_WITH_EXCELLENCE). The export pushes as a fast-forward on top of the public history, never as a rewrite.
 
 ## D-030 · 2026-09-30 · OQ-14 closed: Kaggle is not collected
 
@@ -231,3 +231,5 @@ Archetype order was changed so an ML repository with Docker/CI stays an ML proje
 **Why.** `docs/kaggle-terms-review.md` (terms read 2026-09-30; a documented reading, not legal advice).
 
 **Effect.** `docs/open-questions.md` OQ-14 closed. A global Meta Kaggle benchmark, if ever wanted, needs its own entry.
+
+*Entries after D-030 are private working records and are not part of the public tree.*

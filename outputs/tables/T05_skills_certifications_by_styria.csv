@@ -1,12 +1,11 @@
 styria_flag,skill,count,n,share,ci_low,ci_high
-Rest of Austria,Certification (any mention),88,661,0.133,0.109,0.161
-Rest of Austria,Requirements/BA cert (IREB/IIBA/CBAP),20,661,0.03,0.02,0.046
-Rest of Austria,Scrum/PM cert,9,661,0.014,0.007,0.026
-Rest of Austria,ITIL,6,661,0.009,0.004,0.02
-Rest of Austria,Data-management cert (CDMP/DAMA),3,661,0.005,0.002,0.013
-Rest of Austria,Azure cert,1,661,0.002,0.0,0.009
-Rest of Austria,Google cert,1,661,0.002,0.0,0.009
-Styria,Certification (any mention),4,58,0.069,0.027,0.164
-Styria,Azure cert,1,58,0.017,0.003,0.091
-Styria,ITIL,1,58,0.017,0.003,0.091
-Styria,Google cert,1,58,0.017,0.003,0.091
+Rest of Austria,Certification (any mention),79,631,0.125,0.102,0.153
+Rest of Austria,Requirements/BA cert (IREB/IIBA/CBAP),11,631,0.017,0.01,0.031
+Rest of Austria,Scrum/PM cert,8,631,0.013,0.006,0.025
+Rest of Austria,ITIL,7,631,0.011,0.005,0.023
+Rest of Austria,Data-management cert (CDMP/DAMA),3,631,0.005,0.002,0.014
+Rest of Austria,Azure cert,2,631,0.003,0.001,0.011
+Rest of Austria,Microsoft cert (generic),1,631,0.002,0.0,0.009
+Rest of Austria,Power BI cert,1,631,0.002,0.0,0.009
+Styria,Certification (any mention),11,68,0.162,0.093,0.267
+Styria,Google cert,1,68,0.015,0.003,0.079

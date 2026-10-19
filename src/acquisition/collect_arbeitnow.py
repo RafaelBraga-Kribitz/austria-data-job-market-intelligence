@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import RawWriter, Session, cli, status_of  # noqa: E402
+from common import RawWriter, Session, cli, run_guarded, status_of  # noqa: E402
 
 API = "https://www.arbeitnow.com/api/job-board-api"
 AT_RE = re.compile(
@@ -91,4 +91,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    run_guarded(main)

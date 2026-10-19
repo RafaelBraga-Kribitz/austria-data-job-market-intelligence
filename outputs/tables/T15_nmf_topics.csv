@@ -1,7 +1,7 @@
 topic,top_skills
-0,Azure (2.71); Data Governance/Quality (2.66); ETL/ELT (2.62); Data Modeling (2.10); Databricks (2.09); Data Lake/Lakehouse (1.63); Microsoft Fabric (1.36); CI/CD (1.31); Data Warehouse (generic) (0.98); Spark (0.95)
-1,Finance/Controlling (3.42); Excel (1.87); Banking/Insurance (1.63); Power BI (1.49); Sales/Commercial (0.80); Forecasting (0.65); Risk/Actuarial (0.62); Data Governance/Quality (0.49); Exploratory Analysis (0.45); Data Modeling (0.39)
-2,Python (2.13); Machine Learning (2.09); Generative AI / LLM (2.07); CI/CD (1.41); REST APIs (1.34); AI agents / tool-calling (1.25); RAG (1.19); Git (1.03); AWS (1.00); MLOps (0.99)
-3,SQL (3.41); Python (1.56); Public Sector/Research (0.73); ETL/ELT (0.73); SQL Server (0.56); Oracle (0.55); PostgreSQL (0.45); Data Warehouse (generic) (0.40); Java (0.37); Bash/Shell (0.33)
-4,Marketing (1.63); Data Governance/Quality (1.37); Sales/Commercial (1.11); Digital/Online Marketing (0.91); CRM (0.82); Web/Digital Analytics (0.79); Customer Analytics (0.69); Segmentation/Clustering (0.63); Product Analytics (0.52); Google Analytics (0.52)
-5,Requirements/Business Analysis (3.47); Operations/Manufacturing (1.12); Public Sector/Research (1.04); Supply Chain/Logistics (0.75); Automotive/Mobility (0.35); Healthcare/Pharma/Bio (0.20); Sales/Commercial (0.20); Risk/Actuarial (0.19); Data Governance/Quality (0.18); SAP HANA (0.18)
+0,Generative AI / LLM (3.12); Python (2.95); Machine Learning (2.65); REST APIs (2.19); CI/CD (1.79); AI agents / tool-calling (1.68); RAG (1.50); Git (1.29); MLOps (1.14); AWS (1.04)
+1,Data Governance/Quality (2.37); Azure (2.18); ETL/ELT (2.01); Data Modeling (1.61); Databricks (1.47); Data Lake/Lakehouse (1.20); CI/CD (1.02); Microsoft Fabric (0.93); Data Warehouse (generic) (0.76); Spark (0.67)
+2,Finance/Controlling (3.12); Sales/Commercial (2.38); Excel (1.81); Data Governance/Quality (1.73); Banking/Insurance (0.95); Risk/Actuarial (0.82); Marketing (0.79); Forecasting (0.79); Power BI (0.74); Supply Chain/Logistics (0.68)
+3,SQL (3.49); Python (1.69); Power BI (0.70); R (0.46); PostgreSQL (0.44); Data Modeling (0.43); Oracle (0.39); SQL Server (0.36); ETL/ELT (0.35); Data Warehouse (generic) (0.33)
+4,Operations/Manufacturing (2.59); Public Sector/Research (2.57); Healthcare/Pharma/Bio (1.67); Automotive/Mobility (0.59); Machine Learning (0.51); HR/People Analytics (0.44); Segmentation/Clustering (0.42); Supply Chain/Logistics (0.40); Bash/Shell (0.27); Python (0.27)
+5,Requirements/Business Analysis (4.15); Banking/Insurance (1.21); Automotive/Mobility (0.45); Supply Chain/Logistics (0.35); Finance/Controlling (0.31); SQL (0.22); SAP BW/BO (0.21); Real Estate/Retail (0.20); Generative AI / LLM (0.20); SAP HANA (0.17)

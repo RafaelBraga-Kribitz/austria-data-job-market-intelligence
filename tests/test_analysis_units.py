@@ -122,13 +122,18 @@ def test_vintages_follow_metadata_and_fall_back(tmp_path, monkeypatch):
     (tmp_path / "outputs").mkdir()
     (tmp_path / "outputs" / "market_summary.json").write_text(
         json.dumps({"collected_at_range": {"min": "2027-03-02 08:00:00+00:00"}}), encoding="utf-8")
+    (tmp_path / "outputs" / "supply_summary.json").write_text(json.dumps({"collection_date": "2027-03-05"}), encoding="utf-8")
     (tmp_path / "data" / "processed").mkdir(parents=True)
+    # a re-build weeks later must NOT leak into the vintage (it used to print '2027-03-05/30'): only the collection date counts
     (tmp_path / "data" / "processed" / "supply_build_manifest.json").write_text(
-        json.dumps({"collection_date": "2027-03-05", "built_at": "2027-03-05T10:00:00"}), encoding="utf-8")
+        json.dumps({"collection_date": "2027-03-05", "built_at": "2027-03-30T10:00:00"}), encoding="utf-8")
     (tmp_path / "tables").mkdir()
     (tmp_path / "tables" / "JB01.csv").write_text("year,ads\n2021,1\n2026,2\n", encoding="utf-8")
     assert engine._demand_vintage() == "2027-03-02"
-    assert engine._supply_vintage() == "2027-03-05"
+    assert engine._supply_vintage() == "2027-03-05/06"          # collection day / next day (the README fetch runs past midnight)
+    (tmp_path / "outputs" / "supply_summary.json").write_text(json.dumps({"collection_date": "2027-03-31"}), encoding="utf-8")
+    assert engine._supply_vintage() == "2027-03-31/2027-04-01"   # month boundary keeps both dates
+    (tmp_path / "outputs" / "supply_summary.json").write_text(json.dumps({"collection_date": "2027-03-05"}), encoding="utf-8")
     assert engine._year_span("JB01.csv", "2020-2025") == "2021-2026"
 
 

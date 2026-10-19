@@ -1,20 +1,22 @@
 skill,count,n,share,ci_low,ci_high
-AI (generic),276,719,0.384,0.349,0.42
-Machine Learning,118,719,0.164,0.139,0.193
-Generative AI / LLM,117,719,0.163,0.138,0.191
-AI agents / tool-calling,51,719,0.071,0.054,0.092
-RAG,50,719,0.07,0.053,0.091
-Forecasting,41,719,0.057,0.042,0.076
-Predictive Analytics,25,719,0.035,0.024,0.051
-Prompt engineering,22,719,0.031,0.02,0.046
-EU AI Act / AI governance,20,719,0.028,0.018,0.043
-Deep Learning,16,719,0.022,0.014,0.036
-Vector DBs,14,719,0.019,0.012,0.032
-NLP,13,719,0.018,0.011,0.031
-Anomaly Detection,13,719,0.018,0.011,0.031
-Computer Vision,12,719,0.017,0.01,0.029
-Fine-tuning / LoRA / PEFT,11,719,0.015,0.009,0.027
-Time Series,5,719,0.007,0.003,0.016
-Reinforcement Learning,5,719,0.007,0.003,0.016
-Multimodal / VLM,5,719,0.007,0.003,0.016
-Recommender Systems,1,719,0.001,0.0,0.008
+AI (generic),301,699,0.431,0.394,0.468
+Machine Learning,129,699,0.185,0.158,0.215
+Generative AI / LLM,126,699,0.18,0.154,0.21
+AI agents / tool-calling,61,699,0.087,0.069,0.111
+RAG,49,699,0.07,0.053,0.091
+Forecasting,39,699,0.056,0.041,0.075
+EU AI Act / AI governance,32,699,0.046,0.033,0.064
+Predictive Analytics,26,699,0.037,0.026,0.054
+Computer Vision,20,699,0.029,0.019,0.044
+NLP,19,699,0.027,0.017,0.042
+Fine-tuning / LoRA / PEFT,17,699,0.024,0.015,0.039
+Prompt engineering,17,699,0.024,0.015,0.039
+Deep Learning,13,699,0.019,0.011,0.032
+Anomaly Detection,13,699,0.019,0.011,0.032
+Vector DBs,12,699,0.017,0.01,0.03
+Multimodal / VLM,8,699,0.011,0.006,0.022
+Reinforcement Learning,6,699,0.009,0.004,0.019
+Time Series,4,699,0.006,0.002,0.015
+Recommender Systems,3,699,0.004,0.001,0.013
+ROS / ROS 2,1,699,0.001,0.0,0.008
+Local LLM serving,1,699,0.001,0.0,0.008

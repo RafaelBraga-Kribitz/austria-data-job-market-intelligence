@@ -22,12 +22,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 from collections import Counter
 from pathlib import Path
 
 import pandas as pd
+
+from fsutil import replace_retry  # atomic replace that retries on short Windows file locks
 
 ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
@@ -140,7 +141,7 @@ def redact_record(rec: dict, counts: Counter) -> dict:
 
 
 def _replace(tmp: Path, target: Path) -> None:
-    os.replace(tmp, target)
+    replace_retry(tmp, target)
 
 
 def process_jsonl(p: Path, confirm: bool) -> Counter:

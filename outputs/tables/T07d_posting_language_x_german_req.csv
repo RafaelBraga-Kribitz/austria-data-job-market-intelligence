@@ -1,4 +1,4 @@
-posting_language,explicitly_not_required,german_or_english,mentioned,not_mentioned,preferred,required,required_implied
-de,0,4,32,201,54,45,206
-en,2,0,10,96,33,16,17
-mixed,0,0,0,1,1,0,1
+posting_language,german_or_english,mentioned,not_mentioned,preferred,required,required_implied
+de,2,24,156,70,55,201
+en,1,8,104,35,16,20
+mixed,0,0,0,4,0,3

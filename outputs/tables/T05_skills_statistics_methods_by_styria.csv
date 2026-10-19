@@ -1,21 +1,20 @@
 styria_flag,skill,count,n,share,ci_low,ci_high
-Rest of Austria,Data Visualization,254,661,0.384,0.348,0.422
-Rest of Austria,Statistics (general),95,661,0.144,0.119,0.173
-Rest of Austria,Mathematics,71,661,0.107,0.086,0.133
-Rest of Austria,Segmentation/Clustering,38,661,0.057,0.042,0.078
-Rest of Austria,Exploratory Analysis,25,661,0.038,0.026,0.055
-Rest of Austria,A/B Testing / Experimentation,21,661,0.032,0.021,0.048
-Rest of Austria,Classification,9,661,0.014,0.007,0.026
-Rest of Austria,Regression,6,661,0.009,0.004,0.02
-Rest of Austria,Sampling/Survey,5,661,0.008,0.003,0.018
-Rest of Austria,Causal Inference,5,661,0.008,0.003,0.018
-Rest of Austria,Hypothesis Testing,4,661,0.006,0.002,0.015
-Rest of Austria,Bayesian,3,661,0.005,0.002,0.013
-Rest of Austria,Data Mining,2,661,0.003,0.001,0.011
-Styria,Data Visualization,20,58,0.345,0.236,0.473
-Styria,Mathematics,6,58,0.103,0.048,0.208
-Styria,Exploratory Analysis,5,58,0.086,0.037,0.186
-Styria,Statistics (general),3,58,0.052,0.018,0.141
-Styria,Segmentation/Clustering,2,58,0.034,0.01,0.117
-Styria,A/B Testing / Experimentation,1,58,0.017,0.003,0.091
-Styria,Sampling/Survey,1,58,0.017,0.003,0.091
+Rest of Austria,Data Visualization,236,631,0.374,0.337,0.412
+Rest of Austria,Statistics (general),105,631,0.166,0.139,0.197
+Rest of Austria,Mathematics,76,631,0.12,0.097,0.148
+Rest of Austria,Segmentation/Clustering,46,631,0.073,0.055,0.096
+Rest of Austria,A/B Testing / Experimentation,28,631,0.044,0.031,0.063
+Rest of Austria,Exploratory Analysis,19,631,0.03,0.019,0.047
+Rest of Austria,Classification,13,631,0.021,0.012,0.035
+Rest of Austria,Hypothesis Testing,8,631,0.013,0.006,0.025
+Rest of Austria,Regression,6,631,0.01,0.004,0.021
+Rest of Austria,Bayesian,5,631,0.008,0.003,0.018
+Rest of Austria,Sampling/Survey,4,631,0.006,0.002,0.016
+Rest of Austria,Causal Inference,4,631,0.006,0.002,0.016
+Rest of Austria,Data Mining,1,631,0.002,0.0,0.009
+Styria,Data Visualization,18,68,0.265,0.174,0.38
+Styria,Mathematics,6,68,0.088,0.041,0.179
+Styria,Statistics (general),6,68,0.088,0.041,0.179
+Styria,Segmentation/Clustering,2,68,0.029,0.008,0.101
+Styria,Exploratory Analysis,1,68,0.015,0.003,0.079
+Styria,Classification,1,68,0.015,0.003,0.079

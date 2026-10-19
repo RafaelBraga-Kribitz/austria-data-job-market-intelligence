@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -20,13 +21,20 @@ T = lambda n: pd.read_csv(TAB / f"{n}.csv")  # noqa: E731
 J = lambda n: json.loads((OUT / f"{n}.json").read_text(encoding="utf-8"))  # noqa: E731
 
 
+FALLBACK_DEMAND_VINTAGE, FALLBACK_CORE_N = "2026-09-16", 720  # only used when market_summary.json is unreadable (see demand_meta)
+
+
 def demand_meta() -> tuple[str, int]:
-    """Layer 1 vintage and core n from market_summary.json, so a refresh cannot leave stale literals (M81)."""
+    """Layer 1 vintage and core n from market_summary.json, so a refresh cannot leave stale literals (M81).
+
+    The values below the `except` are a FALLBACK for a tree without market_summary.json (it is a tracked output, so this
+    does not happen in a clone); they are loudly reported and are NOT a source of truth."""
     try:
         ms = J("market_summary")
         return str(ms["collected_at_range"]["max"])[:10], int(ms["counts"]["core_canonical"])
     except (FileNotFoundError, KeyError, ValueError):
-        return "2026-09-16", 720
+        print("WARNING export_supply_json: outputs/market_summary.json unreadable - using FALLBACK vintage/core n (2026-09 snapshot)", file=sys.stderr)
+        return FALLBACK_DEMAND_VINTAGE, FALLBACK_CORE_N
 
 
 FAMILIES = ["data_analytics", "data_science", "data_engineering", "bi", "business_analysis", "data_governance", "marketing_analytics", "product_analytics"]

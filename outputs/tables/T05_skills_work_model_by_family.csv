@@ -1,38 +1,42 @@
 role_family,skill,count,n,share,ci_low,ci_high
-bi,Home office / remote mention,58,85,0.682,0.577,0.772
-bi,Full-time,55,85,0.647,0.541,0.74
-bi,Flexible hours,49,85,0.576,0.47,0.676
-bi,Part-time,8,85,0.094,0.048,0.175
-bi,Internship/Student,7,85,0.082,0.04,0.16
-business_analysis,Home office / remote mention,78,120,0.65,0.561,0.729
-business_analysis,Full-time,71,120,0.592,0.502,0.675
-business_analysis,Flexible hours,68,120,0.567,0.477,0.652
-business_analysis,Part-time,10,120,0.083,0.046,0.147
-business_analysis,Internship/Student,5,120,0.042,0.018,0.094
-data_analytics,Full-time,75,107,0.701,0.608,0.779
-data_analytics,Home office / remote mention,61,107,0.57,0.475,0.66
-data_analytics,Flexible hours,55,107,0.514,0.42,0.607
-data_analytics,Internship/Student,18,107,0.168,0.109,0.25
-data_analytics,Part-time,18,107,0.168,0.109,0.25
-data_engineering,Home office / remote mention,124,160,0.775,0.704,0.833
-data_engineering,Full-time,114,160,0.713,0.638,0.777
-data_engineering,Flexible hours,99,160,0.619,0.542,0.69
-data_engineering,Internship/Student,10,160,0.062,0.034,0.111
-data_engineering,Part-time,2,160,0.013,0.003,0.044
-data_governance,Full-time,49,65,0.754,0.637,0.842
-data_governance,Flexible hours,40,65,0.615,0.494,0.724
-data_governance,Home office / remote mention,30,65,0.462,0.346,0.581
-data_governance,Part-time,8,65,0.123,0.064,0.225
-data_governance,Internship/Student,7,65,0.108,0.053,0.206
-data_science,Home office / remote mention,98,157,0.624,0.546,0.696
-data_science,Full-time,90,157,0.573,0.495,0.648
-data_science,Flexible hours,78,157,0.497,0.42,0.574
-data_science,Internship/Student,11,157,0.07,0.04,0.121
-data_science,Part-time,6,157,0.038,0.018,0.081
-marketing_analytics,Home office / remote mention,21,24,0.875,0.69,0.957
-marketing_analytics,Full-time,19,24,0.792,0.595,0.908
-marketing_analytics,Flexible hours,16,24,0.667,0.467,0.82
-marketing_analytics,Part-time,6,24,0.25,0.12,0.449
-marketing_analytics,Internship/Student,4,24,0.167,0.067,0.359
-product_analytics,Home office / remote mention,1,1,1.0,0.207,1.0
-product_analytics,Flexible hours,1,1,1.0,0.207,1.0
+bi,Full-time,60,92,0.652,0.551,0.742
+bi,Home office / remote mention,57,92,0.62,0.517,0.712
+bi,Flexible hours,46,92,0.5,0.4,0.6
+bi,Part-time,6,92,0.065,0.03,0.135
+bi,Internship/Student,4,92,0.043,0.017,0.107
+business_analysis,Home office / remote mention,68,106,0.642,0.547,0.726
+business_analysis,Flexible hours,63,106,0.594,0.499,0.683
+business_analysis,Full-time,62,106,0.585,0.49,0.674
+business_analysis,Part-time,3,106,0.028,0.01,0.08
+business_analysis,Internship/Student,3,106,0.028,0.01,0.08
+business_analysis,4-day week,1,106,0.009,0.002,0.052
+data_analytics,Full-time,71,107,0.664,0.57,0.746
+data_analytics,Home office / remote mention,62,107,0.579,0.485,0.669
+data_analytics,Flexible hours,60,107,0.561,0.466,0.651
+data_analytics,Part-time,14,107,0.131,0.08,0.208
+data_analytics,Internship/Student,10,107,0.093,0.052,0.164
+data_engineering,Home office / remote mention,111,137,0.81,0.736,0.867
+data_engineering,Full-time,98,137,0.715,0.635,0.784
+data_engineering,Flexible hours,90,137,0.657,0.574,0.731
+data_engineering,Internship/Student,6,137,0.044,0.02,0.092
+data_engineering,Part-time,3,137,0.022,0.007,0.062
+data_governance,Full-time,39,60,0.65,0.524,0.758
+data_governance,Flexible hours,30,60,0.5,0.377,0.623
+data_governance,Home office / remote mention,26,60,0.433,0.316,0.559
+data_governance,Internship/Student,6,60,0.1,0.047,0.201
+data_governance,Part-time,6,60,0.1,0.047,0.201
+data_governance,4-day week,1,60,0.017,0.003,0.089
+data_science,Home office / remote mention,118,176,0.67,0.598,0.736
+data_science,Full-time,97,176,0.551,0.477,0.623
+data_science,Flexible hours,86,176,0.489,0.416,0.562
+data_science,Internship/Student,13,176,0.074,0.044,0.122
+data_science,Part-time,13,176,0.074,0.044,0.122
+data_science,4-day week,2,176,0.011,0.003,0.04
+marketing_analytics,Home office / remote mention,16,18,0.889,0.672,0.969
+marketing_analytics,Full-time,13,18,0.722,0.491,0.875
+marketing_analytics,Flexible hours,7,18,0.389,0.203,0.614
+marketing_analytics,Part-time,2,18,0.111,0.031,0.328
+marketing_analytics,Internship/Student,1,18,0.056,0.01,0.258
+product_analytics,Home office / remote mention,3,3,1.0,0.438,1.0
+product_analytics,Flexible hours,2,3,0.667,0.208,0.939
+product_analytics,Full-time,1,3,0.333,0.061,0.792

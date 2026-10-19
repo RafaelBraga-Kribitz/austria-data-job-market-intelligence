@@ -1,423 +1,378 @@
 {
  "note": "EURES full-text sweep (AMS feed) restricted by NUTS-2 region; keyword search is token-based so the sweep is a superset; counts here require the tool regex to match the ad text. Not merged with the core posting set.",
- "collected": "2026-09-16",
+ "collected": "2026-10-16",
  "by_region": [
   {
    "region": "Oberösterreich",
    "tool": "Python",
-   "postings_mentioning": 57,
-   "in_core_data_title": 13,
-   "in_non_data_title": 44,
-   "share_non_data_title": 0.772,
-   "top_non_data_families": "out_of_scope 36; ai_software_engineering 7; other_data 1",
-   "sweep_postings_region": 4811
+   "postings_mentioning": 61,
+   "in_core_data_title": 15,
+   "in_non_data_title": 46,
+   "share_non_data_title": 0.754,
+   "top_non_data_families": "out_of_scope 36; ai_software_engineering 9; other_data 1",
+   "sweep_postings_region": 4821
   },
   {
    "region": "Oberösterreich",
    "tool": "SQL",
-   "postings_mentioning": 79,
-   "in_core_data_title": 24,
-   "in_non_data_title": 55,
-   "share_non_data_title": 0.696,
-   "top_non_data_families": "out_of_scope 49; ai_software_engineering 3; other_data 3",
-   "sweep_postings_region": 4811
+   "postings_mentioning": 62,
+   "in_core_data_title": 19,
+   "in_non_data_title": 43,
+   "share_non_data_title": 0.694,
+   "top_non_data_families": "out_of_scope 39; ai_software_engineering 3; other_data 1",
+   "sweep_postings_region": 4821
   },
   {
    "region": "Oberösterreich",
    "tool": "Power BI",
    "postings_mentioning": 29,
-   "in_core_data_title": 10,
-   "in_non_data_title": 19,
-   "share_non_data_title": 0.655,
-   "top_non_data_families": "out_of_scope 19",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Tableau",
-   "postings_mentioning": 1,
-   "in_core_data_title": 1,
-   "in_non_data_title": 0,
-   "share_non_data_title": 0.0,
-   "top_non_data_families": "",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Excel",
-   "postings_mentioning": 356,
-   "in_core_data_title": 9,
-   "in_non_data_title": 347,
-   "share_non_data_title": 0.975,
-   "top_non_data_families": "out_of_scope 344; other_data 3",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Machine Learning",
-   "postings_mentioning": 10,
-   "in_core_data_title": 4,
-   "in_non_data_title": 6,
-   "share_non_data_title": 0.6,
-   "top_non_data_families": "out_of_scope 6",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Statistics",
-   "postings_mentioning": 67,
-   "in_core_data_title": 5,
-   "in_non_data_title": 62,
-   "share_non_data_title": 0.925,
-   "top_non_data_families": "out_of_scope 61; ai_software_engineering 1",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Data analytics (word)",
-   "postings_mentioning": 35,
-   "in_core_data_title": 9,
-   "in_non_data_title": 26,
-   "share_non_data_title": 0.743,
-   "top_non_data_families": "out_of_scope 26",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Dashboard/Reporting",
-   "postings_mentioning": 48,
-   "in_core_data_title": 17,
-   "in_non_data_title": 31,
-   "share_non_data_title": 0.646,
-   "top_non_data_families": "out_of_scope 30; other_data 1",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Business Intelligence",
-   "postings_mentioning": 60,
-   "in_core_data_title": 18,
-   "in_non_data_title": 42,
-   "share_non_data_title": 0.7,
-   "top_non_data_families": "out_of_scope 42",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "Data Science (word)",
-   "postings_mentioning": 34,
-   "in_core_data_title": 14,
-   "in_non_data_title": 20,
-   "share_non_data_title": 0.588,
-   "top_non_data_families": "out_of_scope 18; ai_software_engineering 2",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Oberösterreich",
-   "tool": "R (language)",
-   "postings_mentioning": 4,
-   "in_core_data_title": 1,
-   "in_non_data_title": 3,
-   "share_non_data_title": 0.75,
-   "top_non_data_families": "out_of_scope 3",
-   "sweep_postings_region": 4811
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Python",
-   "postings_mentioning": 53,
-   "in_core_data_title": 9,
-   "in_non_data_title": 44,
-   "share_non_data_title": 0.83,
-   "top_non_data_families": "out_of_scope 36; ai_software_engineering 6; other_data 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "SQL",
-   "postings_mentioning": 81,
-   "in_core_data_title": 10,
-   "in_non_data_title": 71,
-   "share_non_data_title": 0.877,
-   "top_non_data_families": "out_of_scope 58; other_data 11; ai_software_engineering 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Power BI",
-   "postings_mentioning": 21,
-   "in_core_data_title": 0,
-   "in_non_data_title": 21,
-   "share_non_data_title": 1.0,
-   "top_non_data_families": "out_of_scope 19; other_data 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Tableau",
-   "postings_mentioning": 1,
-   "in_core_data_title": 1,
-   "in_non_data_title": 0,
-   "share_non_data_title": 0.0,
-   "top_non_data_families": "",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Excel",
-   "postings_mentioning": 182,
-   "in_core_data_title": 0,
-   "in_non_data_title": 182,
-   "share_non_data_title": 1.0,
-   "top_non_data_families": "out_of_scope 181; other_data 1",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Machine Learning",
-   "postings_mentioning": 8,
-   "in_core_data_title": 2,
-   "in_non_data_title": 6,
-   "share_non_data_title": 0.75,
-   "top_non_data_families": "ai_software_engineering 5; other_data 1",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Statistics",
-   "postings_mentioning": 23,
-   "in_core_data_title": 2,
-   "in_non_data_title": 21,
-   "share_non_data_title": 0.913,
-   "top_non_data_families": "out_of_scope 21",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Data analytics (word)",
-   "postings_mentioning": 33,
-   "in_core_data_title": 4,
-   "in_non_data_title": 29,
-   "share_non_data_title": 0.879,
-   "top_non_data_families": "out_of_scope 27; other_data 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Dashboard/Reporting",
-   "postings_mentioning": 19,
-   "in_core_data_title": 5,
-   "in_non_data_title": 14,
-   "share_non_data_title": 0.737,
-   "top_non_data_families": "out_of_scope 9; other_data 3; ai_software_engineering 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Business Intelligence",
-   "postings_mentioning": 43,
-   "in_core_data_title": 4,
-   "in_non_data_title": 39,
-   "share_non_data_title": 0.907,
-   "top_non_data_families": "out_of_scope 36; other_data 3",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Steiermark",
-   "tool": "Data Science (word)",
-   "postings_mentioning": 15,
    "in_core_data_title": 8,
-   "in_non_data_title": 7,
-   "share_non_data_title": 0.467,
-   "top_non_data_families": "ai_software_engineering 4; out_of_scope 2; other_data 1",
-   "sweep_postings_region": 3867
+   "in_non_data_title": 21,
+   "share_non_data_title": 0.724,
+   "top_non_data_families": "out_of_scope 21",
+   "sweep_postings_region": 4821
   },
   {
-   "region": "Steiermark",
-   "tool": "R (language)",
-   "postings_mentioning": 4,
-   "in_core_data_title": 2,
-   "in_non_data_title": 2,
-   "share_non_data_title": 0.5,
-   "top_non_data_families": "out_of_scope 2",
-   "sweep_postings_region": 3867
-  },
-  {
-   "region": "Wien",
-   "tool": "Python",
-   "postings_mentioning": 102,
-   "in_core_data_title": 24,
-   "in_non_data_title": 78,
-   "share_non_data_title": 0.765,
-   "top_non_data_families": "out_of_scope 66; ai_software_engineering 9; other_data 3",
-   "sweep_postings_region": 3419
-  },
-  {
-   "region": "Wien",
-   "tool": "SQL",
-   "postings_mentioning": 91,
-   "in_core_data_title": 23,
-   "in_non_data_title": 68,
-   "share_non_data_title": 0.747,
-   "top_non_data_families": "out_of_scope 61; other_data 7",
-   "sweep_postings_region": 3419
-  },
-  {
-   "region": "Wien",
-   "tool": "Power BI",
-   "postings_mentioning": 54,
-   "in_core_data_title": 21,
-   "in_non_data_title": 33,
-   "share_non_data_title": 0.611,
-   "top_non_data_families": "out_of_scope 31; other_data 2",
-   "sweep_postings_region": 3419
-  },
-  {
-   "region": "Wien",
+   "region": "Oberösterreich",
    "tool": "Tableau",
    "postings_mentioning": 2,
    "in_core_data_title": 1,
    "in_non_data_title": 1,
    "share_non_data_title": 0.5,
    "top_non_data_families": "out_of_scope 1",
-   "sweep_postings_region": 3419
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Excel",
+   "postings_mentioning": 359,
+   "in_core_data_title": 6,
+   "in_non_data_title": 353,
+   "share_non_data_title": 0.983,
+   "top_non_data_families": "out_of_scope 350; other_data 3",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Machine Learning",
+   "postings_mentioning": 9,
+   "in_core_data_title": 3,
+   "in_non_data_title": 6,
+   "share_non_data_title": 0.667,
+   "top_non_data_families": "out_of_scope 4; ai_software_engineering 2",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Statistics",
+   "postings_mentioning": 70,
+   "in_core_data_title": 7,
+   "in_non_data_title": 63,
+   "share_non_data_title": 0.9,
+   "top_non_data_families": "out_of_scope 63",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Data analytics (word)",
+   "postings_mentioning": 45,
+   "in_core_data_title": 9,
+   "in_non_data_title": 36,
+   "share_non_data_title": 0.8,
+   "top_non_data_families": "out_of_scope 33; ai_software_engineering 2; other_data 1",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Dashboard/Reporting",
+   "postings_mentioning": 42,
+   "in_core_data_title": 11,
+   "in_non_data_title": 31,
+   "share_non_data_title": 0.738,
+   "top_non_data_families": "out_of_scope 30; other_data 1",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Business Intelligence",
+   "postings_mentioning": 53,
+   "in_core_data_title": 15,
+   "in_non_data_title": 38,
+   "share_non_data_title": 0.717,
+   "top_non_data_families": "out_of_scope 37; ai_software_engineering 1",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "Data Science (word)",
+   "postings_mentioning": 40,
+   "in_core_data_title": 13,
+   "in_non_data_title": 27,
+   "share_non_data_title": 0.675,
+   "top_non_data_families": "out_of_scope 25; ai_software_engineering 2",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Oberösterreich",
+   "tool": "R (language)",
+   "postings_mentioning": 1,
+   "in_core_data_title": 1,
+   "in_non_data_title": 0,
+   "share_non_data_title": 0.0,
+   "top_non_data_families": "",
+   "sweep_postings_region": 4821
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Python",
+   "postings_mentioning": 53,
+   "in_core_data_title": 7,
+   "in_non_data_title": 46,
+   "share_non_data_title": 0.868,
+   "top_non_data_families": "out_of_scope 38; ai_software_engineering 5; other_data 3",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "SQL",
+   "postings_mentioning": 92,
+   "in_core_data_title": 9,
+   "in_non_data_title": 83,
+   "share_non_data_title": 0.902,
+   "top_non_data_families": "out_of_scope 73; other_data 10",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Power BI",
+   "postings_mentioning": 17,
+   "in_core_data_title": 3,
+   "in_non_data_title": 14,
+   "share_non_data_title": 0.824,
+   "top_non_data_families": "out_of_scope 13; other_data 1",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Tableau",
+   "postings_mentioning": 2,
+   "in_core_data_title": 0,
+   "in_non_data_title": 2,
+   "share_non_data_title": 1.0,
+   "top_non_data_families": "out_of_scope 2",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Excel",
+   "postings_mentioning": 182,
+   "in_core_data_title": 1,
+   "in_non_data_title": 181,
+   "share_non_data_title": 0.995,
+   "top_non_data_families": "out_of_scope 181",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Machine Learning",
+   "postings_mentioning": 10,
+   "in_core_data_title": 3,
+   "in_non_data_title": 7,
+   "share_non_data_title": 0.7,
+   "top_non_data_families": "ai_software_engineering 4; other_data 2; out_of_scope 1",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Statistics",
+   "postings_mentioning": 27,
+   "in_core_data_title": 2,
+   "in_non_data_title": 25,
+   "share_non_data_title": 0.926,
+   "top_non_data_families": "out_of_scope 25",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Data analytics (word)",
+   "postings_mentioning": 38,
+   "in_core_data_title": 4,
+   "in_non_data_title": 34,
+   "share_non_data_title": 0.895,
+   "top_non_data_families": "out_of_scope 32; other_data 2",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Dashboard/Reporting",
+   "postings_mentioning": 16,
+   "in_core_data_title": 5,
+   "in_non_data_title": 11,
+   "share_non_data_title": 0.688,
+   "top_non_data_families": "out_of_scope 9; other_data 2",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Business Intelligence",
+   "postings_mentioning": 32,
+   "in_core_data_title": 9,
+   "in_non_data_title": 23,
+   "share_non_data_title": 0.719,
+   "top_non_data_families": "out_of_scope 21; other_data 2",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "Data Science (word)",
+   "postings_mentioning": 24,
+   "in_core_data_title": 8,
+   "in_non_data_title": 16,
+   "share_non_data_title": 0.667,
+   "top_non_data_families": "out_of_scope 12; ai_software_engineering 3; other_data 1",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Steiermark",
+   "tool": "R (language)",
+   "postings_mentioning": 5,
+   "in_core_data_title": 1,
+   "in_non_data_title": 4,
+   "share_non_data_title": 0.8,
+   "top_non_data_families": "out_of_scope 3; ai_software_engineering 1",
+   "sweep_postings_region": 3756
+  },
+  {
+   "region": "Wien",
+   "tool": "Python",
+   "postings_mentioning": 98,
+   "in_core_data_title": 17,
+   "in_non_data_title": 81,
+   "share_non_data_title": 0.827,
+   "top_non_data_families": "out_of_scope 67; ai_software_engineering 11; other_data 3",
+   "sweep_postings_region": 3378
+  },
+  {
+   "region": "Wien",
+   "tool": "SQL",
+   "postings_mentioning": 81,
+   "in_core_data_title": 20,
+   "in_non_data_title": 61,
+   "share_non_data_title": 0.753,
+   "top_non_data_families": "out_of_scope 59; other_data 2",
+   "sweep_postings_region": 3378
+  },
+  {
+   "region": "Wien",
+   "tool": "Power BI",
+   "postings_mentioning": 37,
+   "in_core_data_title": 16,
+   "in_non_data_title": 21,
+   "share_non_data_title": 0.568,
+   "top_non_data_families": "out_of_scope 19; other_data 2",
+   "sweep_postings_region": 3378
+  },
+  {
+   "region": "Wien",
+   "tool": "Tableau",
+   "postings_mentioning": 5,
+   "in_core_data_title": 2,
+   "in_non_data_title": 3,
+   "share_non_data_title": 0.6,
+   "top_non_data_families": "out_of_scope 3",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Excel",
-   "postings_mentioning": 279,
-   "in_core_data_title": 5,
-   "in_non_data_title": 274,
-   "share_non_data_title": 0.982,
-   "top_non_data_families": "out_of_scope 271; other_data 3",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 305,
+   "in_core_data_title": 8,
+   "in_non_data_title": 297,
+   "share_non_data_title": 0.974,
+   "top_non_data_families": "out_of_scope 293; other_data 4",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Machine Learning",
-   "postings_mentioning": 15,
-   "in_core_data_title": 3,
-   "in_non_data_title": 12,
-   "share_non_data_title": 0.8,
-   "top_non_data_families": "out_of_scope 6; ai_software_engineering 3; other_data 3",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 12,
+   "in_core_data_title": 2,
+   "in_non_data_title": 10,
+   "share_non_data_title": 0.833,
+   "top_non_data_families": "ai_software_engineering 4; out_of_scope 3; other_data 3",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Statistics",
-   "postings_mentioning": 43,
-   "in_core_data_title": 4,
-   "in_non_data_title": 39,
-   "share_non_data_title": 0.907,
-   "top_non_data_families": "out_of_scope 38; other_data 1",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 51,
+   "in_core_data_title": 5,
+   "in_non_data_title": 46,
+   "share_non_data_title": 0.902,
+   "top_non_data_families": "out_of_scope 43; other_data 3",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Data analytics (word)",
-   "postings_mentioning": 57,
-   "in_core_data_title": 9,
-   "in_non_data_title": 48,
+   "postings_mentioning": 38,
+   "in_core_data_title": 6,
+   "in_non_data_title": 32,
    "share_non_data_title": 0.842,
-   "top_non_data_families": "out_of_scope 46; other_data 1; ai_software_engineering 1",
-   "sweep_postings_region": 3419
+   "top_non_data_families": "out_of_scope 32",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Dashboard/Reporting",
-   "postings_mentioning": 23,
-   "in_core_data_title": 6,
-   "in_non_data_title": 17,
-   "share_non_data_title": 0.739,
-   "top_non_data_families": "out_of_scope 15; other_data 2",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 34,
+   "in_core_data_title": 7,
+   "in_non_data_title": 27,
+   "share_non_data_title": 0.794,
+   "top_non_data_families": "out_of_scope 26; other_data 1",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Business Intelligence",
-   "postings_mentioning": 69,
-   "in_core_data_title": 24,
-   "in_non_data_title": 45,
-   "share_non_data_title": 0.652,
-   "top_non_data_families": "out_of_scope 42; other_data 2; ai_software_engineering 1",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 47,
+   "in_core_data_title": 16,
+   "in_non_data_title": 31,
+   "share_non_data_title": 0.66,
+   "top_non_data_families": "out_of_scope 28; other_data 3",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "Data Science (word)",
-   "postings_mentioning": 29,
-   "in_core_data_title": 11,
-   "in_non_data_title": 18,
-   "share_non_data_title": 0.621,
-   "top_non_data_families": "out_of_scope 13; ai_software_engineering 4; other_data 1",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 39,
+   "in_core_data_title": 12,
+   "in_non_data_title": 27,
+   "share_non_data_title": 0.692,
+   "top_non_data_families": "out_of_scope 21; ai_software_engineering 3; other_data 3",
+   "sweep_postings_region": 3378
   },
   {
    "region": "Wien",
    "tool": "R (language)",
-   "postings_mentioning": 14,
-   "in_core_data_title": 2,
-   "in_non_data_title": 12,
-   "share_non_data_title": 0.857,
-   "top_non_data_families": "out_of_scope 12",
-   "sweep_postings_region": 3419
+   "postings_mentioning": 13,
+   "in_core_data_title": 3,
+   "in_non_data_title": 10,
+   "share_non_data_title": 0.769,
+   "top_non_data_families": "out_of_scope 9; other_data 1",
+   "sweep_postings_region": 3378
   }
  ],
  "styria_non_data_titles_with_tools": [
   {
-   "title": "AI & Digitalization Engineer (m/f/d) for 20h/week",
-   "role_family": "ai_software_engineering",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Entwickler (m/w/d) für Aufbau und Weiterentwicklung interner Tools",
+   "title": "Simulation Engineer Expert (m/w/x)",
    "role_family": "out_of_scope",
-   "employer": "AXIS Flight Training Systems"
+   "employer": "KNAPP Systemintegration"
   },
   {
-   "title": "AI & Digitalization Engineer (m/f/d) for 20h/week",
-   "role_family": "ai_software_engineering",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Full Stack Entwickler_in",
+   "title": "Senior Softwareentwickler_in Java (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Software Entwickler_in (Teil- oder Vollzeit)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Business Relationship Manager für Data Center & Software Solutions (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "HR Group Personaldienstleistung"
-  },
-  {
-   "title": "Expert_in Smart Energy (m,w,d)",
-   "role_family": "out_of_scope",
-   "employer": "Grazer Energieagentur Ges.m.b.H."
-  },
-  {
-   "title": "Platform Developer (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "\nBusiness Relationship Manager_in für DataCenter und Softwareprojekte (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Stellen als Psychotherapeutisch-Technische Assistenz (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "IT Service & Project Manager (m/w/d) - DataCenter & Cloud",
-   "role_family": "out_of_scope",
-   "employer": "TECCON Consulting"
   },
   {
    "title": "C# Entwickler_in für Testautomatisierung Solar & Energy",
@@ -425,39 +380,14 @@
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "DevOps Engineer m, w, d",
+   "title": "IT Project Manager (m/w/d) - ERP & Cloud",
    "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
+   "employer": "TECCON Consulting"
   },
   {
-   "title": "Engineer for Testing Equipment (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "AI & Digitalization Engineer (m/w/d) Teilzeit 20 Stunden Graz",
+   "title": "AI & Digitalization Engineer (m/f/d) for 20h/week",
    "role_family": "ai_software_engineering",
-   "employer": "ManpowerGroup"
-  },
-  {
-   "title": "Industriepraktikum - Product Application Engineer (w/m/div)",
-   "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Industriepraktikum - Application Engineering (w/m/div)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Spezialist*in Digitalisierung und KI - Automotive Prozessautomatisierung",
-   "role_family": "other_data",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Java Senior Softwareentwickler_in Value-Chain (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "KNAPP Systemintegration"
   },
   {
    "title": "Software Test Automation Engineer (w/m/x)",
@@ -465,52 +395,62 @@
    "employer": "DiniTech"
   },
   {
-   "title": "AI & Process Automation Specialist (m/w/x)",
+   "title": "Web Application Developer (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Web Application Developer (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Praktikant:in Digital Advisory (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Software Architect AI (all genders)",
    "role_family": "ai_software_engineering",
-   "employer": "siehe Beschreibung"
+   "employer": "adesso Austria"
   },
   {
-   "title": "Mitarbeiter:in Business Relationship für DataCenter und Softwareprojekte",
+   "title": "Senior Software Quality Engineer - Testframework & Integration (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Test Automation Engineer (all genders)",
+   "title": "vollbeschäftigte(n) Universitätsassistenten_in (m/w/x) Am Department Werkstoffwissenschaft RefNr.: 2609WPC",
+   "role_family": "out_of_scope",
+   "employer": "Montanuniversität Leoben"
+  },
+  {
+   "title": "Entwickler (m/w/d) für Aufbau und Weiterentwicklung interner Tools",
+   "role_family": "out_of_scope",
+   "employer": "AXIS Flight Training Systems"
+  },
+  {
+   "title": "Engineer for Testing Equipment (m/w/x)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "DevOps Engineer, Graz (DevOps Engineer)",
+   "title": "IT Projektmanager (m/w/d)",
    "role_family": "out_of_scope",
-   "employer": "ACP IT Solutions GmbH (Graz/Feldbach/Klagenfurt)"
+   "employer": "HR Group Personaldienstleistung"
   },
   {
-   "title": "IT Operations & Infrastructure Manager_in (27672)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Java Junior Software Entwickler_in Value-Chain (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "KNAPP Systemintegration"
-  },
-  {
-   "title": "Software Entwickler WMS (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "KNAPP Systemintegration"
-  },
-  {
-   "title": "Expert:in Strategisches Kreditrisikomanagement (m/w/d) - Corporate Business",
+   "title": "Stellen als Psychotherapeutisch-Technische Assistenz (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Werkstudent_in Acoustics\n",
+   "title": "Developer Platform Engineer (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Industriepraktikum - Embedded Systems und Sensorsintegration (w/m/div)",
+   "title": "Platform Developer (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
@@ -525,24 +465,9 @@
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Business Relationship Manager (m/w/d) für DataCenter und Softwareprojekte",
+   "title": "Software Engineer (m/w/d) Safety & Verification - 8054 Graz, Job-ID: brckivzg",
    "role_family": "out_of_scope",
-   "employer": "Trenkwalder Personaldienste"
-  },
-  {
-   "title": "Senior Test Automation Engineer (all genders)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Staff Engineer Design Automation (f/m/div)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Software Quality Engineer - Testautomatisierung (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "KNAPP Systemintegration"
+   "employer": "Siemens Personaldienstleistungen"
   },
   {
    "title": "IT Data and Tool Manager (m/w/d) - 8054 Graz, Job-ID: dccstwq4",
@@ -550,12 +475,107 @@
    "employer": "Siemens Personaldienstleistungen"
   },
   {
-   "title": "AI & Process Automation Specialist (m/w/x)",
-   "role_family": "ai_software_engineering",
-   "employer": "Personalservice Plus"
+   "title": "Testmanager (all genders)",
+   "role_family": "out_of_scope",
+   "employer": "adesso Austria"
   },
   {
-   "title": "Software Entwickler Odoo (w/m/x) - Sei erfolgreich in Softwareprojekten rundum Odoo ERP!",
+   "title": "AI & Digitalization Engineer (m/f/d) for 20h/week",
+   "role_family": "ai_software_engineering",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Java Senior Softwareentwickler_in Value-Chain (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "KNAPP Systemintegration"
+  },
+  {
+   "title": "Software Entwickler WMS (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "KNAPP Systemintegration"
+  },
+  {
+   "title": "AI & Digitalization Engineer (m/w/d) Teilzeit 20 Stunden Graz",
+   "role_family": "ai_software_engineering",
+   "employer": "ManpowerGroup"
+  },
+  {
+   "title": "DevOps Engineer Software Development (w/m/*)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "IT-Projektmanager:in Software Implementierung",
+   "role_family": "out_of_scope",
+   "employer": "Adecco Personalbereitstellungs"
+  },
+  {
+   "title": "DevOps Engineer, Graz (DevOps Engineer)",
+   "role_family": "out_of_scope",
+   "employer": "ACP IT Solutions GmbH (Graz/Feldbach/Klagenfurt)"
+  },
+  {
+   "title": "IT-Projektmanager_in ERP & Cloud Transformation",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Java Junior Software Entwickler_in Value-Chain (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "KNAPP Systemintegration"
+  },
+  {
+   "title": "Java Senior Softwareentwickler_in Value-Chain (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "KNAPP Systemintegration"
+  },
+  {
+   "title": "Masterarbeit: Virtuelle Erstkalibration von Innenraumluftgüteüberwachungs­modellen",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Internship - Design Driven Test Improvement (D2TI) Support (w/m/div)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "DevOps/Cloud-Consultant (m/w/d) für Graz/Vollzeit",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "KI- und Digitalisierungsingenieur:in",
+   "role_family": "other_data",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Spezialist*in Digitalisierung und KI - Automotive Prozessautomatisierung",
+   "role_family": "other_data",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Senior Software Quality Engineer - Testframework & Integration (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Senior Softwareentwickler_in Java (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "\nBusiness Relationship Manager_in für DataCenter und Softwareprojekte (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "DevOps Engineer m, w, d",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Expert:in Strategisches Kreditrisikomanagement (m/w/d) - Corporate Business",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
@@ -570,17 +590,7 @@
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Senior Software Quality Engineer - Testframework & Integration (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "KNAPP Systemintegration"
-  },
-  {
    "title": "Elastic Consultant (d/w/m)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "SecDevOps Engineer (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
@@ -595,67 +605,107 @@
    "employer": "Lagermax Autotransport GmbH"
   },
   {
-   "title": "Sr. Specialist, Supplier Management Systems",
+   "title": "Specialist Logistic Planning (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "Personalservice Plus"
+  },
+  {
+   "title": "IT Engineer Production Services (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "Personalservice Plus"
+  },
+  {
+   "title": "Software Developer (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "Felix Tools Ges.m.b.H."
+  },
+  {
+   "title": "IT Engineer Production Services (m/w/x)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Full Stack Developer (m/w/x)",
+   "title": "Software Engineer - Java (w/m/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Senior IT Engineer Logistiksysteme und Applikationsbetrieb (w/m/x)",
+   "title": "IT ALLROUNDER·IN",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "SOFTWARE - ENTWICKLER*IN",
+   "title": "Softwareentwickler_in",
    "role_family": "out_of_scope",
-   "employer": "movec"
+   "employer": "SYNERGIE Personal Austria"
   },
   {
-   "title": "Sr. IT Engineer, Logistics Execution and Operations (m/w/x)",
+   "title": "ERP-Consultant (m/w/x)\n",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Leitung Softwareentwicklung & Digitalisierung (w/m/d) I Standort: Graz",
+   "title": "IT-Manager_in Softwareentwicklung & Digitalisierung",
+   "role_family": "other_data",
+   "employer": "Riedenbauer Consulting"
+  },
+  {
+   "title": "IT-Techniker_in / 2nd & 3rd Level Support (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "Moser-IT"
+  },
+  {
+   "title": "Technische Einkäufer/innen",
+   "role_family": "out_of_scope",
+   "employer": "SYNERGIE Personal Austria"
+  },
+  {
+   "title": "Programmierer_in",
+   "role_family": "out_of_scope",
+   "employer": "SYNERGIE Personal Austria"
+  },
+  {
+   "title": "Specialist Logistics Planning (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Sr. IT Engineer, Logistics Execution (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "Datenbank-Administrator (w/m/d)",
    "role_family": "other_data",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Mitarbeiter_in im Bereich Rechnungswesen (m/w/d)",
+   "title": "Service Desk Engineer WMS & Value Chain (m/w/x)",
+   "role_family": "out_of_scope",
+   "employer": "KNAPP Systemintegration"
+  },
+  {
+   "title": "Java Developer - WCS Modernisierung (m/w/x)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Mitarbeiter_in Finance & Reporting",
+   "title": "Mitarbeiter_in Buchhaltung & Controlling",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Mitarbeiter Planung & Steuerung im operativen Bereich (w/m/d)",
+   "title": "Shaping the youth - Technischer Trainer für Softwarelösungen (m/w/d)",
+   "role_family": "out_of_scope",
+   "employer": "Knapp AG"
+  },
+  {
+   "title": "Automation & Integration Systems Engineer",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "(technischer) Professional Consultant (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "ERP Consultant (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Junior Controller_in (m/w/d) - Teilzeit 20 Std/Wo.",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Automatisierungstechniker_in /Applikationsprogrammierer_in",
+   "title": "Team Lead Software Development, Warehouse Control Systems (m/w/x)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
@@ -665,59 +715,39 @@
    "employer": "ManpowerGroup"
   },
   {
-   "title": "IT Application Specialist (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "VACE Engineering"
-  },
-  {
-   "title": "Projektmanager_in Einkaufssysteme & Prozessoptimierung",
+   "title": "Full Stack Developer (m/w/x)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Softwareentwickler_in / IT-Implementierung & Testing (26503)",
+   "title": "SOFTWARE - ENTWICKLER*IN",
    "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
+   "employer": "movec"
   },
   {
-   "title": "Leitung Entwicklung / Digitalisierungsmanagement (m/w/x)",
-   "role_family": "other_data",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Datenbank Administrator_in",
-   "role_family": "other_data",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "IT & Logistics Engineer (w/m/d)",
+   "title": "Technischer Support - Control Center (m/w/d)",
    "role_family": "out_of_scope",
-   "employer": "ManpowerGroup"
+   "employer": "KNAPP Systemintegration"
   },
   {
-   "title": "Specialist CoE IT S&I Endpoint",
+   "title": "Stellvertretende_r IT-Leiter_in - IT-Infrastruktur - Graz / Graz-Umgebung (hybrid)",
    "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Senior Engineer PE/ CAM Systems",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "E-Commerce Manager (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "HEROSAN Healthcare"
-  },
-  {
-   "title": "Software Inbetriebnahmetechniker_in",
-   "role_family": "out_of_scope",
-   "employer": "SCIO Automation Austria"
-  },
-  {
-   "title": "Programmierer_in / Softwareentwickler_in C#, .NET, MS SQL",
-   "role_family": "other_data",
    "employer": "Riedenbauer Consulting"
+  },
+  {
+   "title": "Mitarbeiter*in Controlling",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "IT Application Manager (w/m/d) - Business Applications & Procurement\n",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
+  },
+  {
+   "title": "IT Application Manager (w/m/d)",
+   "role_family": "out_of_scope",
+   "employer": "siehe Beschreibung"
   },
   {
    "title": "IT Specialist Einkaufssysteme & Prozesse (m/w/d)",
@@ -725,42 +755,12 @@
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Sr. Specialist Supplier Management Systems (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "Personalservice Plus"
-  },
-  {
-   "title": "System Architekt:in",
+   "title": "Full Stack Software Developer Automation (m/w/d)",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   },
   {
-   "title": "Softwaredesigner_in / Softwareentwickler_in C/C++",
-   "role_family": "out_of_scope",
-   "employer": "Riedenbauer Consulting"
-  },
-  {
-   "title": "Senior Java Backend Developer (w/m/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "Microsoft-Consultant (m/w/d)",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "IT-Systemadministrator*in",
-   "role_family": "out_of_scope",
-   "employer": "siehe Beschreibung"
-  },
-  {
-   "title": "IT-Projektmanager_in / IT - Applikationsmanager_in / IT Application Engineer (m/w/x)",
-   "role_family": "out_of_scope",
-   "employer": "Riedenbauer Consulting"
-  },
-  {
-   "title": "Sr. IT Engineer, Logistics Execution (m/w/x)",
+   "title": "Sr. Specialist, Supplier Management Systems",
    "role_family": "out_of_scope",
    "employer": "siehe Beschreibung"
   }

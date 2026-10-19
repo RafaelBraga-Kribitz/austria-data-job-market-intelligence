@@ -1,13 +1,13 @@
 scope,n,english_posting_no_german_req,no_explicit_german_requirement,german_not_required_at_C1_or_above
-Austria,719,141,434,512
-Styria,58,8,30,37
-Graz area,52,6,25,32
-Vienna,349,86,205,233
-family:bi,85,7,42,52
-family:business_analysis,120,15,67,78
-family:data_analytics,107,20,62,79
-family:data_engineering,160,29,102,120
-family:data_governance,65,10,39,45
-family:data_science,157,55,105,119
-family:marketing_analytics,24,4,16,18
-family:product_analytics,1,1,1,1
+Austria,699,147,404,488
+Styria,68,8,35,42
+Graz area,60,6,30,36
+Vienna,321,78,174,207
+family:bi,92,11,44,56
+family:business_analysis,106,18,60,71
+family:data_analytics,107,22,64,78
+family:data_engineering,137,23,79,95
+family:data_governance,60,9,32,40
+family:data_science,176,59,113,134
+family:marketing_analytics,18,3,9,11
+family:product_analytics,3,2,3,3

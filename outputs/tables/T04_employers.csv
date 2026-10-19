@@ -1,388 +1,372 @@
 company_norm,postings,families,states,styria,graz_area,is_agency,sources,example_company
-red bull,10,"data_analytics,data_governance,data_science",Salzburg,0,0,False,"karriere,linkedin",Red Bull
-qualysoft,7,"business_analysis,data_engineering,data_science",Wien,0,0,False,linkedin,Qualysoft
-liebherr,7,"bi,business_analysis,data_analytics,data_engineering,data_governance",Vorarlberg,0,0,False,linkedin,Liebherr Group
-knapp,7,"business_analysis,data_analytics,data_engineering,data_science",Steiermark,7,6,False,karriere,KNAPP
-hirebuddy flexco,6,"bi,business_analysis,data_engineering","Niederösterreich,Wien",0,0,False,willhaben,Hirebuddy FlexCo
-kern engineering careers,6,"bi,data_engineering,data_science","Oberösterreich,Steiermark,Wien",1,1,False,"karriere,willhaben",KERN engineering careers GmbH
-pwc,5,"business_analysis,data_analytics,data_governance",Wien,0,0,False,karriere,PwC Österreich
-öbb,5,"business_analysis,data_governance",Wien,0,0,False,linkedin,ÖBB
-öbb-konzern,5,"business_analysis,data_governance","Niederösterreich,Wien",0,0,False,"jobsat,karriere",ÖBB-Konzern
-accenture dach,5,"data_analytics,data_engineering,data_science","Tirol,Wien",0,0,False,linkedin,Accenture DACH
-msg,4,"bi,data_science",Oberösterreich,0,0,False,linkedin,msg
+red bull,10,"data_analytics,data_science",Salzburg,0,0,False,"karriere,linkedin",Red Bull
+qualysoft,8,"business_analysis,data_engineering,data_science",Wien,0,0,False,linkedin,Qualysoft
+kern engineering careers,7,"bi,data_engineering,data_science","Oberösterreich,Steiermark,Wien",3,3,False,"karriere,willhaben",KERN engineering careers GmbH
+michael page,5,"bi,data_engineering,data_science","Salzburg,Wien",0,0,True,karriere,Michael Page International Austria GmbH
+msg,5,"bi,data_science",Oberösterreich,0,0,False,linkedin,msg
+magna,5,"business_analysis,data_engineering,data_governance,data_science",Steiermark,5,5,False,linkedin,Magna International
+accenture dach,5,"data_analytics,data_science","Tirol,Wien",0,0,False,linkedin,Accenture DACH
+blum,5,"bi,data_analytics,data_governance,marketing_analytics",Vorarlberg,0,0,False,linkedin,Blum Group
+epunkt,5,"business_analysis,data_analytics,data_engineering,data_science","Steiermark,Wien",2,2,True,karriere,epunkt GmbH
+fronius,5,"data_engineering,data_science","Oberösterreich,Steiermark,Wien",1,1,False,"karriere,linkedin",Fronius
+knapp,5,"business_analysis,data_engineering,data_science",Steiermark,5,4,False,"karriere,linkedin",KNAPP
+pwc,4,"business_analysis,data_analytics,data_engineering",Wien,0,0,False,karriere,PwC Österreich
+vienna insurance wiener versicherung,4,"business_analysis,data_engineering,data_governance",Wien,0,0,False,karriere,Vienna Insurance Group AG Wiener Versicherung Gruppe
 tieto,4,"data_engineering,data_science","Steiermark,Wien",3,3,False,"karriere,linkedin",Tieto Austria
-smart energy services,4,"bi,business_analysis,data_engineering",Wien,0,0,False,"eures,karriere,linkedin",smart Energy Services
-towa the digital growth company,4,marketing_analytics,"Vorarlberg,Wien",0,0,False,linkedin,TOWA. the digital growth company
-rhi magnesita,4,"bi,data_engineering,data_science",Wien,0,0,False,linkedin,RHI Magnesita
-cancom,4,"bi,data_engineering","Vorarlberg,Wien",2,2,False,"eures,karriere",CANCOM Austria AG
-adesso,4,"data_engineering,data_science",Steiermark,4,4,False,"eures,linkedin",adesso Austria
-fronius,4,"data_engineering,data_science","Oberösterreich,Wien",0,0,False,"karriere,linkedin",Fronius
+pertemps erp part of network emea,4,bi,Wien,0,0,False,linkedin,Pertemps ERP (part of Network EMEA)
+liebherr,4,"bi,business_analysis,data_analytics,data_engineering",Vorarlberg,0,0,False,linkedin,Liebherr Group
 liebherr-werk nenzing,4,"bi,business_analysis,data_analytics,data_engineering",Vorarlberg,0,0,False,eures,LIEBHERR-WERK NENZING
-rewe,3,"business_analysis,data_analytics","Niederösterreich,Wien",0,0,False,linkedin,REWE International AG
-machine learning reply,3,data_science,Wien,0,0,False,linkedin,Machine Learning Reply GmbH
-bundesrechenzentrum,3,"data_governance,data_science",Wien,0,0,False,karriere,Bundesrechenzentrum GmbH
-magenta telekom,3,"business_analysis,marketing_analytics",Wien,0,0,False,"eures,karriere,linkedin",Magenta Telekom
-doppelmayr seilbahnen,3,"business_analysis,data_science",Vorarlberg,0,0,False,eures,Doppelmayr Seilbahnen
-bcg x,3,data_science,Wien,0,0,False,linkedin,BCG X
-b telligent,3,"bi,data_engineering",Wien,0,0,False,linkedin,b.telligent
-österreichische post aktiengesellschaft,3,"business_analysis,data_engineering",Wien,0,0,False,willhaben,Österreichische Post Aktiengesellschaft
-österreichische post,3,"business_analysis,data_engineering",Wien,0,0,False,"jobsat,linkedin",Österreichische Post AG
-xxxldigital,3,"business_analysis,data_analytics,marketing_analytics",Wien,0,0,False,jobsat,xxxldigital
-coolpeople technology,3,business_analysis,Wien,0,0,False,linkedin,CoolPeople Technology
-heron innovations factory,3,"business_analysis,data_science",Vorarlberg,0,0,False,linkedin,Heron Innovations Factory GmbH
-fivesquare,3,data_science,"Oberösterreich,Wien",0,0,False,"jobsat,linkedin",FiveSquare
-michael page,3,"bi,data_engineering","Salzburg,Wien",0,0,True,karriere,Michael Page International Austria GmbH
-deloitte,3,"bi,data_analytics",Wien,0,0,False,"karriere,linkedin",Deloitte
-volksbank wien,3,"data_engineering,data_governance",Wien,0,0,False,"jobsat,karriere",VOLKSBANK WIEN AG
+lam research,4,"data_analytics,data_science",Kärnten,0,0,False,linkedin,Lam Research
+helvetia versicherungen,4,"data_engineering,data_science",Wien,0,0,False,"jobsat,karriere,linkedin",Helvetia Versicherungen AG
+cancom,4,"bi,data_engineering","Vorarlberg,Wien",2,2,False,"eures,karriere",CANCOM Austria AG
+xxxldigital,4,"business_analysis,data_analytics,data_engineering,marketing_analytics",Wien,0,0,False,jobsat,xxxldigital
+adesso,4,"data_engineering,data_science",Steiermark,4,4,False,linkedin,adesso Austria GmbH
+avanade,3,"data_analytics,data_engineering,data_science","Tirol,Wien",0,0,False,linkedin,Avanade
 wienerberger,3,"bi,data_science",Wien,0,0,False,linkedin,wienerberger
-vienna insurance wiener versicherung,3,"data_engineering,data_governance",Wien,0,0,False,karriere,Vienna Insurance Group AG Wiener Versicherung Gruppe
-sportsbook software,3,data_engineering,Wien,0,0,False,karriere,Sportsbook Software GmbH
+capgemini,3,business_analysis,Wien,0,0,False,linkedin,Capgemini
+doppelmayr official,3,"business_analysis,data_engineering,data_science","Vorarlberg,Wien",0,0,False,linkedin,Doppelmayr Official
+med-el,3,"data_analytics,data_engineering,data_governance",Tirol,0,0,False,linkedin,MED-EL
+bitpanda,3,"bi,marketing_analytics",Wien,0,0,False,linkedin,Bitpanda
 voestalpine,3,"business_analysis,data_science","Niederösterreich,Wien",0,0,False,"karriere,linkedin",voestalpine AG
-uniqa versicherungen,2,"bi,data_analytics",Wien,0,0,False,jobsat,UNIQA Österreich Versicherungen AG
-spar österreichische warenhandels,2,"business_analysis,data_analytics","Salzburg,Wien",0,0,False,willhaben,SPAR Österreichische Warenhandels-AG
-tgw logistics,2,"business_analysis,data_engineering",Oberösterreich,0,0,False,"karriere,linkedin",TGW Logistics GmbH
-blum,2,"bi,marketing_analytics",Vorarlberg,0,0,False,linkedin,Blum Group
-tüv,2,"data_engineering,data_science",Wien,0,0,False,linkedin,TÜV AUSTRIA
-anton paar,2,data_science,Steiermark,2,2,False,linkedin,Anton Paar
-wienit,2,"data_analytics,data_engineering",Wien,0,0,False,linkedin,WienIT GmbH
-vienna insurance,2,data_engineering,Wien,0,0,False,linkedin,Vienna Insurance Group
-avanade,2,"data_analytics,data_engineering",Tirol,0,0,False,linkedin,Avanade
-netconomy,2,"data_engineering,data_science","Kärnten,Steiermark",1,1,False,linkedin,Netconomy
-niceshops,2,data_analytics,Steiermark,2,2,False,"karriere,willhaben",niceshops GmbH
-nortal,2,"bi,data_governance",,0,0,False,linkedin,Nortal
-oberbank,2,"data_analytics,data_engineering",Oberösterreich,0,0,False,"jobsat,linkedin",Oberbank
-palfinger,2,"data_engineering,data_governance",Salzburg,0,0,False,"eures,karriere",Palfinger Europe
-brp-rotax,2,business_analysis,Oberösterreich,0,0,False,linkedin,BRP-Rotax
-clc consulting,2,data_engineering,"Niederösterreich,Wien",0,0,False,linkedin,CLC Consulting
-capgemini,2,business_analysis,Wien,0,0,False,linkedin,Capgemini
-psa payment services,2,business_analysis,Wien,0,0,False,karriere,PSA Payment Services Austria GmbH
-philoro edelmetalle,2,business_analysis,Niederösterreich,0,0,False,"eures,jobsat",Philoro Edelmetalle
-computer futures,2,"data_engineering,data_science","Vorarlberg,Wien",0,0,False,linkedin,Computer Futures
-bawag,2,"business_analysis,data_analytics",Wien,0,0,False,karriere,BAWAG Group
-scrambly,2,"data_engineering,data_science",,0,0,False,linkedin,Scrambly
-balmung medical handel,2,data_governance,Tirol,0,0,False,linkedin,Balmung Medical Handel GmbH
+admiral technologies,3,"data_analytics,data_science",Wien,0,0,False,"karriere,linkedin",ADMIRAL Technologies
+b telligent,3,"bi,data_engineering",Wien,0,0,False,linkedin,b.telligent
+fivesquare,3,data_science,"Oberösterreich,Wien",0,0,False,"jobsat,linkedin",FiveSquare
+hays,3,"business_analysis,data_engineering,data_governance","Burgenland,Oberösterreich,Wien",0,0,True,"karriere,linkedin",Hays Österreich GmbH
+heron innovations factory,3,"business_analysis,data_science",Vorarlberg,0,0,False,linkedin,Heron Innovations Factory GmbH
+hirebuddy flexco,3,"bi,data_engineering","Niederösterreich,Wien",0,0,False,willhaben,Hirebuddy FlexCo
+bcg x,3,data_science,Wien,0,0,False,linkedin,BCG X
+mm,3,"business_analysis,data_analytics,data_engineering",Wien,0,0,False,linkedin,MM Group
+miba,3,"data_engineering,data_science",Oberösterreich,0,0,False,jobsat,Miba AG
+mistral,3,data_science,Oberösterreich,0,0,False,linkedin,Mistral
+magenta telekom,3,"business_analysis,data_analytics,marketing_analytics",Wien,0,0,False,"eures,karriere",Magenta Telekom
+machine learning reply,3,data_science,Wien,0,0,False,linkedin,Machine Learning Reply GmbH
+rewe,3,"business_analysis,data_analytics","Niederösterreich,Wien",0,0,False,"karriere,linkedin",REWE Group Österreich
+rhi magnesita,3,"bi,data_science",Wien,0,0,False,linkedin,RHI Magnesita
+personalservice plus,3,"data_analytics,data_engineering,data_science",Steiermark,3,3,True,eures,Personalservice Plus
+bearingpoint,3,"data_engineering,data_governance",Wien,0,0,False,"jobsat,karriere",BearingPoint GmbH
+ntt data & latam,3,"bi,data_analytics,data_science",Steiermark,3,3,False,linkedin,NTT DATA Europe & Latam
+deloitte,3,"bi,business_analysis,data_analytics",Wien,0,0,False,"karriere,linkedin",Deloitte
+retinsight,3,"data_engineering,data_science",Wien,0,0,False,linkedin,RetInSight
+österreichische lotterien,2,data_science,Wien,0,0,False,linkedin,Österreichische Lotterien
+willhaben internet service,2,"data_engineering,data_science",Wien,0,0,False,willhaben,willhaben internet service GmbH
+österreichische post aktiengesellschaft,2,"business_analysis,data_engineering",Wien,0,0,False,willhaben,Österreichische Post Aktiengesellschaft
 riskine,2,business_analysis,Wien,0,0,False,"eures,linkedin",riskine
-rk-management,2,bi,"Oberösterreich,Salzburg",0,0,False,eures,rk-management GmbH
-spar ics – information & communication services,2,business_analysis,Wien,0,0,False,karriere,SPAR ICS – Information & Communication Services
+rosenbauer,2,"data_analytics,data_engineering",Oberösterreich,0,0,False,"jobsat,linkedin",Rosenbauer Group
+sap,2,business_analysis,Wien,0,0,False,linkedin,SAP
+schulmeister management consulting,2,"bi,data_science",Kärnten,0,0,True,"karriere,linkedin",SCHULMEISTER Management Consulting GmbH
+scrambly,2,"data_engineering,data_science",,0,0,False,linkedin,Scrambly
 software daten service gesellschaft m b h,2,"business_analysis,data_engineering",Wien,0,0,False,"jobsat,karriere",Software Daten Service Gesellschaft m.b.H.
-simcorp,2,"data_governance,data_science",Wien,0,0,False,linkedin,SimCorp
-bearingpoint,2,"data_engineering,data_governance",Wien,0,0,False,karriere,BearingPoint GmbH
-binderholz,2,"data_governance,data_science","Salzburg,Tirol",0,0,False,karriere,Binderholz GmbH
-kwizda pharmadistribution,2,business_analysis,"Niederösterreich,Wien",0,0,False,"jobsat,linkedin",Kwizda Pharmadistribution
-kpmg,2,"bi,data_science",Wien,0,0,False,"karriere,linkedin",KPMG Österreich
-magna,2,"bi,data_engineering",Steiermark,2,2,False,linkedin,Magna International
-maco,2,"data_analytics,data_engineering",Salzburg,0,0,False,karriere,MACO-Gruppe
-med-el,2,"data_analytics,data_governance",Tirol,0,0,False,linkedin,MED-EL
-mayer & co beschläge,2,"data_analytics,data_engineering",Salzburg,0,0,False,eures,Mayer & Co Beschläge
-med-el elektromedizinische geräte gesellschaft m b h,2,"data_analytics,data_governance",Tirol,0,0,False,jobsat,Med-El Elektromedizinische Geräte Gesellschaft m.b.H.
-deutsche telekom,2,"business_analysis,data_engineering",Wien,0,0,False,linkedin,Deutsche Telekom
-detecon,2,"bi,data_science",Wien,0,0,False,linkedin,Detecon
-mm,2,"data_analytics,data_engineering",Wien,0,0,False,linkedin,MM Group
-mercedes-benz g,2,data_analytics,Steiermark,2,2,False,"jobsat,linkedin",Mercedes-Benz G GmbH
-iqvia,2,data_science,Wien,0,0,False,linkedin,IQVIA
-it-services der sozialversicherung,2,"data_engineering,data_science","Oberösterreich,Wien",0,0,False,"eures,linkedin",IT-Services der Sozialversicherung
-itmatch,2,data_engineering,Wien,0,0,False,linkedin,ITmatch
-jobgether,2,"business_analysis,data_analytics",,0,0,False,linkedin,Jobgether
-juice,2,data_governance,Niederösterreich,0,0,False,"eures,karriere",AUSTRIA JUICE
-ke kelit,2,data_governance,Oberösterreich,0,0,False,"eures,karriere",KE KELIT
-dm drogerie markt,2,"data_analytics,data_science",Oberösterreich,0,0,False,linkedin,dm drogerie markt Österreich
-doppelmayr official,2,"business_analysis,data_engineering",Vorarlberg,0,0,False,linkedin,Doppelmayr Official
-liebherr-mcctec,2,"business_analysis,data_engineering",Vorarlberg,0,0,False,eures,LIEBHERR-MCCtec
-eblinger & partner personal und management beratungsgesellschaft m b h,2,"data_analytics,data_science",Wien,0,0,True,jobsat,Eblinger & Partner Personal und Management Beratungsgesellschaft m.b.H.
-hofer,2,"business_analysis,data_science","Niederösterreich,Oberösterreich",0,0,False,willhaben,HOFER KG
-holzkern,2,marketing_analytics,Wien,0,0,False,linkedin,HOLZKERN
-erste bank,2,"business_analysis,data_engineering",Wien,0,0,False,karriere,Erste Bank
-iono robotics,2,data_science,Oberösterreich,0,0,False,linkedin,IONO Robotics
-erste digital,2,"data_analytics,data_engineering",Wien,0,0,False,linkedin,Erste Digital
-infineon technologies,2,"data_analytics,data_engineering",Kärnten,0,0,False,"karriere,linkedin",Infineon Technologies Austria AG
-felbermayr,2,data_engineering,Oberösterreich,0,0,False,"karriere,linkedin",Felbermayr Group
-frutarom,2,"bi,data_engineering",Salzburg,0,0,False,jobsat,FRUTAROM GMBH
-hartlauer handelsgesmbh,2,marketing_analytics,"Oberösterreich,Wien",0,0,False,karriere,Hartlauer HandelsgesmbH
-gebrüder weiss,2,"bi,data_engineering",Niederösterreich,0,0,False,"eures,linkedin",GEBRÜDER WEISS
-hays,2,"business_analysis,data_engineering","Oberösterreich,Wien",0,0,True,"karriere,linkedin",Hays Österreich GmbH
-er personalberatung,2,data_analytics,"Salzburg,Wien",0,0,True,eures,ER Personalberatung
-österreichische lotterien,2,data_science,Wien,0,0,False,"karriere,linkedin",Österreichische Lotterien
-facc,2,data_engineering,Oberösterreich,0,0,False,karriere,FACC AG
-zühlke,2,"data_engineering,data_science",Wien,0,0,False,linkedin,Zühlke Group
-österreichische gesundheitskasse,2,data_governance,"Steiermark,Wien",1,0,False,"karriere,linkedin",Österreichische Gesundheitskasse
-fabasoft,2,data_science,"Oberösterreich,Wien",0,0,False,linkedin,Fabasoft
+spar ics – information & communication services,2,business_analysis,Wien,0,0,False,karriere,SPAR ICS – Information & Communication Services
+clc consulting,2,data_engineering,"Niederösterreich,Wien",0,0,False,linkedin,CLC Consulting
+spar österreichische warenhandels,2,"business_analysis,data_analytics","Salzburg,Wien",0,0,False,willhaben,SPAR Österreichische Warenhandels-AG
+specific,2,business_analysis,Wien,0,0,False,linkedin,Specific-Group Austria
+sportradar,2,"business_analysis,data_analytics",Wien,0,0,False,linkedin,Sportradar
+sportsbook software,2,data_engineering,Wien,0,0,False,karriere,Sportsbook Software GmbH
+stadt wien,2,"business_analysis,data_analytics",Wien,0,0,False,linkedin,Stadt Wien
+telus digital ai data solutions,2,data_analytics,Steiermark,2,2,False,linkedin,TELUS Digital AI Data Solutions
+tetrascience,2,data_engineering,Wien,0,0,False,linkedin,TetraScience
+tgw logistics,2,"business_analysis,data_engineering",Oberösterreich,0,0,False,linkedin,TGW Logistics
 xxxldigital – part of xxxl,2,"data_analytics,data_governance",Wien,0,0,False,karriere,XXXLdigital – Part of XXXL Group
-admiral technologies,2,"data_engineering,data_science",Wien,0,0,False,karriere,ADMIRAL Technologies
-wolfgang denzel auto,2,"data_engineering,data_science",Wien,0,0,False,linkedin,Wolfgang Denzel Auto AG
-accenture southeast asia,2,data_science,Wien,0,0,False,linkedin,Accenture Southeast Asia
-abb,2,"business_analysis,data_analytics",Oberösterreich,0,0,False,"karriere,linkedin",ABB Group
-österreichische postbus aktiengesellschaft,1,business_analysis,Wien,0,0,False,karriere,Österreichische Postbus Aktiengesellschaft
-[at],1,data_science,Wien,0,0,False,linkedin,[at] Group
-acctus personalberatung,1,bi,Wien,0,0,True,karriere,acctus Personalberatung GmbH
-ase services süd,1,data_science,Steiermark,1,1,False,willhaben,ASE Services Süd GmbH
-arena pistenmanagement | powergis,1,data_governance,Salzburg,0,0,False,karriere,ARENA Pistenmanagement | PowerGIS
-apprize technology solutions,1,data_science,Wien,0,0,False,linkedin,Apprize Technology Solutions
-apc business services,1,bi,Niederösterreich,0,0,False,linkedin,APC Business Services GmbH
-anexia,1,bi,Kärnten,0,0,False,jobsat,Anexia Holding GmbH
-ams osram,1,data_science,Steiermark,1,1,False,linkedin,ams OSRAM
-alpla,1,business_analysis,Vorarlberg,0,0,False,linkedin,ALPLA Group
-allianz,1,data_engineering,Wien,0,0,False,linkedin,Allianz Österreich
-all for one,1,data_analytics,Steiermark,1,1,False,linkedin,All for One
-airswift,1,business_analysis,Wien,0,0,False,linkedin,Airswift
-valantic vormals elements at,1,marketing_analytics,Salzburg,0,0,False,linkedin,valantic Austria (vormals elements.at)
-vaillant,1,data_analytics,Wien,0,0,False,linkedin,Vaillant Group
-usecon,1,business_analysis,Wien,0,0,False,linkedin,Usecon
-uniqa insurance,1,bi,Wien,0,0,False,linkedin,UNIQA Insurance Group
-truechoice solutions,1,data_science,Wien,0,0,False,linkedin,"TrueChoice Solutions, Inc."
-trinsik formerly v_labs,1,data_analytics,Wien,0,0,False,linkedin,Trinsik (formerly V_labs)
-getzner werkstoffe,1,business_analysis,Vorarlberg,0,0,False,eures,Getzner Werkstoffe
-getzner - engineering a quiet future,1,business_analysis,Vorarlberg,0,0,False,linkedin,Getzner - engineering a quiet future
-getontop,1,bi,Salzburg,0,0,False,eures,getontop
-generali,1,data_analytics,Wien,0,0,False,linkedin,Generali Österreich
-general logistics systems,1,data_analytics,Oberösterreich,0,0,False,karriere,General Logistics Systems Austria GmbH
-gatx rail,1,business_analysis,Wien,0,0,False,jobsat,GATX Rail Austria GmbH
-fundermax,1,bi,Kärnten,0,0,False,linkedin,Fundermax
-flinn ai,1,bi,Wien,0,0,False,linkedin,Flinn.ai
-flex althofen,1,data_analytics,Kärnten,0,0,False,karriere,Flex Althofen
-flex,1,data_analytics,Kärnten,0,0,False,linkedin,Flex
-finmatics,1,data_science,,0,0,False,linkedin,Finmatics
-finanzmarktaufsicht personal,1,data_engineering,Wien,0,0,True,eures,Finanzmarktaufsicht Personal
-finanzmarktaufsicht fma,1,data_engineering,Wien,0,0,False,jobsat,Finanzmarktaufsicht (FMA)
-ferchau,1,data_engineering,Tirol,0,0,False,karriere,FERCHAU Austria GmbH
-fahrzeugelektrik aspöck systems,1,data_engineering,Oberösterreich,0,0,False,eures,Fahrzeugelektrik Aspöck Systems
-ey,1,data_engineering,Wien,0,0,False,karriere,EY Österreich
-herold business data,1,data_engineering,Wien,0,0,False,jobsat,HEROLD Business Data GmbH
-herold,1,data_engineering,Wien,0,0,False,linkedin,Herold
-hendi - tools for chefs,1,data_engineering,Salzburg,0,0,False,linkedin,HENDI - Tools for Chefs
-helvetia versicherungen,1,data_science,Wien,0,0,False,linkedin,Helvetia Versicherungen Österreich
-heinzelpaper,1,data_engineering,Oberösterreich,0,0,False,linkedin,heinzelpaper
-head,1,data_governance,Vorarlberg,0,0,False,linkedin,HEAD
-hcltech,1,business_analysis,Wien,0,0,False,linkedin,HCLTech
-hartlauer handelsgesellschaft m b h,1,marketing_analytics,Oberösterreich,0,0,False,linkedin,Hartlauer Handelsgesellschaft m.b.H.
-hartlauer firmengruppe,1,marketing_analytics,Oberösterreich,0,0,False,eures,Hartlauer Firmengruppe
-hammerer aluminium industries,1,bi,Oberösterreich,0,0,False,linkedin,Hammerer Aluminium Industries
-haier kältetechnik,1,data_analytics,Wien,0,0,False,karriere,Haier Kältetechnik Austria GmbH
-greiner packaging,1,data_analytics,Oberösterreich,0,0,False,linkedin,Greiner Packaging
-greiner,1,data_analytics,Oberösterreich,0,0,False,linkedin,Greiner
-greentube,1,data_engineering,Wien,0,0,False,karriere,Greentube GmbH
-grass,1,data_analytics,Vorarlberg,0,0,False,eures,Grass
-gls,1,data_analytics,Oberösterreich,0,0,False,willhaben,GLS Austria GmbH
-horváth,1,bi,Wien,0,0,False,linkedin,Horváth
-experts inside,1,data_engineering,Wien,0,0,False,linkedin,EXPERTS INSIDE
-evn,1,data_governance,Niederösterreich,0,0,False,linkedin,EVN
-eversports,1,data_science,Wien,0,0,False,linkedin,Eversports
-ever pharma,1,business_analysis,Oberösterreich,0,0,False,karriere,EVER Pharma
-ever neuro pharma,1,business_analysis,,0,0,False,jobsat,EVER Neuro Pharma GmbH
-ev evg,1,bi,Oberösterreich,0,0,False,willhaben,EV Group (EVG)
-ev e thallner,1,bi,Oberösterreich,0,0,False,eures,EV Group E. Thallner GmbH
-ev,1,bi,Oberösterreich,0,0,False,linkedin,EV Group
-european dynamics,1,data_science,Wien,0,0,False,linkedin,EUROPEAN DYNAMICS
-europ assistance ges m b h,1,data_analytics,Wien,0,0,False,jobsat,Europ Assistance Ges.m.b.H.
-eurofunk kappacher,1,bi,Salzburg,0,0,False,linkedin,eurofunk Kappacher GmbH
-erste bank der oesterreichischen sparkassen erste bank,1,data_governance,Wien,0,0,False,jobsat,"Erste Bank der oesterreichischen Sparkassen AG (""Erste Bank"")"
-equip,1,data_engineering,Niederösterreich,0,0,False,jobsat,Equip GmbH
-holzindustrie binderholz,1,data_science,Tirol,0,0,False,eures,Holzindustrie Binderholz
-hirschmann automotive,1,data_analytics,Vorarlberg,0,0,False,linkedin,Hirschmann Automotive
-jumio corporation,1,data_science,,0,0,False,linkedin,Jumio Corporation
-journi,1,product_analytics,Wien,0,0,False,linkedin,Journi
-johannes kepler universität linz,1,data_science,Oberösterreich,0,0,False,linkedin,Johannes Kepler Universität Linz
-job world,1,data_engineering,Oberösterreich,0,0,False,karriere,Job World GmbH
-itsv,1,data_science,Wien,0,0,False,jobsat,ITSV GmbH
-isi,1,data_analytics,Wien,0,0,False,linkedin,iSi Group
-isg personalmanagement,1,data_governance,Wien,0,0,True,linkedin,ISG Personalmanagement GmbH
-intermedix,1,data_science,Niederösterreich,0,0,False,jobsat,intermedix Österreich GesmbH
-innio jenbacher,1,data_science,Tirol,0,0,False,jobsat,INNIO Jenbacher GmbH
-industrie informatik,1,data_governance,Oberösterreich,0,0,False,jobsat,Industrie Informatik GmbH
-ims nanofabrication,1,data_analytics,Niederösterreich,0,0,False,jobsat,IMS Nanofabrication GmbH
-imendo,1,data_science,Kärnten,0,0,False,eures,Imendo
-idm energiesysteme,1,data_governance,Tirol,0,0,False,linkedin,iDM Energiesysteme GmbH
-hutchison drei,1,marketing_analytics,Wien,0,0,False,karriere,Hutchison Drei Austria GmbH
-huspy,1,marketing_analytics,,0,0,False,linkedin,Huspy
-hostinger,1,marketing_analytics,Wien,0,0,False,linkedin,Hostinger
-epig,1,data_analytics,Steiermark,1,1,False,willhaben,EPIG GmbH
-enery,1,data_engineering,Wien,0,0,False,linkedin,Enery
-elk,1,data_engineering,Niederösterreich,0,0,False,linkedin,ELK
-ebcont,1,data_science,Oberösterreich,0,0,False,jobsat,EBCONT
-eaton,1,business_analysis,Wien,0,0,False,linkedin,Eaton
-easelink,1,business_analysis,Steiermark,1,1,False,eures,Easelink
-e-control,1,data_engineering,Wien,0,0,False,karriere,E-Control
-durchblicker at | powered by netrisk,1,data_engineering,Wien,0,0,False,linkedin,durchblicker.at | Powered by Netrisk Group
-drei,1,marketing_analytics,Wien,0,0,False,linkedin,Drei Österreich
-donhauser,1,data_governance,Wien,0,0,False,willhaben,Donhauser GmbH
-kienbaum consultants,1,data_analytics,Wien,0,0,False,karriere,Kienbaum Consultants Austria GmbH
-keyrock,1,data_engineering,Wien,0,0,False,linkedin,Keyrock
-keyone,1,data_engineering,Tirol,0,0,False,linkedin,keyone
-keba,1,bi,Oberösterreich,0,0,False,jobsat,KEBA Group AG
-kapsch aktiengesellschaft,1,data_engineering,Wien,1,1,False,jobsat,Kapsch Aktiengesellschaft
-jysk,1,data_analytics,Oberösterreich,0,0,False,linkedin,JYSK
-lpdigital personalmanagement,1,data_engineering,Wien,0,0,True,linkedin,LPdigital Personalmanagement
-lpdigital personalberatung,1,data_engineering,Wien,0,0,True,jobsat,LPdigital Personalberatung GmbH
-list general contractor,1,data_engineering,Niederösterreich,0,0,False,karriere,List General Contractor GmbH
-lindlpower personalmanagement,1,business_analysis,Oberösterreich,0,0,True,jobsat,LINDLPOWER Personalmanagement GmbH
-lely deutschland,1,data_analytics,Oberösterreich,0,0,False,linkedin,Lely Deutschland GmbH
-lars nysøm,1,bi,Wien,0,0,False,linkedin,LARS NYSØM
-lantenhammer consulting,1,bi,,0,0,False,eures,Lantenhammer Consulting
-lam research,1,data_science,Kärnten,0,0,False,linkedin,Lam Research
-kwizda,1,bi,Wien,0,0,False,eures,Kwizda Holding
-kununu,1,data_science,Wien,0,0,False,linkedin,kununu
-ktm,1,bi,Oberösterreich,0,0,False,karriere,KTM AG
-kotányi,1,bi,Niederösterreich,0,0,False,jobsat,Kotányi GmbH
-kotanyi,1,bi,Niederösterreich,0,0,False,eures,Kotanyi
-kontron transportation,1,data_engineering,Wien,0,0,False,linkedin,Kontron Transportation
-epunkt,1,data_governance,Oberösterreich,0,0,True,karriere,epunkt GmbH
-epmedia werbeagentur,1,data_science,Wien,0,0,False,linkedin,epmedia Werbeagentur GmbH
-digitl,1,data_science,Wien,0,0,False,linkedin,Digitl
-devjobs,1,data_analytics,Salzburg,0,0,False,linkedin,DEVjobs
-denzel,1,data_engineering,Wien,0,0,False,karriere,DENZEL Gruppe
-denizbank,1,data_analytics,Wien,0,0,False,linkedin,DenizBank AG
-delta,1,data_science,Wien,0,0,False,karriere,DELTA Gruppe
-deel,1,data_analytics,,0,0,False,linkedin,Deel
-daiichi sankyo,1,data_science,Wien,0,0,False,linkedin,Daiichi Sankyo Europe GmbH
-cwa constructions sa,1,data_engineering,Vorarlberg,0,0,False,linkedin,CWA Constructions SA
-crowndental ai,1,data_science,Wien,0,0,False,eures,CrownDental.AI
-corda business & information engineering,1,business_analysis,Wien,0,0,False,karriere,corda business & information engineering gmbh
-convertinvest financial services,1,bi,Niederösterreich,0,0,False,karriere,CONVERTINVEST Financial Services GmbH
-meinhart kabel,1,data_governance,Oberösterreich,0,0,False,karriere,Meinhart Kabel Österreich GmbH
-mediamarkt,1,business_analysis,Niederösterreich,0,0,False,willhaben,MediaMarkt Österreich GmbH
-marionnaud,1,data_analytics,Wien,0,0,False,linkedin,MARIONNAUD
-manpowergroup,1,data_engineering,Oberösterreich,0,0,True,eures,ManpowerGroup
-maco produktions,1,data_engineering,Steiermark,1,0,False,eures,Maco Produktions
-oper credits,1,business_analysis,Wien,0,0,False,linkedin,Oper Credits
-openbet,1,data_engineering,Tirol,0,0,False,linkedin,OpenBet
-omninet,1,bi,Steiermark,1,1,False,linkedin,OMNINET
-oesterreichische kontrollbank aktiengesellschaft,1,data_engineering,Wien,0,0,False,jobsat,Oesterreichische Kontrollbank Aktiengesellschaft
-nö landesgesundheitsagentur,1,data_governance,Niederösterreich,0,0,False,karriere,NÖ Landesgesundheitsagentur
-novartis,1,data_analytics,Wien,0,0,False,linkedin,Novartis
-neunerhaus - hilfe für obdachlose menschen,1,data_analytics,Wien,0,0,False,jobsat,neunerhaus - Hilfe für obdachlose Menschen
-netcup,1,bi,Kärnten,0,0,False,linkedin,netcup
-n8n,1,data_analytics,,0,0,False,linkedin,n8n
-msg plaut,1,data_engineering,Wien,0,0,False,linkedin,msg Plaut Austria GmbH
-msg insurance suite,1,data_science,Wien,0,0,False,linkedin,msg.Insurance Suite
-mpreis,1,data_analytics,Tirol,0,0,False,linkedin,MPREIS
-miba,1,data_engineering,Oberösterreich,0,0,False,jobsat,Miba AG
-meusburger georg,1,bi,Vorarlberg,0,0,False,linkedin,Meusburger Georg GmbH & Co KG
-merkur versicherung,1,data_science,Steiermark,1,1,False,jobsat,Merkur Versicherung AG
-dis,1,business_analysis,Wien,0,0,True,linkedin,DIS AG
-circly,1,data_science,Wien,0,0,False,linkedin,Circly GmbH
-cbs unternehmensberatung,1,bi,Wien,0,0,False,karriere,cbs Unternehmensberatung Austria GmbH
-canva,1,data_engineering,Wien,0,0,False,linkedin,Canva
-bösch,1,data_governance,Vorarlberg,0,0,False,linkedin,bösch
-bybit,1,data_governance,Wien,0,0,False,linkedin,Bybit EU
-btv vier länder bank,1,data_engineering,Tirol,0,0,False,linkedin,BTV Vier Länder Bank
-brau union,1,data_analytics,Oberösterreich,0,0,False,karriere,Brau Union Österreich AG
-bookingbird io,1,data_science,,0,0,False,linkedin,bookingbird.io
-philip morris,1,data_analytics,Wien,0,0,False,linkedin,Philip Morris International
-pfeifer,1,data_governance,Tirol,0,0,False,willhaben,Pfeifer Holding GmbH
-pertemps erp part of network emea,1,bi,Wien,0,0,False,linkedin,Pertemps ERP (part of Network EMEA)
-personalservice plus,1,data_analytics,Steiermark,1,1,True,eures,Personalservice Plus
-pensionsversicherung,1,data_engineering,Wien,0,0,False,karriere,Pensionsversicherung
-partner bank,1,data_engineering,Oberösterreich,0,0,False,jobsat,PARTNER BANK AG
-p how,1,data_science,Wien,0,0,False,karriere,p.how GmbH
-otago online consulting,1,bi,Wien,0,0,False,linkedin,Otago Online Consulting GmbH
-radancy,1,data_science,Wien,0,0,False,linkedin,Radancy
-quehenberger logistics,1,data_analytics,Salzburg,0,0,False,karriere,Quehenberger Logistics
-prosiebensat 1 puls 4,1,data_science,Wien,0,0,False,karriere,ProSiebenSat.1 PULS 4
-professionals4you,1,data_governance,Steiermark,1,1,False,willhaben,Professionals4you
-pro pet heimtiernahrung,1,data_governance,Niederösterreich,0,0,False,linkedin,PRO PET AUSTRIA Heimtiernahrung GmbH
-prewave,1,data_science,Wien,0,0,False,linkedin,Prewave
-premiqamed management services,1,data_engineering,Wien,0,0,False,jobsat,PremiQaMed Management Services
-prefa aluminiumprodukte,1,data_science,Niederösterreich,0,0,False,eures,PREFA Aluminiumprodukte
-post business solutions,1,data_science,Wien,0,0,False,eures,Post Business Solutions
-porsche,1,data_governance,Salzburg,0,0,False,linkedin,Porsche Holding
-plansee functions,1,data_science,Tirol,0,0,False,karriere,Plansee Group Functions Austria GmbH
-plansee,1,data_science,Tirol,0,0,False,linkedin,Plansee Group
-pinus team managementgesellschaft mbh,1,marketing_analytics,Salzburg,0,0,False,eures,Pinus Team Managementgesellschaft mbH
-phoron - go live and beyond,1,bi,Wien,0,0,False,linkedin,Phoron - go live and beyond
-cms electronics,1,data_engineering,Kärnten,0,0,False,linkedin,cms electronics group
-cloudera,1,data_science,,0,0,False,linkedin,Cloudera
-rsm,1,business_analysis,Wien,0,0,False,karriere,RSM Austria
-rosendahl nextrom,1,data_governance,Steiermark,1,1,False,karriere,Rosendahl Nextrom GmbH
-rosenberger telematics,1,business_analysis,Oberösterreich,0,0,False,eures,Rosenberger Telematics
-rosenbauer,1,data_analytics,Oberösterreich,0,0,False,eures,Rosenbauer International AG
-rise - research industrial systems engineering,1,business_analysis,Wien,0,0,False,linkedin,RISE - Research Industrial Systems Engineering
-richter pharma,1,data_analytics,Oberösterreich,0,0,False,jobsat,Richter Pharma AG
-research industrial systems engineering rise forschungs- entwicklungs- und großprojektberatung,1,business_analysis,Wien,0,0,False,karriere,"Research Industrial Systems Engineering (RISE) Forschungs-, Entwicklungs- und Großprojektberatung GmbH"
-reppublika research & analytics,1,bi,Wien,0,0,False,linkedin,Reppublika Research & Analytics
-reploid,1,data_science,Oberösterreich,0,0,False,linkedin,REPLOID
-reform-werke bauer & co gesellschaft m b h,1,data_governance,Oberösterreich,0,0,False,karriere,Reform-Werke Bauer & Co Gesellschaft m.b.H.
-red bull media house,1,data_science,Salzburg,0,0,False,karriere,Red Bull Media House
-raiffeisenlandesbank oberösterreich,1,data_analytics,Oberösterreich,0,0,False,jobsat,Raiffeisenlandesbank Oberösterreich AG
-raiffeisen vorarlberg,1,data_analytics,Vorarlberg,0,0,False,linkedin,Raiffeisen Vorarlberg
-raiffeisen it,1,data_science,Wien,0,0,False,linkedin,Raiffeisen Group IT GmbH
-raiffeisen digital bank,1,data_analytics,Wien,0,0,False,linkedin,Raiffeisen Digital Bank
-raiffeisen bank,1,data_science,Wien,0,0,False,karriere,Raiffeisen Bank International AG
-biogast,1,data_governance,Wien,0,0,False,eures,Biogast
-billa,1,data_analytics,Niederösterreich,0,0,False,linkedin,BILLA AG
-beko solutions,1,data_engineering,Oberösterreich,0,0,False,linkedin,BEKO Solutions GmbH
-bechtle,1,data_analytics,Oberösterreich,0,0,False,linkedin,Bechtle
-bbmri-eric,1,data_governance,Steiermark,1,1,False,linkedin,BBMRI-ERIC
-bank für tirol und vorarlberg,1,data_engineering,Tirol,0,0,False,jobsat,Bank für Tirol und Vorarlberg AG
-ball corporation,1,data_governance,Vorarlberg,0,0,False,linkedin,Ball Corporation
-b telligent romania,1,data_analytics,Wien,0,0,False,linkedin,b.telligent Romania
-siemens energy,1,data_analytics,Steiermark,1,1,False,linkedin,Siemens Energy
-siemens,1,data_science,Wien,0,0,False,linkedin,Siemens
-senacor technologies,1,data_science,Wien,0,0,False,linkedin,Senacor Technologies
-schönherr rechtsanwälte,1,bi,Wien,0,0,False,karriere,Schönherr Rechtsanwälte GmbH
-schulmeister management consulting,1,bi,Kärnten,0,0,True,karriere,SCHULMEISTER Management Consulting GmbH
-schoenherr attorneys at law,1,data_governance,Wien,0,0,False,linkedin,Schoenherr Attorneys at Law
-scg - sap personalvermittlung,1,bi,Wien,0,0,True,linkedin,SCG - SAP Personalvermittlung
-s spitz,1,bi,Oberösterreich,0,0,False,karriere,S. Spitz GmbH
-strabag,1,data_analytics,Wien,0,0,False,jobsat,STRABAG AG
-steiner hitech / ing e steiner high-tech personalbereitstellungs- und technische dienstleistungsge,1,data_engineering,Wien,0,0,True,jobsat,STEINER HITECH / Ing. E. Steiner High-Tech Personalbereitstellungs- und technische Dienstleistungsge
-starlim und sterner,1,data_science,Oberösterreich,0,0,False,karriere,starlim und sterner
-stadt wien,1,data_engineering,Wien,0,0,False,linkedin,Stadt Wien
-squer services,1,data_science,Wien,0,0,False,karriere,SQUER Group Services GmbH
-squer,1,data_science,Wien,0,0,False,linkedin,SQUER
-springer maschinenfabrik,1,data_science,Kärnten,0,0,False,eures,Springer Maschinenfabrik
-specs,1,data_science,Wien,0,0,False,linkedin,SPECS
-softec spol s r o,1,business_analysis,,0,0,False,jobsat,"SOFTEC, spol. s r.o."
-softcom consulting,1,business_analysis,Wien,0,0,False,karriere,SOFTCOM CONSULTING GmbH
-smartstream,1,data_science,Wien,0,0,False,linkedin,Smartstream
-smartpoint it consulting,1,data_engineering,Wien,0,0,False,jobsat,smartpoint IT consulting GmbH
-smartpoint dataformers,1,data_engineering,Wien,0,0,False,linkedin,smartpoint dataformers GmbH
-simon-kucher,1,data_science,Wien,0,0,False,linkedin,Simon-Kucher
-siemens personaldienstleistungen,1,data_engineering,Wien,0,0,True,karriere,Siemens Personaldienstleistungen GmbH
-bmw,1,data_analytics,Oberösterreich,0,0,False,linkedin,BMW Group
-trenkwalder personaldienste,1,data_governance,Steiermark,1,1,True,eures,Trenkwalder Personaldienste
-transgourmet,1,data_engineering,Oberösterreich,0,0,False,willhaben,Transgourmet Österreich GmbH
-tomoris,1,bi,Oberösterreich,0,0,False,eures,TOMORIS
-tgw,1,data_engineering,Oberösterreich,0,0,False,eures,TGW
-teufelberger service,1,bi,Oberösterreich,0,0,False,eures,Teufelberger Service
-tensar systems,1,data_science,Wien,0,0,False,linkedin,Tensar Systems
-telus digital philippines,1,data_analytics,Wien,0,0,False,linkedin,TELUS Digital Philippines
-telus digital ai data solutions,1,data_analytics,Steiermark,1,1,False,linkedin,TELUS Digital AI Data Solutions
-telus digital,1,data_analytics,Wien,0,0,False,linkedin,TELUS Digital
-techpeople,1,data_science,Wien,0,0,False,linkedin,techPEOPLE Group
-tech11,1,business_analysis,Wien,0,0,False,linkedin,tech11 GmbH
-teccon consulting,1,bi,Steiermark,1,1,False,eures,TECCON Consulting
-takeda,1,data_analytics,Wien,0,0,False,linkedin,Takeda
-tailored apps,1,business_analysis,Wien,0,0,False,willhaben,Tailored Apps GmbH
-tag,1,bi,Wien,0,0,False,jobsat,TAG GmbH
-swietelsky,1,data_science,Oberösterreich,0,0,False,linkedin,Swietelsky AG
-actief jobmade,1,data_analytics,Oberösterreich,0,0,False,eures,ACTIEF JOBMADE
-3 banken it,1,data_engineering,Oberösterreich,0,0,False,linkedin,3 Banken IT GmbH
-wirtschaftskammern österreichs,1,data_science,Wien,0,0,False,jobsat,Wirtschaftskammern Österreichs
-walter,1,data_engineering,Niederösterreich,0,0,False,linkedin,WALTER GROUP
-wabtec corporation,1,data_governance,Oberösterreich,0,0,False,linkedin,Wabtec Corporation
-w talent,1,data_science,Wien,0,0,True,linkedin,W Talent
-vusion,1,data_engineering,Steiermark,1,0,False,linkedin,Vusion
-visa,1,data_analytics,Wien,0,0,False,linkedin,Visa
-virtual identity,1,data_governance,,0,0,False,linkedin,Virtual Identity
-vienesse consulting,1,data_analytics,Wien,0,0,False,linkedin,Vienesse Consulting
-vbv - vorsorgekasse,1,data_engineering,Wien,0,0,False,jobsat,VBV - Vorsorgekasse AG
-van deer-red bull sports equipment,1,data_governance,Salzburg,0,0,False,karriere,VAN DEER-Red Bull Sports Equipment GmbH
-axpo,1,data_analytics,Wien,0,0,False,linkedin,Axpo Group
-axess,1,business_analysis,Salzburg,0,0,False,eures,Axess AG
-atos,1,bi,Wien,0,0,False,linkedin,Atos
-at&s,1,data_engineering,Steiermark,1,0,False,linkedin,AT&S
-extrunet,1,data_science,Oberösterreich,0,0,False,eures,"Extrunet,"
-öbv österreichische beamtenversicherung vvag,1,business_analysis,Wien,0,0,False,jobsat,"ÖBV Österreichische Beamtenversicherung, VVaG"
-zeta,1,data_engineering,Wien,1,1,False,karriere,ZETA GmbH
-zeb consulting,1,data_governance,Wien,0,0,False,linkedin,zeb consulting
-zaunergroup,1,data_engineering,Oberösterreich,0,0,False,karriere,Zaunergroup
-yougov,1,data_governance,Wien,0,0,False,linkedin,YouGov
-xund,1,data_engineering,Wien,0,0,False,linkedin,XUND
-x-tention,1,data_engineering,Oberösterreich,0,0,False,linkedin,x-tention
-agrarmarkt,1,business_analysis,Wien,0,0,False,linkedin,Agrarmarkt Austria
-agrana beteiligungs,1,data_analytics,Wien,0,0,False,karriere,AGRANA Beteiligungs-AG
-agrana,1,data_analytics,Wien,0,0,False,linkedin,AGRANA Group
-agilox services,1,data_science,Oberösterreich,0,0,False,eures,AGILOX Services
-agfa healthcare,1,bi,Steiermark,1,1,False,jobsat,Agfa HealthCare GesmbH
-afry,1,data_analytics,Wien,0,0,False,linkedin,AFRY
+zaunergroup,2,"data_engineering,data_science",Oberösterreich,0,0,False,karriere,Zaunergroup
+zühlke,2,"data_engineering,data_science",Wien,0,0,False,linkedin,Zühlke Group
+öbb,2,data_science,Wien,0,0,False,linkedin,ÖBB
+öbb-konzern,2,data_science,Wien,0,0,False,karriere,ÖBB-Konzern
+umdasch,2,data_analytics,Niederösterreich,0,0,False,karriere,Umdasch Group AG
+auvaria,2,"business_analysis,data_science",Wien,0,0,False,linkedin,Auvaria
+med-el elektromedizinische geräte,2,"data_engineering,data_governance",Tirol,0,0,False,karriere,MED-EL Elektromedizinische Geräte GmbH
+niceshops,2,data_analytics,Steiermark,2,2,False,"karriere,willhaben",niceshops GmbH
+deutsche telekom,2,"business_analysis,data_engineering",Wien,0,0,False,linkedin,Deutsche Telekom
+palfinger,2,"data_engineering,data_science",Salzburg,0,0,False,linkedin,PALFINGER
+binderholz,2,"data_governance,data_science","Salzburg,Tirol",0,0,False,karriere,Binderholz GmbH
+raiffeisen software,2,business_analysis,"Oberösterreich,Wien",0,0,False,"karriere,linkedin",Raiffeisen Software GmbH
+raiffeisen bank,2,"data_analytics,data_science",Wien,0,0,False,"karriere,linkedin",Raiffeisen Bank International AG
+post business solutions,2,"business_analysis,data_science",Wien,0,0,False,eures,Post Business Solutions
+plansee,2,"data_analytics,data_science",Tirol,0,0,False,linkedin,Plansee
+bosch,2,data_engineering,Oberösterreich,0,0,False,karriere,Bosch-Gruppe Österreich
+brp-rotax,2,business_analysis,Oberösterreich,0,0,False,linkedin,BRP-Rotax
+bründl sports,2,data_analytics,Salzburg,0,0,False,"eures,karriere",Bründl Sports
+bundesrechenzentrum,2,"data_governance,data_science",Wien,0,0,False,karriere,Bundesrechenzentrum GmbH
+dm drogerie markt,2,"data_analytics,data_science",Oberösterreich,0,0,False,linkedin,dm drogerie markt Österreich
+doppelmayr seilbahnen,2,"business_analysis,data_engineering",Vorarlberg,0,0,False,eures,Doppelmayr Seilbahnen
+mayer & co beschläge,2,"data_analytics,data_engineering",Salzburg,0,0,False,eures,Mayer & Co Beschläge
+maco,2,"data_analytics,data_engineering",Steiermark,2,0,False,karriere,MACO-Gruppe
+liebherr-mcctec,2,"data_analytics,data_engineering",Vorarlberg,0,0,False,eures,LIEBHERR-MCCtec
+kurz,2,"bi,business_analysis",Oberösterreich,0,0,False,linkedin,KURZ
+kpmg,2,"bi,data_science",Wien,1,1,False,karriere,KPMG Österreich
+ke kelit,2,data_governance,Oberösterreich,0,0,False,"eures,karriere",KE KELIT
+karriere at,2,"data_science,marketing_analytics","Oberösterreich,Wien",0,0,True,"jobsat,karriere",karriere.at
+juice,2,data_governance,Niederösterreich,0,0,False,"eures,karriere",AUSTRIA JUICE
+jobgether,2,"data_analytics,marketing_analytics",,0,0,False,linkedin,Jobgether
+iw,2,data_science,Wien,0,0,False,"karriere,linkedin",IW Group GmbH
+hirschmann automotive,2,"business_analysis,data_analytics",Vorarlberg,0,0,False,linkedin,Hirschmann Automotive
+hofer,2,"business_analysis,data_science","Niederösterreich,Oberösterreich",0,0,False,willhaben,HOFER KG
+iono robotics,2,data_science,Oberösterreich,0,0,False,linkedin,IONO Robotics
+erste bank,2,business_analysis,Wien,0,0,False,karriere,Erste Bank
+erste digital,2,business_analysis,Wien,0,0,False,linkedin,Erste Digital
+europ assistance ges m b h,2,"data_analytics,data_engineering",Wien,0,0,False,jobsat,Europ Assistance Ges.m.b.H.
+ev e thallner,2,"bi,data_analytics",Oberösterreich,0,0,False,"eures,linkedin",EV Group E. Thallner GmbH
+ev evg,2,"bi,data_analytics",Oberösterreich,0,0,False,willhaben,EV Group (EVG)
+finmatics,2,data_science,,0,0,False,linkedin,Finmatics
+gebrüder weiss,2,"bi,data_engineering",Niederösterreich,0,0,False,"eures,linkedin",GEBRÜDER WEISS
+greiner,2,"data_analytics,data_governance",Oberösterreich,0,0,False,karriere,Greiner AG
+hammerer aluminium industries,2,bi,Oberösterreich,0,0,False,linkedin,Hammerer Aluminium Industries
+felbermayr,2,data_engineering,Oberösterreich,0,0,False,"karriere,linkedin",Felbermayr Group
+fabasoft,2,data_science,"Oberösterreich,Wien",0,0,False,"karriere,linkedin",Fabasoft
+balmung medical handel,2,data_governance,Tirol,0,0,False,linkedin,Balmung Medical Handel GmbH
+alpla,2,"business_analysis,data_engineering",Vorarlberg,0,0,False,linkedin,ALPLA Group
 adesso business consulting,1,bi,Wien,0,0,False,linkedin,adesso business consulting AG
+agrana,1,data_analytics,Wien,0,0,False,linkedin,AGRANA Group
+agrana beteiligungs,1,data_analytics,Wien,0,0,False,karriere,AGRANA Beteiligungs-AG
+agrarmarkt,1,business_analysis,Wien,0,0,False,linkedin,Agrarmarkt Austria
+all for one,1,data_analytics,Steiermark,1,1,False,linkedin,All for One
+anexia,1,bi,Kärnten,0,0,False,jobsat,Anexia Holding GmbH
+ankö - auftragnehmerkataster,1,data_science,Wien,0,0,False,linkedin,ANKÖ - Auftragnehmerkataster Österreich
+ankö service ges mbh,1,data_science,Wien,0,0,False,jobsat,ANKÖ Service Ges.mbH
+wirtschaftskammern österreichs,1,data_science,Wien,0,0,False,jobsat,Wirtschaftskammern Österreichs
+wolf theiss,1,data_engineering,Wien,0,0,False,linkedin,Wolf Theiss
+wolf theiss rechtsanwälte,1,data_engineering,Wien,0,0,False,karriere,Wolf Theiss Rechtsanwälte GmbH & Co KG
+wolfgang denzel auto,1,data_engineering,Wien,0,0,False,linkedin,Wolfgang Denzel Auto AG
+woom,1,bi,Wien,0,0,False,jobsat,woom GmbH
+xund,1,data_engineering,Wien,0,0,False,linkedin,XUND
+b telligent romania,1,data_analytics,Wien,0,0,False,linkedin,b.telligent Romania
+bank für tirol und vorarlberg,1,data_engineering,Tirol,0,0,False,jobsat,Bank für Tirol und Vorarlberg AG
+bawag,1,data_science,Wien,0,0,False,karriere,BAWAG Group
+bdo,1,data_analytics,Wien,0,0,False,linkedin,BDO Austria
+vienna insurance,1,business_analysis,Wien,0,0,False,linkedin,Vienna Insurance Group
+viesure innovation center,1,business_analysis,Wien,0,0,False,linkedin,viesure innovation center GmbH
+voestalpine additive manufacturing north america,1,data_science,Niederösterreich,0,0,False,linkedin,voestalpine Additive Manufacturing North America
+volksbank wien,1,data_governance,Wien,0,0,False,karriere,VOLKSBANK WIEN AG
+vusion,1,data_engineering,Steiermark,1,0,False,linkedin,Vusion
+wabtec corporation,1,data_governance,Oberösterreich,0,0,False,linkedin,Wabtec Corporation
+walter,1,data_engineering,Niederösterreich,0,0,False,linkedin,WALTER GROUP
+waterglass ai,1,data_science,Wien,0,0,False,linkedin,Waterglass.ai
+experts inside,1,data_engineering,Wien,0,0,False,linkedin,EXPERTS INSIDE
+facc,1,data_engineering,Oberösterreich,0,0,False,karriere,FACC AG
+fahrzeugelektrik aspöck systems,1,data_engineering,Oberösterreich,0,0,False,eures,Fahrzeugelektrik Aspöck Systems
+falkensteiner hotels & residences,1,data_engineering,Wien,0,0,False,linkedin,Falkensteiner Hotels & Residences Österreich
+fcc,1,bi,Wien,0,0,False,linkedin,FCC Austria GmbH
+finanzmarktaufsicht personal,1,bi,Wien,0,0,True,eures,Finanzmarktaufsicht Personal
+flex althofen,1,data_analytics,Kärnten,0,0,False,karriere,Flex Althofen
+flinn ai,1,bi,Wien,0,0,False,linkedin,Flinn.ai
+frutarom,1,bi,Salzburg,0,0,False,jobsat,FRUTAROM GMBH
+fundermax,1,bi,Kärnten,0,0,False,eures,FunderMax
+gatx rail,1,business_analysis,Wien,0,0,False,jobsat,GATX Rail Austria GmbH
+general logistics systems,1,data_analytics,Oberösterreich,0,0,False,karriere,General Logistics Systems Austria GmbH
+getontop,1,bi,Salzburg,0,0,False,eures,getontop
+getzner - engineering a quiet future,1,business_analysis,Vorarlberg,0,0,False,linkedin,Getzner - engineering a quiet future
+getzner werkstoffe,1,business_analysis,Vorarlberg,0,0,False,eures,Getzner Werkstoffe
+gls,1,data_analytics,Oberösterreich,0,0,False,willhaben,GLS Austria GmbH
+grass,1,data_analytics,Vorarlberg,0,0,False,eures,Grass
+greiner bio-one,1,data_governance,Oberösterreich,0,0,False,linkedin,Greiner Bio-One International
+greiner packaging,1,data_analytics,Oberösterreich,0,0,False,linkedin,Greiner Packaging
+hali,1,data_governance,Oberösterreich,0,0,False,linkedin,hali GmbH
+hartlauer handelsgesmbh,1,marketing_analytics,Oberösterreich,0,0,False,karriere,Hartlauer HandelsgesmbH
+haystack,1,data_science,Kärnten,0,0,False,linkedin,Haystack
+herold,1,data_engineering,Wien,0,0,False,linkedin,Herold
+holzindustrie binderholz,1,data_science,Tirol,0,0,False,eures,Holzindustrie Binderholz
+horváth,1,bi,Wien,0,0,False,linkedin,Horváth
+hostaway,1,product_analytics,Wien,0,0,False,linkedin,Hostaway
+hostinger,1,marketing_analytics,Wien,0,0,False,linkedin,Hostinger
+hutchison drei,1,marketing_analytics,Wien,0,0,False,karriere,Hutchison Drei Austria GmbH
+idm energiesysteme,1,data_governance,Tirol,0,0,False,linkedin,iDM Energiesysteme GmbH
+infineon technologies,1,data_analytics,Kärnten,0,0,False,karriere,Infineon Technologies Austria AG
+infrared city,1,data_science,Wien,0,0,False,linkedin,infrared.city
+inp,1,business_analysis,Tirol,0,0,False,eures,INP Austria
+intermedix,1,data_science,Niederösterreich,0,0,False,jobsat,intermedix Österreich GesmbH
+iom - un migration,1,data_governance,Wien,0,0,False,linkedin,IOM - UN Migration
+isg personalmanagement,1,data_engineering,Wien,0,0,True,linkedin,ISG Personalmanagement GmbH
+eblinger & partner personal und management beratungsgesellschaft m b h,1,data_analytics,Wien,0,0,True,jobsat,Eblinger & Partner Personal und Management Beratungsgesellschaft m.b.H.
+er personalberatung,1,data_analytics,Salzburg,0,0,True,eures,ER Personalberatung
+eurest restaurationsbetriebsgesellschaft m b h,1,data_governance,Wien,0,0,False,willhaben,Eurest Restaurationsbetriebsgesellschaft m.b.h.
+eurofunk kappacher,1,bi,Salzburg,0,0,False,linkedin,eurofunk Kappacher GmbH
+europ assistance,1,data_engineering,Wien,0,0,False,linkedin,Europ Assistance
+european dynamics,1,data_science,Wien,0,0,False,linkedin,EUROPEAN DYNAMICS
+ev,1,bi,Oberösterreich,0,0,False,linkedin,EV Group
+ever neuro pharma,1,business_analysis,,0,0,False,jobsat,EVER Neuro Pharma GmbH
+ever pharma,1,business_analysis,Oberösterreich,0,0,False,karriere,EVER Pharma
+eversports,1,data_science,Wien,0,0,False,linkedin,Eversports
+evn,1,data_governance,Niederösterreich,0,0,False,linkedin,EVN
+isi,1,data_analytics,Wien,0,0,False,linkedin,iSi Group
+it-services der sozialversicherung,1,data_engineering,Oberösterreich,0,0,False,linkedin,IT-Services der Sozialversicherung GmbH
+iventa,1,data_governance,Wien,0,0,True,karriere,Iventa Group
+ivm technical consultants,1,bi,Steiermark,1,1,False,linkedin,IVM Technical Consultants
+ixopay,1,data_engineering,Wien,0,0,False,linkedin,IXOPAY
+jobster,1,bi,Steiermark,1,1,False,linkedin,Jobster
+josef manner & comp,1,data_analytics,Wien,0,0,False,karriere,Josef Manner & Comp. AG
+journi,1,product_analytics,Wien,0,0,False,linkedin,Journi
+jumio corporation,1,data_science,,0,0,False,linkedin,Jumio Corporation
+jysk,1,data_analytics,Oberösterreich,0,0,False,linkedin,JYSK
+kapas steuerberatung steuerberatung,1,data_science,Steiermark,1,1,False,eures,"KAPAS Steuerberatung, Steuerberatung"
+kapsch aktiengesellschaft,1,data_engineering,Wien,1,1,False,jobsat,Kapsch Aktiengesellschaft
+kelag energie,1,business_analysis,Kärnten,0,0,False,linkedin,Kelag Energie
+keyrock,1,data_engineering,Wien,0,0,False,linkedin,Keyrock
+kienbaum consultants,1,data_analytics,Wien,0,0,False,karriere,Kienbaum Consultants Austria GmbH
+kompetenzzentrum dok,1,data_science,Tirol,0,0,False,linkedin,Kompetenzzentrum DOK GmbH
+kununu,1,data_science,Wien,0,0,False,linkedin,kununu
+kwizda,1,bi,Wien,0,0,False,jobsat,Kwizda Holding GmbH
+kwizda pharmadistribution,1,data_governance,Oberösterreich,0,0,False,karriere,Kwizda Pharmadistribution GmbH
+lantenhammer consulting,1,bi,,0,0,False,eures,Lantenhammer Consulting
+lindlpower personalmanagement,1,business_analysis,Oberösterreich,0,0,True,jobsat,LINDLPOWER Personalmanagement GmbH
+lp experts,1,data_analytics,Oberösterreich,0,0,False,karriere,LP EXPERTS
+lpdigital personalberatung,1,data_engineering,Wien,0,0,True,jobsat,LPdigital Personalberatung GmbH
+lpdigital personalmanagement,1,data_analytics,Wien,0,0,True,linkedin,LPdigital Personalmanagement
+bora,1,data_governance,Tirol,0,0,False,linkedin,BORA
+btv vier länder bank,1,data_engineering,Tirol,0,0,False,linkedin,BTV Vier Länder Bank
+bybit,1,data_governance,Wien,0,0,False,linkedin,Bybit EU
+division of rheumatology medical university of vienna,1,data_science,Wien,0,0,False,linkedin,"Division of Rheumatology, Medical University of Vienna"
+doka,1,data_analytics,Niederösterreich,0,0,False,karriere,Doka
+drei,1,marketing_analytics,Wien,0,0,False,linkedin,Drei Österreich
+dsm-firmenich,1,data_governance,Niederösterreich,0,0,False,linkedin,dsm-firmenich
+easelink,1,business_analysis,Steiermark,1,1,False,eures,Easelink
+eaton,1,business_analysis,Wien,0,0,False,linkedin,Eaton
+maco produktions,1,data_engineering,Steiermark,1,0,False,eures,Maco Produktions
+manpowergroup,1,data_engineering,Oberösterreich,0,0,True,eures,ManpowerGroup
+marionnaud,1,data_analytics,Wien,0,0,False,linkedin,MARIONNAUD
+mavie med,1,data_engineering,Wien,0,0,False,karriere,Mavie Med Holding
+mayr-melnhof holz,1,bi,Steiermark,1,0,False,karriere,Mayr-Melnhof Holz Holding AG
+mckinsey & company,1,data_science,Wien,0,0,False,linkedin,McKinsey & Company
+med-el elektromedizinische geräte gesellschaft m b h,1,data_analytics,Tirol,0,0,False,jobsat,Med-El Elektromedizinische Geräte Gesellschaft m.b.H.
+meinhart kabel,1,data_governance,Oberösterreich,0,0,False,karriere,Meinhart Kabel Österreich GmbH
+melecs ews,1,data_governance,Wien,0,0,False,karriere,MELECS EWS GmbH
+metro,1,marketing_analytics,Niederösterreich,0,0,False,karriere,METRO Österreich
+meusburger georg,1,bi,Vorarlberg,0,0,False,linkedin,Meusburger Georg GmbH & Co KG
+msg insurance suite,1,data_science,Wien,0,0,False,linkedin,msg.Insurance Suite
+msg plaut,1,data_engineering,Wien,0,0,False,linkedin,msg Plaut Austria GmbH
+mxp,1,data_science,Steiermark,1,1,False,linkedin,MXP
+netconomy,1,data_engineering,Steiermark,1,1,False,linkedin,Netconomy
+netcup,1,bi,Kärnten,0,0,False,linkedin,netcup
+nortal,1,bi,,0,0,False,linkedin,Nortal
+novartis,1,data_analytics,Tirol,0,0,False,linkedin,Novartis
+novataste,1,data_engineering,Salzburg,0,0,False,eures,NovaTaste Austria
+nö landesgesundheitsagentur,1,data_science,Niederösterreich,0,0,False,karriere,NÖ Landesgesundheitsagentur
+oberbank,1,data_governance,Oberösterreich,0,0,False,linkedin,Oberbank
+delta,1,data_science,Wien,0,0,False,karriere,DELTA Gruppe
+denizbank,1,data_analytics,Wien,0,0,False,linkedin,DenizBank AG
+denzel,1,data_engineering,Wien,0,0,False,karriere,DENZEL Gruppe
+detecon,1,data_science,Wien,0,0,False,linkedin,Detecon
+devjobs,1,data_science,Oberösterreich,0,0,False,linkedin,DEVjobs
+digitl,1,data_science,Wien,0,0,False,linkedin,Digitl
+bdo wirtschaftsprüfungs- und steuerberatungsgesellschaft,1,data_analytics,Wien,0,0,False,karriere,BDO Austria GmbH Wirtschaftsprüfungs- und Steuerberatungsgesellschaft
+bechtle,1,data_analytics,Oberösterreich,0,0,False,linkedin,Bechtle
+billa,1,data_analytics,Niederösterreich,0,0,False,linkedin,BILLA AG
+bond iq,1,data_science,Wien,0,0,False,linkedin,BOND IQ
+bookingbird io,1,data_science,,0,0,False,linkedin,bookingbird.io
+oesterreichische kontrollbank aktiengesellschaft,1,data_engineering,Wien,0,0,False,jobsat,Oesterreichische Kontrollbank Aktiengesellschaft
+oesterreichische kontrollbank oekb,1,data_engineering,Wien,0,0,False,linkedin,Oesterreichische Kontrollbank AG (OeKB)
+oesterreichische nationalbank,1,data_governance,Wien,0,0,False,karriere,Oesterreichische Nationalbank
+oesterreichische nationalbank önb,1,data_science,Wien,0,0,False,jobsat,Oesterreichische Nationalbank ÖNB
+oper credits,1,business_analysis,Wien,0,0,False,linkedin,Oper Credits
+osce,1,bi,Wien,0,0,False,linkedin,OSCE
+oö gesundheitsholding,1,data_governance,Oberösterreich,0,0,False,linkedin,OÖ Gesundheitsholding GmbH
+p how,1,data_science,Wien,0,0,False,karriere,p.how GmbH
+parallel consulting,1,business_analysis,Wien,0,0,False,linkedin,Parallel Consulting
+pc electric,1,bi,Oberösterreich,0,0,False,karriere,PC Electric GesmbH
+pfizer,1,data_science,Niederösterreich,0,0,False,linkedin,Pfizer
+phactum softwareentwicklung,1,business_analysis,Wien,0,0,False,linkedin,PHACTUM Softwareentwicklung GmbH
+phoron - go live and beyond,1,bi,Wien,0,0,False,linkedin,Phoron - go live and beyond
+pirlo,1,data_governance,Tirol,0,0,False,linkedin,Pirlo Group
+planet,1,data_science,Steiermark,1,1,False,linkedin,Planet
+pm factory consulting,1,bi,Wien,0,0,False,jobsat,PM Factory Consulting GmbH
+prefa aluminiumprodukte,1,data_science,Niederösterreich,0,0,False,eures,PREFA Aluminiumprodukte
+prewave,1,data_science,Wien,0,0,False,linkedin,Prewave
+pro pet heimtiernahrung,1,data_governance,Niederösterreich,0,0,False,linkedin,PRO PET AUSTRIA Heimtiernahrung GmbH
+pöttinger landtechnik,1,data_governance,Oberösterreich,0,0,False,linkedin,PÖTTINGER Landtechnik GmbH
+quehenberger logistics,1,data_analytics,Salzburg,0,0,False,eures,Quehenberger Logistics
+radancy,1,data_science,Wien,0,0,False,linkedin,Radancy
+raiffeisen salzburg,1,data_governance,Salzburg,0,0,False,karriere,Raiffeisen Salzburg
+raiffeisenlandesbank oberösterreich,1,data_analytics,Oberösterreich,0,0,False,jobsat,Raiffeisenlandesbank Oberösterreich AG
+randstad,1,data_science,Kärnten,0,0,True,jobsat,Randstad Austria GmbH
+red bull media house,1,data_science,Salzburg,0,0,False,karriere,Red Bull Media House
+reform-werke bauer & co gesellschaft m b h,1,data_governance,Oberösterreich,0,0,False,linkedin,Reform-Werke Bauer & Co Gesellschaft m.b.H.
+replient ai,1,data_science,Oberösterreich,0,0,False,linkedin,replient.ai
+reploid,1,data_science,Oberösterreich,0,0,False,linkedin,REPLOID
+reppublika – the research toolbox,1,data_science,Wien,0,0,False,jobsat,Reppublika – The Research Toolbox GmbH
+revolut,1,data_science,,0,0,False,linkedin,Revolut
+rivna,1,data_analytics,Salzburg,0,0,False,eures,Rivna
+rk-management,1,bi,Salzburg,0,0,False,eures,rk-management
+roche,1,data_science,Wien,0,0,False,linkedin,Roche
+rosenberger telematics,1,business_analysis,Oberösterreich,0,0,False,eures,Rosenberger Telematics
+rws,1,data_analytics,,0,0,False,linkedin,RWS
+scg - sap personalvermittlung,1,bi,Wien,0,0,True,linkedin,SCG - SAP Personalvermittlung
+schönherr rechtsanwälte,1,bi,Wien,0,0,False,karriere,Schönherr Rechtsanwälte GmbH
+senacor technologies,1,data_science,Wien,0,0,False,linkedin,Senacor Technologies
+siemens,1,data_science,Wien,0,0,False,linkedin,Siemens
+siemens energy,1,data_analytics,Steiermark,1,1,False,eures,Siemens Energy Austria
+siemens healthineers,1,data_analytics,Tirol,0,0,False,linkedin,Siemens Healthineers
+siemens personaldienstleistungen,1,bi,Wien,0,0,True,willhaben,Siemens Personaldienstleistungen GmbH
+simcorp,1,data_governance,Wien,0,0,False,linkedin,SimCorp
+smart energy services,1,data_engineering,Wien,0,0,False,linkedin,smart Energy Services GmbH
+smartstream,1,data_science,Wien,0,0,False,linkedin,Smartstream
+sos-kinderdorf,1,marketing_analytics,Tirol,0,0,False,karriere,SOS-Kinderdorf Österreich
+spar,1,data_analytics,Salzburg,0,0,False,linkedin,SPAR Österreich
+cbs unternehmensberatung,1,bi,Wien,0,0,False,karriere,cbs Unternehmensberatung Austria GmbH
+coca-cola hbc,1,data_analytics,Wien,0,0,False,linkedin,Coca-Cola HBC
+computer futures,1,data_engineering,Wien,0,0,False,linkedin,Computer Futures
+consourcive,1,data_science,Wien,0,0,False,linkedin,consourcive
+constantia flexibles,1,bi,Niederösterreich,0,0,False,linkedin,Constantia Flexibles
+constantia teich,1,bi,Niederösterreich,0,0,False,karriere,Constantia Teich GmbH
+convertinvest financial services,1,bi,Niederösterreich,0,0,False,karriere,CONVERTINVEST Financial Services GmbH
+cooee alpin hotels,1,data_analytics,Wien,0,0,False,linkedin,COOEE alpin Hotels
+coolpeople technology,1,data_engineering,,0,0,False,linkedin,CoolPeople Technology
+corda business & information engineering,1,business_analysis,Wien,0,0,False,karriere,corda business & information engineering gmbh
+cratedb,1,data_engineering,,0,0,False,linkedin,CrateDB
+daphos,1,data_science,Steiermark,1,1,False,linkedin,DaphOS GmbH
+deel,1,data_analytics,,0,0,False,linkedin,Deel
+delegate,1,data_governance,Wien,0,0,False,linkedin,Delegate Group
+delegate technology,1,data_governance,Wien,0,0,False,willhaben,Delegate Technology GmbH
+specs,1,data_science,Wien,0,0,False,linkedin,SPECS
+squer,1,data_science,Wien,0,0,False,linkedin,SQUER
+squer services,1,data_science,Wien,0,0,False,karriere,SQUER Group Services GmbH
+standout,1,data_analytics,Wien,0,0,False,karriere,Standout GmbH
+starlim und sterner,1,data_science,Oberösterreich,0,0,False,karriere,starlim und sterner
+steiner-hitech,1,data_engineering,Wien,0,0,False,linkedin,STEINER-HITECH GmbH
+sv-chipkarten betriebs- und errichtungsges m b h,1,business_analysis,Wien,0,0,False,jobsat,SV-Chipkarten Betriebs- und Errichtungsges.m.b.H.
+swietelsky,1,data_science,Oberösterreich,0,0,False,linkedin,Swietelsky AG
+tailored apps,1,business_analysis,Wien,0,0,False,willhaben,Tailored Apps GmbH
+td synnex dach,1,data_science,Wien,0,0,False,linkedin,TD SYNNEX DACH
+teccon consulting,1,bi,Steiermark,1,1,False,eures,TECCON Consulting
+tech11,1,business_analysis,Wien,0,0,False,linkedin,tech11 GmbH
+technikervermittlung,1,data_governance,Oberösterreich,0,0,False,linkedin,TECHNIKERvermittlung
+telus digital,1,data_analytics,Wien,0,0,False,linkedin,TELUS Digital
+teufelberger service,1,bi,Oberösterreich,0,0,False,eures,Teufelberger Service
+tirol kliniken,1,data_governance,Tirol,0,0,False,linkedin,Tirol Kliniken GmbH
+tomoris,1,bi,Oberösterreich,0,0,False,eures,TOMORIS
+tourradar,1,data_analytics,Wien,0,0,False,linkedin,TourRadar
+towa,1,marketing_analytics,Vorarlberg,0,0,False,eures,ToWa
+trenkwalder personaldienste,1,data_analytics,Wien,0,0,True,jobsat,Trenkwalder Personaldienste GmbH
+trescon betriebsberatungsges m b h,1,data_analytics,Niederösterreich,0,0,False,karriere,TRESCON Betriebsberatungsges.m.b.H.
+trinsik formerly v_labs,1,data_analytics,Wien,0,0,False,linkedin,Trinsik (formerly V_labs)
+truechoice solutions,1,data_science,Wien,0,0,False,linkedin,"TrueChoice Solutions, Inc."
+twinformatics,1,product_analytics,Wien,0,0,False,linkedin,twinformatics GmbH
+yougov,1,data_governance,Wien,0,0,False,linkedin,YouGov
+zeb consulting,1,data_governance,Wien,0,0,False,linkedin,zeb consulting
+öbv österreichische beamtenversicherung vvag,1,business_analysis,Wien,0,0,False,jobsat,"ÖBV Österreichische Beamtenversicherung, VVaG"
+ögig,1,data_engineering,Wien,0,0,False,jobsat,öGIG GmbH
+carrier,1,data_governance,Niederösterreich,0,0,False,linkedin,Carrier
+cast ai,1,data_science,,0,0,False,linkedin,Cast AI
+catro graz,1,business_analysis,Salzburg,0,0,True,linkedin,CATRO Graz
+catro management services,1,business_analysis,Salzburg,0,0,True,eures,CATRO Management Services
+catro management services büro catro graz,1,business_analysis,Salzburg,0,0,True,karriere,CATRO Management Services GmbH Büro Catro Graz
+cbmed,1,data_engineering,Steiermark,1,1,False,eures,CBmed
+umdasch the store makers,1,business_analysis,Niederösterreich,0,0,False,linkedin,umdasch The Store Makers
+unicredit bank,1,data_analytics,Wien,0,0,False,linkedin,UniCredit Bank Austria AG
+uniqa versicherungen,1,business_analysis,Wien,0,0,False,jobsat,UNIQA Österreich Versicherungen AG
+universität wien,1,data_science,Wien,0,0,False,linkedin,Universität Wien
+valantic vormals elements at,1,marketing_analytics,Salzburg,0,0,False,linkedin,valantic Austria (vormals elements.at)
+verkehrsbuero,1,data_science,Wien,0,0,False,linkedin,VERKEHRSBUERO
+anton paar,1,data_engineering,Steiermark,1,1,False,linkedin,Anton Paar
+apk pensionskasse,1,business_analysis,Wien,0,0,False,jobsat,APK Pensionskasse AG
+arena pistenmanagement | powergis,1,data_governance,Salzburg,0,0,False,karriere,ARENA Pistenmanagement | PowerGIS
+atos,1,bi,Wien,0,0,False,linkedin,Atos
+avedos grc,1,data_science,Wien,0,0,False,jobsat,avedos GRC GmbH
+axess,1,business_analysis,Salzburg,0,0,False,karriere,AXESS AG
+axpo,1,data_analytics,Wien,0,0,False,linkedin,Axpo Group
+weblyzard technology,1,data_science,Wien,0,0,False,karriere,webLyzard technology gmbh
+wien energie,1,data_governance,Wien,0,0,False,linkedin,Wien Energie GmbH
+wiener stadtwerke kundenservice,1,bi,Wien,0,0,False,jobsat,Wiener Stadtwerke Kundenservice GmbH
 adecco personalbereitstellungs,1,data_science,Niederösterreich,0,0,True,eures,Adecco Personalbereitstellungs
+willhaben,1,data_engineering,Wien,0,0,False,linkedin,willhaben
+acuity analytics,1,data_science,Steiermark,1,1,False,linkedin,Acuity Analytics
+[at],1,data_science,Wien,0,0,False,linkedin,[at] Group
+österreichische post,1,data_engineering,Wien,0,0,False,jobsat,Österreichische Post AG
+3 banken it,1,data_governance,Oberösterreich,0,0,False,linkedin,3 Banken IT GmbH

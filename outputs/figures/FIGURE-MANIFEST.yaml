@@ -10,8 +10,8 @@
 manifest_version: 1
 matplotlib_version: "3.11.1"
 run_id: "austria-visual-decision-layer"
-data_vintage: "demand 2026-09-16 / supply 2026-09-17/30"
-generated: "2026-09-30"
+data_vintage: "demand 2026-10-18 / supply 2026-09-17/18"
+generated: "2026-10-19"
 generator: src/analysis/make_visual_layer.py
 style: src/viz/styles/dsx-urban.mplstyle
 figures:
@@ -19,32 +19,32 @@ figures:
     path: outputs/figures/BQ01_reachable_market.svg
     png: outputs/figures/BQ01_reachable_market.png
     question: "If I do not move from Graz, how much of the Austrian data market am I actually applying to?"
-    answer: "By primary state, Styria holds 54 of 720 open core postings (7.5%); 48 of them are inside the Graz commuting area, against 343 in Vienna (48%)."
+    answer: "By primary state, Styria holds 62 of 699 open core postings (8.9%); 54 of them are inside the Graz commuting area, against 315 in Vienna (45%)."
     relationship: "comparison across categories"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "unique postings"
     tables: [T03a_state_counts.csv, T03c_styria_cities.csv]
-    caveat: "One-day stock of open advertisements, not yearly demand. The official yearly series (JB05) puts Styria higher, at 13.6 % of the national flow. Counting every ad that lists a Styrian site (the location-flag basis of T02/T04a/T07e) Styria has 58 postings, 52 of them in the Graz commuting area, and Vienna 350."
-    svg_sha256: sha256:4a1385b18444b2e98fbc8db1e5257a6869af53f54ff568bfa0cf52efed3b2ee5
+    caveat: "One-day stock of open advertisements, not yearly demand. The official yearly series (JB05) puts Styria higher, at 13.6 % of the national flow. Counting every ad that lists a Styrian site (the location-flag basis of T02/T04a/T07e) Styria has 68 postings, 60 of them in the Graz commuting area, and Vienna 321."
+    svg_sha256: sha256:e0b4307b0007cdccbf9669a9ec87652379fa234bec90d360e47a73ca65fa287e
     anchors:
-      - { doc: docs/market-guide.md, mode: after_match, key: "* Vienna holds **48 %** of core postings" }
-      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "**Vienna: 48 % of open core data postings" }
+      - { doc: docs/market-guide.md, mode: after_match, key: "* Vienna holds **" }
+      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "* **Vienna: " }
   - chart_id: BQ02_regional_trend
     path: outputs/figures/BQ02_regional_trend.svg
     png: outputs/figures/BQ02_regional_trend.png
     question: "Is the Graz market growing or shrinking while I spend a year preparing?"
-    answer: "On the official yearly series Styria is +34% against 2020 (224 → 300 ads) while Austria is -28% and Vienna is -48% off its 2022 peak - the only large region holding its level."
+    answer: "On the official yearly series Styria is +34% against 2020 (224 → 300 ads) while Austria is -28% and Vienna is -48% off its 2022 peak; large regions above their 2020 level: Styria (+34%) and Vienna (+15%)."
     relationship: "trend over time"
     mark: multi_line
     data_signature: bivariate-dual
     units: "index, 2020 = 100"
     tables: [JB01_yearly_counts_long.csv]
     caveat: "A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; counts advertisements, not hires."
-    svg_sha256: sha256:b92915e64e9be422b8d22743bb68e77f12534426b97fcdcfdc7515e72cc14502
+    svg_sha256: sha256:b7413b21ad0d443928cf6536e91596d2b8cee4ce323530702cfe5719bde150eb
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 12. Time dimension (T13, JB01)" }
-      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "the only large region above its 2020 level" }
+      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "Large regions above their " }
   - chart_id: BQ03_seasonality
     path: outputs/figures/BQ03_seasonality.svg
     png: outputs/figures/BQ03_seasonality.png
@@ -64,14 +64,14 @@ figures:
     path: outputs/figures/BQ04_styria_employers.svg
     png: outputs/figures/BQ04_styria_employers.png
     question: "Which Styrian employers actually advertise data roles - who is on my realistic target list?"
-    answer: "32 named employers carry 48 of the 58 ads that list a Styrian site; KNAPP leads with 7, and 7 of the largest 14 advertise analytics, BI or business-analysis roles rather than only engineering."
+    answer: "32 named employers carry 56 of the 68 ads that list a Styrian site; Magna International leads with 5, and 11 of the largest 14 advertise analytics, BI or business-analysis roles rather than only engineering."
     relationship: "ranking"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "open postings"
     tables: [T04a_employers_styria.csv]
-    caveat: "A one-day stock: an employer absent here is not an employer that does not hire. 10 Styrian ads (AMS/EURES) name no employer at all. Counts are on the any-listed-site basis (58), not the primary-state count (54)."
-    svg_sha256: sha256:a8919597b15c4c3ab8aebacc3ae68284d1c63e435a9dc00a1931cd90d48b5ecb
+    caveat: "A one-day stock: an employer absent here is not an employer that does not hire. 12 Styrian ads (AMS/EURES) name no employer at all. Counts are on the any-listed-site basis (68), not the primary-state count (62)."
+    svg_sha256: sha256:bcc53aaaf3680f2d51b8b2380360aacfae00ec6cddf3833f0b188152c1f2fcf4
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 4. Employers (T04, T04a, T04b)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHERE ARE THEY? (Styria specifically)" }
@@ -79,14 +79,14 @@ figures:
     path: outputs/figures/BQ05_family_choice.svg
     png: outputs/figures/BQ05_family_choice.png
     question: "Which role family gives me the most openings for the smallest structural gap?"
-    answer: "Data analytics has 87% of its top-15 skills inside my profile with 107 Austrian and 11 Styrian postings, while Data engineering offers 160 postings at only 47% overlap."
+    answer: "Data analytics has 87% of its top-15 skills inside my profile with 107 Austrian and 9 Styrian postings, while Data science offers 176 postings at only 53% overlap."
     relationship: "correlation"
     mark: bubble
     data_signature: trivariate
     units: "postings / share of top-15 skills"
     tables: [D01_decision_matrix.csv]
     caveat: "Overlap is computed against self-declared profile lists, and measures market size and fit, not ease of being hired. Families below 30 Austrian postings (product and marketing analytics) are shown but not ranked; every Styrian family count is below 30."
-    svg_sha256: sha256:b39ba145ac1b5fe06940fec8c35de4d06800ceb52ab3f2cf6c3d2a9dabde8e93
+    svg_sha256: sha256:007311631bb21b8cde18fe07cf7ff952ab1ce8a0e7b856e50b7542dc63189388
     anchors:
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT CAREER PATHS ARE SUPPORTED BY THE EVIDENCE?" }
       - { doc: docs/decision-framework.md, mode: after_heading, key: "# Decision framework: how career paths are compared" }
@@ -94,43 +94,43 @@ figures:
     path: outputs/figures/BQ06_styria_vs_austria_mix.svg
     png: outputs/figures/BQ06_styria_vs_austria_mix.png
     question: "Does Graz want a different kind of data person than Austria as a whole?"
-    answer: "Yes: data engineering is 34% of the 58 postings that list a Styrian site against 22% nationally, business analysis falls from 17% to 7%, and marketing and product analytics are absent from Styria entirely."
+    answer: "Yes: data engineering is 41% of the 68 postings that list a Styrian site against 20% nationally, business analysis falls from 15% to 9%, and marketing and product analytics are absent from Styria entirely."
     relationship: "ranking"
     mark: dumbbell
     data_signature: categorical-multi
     units: "share of postings"
     tables: [T02_role_family_counts.csv]
-    caveat: "n = 58 for Styria (ads listing a Styrian site; 54 by primary state); every family cell is below 30, so differences are directional."
-    svg_sha256: sha256:32707c3bf01aac60be19f38dafb812d83fa28144adef4f37b473f80ff71fe537
+    caveat: "n = 68 for Styria (ads listing a Styrian site; 62 by primary state); every family cell is below 30, so differences are directional."
+    svg_sha256: sha256:551519c45da3b1e69bb700f0508952cf3a6ef88025bc983a7fb3b7407bb098dc
     anchors:
-      - { doc: docs/market-guide.md, mode: after_match, key: "Family mix in Styria (n = 58, indicative)" }
+      - { doc: docs/market-guide.md, mode: after_match, key: "Family mix in Styria (n = " }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT ROLES EXIST?" }
   - chart_id: BQ07_ranking_sensitivity
     path: outputs/figures/BQ07_ranking_sensitivity.svg
     png: outputs/figures/BQ07_ranking_sensitivity.png
     question: "Is my family ranking a real signal, or an artefact of how I weighted the criteria?"
-    answer: "The top three (engineering, science, analytics) hold under all four weightings and data analytics stays at rank 3; only the order inside the top two moves, so the ordering is not a weighting artefact."
+    answer: "Data analytics ranks 3rd (default), 3rd (geography first), 3rd (language first), 4th (equal weights) under the four weightings; the set of the top three families changes under equal weights (business analysis replaces data analytics), so the ordering partly depends on the weighting."
     relationship: "ranking"
     mark: bump
     data_signature: categorical-multi
     units: "rank"
     tables: [D02_sensitivity.csv, D01_decision_matrix.csv]
     caveat: "The matrix ranks market attractiveness, not probability of being hired; no Styrian family cell reaches n = 30, so no path is 'robust' under the project's own rule."
-    svg_sha256: sha256:748ff8bd0414e66ea1d6bdf2b4c707e582e0b2b5070ddcd58b55d6dbecd14e90
+    svg_sha256: sha256:ba111d9a47d1acfcd419f58f3775095995a6345597fab03786d7c4715961c1b0
     anchors:
       - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "The *ordering* of the top three" }
   - chart_id: BQ08_demanded_skills
     path: outputs/figures/BQ08_demanded_skills.svg
     png: outputs/figures/BQ08_demanded_skills.png
     question: "Which tools do Austrian employers actually name - and how much of that list do I already hold?"
-    answer: "SQL (40%) and Python lead the list, and 9 of the 10 most-mentioned items are already in my have-or-developing profile; the intervals separate the top tier cleanly from everything under 10 %."
+    answer: "AI (generic) (43%) and Python lead the list, and 9 of the 10 most-mentioned items are already in my have-or-developing profile; the intervals separate the top tier cleanly from everything under 10 %."
     relationship: "ranking"
     mark: error_bars
     data_signature: interval-range
     units: "share of postings"
     tables: [T05_skills_all_tech.csv, config/profile.json]
     caveat: "Shares count ads that *mention* an item, never ads that require it; the profile status is self-declared, not demonstrated."
-    svg_sha256: sha256:22eff98f3d1b12c26ea39f27d46afb8a253b9326d22b1186c83b055adc55d78b
+    svg_sha256: sha256:1d28ca681bc52be281b58af42aed415a16139fc848fcd1ec87fc2c8a558fb482
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "Python libraries are almost never named" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT DO THEY REQUIRE?" }
@@ -138,14 +138,14 @@ figures:
     path: outputs/figures/BQ09_learning_priorities.svg
     png: outputs/figures/BQ09_learning_priorities.png
     question: "If I can only learn a few more things this year, which ones open the most doors?"
-    answer: "SQL, Python, Data Governance/Quality, ETL/ELT are the NOW set - each named in 22%-40% of ads and each a top-15 skill in several families; Power BI, data modelling, GenAI and REST follow as NEXT."
+    answer: "SQL, Python, Data Governance/Quality, ETL/ELT are the NOW set - each named in 20%-40% of ads and each a top-15 skill in several families; Power BI, data modelling, GenAI and REST follow as NEXT."
     relationship: "ranking"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "share of postings"
     tables: [D04_learning_priorities.csv]
     caveat: "Priority is a demand-and-breadth heuristic, not evidence that learning the skill changes a hiring outcome."
-    svg_sha256: sha256:b975bfa95554fe3a9e3b70a98f0321d330f7d70196b0df4753083cd231a84df0
+    svg_sha256: sha256:2419bc16481785a4131af0cde8bfad684f3701d8c25dd4c7f2544beffd9505ec
     anchors:
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD I LEARN?" }
       - { doc: docs/career-map.md, mode: after_heading, key: "## 7. Learning roadmap (D04, evidence-derived)" }
@@ -153,14 +153,14 @@ figures:
     path: outputs/figures/BQ10_skill_cooccurrence.svg
     png: outputs/figures/BQ10_skill_cooccurrence.png
     question: "What is the minimum credible stack - which skills do employers ask for together?"
-    answer: "SQL is the hub: 59% of SQL ads also name Python and 68% of Python ads name SQL, while Power BI's strongest partner is reporting wording rather than Python - a SQL + Python + dashboard combination covers the densest part of the matrix."
+    answer: "SQL is the hub: 62% of SQL ads also name Python and 64% of Python ads name SQL, while Power BI's strongest partner is reporting wording rather than Python - a SQL + Python + dashboard combination covers the densest part of the matrix."
     relationship: "correlation"
     mark: heatmap
     data_signature: trivariate
     units: "conditional probability"
     tables: [T06_cooccurrence_pairs.csv, T05_skills_all_tech.csv]
     caveat: "Co-mention in an advertisement, not a statement about how the tools are used together in the job."
-    svg_sha256: sha256:6b17ef516cfc98faf04bffec120d4e1be239bf83ff71125fda258c196f6498a0
+    svg_sha256: sha256:c2d0dfebe160ffa2f3705623ad5640346c802b4027997c2f435e0ef3273fa52b
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "Power BI's strongest partner is reporting/visualisation wording" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT TECHNOLOGIES DO THEY REQUIRE?" }
@@ -168,14 +168,14 @@ figures:
     path: outputs/figures/BQ11_intern_vs_junior.svg
     png: outputs/figures/BQ11_intern_vs_junior.png
     question: "The two entry doors are intern and junior - do they ask for different things?"
-    answer: "Yes: junior ads lean to Data Governance/Quality (+19 pp) and ETL, intern ads to Power BI and Excel; SQL is high in both, so it is the one skill that opens either door."
+    answer: "Yes: junior ads lean to Data Visualization (+15 pp) and ETL, intern ads to Python and Excel; SQL is high in both, so it is the one skill that opens either door."
     relationship: "deviation from target"
     mark: diverging_bar
     data_signature: categorical-value
     units: "percentage points"
     tables: [T17_skill_divergence_intern_vs_junior.csv]
-    caveat: "n = 42 and n = 31: differences under roughly 15 pp are inside the noise of these cell sizes."
-    svg_sha256: sha256:f0ce799e24bd06adc39ceaf2126b1cffbf6165be741538fbb1a63ff657fdef32
+    caveat: "n = 24 and n = 27: differences under roughly 15 pp are inside the noise of these cell sizes."
+    svg_sha256: sha256:1b8be94f5503bf5163842cf9cfe9221d1b195d80a6829c5a07f4d65b7535b89a
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 8b. Intern vs junior vs rest (T17, T04d, T05f, D04b)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## INTERN VS JUNIOR VS THE REST (T17, T04d, T05f, D04b)" }
@@ -183,14 +183,14 @@ figures:
     path: outputs/figures/BQ12_german_addressable_market.svg
     png: outputs/figures/BQ12_german_addressable_market.png
     question: "With German at A2-B1, how many Graz jobs can I honestly apply to today?"
-    answer: "Between 8 and 37 of the 58 open ads that list a Styrian site, depending on which reading you take; the strictest reading (English-written and silent on German) leaves 8 in Styria and 6 in the Graz area."
+    answer: "Between 8 and 42 of the 68 open ads that list a Styrian site, depending on which reading you take; the strictest reading (English-written and silent on German) leaves 8 in Styria and 6 in the Graz area."
     relationship: "comparison across categories"
     mark: grouped_bar
     data_signature: bivariate-dual
     units: "postings / share of scope"
     tables: [T07e_addressable_market_scenarios.csv]
     caveat: "'English-written and silent on German' is not 'English-only': German may still be expected. Whether a stated requirement is negotiable is not measured anywhere in this project."
-    svg_sha256: sha256:b40ea50ad84a8ace49ba535a91749c166989695727842aea44d0949c2e799429
+    svg_sha256: sha256:02ad4af5e2dd6e99319ed9bb941a3998ba26df40cbd4d0cd8ae7d3af3627203a
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "**Addressable-market scenarios (T07e)**" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT LANGUAGES DO THEY REQUIRE?" }
@@ -198,29 +198,29 @@ figures:
     path: outputs/figures/BQ13_language_by_family.svg
     png: outputs/figures/BQ13_language_by_family.png
     question: "Which role family gives my English the most room and my German the least resistance?"
-    answer: "Data science: 44% of its ads are written in English and 33% state a German requirement, against BI at 8% English and 51% German - the language dimension moves more between families than the skill lists do."
+    answer: "Data science: 41% of its ads are written in English and 36% state a German requirement, against BI at 13% English and 52% German - the language dimension moves more between families than the skill lists do."
     relationship: "correlation"
     mark: bubble
     data_signature: trivariate
     units: "share of postings"
     tables: [T07c_posting_language_by_family.csv, T07_german_requirement_by_role_family.csv]
-    caveat: "Marketing analytics (n = 24) and product analytics (n = 1) carry cells too small to separate."
-    svg_sha256: sha256:fcdc530e7b4bade83dcc452079bfc244f821eccf9e2cda02976c16eb392266e6
+    caveat: "Marketing analytics (n = 18) and product analytics (n = 3) carry cells too small to separate."
+    svg_sha256: sha256:272a478248fe61d2650e677805e5d23858dce1cf3fd06eec7e37ef3253c176b0
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "**Posting language:**" }
-      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "By family: BI 51 % German required/level-stated" }
+      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "* By family: BI " }
   - chart_id: BQ14_degree_requirement
     path: outputs/figures/BQ14_degree_requirement.svg
     png: outputs/figures/BQ14_degree_requirement.png
     question: "Does not holding a data/informatics degree close the door?"
-    answer: "It narrows it rather than closing it: 25%-38% of ads state a degree as a condition depending on the family, 26%-39% never mention education at all, and a third of the conditional ads add 'or equivalent experience'."
+    answer: "It narrows it rather than closing it: 28%-36% of ads state a degree as a condition depending on the family, 27%-42% never mention education at all, and a third of the conditional ads add 'or equivalent experience'."
     relationship: "part to whole"
     mark: stacked_bar
     data_signature: categorical-multi
     units: "share of postings"
     tables: [T11e_degree_requirement_strength_by_family.csv]
     caveat: "Wording strength, not hiring practice: no evidence here on how degree wording is applied in screening."
-    svg_sha256: sha256:36ccea96795be83ead8ccfeb633dc09667fddef493c441774a6e1d10ac3bc710
+    svg_sha256: sha256:573e011d4bd9c6128357a28fdc6d75f2b9e13f067fcd67c01a6f935abe4694a9
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 11. Education and certifications (T11, T11e)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT EDUCATION DO THEY REQUIRE?" }
@@ -228,14 +228,14 @@ figures:
     path: outputs/figures/BQ15_salary_by_family.svg
     png: outputs/figures/BQ15_salary_by_family.png
     question: "What do the families advertise as a floor, and what does entering through analytics cost me?"
-    answer: "Data analytics advertises a median minimum of €47.8k against data engineering's €55.4k - a €7.5k difference at the entry door, with overlapping interquartile ranges."
+    answer: "Data analytics advertises a median minimum of €50.0k against data engineering's €55.0k - a €5.0k difference at the entry door, with overlapping interquartile ranges."
     relationship: "ranking"
     mark: dot_plot
     data_signature: categorical-value
     units: "EUR, annual gross"
     tables: [T09b_salary_by_role_family.csv]
-    caveat: "81 % of parsed figures are a single collective-agreement minimum; 53 % of ads say they pay above it. These are legal floors, not offers and not pay."
-    svg_sha256: sha256:dac94d4b3aed459c3649f47de4a4055ed36dc8deff9c435aaf0ca89994f2ed22
+    caveat: "80 % of parsed figures are a single collective-agreement minimum; 54 % of ads say they pay above it. These are legal floors, not offers and not pay."
+    svg_sha256: sha256:ef7975f54052680d2b0b72faa094b39c4e4f21b052d5381dc020af9ba8bb6ff7
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "Median advertised **minimum** (annual gross, monthly × 14)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT DO THEY PAY? (advertised minimums, annual gross, monthly × 14)" }
@@ -243,42 +243,42 @@ figures:
     path: outputs/figures/BQ16_salary_by_seniority.svg
     png: outputs/figures/BQ16_salary_by_seniority.png
     question: "What does entering on a junior label actually cost me, given 20 years of prior experience?"
-    answer: "The junior median floor is €42.0k against €52.2k for an unlabelled ad and €60.0k for a senior one - a €10.2k penalty for the label, which is why the 57.5 % of ads carrying no seniority word matter more than the junior ones."
+    answer: "The junior median floor is €45.7k against €53.0k for an unlabelled ad and €61.0k for a senior one - a €7.3k penalty for the label, which is why the 57.4 % of ads carrying no seniority word matter more than the junior ones."
     relationship: "ranking"
     mark: dot_plot
     data_signature: categorical-value
     units: "EUR, annual gross"
     tables: [T09b_salary_by_seniority.csv]
-    caveat: "Seniority is read from the advertisement's title, and the figure is an advertised floor, not an offer. Junior n = 22."
-    svg_sha256: sha256:9cd1182f4320a52f4d65ba9be366df9345bc68ea30f6da5d343b4dbbfac6f194
+    caveat: "Seniority is read from the advertisement's title, and the figure is an advertised floor, not an offer. Junior n = 17."
+    svg_sha256: sha256:8e2a9d98576b4c59d39a1fb7975d28050258f7205f875d344d1a2e420eb79849
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "By seniority label: intern" }
   - chart_id: BQ17_salary_by_skill
     path: outputs/figures/BQ17_salary_by_skill.svg
     png: outputs/figures/BQ17_salary_by_skill.png
     question: "Which skills sit in the better-paying ads - is the learning list also the earning list?"
-    answer: "Ads mentioning Data Lake/Lakehouse carry €60.0k floors against €43.7k for Excel ads - engineering and ML wording sits €16.3k above reporting and spreadsheet wording, so the NOW list and the pay list point the same way."
+    answer: "Ads mentioning AI agents / tool-calling carry €63.0k floors against €49.0k for Excel ads - engineering and ML wording sits €14.0k above reporting and spreadsheet wording, so the NOW list and the pay list point the same way."
     relationship: "ranking"
     mark: dot_plot
     data_signature: categorical-value
     units: "EUR, annual gross"
     tables: [T09d_salary_by_skill.csv, config/profile.json]
     caveat: "This is the floor of the ads that *mention* a skill, confounded with seniority, family and employer size. It is not the price of the skill."
-    svg_sha256: sha256:7f3700a1bf149e6678f038434bf49ab0ab73f51ed2beaf62771ec58fd8edadf7
+    svg_sha256: sha256:8fe033d1cc29e9a3cc35cbbf22bc32a4b7d0257f69f62f682f794e50113c4c88
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "By skill mentioned: Databricks" }
   - chart_id: BQ18_work_model
     path: outputs/figures/BQ18_work_model.svg
     png: outputs/figures/BQ18_work_model.png
     question: "Is hybrid real, and is chasing fully-remote roles from Graz a trap?"
-    answer: "Fully remote is 2% of ads (14 postings) - a trap as a strategy; hybrid or home-office wording covers about half the market, and Styria matches the national pattern, so commuting distance to Graz stays the binding constraint."
+    answer: "Fully remote is 2% of ads (15 postings) - a trap as a strategy; hybrid or home-office wording covers about half the market, and Styria matches the national pattern, so commuting distance to Graz stays the binding constraint."
     relationship: "part to whole"
     mark: stacked_bar
     data_signature: categorical-multi
     units: "share of postings"
     tables: [T10_remote_by_family.csv, T10_remote_overall.csv]
-    caveat: "Wording in the advertisement, not the arrangement actually offered; 40 % of ads are silent."
-    svg_sha256: sha256:761377738b14dff184c9d9f28e15dfdc66d8b993a5a66cef6ced76d658f20518
+    caveat: "Wording in the advertisement, not the arrangement actually offered; 39 % of ads are silent."
+    svg_sha256: sha256:85dbad8566e067dc7c6ebdf14bf5c94f39cc73c706a6649b2dece4126a018c74
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 10. Work model (T10)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT WORK MODE DO THEY OFFER?" }
@@ -286,14 +286,14 @@ figures:
     path: outputs/figures/BQ19_side_doors.svg
     png: outputs/figures/BQ19_side_doors.png
     question: "Can I get into data work through a non-data title - do those jobs use the same tools?"
-    answer: "Yes, and it is the larger channel: 83% of Styrian ads mentioning Python and 88% of those mentioning SQL sit under non-data titles (controlling, engineering, research), so data skills are demanded far more widely than data titles are advertised."
+    answer: "Yes, and it is the larger channel: 87% of Styrian ads mentioning Python and 90% of those mentioning SQL sit under non-data titles (controlling, engineering, research), so data skills are demanded far more widely than data titles are advertised."
     relationship: "part to whole"
     mark: stacked_bar
     data_signature: categorical-multi
     units: "postings"
     tables: [T16_adjacent_demand_by_region.csv]
-    caveat: "Covers only the AMS feed of three regions and retrieves by full-text keyword, so it is not comparable to the 720-posting title census."
-    svg_sha256: sha256:ba63f3804d68936a1e6b272be09bac52d173baca0496da146463222bcf094c3d
+    caveat: "Covers only the AMS feed of three regions and retrieves by full-text keyword, so it is not comparable to the 699-posting title census."
+    svg_sha256: sha256:b426d9c1b21a9ace4f25a0cba962cf8ed2809f78d50266cc896bf58a2122273e
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 13. Adjacent demand (T16)" }
       - { doc: docs/career-map.md, mode: after_heading, key: "## 5. Pathways supported by the evidence" }
@@ -301,14 +301,14 @@ figures:
     path: outputs/figures/BQ20_competition_density.svg
     png: outputs/figures/BQ20_competition_density.png
     question: "How many visible candidates am I standing next to per opening, depending on the label I choose?"
-    answer: "Data science shows 4.0 declared candidates per posting (2.9 in Styria) against 0.36 for engineering and 1.21 for analytics - calling myself a data scientist puts me in the densest queue on the board."
+    answer: "Data science shows 3.6 declared candidates per posting (2.4 in Styria) against 0.42 for engineering and 1.21 for analytics - calling myself a data scientist puts me in the densest queue on the board."
     relationship: "ranking"
     mark: dot_plot
     data_signature: categorical-value
     units: "candidates per posting"
     tables: [DS01_demand_supply_role_families.csv]
     caveat: "GitHub over-represents engineers, researchers and students and is blind to BI/Excel/SAP work, so a low density is partly real scarcity and partly invisibility. Vienna counts are lower bounds."
-    svg_sha256: sha256:318345039c3a39a3d84e1f19270d34328bf51d4e507b4653af167c597f47a70e
+    svg_sha256: sha256:6102135b1bf80618745d6b7462c68a7ec945dc786df345a51d72cc9cda938e01
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 4. Where do they diverge? (DS01, DS02, DS03)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 2. Titles and families (C02, C03, C04, C04b, DS01, DS02)" }
@@ -316,14 +316,14 @@ figures:
     path: outputs/figures/BQ21_evidence_gap.svg
     png: outputs/figures/BQ21_evidence_gap.png
     question: "Where is a month of portfolio work worth most - what is demanded often and demonstrated rarely?"
-    answer: "SQL (41% of ads vs 10% of candidates with project evidence), data quality/validation, dimensional modelling and Azure pipelines sit furthest below the diagonal among the capabilities GitHub can actually see - and business framing sits with them. Power BI, Excel and SAP are equally demanded but cannot be closed with public code."
+    answer: "SQL (40% of ads vs 10% of candidates with project evidence), data quality/validation, dimensional modelling and Azure pipelines sit furthest below the diagonal among the capabilities GitHub can actually see - and business framing sits with them. Power BI, Excel and SAP are equally demanded but cannot be closed with public code."
     relationship: "correlation"
     mark: scatter
     data_signature: bivariate-simple
     units: "share of ads / share of candidates"
     tables: [DS10_demand_supply_capability_evidence.csv]
     caveat: "Two universes, one taxonomy: the axes are not the same denominator and the diagonal is a reading aid, not an identity. A capability marked not-observable is invisible to this measurement."
-    svg_sha256: sha256:432bc0606669c5677f4a7848802eb47ba94d641898abd5798a40c946ef833cd6
+    svg_sha256: sha256:d06bcaf497601995abb8751aef71877858f5f752ea269181d9c43967c80d7966
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 6. Which capabilities are demanded but less publicly demonstrated? (DS10 label \"demanded, rarely project-demonstrated\": demand ≥ median and project-demonstrated share < ½ demand share)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD I BUILD?" }
@@ -334,14 +334,14 @@ figures:
     path: outputs/figures/BQ22_crowded_vs_scarce.svg
     png: outputs/figures/BQ22_crowded_vs_scarce.png
     question: "Which skills is everyone already showing, and which ones would actually distinguish me?"
-    answer: "Jupyter, notebooks and deep-learning frameworks run far ahead of demand (+50 pp), while SQL, Power BI, Azure and data modelling run far behind it - a portfolio built only of notebooks competes in the densest part of the pool."
+    answer: "Jupyter, notebooks and deep-learning frameworks run far ahead of demand (+51 pp), while SQL, Power BI, Azure and data modelling run far behind it - a portfolio built only of notebooks competes in the densest part of the pool."
     relationship: "deviation from target"
     mark: diverging_bar
     data_signature: categorical-value
     units: "percentage points"
     tables: [DS03_demand_supply_skills.csv]
     caveat: "Supply shares come from public code and profiles; tools that leave no code trace are understated by construction."
-    svg_sha256: sha256:b967b070138eb3ca7d599bb74129f0205bf2f84439d6c97fdbe136d97cc707b7
+    svg_sha256: sha256:6dd6d5e1a278127c8a3dc551926ebfe3bbfe66040e7b0aa45b2ffef57fe8fbd4
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 7. Which technologies are common but not differentiating? (DS10 quadrant C)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD I STOP SPENDING TIME ON?" }
@@ -357,7 +357,7 @@ figures:
     units: "share of projects"
     tables: [C17_project_formats.csv]
     caveat: "Format detection is rule-based over repository file trees; a private or client project leaves no trace here."
-    svg_sha256: sha256:4ce8087a85a0f9dde65cfd2b2a2b57e8c1bcee31ef673b50d7fb0ed46a0f8ac9
+    svg_sha256: sha256:b87159f4da962bcfdc1e7ce06cbd5ebd6453991087cf479a8f8af3ce81c0410b
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 17. Which project formats are common? (C17, C17b)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 11. Formats and packaging (C17, C17b)" }
@@ -372,7 +372,7 @@ figures:
     units: "share of documented READMEs"
     tables: [C19_readme_patterns.csv]
     caveat: "Detects headings and keywords, not quality; a README with the section can still be empty of substance."
-    svg_sha256: sha256:8f6f6e1f48617bfa52558d4821ba7dbe3beb8422f317ada2a994bafcb3549508
+    svg_sha256: sha256:4721a9efdef8d52285689ff97e16d2f59b48f95c02a4bb57c22645977e4acc60
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 16. What do candidate READMEs look like? (C19, C19c, C19e)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD MY GITHUB DEMONSTRATE?" }
@@ -381,14 +381,14 @@ figures:
     path: outputs/figures/BQ25_seniority_mismatch.svg
     png: outputs/figures/BQ25_seniority_mismatch.png
     question: "Ads keep asking for seniors - am I actually competing with seniors?"
-    answer: "Not in the visible pool: 32% of ads carry senior or lead wording (senior alone 19%) against 10% of public profiles, and 17% of profiles are students - so twenty years of business experience plus documented projects is an unusual combination where the portfolios are, even though the ads ask for it."
+    answer: "Not in the visible pool: 35% of ads carry senior or lead wording (senior alone 21%) against 10% of public profiles, and 17% of profiles are students - so twenty years of business experience plus documented projects is an unusual combination where the portfolios are, even though the ads ask for it."
     relationship: "deviation from target"
     mark: dumbbell
     data_signature: categorical-multi
     units: "share of population"
     tables: [DS07_demand_supply_seniority.csv]
     caveat: "Seniority read from ad titles and bio wording; years of experience are not observable on either side, and senior practitioners publish less."
-    svg_sha256: sha256:51bff99c46859fdb9231eed7bfc882f9c3f210364c0594a671d5e94ad5bcf80c
+    svg_sha256: sha256:40a07585bff5a0b9cfe1d97ecc3ad6867448767db80dc086fa1d66b38f199911
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 11. How does seniority alter the picture? (DS07, DS07b)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 4. Seniority and status (C06, C06b–e, DS07, DS07b)" }
@@ -396,14 +396,14 @@ figures:
     path: outputs/figures/BQ26_marketing_x_data.svg
     png: outputs/figures/BQ26_marketing_x_data.png
     question: "My 20 years are in marketing - does the marketing × data intersection actually exist as a space I can own?"
-    answer: "It exists in projects, not in titles: 197 of 1,818 observed candidates have a marketing-themed project, 64 pair it with Python and SQL and only 23 add experimentation or causal work - but demand is only 24 marketing-analytics ads nationally and 0 in Styria, so it is a differentiator inside analyst applications, not a local job title."
+    answer: "It exists in projects, not in titles: 197 of 1,818 observed candidates have a marketing-themed project, 64 pair it with Python and SQL and only 23 add experimentation or causal work - but demand is only 18 marketing-analytics ads nationally and 0 in Styria, so it is a differentiator inside analyst applications, not a local job title."
     relationship: "ranking"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "accounts"
     tables: [DS12_marketing_x_data_intersection.csv, C24_marketing_data_intersection.csv]
     caveat: "Each step is a subset of the one above it. Public GitHub does not narrate career changes (3.4 % explicit, marketing 0), so transitioners are invisible here rather than absent."
-    svg_sha256: sha256:561b7050a3e56f1024fd855031437869ba3178665b934a630ed2f1172f4a2b6b
+    svg_sha256: sha256:29a88cc5ba5a3dbc9fb0eb8b14484bb58e02499c497fd907961b4c17aecbe63b
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 19. What does the marketing + data intersection look like? (C22d, C24, DS12)" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "**Marketing/CRM/web analytics (domain angle).**" }
@@ -411,15 +411,15 @@ figures:
   - chart_id: BQ27_population_funnel
     path: outputs/figures/BQ27_population_funnel.svg
     png: outputs/figures/BQ27_population_funnel.png
-    question: "When I read '40 % of ads', 40 % of what exactly - and how did 12,429 rows become that denominator?"
-    answer: "12,429 raw rows deduplicate to 10,945 unique postings, of which 720 carry a core data-role title - that is the denominator behind almost every share in the project, and only 58 of them list a Styrian site (52 of those in the Graz commuting area)."
+    question: "When I read '42 % of ads', 42 % of what exactly - and how did 11,997 rows become that denominator?"
+    answer: "11,997 raw rows deduplicate to 10,655 unique postings, of which 699 carry a core data-role title - that is the denominator behind almost every share in the project, and only 68 of them list a Styrian site (60 of those in the Graz commuting area)."
     relationship: "part to whole"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "postings"
     tables: [outputs/market_summary.json, Q04_duplicates.csv, T01_source_coverage.csv]
-    caveat: "Each bar is a subset of the one above it, so the bars must never be summed. Text-derived shares use the 719 postings with a description, not all 720. The Styria steps count every ad that lists a Styrian site; by primary state Styria has 54."
-    svg_sha256: sha256:605ddb675625f0086722991f460f86fe61c6f17c833c84a3e02fb87aa383a01c
+    caveat: "Each bar is a subset of the one above it, so the bars must never be summed. Text-derived shares use the 699 postings with a description, not all 699. The Styria steps count every ad that lists a Styrian site; by primary state Styria has 62."
+    svg_sha256: sha256:632cee00703e46fb3745bfa31f697b6fd42445eb2795a01786fdbe622199125c
     anchors:
       - { doc: docs/data-quality.md, mode: after_heading, key: "## 1. What was collected" }
       - { doc: docs/methodology.md, mode: after_heading, key: "## 5. Analysis sets and denominators" }
@@ -443,14 +443,14 @@ figures:
     path: outputs/figures/BQ29_styria_sample_sizes.svg
     png: outputs/figures/BQ29_styria_sample_sizes.png
     question: "Which of my Styrian conclusions are actually too small to carry a decision?"
-    answer: "All of them, by the project's own rule: the largest Styrian family cell is 20 postings against a robustness threshold of 30, and four families sit at five or fewer - so Styrian findings are read as counts and directions, never as percentages."
+    answer: "All of them, by the project's own rule: the largest Styrian family cell is 28 postings against a robustness threshold of 30, and three families sit at five or fewer - so Styrian findings are read as counts and directions, never as percentages."
     relationship: "comparison across categories"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "postings"
     tables: [T02_role_family_counts.csv]
-    caveat: "The official yearly series (JB05) puts Styria at 13.6 % of the national flow against 7.5% here (by primary state; 8.1% counting every ad with a Styrian site), so this snapshot may also understate Styrian volume, not only measure it imprecisely."
-    svg_sha256: sha256:9b0fcfff3c0671caad9637b2cd729e6556b2877a1de89e059bbcb543843a6136
+    caveat: "The official yearly series (JB05) puts Styria at 13.6 % of the national flow against 8.9% here (by primary state; 9.7% counting every ad with a Styrian site), so this snapshot may also understate Styrian volume, not only measure it imprecisely."
+    svg_sha256: sha256:678e186cca6632b459c182f0324c99061b701372b7a9383318cba5cfd0736629
     anchors:
       - { doc: docs/limitations.md, mode: after_heading, key: "## Robust vs. tentative conclusions" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "**All Styrian figures are tentative" }
@@ -458,14 +458,14 @@ figures:
     path: outputs/figures/BQ30_source_coverage.svg
     png: outputs/figures/BQ30_source_coverage.png
     question: "How much of the Austrian market can this dataset simply not see?"
-    answer: "LinkedIn and EURES/AMS carry most of the 720 core postings, and the corporate white-collar segment is missing entirely: StepStone.at and Indeed.at returned HTTP 403, and company career pages, university portals and hokify were never collected - so the corporate share of Austrian data demand is an unmeasured gap, not a measured absence."
+    answer: "LinkedIn and EURES/AMS carry most of the 699 core postings, and the corporate white-collar segment is missing entirely: StepStone.at and Indeed.at returned HTTP 403, and company career pages, university portals and hokify were never collected - so the corporate share of Austrian data demand is an unmeasured gap, not a measured absence."
     relationship: "comparison across categories"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "rows / postings"
     tables: [T01_source_coverage.csv, T01b_source_overlap_in_scope.csv]
-    caveat: "Only 20 % of core postings were seen on more than one source, so the boards are largely disjoint universes; a missing board is a missing slice, not a redundant one."
-    svg_sha256: sha256:216259f2950d731fc795c2cb11ab58b4eff9d6c616cc796caeeb84285180ca46
+    caveat: "Only 18 % of core postings were seen on more than one source, so the boards are largely disjoint universes; a missing board is a missing slice, not a redundant one."
+    svg_sha256: sha256:f0a825cac344262e60a80b55d1a0ac2fb58aa41e46ee38241c0db16a08f6149a
     anchors:
       - { doc: docs/limitations.md, mode: after_heading, key: "## Invisible market: what this dataset plausibly cannot see" }
       - { doc: docs/data-sources.md, mode: after_heading, key: "## Tier 2 · job platforms" }
@@ -473,14 +473,14 @@ figures:
     path: outputs/figures/BQ31_posting_freshness.svg
     png: outputs/figures/BQ31_posting_freshness.png
     question: "How fresh is the market I am reading - am I looking at this week or at leftovers?"
-    answer: "It depends entirely on the board: karriere.at shows a median age of 5 days and EURES/AMS 41 days, with 34 core postings older than 180 days - so the snapshot is a mixture of fresh demand and evergreen advertisements, and source mix drives apparent freshness."
+    answer: "It depends entirely on the board: karriere.at shows a median age of 14 days and EURES/AMS 38 days, with 40 core postings older than 180 days - so the snapshot is a mixture of fresh demand and evergreen advertisements, and source mix drives apparent freshness."
     relationship: "distribution"
     mark: dot_plot
     data_signature: categorical-value
     units: "days"
     tables: [T13b_posting_age_by_source.csv, Q05a_stale.csv]
     caveat: "Publication dates are board-reported and some boards refresh them; age is a lower bound on how long a vacancy has really been open."
-    svg_sha256: sha256:07b0934ec30db0a857db98ccdc1fdb309a0d5edc51042fedc8e050fd53cbc752
+    svg_sha256: sha256:a11e628d40dde9017c8a5cf3773918fdf3442cf260912e2b5f5332a78cf5a44e
     anchors:
       - { doc: docs/data-quality.md, mode: after_heading, key: "## 6. Stale postings (Q05, T13b)" }
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 12. Time dimension (T13, JB01)" }
@@ -488,14 +488,14 @@ figures:
     path: outputs/figures/BQ32_salary_evidence.svg
     png: outputs/figures/BQ32_salary_evidence.png
     question: "When an advertisement shows me a salary, what am I actually looking at?"
-    answer: "A legal floor in most cases: 569 of 720 ads state a figure, 460 of those are a single minimum and only 109 are a range; 424 name the collective agreement and 385 say they pay above it - so every salary figure in this project is the bottom of a negotiation, never the market price."
+    answer: "A legal floor in most cases: 527 of 699 ads state a figure, 424 of those are a single minimum and only 103 are a range; 429 name the collective agreement and 375 say they pay above it - so every salary figure in this project is the bottom of a negotiation, never the market price."
     relationship: "comparison across categories"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "postings"
     tables: [T09_salary_coverage.csv, T09a_salary_basis_by_source.csv]
-    caveat: "Categories overlap by construction (an ad can state a minimum, name the KV and mention a bonus). LinkedIn omits a figure in 41 % of its core ads, so coverage is also a source-mix artefact."
-    svg_sha256: sha256:e884c3aa663b24625ae10d3ddc2f4976b40462f4d55a2d71f46c727d64daac60
+    caveat: "Categories overlap by construction (an ad can state a minimum, name the KV and mention a bonus). LinkedIn omits a figure in 44 % of its core ads, so coverage is also a source-mix artefact."
+    svg_sha256: sha256:81ce67525355292ef01cfbb4e7083837c1ab0c5ecdde2d2be888047543b9c185
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 9. Advertised salary (T09, docs/salary-context.md)" }
       - { doc: docs/data-quality.md, mode: after_heading, key: "## 7. Salary parsing (Q07, Q07a, Q07b, T09)" }
@@ -504,28 +504,28 @@ figures:
     path: outputs/figures/BQ33_employer_structure.svg
     png: outputs/figures/BQ33_employer_structure.png
     question: "Who is actually behind these postings - is demand concentrated in a few employers I could target?"
-    answer: "No: 387 named employers share 580 postings, the top ten hold only 10.9% of them and agencies 4.5% - the market is fragmented, so a target list is long rather than short; 140 postings (19%) name no employer at all and are invisible to any target list."
+    answer: "No: 371 named employers share 577 postings, the top ten hold only 10.4% of them and agencies 6.4% - the market is fragmented, so a target list is long rather than short; 122 postings (17%) name no employer at all and are invisible to any target list."
     relationship: "part to whole"
     mark: stacked_bar
     data_signature: categorical-multi
     units: "postings"
     tables: [T04b_employer_concentration.csv, T04_employers.csv, T04a_employers_styria.csv]
     caveat: "Employer identity is taken from the advertisement; the same firm advertising under a group name and an agency is counted twice, and the anonymous AMS rows cannot be attributed at all."
-    svg_sha256: sha256:fb8ee1ff0a6b379fdb71deea9630d627323474baecaee782ae9d974a3a9d315f
+    svg_sha256: sha256:31c196cbded2d0d01b4392d8d925ecc9968dda017e2900e1565114dfdeea89d0
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "* **Named vs represented.**" }
   - chart_id: BQ34_german_level_demanded
     path: outputs/figures/BQ34_german_level_demanded.svg
     png: outputs/figures/BQ34_german_level_demanded.png
     question: "When an advertisement names a German level, which level is it - and is my A2-B1 ever stated as enough?"
-    answer: "Essentially never: C1-equivalent wording appears in 36% of core ads (261 postings) and B2/good in 12%, while B1 or below is named as sufficient in 6 advertisements in the whole corpus - so the realistic route is the 41% of ads that state no level at all, not the ones that state a low one."
+    answer: "Essentially never: C1-equivalent wording appears in 41% of core ads (285 postings) and B2/good in 13%, while B1 or below is named as sufficient in 6 advertisements in the whole corpus - so the realistic route is the 37% of ads that state no level at all, not the ones that state a low one."
     relationship: "ranking"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "share of postings"
     tables: [T07a_german_level_overall.csv, T07_german_requirement_by_overall.csv]
     caveat: "Wording-derived buckets: mapping 'sehr gut' to C1 is an assumption, and silence in a German-written ad usually still implies German (T07d). Whether a stated level is negotiable is not measured."
-    svg_sha256: sha256:4d445957a0a68280a5c152035faeb54651d633bf73ea7c07694549e78fdaaae3
+    svg_sha256: sha256:53b91237d5dbd81543119a9e3b3e67ba5b55d70a0e4cbc9c6e28f6707cd11aca
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "* **Levels.**" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHICH GAPS ARE STRUCTURAL?" }
@@ -533,14 +533,14 @@ figures:
     path: outputs/figures/BQ35_tools_vs_libraries.svg
     png: outputs/figures/BQ35_tools_vs_libraries.png
     question: "Do employers ask for frameworks and libraries, or only for languages and tools?"
-    answer: "Only for languages and tools: Python is named in 35% of ads while the most-mentioned Python library (PyTorch) reaches 4.5% - a CV built on library lists speaks a vocabulary employers do not use, while the language, the BI tool and the cloud platform are the words they do use."
+    answer: "Only for languages and tools: Python is named in 39% of ads while the most-mentioned Python library (PyTorch) reaches 3.4% and pandas 3.1% - a CV built on library lists speaks a vocabulary employers do not use, while the language, the BI tool and the cloud platform are the words they do use."
     relationship: "ranking"
     mark: horizontal_bar
     data_signature: bivariate-simple
     units: "share of postings"
     tables: [T05_skills_programming_languages.csv, T05_skills_python_ecosystem.csv, T05_skills_bi_tools.csv, T05_skills_cloud_platforms.csv]
     caveat: "Absence of a library in an advertisement is not absence in the job: ads compress a stack to its headline names. This measures advertising vocabulary, not the work."
-    svg_sha256: sha256:4c46e7428e64b9cb8dfb7ea8debe176ee0c027ef6f84f326e848ff3049a08069
+    svg_sha256: sha256:3c0559e61a0026709c6402304ddbae55b03250ee631f378135939ccb5b269b25
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "Interpretation. The Austrian data stack is **Microsoft-centred**" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD I PUT ON MY CV?" }
@@ -548,14 +548,14 @@ figures:
     path: outputs/figures/BQ36_certifications_both_sides.svg
     png: outputs/figures/BQ36_certifications_both_sides.png
     question: "Is a certification worth the money and the weeks - does either side of this market care?"
-    answer: "No evidence that it is: 13% of ads mention any certification at all and each specific one stays at or under 3 %, while 3.8% of observed candidates show one and MOOC certificates outnumber vendor ones - certifications differentiate in neither direction here, which makes them the cheapest item to drop from a learning plan."
+    answer: "No evidence that it is: 13% of ads mention any certification at all and each specific one stays at or under 2 %, while 3.8% of observed candidates show one and MOOC certificates outnumber vendor ones - certifications differentiate in neither direction here, which makes them the cheapest item to drop from a learning plan."
     relationship: "deviation from target"
     mark: dumbbell
     data_signature: categorical-multi
     units: "share of population"
     tables: [T11d_certifications.csv, C09_certifications.csv]
     caveat: "Both sides are wording-derived: an employer may still value a certificate it does not advertise, and a candidate may hold one they never mention in a bio or README."
-    svg_sha256: sha256:deb804d42d50a2fbeffbd2f16ea48c6749088d663a543075c2c9c4dde62ab942
+    svg_sha256: sha256:942980a6be35c3f872ed406ed15c495973599f796d00dd293fb548b881e0d596
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "**Certifications are almost never requested.**" }
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 13. How common are certifications? (DS08, C09)" }
@@ -563,14 +563,14 @@ figures:
     path: outputs/figures/BQ37_geography_demand_supply.svg
     png: outputs/figures/BQ37_geography_demand_supply.png
     question: "Is the candidate pool distributed across Austria the way the jobs are?"
-    answer: "Roughly, and both sides pile into Vienna: 343 Viennese ads (by primary state) against at least 478 declared candidates, and in Styria - the only region where the candidate frame is complete - 54 ads by primary state against 56 declared candidates (location-resolved). The structural shape is the same everywhere; Styria differs by being smaller and more industrial on both sides."
+    answer: "Roughly, and both sides pile into Vienna: 315 Viennese ads (by primary state) against at least 478 declared candidates, and in Styria - the only region where the candidate frame is complete - 62 ads by primary state against 56 declared candidates (location-resolved). The structural shape is the same everywhere; Styria differs by being smaller and more industrial on both sides."
     relationship: "comparison across categories"
     mark: grouped_bar
     data_signature: bivariate-dual
     units: "counts"
     tables: [DS05_demand_supply_geography.csv]
-    caveat: "Supply frames differ by region by construction: Styria is a complete GitHub frame, every other state is a keyword plus base-rate sample and therefore a lower bound. Cross-region supply comparison is not valid. Demand is by primary state (T03a); counting every ad that lists a Styrian site gives 58."
-    svg_sha256: sha256:db8a7d1886114824138e4f585e893b1f420683d95d76900936e9b6a5d42ea02a
+    caveat: "Supply frames differ by region by construction: Styria is a complete GitHub frame, every other state is a keyword plus base-rate sample and therefore a lower bound. Cross-region supply comparison is not valid. Demand is by primary state (T03a); counting every ad that lists a Styrian site gives 68."
+    svg_sha256: sha256:cb290435f53d43714345c9d4bde7bc3416eddc2031fcb68597f1462dcaa293a3
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 10. Where does geography materially change the market? (DS05, DS05b, DS13)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 3. Geography (C05, C05a–c, DS05, DS05b, DS13)" }
@@ -578,14 +578,14 @@ figures:
     path: outputs/figures/BQ38_education_both_sides.svg
     png: outputs/figures/BQ38_education_both_sides.png
     question: "Is the pool I am competing with more credentialled than employers actually ask for?"
-    answer: "In its own direction, yes: candidates over-represent data-science degrees and Master's/PhD wording relative to the ads, while the ads name informatics, engineering and business fields more often than candidates do (data-science wording: ads 18% vs candidates 57%) - the credential gap is a mismatch of field, not a simple deficit of level."
+    answer: "In its own direction, yes: candidates over-represent data-science degrees and Master's/PhD wording relative to the ads, while the ads name informatics, engineering and business fields more often than candidates do (data-science wording: ads 19% vs candidates 57%) - the credential gap is a mismatch of field, not a simple deficit of level."
     relationship: "deviation from target"
     mark: diverging_bar
     data_signature: categorical-value
     units: "percentage points"
     tables: [DS08_demand_supply_education.csv]
     caveat: "Absence of education wording is not absence of a degree on either side; 69 % of candidates write nothing about education at all, so these shares are lower bounds of very different kinds."
-    svg_sha256: sha256:8c066b986321a83b2be5d97a66d275a98d4c82b6309a1075b02c816bba98cad4
+    svg_sha256: sha256:66217842f8ef7a3ca7d7cdbeac3b80340bbc95b97e61ca4667f5ea18c4c1da97
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 12. How does education alter the picture? (DS08, O01)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 8. Education and certifications (C08, C08b–e, C09, C09b–d, DS08)" }
@@ -600,7 +600,7 @@ figures:
     units: "candidates"
     tables: [C04b_title_concentration.csv, C03_normalized_title_distribution.csv]
     caveat: "Titles come from GitHub bios, which are written for a developer audience rather than a recruiter; this is self-presentation, not employment."
-    svg_sha256: sha256:deda9c66404c1fa5ba15ee94aabca7d3550905582c65cc75701b77d73e4c7774
+    svg_sha256: sha256:4dca63ac30409f541480bd148e1d318e02b12b55aa2ec556cd37ef37dbacc532
     anchors:
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 2. Titles and families (C02, C03, C04, C04b, DS01, DS02)" }
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 1. Where is observable candidate supply concentrated? (C04, C05, C10, C23)" }
@@ -615,7 +615,7 @@ figures:
     units: "share of candidates"
     tables: [C16_project_count_distribution.csv]
     caveat: "Counts only public, non-fork repositories: private, client and employer work is invisible, so this is a floor on what candidates have built, not a measure of their experience."
-    svg_sha256: sha256:d973f17aa6982e66c6638a3b7bc354437990ee163fbc88ed3095a9a20b919eb4
+    svg_sha256: sha256:40e8f2f04362c3d9f1cff4491cac1f6a8afcb31629d6b373f013a070b7e5fd5d
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 14. How common are public portfolios? (C14, C16, C15)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 9. Projects: counts, activity, archetypes (C14, C14b–e, C16)" }
@@ -630,7 +630,7 @@ figures:
     units: "share of projects"
     tables: [C18_project_topics.csv, C18c_project_theme_coverage.csv]
     caveat: "Themes are rule-based over repository names, descriptions, topics and READMEs and can overlap; a project with no README text is under-classified rather than absent."
-    svg_sha256: sha256:cf7c3bf136f2a6e35a109fb769b0bd10f9a29acc8e1182d7864d138bbd9b5369
+    svg_sha256: sha256:0558382491872735c3eb5f4d670c7bd800cbb00c3a5b821eb9649ab71bdee76c
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_heading, key: "## 15. What do candidate projects look like? (C14c, C18, C18c, C19d)" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 10. Project topics (C18, C18b, C18c, C24)" }
@@ -645,7 +645,7 @@ figures:
     units: "share of repositories"
     tables: [C14c_repository_archetypes.csv, C14d_data_repo_activity.csv]
     caveat: "Archetypes are rule-based and mutually exclusive by priority order; 'inactive' measures the last push date, which says nothing about whether the work was good when it was made."
-    svg_sha256: sha256:3be77c5a548fd8be82487cf03149af069a2b1866e15fcb56765a5f4756abacbe
+    svg_sha256: sha256:c775cc218496e5d4e71fa70ec8d3a2a26d2e43ba5e0f0bb4faebcdf0d19c4d95
     anchors:
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 9. Projects: counts, activity, archetypes (C14, C14b–e, C16)" }
   - chart_id: BQ43_positioning_clusters
@@ -659,7 +659,7 @@ figures:
     units: "candidates"
     tables: [C23_positioning_clusters.csv, DS11_demand_supply_positioning_clusters.csv]
     caveat: "k-means on binary indicators with weak separation: these are readable groupings, not natural kinds, and a candidate near a boundary could sit in either cluster."
-    svg_sha256: sha256:e88bf8eaf58b980f586de6a355782b28f3d0c2fdc78e97e98c1b7972215bdac8
+    svg_sha256: sha256:58bdb2df753285792f0445de953e8d58fbbcf35b43137d0df77a2ec6d6a13fcc
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_match, key: "## 20. What does this imply for future career decisions?" }
   - chart_id: BQ44_transition_domains
@@ -673,7 +673,7 @@ figures:
     units: "share of accounts"
     tables: [C22b_prior_domains.csv, C22_transition_signals.csv, C22d_marketing_named_bios.csv]
     caveat: "Prior domain is detected from bio wording only. Transitioners who do not write about their past are invisible here, which is the most likely explanation for the low counts."
-    svg_sha256: sha256:146968e8bbb6868099e6b73383bd5a9faca69fc6b15a098605a91b734a174134
+    svg_sha256: sha256:dc8027f7637dd38c6406b6bb61f797648733cb03b2176c12b6ed3cd010ed2b69
     anchors:
       - { doc: CAREER_SUPPLY_DEMAND_MAP.md, mode: after_match, key: "* **Transition patterns.**" }
       - { doc: docs/supply-findings.md, mode: after_heading, key: "## 2. Titles and families (C02, C03, C04, C04b, DS01, DS02)" }
@@ -681,14 +681,14 @@ figures:
     path: outputs/figures/BQ45_skill_premium_controlled.svg
     png: outputs/figures/BQ45_skill_premium_controlled.png
     question: "Do the better-paying skills actually pay better, or am I just looking at which family names them?"
-    answer: "Mostly the latter: after controlling for role family, seniority and state, 14 of 16 skills have intervals straddling zero - Python's raw +8 % becomes -7 % - and only Databricks (+13 %) and Excel (-9 %) still separate from zero. After a Holm correction over all 16 skills Databricks and Excel still clear zero; Benjamini-Hochberg keeps 2 of 2. The floor is set by the family and the seniority label, not by the tool named in the advertisement."
+    answer: "Mostly the latter: after controlling for role family, seniority and state, 14 of 16 skills have intervals straddling zero - Python's raw +4 % becomes -2 % - and only Excel (-10 %) and Cloud (generic) (+8 %) still separate from zero. After a Holm correction over all 16 skills none clears zero (Excel and Cloud (generic) do not); Benjamini-Hochberg keeps 0 of 2. The floor is set by the family and the seniority label, not by the tool named in the advertisement."
     relationship: "uncertainty"
     mark: error_bars
     data_signature: interval-range
     units: "percent"
     tables: [D05_skill_salary_premium.csv]
     caveat: "Advertised minimums, not pay. Employer size, industry and hours basis are not controlled, the intervals shown are uncorrected (the adjusted p-values are in D05), and R² is low - this bounds how much of the raw gap is composition, it does not price a skill."
-    svg_sha256: sha256:f29ffd3dce905ac3728420d883b1e9a15e63ade2c4cdaa295fb82cfc92b41a94
+    svg_sha256: sha256:b1e0f9455865e6f3a75ca72e65840a0962c9258ae9b00b9042e4c6a27a7160a6
     anchors:
       - { doc: docs/market-guide.md, mode: after_match, key: "By skill mentioned: Databricks" }
       - { doc: CAREER_DECISION_MAP.md, mode: after_heading, key: "## WHAT SHOULD I LEARN?" }

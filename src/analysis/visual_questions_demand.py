@@ -12,6 +12,8 @@ relationship, then take an admissible mark from the catalogue.
 from __future__ import annotations
 
 import json
+import math
+import re
 import sys
 from pathlib import Path
 
@@ -66,6 +68,37 @@ def table(name: str) -> pd.DataFrame:
     return pd.read_csv(TABLES / name)
 
 
+_NUM_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight",
+              9: "nine", 10: "ten", 11: "eleven", 12: "twelve"}
+
+
+def num_word(n) -> str:
+    """A count as an English word (one ... twelve), digits above that: for prose counts taken from the data."""
+    return _NUM_WORDS.get(int(n), str(int(n)))
+
+
+def ordinal(n) -> str:
+    """1 -> '1st', 2 -> '2nd', 11 -> '11th': for prose ranks taken from the data."""
+    n = int(n)
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
+def join_words(items) -> str:
+    """['a'] -> 'a'; ['a', 'b'] -> 'a and b'; ['a', 'b', 'c'] -> 'a, b and c'."""
+    items = [str(i) for i in items]
+    return "".join(items) if len(items) <= 1 else ", ".join(items[:-1]) + " and " + items[-1]
+
+
+def pct_txt(x: float, digits: int = 0) -> str:
+    """Share as 'NN %' (project prose style: a space before %), rounded from the full-precision value."""
+    return f"{x * 100:.{digits}f} %"
+
+
+def ceil_pct(x: float) -> int:
+    """Whole-percent ceiling of a share, for 'each stays at or under N %' statements."""
+    return math.ceil(round(x * 100, 6))
+
+
 def n_core() -> str:
     """'n = 720 core postings' from market_summary.json, never typed by hand (M81)."""
     return f"n = {market_counts()['core']} core postings"
@@ -109,6 +142,9 @@ def bq01():
     st = table("T03a_state_counts.csv").sort_values("count")
     cities = table("T03c_styria_cities.csv")
     counts = market_counts()
+    jb05 = table("JB05_styria_vs_austria.csv")
+    jb05_ds = jb05[jb05.beruf == "Data Scientist (m/w)"].iloc[0]
+    flow_share = pct_txt(jb05_ds.styria / jb05_ds.austria, 1)
     graz_area = counts["graz_area_any_site"]
     styria_any = counts["styria_any_site"]
     styria = int(st.loc[st.state == "Steiermark", "count"].iloc[0])
@@ -154,12 +190,12 @@ def bq01():
         tables=["T03a_state_counts.csv", "T03c_styria_cities.csv"],
         units="unique postings",
         caveat="One-day stock of open advertisements, not yearly demand. The official yearly series (JB05) puts "
-               "Styria higher, at 13.6 % of the national flow. Counting every ad that lists a Styrian site (the "
+               f"Styria higher, at {flow_share} of the national flow. Counting every ad that lists a Styrian site (the "
                f"location-flag basis of T02/T04a/T07e) Styria has {styria_any} postings, {graz_area} of them in the Graz "
                f"commuting area, and Vienna {counts['vienna_any_site']}.",
         anchors=[
-            ("docs/market-guide.md", "after_match", "* Vienna holds **48 %** of core postings"),
-            ("CAREER_DECISION_MAP.md", "after_match", "**Vienna: 48 % of open core data postings"),
+            ("docs/market-guide.md", "after_match", "* Vienna holds **"),
+            ("CAREER_DECISION_MAP.md", "after_match", "* **Vienna: "),
         ],
     ), fig
 
@@ -184,36 +220,43 @@ def bq02():
                     color=color, fontsize=9, va="center", ha="left")
     ax.axhline(100, color=MUTED, linewidth=0.8, linestyle=":")
     ax.set_xlim(idx.index.min(), idx.index.max() + 1.6)
-    ax.set_ylabel("Yearly ads, 2020 = 100")
+    y_base, y_last = int(wide.index[0]), int(wide.index[-1])
+    ax.set_ylabel(f"Yearly ads, {y_base} = 100")
     ax.set_xlabel("Year")
     sty_now, sty_2020, sty_peak = wide["Steiermark"].iloc[-1], wide["Steiermark"].iloc[0], wide["Steiermark"].max()
     vie_now, vie_peak = wide["Wien"].iloc[-1], wide["Wien"].max()
+    vie_peak_year = int(wide["Wien"].idxmax())
     at_now, at_2020 = wide["Österreich"].iloc[-1], wide["Österreich"].iloc[0]
+    # which large regions are above their first-year level is computed, so the sentence cannot go stale when a region crosses 100
+    above = sorted(((c, n) for c, n in (("Steiermark", "Styria"), ("Wien", "Vienna"), ("Oberösterreich", "Upper Austria"))
+                    if wide[c].iloc[-1] > wide[c].iloc[0]), key=lambda t: -(wide[t[0]].iloc[-1] / wide[t[0]].iloc[0]))
+    above_txt = (join_words(f"{n} ({wide[c].iloc[-1] / wide[c].iloc[0] - 1:+.0%})" for c, n in above)
+                 if above else f"none of Styria, Vienna and Upper Austria")
     finalise(
         fig,
-        title=f"Austria's data-ad flow fell {abs(at_now / at_2020 - 1):.0%} below 2020 and Vienna "
-              f"{abs(vie_now / vie_peak - 1):.0%} below its peak - Styria is {sty_now / sty_2020 - 1:+.0%} above 2020",
+        title=f"Austria's data-ad flow is {at_now / at_2020 - 1:+.0%} vs {y_base} and Vienna "
+              f"{vie_now / vie_peak - 1:+.0%} vs its peak - Styria is {sty_now / sty_2020 - 1:+.0%} vs {y_base}",
         source=AMS_SOURCE,
-        units="index, 2020 = 100 (yearly advertisement counts)",
-        n=f"Styria {int(sty_2020)} (2020) → {int(sty_peak)} (peak) → {int(sty_now)} (2025)",
+        units=f"index, {y_base} = 100 (yearly advertisement counts)",
+        n=f"Styria {int(sty_2020)} ({y_base}) → {int(sty_peak)} (peak) → {int(sty_now)} ({y_last})",
         note="AMS occupation class, coarser than this project's title taxonomy.",
     )
     return Spec(
         chart_id="BQ02_regional_trend",
         question="Is the Graz market growing or shrinking while I spend a year preparing?",
-        answer=f"On the official yearly series Styria is {sty_now / sty_2020 - 1:+.0%} against 2020 "
+        answer=f"On the official yearly series Styria is {sty_now / sty_2020 - 1:+.0%} against {y_base} "
                f"({int(sty_2020)} → {int(sty_now)} ads) while Austria is {at_now / at_2020 - 1:+.0%} and Vienna is "
-               f"{vie_now / vie_peak - 1:+.0%} off its 2022 peak - the only large region holding its level.",
+               f"{vie_now / vie_peak - 1:+.0%} off its {vie_peak_year} peak; large regions above their {y_base} level: {above_txt}.",
         relationship="trend over time",
         mark="multi_line",
         data_signature="bivariate-dual",
         tables=["JB01_yearly_counts_long.csv"],
-        units="index, 2020 = 100",
+        units=f"index, {y_base} = 100",
         caveat="A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; "
                "counts advertisements, not hires.",
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 12. Time dimension (T13, JB01)"),
-            ("CAREER_DECISION_MAP.md", "after_match", "the only large region above its 2020 level"),
+            ("CAREER_DECISION_MAP.md", "after_match", "Large regions above their "),
         ],
     ), fig
 
@@ -252,13 +295,15 @@ def bq03():
     ax.set_xlabel("Vacancy index against the sector's own yearly mean (1.00 = an average quarter)")
     ratio = s6.ratio.min(), s6.ratio.max()
     q4 = s1[s1.quarter == "Q4"].index_a_own_year_mean
+    yrs_lo, yrs_hi = int(s1.n_years.min()), int(s1.n_years.max())
+    years_txt = str(yrs_lo) if yrs_lo == yrs_hi else f"{yrs_lo}-{yrs_hi}"
     finalise(
         fig,
-        title=f"Q4 is the thinnest quarter in all four sectors - but by {1 - q4.max():.0%}-{1 - q4.min():.0%}, "
+        title=f"Q4 is the thinnest quarter in all {num_word(len(sectors))} sectors - but by {1 - q4.max():.0%}-{1 - q4.min():.0%}, "
               f"while the business cycle moves vacancies {ratio[0]:.0f}-{ratio[1]:.0f} times more",
         source=EUROSTAT_SOURCE,
         units="index (quarter ÷ own-year mean), 95 % CI",
-        n="n = 16-17 years per sector",
+        n=f"n = {years_txt} years per sector",
         note="Sectors are NACE aggregates B-F industry & construction, B-S total economy, G-N market services (incl. ICT, finance, professional), O-S public sector/education/health. No occupation or regional grain: this is all vacancies, not data roles.",
     )
     return Spec(
@@ -442,7 +487,7 @@ def bq06():
         units="share of the region's core postings",
         n=f"n = {n_at} Austria / {n_sty} Styria (ads listing a Styrian site; {market_counts()['styria_primary']} "
           f"{PRIMARY_BASIS})",
-        note=f"Styrian cells are small: {n_sty} postings across eight families. Directional only.",
+        note=f"Styrian cells are small: {n_sty} postings across {num_word(len(fam))} families. Directional only.",
     )
     return Spec(
         chart_id="BQ06_styria_vs_austria_mix",
@@ -458,7 +503,7 @@ def bq06():
         caveat=f"n = {n_sty} for Styria (ads listing a Styrian site; {market_counts()['styria_primary']} "
                f"{PRIMARY_BASIS}); every family cell is below 30, so differences are directional.",
         anchors=[
-            ("docs/market-guide.md", "after_match", "Family mix in Styria (n = 58, indicative)"),
+            ("docs/market-guide.md", "after_match", "Family mix in Styria (n = "),
             ("CAREER_DECISION_MAP.md", "after_heading", "## WHAT ROLES EXIST?"),
         ],
     ), fig
@@ -467,6 +512,27 @@ def bq06():
 # --------------------------------------------------------------------------------------------
 # BQ07 - is my ranking an artefact of the weights?
 # --------------------------------------------------------------------------------------------
+def bq07_answer(analytics_ranks: dict, top3_by: dict) -> str:
+    """The BQ07 answer, computed: data analytics' rank under each weighting and whether the set of the top three families holds.
+    `analytics_ranks`: {weighting label: rank}; `top3_by`: {weighting label: set of the three best role families}."""
+    n_w = len(analytics_ranks)
+    vals = list(analytics_ranks.values())
+    first = next(iter(top3_by.values()))
+    diffs = [(lab, sorted(t - first), sorted(first - t)) for lab, t in top3_by.items() if t != first]
+    names = lambda fams: join_words(FAMILY_LABEL[f].lower() for f in fams)   # noqa: E731
+    if not diffs:
+        head = f"The same three families lead under all {num_word(n_w)} weightings"
+        tail = (f"and data analytics stays at rank {vals[0]}" if len(set(vals)) == 1
+                else "and data analytics ranks " + ", ".join(f"{ordinal(r)} ({lab.lower()})" for lab, r in analytics_ranks.items()))
+        return f"{head} {tail}, so the ordering is not a weighting artefact."
+    where = join_words(lab.lower() for lab, _, _ in diffs)
+    swap = "; ".join((f"{names(came)} replaces {names(went)}" if len(diffs) == 1 else f"{lab.lower()}: {names(came)} replaces {names(went)}")
+                     for lab, came, went in diffs)
+    return (f"Data analytics ranks " + ", ".join(f"{ordinal(r)} ({lab.lower()})" for lab, r in analytics_ranks.items())
+            + f" under the {num_word(n_w)} weightings; the set of the top three families changes under {where} ({swap}), "
+              "so the ordering partly depends on the weighting.")
+
+
 def bq07():
     d2 = table("D02_sensitivity.csv")
     weightings = [("rank_default", "Default"), ("rank_geography_first", "Geography first"),
@@ -489,24 +555,28 @@ def bq07():
     ax.invert_yaxis()
     ax.set_xlim(-0.3, len(weightings) - 0.3 + 1.5)
     ax.grid(axis="y")
+    n_criteria = len({m.group(1) for m in (re.match(r"V(\d+)", c) for c in table("D01_decision_matrix.csv").columns) if m})
     analytics_ranks = {label: int(d2.loc[d2.role_family == "data_analytics", col].iloc[0]) for col, label in weightings}
     stable = len(set(analytics_ranks.values())) == 1
+    top3_by = {label: set(d2.sort_values(col).role_family.head(3)) for col, label in weightings}
+    same_top3 = all(v == top3_by["Default"] for v in top3_by.values())
+    rank_vals = list(analytics_ranks.values())
     finalise(
         fig,
-        title="The same three families lead under every weighting - data analytics holds rank "
-              f"{analytics_ranks['Default']} whatever I weight" if stable else
-              "The leading families are stable across weightings; only their order moves",
+        title=("The same three families lead under every weighting - data analytics holds rank "
+               f"{analytics_ranks['Default']} whatever I weight" if stable and same_top3 else
+               "The same three families lead under every weighting; data analytics moves between ranks "
+               f"{min(rank_vals)} and {max(rank_vals)}" if same_top3 else
+               f"The leading families shift with the weighting - data analytics ranks {min(rank_vals)} to {max(rank_vals)}"),
         source="D01/D02 decision matrix over " + DEMAND_SOURCE,
         units="rank (1 = best)",
-        n="n = 7 families scored on 10 criteria under 4 weightings",
+        n=f"n = {len(d2)} families scored on {n_criteria} criteria under {len(weightings)} weightings",
         note="The score measures market size, English openness and advertised floors - not ease of entry.",
     )
     return Spec(
         chart_id="BQ07_ranking_sensitivity",
         question="Is my family ranking a real signal, or an artefact of how I weighted the criteria?",
-        answer=f"The top three (engineering, science, analytics) hold under all four weightings and data analytics "
-               f"stays at rank {analytics_ranks['Default']}; only the order inside the top two moves, so the "
-               "ordering is not a weighting artefact.",
+        answer=bq07_answer(analytics_ranks, top3_by),
         relationship="ranking",
         mark="bump",
         data_signature="categorical-multi",
@@ -548,11 +618,12 @@ def bq08():
     ax.set_xlabel("Share of core postings mentioning the item (Wilson 95 % CI)")
     ax.legend(fontsize=8.5, loc="lower right")
     top10 = table("T05_skills_all_tech.csv").head(10)
+    top_n = len(top10)
     covered = sum(profile_status(s) in {"have", "developing"} for s in top10.skill)
     lead = table("T05_skills_all_tech.csv").iloc[0]
     finalise(
         fig,
-        title=f"{lead.skill} leads at {lead.share:.0%} of ads - and {covered} of the 10 most-named items are already "
+        title=f"{lead.skill} leads at {lead.share:.0%} of ads - and {covered} of the {top_n} most-named items are already "
               "in my have-or-developing lists",
         source=DEMAND_SOURCE,
         units="share of postings mentioning the item",
@@ -562,7 +633,7 @@ def bq08():
     return Spec(
         chart_id="BQ08_demanded_skills",
         question="Which tools do Austrian employers actually name - and how much of that list do I already hold?",
-        answer=f"{lead.skill} ({lead.share:.0%}) and Python lead the list, and {covered} of the 10 most-mentioned "
+        answer=f"{lead.skill} ({lead.share:.0%}) and Python lead the list, and {covered} of the {top_n} most-mentioned "
                "items are already in my have-or-developing profile; the intervals separate the top tier cleanly "
                "from everything under 10 %.",
         relationship="ranking",
@@ -602,8 +673,8 @@ def bq09():
     now = sub[sub.priority == "NOW"].sort_values("share", ascending=False)
     finalise(
         fig,
-        title=f"The four NOW skills ({', '.join(now.skill)}) are named in {now.share.min():.0%}-{now.share.max():.0%} "
-              "of ads and are top-15 skills in up to 7 of the 8 families",
+        title=f"The {num_word(len(now))} NOW skills ({', '.join(now.skill)}) are named in {now.share.min():.0%}-{now.share.max():.0%} "
+              f"of ads and are top-15 skills in up to {int(now['families_where_top(>=15%)'].max())} of the {len(FAMILY_LABEL)} families",
         source=DEMAND_SOURCE + "; priority rule in src/analysis/build_decision_matrix.py",
         units="share of postings; number of families where the skill is top-15",
         n=n_desc(),
@@ -711,14 +782,15 @@ def bq11():
     ax.text(0.01, 0.03, "← asked more in intern ads", transform=ax.transAxes, ha="left", fontsize=9, color=BASE)
     top_j = t17.iloc[-1]
     top_i = t17.iloc[0]
+    n_intern, n_junior = int(t17.intern_n.iloc[0]), int(t17.junior_n.iloc[0])
     finalise(
         fig,
         title=f"The two entry doors ask for different things: {top_j.skill} is {top_j.junior_minus_intern_pp:+.0f} pp "
               f"more common in junior ads, {top_i.skill} {abs(top_i.junior_minus_intern_pp):.0f} pp more common in intern ads",
         source=DEMAND_SOURCE,
         units="percentage-point difference in mention share",
-        n="n = 42 intern ads / 31 junior ads (descriptions)",
-        note="Both denominators only just clear 30 - directional, not a second market.",
+        n=f"n = {n_intern} intern ads / {n_junior} junior ads (descriptions)",
+        note=f"Denominators {n_intern} and {n_junior} against the n = 30 rule - directional, not a second market.",
     )
     return Spec(
         chart_id="BQ11_intern_vs_junior",
@@ -730,7 +802,7 @@ def bq11():
         data_signature="categorical-value",
         tables=["T17_skill_divergence_intern_vs_junior.csv"],
         units="percentage points",
-        caveat="n = 42 and n = 31: differences under roughly 15 pp are inside the noise of these cell sizes.",
+        caveat=f"n = {n_intern} and n = {n_junior}: differences under roughly 15 pp are inside the noise of these cell sizes.",
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 8b. Intern vs junior vs rest (T17, T04d, T05f, D04b)"),
             ("CAREER_DECISION_MAP.md", "after_heading", "## INTERN VS JUNIOR VS THE REST (T17, T04d, T05f, D04b)"),
@@ -781,7 +853,7 @@ def bq12():
         units="postings per scope (labels) and share of the scope (bars)",
         n="n = " + " / ".join(f"{int(v)} {k}" for k, v in sub["n"].items())
           + "; Vienna, Styria and Graz area = ads listing a site there",
-        note="Three alternative readings of the same ads - they are scenarios, never summed or stacked.",
+        note=f"{num_word(len(scenarios)).capitalize()} alternative readings of the same ads - they are scenarios, never summed or stacked.",
     )
     return Spec(
         chart_id="BQ12_german_addressable_market",
@@ -862,10 +934,11 @@ def bq13():
         data_signature="trivariate",
         tables=["T07c_posting_language_by_family.csv", "T07_german_requirement_by_role_family.csv"],
         units="share of postings",
-        caveat="Marketing analytics (n = 24) and product analytics (n = 1) carry cells too small to separate.",
+        caveat=f"Marketing analytics (n = {int(eng.loc['marketing_analytics', 'n'])}) and product analytics "
+               f"(n = {int(eng.loc['product_analytics', 'n'])}) carry cells too small to separate.",
         anchors=[
             ("docs/market-guide.md", "after_match", "**Posting language:**"),
-            ("CAREER_DECISION_MAP.md", "after_match", "By family: BI 51 % German required/level-stated"),
+            ("CAREER_DECISION_MAP.md", "after_match", "* By family: BI "),
         ],
     ), fig
 
@@ -963,6 +1036,9 @@ def bq15():
     fig, ax, df, floor = _salary_range_chart(df, "role_family", label_map=FAMILY_LABEL, highlight="data_analytics")
     ana = df[df.role_family == "data_analytics"].iloc[0]
     eng = df[df.role_family == "data_engineering"].iloc[0]
+    cov = table("T09_salary_coverage.csv").set_index("metric")["count"]
+    min_only_share = cov["minimum_only_figures"] / cov["with_salary_figure"]
+    overpay_share = cov["overpay_mention"] / cov["core_postings"]
     finalise(
         fig,
         title=f"The family I can enter advertises the lowest floor: data analytics {eur_k(ana.min_median)} against "
@@ -983,7 +1059,8 @@ def bq15():
         data_signature="categorical-value",
         tables=["T09b_salary_by_role_family.csv"],
         units="EUR, annual gross",
-        caveat="81 % of parsed figures are a single collective-agreement minimum; 53 % of ads say they pay above it. "
+        caveat=f"{pct_txt(min_only_share)} of parsed figures are a single collective-agreement minimum; "
+               f"{pct_txt(overpay_share)} of ads say they pay above it. "
                "These are legal floors, not offers and not pay.",
         anchors=[
             ("docs/market-guide.md", "after_match", "Median advertised **minimum** (annual gross, monthly × 14)"),
@@ -1002,6 +1079,8 @@ def bq16():
     jun = df[df.seniority == "trainee_junior"].iloc[0]
     unl = df[df.seniority == "unspecified"].iloc[0]
     sen = df[df.seniority == "senior"].iloc[0]
+    sen_all = table("T08_seniority_overall.csv").set_index("seniority")
+    unlabelled_share = pct_txt(sen_all.loc["unspecified", "count"] / sen_all.loc["unspecified", "n"], 1)
     finalise(
         fig,
         title=f"Entering on a junior label costs {eur_k(unl.min_median - jun.min_median)} against an unlabelled ad and "
@@ -1009,14 +1088,14 @@ def bq16():
         source=DEMAND_SOURCE,
         units="euro, annual gross (monthly × 14)",
         n=f"n = {int(df.n.sum())} postings with a parsed figure",
-        note=f"Axis starts at €{floor / 1000:.0f}k. 57.5 % of ads carry no seniority word at all.",
+        note=f"Axis starts at €{floor / 1000:.0f}k. {unlabelled_share} of ads carry no seniority word at all.",
     )
     return Spec(
         chart_id="BQ16_salary_by_seniority",
         question="What does entering on a junior label actually cost me, given 20 years of prior experience?",
         answer=f"The junior median floor is {eur_k(jun.min_median)} against {eur_k(unl.min_median)} for an unlabelled "
                f"ad and {eur_k(sen.min_median)} for a senior one - a {eur_k(unl.min_median - jun.min_median)} penalty "
-               "for the label, which is why the 57.5 % of ads carrying no seniority word matter more than the junior "
+               f"for the label, which is why the {unlabelled_share} of ads carrying no seniority word matter more than the junior "
                "ones.",
         relationship="ranking",
         mark="dot_plot",
@@ -1024,7 +1103,7 @@ def bq16():
         tables=["T09b_salary_by_seniority.csv"],
         units="EUR, annual gross",
         caveat="Seniority is read from the advertisement's title, and the figure is an advertised floor, not an "
-               "offer. Junior n = 22.",
+               f"offer. Junior n = {int(jun.n)}.",
         anchors=[
             ("docs/market-guide.md", "after_match", "By seniority label: intern"),
         ],
@@ -1103,6 +1182,7 @@ def bq18():
     ax.legend(fontsize=8.5, ncol=5, loc="lower center", bbox_to_anchor=(0.5, -0.32))
     overall = table("T10_remote_overall.csv")
     rem_share = float(overall.loc[overall.remote_type == "remote", "share"].iloc[0])
+    silent_share = pct_txt(float(overall.loc[overall.remote_type == "unknown", "share"].iloc[0]))
     finalise(
         fig,
         title=f"Fully remote is {rem_share:.0%} of the market: chasing remote roles from Graz means competing for "
@@ -1110,7 +1190,7 @@ def bq18():
         source=DEMAND_SOURCE,
         units="share of the family's postings",
         n=f"n = {int(overall.n.iloc[0])} core postings with a description",
-        note="40 % of ads say nothing about the work model; silence is not evidence of on-site.",
+        note=f"{silent_share} of ads say nothing about the work model; silence is not evidence of on-site.",
     )
     return Spec(
         chart_id="BQ18_work_model",
@@ -1124,7 +1204,7 @@ def bq18():
         data_signature="categorical-multi",
         tables=["T10_remote_by_family.csv", "T10_remote_overall.csv"],
         units="share of postings",
-        caveat="Wording in the advertisement, not the arrangement actually offered; 40 % of ads are silent.",
+        caveat=f"Wording in the advertisement, not the arrangement actually offered; {silent_share} of ads are silent.",
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 10. Work model (T10)"),
             ("CAREER_DECISION_MAP.md", "after_heading", "## WHAT WORK MODE DO THEY OFFER?"),
@@ -1145,6 +1225,7 @@ def _sweep_date() -> str:
 
 def bq19():
     adj = table("T16_adjacent_demand_by_region.csv")
+    n_regions = num_word(adj.region.nunique())
     adj = adj[adj.tool.isin(["Python", "SQL", "Power BI", "Excel"])].copy()
     adj["key"] = adj.region + " · " + adj.tool
     adj = adj.sort_values(["region", "postings_mentioning"])
@@ -1167,7 +1248,7 @@ def bq19():
         fig,
         title=f"{sty_py.share_non_data_title:.0%} of Styrian ads that mention Python carry a non-data title - the "
               "entry doors are controlling, engineering and research jobs, not data titles",
-        source=f"AMS/EURES full-text sweep of three regions, {_sweep_date()} (T16)",
+        source=f"AMS/EURES full-text sweep of {n_regions} regions, {_sweep_date()} (T16)",
         units="postings mentioning the tool",
         n=f"sweep n = {int(adj.sweep_postings_region.min()):,}-{int(adj.sweep_postings_region.max()):,} postings per region (full-text keyword retrieval)",
         note=f"A different retrieval from the {market_counts()['core']}-posting title census: these ads were found by "
@@ -1185,7 +1266,7 @@ def bq19():
         data_signature="categorical-multi",
         tables=["T16_adjacent_demand_by_region.csv"],
         units="postings",
-        caveat="Covers only the AMS feed of three regions and retrieves by full-text keyword, so it is not "
+        caveat=f"Covers only the AMS feed of {n_regions} regions and retrieves by full-text keyword, so it is not "
                f"comparable to the {market_counts()['core']}-posting title census.",
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 13. Adjacent demand (T16)"),

@@ -1,13 +1,12 @@
 styria_flag,german_requirement,count,n,share,ci_low,ci_high
-Rest of Austria,not_mentioned,276,661,0.418,0.381,0.456
-Rest of Austria,required_implied,199,661,0.301,0.267,0.337
-Rest of Austria,preferred,82,661,0.124,0.101,0.151
-Rest of Austria,required,58,661,0.088,0.068,0.112
-Rest of Austria,mentioned,40,661,0.061,0.045,0.081
-Rest of Austria,german_or_english,4,661,0.006,0.002,0.015
-Rest of Austria,explicitly_not_required,2,661,0.003,0.001,0.011
-Styria,required_implied,25,58,0.431,0.312,0.559
-Styria,not_mentioned,22,58,0.379,0.266,0.508
-Styria,preferred,6,58,0.103,0.048,0.208
-Styria,required,3,58,0.052,0.018,0.141
-Styria,mentioned,2,58,0.034,0.01,0.117
+Rest of Austria,not_mentioned,241,631,0.382,0.345,0.42
+Rest of Austria,required_implied,198,631,0.314,0.279,0.351
+Rest of Austria,preferred,98,631,0.155,0.129,0.186
+Rest of Austria,required,64,631,0.101,0.08,0.127
+Rest of Austria,mentioned,27,631,0.043,0.03,0.062
+Rest of Austria,german_or_english,3,631,0.005,0.002,0.014
+Styria,required_implied,26,68,0.382,0.276,0.501
+Styria,not_mentioned,19,68,0.279,0.187,0.396
+Styria,preferred,11,68,0.162,0.093,0.267
+Styria,required,7,68,0.103,0.051,0.198
+Styria,mentioned,5,68,0.074,0.032,0.161

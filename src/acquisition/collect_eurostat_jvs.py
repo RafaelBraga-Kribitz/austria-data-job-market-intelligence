@@ -22,7 +22,7 @@ import json
 import urllib.parse
 import urllib.request
 
-from common import RawWriter, cli
+from common import RawWriter, cli, run_guarded
 
 BASE = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_nace2"
 INDICATORS = ("JOBVAC", "JOBRATE")  # number of job vacancies; job vacancy rate (%)
@@ -91,4 +91,4 @@ def main(run_date: str | None = None) -> None:
 
 
 if __name__ == "__main__":
-    main(cli(__doc__).date)
+    run_guarded(main, cli(__doc__).date)

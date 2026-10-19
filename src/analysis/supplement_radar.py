@@ -1,6 +1,6 @@
 """T19 dated supplement aggregates from Arbeitnow raw and/or the private radar DB.
 
-Never merges into the 2026-09-16 720-core snapshot. Public tables have no URL/snippet/description.
+Never merges into the demand snapshot (outputs/market_summary.json: collection date and core n). Public tables have no URL/snippet/description.
 If volume is below MATERIAL_N Austrian data-role postings, only T19_supplement_status.csv is filled
 with status=not_collected or below_threshold.
 
@@ -38,6 +38,15 @@ DB = ROOT / "src" / "private" / "radar" / "jobs.db"
 if not DB.exists():
     DB = ROOT / "jobs.db"
 MATERIAL_N = 20
+
+
+def _demand_snapshot_label() -> str:
+    """'<vintage> <n>-core' of the Layer 1 snapshot, read from market_summary.json (never typed; FALLBACK text if unreadable)."""
+    try:
+        ms = json.loads((ROOT / "outputs" / "market_summary.json").read_text(encoding="utf-8"))
+        return f"{str(ms['collected_at_range']['min'])[:10]} {int(ms['counts']['core_canonical'])}-core"
+    except (OSError, KeyError, ValueError):
+        return "Layer 1 (market_summary.json unreadable)"
 CORE = ["data_analytics", "bi", "data_science", "data_engineering", "data_governance",
         "marketing_analytics", "product_analytics", "business_analysis"]
 DESC_MIN = 50
@@ -181,7 +190,7 @@ def main() -> str:
     status = "not_collected"
     if n_at or n_db_all:
         status = "below_threshold" if n_core < MATERIAL_N else "published_aggregates"
-    note = ("Separate universe from the 2026-09-16 720-core snapshot; never merged. "
+    note = (f"Separate universe from the {_demand_snapshot_label()} snapshot; never merged. "
             "No URLs or JD text. StepStone.at and Indeed.at live harvests stopped on HTTP 403. "
             "Hunter volume is python-jobspy LinkedIn jobs (Austria location strings) plus Arbeitnow.")
     if not DB.exists():

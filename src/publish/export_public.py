@@ -79,21 +79,50 @@ EXCLUDE_DOCS = {
 # path (overwriting, e.g. README.md) once the tree is built and before the scans run, so every scan covers it. The folder
 # itself is never exported under its own name (EXCLUDE_PATHS; PRIVATE_NEVER re-checks it).
 PUBLIC_OVERLAY = "src/publish/public_overlay"
+# Files that carry the owner's private rules and facts (knowledge-base paths, "never ask below" rule, application counts,
+# the private weekly orchestrator's tests). INCLUDE_DIRS contains "tests", "src/reporting" and every outputs/*.json is exported,
+# so these are excluded by name. Also in PRIVATE_NEVER (re-checked on the staged tree) and covered by OWNER_FACT_RE.
+# tests/test_metrics_registry.py imports the excluded metrics_watch module at module level, so it stays private too.
+OWNER_FACT_FILES = [
+    "tests/test_update_knowledge.py", "tests/test_weekly_refresh.py", "tests/test_build_insights.py", "tests/test_build_site.py",
+    "tests/test_job_archive.py", "tests/test_company_archetypes.py", "tests/test_acquisition_weekly.py",
+    "tests/test_metrics_registry.py",
+    "tests/test_cv_factbank.py",    # tests of the private CV fact bank (src/private/application/cv); fictional data, but private code
+    "src/reporting/metrics_watch.py", "outputs/metrics_watch.json",
+    # the registry holds the key never_ask_below_eur (an owner rule); it is rebuilt by src/reporting/metrics_registry.py, and no
+    # public test or CI step reads it (render_docs tests build their own registry in tmp_path)
+    "outputs/metrics.json",
+]
+# Public stand-ins for excluded modules that exported code still imports (metrics_registry.py imports metrics_watch in main()).
+PUBLIC_STUBS = {
+    "src/reporting/metrics_watch.py": (
+        '"""Public stand-in: the claim watch list ties sentences of the private working documents to the registry; not published."""\n'
+        "from __future__ import annotations\n\n\n"
+        "def build_watch(registry: dict) -> dict:\n"
+        '    return {"claims_failing": [], "_meta": {"claims_failing": 0, "note": "claim watch list is not part of the public repository"}}\n'),
+}
 # paths (relative, "/"-separated) inside INCLUDE_DIRS that are never exported; a trailing "/" excludes a folder
 EXCLUDE_PATHS = {
     "config/profile.json",          # the owner's own profile stays private (D-026); replaced by the neutral example below
     "config/profile.example.json",  # exported under the name config/profile.json instead
     "tests/fixtures/radar/",        # hand-written fixtures that only exercise the private radar parsers (the test skips without them)
     PUBLIC_OVERLAY + "/",           # exported only at its target paths (apply_overlay)
+    "site_private/",                # private weekly dashboard; also in PRIVATE_NEVER
+    "data/private/",                # application log, weekly run manifests, archives; also in PRIVATE_NEVER
+    *OWNER_FACT_FILES,              # tests / code / outputs that quote the owner's private rules and facts; also in PRIVATE_NEVER
 }
 # public path -> private source: the public tree gets the neutral example profile under the name the code reads
 SUBSTITUTE_FILES = {"config/profile.json": "config/profile.example.json"}
 # never allowed anywhere in the public tree, whatever the INCLUDE lists say
 PRIVATE_NEVER = ["src/private/", "library_strategy/", "logs/", "data/processed/profile_fit/",
                  "data/raw/radar/", "data/raw/arbeitnow/", "data/raw/github_supply/", "data/raw/linkedin_supply/",
-                 "data/external/stackoverflow_survey/", "data/labels/", "data/private/",
+                 "data/external/stackoverflow_survey/", "data/labels/", "data/private/",  # data/private/weekly_runs/ included
+                 "site_private/",  # the private weekly dashboard (built from private data)
+                 "session_prompts/",  # starter prompts of the private build steps
                  "CAREER_ASSUMPTIONS_REVIEW.md", "PROGRESS.md",
+                 "PROJECT_TRACK_2026-10-19.md", "OPERATING_PLAN_2026-10-19.md",  # private plans (D-034, D-035); no INCLUDE list names them
                  "docs/profile-specific-demand-supply-analysis.md", "docs/linkedin-slot-interface.md",
+                 *OWNER_FACT_FILES,
                  PUBLIC_OVERLAY + "/"]  # the overlay reaches the public tree only at its target paths
 EXCLUDE_TABLES = {
     "T09e_salary_observations.csv",   # per-posting rows with employer + salary + snippet
@@ -137,6 +166,17 @@ SECRET_RE = re.compile(
     r"|JSESSIONID=[A-Za-z0-9._\-]{10,}|[?&]token=[A-Za-z0-9._\-]{16,}"
     r"|\bgh[pousr]_[A-Za-z0-9]{30,}|\bgithub_pat_[A-Za-z0-9_]{20,}|\bAKIA[0-9A-Z]{16}\b"
     r"|-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----")
+# Phrases that only appear when an owner fact or an owner rule leaks (knowledge-base paths, the salary-expectation rule, the
+# application count). A hit in any exported text file blocks the export (case-insensitive).
+OWNER_FACT_RE = re.compile(r"owner-stated|~/\.claude|\.claude/knowledge|career-knowledge-|applications sent|never ask below"
+                           r"|PROJECT_TRACK_|OPERATING_PLAN_|session_prompts", re.I)
+# files that hold the phrases as pattern definitions
+OWNER_SCAN_EXEMPT = {"src/publish/export_public.py"}
+# known harmless generic uses: (path, phrase) -> text that must be on the same line. Keep this list at zero where possible.
+OWNER_FACT_ALLOW = {
+    ("CAREER_DECISION_MAP.md", "applications sent"): "applications sent, responses, offers by family",   # generic row of an evidence table
+    ("src/reporting/metrics_registry.py", "never ask below"): '"never ask below" rule may cite',          # code comment, no owner value
+}
 TEXT_COL_MAX = 200  # a CSV cell longer than this is treated as free text and rejected, unless the column is a known aggregate list
 ALLOW_LONG_COLUMNS = {"top15_skills", "overlap_skills", "structural_skills", "unclassified_skills", "top_tech_skills", "top_business", "top_soft",
                       "defining_skills", "family_mix", "example_titles", "top_skills", "role_rule", "families", "sources", "states",
@@ -181,6 +221,63 @@ def is_excluded(rel: str) -> bool:
     if rel.startswith("docs/") and rel.rsplit("/", 1)[-1] in EXCLUDE_DOCS:
         return True
     return any(rel == x or (x.endswith("/") and rel.startswith(x)) for x in EXCLUDE_PATHS)
+
+
+# Public cuts of two root documents (see public_decision_log / strip_private_sections). The decision log is public up to
+# this entry; later entries describe the owner's private working systems.
+PUBLIC_LOG_LAST_ENTRY = 30
+DECISION_HEADING_RE = re.compile(r"^## D-(\d+)\b", re.M)
+# file -> regexes of whole sections (heading to the next "## " heading or the end of the file) that are not exported
+PRIVATE_SECTIONS = {"AGENT_CONTEXT.md": [re.compile(r"^## 27\. W\w+ r\w+.*?(?=^## |\Z)", re.M | re.S)]}
+# file -> patterns of short passages that point at a cut section and are removed with it (patterns, not the passages
+# themselves: this file is public and must not spell out what is cut)
+PRIVATE_FRAGMENTS = {"AGENT_CONTEXT.md": [
+    re.compile(r" Since D-03\d the Layer 1 refresh[^\n]*?one-off rebuild\."),
+    re.compile(r"; D-031/D-03\d [^;)\n]*?: \d{4}-\d\d-\d\d; D-033 [^;)\n]*?: \d{4}-\d\d-\d\d"),
+    re.compile(r"; \u00a727 = [^.*\n]*")]}
+# a reference to the cut material that survives in a cut file blocks the export
+PRIVATE_RESIDUE_RE = re.compile(r"D-03[1-9]|\u00a7\s?27|w\w+ly\s+refresh", re.I)
+
+
+def public_decision_log(text: str) -> str:
+    """The decision log up to entry D-<PUBLIC_LOG_LAST_ENTRY>; the first later entry and everything after it is cut."""
+    for m in DECISION_HEADING_RE.finditer(text):
+        if int(m.group(1)) > PUBLIC_LOG_LAST_ENTRY:
+            return (text[:m.start()].rstrip() + f"\n\n*Entries after D-{PUBLIC_LOG_LAST_ENTRY:03d} are private working records "
+                    "and are not part of the public tree.*\n")
+    return text
+
+
+def strip_private_sections(rel: str, text: str) -> str:
+    for pattern in PRIVATE_SECTIONS.get(rel, []):
+        text = pattern.sub("", text).rstrip() + "\n"
+    for pattern in PRIVATE_FRAGMENTS.get(rel, []):
+        text = pattern.sub("", text)
+    return text
+
+
+def apply_public_cuts(stage: Path) -> list[str]:
+    """Rewrite the staged copies of the root documents that carry private entries; return the files changed."""
+    changed = []
+    for rel in ["DECISION_LOG.md", *PRIVATE_SECTIONS]:
+        p = stage / rel
+        if not p.exists():
+            continue
+        old = p.read_text(encoding="utf-8")
+        new = strip_private_sections(rel, public_decision_log(old) if rel == "DECISION_LOG.md" else old)
+        if new != old:
+            p.write_text(new, encoding="utf-8", newline="\n")
+            changed.append(rel)
+    return changed
+
+
+def check_public_cuts(stage: Path) -> list[str]:
+    problems = []
+    for rel in ["DECISION_LOG.md", *PRIVATE_SECTIONS]:
+        p = stage / rel
+        if p.exists() and (m := PRIVATE_RESIDUE_RE.search(p.read_text(encoding="utf-8"))):
+            problems.append(f"{rel}: reference to a private entry survived the public cut ({m.group(0)!r})")
+    return problems
 
 
 def apply_overlay(root: Path, stage: Path) -> list[str]:
@@ -307,6 +404,21 @@ def clean_json(src: Path, dst: Path, logins: set[str] | frozenset = frozenset())
     return problems
 
 
+def owner_fact_hits(rel: str, text: str) -> list[str]:
+    """Owner-fact phrases found in one exported text file (empty = clean); known generic uses are skipped (OWNER_FACT_ALLOW)."""
+    if rel in OWNER_SCAN_EXEMPT:
+        return []
+    hits = set()
+    for line in text.splitlines():
+        for m in OWNER_FACT_RE.finditer(line):
+            phrase = m.group(0).lower()
+            ctx = OWNER_FACT_ALLOW.get((rel, phrase))
+            if ctx and ctx.lower() in line.lower():
+                continue
+            hits.add(phrase)
+    return sorted(hits)
+
+
 def check_suppression(tree: Path) -> list[str]:
     """Re-verify the Layer 2 suppression thresholds on the exported tables (a regressed analysis run must not leak rare phrases)."""
     problems = []
@@ -349,6 +461,8 @@ def scan_tree(target: Path, logins: set[str] | frozenset = frozenset(), allowed_
                 problems.append(f"{rel}: e-mail {m.group(0)}")
             if phone_hits(t):
                 problems.append(f"{rel}: phone-number pattern")
+        for phrase in owner_fact_hits(rel, t):
+            problems.append(f"{rel}: owner fact or private rule ({phrase!r})")
         if POSTING_URL_RE.search(t):
             problems.append(f"{rel}: link to an individual job advertisement")
         if SECRET_RE.search(t):
@@ -371,6 +485,8 @@ def check_private_paths(tree: Path) -> list[str]:
             problems.append(f"hunter/score artifact leaked: {rel}")
         if "/profile_fit/" in f"/{rel}" or rel.startswith("data/raw/radar/") or rel.startswith("data/raw/arbeitnow/"):
             problems.append(f"private collection leaked: {rel}")
+        if rel in PUBLIC_STUBS and leak.read_text(encoding="utf-8", errors="ignore").replace("\r\n", "\n") == PUBLIC_STUBS[rel]:
+            continue   # the public stand-in written by build(), not the private module
         if rel in PRIVATE_NEVER or any(x.endswith("/") and rel.startswith(x) for x in PRIVATE_NEVER):
             problems.append(f"private path leaked: {rel}")
     for f in EXCLUDE_ACQUISITION:
@@ -423,12 +539,17 @@ def build(root: Path, stage: Path) -> list[str]:
             problems.append(f"missing substitute {src} for {dst}")
     for f in INCLUDE_ACQUISITION:
         copy_file(root / "src" / "acquisition" / f, stage / "src" / "acquisition" / f)
+    for rel, text in PUBLIC_STUBS.items():
+        (stage / rel).parent.mkdir(parents=True, exist_ok=True)
+        (stage / rel).write_text(text, encoding="utf-8", newline="\n")
     # tables
     for p in sorted((root / "outputs" / "tables").glob("*.csv")):
         if p.name in EXCLUDE_TABLES:
             continue
         problems += clean_table(p, stage / "outputs" / "tables" / p.name, logins)
     for p in sorted((root / "outputs").glob("*.json")):
+        if is_excluded(f"outputs/{p.name}"):
+            continue
         problems += clean_json(p, stage / "outputs" / p.name, logins)
     if (root / "outputs" / "reports" / "digest.txt").exists():
         copy_file(root / "outputs" / "reports" / "digest.txt", stage / "outputs" / "reports" / "digest.txt")
@@ -441,6 +562,8 @@ def build(root: Path, stage: Path) -> list[str]:
         for p in (root / d).rglob("*"):
             if p.is_file():
                 copy_file(p, stage / p.relative_to(root))
+    apply_public_cuts(stage)
+    problems += check_public_cuts(stage)
     # public-only presentation files, last so that they win (README.md); the scans below cover them like any other file
     overlay = apply_overlay(root, stage)
     (stage / "outputs").mkdir(parents=True, exist_ok=True)

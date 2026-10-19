@@ -1,48 +1,48 @@
 styria_flag,skill,count,n,share,ci_low,ci_high
-Rest of Austria,Consulting,202,661,0.306,0.272,0.342
-Rest of Austria,Requirements/Business Analysis,194,661,0.293,0.26,0.329
-Rest of Austria,Finance/Controlling,171,661,0.259,0.227,0.293
-Rest of Austria,Project Management,140,661,0.212,0.182,0.245
-Rest of Austria,Operations/Manufacturing,129,661,0.195,0.167,0.227
-Rest of Austria,SAP (ERP),128,661,0.194,0.165,0.226
-Rest of Austria,Public Sector/Research,123,661,0.186,0.158,0.218
-Rest of Austria,Banking/Insurance,113,661,0.171,0.144,0.202
-Rest of Austria,Sales/Commercial,107,661,0.162,0.136,0.192
-Rest of Austria,Risk/Actuarial,80,661,0.121,0.098,0.148
-Rest of Austria,Supply Chain/Logistics,72,661,0.109,0.087,0.135
-Rest of Austria,Marketing,70,661,0.106,0.085,0.132
-Rest of Austria,Healthcare/Pharma/Bio,56,661,0.085,0.066,0.108
-Rest of Austria,Automotive/Mobility,53,661,0.08,0.062,0.103
-Rest of Austria,CRM,48,661,0.073,0.055,0.095
-Rest of Austria,Customer Analytics,36,661,0.054,0.04,0.074
-Rest of Austria,Digital/Online Marketing,35,661,0.053,0.038,0.073
-Rest of Austria,Web/Digital Analytics,32,661,0.048,0.034,0.068
-Rest of Austria,Real Estate/Retail,29,661,0.044,0.031,0.062
-Rest of Austria,E-Commerce,20,661,0.03,0.02,0.046
-Rest of Austria,Product Analytics,19,661,0.029,0.018,0.044
-Rest of Austria,HR/People Analytics,19,661,0.029,0.018,0.044
-Rest of Austria,Telecom,16,661,0.024,0.015,0.039
-Rest of Austria,Energy,15,661,0.023,0.014,0.037
-Rest of Austria,Pricing/Revenue,15,661,0.023,0.014,0.037
-Rest of Austria,Industry 4.0 / MES / OPC UA,12,661,0.018,0.01,0.031
-Rest of Austria,Optimization/OR,8,661,0.012,0.006,0.024
-Styria,Consulting,23,58,0.397,0.281,0.525
-Styria,Requirements/Business Analysis,15,58,0.259,0.163,0.384
-Styria,Public Sector/Research,14,58,0.241,0.15,0.365
-Styria,Operations/Manufacturing,11,58,0.19,0.109,0.309
-Styria,Project Management,11,58,0.19,0.109,0.309
-Styria,SAP (ERP),9,58,0.155,0.084,0.269
-Styria,Banking/Insurance,9,58,0.155,0.084,0.269
-Styria,Finance/Controlling,9,58,0.155,0.084,0.269
-Styria,Automotive/Mobility,9,58,0.155,0.084,0.269
-Styria,Sales/Commercial,6,58,0.103,0.048,0.208
-Styria,Healthcare/Pharma/Bio,6,58,0.103,0.048,0.208
-Styria,Risk/Actuarial,5,58,0.086,0.037,0.186
-Styria,E-Commerce,3,58,0.052,0.018,0.141
-Styria,Supply Chain/Logistics,3,58,0.052,0.018,0.141
-Styria,Real Estate/Retail,2,58,0.034,0.01,0.117
-Styria,HR/People Analytics,2,58,0.034,0.01,0.117
-Styria,Industry 4.0 / MES / OPC UA,1,58,0.017,0.003,0.091
-Styria,Energy,1,58,0.017,0.003,0.091
-Styria,Web/Digital Analytics,1,58,0.017,0.003,0.091
-Styria,Marketing,1,58,0.017,0.003,0.091
+Rest of Austria,Consulting,185,631,0.293,0.259,0.33
+Rest of Austria,Requirements/Business Analysis,162,631,0.257,0.224,0.292
+Rest of Austria,Finance/Controlling,159,631,0.252,0.22,0.287
+Rest of Austria,SAP (ERP),123,631,0.195,0.166,0.228
+Rest of Austria,Sales/Commercial,119,631,0.189,0.16,0.221
+Rest of Austria,Operations/Manufacturing,118,631,0.187,0.159,0.219
+Rest of Austria,Public Sector/Research,118,631,0.187,0.159,0.219
+Rest of Austria,Project Management,116,631,0.184,0.156,0.216
+Rest of Austria,Banking/Insurance,107,631,0.17,0.142,0.201
+Rest of Austria,Healthcare/Pharma/Bio,81,631,0.128,0.104,0.157
+Rest of Austria,Risk/Actuarial,71,631,0.113,0.09,0.14
+Rest of Austria,Supply Chain/Logistics,67,631,0.106,0.084,0.133
+Rest of Austria,Marketing,60,631,0.095,0.075,0.12
+Rest of Austria,Automotive/Mobility,43,631,0.068,0.051,0.091
+Rest of Austria,CRM,42,631,0.067,0.05,0.089
+Rest of Austria,Customer Analytics,35,631,0.055,0.04,0.076
+Rest of Austria,Digital/Online Marketing,30,631,0.048,0.034,0.067
+Rest of Austria,Web/Digital Analytics,30,631,0.048,0.034,0.067
+Rest of Austria,Real Estate/Retail,28,631,0.044,0.031,0.063
+Rest of Austria,HR/People Analytics,28,631,0.044,0.031,0.063
+Rest of Austria,E-Commerce,27,631,0.043,0.03,0.062
+Rest of Austria,Product Analytics,25,631,0.04,0.027,0.058
+Rest of Austria,Pricing/Revenue,21,631,0.033,0.022,0.05
+Rest of Austria,Energy,20,631,0.032,0.021,0.048
+Rest of Austria,Industry 4.0 / MES / OPC UA,18,631,0.029,0.018,0.045
+Rest of Austria,Telecom,14,631,0.022,0.013,0.037
+Rest of Austria,Optimization/OR,7,631,0.011,0.005,0.023
+Styria,Consulting,42,68,0.618,0.499,0.724
+Styria,Operations/Manufacturing,19,68,0.279,0.187,0.396
+Styria,Requirements/Business Analysis,19,68,0.279,0.187,0.396
+Styria,Public Sector/Research,14,68,0.206,0.127,0.316
+Styria,Automotive/Mobility,14,68,0.206,0.127,0.316
+Styria,SAP (ERP),13,68,0.191,0.115,0.3
+Styria,Finance/Controlling,11,68,0.162,0.093,0.267
+Styria,Sales/Commercial,9,68,0.132,0.071,0.233
+Styria,Risk/Actuarial,8,68,0.118,0.061,0.215
+Styria,Healthcare/Pharma/Bio,7,68,0.103,0.051,0.198
+Styria,Project Management,7,68,0.103,0.051,0.198
+Styria,Banking/Insurance,5,68,0.074,0.032,0.161
+Styria,HR/People Analytics,5,68,0.074,0.032,0.161
+Styria,Supply Chain/Logistics,4,68,0.059,0.023,0.142
+Styria,E-Commerce,2,68,0.029,0.008,0.101
+Styria,CRM,2,68,0.029,0.008,0.101
+Styria,Energy,1,68,0.015,0.003,0.079
+Styria,Web/Digital Analytics,1,68,0.015,0.003,0.079
+Styria,Optimization/OR,1,68,0.015,0.003,0.079
+Styria,Digital/Online Marketing,1,68,0.015,0.003,0.079

@@ -127,3 +127,91 @@ def test_main_refuses_a_missing_date_and_an_empty_tree(synthetic_raw, tmp_path, 
     with pytest.raises(SystemExit):
         BI.main([])
     assert not (tmp_path / "interim_postings.jsonl").exists()
+
+
+# ---------------- single-date snapshot rule for recurring runs (--allow-missing / --exclude, manifest record)
+def _own_copy(synthetic_raw, tmp_path):
+    """The synthetic raw tree is shared between tests; tests that remove or add folders work on their own copy."""
+    import shutil
+    dst = tmp_path / "raw_copy"
+    shutil.copytree(synthetic_raw, dst)
+    return dst
+
+
+def _manifest(tmp_path):
+    return json.loads((tmp_path / "interim_build_manifest.json").read_text(encoding="utf-8"))
+
+
+def test_missing_source_with_allow_missing_is_left_out_and_recorded(synthetic_raw, tmp_path, monkeypatch):
+    import shutil
+    from conftest import RUN_DATE
+    raw = _own_copy(synthetic_raw, tmp_path)
+    shutil.rmtree(raw / "linkedin" / RUN_DATE)
+    (raw / "linkedin" / "2025-12-01").mkdir(parents=True)                   # an older folder must NOT be substituted
+    _isolate(monkeypatch, raw, tmp_path)
+    BI.main(["--date", RUN_DATE, "--allow-missing"])
+    man = _manifest(tmp_path)
+    assert man["unique_postings_per_source"]["linkedin"] == 0 and man["rows_total"] == 13
+    assert man["run_folders"]["linkedin"] is None and man["folder_dates"] == [RUN_DATE] and man["mixed_dates"] is False
+    assert man["source_status"]["linkedin"] == {"status": "missing", "folder": None, "reason": f"no folder {RUN_DATE}", "n_postings": 0}
+    assert man["source_status"]["eures"]["status"] == "current" and man["source_status"]["eures"]["folder"] == f"data/raw/eures/{RUN_DATE}"
+    assert man["excluded_sources"] == {"linkedin": f"no folder {RUN_DATE}"}
+    assert "never replaced by an older folder" in man["snapshot_rule"]
+    assert "linkedin" not in set(pd.read_parquet(tmp_path / "interim_postings.parquet").source)
+
+
+def test_exclude_names_a_source_whose_folder_exists_but_is_unusable(synthetic_raw, tmp_path, monkeypatch):
+    from conftest import RUN_DATE
+    _isolate(monkeypatch, synthetic_raw, tmp_path)
+    BI.main(["--date", RUN_DATE, "--exclude", "karriere=blocked: 3 consecutive 403", "--exclude", "jobsat"])
+    man = _manifest(tmp_path)
+    assert man["unique_postings_per_source"]["karriere"] == 0 and man["unique_postings_per_source"]["jobsat"] == 0
+    assert man["source_status"]["karriere"]["status"] == "excluded"
+    assert man["excluded_sources"] == {"karriere": "blocked: 3 consecutive 403", "jobsat": "excluded by caller"}
+    assert man["rows_total"] == 9
+
+
+def test_a_missing_source_without_allow_missing_is_still_an_error(synthetic_raw, tmp_path, monkeypatch):
+    import shutil
+    import pytest
+    from conftest import RUN_DATE
+    raw = _own_copy(synthetic_raw, tmp_path)
+    shutil.rmtree(raw / "linkedin" / RUN_DATE)
+    _isolate(monkeypatch, raw, tmp_path)
+    with pytest.raises(SystemExit):
+        BI.main(["--date", RUN_DATE])
+    for bad in (["--allow-missing"], ["--date", RUN_DATE, "--exclude", "stepstone"]):
+        _isolate(monkeypatch, raw, tmp_path)
+        with pytest.raises(SystemExit):
+            BI.main(bad)
+
+
+def test_legacy_newest_per_source_mode_refuses_mixed_dates(synthetic_raw, tmp_path, monkeypatch):
+    import pytest
+    raw = _own_copy(synthetic_raw, tmp_path)
+    (raw / "linkedin" / "2026-02-01").mkdir()                                 # newer, empty folder for one source only
+    _isolate(monkeypatch, raw, tmp_path)
+    with pytest.raises(SystemExit) as e:
+        BI.main([])
+    assert "different dates" in str(e.value) and "nothing written" in str(e.value)
+    assert not (tmp_path / "interim_postings.parquet").exists()
+    assert not (tmp_path / "interim_postings.jsonl").exists()
+    assert not (tmp_path / "interim_build_manifest.json").exists()
+
+
+def test_allow_mixed_keeps_the_old_behaviour(synthetic_raw, tmp_path, monkeypatch, capsys):
+    from conftest import RUN_DATE
+    raw = _own_copy(synthetic_raw, tmp_path)
+    (raw / "linkedin" / "2026-02-01").mkdir()
+    _isolate(monkeypatch, raw, tmp_path)
+    BI.main(["--allow-mixed"])
+    man = _manifest(tmp_path)
+    assert man["mixed_dates"] is True and man["folder_dates"] == [RUN_DATE, "2026-02-01"]
+    assert "not one snapshot" in capsys.readouterr().out
+
+
+def test_single_date_legacy_build_is_not_mixed(synthetic_raw, tmp_path, monkeypatch):
+    _isolate(monkeypatch, synthetic_raw, tmp_path)
+    BI.main([])                                                               # every source has the same newest date
+    man = _manifest(tmp_path)
+    assert man["mixed_dates"] is False and len(man["folder_dates"]) == 1

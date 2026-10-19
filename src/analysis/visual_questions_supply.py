@@ -34,7 +34,7 @@ from engine import (  # noqa: E402
     new_figure,
     spread_labels,
 )
-from visual_questions_demand import FAMILY_LABEL, table  # noqa: E402
+from visual_questions_demand import FAMILY_LABEL, pct_txt, table  # noqa: E402
 
 JOINT_SOURCE = f"{DEMAND_SOURCE}; {SUPPLY_SOURCE}"
 JOINT_NOTE = ("Two different universes joined on shared taxonomies - read rankings and orders of magnitude, "
@@ -417,6 +417,9 @@ def bq25():
     senior = ds7[ds7.category.str.contains("senior")].iloc[0]
     # Senior and lead are separate rows in DS07; the decision documents quote them together.
     lead = ds7[ds7.category.str.contains("lead")].iloc[0]
+    unl = ds7[ds7.category.str.contains("unlabelled")].iloc[0]
+    unl_ads = pct_txt(unl.demand_count / unl.demand_n, 1)
+    unl_bios = pct_txt(unl.supply_count / unl.supply_n)
     demand_top = senior.demand_share + lead.demand_share
     supply_top = senior.supply_share + lead.supply_share
     finalise(
@@ -426,7 +429,7 @@ def bq25():
         source=JOINT_SOURCE,
         units="share of the side's population",
         n=f"n = {int(ds7.demand_n.max())} postings / {int(ds7.supply_n.max())} bio-declared accounts",
-        note=JOINT_NOTE + " Unlabelled dominates both sides (57.5 % of ads, 68 % of bios).",
+        note=JOINT_NOTE + f" Unlabelled dominates both sides ({unl_ads} of ads, {unl_bios} of bios).",
     )
     return Spec(
         chart_id="BQ25_seniority_mismatch",
@@ -457,6 +460,11 @@ def bq26():
     ds12 = table("DS12_marketing_x_data_intersection.csv")
     supply = ds12[ds12.side == "supply"].iloc[0]
     demand = ds12[ds12.side == "demand"].iloc[0]
+    trans = table("C22_transition_signals.csv").iloc[0]
+    explicit_share = pct_txt(trans.explicit_transition_wording / trans.n, 1)
+    prior = table("C22b_prior_domains.csv")
+    explicit_marketing = int(prior[(prior.population == "P_T1 with explicit transition wording")
+                                   & (prior.prior_domain == "marketing")]["count"].sum())
     steps = [
         ("Data-signal candidates observed", supply.n),
         ("… naming any marketing/customer capability", supply.P_data_marketing_capability_any),
@@ -486,7 +494,7 @@ def bq26():
         source=JOINT_SOURCE,
         units="public accounts (linear scale, zero baseline)",
         n=f"n = {int(supply.n):,} data-signal accounts; demand n = {market_counts()['core']} postings",
-        note=JOINT_NOTE + " The demand side of this intersection is 24 ads - a rare space on both sides.",
+        note=JOINT_NOTE + f" The demand side of this intersection is {int(demand.marketing_analytics_postings)} ads - a rare space on both sides.",
     )
     return Spec(
         chart_id="BQ26_marketing_x_data",
@@ -503,8 +511,8 @@ def bq26():
         data_signature="bivariate-simple",
         tables=["DS12_marketing_x_data_intersection.csv", "C24_marketing_data_intersection.csv"],
         units="accounts",
-        caveat="Each step is a subset of the one above it. Public GitHub does not narrate career changes (3.4 % "
-               "explicit, marketing 0), so transitioners are invisible here rather than absent.",
+        caveat="Each step is a subset of the one above it. Public GitHub does not narrate career changes "
+               f"({explicit_share} explicit, marketing {explicit_marketing}), so transitioners are invisible here rather than absent.",
         anchors=[
             ("CAREER_SUPPLY_DEMAND_MAP.md", "after_heading",
              "## 19. What does the marketing + data intersection look like? (C22d, C24, DS12)"),

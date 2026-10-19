@@ -1,9 +1,9 @@
 degree_field,count,n,share,ci_low,ci_high
-Computer Science/Informatics,271,719,0.377,0.342,0.413
-Engineering/Physics,238,719,0.331,0.298,0.366
-Economics/Business,189,719,0.263,0.232,0.296
-Data Science,126,719,0.175,0.149,0.205
-Statistics/Mathematics,90,719,0.125,0.103,0.151
-Marketing/Communication,14,719,0.019,0.012,0.032
-Natural/Life Sciences,11,719,0.015,0.009,0.027
-Social Sciences/Psychology,4,719,0.006,0.002,0.014
+Computer Science/Informatics,255,699,0.365,0.33,0.401
+Engineering/Physics,242,699,0.346,0.312,0.382
+Economics/Business,194,699,0.278,0.246,0.312
+Data Science,135,699,0.193,0.166,0.224
+Statistics/Mathematics,95,699,0.136,0.112,0.163
+Natural/Life Sciences,16,699,0.023,0.014,0.037
+Marketing/Communication,7,699,0.01,0.005,0.021
+Social Sciences/Psychology,4,699,0.006,0.002,0.015

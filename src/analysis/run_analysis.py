@@ -53,7 +53,20 @@ def share_table(df: pd.DataFrame, col: str, name: str, groupcol: str | None = No
         for k, v in expl.value_counts().items():
             lo, hi = wilson(int(v), n)
             rows.append({**({groupcol: g} if groupcol else {}), name: k, "count": int(v), "n": n, "share": round(v / n, 3), "ci_low": lo, "ci_high": hi})
-    return pd.DataFrame(rows)
+    # no category value at all (e.g. a skill group that no remaining row mentions): keep the columns so callers can still sort and write
+    return pd.DataFrame(rows, columns=None if rows else [*([groupcol] if groupcol else []), name, "count", "n", "share", "ci_low", "ci_high"])
+
+
+def industry_by_source(core: pd.DataFrame, sort_source: str = "linkedin", top: int = 40) -> pd.DataFrame:
+    """Raw industry label x source counts, largest first by `sort_source`.
+
+    A snapshot that lacks `sort_source` (the source was left out of a partial collection) gets a zero column of that name,
+    so the table keeps its shape and the build does not stop; a warning says so."""
+    ind = pd.crosstab(core.source, core.industry_raw.fillna("unspecified")).T
+    if sort_source not in ind.columns:
+        print(f"WARNING: no {sort_source} rows in this snapshot; T04c is sorted on an all-zero {sort_source} column", flush=True)
+        ind[sort_source] = 0
+    return ind.sort_values(sort_source, ascending=False).head(top)
 
 
 def main():
@@ -126,7 +139,7 @@ def main():
                              "top10_share_of_named", "top25_share_of_named", "agency_share_of_named_postings", "eures_anonymised_employer_rows", "styria_postings_without_named_employer"],
                   "value": [len(core), len(emp), len(core) - len(emp), e.shape[0], int((e.styria > 0).sum()), int((e.graz_area > 0).sum()), round(top10 / len(emp), 3), round(top25 / len(emp), 3), round(emp.is_agency.mean(), 3),
                             int(core[(core.source == "eures") & core.company_norm.isna()].shape[0]), int(core[core.is_styria & core.company_norm.isna()].shape[0])]}).to_csv(TAB / "T04b_employer_concentration.csv", index=False)
-    pd.crosstab(core.source, core.industry_raw.fillna("unspecified")).T.sort_values("linkedin", ascending=False).head(40).to_csv(TAB / "T04c_linkedin_industry_raw.csv")
+    industry_by_source(core).to_csv(TAB / "T04c_linkedin_industry_raw.csv")
 
     # ---------------- T04d dual-track employers (intern_student AND trainee_junior in the snapshot)
     emp_tr = core[core.company_norm.notna()]

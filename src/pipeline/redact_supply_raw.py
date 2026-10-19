@@ -43,13 +43,14 @@ import argparse
 import datetime as dt
 import hashlib
 import json
-import os
 import re
 import sys
 from collections import Counter
 from pathlib import Path
 
 import pandas as pd
+
+from fsutil import replace_retry  # atomic replace that retries on short Windows file locks
 
 ROOT = Path(__file__).resolve().parents[2]
 PERSONAL_FIELDS = ["bio", "location_text", "company", "blog", "login"]  # processed candidate rows
@@ -91,7 +92,7 @@ class Report:
 
 
 def _replace(tmp: Path, path: Path) -> None:
-    os.replace(tmp, path)
+    replace_retry(tmp, path)
 
 
 def _nonempty(v) -> bool:

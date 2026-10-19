@@ -4,8 +4,8 @@ Each file states its denominator and vintage. career_paths.json is written by ha
 (docs/career-map.md is the source) because it encodes judgement, not just counts.
 
 Regional counts come on two bases (market_summary.json `count_basis`): the primary
-`state` field (T03a; Styria 54 / Vienna 343 in the 2026-09-16 run) and the
-any-listed-site flags (styria_core / vienna_core 58 / 350, T04a `styria`,
+`state` field (T03a; market_summary counts styria_core_primary_state / vienna_core_primary_state) and the
+any-listed-site flags (market_summary styria_core / vienna_core, T04a `styria`,
 *_by_styria tables). Both are exported and labelled: META["regional_count_basis"]
 and the per-section `section_basis` in locations.json.
 """

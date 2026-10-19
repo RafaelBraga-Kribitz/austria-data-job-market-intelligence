@@ -1,178 +1,178 @@
 family_before,sample_pos,posting_uid,title,normalized_title_before,manual_label,family_after,normalized_title_after,kept_in_family_after
-bi,1,p_4fbab772ee159ff3,Senior Consultant SAP Analytics (w/m/d),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
-bi,2,p_0fb6d9ab8b5bbdea,SAP Solution Consultant – Supply Chain (w/m/d),BI Consultant / Analytics Consultant,FP,out_of_scope,,False
-bi,3,p_ad24f0c3555e0d9f,Consultant Data & Insights (m/w/x),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
-bi,4,p_09ce87c11f16e72d,Non-Financial Reporting Specialist (m/w/d),BI Developer / BI Engineer,FP,out_of_scope,,False
-bi,5,p_730dcf37b5fe89e4,Data Consultant (w/m/*),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
-bi,6,p_1934aa790e07780b,SAP HCM Consultant (m/w) - Wien / Graz / Linz / Innsbruck / München / Mainz,BI Consultant / Analytics Consultant,FP,out_of_scope,,False
-bi,7,p_fa90c97165cdd03c,Business Intelligence Advisor (w/m/d),BI Analyst,TP,bi,BI Analyst,True
-bi,8,p_25695064e7362f2e,Controller - Schwerpunkt Analytics & Business-Intelligence (m/w/d),BI Analyst,TP,bi,BI Analyst,True
-bi,9,p_05b6ce11fb3d2de0,Regulatory Reporting Specialist (all genders) - Group Finance,BI Developer / BI Engineer,FP,out_of_scope,,False
-bi,10,p_51654f3082980690,Business Analyst Produktion mit BI-Expertise (m/w/d) (Business-Analyst/in),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
-bi,11,p_50493ef1dd290f1d,Senior Consultant Intelligent Data Processing / Input Management (all genders),BI Consultant / Analytics Consultant,FP,bi,BI Consultant / Analytics Consultant,True
-bi,12,p_59e4ef6261570a9a,Teamleiter_in Vertriebscontrolling & Business Intelligence,BI Analyst,TP,bi,BI Analyst,True
-bi,13,p_b057fa72cfc0f854,Business Intelligence Analyst / Reporting (w/m/d),BI Analyst,TP,bi,BI Analyst,True
-bi,14,p_770c2c00cb3adbd9,Senior Consultant (w/m/d) – Banking & Financial Institutions,BI Consultant / Analytics Consultant,FP,out_of_scope,,False
-bi,15,p_7619b620480d7420,EDI Reporting Specialist (all gender),BI Developer / BI Engineer,FP,out_of_scope,,False
-bi,16,p_2174eaef1b77bc5d,Consultant SAP BTP & Agentic AI (all genders) – BCG Platinion - Vienna,BI Consultant / Analytics Consultant,FP,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
-bi,17,p_c6367e5908909665,Working Student BI (m/w/d),BI Analyst,TP,bi,BI Analyst,True
-bi,18,p_52dd3be3fff785ca,Senior SAP BW & Datasphere Consultant (m/w/d),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
-bi,19,p_16d98b4989efbe2a,"Senior Consultant Search, Content & AI Visibility (SEO/GEO) (m/w/d), Wien",BI Consultant / Analytics Consultant,FP,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
-bi,20,p_22c2330a99670db3,"Expert:in Internationales Reporting & Innovation (Versicherung, Power BI & KI)",BI Analyst,TP,bi,BI Analyst,True
-bi,21,p_1680fb66006a97a2,Managing Consultant Banking (all genders),BI Consultant / Analytics Consultant,FP,out_of_scope,,False
-bi,22,p_4358777ce182b106,Business Analytics Consultant (w/m/d),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
-bi,23,p_6997a0fdd687772a,Business Intelligence & Automations Engineer (w/m/d),BI Analyst,borderline,bi,BI Analyst,True
-bi,24,p_2f3a128c29865f49,Data & Analytics Consultant (m/w/d),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
-bi,25,p_6f00c97356b987ca,Junior Data/Reporting Analyst (all genders) im Bereich Digital Services,BI Analyst,TP,bi,BI Analyst,True
-business_analysis,1,p_b84104d382e58564,MES Business Analyst,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,2,p_d9e835ae826d2792,Business Process Manager Kundendienst (m/w/d) Job-ID 82029,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,3,p_37f63313ec88681e,Requirements Engineer m/w/d,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,4,p_1b5de50a06774520,Senior Expert IT Business Applications FICO (all genders),Business Analyst,FP,out_of_scope,,False
-business_analysis,5,p_5b69b6c05076d2b6,IT Business Analyst (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,6,p_a6a62bbdd8a06a06,Functional Analyst - Human Ressources (w/m/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,7,p_5c107dacc40db452,IT Business Analyst - Retail Applications (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,8,p_c37e9102d5492d32,Senior IT-Analyst (w/m/d) Security Analysis,Business Analyst,FP,out_of_scope,,False
-business_analysis,9,p_cb1f01434067f54b,IT-Analyst,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,10,p_b9172ae53a66b2a0,IT Solution Engineer - Applications & Business Processes,Business Analyst,FP,business_analysis,Business Analyst,True
-business_analysis,11,p_15aefc380a1bf412,Process Manager Product Development (M/F/D)*,Business Analyst,borderline,out_of_scope,,False
-business_analysis,12,p_144ed882680dff1c,Product Owner (m/w/x) - Customer Masterdata,Business Analyst,borderline,business_analysis,Business Analyst,True
-business_analysis,13,p_0008f99863954db1,Business Process Manager (w/m/d) Process Excellence,Business Analyst,borderline,business_analysis,Business Analyst,True
-business_analysis,14,p_f8289a03619e03d4,Digital Lending Business Analyst (w/m/d) Domain Expert - Technology Consulting,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,15,p_706abcc8f2229bde,Business Analyst (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,16,p_024c4bf2369fb75b,IT Business Analyst Finance & ERP (all gender),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,17,p_99cc04b5b8234648,Business Analyst/ Produktmanager*in (w/m/d) Transaktionskommunikation,Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,18,p_b8dd988f6b9feb82,IT Solution Analyst – ESB & Architecture (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,19,p_8551bad59698319f,Business Analyst mit Projektmanagement (m/w/x),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,20,p_aee99dfe97c90b2e,Business Analyst (Teilzeit oder Vollzeit Karenzvertretung),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,21,p_be4fd111a134bcd6,Business Analyst - Produktion (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
-business_analysis,22,p_6261adb99e949126,Business Process Owner - Finance and Controlling,Business Analyst,borderline,business_analysis,Business Analyst,True
-business_analysis,23,p_40165bffdd1d9dc3,Expert:in Kreditrisikomanagement (m/w/d) Verantwortung mit analytischem Fokus,Business Analyst,FP,business_analysis,Business Analyst,True
-business_analysis,24,p_9da28e2d7fd6dda5,Software Requirement Engineer (m/w/d) Embedded Systeme,Business Analyst,FP,out_of_scope,,False
-business_analysis,25,p_ec9fbd0261d68aba,Business Analyst (m/w/d) – Buchungssystem (Freelance),Business Analyst,TP,business_analysis,Business Analyst,True
-data_analytics,1,p_67cf65e2ee7387da,Business Data Analyst*in,Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,2,p_b14d4d71bd21ab80,Team Lead Data & Analytics (m/f/d),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,3,p_01721f2510eb9dd9,Postdoctoral Researcher (Quantitative Methods) (m/f/d),Financial / Risk / Controlling Analyst (data-heavy),FP,other_data,Actuary / Mathematician (adjacent),False
-data_analytics,4,p_07c8c172435d319a,Data-Analyst (w/m/x),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,5,p_4681d6c46e2ce87f,Research Analyst Sustainable IT / GreenOps (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,6,p_8f4e7d459cd54076,Senior Data Analyst Logistik (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,7,p_3aee95ba5bbb6d29,"Online Data Analyst (m,f,d) - Austria",Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,8,p_deef568f6e734c90,Data Analyst/Scientist,Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,9,p_3ba4cc888a9c6d9a,"Manager, Market Research & Business Development",Financial / Risk / Controlling Analyst (data-heavy),FP,out_of_scope,,False
-data_analytics,10,p_b5eda1903ff11a28,HR Reporting & Analytics Specialist (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,11,p_2cfe52555dd26ac8,Consultant - quantitative Methoden & Strategy (w|m|d),Financial / Risk / Controlling Analyst (data-heavy),borderline,other_data,Actuary / Mathematician (adjacent),False
-data_analytics,12,p_36a467774cf7fb24,Datenanalyst @ Quehenberger Logistics,Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,13,p_c729718db1bd76da,Commercial Pricing Analyst (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,14,p_453a746271b96da2,HR-Analyst:in (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,15,p_426ca4a09a4706a7,Spezialist Digitalisierung & Data Analytics (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,16,p_ddc3d0ecee4afdbc,Data Analyst:in im Meldewesen,Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,17,p_72adc373c6536840,Supply Chain Analyst (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,18,p_582e742fceb3f4e5,Controlling Business Analyst*in (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,19,p_26051872a0f6a9ec,Quantitative_r Risikomanager_in,Financial / Risk / Controlling Analyst (data-heavy),TP,other_data,Actuary / Mathematician (adjacent),False
-data_analytics,20,p_5eee47c9bcced0e9,Daten Analyst_in (27297),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,21,p_a0f5f1891066fc3e,Senior Controller / Financial Analyst (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,22,p_910abf7b80510ffe,Supply Chain Analyst*in (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_analytics,23,p_793cd1430e182ae9,Teamlead Global HR Systems & Analytics (m/w/d),Data Analyst,borderline,data_analytics,Data Analyst,True
-data_analytics,24,p_12b83adfc7b1f6a4,Pflichtpraktikant:in Business Analytics (Sommersemester 2027) (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
-data_analytics,25,p_bd25fa1fb37d2653,Supply Chain Analyst:in,Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
-data_engineering,1,p_ecfa9f218f32dff3,Senior Database Engineer (w/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,2,p_436ef5f30324840e,Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,3,p_ce32057424deb65c,Data Engineering Consultant (w/m/x) - Austria,Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,4,p_65cb55e07dab7142,Data & Analytics - Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,5,p_7736054d66754a9f,Tool & CAM Data Engineer (m/w/d),Data Engineer,FP,data_engineering,Data Engineer,True
-data_engineering,6,p_39d7dc04c602fbdb,Lead Data Platform Architect (m/w/d),Data Architect / Data Platform,TP,data_engineering,Data Architect / Data Platform,True
-data_engineering,7,p_3213e389b78f0e95,(Senior) Data Platform Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,8,p_d8dd5ed5fa70583b,Software Developer im Bereich Data Warehouse (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,9,p_a9ae652e26dab99f,Data Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,10,p_fd9602feb7443c4c,Senior Data Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,11,p_75ddbc65eb4bc3da,Data Platform Engineer (w/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,12,p_9b20c82d259f28ed,Lead Data Engineer (all genders) [Graz],Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,13,p_f1c26ad78135b3ba,Data Platform Architect,Data Architect / Data Platform,TP,data_engineering,Data Architect / Data Platform,True
-data_engineering,14,p_08d39fddd26cc49c,Senior Data Engineer - Knowledge Graphs & Clinical Informatics (f/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,15,p_0e9f7386014d3494,Senior Datenbankadministrator (w/m/d),Data Engineer,borderline,data_engineering,Data Engineer,True
-data_engineering,16,p_9ed8fe734ffa7d42,Senior Data Engineer*,Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,17,p_dee72cc4155c346d,Data & Analytics - Data Engineering Lead (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,18,p_7a3fd00297eae5d0,Data Engineer (w/m/*),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,19,p_35cce21c19bb9f56,Senior Data Engineer Azure (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,20,p_503cd47c1ebe119a,Data Engineer for Databricks Platform (all humans),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,21,p_5cd95b36a0ef5bd6,Senior Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,22,p_027484fe35a40730,DATA ENGINEER,Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,23,p_59cd83bdd181c7e9,Data Engineer/Data Modeler für den Bereich Data & Analytics (m/w/d) Job ID 83792,Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,24,p_efce29f80c037ac6,Data Engineer (m/w/x),Data Engineer,TP,data_engineering,Data Engineer,True
-data_engineering,25,p_002d295709dd61dc,Database Administrator (m/w/d),Data Engineer,borderline,data_engineering,Data Engineer,True
-data_governance,1,p_145a5c6b1860deb8,(Junior) Produktionsdatenmanager (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,2,p_a939d4b3cac4fa89,Mitarbeiter (w/m/d) für technische Datenbankpflege / Master Data Management,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_governance,3,p_7ff3525f2998b965,Technical Consultant & Lead Developer (w/m/d) Datenmanagement,Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,4,p_ed1ad68d17d51c1f,Head of PIM (Productdatenmanagement) (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,5,p_9ae62e10d18f068d,Mitarbeiter_in (m/w/d) in der Stammdatenwartung BIOGAST Wien,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_governance,6,p_7bdf6e83e0b03ae1,(Senior) Geodatenmanager:in (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,7,p_0193627238e6b632,Product Data Manager (PIM) (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,8,p_bfca1dec46a5777a,Mitarbeiter:in IT-Sicherheits- und Datenschutz-Organisation,Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
-data_governance,9,p_04f3a97e92338d69,Data Governance Consultant (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,10,p_074c3327d3453edd,Student Job (f/m/x) - IT Delivery - Customer Onboarding and Master Data Management (20-25 h/week),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,11,p_4cd812cc36c80418,Data Product Manager (w/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,12,p_3e8854912b5fd785,Mitarbeiter Stammdatenmanagement (m/w/d),Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_governance,13,p_76da487850c877b5,Product Data Manager:in,Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,14,p_fba0b8737fe3baff,Stammdatenmanagement im technischen Einkauf (m/w/d),Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_governance,15,p_e276ca9f1c2b8f8f,Praktikum IT / Datenmanagement für BMD-Einführung (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,16,p_c4d02bcc9885fa04,Data Managerin/Manager Spezialisierung Metadatenmodellierung (w/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,17,p_dfe502310e1358f0,"Specialist, Data Management PHC",Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,18,p_b1a15b663f2caabd,Consulting Solution Architect - Data Management,Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,19,p_1621f2fb83594efc,ERP Key User Warenwirtschaft & Stammdatenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_governance,20,p_e2e55144a2c6e116,Datenschutz-Experte mit Weitblick (all genders),Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
-data_governance,21,p_2a946041647db732,"(Senior) Microsoft Purview / Data Protection Consultant / Architect (Austria - Wien, Innsbruck, Vocklamarkt)",Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
-data_governance,22,p_c6e0c50552509a24,Mitarbeiterin bzw. Mitarbeiter Med.-Pfleg. Datenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Data Governance / Data Steward / Data Manager,True
-data_governance,23,p_0b1b91858a59ddb9,Product Data Management & Governance Specialist (f/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
-data_governance,24,p_e22add03548564b8,Engineering Data Manager – CAD & PLM (m/w/d),Data Governance / Data Steward / Data Manager,FP,data_governance,Master / Product Data Management (operational),True
-data_governance,25,p_0beb197348e8bbe7,IT-Business Consultant (m/w/x) für Fahrplandatenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
-data_science,1,p_a93a41cf2511ea84,"Computer Vision Engineer, Data Capture",Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,2,p_9f234d3df0b72904,DATA SCIENTIST (M/W/X),Data Scientist,TP,data_science,Data Scientist,True
-data_science,3,p_09b944c5d9881061,Principal Biostatistician (Immunology) - FSP,Statistician / Biostatistician,TP,data_science,Statistician / Biostatistician,True
-data_science,4,p_9b1533e51af6dc7a,Data Science Student (Supply Chain),Data Scientist,TP,data_science,Data Scientist,True
-data_science,5,p_ad96412a751446d9,Data / Machine Learning Engineer (m/w/d),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,6,p_f8129de7fe7c8ef6,Ingenieur (m/w/d) für Künstliche Intelligenz und Digitalisierung - Teilzeit,Data Scientist,borderline,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
-data_science,7,p_85d1b477608852ec,Senior AI Engineer (Smart Solutions) (all genders),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,8,p_c27c56ed4d2441a6,Senior Data Scientist (all genders),Data Scientist,TP,data_science,Data Scientist,True
-data_science,9,p_196c71c0cf8b88ba,Data Scientist / AI Engineer (d/m/f),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,10,p_4101d2537cd4d43a,Data Scientist Supply Chain Management (m/w/d),Data Scientist,TP,data_science,Data Scientist,True
-data_science,11,p_1b5b088429fb2243,(Senior) Consultant im Bereich aktuarielle Beratung (all genders),Statistician / Biostatistician,FP,other_data,Actuary / Mathematician (adjacent),False
-data_science,12,p_f73646e4c921aa3e,Senior AI Engineer (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,13,p_25a1f360b47e1312,Senior AI-Engineer (all genders),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,14,p_bd406136fe02c7ce,ML Engineer - Medical Imaging (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,15,p_4fa2764a46043060,Physiker/Mathematiker/Naturwissenschaftler als Berater im Bereich Datenintegration (m/w/d),Statistician / Biostatistician,FP,other_data,Actuary / Mathematician (adjacent),False
-data_science,16,p_b2d7f574c17edbcf,Junior AI Engineer (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,17,p_c0133268e6f52bf4,Data Scientist (m/f/x),Data Scientist,TP,data_science,Data Scientist,True
-data_science,18,p_e1585c2785b2d102,IT- und KI-Experte,Data Scientist,borderline,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
-data_science,19,p_65f059e80c2ed586,Machine Learning Engineer (gn*),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,20,p_6abccf64a483369c,Data Scientist (Production & Quality focus),Data Scientist,TP,data_science,Data Scientist,True
-data_science,21,p_2db23347cc16e3bf,AI Engineer / Softwareentwickler AI (m/w/x),Machine Learning Engineer,borderline,data_science,Machine Learning / AI Engineer,True
-data_science,22,p_e4f1d240f9f0e02a,Senior MLOps (m/w/d),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
-data_science,23,p_3454931ccd8d9dbb,Data & AI Solutions Engineer (m/w/d),Data Scientist,borderline,data_science,Data Scientist,True
-data_science,24,p_39918afa4708eaba,Full-Stack Data Scientist (f/m/d),Data Scientist,TP,data_science,Data Scientist,True
-data_science,25,p_7e50a98a03be9ac1,Staff Scientist - Embedded AI (all genders),Data Scientist,FP,out_of_scope,,False
-marketing_analytics,1,p_f005ce2572733717,Data Analyst | Marketing,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,2,p_a69dc60129bae939,"Praktikum Digital Analytics (m/w/d)| Ab September, Bregenz",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,3,p_ee6380b9638c47c2,"Mitarbeiter/in Performance Marketing, Datenanalyse & Technik",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,4,p_aab54fec04379d14,Praktikant:in (w/m/d) Customer Insights | AI & Trigger LogicI (ab 30h/Woche) | Dauer: bis zu max. 2 Jahren,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,5,p_f35d0e3b9dd6e2b8,Consultant Digital Analytics & Operations (m/w/x) ab 25 h/Woche,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,6,p_1333d61ccc0d151b,Junior Martech Manager*in Landingpage & Content (m/w/d) - 30 Stunden/Woche,Marketing/Growth/CRM Analyst,FP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,7,p_f0d5eca5390dd443,"Business & Data Analyst in Sales, Marketing und Distribution Controlling (m/w/d)",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,8,p_7a827f36bbe78065,Digital Analytics Engineer (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,9,p_9cedba5ae6b73ccc,Senior Consultant Digital Analytics (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,10,p_9d8ec42f779fc4c3,"Praktikum Digital Analytics (m/w/d)| Ab September, Wien",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,11,p_b7ac6e635d173916,"(Junior) Marketing Analyst*in (m/w/d), Hartlauer Zentrale (Betriebswirt/in (Fachschule) - Absatz/Marketing/Bachelor Professional in Wirtschaft)",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,12,p_507437db9727a8b8,MARKETING ANALYTICS LEAD (m/w),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,13,p_5f59ee28da21b4cb,Senior Influencer Marketing Analyst (f/m/d),Marketing/Growth/CRM Analyst,borderline,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,14,p_de5f22b8b625df72,"Senior Consultant Digital Analytics (m/w/d), Bregenz",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,15,p_ed69a316cb89e9ac,Teamleitung Customer Insights & Data Analytics (w/m/x),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,16,p_acb4c89f20109716,Junior Influencer Marketing Analyst (f/m/d),Marketing/Growth/CRM Analyst,borderline,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,17,p_3c405d598d87c28a,Data Scientist (Digital Marketing) (m/w/d),Marketing Data Scientist,TP,marketing_analytics,Marketing Data Scientist,True
-marketing_analytics,18,p_97dc4a5778a2548f,MarTech / CRM Marketing Lead,Marketing/Growth/CRM Analyst,FP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,19,p_fbce539772c5ea21,(Junior) Marketing Analyst*in (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,20,p_8bcfde97fc7bc1bd,Data Scientist (Marketing) (m/w/d),Marketing Data Scientist,TP,marketing_analytics,Marketing Data Scientist,True
-marketing_analytics,21,p_afdfe5ccc524caef,(Junior) Marketing Analyst*in (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,22,p_d5a8a51033fd3a9b,"Senior Consultant Digital Analytics (m/w/d), Wien",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,23,p_40d139e4bd2c4f33,Digital Analytics Engineer (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-marketing_analytics,24,p_5db33bcffe3ef289,TRACKING & WEB ANALYTICS | EXPERT,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
-product_analytics,1,p_e4cc57eeaad43f99,Labormitarbeiter:in (all genders) - Produktanalytiker:in in der Qualitätskontrolle mit HPLC/UPLC Analytik Erfahrung,Product Analyst,FP,out_of_scope,,False
-product_analytics,2,p_e5e0089459ef596e,Product Analyst (all genders),Product Analyst,TP,product_analytics,Product Analyst,True
-product_analytics,3,p_bad4c748ba3fa7d1,Senior Technical Product Owner / Analyst (m/w/d),Product Analyst,FP,other_data,Other data / analytics role,False
+bi,1,p_96d6fa71918cc126,Senior Consultant SAP Analytics (w/m/d),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
+bi,2,p_e97461bdaa92cf21,SAP Solution Consultant – Supply Chain (w/m/d),BI Consultant / Analytics Consultant,FP,out_of_scope,,False
+bi,3,p_74be0dca2b8955f9,Consultant Data & Insights (m/w/x),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
+bi,4,p_7bc9718ab024c286,Non-Financial Reporting Specialist (m/w/d),BI Developer / BI Engineer,FP,out_of_scope,,False
+bi,5,p_a0d4706e908a2c23,Data Consultant (w/m/*),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
+bi,6,p_a6ce9d8cb4098786,SAP HCM Consultant (m/w) - Wien / Graz / Linz / Innsbruck / München / Mainz,BI Consultant / Analytics Consultant,FP,out_of_scope,,False
+bi,7,p_061759f48c0b2613,Business Intelligence Advisor (w/m/d),BI Analyst,TP,bi,BI Analyst,True
+bi,8,p_0ee2ec92df7b8f55,Controller - Schwerpunkt Analytics & Business-Intelligence (m/w/d),BI Analyst,TP,bi,BI Analyst,True
+bi,9,p_9366d12067ecb0db,Regulatory Reporting Specialist (all genders) - Group Finance,BI Developer / BI Engineer,FP,out_of_scope,,False
+bi,10,p_b4948aae605ee5fe,Business Analyst Produktion mit BI-Expertise (m/w/d) (Business-Analyst/in),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
+bi,11,p_2bc87d27e8ce22fa,Senior Consultant Intelligent Data Processing / Input Management (all genders),BI Consultant / Analytics Consultant,FP,bi,BI Consultant / Analytics Consultant,True
+bi,12,p_fe27152f4384384b,Teamleiter_in Vertriebscontrolling & Business Intelligence,BI Analyst,TP,bi,BI Analyst,True
+bi,13,p_3472d19cef9523dc,Business Intelligence Analyst / Reporting (w/m/d),BI Analyst,TP,bi,BI Analyst,True
+bi,14,p_c946510057c77f80,Senior Consultant (w/m/d) – Banking & Financial Institutions,BI Consultant / Analytics Consultant,FP,out_of_scope,,False
+bi,15,p_5326cc7fedba570e,EDI Reporting Specialist (all gender),BI Developer / BI Engineer,FP,out_of_scope,,False
+bi,16,p_08838563276bccff,Consultant SAP BTP & Agentic AI (all genders) – BCG Platinion - Vienna,BI Consultant / Analytics Consultant,FP,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
+bi,17,p_c8d7db176243de2b,Working Student BI (m/w/d),BI Analyst,TP,bi,BI Analyst,True
+bi,18,p_12f3c80eee889a45,Senior SAP BW & Datasphere Consultant (m/w/d),BI Developer / BI Engineer,TP,bi,BI Developer / BI Engineer,True
+bi,19,p_81e5a45d1dffcd93,"Senior Consultant Search, Content & AI Visibility (SEO/GEO) (m/w/d), Wien",BI Consultant / Analytics Consultant,FP,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
+bi,20,p_5611228f37e73bdc,"Expert:in Internationales Reporting & Innovation (Versicherung, Power BI & KI)",BI Analyst,TP,bi,BI Analyst,True
+bi,21,p_4a49357c449cb1ec,Managing Consultant Banking (all genders),BI Consultant / Analytics Consultant,FP,out_of_scope,,False
+bi,22,p_a77b88f370ea0b44,Business Analytics Consultant (w/m/d),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
+bi,23,p_3cca873b9bdcf0f2,Business Intelligence & Automations Engineer (w/m/d),BI Analyst,borderline,bi,BI Analyst,True
+bi,24,p_4c4d4699bb236ae1,Data & Analytics Consultant (m/w/d),BI Consultant / Analytics Consultant,TP,bi,BI Consultant / Analytics Consultant,True
+bi,25,p_ab90cb3d3455c1e4,Junior Data/Reporting Analyst (all genders) im Bereich Digital Services,BI Analyst,TP,bi,BI Analyst,True
+business_analysis,1,p_2479b16632ddd768,MES Business Analyst,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,2,p_5118e6bbe8e1958b,Business Process Manager Kundendienst (m/w/d) Job-ID 82029,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,3,p_ca948b3a0afaba04,Requirements Engineer m/w/d,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,4,p_eebd031206530dcd,Senior Expert IT Business Applications FICO (all genders),Business Analyst,FP,out_of_scope,,False
+business_analysis,5,p_f9cb5b07ffaf5ce1,IT Business Analyst (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,6,p_6052a59d4c786b56,Functional Analyst - Human Ressources (w/m/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,7,p_1a3bd979458fec1a,IT Business Analyst - Retail Applications (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,8,p_582bfb0b0e0fb7d5,Senior IT-Analyst (w/m/d) Security Analysis,Business Analyst,FP,out_of_scope,,False
+business_analysis,9,p_4d8b864916633c52,IT-Analyst,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,10,p_f7485b19aad92de8,IT Solution Engineer - Applications & Business Processes,Business Analyst,FP,business_analysis,Business Analyst,True
+business_analysis,11,p_38bdcbf008d04d19,Process Manager Product Development (M/F/D)*,Business Analyst,borderline,out_of_scope,,False
+business_analysis,12,p_208e1829073ec9c9,Product Owner (m/w/x) - Customer Masterdata,Business Analyst,borderline,business_analysis,Business Analyst,True
+business_analysis,13,p_b88cb06251654304,Business Process Manager (w/m/d) Process Excellence,Business Analyst,borderline,business_analysis,Business Analyst,True
+business_analysis,14,p_df9fbbc123711524,Digital Lending Business Analyst (w/m/d) Domain Expert - Technology Consulting,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,15,p_4bd059e74eb91c1f,Business Analyst (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,16,p_3399c6511ae22a90,IT Business Analyst Finance & ERP (all gender),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,17,p_b500ae5f645cb149,Business Analyst/ Produktmanager*in (w/m/d) Transaktionskommunikation,Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,18,p_cacd6c769ceaaec5,IT Solution Analyst – ESB & Architecture (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,19,p_f0c33c03dd5cefb1,Business Analyst mit Projektmanagement (m/w/x),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,20,p_6937d5b86663ac24,Business Analyst (Teilzeit oder Vollzeit Karenzvertretung),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,21,p_6ce3997233628070,Business Analyst - Produktion (m/w/d),Business Analyst,TP,business_analysis,Business Analyst,True
+business_analysis,22,p_5148d4857a20050d,Business Process Owner - Finance and Controlling,Business Analyst,borderline,business_analysis,Business Analyst,True
+business_analysis,23,p_b3404da89990e19b,Expert:in Kreditrisikomanagement (m/w/d) Verantwortung mit analytischem Fokus,Business Analyst,FP,business_analysis,Business Analyst,True
+business_analysis,24,p_f7cc2e27569b6351,Software Requirement Engineer (m/w/d) Embedded Systeme,Business Analyst,FP,out_of_scope,,False
+business_analysis,25,p_5216b9fdf7064121,Business Analyst (m/w/d) – Buchungssystem (Freelance),Business Analyst,TP,business_analysis,Business Analyst,True
+data_analytics,1,p_33d86c049e49f6cd,Business Data Analyst*in,Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,2,p_b39fb141a02f80b2,Team Lead Data & Analytics (m/f/d),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,3,p_1edd1ff8fdf47735,Postdoctoral Researcher (Quantitative Methods) (m/f/d),Financial / Risk / Controlling Analyst (data-heavy),FP,other_data,Actuary / Mathematician (adjacent),False
+data_analytics,4,p_5e6d8c5ed7d19ffa,Data-Analyst (w/m/x),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,5,p_36a22ad2cc2b9065,Research Analyst Sustainable IT / GreenOps (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,6,p_787683ba2630b6b3,Senior Data Analyst Logistik (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,7,p_78f11f29cb9cfac9,"Online Data Analyst (m,f,d) - Austria",Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,8,p_b66ad1fe9cea2e97,Data Analyst/Scientist,Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,9,p_d82300da744eee3a,"Manager, Market Research & Business Development",Financial / Risk / Controlling Analyst (data-heavy),FP,out_of_scope,,False
+data_analytics,10,p_b4de92dc5eaad711,HR Reporting & Analytics Specialist (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,11,p_b7f4efcd3f4eca03,Consultant - quantitative Methoden & Strategy (w|m|d),Financial / Risk / Controlling Analyst (data-heavy),borderline,other_data,Actuary / Mathematician (adjacent),False
+data_analytics,12,p_f8c4d32331c6764a,Datenanalyst @ Quehenberger Logistics,Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,13,p_537a0e978c6a5ab3,Commercial Pricing Analyst (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,14,p_3c5b8312afd38bc0,HR-Analyst:in (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,15,p_92a73c701430fdbc,Spezialist Digitalisierung & Data Analytics (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,16,p_b21310860a4914df,Data Analyst:in im Meldewesen,Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,17,p_095f1bf67da3c64f,Supply Chain Analyst (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,18,p_a6e3a339c9d224ac,Controlling Business Analyst*in (w/m/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,19,p_e63a98c5abd8cddd,Quantitative_r Risikomanager_in,Financial / Risk / Controlling Analyst (data-heavy),TP,other_data,Actuary / Mathematician (adjacent),False
+data_analytics,20,p_3ba1a10bc2a94da3,Daten Analyst_in (27297),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,21,p_e1adc2c1b881cab7,Senior Controller / Financial Analyst (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,22,p_b769925385c3513e,Supply Chain Analyst*in (m/w/d),Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_analytics,23,p_2b74a7c09213dde2,Teamlead Global HR Systems & Analytics (m/w/d),Data Analyst,borderline,data_analytics,Data Analyst,True
+data_analytics,24,p_4967c12db935680f,Pflichtpraktikant:in Business Analytics (Sommersemester 2027) (m/w/d),Data Analyst,TP,data_analytics,Data Analyst,True
+data_analytics,25,p_6c1000909af9e902,Supply Chain Analyst:in,Financial / Risk / Controlling Analyst (data-heavy),TP,data_analytics,Financial / Risk / Controlling Analyst (data-heavy),True
+data_engineering,1,p_bd37931b93d6b612,Senior Database Engineer (w/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,2,p_387f1580315fd3c0,Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,3,p_b116286c38e7bb6a,Data Engineering Consultant (w/m/x) - Austria,Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,4,p_8e905d1c6cf27c25,Data & Analytics - Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,5,p_004ba166bde1b098,Tool & CAM Data Engineer (m/w/d),Data Engineer,FP,data_engineering,Data Engineer,True
+data_engineering,6,p_a2c8392b1cac73c2,Lead Data Platform Architect (m/w/d),Data Architect / Data Platform,TP,data_engineering,Data Architect / Data Platform,True
+data_engineering,7,p_5735e8f5dc5b0554,(Senior) Data Platform Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,8,p_8ec59da2f6ce7e03,Software Developer im Bereich Data Warehouse (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,9,p_4ee96d5319382152,Data Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,10,p_bc7f01bdc047466c,Senior Data Engineer (m/w/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,11,p_c21836eb49e75b17,Data Platform Engineer (w/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,12,p_d7d46b0fc7b57761,Lead Data Engineer (all genders) [Graz],Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,13,p_b07d94316cc3ff47,Data Platform Architect,Data Architect / Data Platform,TP,data_engineering,Data Architect / Data Platform,True
+data_engineering,14,p_73754721b30ebb07,Senior Data Engineer - Knowledge Graphs & Clinical Informatics (f/m/d),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,15,p_9f76f7f56b850e1b,Senior Datenbankadministrator (w/m/d),Data Engineer,borderline,data_engineering,Data Engineer,True
+data_engineering,16,p_c83fd5c501995484,Senior Data Engineer*,Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,17,p_f90e5f5ad6f7b2de,Data & Analytics - Data Engineering Lead (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,18,p_d5a6d55cfdfcc761,Data Engineer (w/m/*),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,19,p_6119bdc0acd8d509,Senior Data Engineer Azure (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,20,p_460a289fb6f8df90,Data Engineer for Databricks Platform (all humans),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,21,p_1c6fa5dd59ccafa9,Senior Data Engineer (all genders),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,22,p_1a25b6270b76f7fe,DATA ENGINEER,Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,23,p_393b636ac1f4d4ac,Data Engineer/Data Modeler für den Bereich Data & Analytics (m/w/d) Job ID 83792,Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,24,p_45e89fb296e355c5,Data Engineer (m/w/x),Data Engineer,TP,data_engineering,Data Engineer,True
+data_engineering,25,p_1d36b59bb9a1f22a,Database Administrator (m/w/d),Data Engineer,borderline,data_engineering,Data Engineer,True
+data_governance,1,p_e7358da2add97452,(Junior) Produktionsdatenmanager (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,2,p_dd5143726b29650a,Mitarbeiter (w/m/d) für technische Datenbankpflege / Master Data Management,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_governance,3,p_89c4ea00d740661b,Technical Consultant & Lead Developer (w/m/d) Datenmanagement,Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,4,p_81ca73d20b179901,Head of PIM (Productdatenmanagement) (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,5,p_1a336d4e54490d2e,Mitarbeiter_in (m/w/d) in der Stammdatenwartung BIOGAST Wien,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_governance,6,p_827cd9a47e0c807c,(Senior) Geodatenmanager:in (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,7,p_e0fc00673316b7c8,Product Data Manager (PIM) (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,8,p_47f2ac7cfbc88e9f,Mitarbeiter:in IT-Sicherheits- und Datenschutz-Organisation,Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
+data_governance,9,p_7105c35a7e81e6cf,Data Governance Consultant (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,10,p_937e1bb27c028c18,Student Job (f/m/x) - IT Delivery - Customer Onboarding and Master Data Management (20-25 h/week),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,11,p_853ec70365692331,Data Product Manager (w/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,12,p_9a8f862363a11edc,Mitarbeiter Stammdatenmanagement (m/w/d),Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_governance,13,p_6881c53a610e6f8c,Product Data Manager:in,Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,14,p_35303ab1722b15ce,Stammdatenmanagement im technischen Einkauf (m/w/d),Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_governance,15,p_ec13c911b239672b,Praktikum IT / Datenmanagement für BMD-Einführung (m/w/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,16,p_0b50bf663383d211,Data Managerin/Manager Spezialisierung Metadatenmodellierung (w/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,17,p_e6b818978eaa28e7,"Specialist, Data Management PHC",Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,18,p_3a6635c73012ae91,Consulting Solution Architect - Data Management,Data Governance / Data Steward / Data Manager,TP,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,19,p_f46a4d835f176729,ERP Key User Warenwirtschaft & Stammdatenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_governance,20,p_04cdba432779837c,Datenschutz-Experte mit Weitblick (all genders),Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
+data_governance,21,p_8a47bef95acbfb5d,"(Senior) Microsoft Purview / Data Protection Consultant / Architect (Austria - Wien, Innsbruck, Vocklamarkt)",Data Governance / Data Steward / Data Manager,FP,out_of_scope,,False
+data_governance,22,p_a60f7c4da9a8f42b,Mitarbeiterin bzw. Mitarbeiter Med.-Pfleg. Datenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Data Governance / Data Steward / Data Manager,True
+data_governance,23,p_62b3b0250869e5ec,Product Data Management & Governance Specialist (f/m/d),Data Governance / Data Steward / Data Manager,TP,data_governance,Master / Product Data Management (operational),True
+data_governance,24,p_1637f47e7a442805,Engineering Data Manager – CAD & PLM (m/w/d),Data Governance / Data Steward / Data Manager,FP,data_governance,Master / Product Data Management (operational),True
+data_governance,25,p_a829dbdc65787fbf,IT-Business Consultant (m/w/x) für Fahrplandatenmanagement,Data Governance / Data Steward / Data Manager,borderline,data_governance,Master / Product Data Management (operational),True
+data_science,1,p_5f8940818bb50b48,"Computer Vision Engineer, Data Capture",Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,2,p_1ecf77754d9a2fad,DATA SCIENTIST (M/W/X),Data Scientist,TP,data_science,Data Scientist,True
+data_science,3,p_c25192c9144e114c,Principal Biostatistician (Immunology) - FSP,Statistician / Biostatistician,TP,data_science,Statistician / Biostatistician,True
+data_science,4,p_137943a779099e30,Data Science Student (Supply Chain),Data Scientist,TP,data_science,Data Scientist,True
+data_science,5,p_bdfc5f91374e2080,Data / Machine Learning Engineer (m/w/d),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,6,p_02dc3a939701133e,Ingenieur (m/w/d) für Künstliche Intelligenz und Digitalisierung - Teilzeit,Data Scientist,borderline,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
+data_science,7,p_b15aefcb77dee978,Senior AI Engineer (Smart Solutions) (all genders),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,8,p_fbfe8efd1f7bdc2f,Senior Data Scientist (all genders),Data Scientist,TP,data_science,Data Scientist,True
+data_science,9,p_7b8369efc8acf317,Data Scientist / AI Engineer (d/m/f),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,10,p_8ec0ef0447f59ead,Data Scientist Supply Chain Management (m/w/d),Data Scientist,TP,data_science,Data Scientist,True
+data_science,11,p_04035432cc4d8323,(Senior) Consultant im Bereich aktuarielle Beratung (all genders),Statistician / Biostatistician,FP,other_data,Actuary / Mathematician (adjacent),False
+data_science,12,p_7710e5e3fe09eb26,Senior AI Engineer (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,13,p_74174146ab1b4acb,Senior AI-Engineer (all genders),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,14,p_e0e10f0e42443978,ML Engineer - Medical Imaging (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,15,p_f2bcda28b10b1490,Physiker/Mathematiker/Naturwissenschaftler als Berater im Bereich Datenintegration (m/w/d),Statistician / Biostatistician,FP,other_data,Actuary / Mathematician (adjacent),False
+data_science,16,p_a5f7247134b1d199,Junior AI Engineer (f/m/x),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,17,p_08ea5d751b2eb9e4,Data Scientist (m/f/x),Data Scientist,TP,data_science,Data Scientist,True
+data_science,18,p_0bbfa880a2a0255b,IT- und KI-Experte,Data Scientist,borderline,ai_software_engineering,"AI/ML-focused Software, Platform or DevOps Engineer",False
+data_science,19,p_c27186587ba96c62,Machine Learning Engineer (gn*),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,20,p_2ec73b8be87b4531,Data Scientist (Production & Quality focus),Data Scientist,TP,data_science,Data Scientist,True
+data_science,21,p_642b50dbb1844b5b,AI Engineer / Softwareentwickler AI (m/w/x),Machine Learning Engineer,borderline,data_science,Machine Learning / AI Engineer,True
+data_science,22,p_1c554f8ca1cd0a19,Senior MLOps (m/w/d),Machine Learning Engineer,TP,data_science,Machine Learning / AI Engineer,True
+data_science,23,p_c9f46d4f7657d4d9,Data & AI Solutions Engineer (m/w/d),Data Scientist,borderline,data_science,Data Scientist,True
+data_science,24,p_4e9cea8a5969f9a9,Full-Stack Data Scientist (f/m/d),Data Scientist,TP,data_science,Data Scientist,True
+data_science,25,p_d0846f370f7df73b,Staff Scientist - Embedded AI (all genders),Data Scientist,FP,out_of_scope,,False
+marketing_analytics,1,p_2bb52928432dfe32,Data Analyst | Marketing,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,2,p_b9c7ef011c0b353f,"Praktikum Digital Analytics (m/w/d)| Ab September, Bregenz",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,3,p_7d98acb1faea7d09,"Mitarbeiter/in Performance Marketing, Datenanalyse & Technik",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,4,p_697dcb9c9b77f37b,Praktikant:in (w/m/d) Customer Insights | AI & Trigger LogicI (ab 30h/Woche) | Dauer: bis zu max. 2 Jahren,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,5,p_eccdde1cff0fa717,Consultant Digital Analytics & Operations (m/w/x) ab 25 h/Woche,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,6,p_0a55fe86701b2ede,Junior Martech Manager*in Landingpage & Content (m/w/d) - 30 Stunden/Woche,Marketing/Growth/CRM Analyst,FP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,7,p_0ded01f21d2cf2b6,"Business & Data Analyst in Sales, Marketing und Distribution Controlling (m/w/d)",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,8,p_ad231ca4c4bff3e2,Digital Analytics Engineer (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,9,p_9a497b081e54cce4,Senior Consultant Digital Analytics (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,10,p_b172b06c3c0b8346,"Praktikum Digital Analytics (m/w/d)| Ab September, Wien",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,11,p_89ad0c73e84eb97f,"(Junior) Marketing Analyst*in (m/w/d), Hartlauer Zentrale (Betriebswirt/in (Fachschule) - Absatz/Marketing/Bachelor Professional in Wirtschaft)",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,12,p_ed4aa12d1cbd1857,MARKETING ANALYTICS LEAD (m/w),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,13,p_b2e21e70761b6001,Senior Influencer Marketing Analyst (f/m/d),Marketing/Growth/CRM Analyst,borderline,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,14,p_e7b2acce21f91f0d,"Senior Consultant Digital Analytics (m/w/d), Bregenz",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,15,p_440bbdd47c13a614,Teamleitung Customer Insights & Data Analytics (w/m/x),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,16,p_5319385928b3628e,Junior Influencer Marketing Analyst (f/m/d),Marketing/Growth/CRM Analyst,borderline,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,17,p_118ef7e06563b2b3,Data Scientist (Digital Marketing) (m/w/d),Marketing Data Scientist,TP,marketing_analytics,Marketing Data Scientist,True
+marketing_analytics,18,p_949182bda24eb94b,MarTech / CRM Marketing Lead,Marketing/Growth/CRM Analyst,FP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,19,p_06e1fab997fa9f59,(Junior) Marketing Analyst*in (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,20,p_45f5a93f5f55d9d7,Data Scientist (Marketing) (m/w/d),Marketing Data Scientist,TP,marketing_analytics,Marketing Data Scientist,True
+marketing_analytics,21,p_b21879554c282845,(Junior) Marketing Analyst*in (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,22,p_8daf02fd1326ec33,"Senior Consultant Digital Analytics (m/w/d), Wien",Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,23,p_a400da38d4489195,Digital Analytics Engineer (m/w/d),Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+marketing_analytics,24,p_d22d1078831a09da,TRACKING & WEB ANALYTICS | EXPERT,Marketing/Growth/CRM Analyst,TP,marketing_analytics,Marketing/Growth/CRM Analyst,True
+product_analytics,1,p_731b43f63d6ff761,Labormitarbeiter:in (all genders) - Produktanalytiker:in in der Qualitätskontrolle mit HPLC/UPLC Analytik Erfahrung,Product Analyst,FP,out_of_scope,,False
+product_analytics,2,p_c044539ce9a08eac,Product Analyst (all genders),Product Analyst,TP,product_analytics,Product Analyst,True
+product_analytics,3,p_ca841ad08e9039a2,Senior Technical Product Owner / Analyst (m/w/d),Product Analyst,FP,other_data,Other data / analytics role,False

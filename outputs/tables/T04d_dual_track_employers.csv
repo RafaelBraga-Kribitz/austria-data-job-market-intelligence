@@ -1,2 +1,3 @@
 company_norm,example_company,intern_student_postings,trainee_junior_postings,postings,styria_postings,families,states,is_agency
-red bull,Red Bull,3,1,10,0,"data_analytics,data_governance,data_science",Salzburg,False
+red bull,Red Bull,2,1,10,0,"data_analytics,data_science",Salzburg,False
+accenture dach,Accenture DACH,1,1,5,0,"data_analytics,data_science","Tirol,Wien",False

@@ -192,17 +192,17 @@
   }
  },
  "why_not_from_our_postings": {
-  "snapshot_date": "2026-09-16",
-  "core_postings": 720,
-  "posted_in_collection_month": 376,
-  "share_posted_in_collection_month": 0.522,
-  "share_within_90_days": 0.903,
+  "snapshot_date": "2026-10-18",
+  "core_postings": 699,
+  "posted_in_collection_month": 311,
+  "share_posted_in_collection_month": 0.445,
+  "share_within_90_days": 0.894,
   "median_age_days_by_source": {
-   "eures": 41.0,
-   "jobsat": 19.0,
-   "karriere": 5.0,
+   "eures": 38.0,
+   "jobsat": 30.0,
+   "karriere": 32.0,
    "linkedin": 14.0,
-   "willhaben": 34.5
+   "willhaben": 33.0
   },
   "conclusion": "The month distribution of first-publish dates in a one-day snapshot is the product of posting volume and the probability that an advertisement is still open. With 90% of the core set published within 90 days of collection, the observed pattern is survival decay; seasonality is not identifiable from it."
  },

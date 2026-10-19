@@ -7,10 +7,17 @@ Output: data/processed/interim_postings.parquet + .jsonl
         data/processed/interim_build_manifest.json (run folder used per
         source, row counts, skipped malformed JSON lines)
 
-Usage: python src/pipeline/build_interim.py [--date YYYY-MM-DD]
+Usage: python src/pipeline/build_interim.py [--date YYYY-MM-DD] [--allow-missing] [--exclude SOURCE[=reason]]...
   Without --date the newest folder named exactly YYYY-MM-DD is used per source;
   folders with a suffix (e.g. a test subset "2026-09-16_test") are never picked
   automatically. With --date every source must have that folder.
+
+  Snapshot consistency rule (recurring runs). A build is ONE snapshot: with --date D every source contributes only its
+  folder D and never a stale older one. A source whose collection failed or was blocked is left out of that snapshot,
+  either because it has no folder D (--allow-missing) or because the caller names it (--exclude src=reason, also used
+  for a source whose folder D exists but is unusable). Nothing is substituted. The build manifest records, per source,
+  the folder used or the reason it is absent (`source_status`, `excluded_sources`), the rule in force
+  (`snapshot_rule`) and, in the legacy newest-per-source mode, whether the folders have different dates (`mixed_dates`).
 
 No posting is dropped here. Duplicates across queries are collapsed per source
 (same source_id) keeping the earliest collected envelope and the list of
@@ -42,6 +49,10 @@ RUN_DIR_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 RUN_DATE: str | None = None          # set by --date; None = newest dated folder
 SKIPPED_LINES: dict[str, int] = defaultdict(int)   # file -> malformed JSON lines
 RUNS_USED: dict[str, str | None] = {}
+EXCLUDED: dict[str, str] = {}        # source -> reason; set by --exclude (no rows from that source in this build)
+ABSENT: dict[str, str] = {}          # source -> reason it has no folder (filled while building)
+ALLOW_MISSING = False                # --allow-missing: with --date, a source without folder D is left out instead of an error
+SOURCES = ("eures", "karriere", "linkedin", "willhaben", "jobsat")
 
 
 def strip_html(s: str | None) -> str | None:
@@ -74,9 +85,16 @@ def latest_run(source: str) -> Path | None:
     """Run folder for a source: RAW/<source>/<RUN_DATE> when --date is given
     (missing folder = error), else the newest folder named exactly YYYY-MM-DD."""
     d = RAW / source
+    if source in EXCLUDED:
+        RUNS_USED[source] = None
+        return None
     if RUN_DATE:
         run = d / RUN_DATE
         if not run.is_dir():
+            if ALLOW_MISSING:
+                RUNS_USED[source] = None
+                ABSENT[source] = f"no folder {RUN_DATE}"
+                return None
             raise SystemExit(f"build_interim: --date {RUN_DATE} given but {run} does not exist")
         RUNS_USED[source] = run.name
         return run
@@ -86,6 +104,20 @@ def latest_run(source: str) -> Path | None:
     runs = sorted(p for p in d.iterdir() if p.is_dir() and RUN_DIR_RE.fullmatch(p.name))
     RUNS_USED[source] = runs[-1].name if runs else None
     return runs[-1] if runs else None
+
+
+def source_status(per_source: dict[str, int]) -> dict[str, dict]:
+    """Per source: was it part of this snapshot (status current) or left out, and why."""
+    out = {}
+    for s in SOURCES:
+        folder = RUNS_USED.get(s)
+        if s in EXCLUDED:
+            out[s] = {"status": "excluded", "folder": None, "reason": EXCLUDED[s], "n_postings": 0}
+        elif folder:
+            out[s] = {"status": "current", "folder": f"data/raw/{s}/{folder}", "reason": None, "n_postings": per_source.get(s, 0)}
+        else:
+            out[s] = {"status": "missing", "folder": None, "reason": ABSENT.get(s, "no dated folder"), "n_postings": 0}
+    return out
 
 
 def ms_to_date(ms):
@@ -356,13 +388,29 @@ def build_jobsat():
 
 
 def main(argv: list[str] | None = None):
-    global RUN_DATE
+    global RUN_DATE, ALLOW_MISSING
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--date", help="run folder date YYYY-MM-DD used for every source (default: newest per source)")
+    ap.add_argument("--allow-missing", action="store_true",
+                    help="with --date: a source without that folder is left out of the snapshot (recorded) instead of an error")
+    ap.add_argument("--exclude", action="append", default=[], metavar="SOURCE[=reason]",
+                    help="leave this source out of the snapshot (repeatable); the reason goes to the manifest")
+    ap.add_argument("--allow-mixed", action="store_true",
+                    help="legacy mode (no --date): accept sources whose newest folders have different dates (NOT one snapshot)")
     args = ap.parse_args(argv)
     if args.date and not RUN_DIR_RE.fullmatch(args.date):
         raise SystemExit(f"build_interim: --date must be YYYY-MM-DD, got {args.date!r}")
+    if args.allow_missing and not args.date:
+        raise SystemExit("build_interim: --allow-missing needs --date (without it each source takes its newest folder)")
     RUN_DATE = args.date
+    ALLOW_MISSING = args.allow_missing
+    EXCLUDED.clear()
+    ABSENT.clear()
+    for item in args.exclude:
+        name, _, reason = item.partition("=")
+        if name not in SOURCES:
+            raise SystemExit(f"build_interim: --exclude {name!r} is not one of {', '.join(SOURCES)}")
+        EXCLUDED[name] = reason or "excluded by caller"
     all_rows, per_source = [], {}
     for fn in (build_eures, build_karriere, build_linkedin, build_willhaben, build_jobsat):
         rows = fn()
@@ -373,6 +421,11 @@ def main(argv: list[str] | None = None):
         print(f"WARNING: skipped {k} malformed JSON line(s) in {f}")
     if not all_rows:
         raise SystemExit(f"build_interim: no postings found under {RAW} (runs used: {RUNS_USED}); nothing written")
+    folder_dates = sorted({d for d in RUNS_USED.values() if d})
+    if not RUN_DATE and len(folder_dates) > 1 and not args.allow_mixed:
+        raise SystemExit(f"build_interim: the newest folders of the sources have different dates {folder_dates}; this would not be one "
+                         "snapshot (nothing written). Use --date D (with --allow-missing / --exclude) for a weekly snapshot, "
+                         "or --allow-mixed to accept it knowingly.")
     OUT.mkdir(parents=True, exist_ok=True)
     df = pd.DataFrame(all_rows)
     df["posting_uid"] = df["source"] + ":" + df["source_id"].astype(str)
@@ -383,10 +436,26 @@ def main(argv: list[str] | None = None):
         if df2[c].apply(lambda x: isinstance(x, (list, dict))).any():
             df2[c] = df2[c].apply(lambda x: json.dumps(x, ensure_ascii=False) if isinstance(x, (list, dict)) else x)
     df2.to_parquet(OUT / "interim_postings.parquet", index=False)
+    mixed = len(folder_dates) > 1
+    if mixed:
+        print(f"WARNING: sources come from different dated folders {folder_dates}: this is not one snapshot "
+              "(use --date D to build a single-date snapshot)")
+    status = source_status(per_source)
+    for s, st in status.items():
+        if st["status"] != "current":
+            print(f"NOTE: {s} is not part of this snapshot ({st['status']}: {st['reason']})")
+    rule = ("single date: every source contributes only its folder " + RUN_DATE + "; a source without it or named by "
+            "--exclude is left out and listed in excluded_sources, never replaced by an older folder"
+            if RUN_DATE else "newest dated folder per source (legacy mode; see mixed_dates)")
     manifest = {
         "built_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "requested_date": RUN_DATE,
+        "snapshot_rule": rule,
         "run_folders": {s: (f"data/raw/{s}/{d}" if d else None) for s, d in RUNS_USED.items()},
+        "source_status": status,
+        "excluded_sources": {s: st["reason"] for s, st in status.items() if st["status"] != "current"},
+        "folder_dates": folder_dates,
+        "mixed_dates": mixed,
         "unique_postings_per_source": per_source,
         "rows_total": len(df),
         "skipped_malformed_json_lines": dict(sorted(SKIPPED_LINES.items())),

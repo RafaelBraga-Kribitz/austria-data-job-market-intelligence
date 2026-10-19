@@ -1,6 +1,6 @@
 english_requirement,count,n,share,ci_low,ci_high
-not_mentioned,272,719,0.378,0.344,0.414
-required_implied,232,719,0.323,0.29,0.358
-preferred,110,719,0.153,0.129,0.181
-required,59,719,0.082,0.064,0.104
-mentioned,46,719,0.064,0.048,0.084
+not_mentioned,249,699,0.356,0.322,0.392
+required_implied,222,699,0.318,0.284,0.353
+preferred,126,699,0.18,0.154,0.21
+required,62,699,0.089,0.07,0.112
+mentioned,40,699,0.057,0.042,0.077

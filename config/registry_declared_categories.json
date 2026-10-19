@@ -1,0 +1,4 @@
+{
+"_comment": "Open category sets whose keys must stay stable when a member has no row in a weekly table. metrics_registry.py registers each listed member as 0 when its table has no row for it this run, so document markers that quote it keep resolving. Add a member here when a living document quotes it. Seeded from the 2026-09-16 snapshot of outputs/tables/T03c_styria_cities.csv.",
+"styria_city_n": ["Graz", "Hart Bei Graz", "unspecified", "Weiz", "Dornbirn", "Lieboch", "Liezen", "Raaba-Grambach", "Wien", "Leibnitz", "Premstätten", "Leoben", "Gleisdorf", "Feldkirchen Bei Graz", "Raaba"]
+}

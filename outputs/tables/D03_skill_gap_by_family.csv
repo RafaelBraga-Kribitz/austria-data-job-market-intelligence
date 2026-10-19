@@ -1,114 +1,115 @@
 role_family,skill,share_in_family,count,n,profile_status
-data_analytics,Excel,0.467,50,107,have
-data_analytics,SQL,0.383,41,107,developing
-data_analytics,Power BI,0.336,36,107,developing
-data_analytics,Data Governance/Quality,0.28,30,107,developing
-data_analytics,Python,0.262,28,107,developing
-data_analytics,Forecasting,0.178,19,107,have
-data_analytics,Mathematics,0.159,17,107,structural
-data_analytics,Data Modeling,0.14,15,107,developing
-data_analytics,Exploratory Analysis,0.121,13,107,developing
-data_analytics,Segmentation/Clustering,0.103,11,107,have
-data_analytics,R,0.103,11,107,developing
-data_analytics,DAX/M,0.084,9,107,developing
-data_analytics,ETL/ELT,0.084,9,107,developing
-data_analytics,Azure,0.075,8,107,structural
-data_analytics,Snowflake,0.075,8,107,developing
-bi,SQL,0.518,44,85,developing
-bi,Power BI,0.506,43,85,developing
-bi,Data Modeling,0.329,28,85,developing
-bi,SAP BW/BO,0.282,24,85,structural
-bi,Excel,0.2,17,85,have
-bi,Data Governance/Quality,0.176,15,85,developing
-bi,Data Warehouse (generic),0.176,15,85,structural
-bi,ETL/ELT,0.165,14,85,developing
-bi,Azure,0.141,12,85,structural
-bi,SQL Server,0.106,9,85,structural
-bi,Python,0.106,9,85,developing
-bi,Oracle,0.106,9,85,structural
-bi,DAX/M,0.106,9,85,developing
-bi,Qlik,0.094,8,85,structural
-bi,Forecasting,0.094,8,85,have
-marketing_analytics,SQL,0.542,13,24,developing
-marketing_analytics,Data Governance/Quality,0.5,12,24,developing
-marketing_analytics,Google Analytics,0.458,11,24,have
-marketing_analytics,Excel,0.375,9,24,have
-marketing_analytics,Power BI,0.333,8,24,developing
-marketing_analytics,BigQuery,0.25,6,24,developing
-marketing_analytics,Generative AI / LLM,0.25,6,24,developing
-marketing_analytics,Matomo,0.25,6,24,have
-marketing_analytics,Segmentation/Clustering,0.208,5,24,have
-marketing_analytics,JavaScript,0.208,5,24,unclassified
-marketing_analytics,Mathematics,0.167,4,24,structural
-marketing_analytics,A/B Testing / Experimentation,0.167,4,24,have
-marketing_analytics,Looker,0.167,4,24,developing
-marketing_analytics,Python,0.125,3,24,developing
-marketing_analytics,dbt,0.125,3,24,structural
-product_analytics,A/B Testing / Experimentation,1.0,1,1,have
-product_analytics,AI agents / tool-calling,1.0,1,1,developing
-product_analytics,Data Governance/Quality,1.0,1,1,developing
-product_analytics,ETL/ELT,1.0,1,1,developing
-product_analytics,Hypothesis Testing,1.0,1,1,developing
-product_analytics,Python,1.0,1,1,developing
-product_analytics,SQL,1.0,1,1,developing
-product_analytics,Segmentation/Clustering,1.0,1,1,have
-business_analysis,Excel,0.142,17,120,have
-business_analysis,SQL,0.133,16,120,developing
-business_analysis,Data Governance/Quality,0.092,11,120,developing
-business_analysis,REST APIs,0.067,8,120,developing
-business_analysis,R,0.058,7,120,developing
-business_analysis,Bash/Shell,0.05,6,120,structural
-business_analysis,Generative AI / LLM,0.05,6,120,developing
-business_analysis,Mathematics,0.042,5,120,structural
-business_analysis,CI/CD,0.042,5,120,structural
-business_analysis,C#,0.042,5,120,structural
-business_analysis,Java,0.042,5,120,structural
-business_analysis,Exploratory Analysis,0.033,4,120,developing
-business_analysis,Python,0.033,4,120,developing
-business_analysis,SAP HANA,0.033,4,120,structural
-business_analysis,SAP BW/BO,0.025,3,120,structural
-data_science,Python,0.726,114,157,developing
-data_science,Generative AI / LLM,0.529,83,157,developing
-data_science,SQL,0.363,57,157,developing
-data_science,Azure,0.338,53,157,structural
-data_science,CI/CD,0.306,48,157,structural
-data_science,REST APIs,0.287,45,157,developing
-data_science,RAG,0.28,44,157,developing
-data_science,AI agents / tool-calling,0.248,39,157,developing
-data_science,AWS,0.236,37,157,structural
-data_science,MLOps,0.229,36,157,structural
-data_science,Git,0.229,36,157,developing
-data_science,Docker,0.229,36,157,structural
-data_science,Mathematics,0.223,35,157,structural
-data_science,ETL/ELT,0.217,34,157,developing
-data_science,PyTorch,0.204,32,157,structural
-data_engineering,SQL,0.688,110,160,developing
-data_engineering,ETL/ELT,0.6,96,160,developing
-data_engineering,Python,0.55,88,160,developing
-data_engineering,Data Governance/Quality,0.444,71,160,developing
-data_engineering,Azure,0.381,61,160,structural
-data_engineering,Data Modeling,0.375,60,160,developing
-data_engineering,CI/CD,0.338,54,160,structural
-data_engineering,Databricks,0.287,46,160,structural
-data_engineering,Data Warehouse (generic),0.275,44,160,structural
-data_engineering,Data Lake/Lakehouse,0.244,39,160,structural
-data_engineering,Power BI,0.188,30,160,developing
-data_engineering,Microsoft Fabric,0.181,29,160,structural
-data_engineering,Oracle,0.175,28,160,structural
-data_engineering,Git,0.175,28,160,developing
-data_engineering,Spark,0.175,28,160,structural
-data_governance,Data Governance/Quality,0.815,53,65,developing
-data_governance,Excel,0.262,17,65,have
-data_governance,SQL,0.138,9,65,developing
-data_governance,Mathematics,0.092,6,65,structural
-data_governance,Python,0.092,6,65,developing
-data_governance,Power BI,0.077,5,65,developing
-data_governance,Azure,0.046,3,65,structural
-data_governance,Classification,0.046,3,65,developing
-data_governance,Data Modeling,0.046,3,65,developing
-data_governance,Data Warehouse (generic),0.046,3,65,structural
-data_governance,Streaming,0.046,3,65,structural
-data_governance,Generative AI / LLM,0.046,3,65,developing
-data_governance,EU AI Act / AI governance,0.046,3,65,structural
-data_governance,REST APIs,0.031,2,65,developing
-data_governance,Java,0.031,2,65,structural
+data_analytics,Excel,0.393,42,107,have
+data_analytics,SQL,0.355,38,107,developing
+data_analytics,Python,0.327,35,107,developing
+data_analytics,Data Governance/Quality,0.327,35,107,developing
+data_analytics,Power BI,0.299,32,107,developing
+data_analytics,Forecasting,0.187,20,107,have
+data_analytics,Mathematics,0.15,16,107,structural
+data_analytics,Data Modeling,0.15,16,107,developing
+data_analytics,ETL/ELT,0.121,13,107,developing
+data_analytics,DAX/M,0.121,13,107,developing
+data_analytics,R,0.112,12,107,developing
+data_analytics,Segmentation/Clustering,0.112,12,107,have
+data_analytics,Exploratory Analysis,0.093,10,107,developing
+data_analytics,Snowflake,0.056,6,107,developing
+data_analytics,Qlik,0.056,6,107,structural
+bi,SQL,0.489,45,92,developing
+bi,Power BI,0.435,40,92,developing
+bi,SAP BW/BO,0.37,34,92,structural
+bi,Data Modeling,0.337,31,92,developing
+bi,Data Governance/Quality,0.228,21,92,developing
+bi,Data Warehouse (generic),0.152,14,92,structural
+bi,ETL/ELT,0.13,12,92,developing
+bi,SQL Server,0.13,12,92,structural
+bi,Excel,0.12,11,92,have
+bi,Azure,0.12,11,92,structural
+bi,Databricks,0.109,10,92,structural
+bi,Python,0.109,10,92,developing
+bi,Tableau,0.098,9,92,developing
+bi,Qlik,0.098,9,92,structural
+bi,Oracle,0.098,9,92,structural
+marketing_analytics,Data Governance/Quality,0.611,11,18,developing
+marketing_analytics,SQL,0.556,10,18,developing
+marketing_analytics,Google Analytics,0.389,7,18,have
+marketing_analytics,Power BI,0.278,5,18,developing
+marketing_analytics,BigQuery,0.278,5,18,developing
+marketing_analytics,Excel,0.278,5,18,have
+marketing_analytics,Python,0.222,4,18,developing
+marketing_analytics,JavaScript,0.222,4,18,unclassified
+marketing_analytics,Matomo,0.222,4,18,have
+marketing_analytics,Looker,0.167,3,18,developing
+marketing_analytics,ETL/ELT,0.167,3,18,developing
+marketing_analytics,Data Modeling,0.167,3,18,developing
+marketing_analytics,Predictive Analytics,0.111,2,18,developing
+marketing_analytics,Generative AI / LLM,0.111,2,18,developing
+marketing_analytics,Mathematics,0.111,2,18,structural
+product_analytics,A/B Testing / Experimentation,0.667,2,3,have
+product_analytics,Data Governance/Quality,0.667,2,3,developing
+product_analytics,ETL/ELT,0.667,2,3,developing
+product_analytics,Segmentation/Clustering,0.667,2,3,have
+product_analytics,SQL,0.667,2,3,developing
+product_analytics,AI agents / tool-calling,0.333,1,3,developing
+product_analytics,Hypothesis Testing,0.333,1,3,developing
+product_analytics,Python,0.333,1,3,developing
+product_analytics,REST APIs,0.333,1,3,developing
+business_analysis,SQL,0.151,16,106,developing
+business_analysis,Excel,0.104,11,106,have
+business_analysis,Data Governance/Quality,0.104,11,106,developing
+business_analysis,REST APIs,0.085,9,106,developing
+business_analysis,Bash/Shell,0.066,7,106,structural
+business_analysis,Generative AI / LLM,0.057,6,106,developing
+business_analysis,Azure,0.038,4,106,structural
+business_analysis,R,0.038,4,106,developing
+business_analysis,Mathematics,0.038,4,106,structural
+business_analysis,AI agents / tool-calling,0.038,4,106,developing
+business_analysis,Forecasting,0.038,4,106,have
+business_analysis,C#,0.038,4,106,structural
+business_analysis,Java,0.028,3,106,structural
+business_analysis,Power BI,0.028,3,106,developing
+business_analysis,PostgreSQL,0.028,3,106,developing
+data_science,Python,0.756,133,176,developing
+data_science,Generative AI / LLM,0.602,106,176,developing
+data_science,REST APIs,0.335,59,176,developing
+data_science,SQL,0.335,59,176,developing
+data_science,CI/CD,0.29,51,176,structural
+data_science,Azure,0.267,47,176,structural
+data_science,AI agents / tool-calling,0.261,46,176,developing
+data_science,RAG,0.25,44,176,developing
+data_science,AWS,0.233,41,176,structural
+data_science,MLOps,0.216,38,176,structural
+data_science,ETL/ELT,0.21,37,176,developing
+data_science,Mathematics,0.21,37,176,structural
+data_science,Git,0.205,36,176,developing
+data_science,Docker,0.182,32,176,structural
+data_science,EU AI Act / AI governance,0.165,29,176,structural
+data_engineering,SQL,0.715,98,137,developing
+data_engineering,Python,0.613,84,137,developing
+data_engineering,ETL/ELT,0.533,73,137,developing
+data_engineering,Data Governance/Quality,0.496,68,137,developing
+data_engineering,Azure,0.46,63,137,structural
+data_engineering,CI/CD,0.372,51,137,structural
+data_engineering,Data Modeling,0.358,49,137,developing
+data_engineering,Databricks,0.314,43,137,structural
+data_engineering,Data Lake/Lakehouse,0.292,40,137,structural
+data_engineering,Data Warehouse (generic),0.27,37,137,structural
+data_engineering,Microsoft Fabric,0.204,28,137,structural
+data_engineering,Spark,0.197,27,137,structural
+data_engineering,Power BI,0.19,26,137,developing
+data_engineering,Git,0.182,25,137,developing
+data_engineering,REST APIs,0.161,22,137,developing
+data_governance,Data Governance/Quality,0.783,47,60,developing
+data_governance,Excel,0.283,17,60,have
+data_governance,SQL,0.2,12,60,developing
+data_governance,Python,0.1,6,60,developing
+data_governance,Mathematics,0.067,4,60,structural
+data_governance,R,0.067,4,60,developing
+data_governance,Classification,0.05,3,60,developing
+data_governance,Streaming,0.05,3,60,structural
+data_governance,Data Modeling,0.05,3,60,developing
+data_governance,Generative AI / LLM,0.033,2,60,developing
+data_governance,Anomaly Detection,0.033,2,60,unclassified
+data_governance,Power BI,0.033,2,60,developing
+data_governance,Segmentation/Clustering,0.033,2,60,have
+data_governance,Kubernetes,0.017,1,60,structural
+data_governance,Java,0.017,1,60,structural

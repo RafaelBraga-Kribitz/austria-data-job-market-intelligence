@@ -157,3 +157,41 @@ def test_real_step_table_preflight_on_this_clone(capsys):
     assert code in (0, 2)
     if code == 2:
         assert "PREFLIGHT FAILED" in out
+
+
+# ---------------- single-date snapshot pass-through (weekly runs)
+def test_snapshot_options_reach_only_the_build_interim_step():
+    steps = R.with_snapshot_args(R.select("layer1"), "2026-10-18", True, ["linkedin=blocked: HTTP 999"])
+    by = {s.name: s for s in steps}
+    assert by["build_interim"].args == ["--date", "2026-10-18", "--allow-missing", "--exclude", "linkedin=blocked: HTTP 999"]
+    assert all(not s.args or s.name in ("build_interim", "redact_layer1_contacts") for s in steps)
+    assert R.with_snapshot_args(R.select("layer1")) == R.select("layer1")           # no option, no change
+    # the module-level step list is not modified
+    assert next(s for s in R.STEPS if s.name == "build_interim").args == []
+
+
+def test_allow_mixed_reaches_only_build_interim_and_needs_no_date():
+    import pytest
+    steps = R.with_snapshot_args(R.select("layer1"), allow_mixed=True)
+    by = {s.name: s for s in steps}
+    assert by["build_interim"].args == ["--allow-mixed"]
+    assert all(not s.args or s.name in ("build_interim", "redact_layer1_contacts") for s in steps)
+    assert next(s for s in R.STEPS if s.name == "build_interim").args == []
+    with pytest.raises(SystemExit):
+        R.with_snapshot_args(R.select("layer1"), "2026-10-18", allow_mixed=True)
+
+
+def test_snapshot_options_are_validated():
+    import pytest
+    with pytest.raises(SystemExit):
+        R.with_snapshot_args(R.select("layer1"), None, True, [])
+    with pytest.raises(SystemExit):
+        R.with_snapshot_args(R.select("layer1"), None, False, ["linkedin"])
+    with pytest.raises(SystemExit):
+        R.with_snapshot_args(R.select("layer1"), "18.10.2026")
+
+
+def test_dry_run_shows_the_snapshot_arguments(capsys):
+    R.main(["layer1", "--date", "2026-09-16", "--allow-missing", "--exclude", "linkedin=blocked", "--dry-run"])
+    out = capsys.readouterr().out
+    assert "build_interim.py --date 2026-09-16 --allow-missing --exclude linkedin=blocked" in out

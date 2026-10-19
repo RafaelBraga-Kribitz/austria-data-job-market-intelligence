@@ -23,6 +23,7 @@ data/external/*
 !data/external/.gitkeep
 data/labels/
 data/private/
+site_private/
 
 # Local databases
 *.db

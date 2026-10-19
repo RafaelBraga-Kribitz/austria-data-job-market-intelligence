@@ -4293,7 +4293,7 @@ z
    </g>
   </g>
   <g id="text_28">
-   <!-- Source: Public GitHub accounts with an Austrian location signal, 2026-09-17/30. n = 1,818 data-signal candidates in 8 k-means clusters. Units: candidates per -->
+   <!-- Source: Public GitHub accounts with an Austrian location signal, 2026-09-17/18. n = 1,818 data-signal candidates in 8 k-means clusters. Units: candidates per -->
    <g style="fill: #222222" transform="translate(7.632 526.338681) scale(0.09163 -0.09163)">
     <defs>
      <path id="Lato-Regular-f" d="M 4301 4586 
@@ -4488,8 +4488,8 @@ z
     <use xlink:href="#Lato-Regular-190" transform="translate(3238.328125 0)"/>
     <use xlink:href="#Lato-Regular-195" transform="translate(3296.328125 0)"/>
     <use xlink:href="#Lato-Regular-146" transform="translate(3354.328125 0)"/>
-    <use xlink:href="#Lato-Regular-192" transform="translate(3399.53125 0)"/>
-    <use xlink:href="#Lato-Regular-18f" transform="translate(3457.53125 0)"/>
+    <use xlink:href="#Lato-Regular-190" transform="translate(3399.53125 0)"/>
+    <use xlink:href="#Lato-Regular-476" transform="translate(3457.53125 0)"/>
     <use xlink:href="#Lato-Regular-13a" transform="translate(3515.53125 0)"/>
     <use xlink:href="#Lato-Regular-2" transform="translate(3539.125 0)"/>
     <use xlink:href="#Lato-Regular-6d" transform="translate(3564.71875 0)"/>

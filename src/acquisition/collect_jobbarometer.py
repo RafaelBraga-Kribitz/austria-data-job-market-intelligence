@@ -19,7 +19,7 @@ from __future__ import annotations
 import html
 import re
 
-from common import RawWriter, Session, cli, status_of
+from common import RawWriter, Session, cli, run_guarded, status_of
 
 BASE = "https://jobbarometer.ams.at"
 GROUP_IDS = list(range(270, 335))
@@ -151,4 +151,4 @@ def main(run_date: str | None = None):
 
 
 if __name__ == "__main__":
-    main(cli(__doc__).date)
+    run_guarded(main, cli(__doc__).date)

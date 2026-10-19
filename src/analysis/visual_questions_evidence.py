@@ -35,18 +35,23 @@ from engine import (  # noqa: E402
     new_figure,
     styria_basis_note,
 )
-from visual_questions_demand import FAMILY_LABEL, MIN_FAMILY_N, table  # noqa: E402
+from visual_questions_demand import FAMILY_LABEL, MIN_FAMILY_N, num_word, pct_txt, table  # noqa: E402
 
 
 # --------------------------------------------------------------------------------------------
 # BQ27 - what is behind the denominator
 # --------------------------------------------------------------------------------------------
 def bq27():
-    summary = json.load(open(ROOT / "outputs" / "market_summary.json", encoding="utf-8"))["counts"]
+    summary_full = json.load(open(ROOT / "outputs" / "market_summary.json", encoding="utf-8"))
+    summary = summary_full["counts"]
     counts = market_counts()
     dup = table("Q04_duplicates.csv").set_index("metric")["value"]
+    n_boards = len(table("T01_source_coverage.csv"))
+    n_core_families = num_word(len(summary_full["core_families"]))
+    ger = table("T07_german_requirement_by_overall.csv").set_index("german_requirement")
+    german_stated = (ger.loc["required", "count"] + ger.loc["required_implied", "count"]) / ger["n"].iloc[0]
     steps = [
-        ("Raw rows collected from 5 boards", summary["raw_rows_all_sources"]),
+        (f"Raw rows collected from {n_boards} boards", summary["raw_rows_all_sources"]),
         ("Unique postings after deduplication", summary["canonical_groups_all"]),
         ("Core data-role titles (the study set)", summary["core_canonical"]),
         ("… with a description over 300 characters", summary["core_with_description"]),
@@ -74,13 +79,14 @@ def bq27():
         units="postings (each step is a subset of the one above)",
         n=f"in-scope duplicate rate before deduplication {float(dup['core_duplicate_rate']):.0%} "
           f"({int(dup['core_rows'])} rows → {int(dup['core_groups'])} groups)",
-        note="Rows outside the eight data-role families are dropped at step 3; that cut, not the collection, is "
+        note=f"Rows outside the {n_core_families} data-role families are dropped at step 3; that cut, not the collection, is "
              f"what makes the study set small. {styria_basis_note(counts)}; the Styria and Graz steps count every "
              "ad that lists a site there.",
     )
     return Spec(
         chart_id="BQ27_population_funnel",
-        question="When I read '40 % of ads', 40 % of what exactly - and how did 12,429 rows become that denominator?",
+        question=f"When I read '{pct_txt(german_stated)} of ads', {pct_txt(german_stated)} of what exactly - and how did "
+                 f"{summary['raw_rows_all_sources']:,} rows become that denominator?",
         answer=f"{summary['raw_rows_all_sources']:,} raw rows deduplicate to {summary['canonical_groups_all']:,} "
                f"unique postings, of which {summary['core_canonical']} carry a core data-role title - that is the "
                f"denominator behind almost every share in the project, and only {summary['styria_core']} of them "
@@ -109,6 +115,8 @@ def bq28():
     prec = prec[prec.family != "ALL"].copy() if "ALL" in set(prec.family) else prec.copy()
     prec = prec.sort_values("precision_after_strict")
     y = np.arange(len(prec))
+    per_family = int(prec.n_sampled.max())
+    n_sampled_total = int(prec.n_sampled.sum())
 
     fig, ax = new_figure(height=0.50 * len(prec) + 3.2, width=10.0)
     for i, row in enumerate(prec.itertuples()):
@@ -121,7 +129,7 @@ def bq28():
     ax.set_yticklabels([FAMILY_LABEL.get(f, f) for f in prec.family])
     ax.set_xlim(0.4, 1.12)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
-    ax.set_xlabel("Hand-labelled precision of the title classifier (25 titles sampled per family)")
+    ax.set_xlabel(f"Hand-labelled precision of the title classifier ({per_family} titles sampled per family)")
     top = len(prec) - 1
     for x, text, color in [(prec.precision_before_strict.iloc[top], "before the audit", MUTED),
                            (prec.precision_after_strict.iloc[top], "after (strict)", BASE),
@@ -136,9 +144,9 @@ def bq28():
         title=f"After the taxonomy audit the weakest family is {FAMILY_LABEL.get(worst.family, worst.family)} at "
               f"{worst.precision_after_strict:.0%} strict precision, the strongest "
               f"{FAMILY_LABEL.get(best.family, best.family)} at {best.precision_after_strict:.0%}",
-        source="Hand-labelled sample of 177 advertised titles, 25 per family (Q03c, DECISION_LOG D-012)",
+        source=f"Hand-labelled sample of {n_sampled_total} advertised titles, {per_family} per family (Q03c, DECISION_LOG D-012)",
         units="share of sampled titles judged correctly classified",
-        n="n = 25 sampled titles per family",
+        n=f"n = {per_family} sampled titles per family",
         note="Precision only: recall was never measured, so a family can still be missing postings it should hold. "
              "Lenient counts borderline titles as correct.",
     )
@@ -155,7 +163,7 @@ def bq28():
         data_signature="categorical-multi",
         tables=["Q03c_precision_summary.csv"],
         units="share of sampled titles",
-        caveat="25 titles per family is a small audit sample, and recall is unmeasured: this bounds false positives "
+        caveat=f"{per_family} titles per family is a small audit sample, and recall is unmeasured: this bounds false positives "
                "only, never false negatives.",
         anchors=[
             ("docs/data-quality.md", "after_heading", "## 4. Title normalization confidence (Q03a, Q03b, Q03c)"),
@@ -172,6 +180,10 @@ def bq29():
     fam = fam[fam.role_family.isin(FAMILY_LABEL)].sort_values("styria_count")
     labels = [FAMILY_LABEL[f] for f in fam.role_family]
     colors = [THIRD if c >= MIN_FAMILY_N else HILITE for c in fam.styria_count]
+    jb05 = table("JB05_styria_vs_austria.csv")
+    jb05_ds = jb05[jb05.beruf == "Data Scientist (m/w)"].iloc[0]
+    flow_share = pct_txt(jb05_ds.styria / jb05_ds.austria, 1)
+    n_tiny = int((fam.styria_count <= 5).sum())
 
     fig, ax = new_figure(height=0.44 * len(fam) + 3.0, width=10.0)
     ax.barh(labels, fam.styria_count, color=colors)
@@ -197,7 +209,7 @@ def bq29():
         chart_id="BQ29_styria_sample_sizes",
         question="Which of my Styrian conclusions are actually too small to carry a decision?",
         answer=f"All of them, by the project's own rule: the largest Styrian family cell is "
-               f"{int(fam.styria_count.max())} postings against a robustness threshold of {MIN_FAMILY_N}, and four "
+               f"{int(fam.styria_count.max())} postings against a robustness threshold of {MIN_FAMILY_N}, and {num_word(n_tiny)} "
                "families sit at five or fewer - so Styrian findings are read as counts and directions, never as "
                "percentages.",
         relationship="comparison across categories",
@@ -205,7 +217,7 @@ def bq29():
         data_signature="bivariate-simple",
         tables=["T02_role_family_counts.csv"],
         units="postings",
-        caveat="The official yearly series (JB05) puts Styria at 13.6 % of the national flow against "
+        caveat=f"The official yearly series (JB05) puts Styria at {flow_share} of the national flow against "
                f"{market_counts()['styria_primary'] / market_counts()['core']:.1%} here ({PRIMARY_BASIS}; "
                f"{market_counts()['styria_any_site'] / market_counts()['core']:.1%} counting every ad with a Styrian "
                "site), so this snapshot may also understate Styrian volume, not only measure it imprecisely.",
@@ -219,8 +231,19 @@ def bq29():
 # --------------------------------------------------------------------------------------------
 # BQ30 - what the dataset cannot see
 # --------------------------------------------------------------------------------------------
+SHORT_SOURCE = {"eures": "EURES/AMS", "jobsat": "jobs.at", "karriere": "karriere.at", "linkedin": "LinkedIn", "willhaben": "willhaben"}
+
+
+def largest_sources_text(src) -> str:
+    """Names of the (up to) two sources with the most core postings, read from the T01 frame; empty when no source has any."""
+    top = src[src["in_scope_canonical"] > 0].sort_values("in_scope_canonical", ascending=False).head(2)
+    return " and ".join(SHORT_SOURCE.get(s, s) for s in top["source"])
+
+
 def bq30():
     src = table("T01_source_coverage.csv").sort_values("in_scope_canonical")
+    dup = table("Q04_duplicates.csv").set_index("metric")["value"]
+    multi_source = pct_txt(float(dup["cross_source_groups_core"]) / float(dup["core_groups"]))
     names = {"eures": "EURES / AMS", "jobsat": "jobs.at", "karriere": "karriere.at",
              "linkedin": "LinkedIn", "willhaben": "willhaben"}
     labels = [names.get(s, s) for s in src.source]
@@ -243,7 +266,7 @@ def bq30():
                 xy=(0.01, 0.02), xycoords="axes fraction", fontsize=8.5, color=HILITE, va="bottom")
     finalise(
         fig,
-        title=f"Five boards contributed the {int(src.in_scope_canonical.sum())} core postings - and the two largest "
+        title=f"{num_word(len(src)).capitalize()} boards contributed the {int(src.in_scope_canonical.sum())} core postings - and the two largest "
               "corporate boards in Austria contributed none",
         source=DEMAND_SOURCE,
         units="rows collected and core postings contributed",
@@ -254,7 +277,7 @@ def bq30():
     return Spec(
         chart_id="BQ30_source_coverage",
         question="How much of the Austrian market can this dataset simply not see?",
-        answer=f"LinkedIn and EURES/AMS carry most of the {int(src.in_scope_canonical.sum())} core postings, and the "
+        answer=f"{largest_sources_text(src) or 'No board'} carry most of the {int(src.in_scope_canonical.sum())} core postings, and the "
                "corporate white-collar segment is missing entirely: StepStone.at and Indeed.at returned HTTP 403, "
                "and company career pages, university portals and hokify were never collected - so the corporate "
                "share of Austrian data demand is an unmeasured gap, not a measured absence.",
@@ -263,7 +286,7 @@ def bq30():
         data_signature="bivariate-simple",
         tables=["T01_source_coverage.csv", "T01b_source_overlap_in_scope.csv"],
         units="rows / postings",
-        caveat="Only 20 % of core postings were seen on more than one source, so the boards are largely disjoint "
+        caveat=f"Only {multi_source} of core postings were seen on more than one source, so the boards are largely disjoint "
                "universes; a missing board is a missing slice, not a redundant one.",
         anchors=[
             ("docs/limitations.md", "after_heading", "## Invisible market: what this dataset plausibly cannot see"),
@@ -284,6 +307,7 @@ def bq31():
              "linkedin": "LinkedIn", "willhaben": "willhaben"}
     labels = [names.get(s, s) for s in age.source]
     y = np.arange(len(age))
+    stale = table("Q05a_stale.csv").set_index("metric")["count"]
 
     fig, ax = new_figure(height=0.52 * len(age) + 3.2, width=10.0)
     for i, row in enumerate(age.itertuples()):
@@ -310,7 +334,7 @@ def bq31():
         chart_id="BQ31_posting_freshness",
         question="How fresh is the market I am reading - am I looking at this week or at leftovers?",
         answer=f"It depends entirely on the board: karriere.at shows a median age of {int(age['median'].min())} days "
-               f"and EURES/AMS {int(age['median'].max())} days, with 34 core postings older than 180 days - so the "
+               f"and EURES/AMS {int(age['median'].max())} days, with {int(stale['older_than_180d'])} core postings older than 180 days - so the "
                "snapshot is a mixture of fresh demand and evergreen advertisements, and source mix drives apparent "
                "freshness.",
         relationship="distribution",
@@ -330,9 +354,22 @@ def bq31():
 # --------------------------------------------------------------------------------------------
 # BQ32 - what a salary figure actually is
 # --------------------------------------------------------------------------------------------
+def linkedin_no_figure_text(basis) -> str | None:
+    """Share of LinkedIn core ads without a usable salary figure, as text; None when LinkedIn is not in this snapshot."""
+    if "linkedin" not in basis.index:
+        print("WARNING: no linkedin rows in T09a; BQ32 caveat falls back to the general source-mix wording", flush=True)
+        return None
+    li = basis.loc["linkedin"]
+    if not li.sum():
+        return None
+    return pct_txt((li["none"] + li["implausible"]) / li.sum())
+
+
 def bq32():
     cov = table("T09_salary_coverage.csv").set_index("metric")["count"]
     total = int(cov["core_postings"])
+    basis = table("T09a_salary_basis_by_source.csv").set_index("source")
+    li_no_figure = linkedin_no_figure_text(basis)
     rows = [
         ("State any salary figure", int(cov["with_salary_figure"]), BASE),
         ("… but the figure is a single minimum", int(cov["minimum_only_figures"]), HILITE),
@@ -377,7 +414,8 @@ def bq32():
         tables=["T09_salary_coverage.csv", "T09a_salary_basis_by_source.csv"],
         units="postings",
         caveat="Categories overlap by construction (an ad can state a minimum, name the KV and mention a bonus). "
-               "LinkedIn omits a figure in 41 % of its core ads, so coverage is also a source-mix artefact.",
+               + (f"LinkedIn omits a figure in {li_no_figure} of its core ads, so coverage is also a source-mix artefact."
+                  if li_no_figure else "Salary coverage differs by board (LinkedIn is not part of this snapshot), so coverage is also a source-mix artefact."),
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 9. Advertised salary (T09, docs/salary-context.md)"),
             ("docs/data-quality.md", "after_heading", "## 7. Salary parsing (Q07, Q07a, Q07b, T09)"),
@@ -414,7 +452,7 @@ def bq33():
         f"{int(conc['unique_named_employers_styria'])} in Styria, {int(conc['unique_named_employers_graz_area'])} in the Graz area",
         f"Top 10 named employers hold {conc['top10_share_of_named']:.1%} of named postings; top 25 hold {conc['top25_share_of_named']:.1%}",
         f"Recruitment agencies are {conc['agency_share_of_named_postings']:.1%} of named postings",
-        f"Styria: {int(conc['styria_postings_without_named_employer'])} of 58 postings name no employer",
+        f"Styria: {int(conc['styria_postings_without_named_employer'])} of {market_counts()['styria_any_site']} postings name no employer",
     ]
     for i, text in enumerate(notes):
         ax.text(0, 1.9 - i * 0.42, "• " + text, fontsize=9.5, va="center")
@@ -425,7 +463,7 @@ def bq33():
         source=DEMAND_SOURCE,
         units="postings and unique employers",
         n=f"n = {total} core postings; {named} with a named employer",
-        note="The 387 named employers are a lower bound on employers represented: the anonymous AMS rows may belong "
+        note=f"The {int(conc['unique_named_employers_austria'])} named employers are a lower bound on employers represented: the anonymous AMS rows may belong "
              "to the same firms or to different ones - that cannot be determined.",
     )
     return Spec(

@@ -160,6 +160,53 @@ def test_end_of_sweep_logs_truncation_only_for_a_full_capped_page(raw):
     assert "truncated" not in log[0] and log[1]["truncated"] is False and log[2]["truncated"] is True
 
 
+def test_empty_first_page_is_not_a_complete_sweep(raw, monkeypatch):
+    monkeypatch.delenv("AJMI_STOP_ON_BLOCK", raising=False)
+    w = common.RawWriter("src", "2026-01-01")
+    assert common.end_of_sweep(w, True, 1, 3, False, keyword="k", page=1, status=200, returned=0, new=0)       # the sweep stops here
+    last = read(w.query_log)[-1]
+    assert last["complete"] is False and last["empty_first_page"] is True
+    assert w.completed_queries(("keyword",)) == set()                      # a resumed run asks again
+    assert common.end_of_sweep(w, True, 0, 990, False, keyword="l", start=0, status=200, returned=0, new=0)   # LinkedIn style: start == 0
+    assert read(w.query_log)[-1]["empty_first_page"] is True
+
+
+def test_empty_last_page_after_results_is_still_complete(raw):
+    w = common.RawWriter("src", "2026-01-01")
+    assert common.end_of_sweep(w, True, 3, 5, False, keyword="k", page=3, status=200, returned=0, new=0)
+    last = read(w.query_log)[-1]
+    assert last["complete"] is True and "empty_first_page" not in last and w.empty_streak == 0
+    assert w.completed_queries(("keyword",)) == {("k",)}
+
+
+def test_five_empty_first_pages_in_a_row_raise_source_blocked(raw, monkeypatch):
+    monkeypatch.delenv("AJMI_STOP_ON_BLOCK", raising=False)
+    w = common.RawWriter("src", "2026-01-01")
+    for i in range(common.EMPTY_PAGE_LIMIT - 1):
+        common.end_of_sweep(w, True, 1, 3, False, keyword=f"k{i}", page=1, status=200, returned=0)
+    with pytest.raises(common.SourceBlocked):
+        common.end_of_sweep(w, True, 1, 3, False, keyword="k9", page=1, status=200, returned=0)
+    assert w.empty_streak == common.EMPTY_PAGE_LIMIT
+
+
+def test_a_page_with_results_resets_the_empty_streak(raw, monkeypatch):
+    monkeypatch.delenv("AJMI_STOP_ON_BLOCK", raising=False)
+    w = common.RawWriter("src", "2026-01-01")
+    for i in range(common.EMPTY_PAGE_LIMIT - 1):
+        common.end_of_sweep(w, True, 1, 3, False, keyword=f"k{i}", page=1, status=200, returned=0)
+    common.end_of_sweep(w, False, 1, 3, True, keyword="hit", page=1, status=200, returned=10)
+    assert w.empty_streak == 0
+    for i in range(common.EMPTY_PAGE_LIMIT - 1):                           # four more empty ones: still no stop
+        common.end_of_sweep(w, True, 1, 3, False, keyword=f"m{i}", page=1, status=200, returned=0)
+
+
+def test_empty_first_pages_never_raise_without_stop_on_block(raw, monkeypatch):
+    monkeypatch.setenv("AJMI_STOP_ON_BLOCK", "0")
+    w = common.RawWriter("src", "2026-01-01")
+    for i in range(common.EMPTY_PAGE_LIMIT + 3):
+        assert common.end_of_sweep(w, True, 1, 3, False, keyword=f"k{i}", page=1, status=200, returned=0)
+
+
 # ------------------------------------------------------------------ Session retry behaviour
 def _session(monkeypatch, outcomes, max_retries=4):
     sleeps = []
