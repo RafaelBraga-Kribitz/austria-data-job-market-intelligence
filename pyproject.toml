@@ -2,7 +2,7 @@
 # installable package, so there is no [build-system]; the tested environment is pinned in requirements.txt.
 [project]
 name = "austria-data-job-market-intelligence"
-version = "2026.9.30"
+version = "2026.10.19"
 description = "Austrian data-role job market: employer demand (Layer 1), observed candidate supply (Layer 2), demand x supply (Layer 3)"
 readme = "README.md"
 requires-python = ">=3.12"
