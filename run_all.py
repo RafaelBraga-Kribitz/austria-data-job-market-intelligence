@@ -225,17 +225,30 @@ def requirement_names(path: Path = ROOT / "requirements.txt") -> list[tuple[str,
     out = []
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.split("#", 1)[0].strip()
-        m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*(?:==\s*([^\s;]+))?", line)
+        # "name==version", or a direct reference pinned to a commit: "name @ git+https://...@<commit sha>"
+        m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*(?:==\s*([^\s;]+)|@\s*git\+\S+@([0-9a-f]{40})\b)?", line)
         if m:
-            out.append((m.group(1), m.group(2)))
+            out.append((m.group(1), m.group(2) or m.group(3)))
     return out
+
+
+def _installed_version(name: str, pinned: str | None) -> str | None:
+    """Installed version; for a requirement pinned to a git commit, the commit it was installed from (PEP 610)."""
+    version = md.version(name)
+    if pinned and re.fullmatch(r"[0-9a-f]{40}", pinned):
+        try:
+            direct = json.loads(md.distribution(name).read_text("direct_url.json") or "{}")
+        except ValueError:
+            direct = {}
+        return direct.get("vcs_info", {}).get("commit_id") or f"{version} (not installed from git)"
+    return version
 
 
 def environment() -> dict:
     installed, mismatches = {}, []
     for name, pinned in requirement_names():
         try:
-            version = md.version(name)
+            version = _installed_version(name, pinned)
         except md.PackageNotFoundError:
             version = None
         installed[name] = version

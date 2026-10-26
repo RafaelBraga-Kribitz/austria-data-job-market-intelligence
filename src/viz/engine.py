@@ -3,14 +3,16 @@
 Every figure in `outputs/figures/BQ*` is built through this module so that the
 whole layer shares one grammar:
 
-* **House style.** `src/viz/styles/dsx-urban.mplstyle` (vendored from GSD-DSX,
-  WCAG-AA verified palette, Lato) is applied at import time.
+* **House style.** The Braga design system v2.1 through `bk-viz` (`bk_theme`):
+  `bk.apply("light")` runs at import time (BKribitz type, flat surface, hairline
+  axes and grid); every colour below is a design-system role, never a hex value.
 * **Takeaway titles.** `finalise()` wraps the DSX `finalise_figure` helper: the
   title is a sentence with a magnitude, never a chart name, and the source line
   is a mandatory keyword (a figure without provenance is a `TypeError`).
-* **One highlight colour.** `HILITE` marks the element that concerns *this*
-  reader's decision (Graz/Styria, the target family, the reachable set). It is
-  never the only channel — the highlighted element is always also labelled.
+* **One highlight colour.** `HILITE` (the `hl` accent) marks the one entity that
+  concerns *this* reader's decision (Graz/Styria, the target family, the reachable
+  set), at most once per chart. It is never the only channel — the highlighted
+  element is always also labelled. Labels are set in ink / ink-2, never in a hue.
 * **Deterministic output.** SVG is written with the DSX recipe (fixed hashsalt,
   glyphs as paths, no render timestamp) and sealed with stdlib SHA-256 into
   `outputs/figures/FIGURE-MANIFEST.yaml`; PNG is written alongside for markdown.
@@ -31,32 +33,58 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.lines  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.axes import Axes  # noqa: E402
 from matplotlib.figure import Figure  # noqa: E402
 
 # Flat-script layout (no packages), as everywhere else in src/.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dsx_plotstyle import finalise_figure, save_deterministic  # noqa: E402,F401
+from dsx_plotstyle import save_deterministic  # noqa: E402
+
+import bk_theme as bk  # noqa: E402  (bk-viz: the Braga design system v2.1)
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src" / "reporting"))
 import vintages  # noqa: E402  (single definition of the data vintages)
 TABLES = ROOT / "outputs" / "tables"
 FIGURES = ROOT / "outputs" / "figures"
-STYLE = Path(__file__).resolve().parent / "styles" / "dsx-urban.mplstyle"
 
-plt.style.use(str(STYLE))
-plt.rcParams.update({"figure.dpi": 150, "savefig.dpi": 150, "font.size": 11})
+bk.apply("light")
 
-# ---- palette ---------------------------------------------------------------------------------
-# From the vendored dsx-urban cycle; named here so the grammar is explicit.
-BASE = "#1696d2"      # the market / the reference set
-HILITE = "#ec008b"    # the part that bears on this reader's decision
-THIRD = "#1b7837"     # a second comparison series
-FOURTH = "#b35806"    # a third comparison series
-MUTED = "#5c5859"     # context, de-emphasised
-GRID = "#d2d2d2"
+# ---- palette: design-system roles only (DECISIONS.md D-036, D-053) ----------------------------
+HILITE = bk.c("hl")              # the one entity that bears on this reader's decision (one per chart)
+HILITE_TINT = bk.c("hl-7")       # opaque fill under a HILITE outline (no alpha in the system)
+BASE = bk.c("ink-2")             # the market / the reference set (structure grey)
+MUTED = bk.c("mid")              # context, de-emphasised (a mark colour; `mid` is never text)
+RANGE = bk.c("rule-c")           # an interquartile band or leader drawn behind the marks
+INK = bk.c("ink")                # text, reference lines
+INK_2 = bk.c("ink-2")            # secondary text, error bars
+SURFACE = bk.c("surface")        # the page surface: the fill of an open marker
+CAT = bk.palette("categorical")  # unordered series, used in slot order; a sixth is bk.c("cat-other")
+CAT_OTHER = bk.c("cat-other")
+NEUTRALS = bk.neutral_ramp(4)    # parts of a whole (IBCS greys), darkest first
+# two poles of one comparison (e.g. junior vs intern), from the ultramarine <-> ochre scale
+_TWO = bk.palette("two")
+POLE_A, POLE_B = _TWO[2], _TWO[-3]
+LABEL = bk.SIZE["mono-sm"]       # the 12px floor, for dense direct labels
+TEXT = bk.SIZE["mono"]           # default label size
+
+
+def ordinal_colors(n: int) -> list[str]:
+    """`n` steps of the sequential ultramarine scale, darkest (strongest) first."""
+    return bk.palette("seq", n + 1)[:n] if n < 9 else bk.palette("seq", n)
+
+
+def seq_cmap(name: str = "bk_seq"):
+    """The sequential scale as a colormap, light (low) to dark (high)."""
+    from matplotlib.colors import LinearSegmentedColormap
+    return LinearSegmentedColormap.from_list(name, bk.palette("seq", reverse=True))
+
+
+def on_fill(face: str) -> str:
+    """Ink or surface, whichever reads on a filled mark (labels inside bars and cells)."""
+    return bk._contrast_ink(face)
 
 
 # ---- data vintages ---------------------------------------------------------------------------
@@ -195,34 +223,59 @@ def finalise(
 ) -> Figure:
     """Takeaway title + mandatory source, with the layout reserved first.
 
-    Both texts are wrapped to the figure's own width and the axes rectangle is
-    computed from the resulting line counts, so a long takeaway sentence or a long
-    provenance line pushes the plot down instead of being clipped by it. The
-    source note carries provenance, n and units together, because a chart that is
-    screenshotted out of this repository has to defend itself alone.
+    Both texts are wrapped to the figure's own width (measured in the BKribitz
+    faces) and the axes rectangle is computed from the resulting line counts, so a
+    long takeaway sentence or a long provenance line pushes the plot down instead
+    of being clipped by it. The source note carries provenance, n and units
+    together, because a chart that is screenshotted out of this repository has to
+    defend itself alone. The footer opens with an ink hairline (D-044).
     """
-    width_in = fig.get_size_inches()[0]
-    title_cols = int(width_in * 9.0)      # bold, x-large: calibrated against Lato at 13.2 pt
-    source_cols = int(width_in * 15.4)    # small: calibrated against Lato at 8.8 pt
-    title_text = wrap(title, title_cols)
-    source_text = wrap(
+    width_in, height_in = fig.get_size_inches()
+    margin = 0.01
+    span_px = (1.0 - 2 * margin) * width_in * bk.PX_PER_IN
+    title_fp = bk.font("display", "bold", "project")
+    source_fp = bk.font("mono", "regular", "mono-sm")
+    title_text = bk.wrap_to_px(title, title_fp, span_px)
+    source_text = bk.wrap_to_px(
         f"Source: {source}. {n}. Units: {units}." + (f" {note}" if note else ""),
-        source_cols,
+        source_fp, span_px,
     )
-    title_lines = title_text.count("\n") + 1
-    source_lines = source_text.count("\n") + 1
-    height_in = fig.get_size_inches()[1]
-    top = 1.0 - (0.30 * title_lines + 0.12) / height_in
-    bottom = (0.20 * source_lines + 0.12) / height_in
+    # Axis titles are prose, set in the display face (numbers and tick labels stay mono, D-053);
+    # a long y-axis title in the wider mono face would run past the axes into the title band.
+    for ax in fig.axes:
+        for lab in (ax.xaxis.label, ax.yaxis.label):
+            lab.set_fontproperties(bk.font("display", "regular", lab.get_fontsize()))
+    pad = 0.12                                       # inches of air at the top and bottom edge
+    title = fig.text(margin, 1.0 - pad / height_in, title_text, ha="left", va="top", color=INK,
+                     linespacing=bk.LINE_HEIGHT["snug"], fontproperties=title_fp)
+    source = fig.text(margin, pad / height_in, source_text, ha="left", va="bottom", color=INK_2,
+                      linespacing=1.3, fontproperties=source_fp)
+    # measure the set text, then reserve exactly that much: no estimate of line heights
+    renderer = fig.canvas.get_renderer()
+    title_h = title.get_window_extent(renderer).height / fig.dpi
+    source_h = source.get_window_extent(renderer).height / fig.dpi
+    top = 1.0 - (pad + title_h + 0.16) / height_in
+    rule_y = (pad + source_h + 0.07) / height_in
+    bottom = rule_y + 0.10 / height_in
     fig.tight_layout(rect=(0.0, bottom, 1.0, top))
-    # finalise_figure prefixes "Source: " itself; the prefix is already in source_text,
-    # so the label is passed through the subtitle-free path with the prefix stripped.
-    finalise_figure(
-        fig,
-        title=title_text,
-        subtitle=None,
-        source=source_text.removeprefix("Source: "),
-    )
+    # an axis title longer than its axis is broken at the middle space, then the layout is redone
+    wrapped = False
+    for ax in fig.axes:
+        box = ax.get_window_extent(renderer)
+        for label, limit, along in ((ax.xaxis.label, box.width, "width"), (ax.yaxis.label, box.height, "height")):
+            text = label.get_text()
+            if not text or "\n" in text or " " not in text:
+                continue
+            if getattr(label.get_window_extent(renderer), along) > limit:
+                mid = len(text) // 2
+                cut = min((i for i, ch in enumerate(text) if ch == " "), key=lambda i: abs(i - mid))
+                label.set_text(text[:cut] + "\n" + text[cut + 1:])
+                wrapped = True
+    if wrapped:
+        fig.tight_layout(rect=(0.0, bottom, 1.0, top))
+    fig.add_artist(matplotlib.lines.Line2D([margin, 1.0 - margin], [rule_y, rule_y],
+                                           transform=fig.transFigure, color=INK,
+                                           linewidth=bk.HAIRLINE_PT, clip_on=False))
     return fig
 
 
@@ -272,9 +325,9 @@ def label_bars(ax: Axes, values, labels, *, horizontal: bool = True, pad: float 
         offset = span * pad
         if horizontal:
             ax.text(v + (offset if v >= 0 else -offset), i, text, va="center",
-                    ha="left" if v >= 0 else "right", fontsize=9, color=color or "#222222")
+                    ha="left" if v >= 0 else "right", fontsize=LABEL, color=color or INK)
         else:
-            ax.text(i, v + offset, text, ha="center", va="bottom", fontsize=9, color=color or "#222222")
+            ax.text(i, v + offset, text, ha="center", va="bottom", fontsize=LABEL, color=color or INK)
 
 
 def seal(path: Path) -> str:
@@ -287,7 +340,11 @@ def seal(path: Path) -> str:
 
 
 def save(fig: Figure, spec: Spec) -> Spec:
-    """Write the deterministic SVG plus a PNG for markdown, and seal the SVG."""
+    """Write the deterministic SVG plus a PNG for markdown, and seal the SVG.
+
+    The SVG keeps the GA-3 recipe (glyphs as paths), so it carries BKribitz
+    wherever it is opened; the PNG is written at the theme's 2x density.
+    """
     FIGURES.mkdir(parents=True, exist_ok=True)
     svg_path = save_deterministic(fig, FIGURES / spec.svg, metadata={"Date": None})
     fig.savefig(FIGURES / spec.png, format="png", metadata={"Software": None})

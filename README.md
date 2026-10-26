@@ -210,7 +210,7 @@ schemas/                        posting, supply and application-log schemas
 src/acquisition/                collectors for documented public APIs and open data only
 src/pipeline/                   common schema, rules, de-duplication, supply build, redaction
 src/analysis/                   Layer 1, 2 and 3 analysis, visual-layer builders
-src/viz/                        house style, vendored Lato font (SIL OFL 1.1), figure engine
+src/viz/                        figure engine on bk-viz (Braga design system v2.1), vendored DSX helper and Lato (SIL OFL 1.1)
 src/reporting/                  digest and the metrics registry with its renderer
 src/publish/                    scanned public export
 outputs/tables/                 aggregated tables: T* JB* S* D* Q* (Layer 1), C* O* SQ* (Layer 2), DS* (Layer 3)
@@ -225,7 +225,7 @@ tests/                          pytest suite, one file per module family
 | Language | Python 3.12 | One plain script per step, run in fixed order by `run_all.py` |
 | Data handling | pandas, numpy, pyarrow | Posting and supply tables, aggregation, Parquet intermediates |
 | Statistics | numpy, scipy, scikit-learn | Wilson intervals and the D05 regression written out in numpy; scipy for seasonal confidence intervals; scikit-learn for the requirement clusters used as reading aids |
-| Charts | matplotlib + `src/viz` (Lato) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
+| Charts | matplotlib + `src/viz` on bk-viz (Braga design system v2.1, BKribitz type) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
 | Collection | requests | Public collectors only: AMS JobBarometer pages and the Eurostat and GitHub APIs; the job-board collectors stay private |
 | Tests | pytest | Rule tests, value checks of chart sentences, integrity checks |
 | Publication | `export_public.py` | Staging build with leak scans before any file reaches the public tree |

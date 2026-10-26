@@ -24,17 +24,28 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src" / "viz"))
 
 from engine import (  # noqa: E402
+    CAT,
+    CAT_OTHER,
+    HILITE_TINT,
+    INK,
+    INK_2,
+    LABEL,
+    NEUTRALS,
+    POLE_A,
+    POLE_B,
+    RANGE,
+    on_fill,
+    ordinal_colors,
+    seq_cmap,
     AMS_SOURCE,
     BASE,
     DEMAND_SOURCE,
     DEMAND_VINTAGE,
     EUROSTAT_SOURCE,
-    FOURTH,
     HILITE,
     MUTED,
     PRIMARY_BASIS,
     TABLES,
-    THIRD,
     Spec,
     eur_k,
     finalise,
@@ -128,7 +139,8 @@ def family_label_with_n(family: str, n: int) -> str:
     return FAMILY_LABEL.get(family, family) + ("" if n >= MIN_FAMILY_N else f" (n = {n})")
 
 
-STATUS_COLOR = {"have": THIRD, "developing": BASE, "structural": FOURTH, "unclassified": MUTED}
+# profile status is an unordered category: categorical slots in order, "unclassified" is cat-other
+STATUS_COLOR = {"have": CAT[0], "developing": CAT[1], "structural": CAT[2], "unclassified": CAT_OTHER}
 STATUS_MARKER = {"have": "o", "developing": "s", "structural": "^", "unclassified": "x"}
 
 
@@ -159,11 +171,11 @@ def bq01():
     ax.set_xlabel("Open core data-role postings (one-day stock)")
     label_bars(ax, list(st["count"]), [f"{v} ({v / total:.0%})" for v in st["count"]])
     ax.annotate(
-        f"{styria_any} ads list a Styrian site: {graz_city} in Graz city, {graz_area} inside the commuting area",
+        f"{styria_any} ads list a Styrian site:\n{graz_city} in Graz city, {graz_area} inside the commuting area",
         xy=(styria, list(st.state).index("Steiermark")),
         xytext=(vienna * 0.34, list(st.state).index("Steiermark") - 1.9),
-        fontsize=9, color=HILITE,
-        arrowprops={"arrowstyle": "->", "color": HILITE, "lw": 1},
+        fontsize=LABEL, color=INK_2,
+        arrowprops={"arrowstyle": "->", "color": INK_2, "lw": 1},
     )
     finalise(
         fig,
@@ -212,12 +224,14 @@ def bq02():
     idx = wide / wide.iloc[0] * 100
 
     fig, ax = new_figure(height=5.2)
-    styles = {"Steiermark": (HILITE, 2.6), "Österreich": (MUTED, 1.6), "Wien": (BASE, 1.6), "Oberösterreich": (THIRD, 1.6)}
+    # Styria is the one highlight; the comparison regions are structure greys, Austria the dashed reference
+    styles = {"Steiermark": (HILITE, 2.6, "-"), "Österreich": (INK, 1.6, "--"), "Wien": (BASE, 1.6, "-"),
+              "Oberösterreich": (MUTED, 1.6, "-")}
     for col in keep:
-        color, lw = styles[col]
-        ax.plot(idx.index, idx[col], color=color, linewidth=lw, marker="o", markersize=4)
+        color, lw, ls = styles[col]
+        ax.plot(idx.index, idx[col], color=color, linewidth=lw, linestyle=ls, marker="o", markersize=4)
         ax.annotate(f" {col} {idx[col].iloc[-1]:.0f}", (idx.index[-1], idx[col].iloc[-1]),
-                    color=color, fontsize=9, va="center", ha="left")
+                    color=INK if col == "Steiermark" else INK_2, fontsize=LABEL, va="center", ha="left")
     ax.axhline(100, color=MUTED, linewidth=0.8, linestyle=":")
     ax.set_xlim(idx.index.min(), idx.index.max() + 1.6)
     y_base, y_last = int(wide.index[0]), int(wide.index[-1])
@@ -269,7 +283,7 @@ def bq03():
     s1 = s1[s1["sample"] == "full"]
     s6 = table("S06_season_vs_cycle.csv")
     sectors = list(dict.fromkeys(s1.sector_label))
-    colors = [BASE, THIRD, FOURTH, MUTED]
+    colors = CAT[:4]
     markers = ["o", "s", "^", "D"]
     quarters = ["Q1", "Q2", "Q3", "Q4"]
 
@@ -284,11 +298,12 @@ def bq03():
             sub.index_a_own_year_mean, ypos,
             xerr=[sub.index_a_own_year_mean - sub.ci_low, sub.ci_high - sub.index_a_own_year_mean],
             fmt=marker, color=color, ecolor=color, capsize=2, markersize=6, linewidth=1.2,
+            label=short[sector],
         )
-        # Direct labels on the first row instead of a legend that would sit on the data.
-        ax.text(right_edge, offset, short[sector], color=color, fontsize=8.5, va="center", ha="left")
-    ax.set_xlim(right=right_edge * 1.16)
-    ax.axvline(1.0, color="#222222", linewidth=0.9)
+    # A legend in the free band right of the data: four direct labels on one row overlap in the mono face.
+    ax.legend(fontsize=LABEL, loc="center right")
+    ax.set_xlim(right=right_edge * 1.30)
+    ax.axvline(1.0, color=INK, linewidth=0.9)
     ax.set_yticks(np.arange(len(quarters)))
     ax.set_yticklabels(quarters)
     ax.invert_yaxis()
@@ -337,7 +352,8 @@ def bq04():
     emp = full.head(14).iloc[::-1]
     analyst_side = emp.families.fillna("").str.contains("data_analytics|bi|business_analysis")
     labels = [f"{name}{' *' if flag else ''}" for name, flag in zip(emp.example_company, analyst_side)]
-    colors = [HILITE if flag else BASE for flag in analyst_side]
+    # a class (analyst-side employers), not one entity: emphasis in structure grey, no accent
+    colors = [BASE if flag else MUTED for flag in analyst_side]
 
     fig, ax = new_figure(height=0.34 * len(emp) + 2.4)
     ax.barh(labels, emp.styria, color=colors)
@@ -402,17 +418,20 @@ def bq05():
     )
     for (_, row), ly in zip(d1.iterrows(), label_y):
         color = HILITE if row.role_family == best else (BASE if row.viable else MUTED)
+        # opaque marks (no alpha): outlined bubbles, the highlighted one filled with its tint
         ax.scatter(row.V1_postings_at, row.V5_profile_overlap_top15,
-                   s=max(row.V2_postings_styria, 0.4) * 46, color=color, alpha=0.5,
+                   s=max(row.V2_postings_styria, 0.4) * 46,
+                   facecolor=HILITE_TINT if row.role_family == best else "none",
                    edgecolor=color, linewidth=1.4, zorder=3)
         small = "" if row.viable else f"  (n < {MIN_FAMILY_N}: too small to rank)"
         lx = row.V1_postings_at + 9
         ax.plot([row.V1_postings_at, lx], [row.V5_profile_overlap_top15, ly],
-                color=color, linewidth=0.6, alpha=0.5, zorder=2)
+                color=RANGE, linewidth=0.6, zorder=2)
         ax.annotate(
             f"{FAMILY_LABEL[row.role_family]} · {int(row.V1_postings_at)} AT · "
             f"{int(row.V2_postings_styria)} Styria{small}",
-            (lx, ly), fontsize=8.5, color=color, ha="left", va="center", zorder=4,
+            (lx, ly), fontsize=LABEL, color=INK if row.role_family == best else INK_2,
+            ha="left", va="center", zorder=4,
         )
     ax.set_xlabel("Open postings in Austria")
     ax.set_ylabel("Share of the family's 15 most-mentioned skills\nalready in my profile (have or developing)")
@@ -476,7 +495,7 @@ def bq06():
     ax.set_xlim(left=0)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of the region's core postings")
-    ax.legend(fontsize=9, loc="lower right")
+    ax.legend(fontsize=LABEL, loc="lower right")
     eng = fam[fam.role_family == "data_engineering"].iloc[0]
     ba = fam[fam.role_family == "business_analysis"].iloc[0]
     finalise(
@@ -546,8 +565,8 @@ def bq07():
         highlight = row.role_family == "data_analytics"
         color = HILITE if highlight else (BASE if row.role_family in top3 else MUTED)
         ax.plot(x, ranks, marker="o", markersize=7, linewidth=2.6 if highlight else 1.6, color=color)
-        ax.annotate(f" {FAMILY_LABEL[row.role_family]}", (x[-1], ranks[-1]), color=color,
-                    fontsize=9, va="center", ha="left")
+        ax.annotate(f" {FAMILY_LABEL[row.role_family]}", (x[-1], ranks[-1]), color=INK if highlight else INK_2,
+                    fontsize=LABEL, va="center", ha="left")
     ax.set_xticks(x)
     ax.set_xticklabels([label for _, label in weightings])
     ax.set_yticks(range(1, len(d2) + 1))
@@ -616,7 +635,7 @@ def bq08():
     ax.set_xlim(left=0)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of core postings mentioning the item (Wilson 95 % CI)")
-    ax.legend(fontsize=8.5, loc="lower right")
+    ax.legend(fontsize=LABEL, loc="lower right")
     top10 = table("T05_skills_all_tech.csv").head(10)
     top_n = len(top10)
     covered = sum(profile_status(s) in {"have", "developing"} for s in top10.skill)
@@ -659,7 +678,8 @@ def bq09():
     sub = d4[d4.priority.isin(order)].copy()
     sub["rank"] = sub.priority.map(order)
     sub = sub.sort_values(["rank", "share"], ascending=[False, True])
-    colors = {"NOW": HILITE, "NEXT": BASE, "LATER": MUTED}
+    # priority is ordinal: the sequential scale, strongest (NOW) darkest
+    colors = dict(zip(["NOW", "NEXT", "LATER"], ordinal_colors(3)))
 
     fig, ax = new_figure(height=0.42 * len(sub) + 2.8)
     ax.barh(sub.skill, sub.share, color=[colors[p] for p in sub.priority])
@@ -714,11 +734,12 @@ def bq10():
 
     fig, ax = new_figure(height=7.2, width=9.6)
     data = mat.to_numpy(dtype=float)
-    im = ax.imshow(np.ma.masked_invalid(data), cmap="viridis", vmin=0, vmax=1)
+    cmap = seq_cmap()
+    im = ax.imshow(np.ma.masked_invalid(data), cmap=cmap, vmin=0, vmax=1)
     ax.set_xticks(range(len(top)))
-    ax.set_xticklabels(top, rotation=45, ha="right", fontsize=9)
+    ax.set_xticklabels(top, rotation=45, ha="right", fontsize=LABEL)
     ax.set_yticks(range(len(top)))
-    ax.set_yticklabels(top, fontsize=9)
+    ax.set_yticklabels(top, fontsize=LABEL)
     ax.set_ylabel("If an ad mentions this …")
     ax.set_xlabel("… how often does it also mention this?")
     ax.grid(False)
@@ -726,8 +747,8 @@ def bq10():
         for j in range(len(top)):
             v = data[i, j]
             if not np.isnan(v):
-                ax.text(j, i, f"{v * 100:.0f}", ha="center", va="center", fontsize=7.5,
-                        color="white" if v < 0.62 else "#111111")
+                ax.text(j, i, f"{v * 100:.0f}", ha="center", va="center", fontsize=LABEL,
+                        color=on_fill(cmap(v)))
     fig.colorbar(im, ax=ax, shrink=0.72, label="P(column | row)")
     ml = pairs[(pairs.skill_a == "Machine Learning") & (pairs.skill_b == "Python")]
     ml_val = float(ml.p_a_given_b.iloc[0]) if not ml.empty else np.nan
@@ -767,19 +788,20 @@ def bq11():
     t17 = table("T17_skill_divergence_intern_vs_junior.csv").copy()
     t17 = t17.reindex(t17.junior_minus_intern_pp.abs().sort_values(ascending=False).index).head(14)
     t17 = t17.sort_values("junior_minus_intern_pp")
-    colors = [BASE if v < 0 else HILITE for v in t17.junior_minus_intern_pp]
+    colors = [POLE_B if v < 0 else POLE_A for v in t17.junior_minus_intern_pp]
 
     fig, ax = new_figure(height=0.40 * len(t17) + 2.8)
     ax.barh(t17.skill, t17.junior_minus_intern_pp, color=colors)
-    ax.axvline(0, color="#222222", linewidth=0.9)
+    ax.axvline(0, color=INK, linewidth=0.9)
     ax.set_xlabel("Percentage points: junior-ad share minus intern-ad share")
     span = t17.junior_minus_intern_pp.abs().max()
-    ax.set_xlim(-span * 1.58, span * 1.58)
+    ax.set_xlim(-span * 2.0, span * 2.0)
+    ax.set_ylim(-1.6, len(t17) - 0.5)   # a free row under the bars for the two direction notes
     for i, (skill, v, ic, jc) in enumerate(zip(t17.skill, t17.junior_minus_intern_pp, t17.intern_count, t17.junior_count)):
         ax.text(v + (1.2 if v >= 0 else -1.2), i, f"{v:+.0f} pp ({int(ic)}→{int(jc)} ads)",
-                va="center", ha="left" if v >= 0 else "right", fontsize=8.5)
-    ax.text(0.99, 0.03, "→ asked more in junior ads", transform=ax.transAxes, ha="right", fontsize=9, color=HILITE)
-    ax.text(0.01, 0.03, "← asked more in intern ads", transform=ax.transAxes, ha="left", fontsize=9, color=BASE)
+                va="center", ha="left" if v >= 0 else "right", fontsize=LABEL)
+    ax.text(0.99, 0.03, "→ asked more in junior ads", transform=ax.transAxes, ha="right", fontsize=LABEL, color=INK_2)
+    ax.text(0.01, 0.03, "← asked more in intern ads", transform=ax.transAxes, ha="left", fontsize=LABEL, color=INK_2)
     top_j = t17.iloc[-1]
     top_i = t17.iloc[0]
     n_intern, n_junior = int(t17.intern_n.iloc[0]), int(t17.junior_n.iloc[0])
@@ -834,15 +856,17 @@ def bq12():
         vals = sub[col] / sub["n"]
         ax.bar(x + (k - 1) * width, vals, width, color=color, label=label)
         for xi, (v, c) in zip(x + (k - 1) * width, zip(vals, sub[col])):
-            ax.text(xi, v + 0.012, f"{int(c)}", ha="center", fontsize=8)
+            ax.text(xi, v + 0.012, f"{int(c)}", ha="center", fontsize=LABEL)
     ax.set_xticks(x)
-    ax.set_xticklabels(sub.index)
+    ax.set_xticklabels([s.replace(" ", "\n") for s in sub.index])
     ax.axvline(3.5, color=MUTED, linewidth=0.8, linestyle=":")
-    ax.text(3.58, 0.985, "by role family (Austria)", fontsize=8.5, color=MUTED, va="top")
-    ax.set_ylim(0, 1.0)
+    ax.text(len(sub) - 0.55, 1.40, "right of the line: by role family (Austria)", fontsize=LABEL, color=INK_2,
+            va="top", ha="right")
+    ax.set_ylim(0, 1.42)   # headroom above 100 % for the legend, so it never sits on a bar
+    ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
     ax.set_ylabel("Share of the scope's postings")
     ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
-    ax.legend(fontsize=8.5, loc="upper left")
+    ax.legend(fontsize=LABEL, loc="upper left")
     sty = sub.loc["Styria"]
     finalise(
         fig,
@@ -893,14 +917,16 @@ def bq13():
     for fam, ly in zip(fams, label_y):
         x, y = eng.loc[fam, "share"], req.loc[fam]
         n = int(eng.loc[fam, "n"])
-        color = HILITE if fam in {"data_analytics", "marketing_analytics"} else BASE
-        ax.scatter(x, y, s=max(n, 8) * 2.4, color=color, alpha=0.55, edgecolor=color,
-                   linewidth=1.4, zorder=3)
+        # two families of interest: emphasis in structure grey (two accents would read as none)
+        mine = fam in {"data_analytics", "marketing_analytics"}
+        color = BASE if mine else MUTED
+        ax.scatter(x, y, s=max(n, 8) * 2.4, facecolor="none", edgecolor=color,
+                   linewidth=2.0 if mine else 1.4, zorder=3)
         lx = x + 0.035
-        ax.plot([x, lx], [y, ly], color=color, linewidth=0.6, alpha=0.5, zorder=2)
+        ax.plot([x, lx], [y, ly], color=RANGE, linewidth=0.6, zorder=2)
         small = "" if n >= MIN_FAMILY_N else " — too small to rank"
-        ax.annotate(f"{FAMILY_LABEL[fam]} · n = {n}{small}", (lx, ly), fontsize=8.5,
-                    color=color, ha="left", va="center", zorder=4)
+        ax.annotate(f"{FAMILY_LABEL[fam]} · n = {n}{small}", (lx, ly), fontsize=LABEL,
+                    color=INK if mine else INK_2, ha="left", va="center", zorder=4)
     ax.set_xlabel("Share of the family's ads written in English")
     ax.set_ylabel("Share stating a German requirement or level")
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
@@ -909,7 +935,7 @@ def bq13():
     ax.set_ylim(0, max(req[fams]) * 1.45)
     ax.annotate("more English, less stated German = more of this family open to me now",
                 xy=(0.985, 0.03), xycoords="axes fraction", ha="right", va="bottom",
-                fontsize=8.5, color=MUTED)
+                fontsize=LABEL, color=INK_2)
     best = max(fams, key=lambda f: eng.loc[f, "share"])
     worst = min(fams, key=lambda f: eng.loc[f, "share"])
     finalise(
@@ -949,7 +975,8 @@ def bq13():
 def bq14():
     deg = table("T11e_degree_requirement_strength_by_family.csv")
     order = ["required", "preferred", "mentioned", "none"]
-    colors = {"required": HILITE, "preferred": FOURTH, "mentioned": BASE, "none": MUTED}
+    # parts of a whole: the IBCS structure greys, strongest wording darkest
+    colors = dict(zip(order, NEUTRALS))
     wide = deg.pivot_table(index="role_family", columns="degree_requirement", values="share").fillna(0)
     wide = wide.reindex(columns=order, fill_value=0).sort_values("required")
     family_n = deg.groupby("role_family")["n"].max()
@@ -962,13 +989,13 @@ def bq14():
         ax.barh(labels, wide[col], left=left, color=colors[col], label=col)
         for i, (v, l0) in enumerate(zip(wide[col], left)):
             if v > 0.06:
-                ax.text(l0 + v / 2, i, f"{v:.0%}", ha="center", va="center", fontsize=8.5,
-                        color="white" if col in {"required", "none"} else "#222222")
+                ax.text(l0 + v / 2, i, f"{v:.0%}", ha="center", va="center", fontsize=LABEL,
+                        color=on_fill(colors[col]))
         left = left + wide[col].to_numpy()
     ax.set_xlim(0, 1)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of the family's postings")
-    ax.legend(fontsize=8.5, ncol=4, loc="lower center", bbox_to_anchor=(0.5, -0.30))
+    ax.legend(fontsize=LABEL, ncol=4, loc="lower left", bbox_to_anchor=(0.0, 1.01))   # above the bars, clear of the axis title
     req_share = wide.loc[viable, "required"]
     none_share = wide.loc[viable, "none"]
     finalise(
@@ -1015,18 +1042,18 @@ def _salary_range_chart(df, label_col, *, label_map=None, highlight=None):
     y = np.arange(len(df))
     fig, ax = new_figure(height=0.44 * len(df) + 2.8)
     for i, row in enumerate(df.itertuples()):
-        ax.plot([row.min_p25, row.min_p75], [i, i], color=MUTED, linewidth=3, alpha=0.45, solid_capstyle="butt")
+        ax.plot([row.min_p25, row.min_p75], [i, i], color=RANGE, linewidth=3, solid_capstyle="butt")
     dot_colors = [HILITE if v == highlight else BASE for v in df[label_col]]
     ax.scatter(df.min_median, y, color=dot_colors, s=[105 if c == HILITE else 80 for c in dot_colors], zorder=3)
     ax.set_yticks(y)
     ax.set_yticklabels(labels)
     floor = np.floor(df.min_p25.min() / 5000) * 5000
-    ax.set_xlim(floor, df.min_p75.max() * 1.10)
+    ax.set_xlim(floor, df.min_p75.max() * 1.18)
     ax.xaxis.set_major_formatter(lambda v, _: f"€{v / 1000:.0f}k")
     ax.set_xlabel("Advertised minimum, annual gross (median dot, p25-p75 bar)")
     for i, row in enumerate(df.itertuples()):
         ax.text(row.min_p75 + (df.min_p75.max() - floor) * 0.02, i,
-                f"{eur_k(row.min_median)}  (n = {int(row.n)})", va="center", fontsize=8.5)
+                f"{eur_k(row.min_median)}  (n = {int(row.n)})", va="center", fontsize=LABEL)
     return fig, ax, df, floor
 
 
@@ -1115,8 +1142,8 @@ def bq17():
     df = df[df.n >= 20].copy()
     df["status"] = df.skill.map(profile_status)
     fig, ax, df, floor = _salary_range_chart(df, "skill")
-    for tick, status in zip(ax.get_yticklabels(), df.status):
-        tick.set_color(STATUS_COLOR[status])
+    # colour lives in marks, never in type: the profile status is a bracketed tag on the label
+    ax.set_yticklabels([f"{tick.get_text()}  [{status}]" for tick, status in zip(ax.get_yticklabels(), df.status)])
     top, bottom = df.iloc[-1], df.iloc[0]
     finalise(
         fig,
@@ -1125,8 +1152,8 @@ def bq17():
         source=DEMAND_SOURCE,
         units="euro, annual gross (monthly × 14)",
         n=f"n = {int(table('T09d_salary_by_skill.csv').n.max())} ads maximum per skill; skills with n ≥ 20 shown",
-        note=f"Axis starts at €{floor / 1000:.0f}k. Label colour = my profile status "
-             "(green have, blue developing, orange structural).",
+        note=f"Axis starts at €{floor / 1000:.0f}k. Bracket = my profile status "
+             "(have, developing, structural, unclassified).",
     )
     return Spec(
         chart_id="BQ17_salary_by_skill",
@@ -1153,7 +1180,9 @@ def bq17():
 def bq18():
     rem = table("T10_remote_by_family.csv")
     order = ["remote", "hybrid", "hybrid_or_flexible", "on_site", "unknown"]
-    colors = {"remote": HILITE, "hybrid": BASE, "hybrid_or_flexible": THIRD, "on_site": FOURTH, "unknown": MUTED}
+    # fully remote is the one highlight (the title's subject); the other parts of the whole are structure greys
+    colors = {"remote": HILITE, "hybrid": NEUTRALS[0], "hybrid_or_flexible": NEUTRALS[1], "on_site": NEUTRALS[2],
+              "unknown": NEUTRALS[3]}
     # The taxonomy keys are not self-explanatory: "hybrid" is an explicit pattern or a
     # stated number of days, "hybrid_or_flexible" a general home-office mention, and
     # "unknown" is silence in the advertisement - not evidence of on-site work.
@@ -1173,13 +1202,13 @@ def bq18():
         ax.barh(labels, wide[col], left=left, color=colors[col], label=legend_label[col])
         for i, (v, l0) in enumerate(zip(wide[col], left)):
             if v > 0.07:
-                ax.text(l0 + v / 2, i, f"{v:.0%}", ha="center", va="center", fontsize=8.5,
-                        color="white" if col in {"unknown", "hybrid"} else "#222222")
+                ax.text(l0 + v / 2, i, f"{v:.0%}", ha="center", va="center", fontsize=LABEL,
+                        color=on_fill(colors[col]))
         left = left + wide[col].to_numpy()
     ax.set_xlim(0, 1)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of the family's postings")
-    ax.legend(fontsize=8.5, ncol=5, loc="lower center", bbox_to_anchor=(0.5, -0.32))
+    ax.legend(fontsize=LABEL, ncol=3, loc="lower left", bbox_to_anchor=(0.0, 1.01))   # above the bars, clear of the axis title
     overall = table("T10_remote_overall.csv")
     rem_share = float(overall.loc[overall.remote_type == "remote", "share"].iloc[0])
     silent_share = pct_txt(float(overall.loc[overall.remote_type == "unknown", "share"].iloc[0]))
@@ -1232,17 +1261,17 @@ def bq19():
     y = np.arange(len(adj))
 
     fig, ax = new_figure(height=0.36 * len(adj) + 3.0)
-    ax.barh(y, adj.in_core_data_title, color=BASE, label="under a core data title")
-    ax.barh(y, adj.in_non_data_title, left=adj.in_core_data_title, color=HILITE, label="under a non-data title")
+    ax.barh(y, adj.in_core_data_title, color=MUTED, label="under a core data title")
+    ax.barh(y, adj.in_non_data_title, left=adj.in_core_data_title, color=BASE, label="under a non-data title")
     ax.set_yticks(y)
-    ax.set_yticklabels(adj.key, fontsize=9)
+    ax.set_yticklabels(adj.key, fontsize=LABEL)
     ax.set_xlim(left=0)
     ax.set_xlabel("Postings in the AMS full-text sweep mentioning the tool")
     for i, row in enumerate(adj.itertuples()):
         ax.text(row.postings_mentioning * 1.01, i, f"{row.share_non_data_title:.0%} non-data",
-                va="center", fontsize=8.5)
+                va="center", fontsize=LABEL)
     ax.set_xlim(right=adj.postings_mentioning.max() * 1.28)
-    ax.legend(fontsize=8.5, loc="lower right")
+    ax.legend(fontsize=LABEL, loc="lower right")
     sty_py = adj[(adj.region == "Steiermark") & (adj.tool == "Python")].iloc[0]
     finalise(
         fig,

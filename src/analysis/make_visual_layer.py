@@ -64,7 +64,7 @@ def write_manifest(specs) -> None:
         f'data_vintage: "{SNAPSHOT}"',
         f'generated: "{date.today().isoformat()}"',
         "generator: src/analysis/make_visual_layer.py",
-        "style: src/viz/styles/dsx-urban.mplstyle",
+        "style: bk-viz (bk_theme, light mode; Braga design system v2.1)",
         "figures:",
     ]
     for spec in specs:
