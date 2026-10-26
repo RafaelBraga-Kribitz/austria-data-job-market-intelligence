@@ -1,7 +1,7 @@
 {
  "run_id": "austria-visual-decision-layer",
  "data_vintage": "demand 2026-10-18 / supply 2026-09-17/18",
- "generated": "2026-10-19",
+ "generated": "2026-10-26",
  "generator": "src/analysis/make_visual_layer.py",
  "purpose": "One business question per figure; the answer is computed from the named tables at render time.",
  "figures": [
@@ -30,7 +30,7 @@
     ]
    ],
    "caveat": "One-day stock of open advertisements, not yearly demand. The official yearly series (JB05) puts Styria higher, at 13.6 % of the national flow. Counting every ad that lists a Styrian site (the location-flag basis of T02/T04a/T07e) Styria has 68 postings, 60 of them in the Graz commuting area, and Vienna 321.",
-   "svg_sha256": "sha256:e0b4307b0007cdccbf9669a9ec87652379fa234bec90d360e47a73ca65fa287e",
+   "svg_sha256": "sha256:06b154183535fd26af26fda078d6a473361d7f91e258d20f40cfed455ad807c2",
    "png": "BQ01_reachable_market.png",
    "svg": "BQ01_reachable_market.svg"
   },
@@ -58,7 +58,7 @@
     ]
    ],
    "caveat": "A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; counts advertisements, not hires.",
-   "svg_sha256": "sha256:b7413b21ad0d443928cf6536e91596d2b8cee4ce323530702cfe5719bde150eb",
+   "svg_sha256": "sha256:407d33cdf9abe27f4c23c3c5f83d52c67a15655ca556ab0fc334f8a3323d6bce",
    "png": "BQ02_regional_trend.png",
    "svg": "BQ02_regional_trend.svg"
   },
@@ -87,7 +87,7 @@
     ]
    ],
    "caveat": "Eurostat's Austrian vacancy series has no occupation or regional breakdown; market services (G-N) includes retail, accommodation and food service, so its Q3 peak is not data-job demand.",
-   "svg_sha256": "sha256:d2a95692cc4db808f1b6009261010fc753975ae19fa29109958b03fc25b7f954",
+   "svg_sha256": "sha256:42c58950d8e128045281e0e9df87f90a18f830f9bc04fc309b2ac6ec7dd9ad73",
    "png": "BQ03_seasonality.png",
    "svg": "BQ03_seasonality.svg"
   },
@@ -115,7 +115,7 @@
     ]
    ],
    "caveat": "A one-day stock: an employer absent here is not an employer that does not hire. 12 Styrian ads (AMS/EURES) name no employer at all. Counts are on the any-listed-site basis (68), not the primary-state count (62).",
-   "svg_sha256": "sha256:bcc53aaaf3680f2d51b8b2380360aacfae00ec6cddf3833f0b188152c1f2fcf4",
+   "svg_sha256": "sha256:1b4159026ab49377674ed100b6978639403f394809668e6b11a7d9711f007f17",
    "png": "BQ04_styria_employers.png",
    "svg": "BQ04_styria_employers.svg"
   },
@@ -143,7 +143,7 @@
     ]
    ],
    "caveat": "Overlap is computed against self-declared profile lists, and measures market size and fit, not ease of being hired. Families below 30 Austrian postings (product and marketing analytics) are shown but not ranked; every Styrian family count is below 30.",
-   "svg_sha256": "sha256:007311631bb21b8cde18fe07cf7ff952ab1ce8a0e7b856e50b7542dc63189388",
+   "svg_sha256": "sha256:825d3e0967a005cc7c7cc421a203b2bd3c2f4a8615fc2e28922b3f48336d6c85",
    "png": "BQ05_family_choice.png",
    "svg": "BQ05_family_choice.svg"
   },
@@ -171,7 +171,7 @@
     ]
    ],
    "caveat": "n = 68 for Styria (ads listing a Styrian site; 62 by primary state); every family cell is below 30, so differences are directional.",
-   "svg_sha256": "sha256:551519c45da3b1e69bb700f0508952cf3a6ef88025bc983a7fb3b7407bb098dc",
+   "svg_sha256": "sha256:98559625276b9c8b60724c67e4bc5a704adaa1e6a38f0e09951a952c9f40ba7c",
    "png": "BQ06_styria_vs_austria_mix.png",
    "svg": "BQ06_styria_vs_austria_mix.svg"
   },
@@ -195,7 +195,7 @@
     ]
    ],
    "caveat": "The matrix ranks market attractiveness, not probability of being hired; no Styrian family cell reaches n = 30, so no path is 'robust' under the project's own rule.",
-   "svg_sha256": "sha256:ba111d9a47d1acfcd419f58f3775095995a6345597fab03786d7c4715961c1b0",
+   "svg_sha256": "sha256:c1a6c1c8e976e94def7b295989ae8de033e78d189349145ee5fea14cadf843f3",
    "png": "BQ07_ranking_sensitivity.png",
    "svg": "BQ07_ranking_sensitivity.svg"
   },
@@ -252,7 +252,7 @@
     ]
    ],
    "caveat": "Priority is a demand-and-breadth heuristic, not evidence that learning the skill changes a hiring outcome.",
-   "svg_sha256": "sha256:2419bc16481785a4131af0cde8bfad684f3701d8c25dd4c7f2544beffd9505ec",
+   "svg_sha256": "sha256:db27ef466644d2c568b141ce333c5f0fa524e7a673562f352f412228e7ea17a7",
    "png": "BQ09_learning_priorities.png",
    "svg": "BQ09_learning_priorities.svg"
   },
@@ -281,7 +281,7 @@
     ]
    ],
    "caveat": "Co-mention in an advertisement, not a statement about how the tools are used together in the job.",
-   "svg_sha256": "sha256:c2d0dfebe160ffa2f3705623ad5640346c802b4027997c2f435e0ef3273fa52b",
+   "svg_sha256": "sha256:3b1a6cd7424afd4ed33b8d99b01e4dd9a189dec78dbf750b064571dabb44b145",
    "png": "BQ10_skill_cooccurrence.png",
    "svg": "BQ10_skill_cooccurrence.svg"
   },
@@ -309,7 +309,7 @@
     ]
    ],
    "caveat": "n = 24 and n = 27: differences under roughly 15 pp are inside the noise of these cell sizes.",
-   "svg_sha256": "sha256:1b8be94f5503bf5163842cf9cfe9221d1b195d80a6829c5a07f4d65b7535b89a",
+   "svg_sha256": "sha256:319e4c6a7e36f7736076abdbccd4ff7dd723a0ae3d607af23b55ea894101ca34",
    "png": "BQ11_intern_vs_junior.png",
    "svg": "BQ11_intern_vs_junior.svg"
   },
@@ -337,7 +337,7 @@
     ]
    ],
    "caveat": "'English-written and silent on German' is not 'English-only': German may still be expected. Whether a stated requirement is negotiable is not measured anywhere in this project.",
-   "svg_sha256": "sha256:02ad4af5e2dd6e99319ed9bb941a3998ba26df40cbd4d0cd8ae7d3af3627203a",
+   "svg_sha256": "sha256:d4bcea08580ff662fd3ebe01adf545fb753c0bd4d791ae527fab3d64d5a0b848",
    "png": "BQ12_german_addressable_market.png",
    "svg": "BQ12_german_addressable_market.svg"
   },
@@ -366,7 +366,7 @@
     ]
    ],
    "caveat": "Marketing analytics (n = 18) and product analytics (n = 3) carry cells too small to separate.",
-   "svg_sha256": "sha256:272a478248fe61d2650e677805e5d23858dce1cf3fd06eec7e37ef3253c176b0",
+   "svg_sha256": "sha256:47909499cc8f3555147cdf71f3b3d3524509a6d1e734d9fd01743b68b47173c1",
    "png": "BQ13_language_by_family.png",
    "svg": "BQ13_language_by_family.svg"
   },
@@ -394,7 +394,7 @@
     ]
    ],
    "caveat": "Wording strength, not hiring practice: no evidence here on how degree wording is applied in screening.",
-   "svg_sha256": "sha256:573e011d4bd9c6128357a28fdc6d75f2b9e13f067fcd67c01a6f935abe4694a9",
+   "svg_sha256": "sha256:ab4be0cdaa7f5edfdd9ef59cdaf4ba1c60a55374fe841b42630f3e37549165e1",
    "png": "BQ14_degree_requirement.png",
    "svg": "BQ14_degree_requirement.svg"
   },
@@ -422,7 +422,7 @@
     ]
    ],
    "caveat": "80 % of parsed figures are a single collective-agreement minimum; 54 % of ads say they pay above it. These are legal floors, not offers and not pay.",
-   "svg_sha256": "sha256:ef7975f54052680d2b0b72faa094b39c4e4f21b052d5381dc020af9ba8bb6ff7",
+   "svg_sha256": "sha256:868b9422d8c3181f7579680a8566b910dc9796205a138851e143e343565c3170",
    "png": "BQ15_salary_by_family.png",
    "svg": "BQ15_salary_by_family.svg"
   },
@@ -445,7 +445,7 @@
     ]
    ],
    "caveat": "Seniority is read from the advertisement's title, and the figure is an advertised floor, not an offer. Junior n = 17.",
-   "svg_sha256": "sha256:8e2a9d98576b4c59d39a1fb7975d28050258f7205f875d344d1a2e420eb79849",
+   "svg_sha256": "sha256:bf8b88e1cc8fe81c34df4864df5f81e688225c32a808f72143f966a78488209d",
    "png": "BQ16_salary_by_seniority.png",
    "svg": "BQ16_salary_by_seniority.svg"
   },
@@ -498,7 +498,7 @@
     ]
    ],
    "caveat": "Wording in the advertisement, not the arrangement actually offered; 39 % of ads are silent.",
-   "svg_sha256": "sha256:85dbad8566e067dc7c6ebdf14bf5c94f39cc73c706a6649b2dece4126a018c74",
+   "svg_sha256": "sha256:ff9eb76f3ef0850f29c4bae37996c57916c2212a914bb8670863de1ef1045f75",
    "png": "BQ18_work_model.png",
    "svg": "BQ18_work_model.svg"
   },
@@ -526,7 +526,7 @@
     ]
    ],
    "caveat": "Covers only the AMS feed of three regions and retrieves by full-text keyword, so it is not comparable to the 699-posting title census.",
-   "svg_sha256": "sha256:b426d9c1b21a9ace4f25a0cba962cf8ed2809f78d50266cc896bf58a2122273e",
+   "svg_sha256": "sha256:e967a0f62edf0b1d5291ed58442e4904451b31b25eaf55ef2798c08a04c5126b",
    "png": "BQ19_side_doors.png",
    "svg": "BQ19_side_doors.svg"
   },
@@ -554,7 +554,7 @@
     ]
    ],
    "caveat": "GitHub over-represents engineers, researchers and students and is blind to BI/Excel/SAP work, so a low density is partly real scarcity and partly invisibility. Vienna counts are lower bounds.",
-   "svg_sha256": "sha256:6102135b1bf80618745d6b7462c68a7ec945dc786df345a51d72cc9cda938e01",
+   "svg_sha256": "sha256:ac9fdf2ab26d88fd3836e4006d746a8ae784bdab36c8472957806c153538f306",
    "png": "BQ20_competition_density.png",
    "svg": "BQ20_competition_density.svg"
   },
@@ -597,7 +597,7 @@
     ]
    ],
    "caveat": "Two universes, one taxonomy: the axes are not the same denominator and the diagonal is a reading aid, not an identity. A capability marked not-observable is invisible to this measurement.",
-   "svg_sha256": "sha256:d06bcaf497601995abb8751aef71877858f5f752ea269181d9c43967c80d7966",
+   "svg_sha256": "sha256:867e9abd86e912868ce0d9927d65db45cbb19c7c982fd8d680d3c27423d79438",
    "png": "BQ21_evidence_gap.png",
    "svg": "BQ21_evidence_gap.svg"
   },
@@ -630,7 +630,7 @@
     ]
    ],
    "caveat": "Supply shares come from public code and profiles; tools that leave no code trace are understated by construction.",
-   "svg_sha256": "sha256:6dd6d5e1a278127c8a3dc551926ebfe3bbfe66040e7b0aa45b2ffef57fe8fbd4",
+   "svg_sha256": "sha256:2b92b6c6457a1939635c5045069d7f1a663835cac843d87ac36853201a82a2df",
    "png": "BQ22_crowded_vs_scarce.png",
    "svg": "BQ22_crowded_vs_scarce.svg"
   },
@@ -658,7 +658,7 @@
     ]
    ],
    "caveat": "Format detection is rule-based over repository file trees; a private or client project leaves no trace here.",
-   "svg_sha256": "sha256:b87159f4da962bcfdc1e7ce06cbd5ebd6453991087cf479a8f8af3ce81c0410b",
+   "svg_sha256": "sha256:fc2fa3b15593ec72f3fedc7c8ff1a03a709931884d56c5395bd4ee07e5d17e17",
    "png": "BQ23_project_formats.png",
    "svg": "BQ23_project_formats.svg"
   },
@@ -691,7 +691,7 @@
     ]
    ],
    "caveat": "Detects headings and keywords, not quality; a README with the section can still be empty of substance.",
-   "svg_sha256": "sha256:4721a9efdef8d52285689ff97e16d2f59b48f95c02a4bb57c22645977e4acc60",
+   "svg_sha256": "sha256:a99829be633ce295d4686b8f47a87ff7139a7eaed26f5271afc016fce80bd369",
    "png": "BQ24_readme_anatomy.png",
    "svg": "BQ24_readme_anatomy.svg"
   },
@@ -719,7 +719,7 @@
     ]
    ],
    "caveat": "Seniority read from ad titles and bio wording; years of experience are not observable on either side, and senior practitioners publish less.",
-   "svg_sha256": "sha256:40a07585bff5a0b9cfe1d97ecc3ad6867448767db80dc086fa1d66b38f199911",
+   "svg_sha256": "sha256:c77086f7c4bf6ba2dab621611883e55edef26110f76e36080532c93aacfb71b7",
    "png": "BQ25_seniority_mismatch.png",
    "svg": "BQ25_seniority_mismatch.svg"
   },
@@ -753,7 +753,7 @@
     ]
    ],
    "caveat": "Each step is a subset of the one above it. Public GitHub does not narrate career changes (3.4 % explicit, marketing 0), so transitioners are invisible here rather than absent.",
-   "svg_sha256": "sha256:29a88cc5ba5a3dbc9fb0eb8b14484bb58e02499c497fd907961b4c17aecbe63b",
+   "svg_sha256": "sha256:6db59496d7d2d79ba8273d9cc6e064a5a5bcaad8593a80337bf416c15c628859",
    "png": "BQ26_marketing_x_data.png",
    "svg": "BQ26_marketing_x_data.svg"
   },
@@ -788,7 +788,7 @@
     ]
    ],
    "caveat": "Each bar is a subset of the one above it, so the bars must never be summed. Text-derived shares use the 699 postings with a description, not all 699. The Styria steps count every ad that lists a Styrian site; by primary state Styria has 62.",
-   "svg_sha256": "sha256:632cee00703e46fb3745bfa31f697b6fd42445eb2795a01786fdbe622199125c",
+   "svg_sha256": "sha256:7c7692bf9b2957e2619fd19b7634e6484ad3c174f0c558b8a1dee94999176f34",
    "png": "BQ27_population_funnel.png",
    "svg": "BQ27_population_funnel.svg"
   },
@@ -816,7 +816,7 @@
     ]
    ],
    "caveat": "25 titles per family is a small audit sample, and recall is unmeasured: this bounds false positives only, never false negatives.",
-   "svg_sha256": "sha256:4083621fb467b6c2f199bc500b925f3e9af0ddf17023c08b8621ae63d72fbbe3",
+   "svg_sha256": "sha256:c298e789c7a83c69dcc4bacff902370b2c858797820c96448260f40497890ed1",
    "png": "BQ28_classification_precision.png",
    "svg": "BQ28_classification_precision.svg"
   },
@@ -844,7 +844,7 @@
     ]
    ],
    "caveat": "The official yearly series (JB05) puts Styria at 13.6 % of the national flow against 8.9% here (by primary state; 9.7% counting every ad with a Styrian site), so this snapshot may also understate Styrian volume, not only measure it imprecisely.",
-   "svg_sha256": "sha256:678e186cca6632b459c182f0324c99061b701372b7a9383318cba5cfd0736629",
+   "svg_sha256": "sha256:55c68a07a856c3fc7046e9e29e34aa442cc6f9c874b3371eaa045fa768ecc057",
    "png": "BQ29_styria_sample_sizes.png",
    "svg": "BQ29_styria_sample_sizes.svg"
   },
@@ -873,7 +873,7 @@
     ]
    ],
    "caveat": "Only 18 % of core postings were seen on more than one source, so the boards are largely disjoint universes; a missing board is a missing slice, not a redundant one.",
-   "svg_sha256": "sha256:f0a825cac344262e60a80b55d1a0ac2fb58aa41e46ee38241c0db16a08f6149a",
+   "svg_sha256": "sha256:bd4ebf6abf32d6c704cca8f10c60e194ff3c9a893d0083f356d4d1c952b4c452",
    "png": "BQ30_source_coverage.png",
    "svg": "BQ30_source_coverage.svg"
   },
@@ -902,7 +902,7 @@
     ]
    ],
    "caveat": "Publication dates are board-reported and some boards refresh them; age is a lower bound on how long a vacancy has really been open.",
-   "svg_sha256": "sha256:a11e628d40dde9017c8a5cf3773918fdf3442cf260912e2b5f5332a78cf5a44e",
+   "svg_sha256": "sha256:86b3dfdcc232f46b6e9442a529b679bcda919bbf88ac1af222d1d49e9ada2e05",
    "png": "BQ31_posting_freshness.png",
    "svg": "BQ31_posting_freshness.svg"
   },
@@ -936,7 +936,7 @@
     ]
    ],
    "caveat": "Categories overlap by construction (an ad can state a minimum, name the KV and mention a bonus). LinkedIn omits a figure in 44 % of its core ads, so coverage is also a source-mix artefact.",
-   "svg_sha256": "sha256:81ce67525355292ef01cfbb4e7083837c1ab0c5ecdde2d2be888047543b9c185",
+   "svg_sha256": "sha256:25f7201b4f1887821a22bff6102e69888d3176e48f5e9ac1a4002fd1b48d3edb",
    "png": "BQ32_salary_evidence.png",
    "svg": "BQ32_salary_evidence.svg"
   },
@@ -961,7 +961,7 @@
     ]
    ],
    "caveat": "Employer identity is taken from the advertisement; the same firm advertising under a group name and an agency is counted twice, and the anonymous AMS rows cannot be attributed at all.",
-   "svg_sha256": "sha256:31c196cbded2d0d01b4392d8d925ecc9968dda017e2900e1565114dfdeea89d0",
+   "svg_sha256": "sha256:4c9f809e6ad89b4ff19373d09a65ac766c1fdf4940f62e61cdff8fed5c26b543",
    "png": "BQ33_employer_structure.png",
    "svg": "BQ33_employer_structure.svg"
   },
@@ -990,7 +990,7 @@
     ]
    ],
    "caveat": "Wording-derived buckets: mapping 'sehr gut' to C1 is an assumption, and silence in a German-written ad usually still implies German (T07d). Whether a stated level is negotiable is not measured.",
-   "svg_sha256": "sha256:53b91237d5dbd81543119a9e3b3e67ba5b55d70a0e4cbc9c6e28f6707cd11aca",
+   "svg_sha256": "sha256:8282fb937a308c6e496f3a592416938e049ce062da767b0aac8c3222bfddfcd6",
    "png": "BQ34_german_level_demanded.png",
    "svg": "BQ34_german_level_demanded.svg"
   },
@@ -1021,7 +1021,7 @@
     ]
    ],
    "caveat": "Absence of a library in an advertisement is not absence in the job: ads compress a stack to its headline names. This measures advertising vocabulary, not the work.",
-   "svg_sha256": "sha256:3c0559e61a0026709c6402304ddbae55b03250ee631f378135939ccb5b269b25",
+   "svg_sha256": "sha256:29cf29e73ca5f480cb68035416acfa2631c332deb57013322e8a5468ece44c91",
    "png": "BQ35_tools_vs_libraries.png",
    "svg": "BQ35_tools_vs_libraries.svg"
   },
@@ -1050,7 +1050,7 @@
     ]
    ],
    "caveat": "Both sides are wording-derived: an employer may still value a certificate it does not advertise, and a candidate may hold one they never mention in a bio or README.",
-   "svg_sha256": "sha256:942980a6be35c3f872ed406ed15c495973599f796d00dd293fb548b881e0d596",
+   "svg_sha256": "sha256:d3fc31328830f46699298937191338dfde5efb245cd092877024ada84f9d4676",
    "png": "BQ36_certifications_both_sides.png",
    "svg": "BQ36_certifications_both_sides.svg"
   },
@@ -1078,7 +1078,7 @@
     ]
    ],
    "caveat": "Supply frames differ by region by construction: Styria is a complete GitHub frame, every other state is a keyword plus base-rate sample and therefore a lower bound. Cross-region supply comparison is not valid. Demand is by primary state (T03a); counting every ad that lists a Styrian site gives 68.",
-   "svg_sha256": "sha256:cb290435f53d43714345c9d4bde7bc3416eddc2031fcb68597f1462dcaa293a3",
+   "svg_sha256": "sha256:9aae682d117ada1f3a70f8cb7d1c407082885b98f42f4c55100fcc059262ce50",
    "png": "BQ37_geography_demand_supply.png",
    "svg": "BQ37_geography_demand_supply.svg"
   },
@@ -1106,7 +1106,7 @@
     ]
    ],
    "caveat": "Absence of education wording is not absence of a degree on either side; 69 % of candidates write nothing about education at all, so these shares are lower bounds of very different kinds.",
-   "svg_sha256": "sha256:66217842f8ef7a3ca7d7cdbeac3b80340bbc95b97e61ca4667f5ea18c4c1da97",
+   "svg_sha256": "sha256:2c552da0a1a1189d192e169538daafc9a080e5e6dcd1ac3064a2e65de50092ad",
    "png": "BQ38_education_both_sides.png",
    "svg": "BQ38_education_both_sides.svg"
   },
@@ -1135,7 +1135,7 @@
     ]
    ],
    "caveat": "Titles come from GitHub bios, which are written for a developer audience rather than a recruiter; this is self-presentation, not employment.",
-   "svg_sha256": "sha256:4dca63ac30409f541480bd148e1d318e02b12b55aa2ec556cd37ef37dbacc532",
+   "svg_sha256": "sha256:328029316866c74b0b6c767aab5b409b7f7e73b7b3da75397ca27b6f0e734a36",
    "png": "BQ39_title_fragmentation.png",
    "svg": "BQ39_title_fragmentation.svg"
   },
@@ -1163,7 +1163,7 @@
     ]
    ],
    "caveat": "Counts only public, non-fork repositories: private, client and employer work is invisible, so this is a floor on what candidates have built, not a measure of their experience.",
-   "svg_sha256": "sha256:40e8f2f04362c3d9f1cff4491cac1f6a8afcb31629d6b373f013a070b7e5fd5d",
+   "svg_sha256": "sha256:49879f7a2933ce570c274bede7b86d58105572d29fa03203746895bfd0f34b25",
    "png": "BQ40_project_counts.png",
    "svg": "BQ40_project_counts.svg"
   },
@@ -1192,7 +1192,7 @@
     ]
    ],
    "caveat": "Themes are rule-based over repository names, descriptions, topics and READMEs and can overlap; a project with no README text is under-classified rather than absent.",
-   "svg_sha256": "sha256:0558382491872735c3eb5f4d670c7bd800cbb00c3a5b821eb9649ab71bdee76c",
+   "svg_sha256": "sha256:e51602c55f0f9f0698006a469b45626e8a0fa440424a03916e2e4b13d748cda7",
    "png": "BQ41_project_topics.png",
    "svg": "BQ41_project_topics.svg"
   },
@@ -1216,7 +1216,7 @@
     ]
    ],
    "caveat": "Archetypes are rule-based and mutually exclusive by priority order; 'inactive' measures the last push date, which says nothing about whether the work was good when it was made.",
-   "svg_sha256": "sha256:c775cc218496e5d4e71fa70ec8d3a2a26d2e43ba5e0f0bb4faebcdf0d19c4d95",
+   "svg_sha256": "sha256:a3e3804d49b9a2565af8237cb7b9afbb660098f8d93aa5e6b9c9b73f12c10266",
    "png": "BQ42_repository_archetypes.png",
    "svg": "BQ42_repository_archetypes.svg"
   },
@@ -1240,7 +1240,7 @@
     ]
    ],
    "caveat": "k-means on binary indicators with weak separation: these are readable groupings, not natural kinds, and a candidate near a boundary could sit in either cluster.",
-   "svg_sha256": "sha256:58bdb2df753285792f0445de953e8d58fbbcf35b43137d0df77a2ec6d6a13fcc",
+   "svg_sha256": "sha256:6732cff7167cf6372caaf7eae3f91ffa3e1897159d24fccbe26ef9776197177d",
    "png": "BQ43_positioning_clusters.png",
    "svg": "BQ43_positioning_clusters.svg"
   },
@@ -1270,7 +1270,7 @@
     ]
    ],
    "caveat": "Prior domain is detected from bio wording only. Transitioners who do not write about their past are invisible here, which is the most likely explanation for the low counts.",
-   "svg_sha256": "sha256:dc8027f7637dd38c6406b6bb61f797648733cb03b2176c12b6ed3cd010ed2b69",
+   "svg_sha256": "sha256:913acd91c2ebb6dba5d9aba2fd2f8fa763deac26c08af6021da163a6056e14d7",
    "png": "BQ44_transition_domains.png",
    "svg": "BQ44_transition_domains.svg"
   },
@@ -1303,7 +1303,7 @@
     ]
    ],
    "caveat": "Advertised minimums, not pay. Employer size, industry and hours basis are not controlled, the intervals shown are uncorrected (the adjusted p-values are in D05), and R² is low - this bounds how much of the raw gap is composition, it does not price a skill.",
-   "svg_sha256": "sha256:b1e0f9455865e6f3a75ca72e65840a0962c9258ae9b00b9042e4c6a27a7160a6",
+   "svg_sha256": "sha256:c890ec4c5e2e2e45c30bd53722c13cebdce63e8acd0502772c8d03ff835a6745",
    "png": "BQ45_skill_premium_controlled.png",
    "svg": "BQ45_skill_premium_controlled.svg"
   }
