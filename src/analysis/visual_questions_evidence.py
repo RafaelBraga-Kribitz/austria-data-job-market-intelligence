@@ -21,13 +21,17 @@ sys.path.insert(0, str(ROOT / "src" / "viz"))
 sys.path.insert(0, str(ROOT / "src" / "analysis"))
 
 from engine import (  # noqa: E402
+    INK,
+    INK_2,
+    LABEL,
+    NEUTRALS,
+    RANGE,
+    on_fill,
     BASE,
     DEMAND_SOURCE,
-    FOURTH,
     HILITE,
     MUTED,
     PRIMARY_BASIS,
-    THIRD,
     Spec,
     finalise,
     label_bars,
@@ -60,7 +64,8 @@ def bq27():
     ]
     labels = [s[0] for s in steps][::-1]
     values = [float(s[1]) for s in steps][::-1]
-    colors = [HILITE if i < 2 else BASE for i in range(len(values))]
+    # one highlight: the Graz commuting area, the set this reader actually applies to
+    colors = [HILITE if i == 0 else BASE for i in range(len(values))]
 
     fig, ax = new_figure(height=0.62 * len(values) + 3.2, width=10.4)
     ax.barh(labels, values, color=colors)
@@ -69,7 +74,7 @@ def bq27():
     top = max(values)
     for i, v in enumerate(values):
         text = f"{int(v):,}" if v == top else f"{int(v):,}  ({v / top:.1%} of collected rows)"
-        ax.text(v + top * 0.012, i, text, va="center", fontsize=9.5)
+        ax.text(v + top * 0.012, i, text, va="center", fontsize=LABEL)
     finalise(
         fig,
         title=f"Every share in this project is a share of {summary['core_canonical']} postings, not of the "
@@ -124,18 +129,22 @@ def bq28():
                 color=MUTED, linewidth=1.4, zorder=1)
     ax.scatter(prec.precision_before_strict, y, color=MUTED, s=70, zorder=2)
     ax.scatter(prec.precision_after_strict, y, color=BASE, s=85, zorder=3)
-    ax.scatter(prec.precision_after_lenient, y, color=THIRD, s=85, marker="D", zorder=3)
+    ax.scatter(prec.precision_after_lenient, y, color=NEUTRALS[0], s=85, marker="D", zorder=3)
     ax.set_yticks(y)
     ax.set_yticklabels([FAMILY_LABEL.get(f, f) for f in prec.family])
     ax.set_xlim(0.4, 1.12)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel(f"Hand-labelled precision of the title classifier ({per_family} titles sampled per family)")
-    top = len(prec) - 1
+    # label the row where the three markers sit furthest apart, so the three labels never overprint
+    gaps = np.minimum((prec.precision_after_strict - prec.precision_before_strict).abs().to_numpy(),
+                      (prec.precision_after_lenient - prec.precision_after_strict).abs().to_numpy())
+    gaps[(prec.precision_before_strict < 0.4).to_numpy()] = -1   # a marker left of the axis cannot carry a label
+    top = int(np.nan_to_num(gaps, nan=-1).argmax())
     for x, text, color in [(prec.precision_before_strict.iloc[top], "before the audit", MUTED),
                            (prec.precision_after_strict.iloc[top], "after (strict)", BASE),
-                           (prec.precision_after_lenient.iloc[top], "after (lenient)", THIRD)]:
+                           (prec.precision_after_lenient.iloc[top], "after (lenient)", NEUTRALS[0])]:
         ax.annotate(text, (x, top), textcoords="offset points", xytext=(0, 15),
-                    ha="center", fontsize=8.5, color=color)
+                    ha="center", fontsize=LABEL, color=INK_2)
     worst = prec.iloc[0]
     best = prec.iloc[-1]
     fig.canvas.draw()
@@ -179,7 +188,7 @@ def bq29():
     fam = table("T02_role_family_counts.csv")
     fam = fam[fam.role_family.isin(FAMILY_LABEL)].sort_values("styria_count")
     labels = [FAMILY_LABEL[f] for f in fam.role_family]
-    colors = [THIRD if c >= MIN_FAMILY_N else HILITE for c in fam.styria_count]
+    colors = [BASE if c >= MIN_FAMILY_N else MUTED for c in fam.styria_count]
     jb05 = table("JB05_styria_vs_austria.csv")
     jb05_ds = jb05[jb05.beruf == "Data Scientist (m/w)"].iloc[0]
     flow_share = pct_txt(jb05_ds.styria / jb05_ds.austria, 1)
@@ -187,10 +196,10 @@ def bq29():
 
     fig, ax = new_figure(height=0.44 * len(fam) + 3.0, width=10.0)
     ax.barh(labels, fam.styria_count, color=colors)
-    ax.axvline(MIN_FAMILY_N, color="#222222", linewidth=1.1, linestyle="--")
-    ax.text(MIN_FAMILY_N + 0.6, len(fam) - 0.6,
+    ax.axvline(MIN_FAMILY_N, color=INK, linewidth=1.1, linestyle="--")
+    ax.text(MIN_FAMILY_N + 0.6, 1.4,
             f"n = {MIN_FAMILY_N}: the project's own threshold\nfor calling a finding robust",
-            fontsize=8.5, va="top")
+            fontsize=LABEL, va="top")
     ax.set_xlim(0, max(fam.styria_count.max(), MIN_FAMILY_N) * 1.55)
     ax.set_xlabel("Open Styrian postings in the family")
     label_bars(ax, list(fam.styria_count),
@@ -259,11 +268,12 @@ def bq30():
     for i, row in enumerate(src.itertuples()):
         ax.text(row.rows + src.rows.max() * 0.012, i,
                 f"{int(row.rows):,} collected → {int(row.in_scope_canonical)} core "
-                f"({row.in_scope_canonical / row.rows:.1%})", va="center", fontsize=8.5)
-    ax.legend(fontsize=8.5, loc="lower right")
+                f"({row.in_scope_canonical / row.rows:.1%})", va="center", fontsize=LABEL)
+    ax.set_ylim(-1.6, len(src) - 0.5)   # a free band under the bars for the note on what was not collected
+    ax.legend(fontsize=LABEL, ncol=2, loc="lower left", bbox_to_anchor=(0.0, 1.01))
     missing = "StepStone.at, Indeed.at (HTTP 403), hokify, Glassdoor, company career pages, university job portals"
-    ax.annotate(f"Not collected at all: {missing}",
-                xy=(0.01, 0.02), xycoords="axes fraction", fontsize=8.5, color=HILITE, va="bottom")
+    ax.annotate(f"Not collected at all:\n{missing}",
+                xy=(0.01, 0.02), xycoords="axes fraction", fontsize=LABEL, color=INK, va="bottom")
     finalise(
         fig,
         title=f"{num_word(len(src)).capitalize()} boards contributed the {int(src.in_scope_canonical.sum())} core postings - and the two largest "
@@ -311,7 +321,7 @@ def bq31():
 
     fig, ax = new_figure(height=0.52 * len(age) + 3.2, width=10.0)
     for i, row in enumerate(age.itertuples()):
-        ax.plot([row.p25, row.p75], [i, i], color=MUTED, linewidth=3, alpha=0.45, solid_capstyle="butt")
+        ax.plot([row.p25, row.p75], [i, i], color=RANGE, linewidth=3, solid_capstyle="butt")
     ax.scatter(age["median"], y, color=BASE, s=85, zorder=3)
     ax.set_yticks(y)
     ax.set_yticklabels(labels)
@@ -319,7 +329,7 @@ def bq31():
     ax.set_xlabel("Days between first publication and collection (median dot, p25-p75 bar)")
     for i, row in enumerate(age.itertuples()):
         ax.text(row.p75 + age["p75"].max() * 0.03, i,
-                f"median {int(row.median)} days  (n = {int(row.count)})", va="center", fontsize=8.5)
+                f"median {int(row.median)} days  (n = {int(row.count)})", va="center", fontsize=LABEL)
     finalise(
         fig,
         title=f"karriere.at ads are a median {int(age['median'].min())} days old and AMS ads "
@@ -373,11 +383,11 @@ def bq32():
     rows = [
         ("State any salary figure", int(cov["with_salary_figure"]), BASE),
         ("… but the figure is a single minimum", int(cov["minimum_only_figures"]), HILITE),
-        ("… a genuine range", int(cov["with_range"]), THIRD),
+        ("… a genuine range", int(cov["with_range"]), BASE),
         ("Name the collective agreement (KV)", int(cov["kv_minimum_mention"]), MUTED),
         ("Say they pay above it (Überzahlung)", int(cov["overpay_mention"]), MUTED),
-        ("All-in contract wording", int(cov["all_in_mention"]), FOURTH),
-        ("Bonus or variable component", int(cov["bonus_or_variable_mention"]), FOURTH),
+        ("All-in contract wording", int(cov["all_in_mention"]), NEUTRALS[0]),
+        ("Bonus or variable component", int(cov["bonus_or_variable_mention"]), NEUTRALS[0]),
     ]
     rows = rows[::-1]
     labels = [r[0] for r in rows]
@@ -440,12 +450,12 @@ def bq33():
     for label, value, color in segments:
         ax.barh([""], [value], left=left, color=color, label=f"{label}: {value} ({value / total:.0%})")
         ax.text(left + value / 2, 0, f"{value}", ha="center", va="center", fontsize=11,
-                color="white", fontweight="bold")
+                color=on_fill(color), fontweight="bold")
         left += value
     ax.set_xlim(0, total)
-    ax.set_ylim(-0.9, 2.6)
+    ax.set_ylim(-0.9, 3.2)
     ax.set_xlabel(f"Core postings (n = {total})")
-    ax.legend(fontsize=9, loc="upper left")
+    ax.legend(fontsize=LABEL, loc="upper left")
     ax.set_yticks([])
     notes = [
         f"{int(conc['unique_named_employers_austria'])} unique named employers in Austria, "
@@ -455,7 +465,7 @@ def bq33():
         f"Styria: {int(conc['styria_postings_without_named_employer'])} of {market_counts()['styria_any_site']} postings name no employer",
     ]
     for i, text in enumerate(notes):
-        ax.text(0, 1.9 - i * 0.42, "• " + text, fontsize=9.5, va="center")
+        ax.text(0, 1.9 - i * 0.42, "• " + text, fontsize=LABEL, va="center")
     finalise(
         fig,
         title=f"{int(conc['unique_named_employers_austria'])} named employers hold {named} of {total} postings and no "

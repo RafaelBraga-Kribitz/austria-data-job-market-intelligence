@@ -35,14 +35,21 @@ sys.path.insert(0, str(ROOT / "src" / "viz"))
 sys.path.insert(0, str(ROOT / "src" / "analysis"))
 
 from engine import (  # noqa: E402
+    CAT,
+    CAT_OTHER,
+    INK,
+    INK_2,
+    LABEL,
+    POLE_A,
+    POLE_B,
+    RANGE,
+    SURFACE,
     BASE,
     DEMAND_SOURCE,
-    FOURTH,
     HILITE,
     MUTED,
     PRIMARY_BASIS,
     SUPPLY_SOURCE,
-    THIRD,
     Spec,
     finalise,
     label_bars,
@@ -68,18 +75,19 @@ def bq34():
     lvl = lvl.sort_values("german_level_bucket", key=lambda s: s.map(order))
     y = np.arange(len(lvl))
     my_level = {"A1-A2", "B1"}
-    colors = [THIRD if b in my_level else HILITE for b in lvl.german_level_bucket]
+    # levels above mine in structure grey, mine in context grey: a class, not one entity (no accent)
+    colors = [MUTED if b in my_level else BASE for b in lvl.german_level_bucket]
 
     fig, ax = new_figure(height=0.52 * len(lvl) + 3.2, width=10.0)
     ax.barh(lvl.german_level_bucket, lvl.share, color=colors)
     ax.errorbar(lvl.share, y, xerr=[lvl.share - lvl.ci_low, lvl.ci_high - lvl.share],
-                fmt="none", ecolor="#444444", capsize=2, linewidth=0.9)
+                fmt="none", ecolor=INK_2, capsize=2, linewidth=0.9)
     ax.set_xlim(0, lvl.ci_high.max() * 1.48)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of core postings stating this level (Wilson 95 % CI)")
     for i, row in enumerate(lvl.itertuples()):
         ax.text(row.ci_high + lvl.ci_high.max() * 0.03, i,
-                f"{row.share:.1%}  ({int(row.count)} ads)", va="center", fontsize=9)
+                f"{row.share:.1%}  ({int(row.count)} ads)", va="center", fontsize=LABEL)
     c1 = lvl[lvl.german_level_bucket == "C1/fluent"].iloc[0]
     b2 = float(lvl[lvl.german_level_bucket == "B2/good"].share.iloc[0])
     reachable = int(lvl[lvl.german_level_bucket.isin(my_level)]["count"].sum())
@@ -121,10 +129,10 @@ def bq34():
 # --------------------------------------------------------------------------------------------
 def bq35():
     groups = [
-        ("Programming languages", "T05_skills_programming_languages.csv", BASE),
-        ("Python libraries", "T05_skills_python_ecosystem.csv", HILITE),
-        ("BI / visualisation tools", "T05_skills_bi_tools.csv", THIRD),
-        ("Cloud platforms", "T05_skills_cloud_platforms.csv", FOURTH),
+        ("Programming languages", "T05_skills_programming_languages.csv", CAT[0]),
+        ("Python libraries", "T05_skills_python_ecosystem.csv", CAT[1]),
+        ("BI / visualisation tools", "T05_skills_bi_tools.csv", CAT[2]),
+        ("Cloud platforms", "T05_skills_cloud_platforms.csv", CAT[3]),
     ]
     rows = []
     for label, filename, color in groups:
@@ -143,11 +151,11 @@ def bq35():
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of core postings naming the item")
     for i, row in enumerate(frame.itertuples()):
-        ax.text(row.share + frame.share.max() * 0.012, i, f"{row.share:.1%}", va="center", fontsize=8.5)
+        ax.text(row.share + frame.share.max() * 0.012, i, f"{row.share:.1%}", va="center", fontsize=LABEL)
     for label, _, color in groups:
         idx = frame.index[frame.group == label]
-        ax.annotate(label, (frame.share.max() * 1.20, float(np.mean(idx))), color=color,
-                    fontsize=9.5, va="center", ha="left", fontweight="bold")
+        ax.annotate(label, (frame.share.max() * 1.20, float(np.mean(idx))), color=INK,
+                    fontsize=LABEL, va="center", ha="left", fontweight="bold")
     py = frame[frame.skill == "Python"].iloc[0]
     libs = frame[frame.group == "Python libraries"].sort_values("share", ascending=False)
     top_lib = libs.iloc[0]
@@ -221,8 +229,9 @@ def bq36():
     fig, ax = new_figure(height=0.52 * len(frame) + 3.2, width=10.2)
     for i, row in enumerate(frame.itertuples()):
         ax.plot([row.demand, row.supply], [i, i], color=MUTED, linewidth=1.4, zorder=1)
-    ax.scatter(frame.demand, y, color=BASE, s=85, zorder=3)
-    ax.scatter(frame.supply, y, color=HILITE, s=85, marker="D", zorder=3)
+    # demand and supply are two unordered series: categorical slots 1 and 2
+    ax.scatter(frame.demand, y, color=CAT[0], s=85, zorder=3)
+    ax.scatter(frame.supply, y, color=CAT[1], s=85, marker="D", zorder=3)
     ax.set_yticks(y)
     ax.set_yticklabels(frame.label)
     ax.set_xlim(0, max(frame.demand.max(), frame.supply.max()) * 1.45)
@@ -230,9 +239,9 @@ def bq36():
     ax.set_xlabel("Share of the side's population mentioning the certification")
     top = len(frame) - 1
     ax.annotate("share of ads", (frame.demand.iloc[top], top), textcoords="offset points",
-                xytext=(0, 15), ha="center", fontsize=9, color=BASE)
+                xytext=(0, 15), ha="center", fontsize=LABEL, color=INK_2)
     ax.annotate("share of candidates", (frame.supply.iloc[top], top), textcoords="offset points",
-                xytext=(0, -20), ha="center", fontsize=9, color=HILITE)
+                xytext=(0, -20), ha="center", fontsize=LABEL, color=INK_2)
     any_dem = frame[frame.label == "Any certification wording"].iloc[0]
     max_specific = ceil_pct(dem[dem.certification != "Certification (any mention)"].share.max())
     finalise(
@@ -289,8 +298,8 @@ def bq37():
         frame_note = "complete frame" if "complete" in str(row.supply_frame).lower() else "lower bound"
         ax.text(max(row.demand_count, row.supply_T1) * 1.02, i,
                 f"{int(row.demand_count)} ads · {int(row.supply_T1)} candidates ({frame_note})",
-                va="center", fontsize=8.5)
-    ax.legend(fontsize=8.5, loc="lower right")
+                va="center", fontsize=LABEL)
+    ax.legend(fontsize=LABEL, loc="lower right")
     sty = geo[geo.category == "Steiermark"].iloc[0]
     vie = geo[geo.category == "Wien"].iloc[0]
     counts = market_counts()
@@ -346,22 +355,22 @@ def bq38():
     edu = edu[(edu.demand_share >= 0.02) | (edu.supply_share >= 0.02)]
     edu = edu.reindex(edu.difference_pp.abs().sort_values(ascending=False).index).head(14)
     edu = edu.sort_values("difference_pp")
-    colors = [BASE if v < 0 else HILITE for v in edu.difference_pp]
+    colors = [POLE_A if v < 0 else POLE_B for v in edu.difference_pp]
 
     fig, ax = new_figure(height=0.44 * len(edu) + 3.2, width=10.4)
     ax.barh(edu.category, edu.difference_pp, color=colors)
-    ax.axvline(0, color="#222222", linewidth=0.9)
+    ax.axvline(0, color=INK, linewidth=0.9)
     span = edu.difference_pp.abs().max()
-    ax.set_xlim(-span * 1.75, span * 1.75)
+    ax.set_xlim(-span * 2.2, span * 2.2)
     ax.set_xlabel("Percentage points: share of candidates naming it minus share of ads naming it")
     for i, row in enumerate(edu.itertuples()):
         ax.text(row.difference_pp + (0.6 if row.difference_pp >= 0 else -0.6), i,
                 f"ads {row.demand_share:.0%} · candidates {row.supply_share:.0%}",
-                va="center", ha="left" if row.difference_pp >= 0 else "right", fontsize=8)
+                va="center", ha="left" if row.difference_pp >= 0 else "right", fontsize=LABEL)
     ax.text(0.99, 0.03, "→ more common in the candidate pool", transform=ax.transAxes,
-            ha="right", fontsize=9, color=HILITE)
+            ha="right", fontsize=LABEL, color=INK_2)
     ax.text(0.01, 0.03, "← more common in advertisements", transform=ax.transAxes,
-            ha="left", fontsize=9, color=BASE)
+            ha="left", fontsize=LABEL, color=INK_2)
     ds = edu[edu.category.str.contains("data science", case=False, na=False)]
     finalise(
         fig,
@@ -416,7 +425,7 @@ def bq39():
     distinct_raw = int(conc.loc["distinct", "raw_bio_titles"])
     distinct_norm = int(conc.loc["distinct", "normalized_titles"])
     ax.annotate(f"{distinct_raw} distinct raw bio titles collapse into {distinct_norm} normalised ones",
-                xy=(0.99, 0.04), xycoords="axes fraction", ha="right", fontsize=9, color=MUTED)
+                xy=(0.99, 0.04), xycoords="axes fraction", ha="right", fontsize=LABEL, color=INK_2)
     finalise(
         fig,
         title=f"The candidate pool writes {distinct_raw} different self-descriptions but stands in "
@@ -460,8 +469,8 @@ def bq40():
     width = 0.40
 
     fig, ax = new_figure(height=5.4, width=10.2)
-    ax.bar(x - width / 2, sub.share, width, color=BASE, label="projects")
-    ax.bar(x + width / 2, doc.share.values[:len(x)], width, color=HILITE, label="documented projects")
+    ax.bar(x - width / 2, sub.share, width, color=CAT[0], label="projects")
+    ax.bar(x + width / 2, doc.share.values[:len(x)], width, color=CAT[1], label="documented projects")
     ax.set_xticks(x)
     ax.set_xticklabels(sub.bucket)
     ax.set_ylim(0, max(sub.share.max(), doc.share.max()) * 1.25)
@@ -469,8 +478,8 @@ def bq40():
     ax.set_ylabel("Share of observed candidates")
     ax.set_xlabel("Number of projects held by the candidate")
     for xi, (s, c) in zip(x - width / 2, zip(sub.share, sub["count"])):
-        ax.text(xi, s + 0.006, f"{int(c)}", ha="center", fontsize=8)
-    ax.legend(fontsize=8.5)
+        ax.text(xi, s + 0.006, f"{int(c)}", ha="center", fontsize=LABEL)
+    ax.legend(fontsize=LABEL)
     cumulative = sub.set_index("bucket").share.cumsum()
     none_share = float(sub[sub.bucket == "0"].share.iloc[0])
     median_projects = num_word(table("C14b_github_medians.csv").query("population == 'P_data'").median_projects.iloc[0])
@@ -511,10 +520,11 @@ def bq40():
 def bq41():
     topics_all = table("C18_project_topics.csv")
     top = topics_all[topics_all.population == "projects"].sort_values("share", ascending=False).head(18).sort_values("share")
-    group_color = {"ds_method": BASE, "ai": FOURTH, "engineering": THIRD, "analytics_domain": HILITE}
+    # theme groups are unordered: categorical slots in order, anything else is cat-other
+    group_color = dict(zip(["ds_method", "ai", "engineering", "analytics_domain"], CAT))
     group_label = {"ds_method": "data-science method", "ai": "AI / LLM",
                    "engineering": "engineering", "analytics_domain": "business domain"}
-    colors = [group_color.get(g, MUTED) for g in top.group]
+    colors = [group_color.get(g, CAT_OTHER) for g in top.group]
 
     fig, ax = new_figure(height=0.36 * len(top) + 3.4, width=10.4)
     ax.barh(top.theme.str.replace("_", " "), top.share, color=colors)
@@ -523,7 +533,7 @@ def bq41():
     ax.set_xlabel("Share of public Austrian data projects on the theme")
     label_bars(ax, list(top.share), [f"{s:.1%} ({int(c):,})" for s, c in zip(top.share, top["count"])])
     handles = [ax.barh(0, 0, color=color, label=group_label[key]) for key, color in group_color.items()]
-    ax.legend(fontsize=8.5, loc="lower right")
+    ax.legend(fontsize=LABEL, loc="lower right")
     rare = topics_all[(topics_all.population == "projects")
                       & topics_all.theme.isin(["experimentation", "causal_inference", "product"])]
     rare_cap = ceil_pct(rare.share.max())
@@ -566,7 +576,7 @@ def bq41():
 def bq42():
     arch = table("C14c_repository_archetypes.csv").sort_values("share_of_data_repos")
     demand_shaped = {"analytics_project", "data_engineering_project", "dashboard_project", "production_app"}
-    colors = [HILITE if a in demand_shaped else BASE for a in arch.archetype]
+    colors = [BASE if a in demand_shaped else MUTED for a in arch.archetype]
 
     fig, ax = new_figure(height=0.44 * len(arch) + 3.2, width=10.2)
     ax.barh(arch.archetype.str.replace("_", " "), arch.share_of_data_repos, color=colors)
@@ -629,14 +639,14 @@ def bq43():
     ax.barh(y, cl["size"], color=BASE)
     ax.barh(y, cl.styria, color=HILITE)
     ax.set_yticks(y)
-    ax.set_yticklabels(cl.label, fontsize=8.5)
-    ax.set_xlim(0, cl["size"].max() * 1.82)
+    ax.set_yticklabels(cl.label, fontsize=LABEL)
+    ax.set_xlim(0, cl["size"].max() * 3.2)
     ax.set_xlabel("Observed candidates in the cluster (Styrian candidates highlighted)")
     for i, row in enumerate(cl.itertuples()):
         ax.text(row.size + cl["size"].max() * 0.012, i,
                 f"{int(row.size)} in total · {int(row.styria)} Styrian · "
                 f"median {int(row.median_projects)} projects",
-                va="center", fontsize=8.5)
+                va="center", fontsize=LABEL)
     biggest = cl.iloc[-1]
     finalise(
         fig,
@@ -681,13 +691,13 @@ def bq44():
     ax.barh(dom.prior_domain.str.replace("_", " "), dom.share, color=colors)
     ax.errorbar(dom.share, np.arange(len(dom)),
                 xerr=[dom.share - dom.ci_low, dom.ci_high - dom.share],
-                fmt="none", ecolor="#444444", capsize=2, linewidth=0.9)
+                fmt="none", ecolor=INK_2, capsize=2, linewidth=0.9)
     ax.set_xlim(0, dom.ci_high.max() * 1.36)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of bio-declared accounts naming the prior domain (Wilson 95 % CI)")
     for i, row in enumerate(dom.itertuples()):
         ax.text(row.ci_high + dom.ci_high.max() * 0.025, i,
-                f"{row.share:.1%} ({int(row.count)})", va="center", fontsize=8.5)
+                f"{row.share:.1%} ({int(row.count)})", va="center", fontsize=LABEL)
     marketing = dom[dom.prior_domain.str.lower().str.startswith("marketing")]
     marketing_count = int(marketing["count"].iloc[0]) if len(marketing) else 0
     business = dom[dom.prior_domain == "business"]
@@ -733,20 +743,22 @@ def bq44():
 def bq45():
     prem = table("D05_skill_salary_premium.csv").sort_values("adjusted_premium_pct")
     y = np.arange(len(prem))
-    colors = [HILITE if c else MUTED for c in prem.clears_zero]
+    # skills whose premium clears zero are filled ink, the rest open: emphasis without a second accent
+    colors = [INK if c else SURFACE for c in prem.clears_zero]
 
     fig, ax = new_figure(height=0.46 * len(prem) + 3.4, width=10.6)
-    ax.scatter(prem.raw_difference_pct, y, color=BASE, s=55, marker="s", zorder=2, alpha=0.75)
+    ax.scatter(prem.raw_difference_pct, y, color=MUTED, s=55, marker="s", zorder=2)
     ax.errorbar(prem.adjusted_premium_pct, y,
                 xerr=[prem.adjusted_premium_pct - prem.ci_low_pct,
                       prem.ci_high_pct - prem.adjusted_premium_pct],
                 fmt="o", markersize=7, capsize=3, linewidth=1.3,
-                ecolor="#444444", color="#444444", zorder=3)
+                ecolor=INK_2, color=INK_2, zorder=3)
     for i, row in enumerate(prem.itertuples()):
         ax.plot([row.raw_difference_pct, row.adjusted_premium_pct], [i, i],
-                color=MUTED, linewidth=0.8, alpha=0.5, zorder=1)
-        ax.scatter([row.adjusted_premium_pct], [i], color=colors[i], s=70, zorder=4)
-    ax.axvline(0, color="#222222", linewidth=1.0)
+                color=RANGE, linewidth=0.8, zorder=1)
+        ax.scatter([row.adjusted_premium_pct], [i], color=colors[i], edgecolor=INK_2, linewidth=1.2,
+                   s=70, zorder=4)
+    ax.axvline(0, color=INK, linewidth=1.0)
     ax.set_yticks(y)
     ax.set_yticklabels(prem.skill)
     ax.set_xlabel("Difference in the advertised annual minimum (%)")
@@ -756,12 +768,12 @@ def bq45():
     # raw-difference marker whenever the raw effect is the larger of the two.
     label_x = span * 1.30
     for i, row in enumerate(prem.itertuples()):
-        ax.text(label_x, i, f"n = {int(row.ads_mentioning)}", va="center", fontsize=8)
+        ax.text(label_x, i, f"n = {int(row.ads_mentioning)}", va="center", fontsize=LABEL)
     top = len(prem) - 1
     ax.annotate("raw difference", (prem.raw_difference_pct.iloc[top], top), textcoords="offset points",
-                xytext=(0, 16), ha="center", fontsize=8.5, color=BASE)
+                xytext=(0, 16), ha="center", fontsize=LABEL, color=INK_2)
     ax.annotate("after controls, with 95 % CI", (prem.adjusted_premium_pct.iloc[top], top),
-                textcoords="offset points", xytext=(10, -22), ha="center", fontsize=8.5, color=HILITE)
+                textcoords="offset points", xytext=(10, -22), ha="center", fontsize=LABEL, color=INK_2)
     survivors = prem[prem.clears_zero].copy()
     survivors["magnitude"] = survivors.adjusted_premium_pct.abs()
     survivors = survivors.sort_values("magnitude", ascending=False)

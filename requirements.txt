@@ -7,6 +7,8 @@ numpy==2.5.1
 scikit-learn==1.9.0
 scipy==1.18.0
 matplotlib==3.11.1
+# chart theme: the Braga design system v2.1 (src/viz/engine.py, make_figures.py, supply_figures.py)
+bk-viz @ git+https://github.com/RafaelBraga-Kribitz/bk-viz@fe8125a3043f49a798ef24740b23f81c46863562
 # technology co-occurrence network figure SF11 (src/analysis/supply_figures.py)
 networkx==3.6.1
 # pyarrow 25.0.1 is blocked by Windows Application Control on the author's machine (pandas import fails); 24.0.0 works

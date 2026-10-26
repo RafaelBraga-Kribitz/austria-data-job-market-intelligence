@@ -20,13 +20,18 @@ sys.path.insert(0, str(ROOT / "src" / "viz"))
 sys.path.insert(0, str(ROOT / "src" / "analysis"))
 
 from engine import (  # noqa: E402
+    CAT,
+    INK,
+    INK_2,
+    LABEL,
+    POLE_A,
+    POLE_B,
+    RANGE,
     BASE,
     DEMAND_SOURCE,
-    FOURTH,
     HILITE,
     MUTED,
     SUPPLY_SOURCE,
-    THIRD,
     Spec,
     finalise,
     label_bars,
@@ -57,9 +62,9 @@ def bq20():
             ax.plot([min(a, s), max(a, s)], [i, i], color=MUTED, linewidth=1.3, zorder=1)
     ax.scatter(ds1.candidate_density_T1_per_posting, y, color=BASE, s=85, zorder=3)
     ax.scatter(sty, y, color=HILITE, s=85, marker="D", zorder=3)
-    ax.axvline(1.0, color="#222222", linewidth=0.9, linestyle="--")
+    ax.axvline(1.0, color=INK, linewidth=0.9, linestyle="--")
     ax.text(1.04, len(ds1) - 0.45, "one declared candidate\nper posting",
-            fontsize=8.5, color="#222222", va="top")
+            fontsize=LABEL, color=INK, va="top")
     ax.set_xscale("log")
     ax.set_yticks(y)
     ax.set_yticklabels([FAMILY_LABEL[c] for c in ds1.category])
@@ -67,15 +72,15 @@ def bq20():
     # Direct labels instead of a legend, on the top row only (DSX: a legend a label can replace).
     top = len(ds1) - 1
     ax.annotate("Austria", (ds1.candidate_density_T1_per_posting.iloc[top], top), textcoords="offset points",
-                xytext=(0, 14), ha="center", fontsize=9, color=BASE)
+                xytext=(0, 14), ha="center", fontsize=LABEL, color=INK_2)
     if not np.isnan(sty.iloc[top]):
         ax.annotate("Styria", (sty.iloc[top], top), textcoords="offset points",
-                    xytext=(0, 14), ha="center", fontsize=9, color=HILITE)
+                    xytext=(0, 14), ha="center", fontsize=LABEL, color=INK)
     for i, row in enumerate(ds1.itertuples()):
         anchor = np.nanmax([row.candidate_density_T1_per_posting, row.density_styria or np.nan])
         ax.text(anchor * 1.14, i,
                 f"AT {row.candidate_density_T1_per_posting:.2f} · {int(row.supply_count)} bios / {int(row.demand_count)} ads",
-                va="center", fontsize=8)
+                va="center", fontsize=LABEL)
     ax.set_xlim(right=ds1.candidate_density_T1_per_posting.max() * 9)
     sci = ds1[ds1.category == "data_science"].iloc[0]
     eng = ds1[ds1.category == "data_engineering"].iloc[0]
@@ -127,13 +132,14 @@ def bq21():
     fig, ax = new_figure(height=7.4, width=10.4)
     lim = max(ds10.demand_share.max(), ds10.supply_project_share.max()) * 1.14
     ax.plot([0, lim], [0, lim], color=MUTED, linewidth=1, linestyle=":")
-    ax.annotate("shown as often as it is asked for", xy=(lim * 0.70, lim * 0.72), fontsize=8.5,
-                color=MUTED, rotation=41, ha="center", rotation_mode="anchor")
+    ax.annotate("shown as often as it is asked for", xy=(lim * 0.70, lim * 0.72), fontsize=LABEL,
+                color=INK_2, rotation=41, ha="center", rotation_mode="anchor")
 
+    # classes of points, not one entity: emphasis in structure grey, no accent (D-036)
     def point_color(row):
         if not row.observable:
             return MUTED
-        return HILITE if row.gap > 0.15 else BASE
+        return BASE if row.gap > 0.15 else MUTED
 
     ds10 = ds10.sort_values("supply_project_share")
     # Label the points a decision turns on; the rest stay as dots so the labelled ones
@@ -144,7 +150,7 @@ def bq21():
     )
     for _, row in ds10[~ds10.labelled].iterrows():
         ax.scatter(row.demand_share, row.supply_project_share, s=52, color=point_color(row),
-                   marker="o", alpha=0.55, zorder=3)
+                   marker="o", zorder=3)
     shown = ds10[ds10.labelled].copy()
     # Two label columns - one reading right from the left-hand points, one reading left
     # from the right-hand points. Spreading each column on its own halves the crowding,
@@ -154,20 +160,22 @@ def bq21():
         group = shown[shown.to_right == side]
         if group.empty:
             continue
-        # min_gap is one label height in data units: 8.5 pt over the axes height,
+        # min_gap is one label height in data units: the label size over the axes height,
         # with a quarter of a line of air. Spacing labels further than that is what
         # turns leader lines into long diagonals.
-        label_height = (8.5 / 72) / (fig.get_size_inches()[1] * 0.62) * lim
+        label_height = (LABEL / 72) / (fig.get_size_inches()[1] * 0.62) * lim
         label_y = spread_labels(list(group.supply_project_share), min_gap=label_height * 1.25,
                                 lo=0.0, hi=lim * 0.94)
         for (_, row), ly in zip(group.iterrows(), label_y):
             color = point_color(row)
-            ax.scatter(row.demand_share, row.supply_project_share, s=80, color=color,
-                       marker="o" if row.observable else "X", alpha=0.95, zorder=3)
+            ax.scatter(row.demand_share, row.supply_project_share, s=80,
+                       color=color if row.observable else INK_2,
+                       marker="o" if row.observable else "x", zorder=3)
             lx = row.demand_share + (lim * 0.04 if side else -lim * 0.04)
             ax.plot([row.demand_share, lx], [row.supply_project_share, ly],
-                    color=color, linewidth=0.6, alpha=0.5, zorder=2)
-            ax.annotate(row.category, (lx, ly), fontsize=8.5, color=color,
+                    color=RANGE, linewidth=0.6, zorder=2)
+            ax.annotate(row.category, (lx, ly), fontsize=LABEL,
+                        color=INK if (row.observable and row.gap > 0.15) else INK_2,
                         ha="left" if side else "right", va="center", zorder=4)
     ax.set_xlim(0, lim)
     ax.set_ylim(-lim * 0.10, lim)
@@ -175,10 +183,10 @@ def bq21():
     ax.set_ylabel("Share of candidates with project evidence")
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
-    ax.scatter([], [], color=HILITE, label="demanded, rarely demonstrated, and visible on GitHub")
-    ax.scatter([], [], color=BASE, label="observable on GitHub, smaller gap")
-    ax.scatter([], [], color=MUTED, marker="x", label="not observable on GitHub (Power BI, Excel, SAP, soft skills)")
-    ax.legend(fontsize=8.5, loc="upper left")
+    ax.scatter([], [], color=BASE, label="demanded, rarely demonstrated, and visible on GitHub")
+    ax.scatter([], [], color=MUTED, label="observable on GitHub, smaller gap")
+    ax.scatter([], [], color=INK_2, marker="x", label="not observable on GitHub (Power BI, Excel, SAP, soft skills)")
+    ax.legend(fontsize=LABEL, loc="upper left")
     sql = ds10[ds10.category == "SQL"].iloc[0]
     finalise(
         fig,
@@ -225,20 +233,20 @@ def bq22():
     ds3 = ds3[(ds3.demand_share >= 0.04) | (ds3.supply_share >= 0.15)]
     ds3 = ds3.reindex(ds3.difference_pp.abs().sort_values(ascending=False).index).head(18)
     ds3 = ds3.sort_values("difference_pp")
-    colors = [HILITE if v < 0 else BASE for v in ds3.difference_pp]
+    colors = [POLE_A if v < 0 else POLE_B for v in ds3.difference_pp]
 
     fig, ax = new_figure(height=0.42 * len(ds3) + 3.0)
     ax.barh(ds3.skill, ds3.difference_pp, color=colors)
-    ax.axvline(0, color="#222222", linewidth=0.9)
+    ax.axvline(0, color=INK, linewidth=0.9)
     span = ds3.difference_pp.abs().max()
     ax.set_xlim(-span * 1.62, span * 1.62)
     ax.set_xlabel("Percentage points: share of candidates with evidence minus share of ads mentioning it")
     for i, row in enumerate(ds3.itertuples()):
         ax.text(row.difference_pp + (1.3 if row.difference_pp >= 0 else -1.3), i,
                 f"ads {row.demand_share:.0%} · candidates {row.supply_share:.0%}",
-                va="center", ha="left" if row.difference_pp >= 0 else "right", fontsize=8)
-    ax.text(0.99, 0.03, "→ abundant in portfolios", transform=ax.transAxes, ha="right", fontsize=9, color=BASE)
-    ax.text(0.01, 0.03, "← scarce in portfolios", transform=ax.transAxes, ha="left", fontsize=9, color=HILITE)
+                va="center", ha="left" if row.difference_pp >= 0 else "right", fontsize=LABEL)
+    ax.text(0.99, 0.03, "→ abundant in portfolios", transform=ax.transAxes, ha="right", fontsize=LABEL, color=INK_2)
+    ax.text(0.01, 0.03, "← scarce in portfolios", transform=ax.transAxes, ha="left", fontsize=LABEL, color=INK_2)
     scarce = ds3.iloc[0]
     abundant = ds3.iloc[-1]
     finalise(
@@ -284,7 +292,7 @@ def bq23():
     # the contrast between the two sets is the whole point of the figure.
     keep = set(fmt.sort_values("share").tail(16)["format"]) | demand_mapped
     fmt = fmt[fmt["format"].isin(keep)].sort_values("share")
-    colors = [HILITE if f in demand_mapped else BASE for f in fmt["format"]]
+    colors = [BASE if f in demand_mapped else MUTED for f in fmt["format"]]
 
     fig, ax = new_figure(height=0.36 * len(fmt) + 3.0)
     ax.barh(fmt["format"].str.replace("_", " "), fmt.share, color=colors)
@@ -332,20 +340,20 @@ def bq24():
     rd["label"] = rd.feature.str.replace("section: ", "", regex=False).str.replace("_", " ")
     rd = rd.sort_values("share")
     analysis_sections = {"results", "limitations", "business context"}
-    colors = [HILITE if lab in analysis_sections else BASE for lab in rd.label]
+    colors = [BASE if lab in analysis_sections else MUTED for lab in rd.label]
 
     fig, ax = new_figure(height=0.40 * len(rd) + 3.0)
     ax.barh(rd.label, rd.share, color=colors)
     ax.errorbar(rd.share, np.arange(len(rd)),
                 xerr=[rd.share - rd.ci_low, rd.ci_high - rd.share],
-                fmt="none", ecolor="#444444", capsize=2, linewidth=0.9)
+                fmt="none", ecolor=INK_2, capsize=2, linewidth=0.9)
     ax.set_xlim(left=0, right=rd.share.max() * 1.30)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of documented READMEs carrying the section (Wilson 95 % CI)")
     # Label beyond the interval, not beyond the bar: otherwise the whisker strikes the text.
     for i, row in enumerate(rd.itertuples()):
         ax.text(row.ci_high + rd.share.max() * 0.022, i, f"{row.share:.0%}",
-                va="center", fontsize=9, color="#222222")
+                va="center", fontsize=LABEL, color=INK)
     run = rd[rd.label == "reproducibility"].iloc[0]
     biz = rd[rd.label == "business context"].iloc[0]
     res = rd[rd.label == "results"].iloc[0]
@@ -402,17 +410,18 @@ def bq25():
     fig, ax = new_figure(height=0.52 * len(ds7) + 3.0)
     for i, row in enumerate(ds7.itertuples()):
         ax.plot([row.demand_share, row.supply_share], [i, i], color=MUTED, linewidth=1.5, zorder=1)
-    ax.scatter(ds7.demand_share, y, color=BASE, s=90, zorder=3, label="share of advertisements (title)")
-    ax.scatter(ds7.supply_share, y, color=HILITE, s=90, marker="D", zorder=3, label="share of public profiles (bio)")
+    # demand and supply are two unordered series: categorical slots 1 and 2
+    ax.scatter(ds7.demand_share, y, color=CAT[0], s=90, zorder=3, label="share of advertisements (title)")
+    ax.scatter(ds7.supply_share, y, color=CAT[1], s=90, marker="D", zorder=3, label="share of public profiles (bio)")
     ax.set_yticks(y)
     ax.set_yticklabels(ds7.label)
     ax.set_xlim(0, max(ds7.demand_share.max(), ds7.supply_share.max()) * 1.18)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel("Share of the side's population")
-    ax.legend(fontsize=8.5, loc="lower right")
+    ax.legend(fontsize=LABEL, loc="lower right")
     for i, row in enumerate(ds7.itertuples()):
         ax.text(max(row.demand_share, row.supply_share) + 0.02, i,
-                f"{row.difference_pp:+.0f} pp", va="center", fontsize=8.5)
+                f"{row.difference_pp:+.0f} pp", va="center", fontsize=LABEL)
     student = ds7[ds7.category.str.contains("student")].iloc[0]
     senior = ds7[ds7.category.str.contains("senior")].iloc[0]
     # Senior and lead are separate rows in DS07; the decision documents quote them together.
@@ -485,7 +494,7 @@ def bq26():
     for i, v in enumerate(values):
         share = v / max(values)
         text = f"{int(v):,}" if v == max(values) else f"{int(v):,}  ({share:.1%} of the pool)"
-        ax.text(v + max(values) * 0.012, i, text, va="center", fontsize=9.5)
+        ax.text(v + max(values) * 0.012, i, text, va="center", fontsize=LABEL)
     finalise(
         fig,
         title=f"Fewer than {int(supply.P_data_marketing_AND_experimentation) + 2} public Austrian accounts combine "

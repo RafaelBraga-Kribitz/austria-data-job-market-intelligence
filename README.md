@@ -4,10 +4,10 @@
 
 [![tests](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml)
 [![README quality gate](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Docs and aggregates: CC BY 4.0](https://img.shields.io/badge/docs%20%26%20aggregates-CC%20BY%204.0-lightgrey)](LICENSE)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue)](requirements.txt)
-[![Status: Complete](https://img.shields.io/badge/status-Complete-brightgreen)](#status)
+[![License: MIT](https://img.shields.io/badge/license-MIT-5A5C61?labelColor=26282C)](LICENSE)
+[![Docs and aggregates: CC BY 4.0](https://img.shields.io/badge/docs%20%26%20aggregates-CC%20BY%204.0-5A5C61?labelColor=26282C)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-5A5C61?labelColor=26282C)](requirements.txt)
+[![Status: Complete](https://img.shields.io/badge/status-Complete-5A5C61?labelColor=26282C)](#status)
 
 **Status:** Complete · Demand snapshot <!--m:_meta.demand_vintage-->2026-10-18<!--/m--> · Supply snapshot <!--m:_meta.supply_vintage-->2026-09-17<!--/m--> · Demand numbers go stale after <!--m:_meta.stale_after_demand-->2027-01-17<!--/m-->
 
@@ -122,6 +122,7 @@ Full descriptions: [docs/methodology.md](docs/methodology.md), [docs/supply-meth
 ## Architecture
 
 ```mermaid
+%%{init: {"theme":"base","fontFamily":"BKribitz, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif","themeVariables":{"background":"#E4E6EA","primaryColor":"#DCDEE2","primaryTextColor":"#26282C","primaryBorderColor":"#26282C","secondaryColor":"#E4E6EA","secondaryTextColor":"#26282C","secondaryBorderColor":"#5A5C61","tertiaryColor":"#E4E6EA","tertiaryTextColor":"#26282C","tertiaryBorderColor":"#C2C4CA","lineColor":"#5A5C61","textColor":"#26282C","mainBkg":"#DCDEE2","nodeBorder":"#26282C","clusterBkg":"#E4E6EA","clusterBorder":"#C2C4CA","edgeLabelBackground":"#E4E6EA","titleColor":"#26282C","fontFamily":"BKribitz, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif","fontSize":"14px"},"flowchart":{"curve":"linear","htmlLabels":true,"padding":8}}}%%
 flowchart LR
   A["Ad sources (private)<br/>public job boards + AMS feed"] -->|"data/raw (private)"| P["src/pipeline<br/>common schema · rules · de-duplication"]
   O["Open data<br/>AMS JobBarometer · Eurostat"] --> N
@@ -183,7 +184,7 @@ schemas/                        posting, supply and application-log schemas
 src/acquisition/                collectors for documented public APIs and open data only
 src/pipeline/                   common schema, rules, de-duplication, supply build, redaction
 src/analysis/                   Layer 1, 2 and 3 analysis, visual-layer builders
-src/viz/                        house style, vendored Lato font (SIL OFL 1.1), figure engine
+src/viz/                        figure engine on bk-viz (Braga design system v2.1), vendored DSX helper and Lato (SIL OFL 1.1)
 src/reporting/                  digest and the metrics registry with its renderer
 src/publish/                    scanned public export
 outputs/tables/                 aggregated tables: T* JB* S* D* Q* (Layer 1), C* O* SQ* (Layer 2), DS* (Layer 3)
@@ -198,7 +199,7 @@ tests/                          pytest suite, one file per module family
 | Language | Python 3.12 | One plain script per step, run in fixed order by `run_all.py` |
 | Data handling | pandas, numpy, pyarrow | Posting and supply tables, aggregation, Parquet intermediates |
 | Statistics | numpy, scipy, scikit-learn | Wilson intervals and the D05 regression written out in numpy; scipy for seasonal confidence intervals; scikit-learn for the requirement clusters used as reading aids |
-| Charts | matplotlib + `src/viz` (Lato) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
+| Charts | matplotlib + `src/viz` on bk-viz (Braga design system v2.1, BKribitz type) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
 | Collection | requests | Public collectors only: AMS JobBarometer pages and the Eurostat and GitHub APIs; the job-board collectors stay private |
 | Tests | pytest | Rule tests, value checks of chart sentences, integrity checks |
 | Publication | `export_public.py` | Staging build with leak scans before any file reaches the public tree |

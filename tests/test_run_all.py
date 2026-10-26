@@ -91,6 +91,8 @@ def test_requirements_parser_reads_every_pin():
     assert reqs, "requirements.txt parsed to nothing"
     assert all(v for v in reqs.values()), f"unpinned requirement(s): {[k for k, v in reqs.items() if not v]}"
     assert reqs.get("pyarrow") == "24.0.0"
+    # a git direct reference counts as pinned only when it names a full commit SHA
+    assert re.fullmatch(r"[0-9a-f]{40}", reqs.get("bk-viz") or ""), reqs.get("bk-viz")
 
 
 # ---------------- execution on throwaway scripts
