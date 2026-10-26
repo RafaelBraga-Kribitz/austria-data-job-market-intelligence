@@ -82,12 +82,13 @@ I wanted to compare data-role paths from Graz with evidence, and the public sour
 |---|---|---|---|---|---|
 | 1 Demand | Austrian public job boards and the AMS feed | <!--m:_meta.demand_vintage-->2026-10-18<!--/m--> | open ad; <!--m:raw_rows_n-->11,997<!--/m--> raw rows → <!--m:unique_postings_n-->10,655<!--/m--> unique ads → <!--m:core_n-->699<!--/m--> core data-role ads | Aggregates only | `VERIFIED` counts, `CALIBRATED` fields |
 | 1 Official | AMS JobBarometer, Eurostat job vacancies | <!--m:jobbarometer_year_first-->2020<!--/m-->–<!--m:jobbarometer_year_last-->2025<!--/m--> (AMS), <!--m:eurostat_year_first-->2009<!--/m-->–<!--m:eurostat_year_last-->2025<!--/m--> (Eurostat) | yearly or quarterly series | Yes (Eurostat raw data is openly licensed) | `VERIFIED` |
-| 2 Supply | Public GitHub accounts located in Austria (documented REST API, no names or e-mail addresses requested) | <!--m:_meta.supply_vintage_span-->2026-09-17/18<!--/m--> | <!--m:supply_p_all_n-->9,409<!--/m--> accounts with an Austrian location → <!--m:supply_p_data_n-->1,818<!--/m--> with a data signal | Aggregates only | `CALIBRATED` |
+| 2 Supply | Public GitHub accounts located in Austria (GitHub's documented REST API, no names or e-mail addresses requested) | <!--m:_meta.supply_vintage_span-->2026-09-17/18<!--/m--> | <!--m:supply_p_all_n-->9,409<!--/m--> accounts with an Austrian location → <!--m:supply_p_data_n-->1,818<!--/m--> with a data signal | Aggregates only | `CALIBRATED` |
+| 2 Context | Eurostat graduates, employment and ICT-specialist series for Austria; Stack Overflow Developer Survey 2025 (Austrian respondents) | yearly to 2024/2025; survey 2025 | national series; survey respondents | Yes (aggregates; survey extract private) | `VERIFIED` |
 | 3 Join | Layers 1 and 2 on shared taxonomies | as above | capability and family level | Yes | `CALIBRATED` |
 
 By role family (T02), core ads are data science <!--m:family_share__data_science-->25 %<!--/m--> (<!--m:family_n__data_science-->176<!--/m-->), data engineering <!--m:family_share__data_engineering-->20 %<!--/m--> (<!--m:family_n__data_engineering-->137<!--/m-->) and data analytics <!--m:family_share__data_analytics-->15 %<!--/m--> (<!--m:family_n__data_analytics-->107<!--/m-->).
 
-The ads are third-party text and the job boards restrict automated extraction in their terms. Collectors for them, raw records, ad text, links and individual-level supply records stay private. The public tree carries code, rules, documentation and aggregated tables only. The reasoning is in [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md) and [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md). This is a publication-readiness analysis, not legal advice.
+The ads are third-party text and the job boards restrict automated extraction in their terms. Collectors for them, raw records, ad text, links and individual-level supply records stay private. The public tree carries code, rules, documentation and aggregated tables only. The reasoning is in [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md) and [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md). This is a publication-readiness analysis, not legal advice. Every source, its access route, terms and vintage are listed in [docs/data-sources.md](docs/data-sources.md) and [docs/supply-methodology.md](docs/supply-methodology.md).
 
 | Tag | Meaning |
 |---|---|
@@ -106,7 +107,7 @@ Collect → Common schema → Rule-based fields → De-duplicate → Aggregate w
 - **De-duplication.** Union-find groups over documented keys; the in-scope duplicate rate is <!--m:dedupe_duplicate_rate_in_scope-->24 %<!--/m-->.
 - **Aggregation.** The core set is the canonical ads in eight data role families. Every table stores n. Proportions that feed decisions carry Wilson 95 % intervals. Official series are analysed as their own units and never merged with ad-level statistics.
 - **Join.** `demand_supply.py` joins both sides on the same taxonomies and reports ratios and quadrants. It never computes a composite score or ranks individuals.
-- **Charts.** <!--m:visual_questions_n-->45<!--/m--> decision charts, each answering one business question; SVG files are sealed with SHA-256 hashes in `FIGURE-MANIFEST.yaml`.
+- **Charts.** <!--m:visual_questions_n-->45<!--/m--> decision charts, each answering one business question; the vector (SVG) files are sealed with SHA-256 hashes in [`outputs/figures/FIGURE-MANIFEST.yaml`](outputs/figures/FIGURE-MANIFEST.yaml).
 
 Full descriptions: [docs/methodology.md](docs/methodology.md), [docs/supply-methodology.md](docs/supply-methodology.md), [docs/demand-supply-methodology.md](docs/demand-supply-methodology.md).
 
@@ -115,7 +116,7 @@ Full descriptions: [docs/methodology.md](docs/methodology.md), [docs/supply-meth
 - **Hand-labelled audits.** Title classification: <!--m:title_precision_strict_after-->83 %<!--/m--> strict and <!--m:title_precision_lenient_after-->95 %<!--/m--> lenient precision on <!--m:title_audit_sample_n-->177<!--/m--> hand-labelled titles (Q03c). Bio → role family <!--m:supply_precision_bio_family_strict-->78 %<!--/m--> / <!--m:supply_precision_bio_family_lenient-->90 %<!--/m--> and repository → project <!--m:supply_precision_project_strict-->75 %<!--/m--> / <!--m:supply_precision_project_lenient-->92.5 %<!--/m--> on 40-item random samples (SQ10, SQ11). Recall is not measured.
 - **Tests.** `python -m pytest -q` runs unit tests of the rule modules and value checks that compare the sentences under each chart with the cited tables. Integrity tests that need private data skip in the public tree and say so.
 - **Digest.** `src/reporting/digest.py` reprints every quoted number from `outputs/`; its last section reports missing inputs.
-- **Baseline for the pay result.** The raw skill premium (T09d) is compared with the controlled premium (D05, OLS on log minimum, HC1 errors, Holm and Benjamini-Hochberg corrections). The raw result does not survive the controls, and the README reports that.
+- **Baseline for the pay result.** The raw skill premium (T09d) is compared with the controlled premium (D05: ordinary least squares on the log minimum, heteroskedasticity-robust HC1 standard errors, Holm and Benjamini-Hochberg corrections for testing many skills). The raw result does not survive the controls, and the README reports that.
 - **Export guard.** `src/publish/export_public.py` builds this public tree in a staging folder and blocks it on any e-mail address, phone number, job-ad link, secret-like token, source posting id, over-long free-text cell, suppression-threshold breach, private path or owner-fact phrase.
 
 ## Architecture
@@ -158,7 +159,7 @@ What an outside reader can reproduce: every rule (tests), every aggregation step
 - **Styrian cells are small.** The largest family cell is <!--m:styria_largest_family_n-->28<!--/m--> ads, below this project's own robustness threshold of 30.
 - **No causal claims** about any skill, language or salary.
 
-**What would change these findings.** Read each conclusion as open to revision. The supply-gap result (finding 3) should be reconsidered if a second supply snapshot shows the gap between ads and public project evidence closing, or if a source that sees BI work shows these skills are widely demonstrated. The Styria result (finding 4) should be reconsidered if a larger Styrian sample moves a family cell above the robustness threshold or if the 2026 AMS series reverses Styria's trend. The language result (finding 5) should be reconsidered if a larger source of ads changes the share of English-written ads without a stated German requirement. The pay result (finding 6) should be reconsidered if ads with a stated actual salary, not a collective-agreement floor, become common. The open-question register is [docs/open-questions.md](docs/open-questions.md).
+**What would change these findings.** Read each conclusion as open to revision. The supply-gap result (finding 3) should be reconsidered if a second supply snapshot shows the gap between ads and public project evidence closing, or if a source that sees business intelligence (BI) work shows these skills are widely demonstrated. The Styria result (finding 4) should be reconsidered if a larger Styrian sample moves a family cell above the robustness threshold or if the 2026 AMS series reverses Styria's trend. The language result (finding 5) should be reconsidered if a larger source of ads changes the share of English-written ads without a stated German requirement. The pay result (finding 6) should be reconsidered if ads with a stated actual salary, not a collective-agreement floor, become common. The open-question register is [docs/open-questions.md](docs/open-questions.md).
 
 ## What I would do with production data
 
@@ -186,7 +187,7 @@ src/viz/                        house style, vendored Lato font (SIL OFL 1.1), f
 src/reporting/                  digest and the metrics registry with its renderer
 src/publish/                    scanned public export
 outputs/tables/                 aggregated tables: T* JB* S* D* Q* (Layer 1), C* O* SQ* (Layer 2), DS* (Layer 3)
-outputs/figures/                BQ01–BQ45 as PNG plus sealed SVG
+outputs/figures/                BQ01–BQ45 as PNG plus sealed SVG; F*, SF*, DSF* are earlier exploratory PNGs
 tests/                          pytest suite, one file per module family
 ```
 
@@ -196,9 +197,9 @@ tests/                          pytest suite, one file per module family
 |---|---|---|
 | Language | Python 3.12 | One plain script per step, run in fixed order by `run_all.py` |
 | Data handling | pandas, numpy, pyarrow | Posting and supply tables, aggregation, Parquet intermediates |
-| Statistics | scikit-learn, scipy | Wilson intervals, the D05 regression, requirement clusters used as reading aids |
+| Statistics | numpy, scipy, scikit-learn | Wilson intervals and the D05 regression written out in numpy; scipy for seasonal confidence intervals; scikit-learn for the requirement clusters used as reading aids |
 | Charts | matplotlib + `src/viz` (Lato) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
-| Collection | requests | Documented public APIs only (AMS, Eurostat, GitHub) |
+| Collection | requests | Public collectors only: AMS JobBarometer pages and the Eurostat and GitHub APIs; the job-board collectors stay private |
 | Tests | pytest | Rule tests, value checks of chart sentences, integrity checks |
 | Publication | `export_public.py` | Staging build with leak scans before any file reaches the public tree |
 
@@ -214,7 +215,7 @@ Three evidence layers and <!--m:visual_questions_n-->45<!--/m--> charts are buil
 
 ## License
 
-Code (`src/`, `tests/`, `config/`): MIT. Documents and aggregated outputs (tables, JSON summaries, figures, digest): CC BY 4.0. Eurostat raw data: Commission reuse policy, attribution required. Tables derived from the Stack Overflow survey: produced works of ODbL data. Vendored Lato fonts: SIL OFL 1.1. No licence is granted for third-party content. The exact split is in [LICENSE](LICENSE). Cite as in [CITATION.cff](CITATION.cff); there is no DOI.
+Code (`src/`, `tests/`, `config/`): MIT. Documents and aggregated outputs (tables, JSON summaries, figures, digest): CC BY 4.0. Eurostat raw data: Commission reuse policy, attribution required. Tables derived from the Stack Overflow survey: produced works of Open Database License (ODbL) data. Vendored Lato fonts: SIL OFL 1.1. No licence is granted for third-party content. The exact split is in [LICENSE](LICENSE). Cite as in [CITATION.cff](CITATION.cff); there is no DOI (digital object identifier).
 
 ## Author
 
