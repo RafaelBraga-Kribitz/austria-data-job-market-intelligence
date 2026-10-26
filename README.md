@@ -72,6 +72,10 @@ Vienna <!--m:vienna_core_primary_state-->315<!--/m--> of <!--m:core_n-->699<!--/
 | Auditor | [Data](#data), [Validation](#validation), [docs/data-quality.md](docs/data-quality.md), [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md), [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md), the export guard [src/publish/export_public.py](src/publish/export_public.py) |
 | AI agent | [AGENT_CONTEXT.md](AGENT_CONTEXT.md), then [outputs/visual_questions.json](outputs/visual_questions.json) |
 
+## Why this project
+
+I wanted to compare data-role paths from Graz with evidence, and the public sources I surveyed could not do that ([docs/research-landscape.md](docs/research-landscape.md)). The official series (AMS JobBarometer, Eurostat) count ads or vacancies by year or quarter in coarse occupation classes, or with no occupation at all. Public salary references are collective-agreement floors or self-reported surveys. No public dataset lists Austrian data-role ads with their skills, region, language requirement and advertised pay. This repository builds that layer from a one-day snapshot of ads and adds the other side of the market, what public portfolios in Austria actually show, so that a learning or portfolio choice can go where demand is high and visible evidence is rare. The <!--m:visual_questions_n-->45<!--/m--> decision charts are phrased as the questions behind that choice, for example "If I do not move from Graz, how much of the Austrian data market am I actually applying to?" ([docs/visual-decision-board.md](docs/visual-decision-board.md)). The personal profile they were computed with stays private; the public tree ships a neutral example profile ([config/profile.json](config/profile.json)), and the comparison method is in [docs/decision-framework.md](docs/decision-framework.md).
+
 ## Data
 
 | Layer | Source | Period | Grain | Public? | Tag |
