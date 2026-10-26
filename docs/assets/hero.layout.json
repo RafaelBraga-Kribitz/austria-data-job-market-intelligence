@@ -1,74 +1,89 @@
 {
-  "output": "docs/assets/hero.png",
+  "output": "hero.png",
   "width": 1600,
   "height": 640,
   "mode": "light",
-  "fonts": "BKribitz / BKribitz Mono (Geist-derived, SIL OFL 1.1) from braga-portfolio-v2/public/fonts",
-  "title_size": 112,
-  "descriptor_size": 32,
-  "attempts": 3,
+  "fonts": "BKribitz (design-system checkout)",
+  "design_system": "braga 2.1.0 (D-051)",
+  "status_state": "complete",
+  "title_size": 96,
+  "descriptor_size": 28,
+  "attempts": 14,
   "blocks": {
-    "kind": {
+    "wordmark": {
       "bbox": [
         72,
         72,
-        498,
-        104
+        180,
+        107
       ],
       "lines": [
-        "BRAGA · ANALYTICAL PROJECT"
+        "BRAGA"
       ],
-      "font": "BKribitzMono-400.ttf"
+      "font": "BKribitz-800.woff2"
+    },
+    "kind": {
+      "bbox": [
+        194,
+        76,
+        506,
+        106
+      ],
+      "lines": [
+        "·  ANALYTICAL PROJECT"
+      ],
+      "font": "BKribitzMono-400.woff2"
     },
     "status": {
       "bbox": [
-        1397,
-        72,
+        1410,
+        76,
         1528,
-        104
+        106
       ],
       "lines": [
         "COMPLETE"
       ],
-      "font": "BKribitzMono-400.ttf"
+      "font": "BKribitzMono-400.woff2"
     },
     "facts": {
       "bbox": [
         72,
-        542,
-        1022,
-        570
+        538,
+        654,
+        568
       ],
       "lines": [
-        "LICENSE  MIT + CC BY 4.0  ·  RUNTIME  Python 3.12  ·  CI  GitHub Actions"
+        "LICENSE  MIT  ·  RUNTIME  Python >=3.12"
       ],
-      "font": "BKribitzMono-400.ttf"
+      "font": "BKribitzMono-400.woff2"
     },
     "title": {
       "bbox": [
         72,
-        128,
-        1458,
-        356
+        136,
+        1208,
+        336
       ],
       "lines": [
         "Austria Data-Job Market",
         "Intelligence"
       ],
-      "font": "BKribitz-800.ttf"
+      "font": "BKribitz-700.woff2"
     },
     "descriptor": {
       "bbox": [
         72,
-        384,
-        1186,
-        470
+        368,
+        877,
+        485
       ],
       "lines": [
-        "Austrian data-role job ads against public GitHub evidence: which skills",
-        "employers ask for, which ones portfolios rarely show, and where the jobs are."
+        "Snapshot of Austrian data-role job ads, the AMS JobBarometer",
+        "2020–2025 and Eurostat vacancy seasonality, set against",
+        "public GitHub evidence of the same skills."
       ],
-      "font": "BKribitz-400.ttf"
+      "font": "BKribitz-400.woff2"
     }
   },
   "guardrails": [
@@ -78,7 +93,8 @@
     "no-overlap",
     "glyph-coverage-per-char",
     "contrast>=4.5",
-    "pixel-scan"
+    "pixel-scan",
+    "no-accent"
   ],
   "validated": true
 }
