@@ -1,6 +1,6 @@
 # Austria Data-Job Market Intelligence
 
-![Scatter of capabilities: share of Austrian data-role ads that mention each capability (x axis) against share of observed public GitHub candidates with project evidence for it (y axis). SQL, data quality, data warehouse modelling, Azure and Power BI sit far below the diagonal. Python, machine learning and software engineering sit above it. Tag: CALIBRATED.](outputs/figures/BQ21_evidence_gap.png)
+![Austria Data-Job Market Intelligence: Austrian data-role job ads against public GitHub evidence, which skills employers ask for, which ones portfolios rarely show, and where the jobs are.](docs/assets/hero.png)
 
 [![tests](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml)
 [![README quality gate](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml)
@@ -13,7 +13,8 @@
 
 > **Which data skills do Austrian job ads mention most, which of them do public portfolios rarely show, and where in Austria (with a Styria/Graz focus) are the ads? This repository answers it for data-career decisions, from <!--m:core_n-->699<!--/m--> open core data-role ads.**
 
-*Chart above: SQL is named in <!--m:cap_demand_share__sql-->40 %<!--/m--> of ads, but only <!--m:cap_supply_project_share__sql-->10 %<!--/m--> of the <!--m:supply_p_data_n-->1,818<!--/m--> observed Austrian GitHub accounts with a data signal show it in a project (DS10, `CALIBRATED`). Two different universes, so read the order of magnitude, not the exact ratio.*
+![Scatter of capabilities: share of Austrian data-role ads that mention each capability (x axis) against share of observed public GitHub candidates with project evidence for it (y axis). SQL, data quality, data warehouse modelling, Azure and Power BI sit far below the diagonal. Python, machine learning and software engineering sit above it. Tag: CALIBRATED.](outputs/figures/BQ21_evidence_gap.png)
+*How to read it: each dot is a capability; the further below the dotted line, the more often ads ask for it than public portfolios show it. SQL is named in <!--m:cap_demand_share__sql-->40 %<!--/m--> of ads, but only <!--m:cap_supply_project_share__sql-->10 %<!--/m--> of the <!--m:supply_p_data_n-->1,818<!--/m--> observed Austrian GitHub accounts with a data signal show it in a project; data quality (<!--m:cap_supply_project_share__data_quality_governance-->5 %<!--/m-->) and data warehouse modelling (<!--m:cap_supply_project_share__data_warehouse_modelling-->2 %<!--/m-->) sit even lower. Takeaway: a portfolio project built on SQL over a modelled schema, with data-quality checks, covers what the market asks for and rarely sees (DS10, `CALIBRATED`). Two different universes, so read the order of magnitude, not the exact ratio.*
 
 SSOT: [`outputs/tables/`](outputs/tables/) holds every number below with its table id in brackets. [`src/reporting/digest.py`](src/reporting/digest.py) reprints them into [`outputs/reports/digest.txt`](outputs/reports/digest.txt). The numbers in this file are not typed by hand: each one is bound to a metrics registry key and re-rendered from it when a snapshot changes.
 
@@ -182,7 +183,9 @@ Findings are gated by tests that compare each chart sentence with its source tab
 
 ## Status
 
-**Status:** Complete. Three evidence layers and <!--m:visual_questions_n-->45<!--/m--> charts are built and tested. Demand snapshot <!--m:_meta.demand_vintage-->2026-10-18<!--/m-->, supply snapshot <!--m:_meta.supply_vintage-->2026-09-17<!--/m-->. Next milestone: a second supply snapshot to give Layer 2 a time axis. Date: <!--m:_meta.demand_vintage-->2026-10-18<!--/m-->.
+**Status:** Complete · Date: <!--m:_meta.demand_vintage-->2026-10-18<!--/m-->
+
+Three evidence layers and <!--m:visual_questions_n-->45<!--/m--> charts are built and tested. Demand snapshot <!--m:_meta.demand_vintage-->2026-10-18<!--/m-->, supply snapshot <!--m:_meta.supply_vintage-->2026-09-17<!--/m-->. Next milestone: a second supply snapshot to give Layer 2 a time axis.
 
 ## License
 
