@@ -8,8 +8,8 @@ type: software
 authors:
   - family-names: Braga-Kribitz
     given-names: Rafael
-version: "2026-09-30.1"
-date-released: "2026-09-30"
+version: "2026-10-19.1"
+date-released: "2026-10-19"
 license:
   - MIT
   - CC-BY-4.0
@@ -29,9 +29,9 @@ keywords:
   - official statistics
 abstract: >-
   Evidence for data-career decisions in Austria, in four layers. Layer 1 (employer demand): a one-day
-  snapshot (2026-09-16) of open data-role job advertisements collected from five posting sources plus the
+  snapshot (2026-10-18) of open data-role job advertisements collected from five posting sources plus the
   AMS JobBarometer yearly series 2020-2025 and Eurostat job-vacancy statistics, normalised with transparent
-  rule-based taxonomies (720 core postings). Layer 2 (observed candidate supply): public GitHub profiles and
+  rule-based taxonomies (699 core postings). Layer 2 (observed candidate supply): public GitHub profiles and
   repositories of Austria-located accounts collected through the documented GitHub API, the Stack Overflow
   Developer Survey 2025 (ODbL) and Eurostat graduate and employment series. Layer 3 (demand × supply):
   skill-by-skill comparison of what employers ask for with what candidates demonstrate. Layer V (visual

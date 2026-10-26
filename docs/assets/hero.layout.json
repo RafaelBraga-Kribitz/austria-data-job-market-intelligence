@@ -3,7 +3,7 @@
   "width": 1600,
   "height": 640,
   "mode": "light",
-  "fonts": "Söhne (braga-design-system-template/system/assets/fonts)",
+  "fonts": "BKribitz / BKribitz Mono (Geist-derived, SIL OFL 1.1) from braga-portfolio-v2/public/fonts",
   "title_size": 112,
   "descriptor_size": 32,
   "attempts": 3,
@@ -12,17 +12,17 @@
       "bbox": [
         72,
         72,
-        488,
+        498,
         104
       ],
       "lines": [
         "BRAGA · ANALYTICAL PROJECT"
       ],
-      "font": "SohneMono-Buch.otf"
+      "font": "BKribitzMono-400.ttf"
     },
     "status": {
       "bbox": [
-        1400,
+        1397,
         72,
         1528,
         104
@@ -30,45 +30,45 @@
       "lines": [
         "COMPLETE"
       ],
-      "font": "SohneMono-Buch.otf"
+      "font": "BKribitzMono-400.ttf"
     },
     "facts": {
       "bbox": [
         72,
         542,
-        553,
+        1022,
         570
       ],
       "lines": [
-        "LICENSE  MIT  ·  RUNTIME  Python 3.12"
+        "LICENSE  MIT + CC BY 4.0  ·  RUNTIME  Python 3.12  ·  CI  GitHub Actions"
       ],
-      "font": "SohneMono-Buch.otf"
+      "font": "BKribitzMono-400.ttf"
     },
     "title": {
       "bbox": [
         72,
         128,
-        1369,
+        1458,
         356
       ],
       "lines": [
         "Austria Data-Job Market",
         "Intelligence"
       ],
-      "font": "Sohne-Fett.otf"
+      "font": "BKribitz-800.ttf"
     },
     "descriptor": {
       "bbox": [
         72,
         384,
-        1168,
+        1186,
         470
       ],
       "lines": [
-        "Employer demand (720 core postings, 2026-09-16) against observed GitHub",
-        "supply (1,818 Austrian data-signal accounts), answered in 45 decision charts."
+        "Austrian data-role job ads against public GitHub evidence: which skills",
+        "employers ask for, which ones portfolios rarely show, and where the jobs are."
       ],
-      "font": "Sohne-Buch.otf"
+      "font": "BKribitz-400.ttf"
     }
   },
   "guardrails": [
