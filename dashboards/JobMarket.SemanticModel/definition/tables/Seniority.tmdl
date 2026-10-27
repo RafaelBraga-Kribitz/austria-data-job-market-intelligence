@@ -1,0 +1,103 @@
+/// Advertised annual minimum by the seniority word in the title (outputs/tables/T09b_salary_by_seniority.csv).
+table Seniority
+	lineageTag: 475dc220-090e-5870-b085-1f579308a6fd
+
+	/// Seniority class key (T08/T09b).
+	column 'Seniority Key'
+		dataType: string
+		isHidden
+		lineageTag: b2c63d7c-1516-5de6-9eea-c25f158d1e40
+		summarizeBy: none
+		sourceColumn: Seniority Key
+
+		annotation SummarizationSetBy = User
+
+	/// Seniority word read from the ad title.
+	column Seniority
+		dataType: string
+		lineageTag: f13f5247-7f59-5ee7-8680-96edfe3c02ae
+		summarizeBy: none
+		sourceColumn: Seniority
+		sortByColumn: 'Seniority Order'
+
+		annotation SummarizationSetBy = User
+
+	/// Intern first, no seniority word last.
+	column 'Seniority Order'
+		dataType: int64
+		isHidden
+		lineageTag: d0689b75-d5c1-5acc-93bb-0fa88cba2167
+		summarizeBy: none
+		sourceColumn: Seniority Order
+
+		annotation SummarizationSetBy = User
+
+	/// Ads in the cell that state a pay figure.
+	column 'Ads With Figure'
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 28f381ea-ef9f-5f7b-8aea-780c31ede938
+		summarizeBy: sum
+		sourceColumn: Ads With Figure
+
+		annotation SummarizationSetBy = User
+
+	/// 25th percentile of the advertised annual minimum (monthly × 14), euro.
+	column 'Floor P25'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 0f133cf1-994b-5b9c-918d-a6afa794bca1
+		summarizeBy: none
+		sourceColumn: Floor P25
+
+		annotation SummarizationSetBy = User
+
+	/// Median advertised annual minimum (monthly × 14), euro.
+	column 'Floor Median'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 6871f1e2-5da3-565a-8237-724840550704
+		summarizeBy: none
+		sourceColumn: Floor Median
+
+		annotation SummarizationSetBy = User
+
+	/// 75th percentile of the advertised annual minimum, euro.
+	column 'Floor P75'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 871e0ad9-57bf-5c96-aae4-1a6e83236c55
+		summarizeBy: none
+		sourceColumn: Floor P75
+
+		annotation SummarizationSetBy = User
+
+	/// 'n < 30: indicative' when fewer than 30 ads state a figure.
+	column 'Sample Size'
+		dataType: string
+		lineageTag: 3505b367-483b-5f85-8504-c17ed7459f78
+		summarizeBy: none
+		sourceColumn: Sample Size
+
+		annotation SummarizationSetBy = User
+
+	partition Seniority = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T09b_salary_by_seniority.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"seniority", type text}, {"n", type number}, {"min_p25", type number}, {"min_median", type number}, {"min_p75", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"seniority", "Seniority Key"}, {"n", "Ads With Figure"}, {"min_p25", "Floor P25"}, {"min_median", "Floor Median"}, {"min_p75", "Floor P75"}}),
+					Labelled = Table.AddColumn(Renamed, "Seniority", each if [Seniority Key] = "intern_student" then "Intern / student" else if [Seniority Key] = "trainee_junior" then "Junior / trainee" else if [Seniority Key] = "senior" then "Senior" else if [Seniority Key] = "lead_head" then "Lead / head" else if [Seniority Key] = "unspecified" then "No seniority word" else [Seniority Key], type text),
+					Ordered = Table.AddColumn(Labelled, "Seniority Order", each if [Seniority Key] = "intern_student" then 1 else if [Seniority Key] = "trainee_junior" then 2 else if [Seniority Key] = "senior" then 3 else if [Seniority Key] = "lead_head" then 4 else if [Seniority Key] = "unspecified" then 5 else 99, Int64.Type),
+					Flagged = Table.AddColumn(Ordered, "Sample Size", each if [Ads With Figure] < 30 then "n < 30: indicative" else "n >= 30", type text),
+					Result = Table.SelectColumns(Flagged, {"Seniority Key", "Seniority", "Seniority Order", "Ads With Figure", "Floor P25", "Floor Median", "Floor P75", "Sample Size"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

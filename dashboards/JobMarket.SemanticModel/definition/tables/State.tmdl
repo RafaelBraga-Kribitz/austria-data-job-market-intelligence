@@ -1,0 +1,60 @@
+/// Core ads by primary state, one state per ad (outputs/tables/T03a_state_counts.csv).
+table State
+	lineageTag: 6f2e816b-1c1a-5370-9acf-b1e9f38768ca
+
+	/// Bundesland (German name as in the tables); 'unspecified' = Austria-wide or unknown.
+	column State
+		dataType: string
+		lineageTag: 59928f3b-9e69-5086-9d34-dd923126dcc9
+		summarizeBy: none
+		sourceColumn: State
+		sortByColumn: 'State Order'
+
+		annotation SummarizationSetBy = User
+
+	/// Largest state first; 'unspecified' last.
+	column 'State Order'
+		dataType: int64
+		isHidden
+		lineageTag: a2209b6d-ac31-5a9b-812d-2d9e3b0e8838
+		summarizeBy: none
+		sourceColumn: State Order
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads whose primary state is this state (T03a count).
+	column 'Ads Primary State'
+		dataType: int64
+		isHidden
+		lineageTag: bcc2d43c-ebe5-52ab-9687-896e97241da1
+		summarizeBy: sum
+		sourceColumn: Ads Primary State
+
+		annotation SummarizationSetBy = User
+
+	/// All core ads (T03a n).
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: 03df5b99-bc92-5eb6-998c-af1d106251c8
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	partition State = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T03a_state_counts.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"state", type text}, {"count", Int64.Type}, {"n", Int64.Type}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"state", "State"}, {"count", "Ads Primary State"}, {"n", "Ads Base"}}),
+					Unspecified = Table.AddColumn(Renamed, "Is Unspecified", each if [State] = "unspecified" then 1 else 0, Int64.Type),
+					Sorted = Table.Sort(Unspecified, {{"Is Unspecified", Order.Ascending}, {"Ads Primary State", Order.Descending}, {"State", Order.Ascending}}),
+					Indexed = Table.AddIndexColumn(Sorted, "State Order", 1, 1, Int64.Type),
+					Result = Table.SelectColumns(Indexed, {"State", "State Order", "Ads Primary State", "Ads Base"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

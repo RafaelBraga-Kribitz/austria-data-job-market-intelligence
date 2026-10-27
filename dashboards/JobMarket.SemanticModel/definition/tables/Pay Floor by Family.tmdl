@@ -1,0 +1,81 @@
+/// Advertised annual minimum by role family (outputs/tables/T09b_salary_by_role_family.csv). A legal floor in the ad, not pay.
+table 'Pay Floor by Family'
+	lineageTag: ffd8908e-eaf1-5f8c-a3e3-d17912677412
+
+	/// Relates to Role Family[Family Key].
+	column 'Family Key'
+		dataType: string
+		isHidden
+		lineageTag: d31f72e0-840f-586e-af90-760ead80034a
+		summarizeBy: none
+		sourceColumn: Family Key
+
+		annotation SummarizationSetBy = User
+
+	/// Ads in the cell that state a pay figure.
+	column 'Ads With Figure'
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 533d4a8a-103b-5ffc-9a29-722e02dcf29a
+		summarizeBy: sum
+		sourceColumn: Ads With Figure
+
+		annotation SummarizationSetBy = User
+
+	/// 25th percentile of the advertised annual minimum (monthly × 14), euro.
+	column 'Floor P25'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 02db5232-c678-5d78-bc8f-a33bd691f834
+		summarizeBy: none
+		sourceColumn: Floor P25
+
+		annotation SummarizationSetBy = User
+
+	/// Median advertised annual minimum (monthly × 14), euro.
+	column 'Floor Median'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: db28f91c-712b-5bb7-8395-55f5a0f4be92
+		summarizeBy: none
+		sourceColumn: Floor Median
+
+		annotation SummarizationSetBy = User
+
+	/// 75th percentile of the advertised annual minimum, euro.
+	column 'Floor P75'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 2a1c1b42-3a0d-5f32-8c82-c4a584ebb7c2
+		summarizeBy: none
+		sourceColumn: Floor P75
+
+		annotation SummarizationSetBy = User
+
+	/// 'n < 30: indicative' when fewer than 30 ads state a figure.
+	column 'Sample Size'
+		dataType: string
+		lineageTag: b38c03e4-8c3e-5f2f-88ea-a9a6c2169032
+		summarizeBy: none
+		sourceColumn: Sample Size
+
+		annotation SummarizationSetBy = User
+
+	partition 'Pay Floor by Family' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T09b_salary_by_role_family.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"role_family", type text}, {"n", type number}, {"min_p25", type number}, {"min_median", type number}, {"min_p75", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"role_family", "Family Key"}, {"n", "Ads With Figure"}, {"min_p25", "Floor P25"}, {"min_median", "Floor Median"}, {"min_p75", "Floor P75"}}),
+					Flagged = Table.AddColumn(Renamed, "Sample Size", each if [Ads With Figure] < 30 then "n < 30: indicative" else "n >= 30", type text),
+					Result = Table.SelectColumns(Flagged, {"Family Key", "Ads With Figure", "Floor P25", "Floor Median", "Floor P75", "Sample Size"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

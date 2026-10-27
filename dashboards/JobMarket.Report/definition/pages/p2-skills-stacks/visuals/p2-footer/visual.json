@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p2-footer",
+  "position": {
+    "x": 24,
+    "y": 652,
+    "z": 10000,
+    "height": 60,
+    "width": 1232,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Sources: outputs/tables/T05_skills_all_tech.csv, outputs/tables/T05_skills_all_tech_by_styria.csv, outputs/tables/T06b_top_stacks_size3.csv. Tag: CALIBRATED (rule-based text matching). A share is the share of ads that mention an item, never a requirement; a posting is not a vacancy or a hire; no statement is causal. Limitations: docs/limitations.md. HTML twin: dashboards/html/index.html.",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sources: outputs/tables/T05_skills_all_tech.csv, outputs/tables/T05_skills_all_tech_by_styria.csv, outputs/tables/T06b_top_stacks_size3.csv. Tag: CALIBRATED (rule-based text matching). A share is the share of ads that mention an item, never a require'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

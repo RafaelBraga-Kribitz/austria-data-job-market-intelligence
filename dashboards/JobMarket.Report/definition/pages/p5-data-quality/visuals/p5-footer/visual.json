@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p5-footer",
+  "position": {
+    "x": 24,
+    "y": 652,
+    "z": 10000,
+    "height": 60,
+    "width": 1232,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Sources: outputs/market_summary.json, outputs/tables/T01_source_coverage.csv, outputs/tables/T13b_posting_age_by_source.csv, outputs/tables/Q04_duplicates.csv, outputs/tables/Q03c_precision_summary.csv. Tag: VERIFIED counts; precision measured on a hand-labelled sample. A share is the share of ads that mention an item, never a requirement; a posting is not a vacancy or a hire; no statement is causal. Limitations: docs/limitations.md. HTML twin: dashboards/html/index.html.",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sources: outputs/market_summary.json, outputs/tables/T01_source_coverage.csv, outputs/tables/T13b_posting_age_by_source.csv, outputs/tables/Q04_duplicates.csv, outputs/tables/Q03c_precision_summary.csv. Tag: VERIFIED counts; precision measured on a h'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

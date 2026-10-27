@@ -1,0 +1,115 @@
+{
+  "name": "Braga Light (design system v2.1)",
+  "dataColors": [
+    "#2F4BE0",
+    "#966400",
+    "#0A7399",
+    "#C4278F",
+    "#7A4A1E",
+    "#9EA0A5",
+    "#5A5C61",
+    "#9EA0A5"
+  ],
+  "foreground": "#26282C",
+  "foregroundNeutralSecondary": "#5A5C61",
+  "foregroundNeutralTertiary": "#5A5C61",
+  "background": "#E4E6EA",
+  "backgroundLight": "#DCDEE2",
+  "backgroundNeutral": "#C2C4CA",
+  "tableAccent": "#2F4BE0",
+  "hyperlink": "#2F4BE0",
+  "visitedHyperlink": "#2F4BE0",
+  "good": "#007A66",
+  "bad": "#CC3710",
+  "neutral": "#9EA0A5",
+  "maximum": "#2F4BE0",
+  "center": "#D4D6DA",
+  "minimum": "#EAF0FF",
+  "textClasses": {
+    "callout": {
+      "color": "#26282C",
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 26
+    },
+    "title": {
+      "color": "#26282C",
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 11
+    },
+    "header": {
+      "color": "#26282C",
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 11
+    },
+    "label": {
+      "color": "#5A5C61",
+      "fontFace": "Segoe UI",
+      "fontSize": 9
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#DCDEE2"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E4E6EA"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E4E6EA"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    }
+  }
+}

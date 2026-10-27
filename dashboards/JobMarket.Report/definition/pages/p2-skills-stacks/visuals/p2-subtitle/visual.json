@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p2-subtitle",
+  "position": {
+    "x": 24,
+    "y": 54,
+    "z": 1000,
+    "height": 32,
+    "width": 1232,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Welche Skills die Inserate nennen, wie sich die Steiermark vom Rest Österreichs unterscheidet und welche Dreier-Kombinationen gemeinsam vorkommen.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'German subtitle: Welche Skills die Inserate nennen, wie sich die Steiermark vom Rest Österreichs unterscheidet und welche Dreier-Kombinationen gemeinsam vorkommen.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

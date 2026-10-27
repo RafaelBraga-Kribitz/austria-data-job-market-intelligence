@@ -1,0 +1,55 @@
+/// Raw rows -> unique postings -> core postings (outputs/market_summary.json, counts). Each step is a subset of the one before.
+table 'Population Funnel'
+	lineageTag: ce54ce2a-7f2d-566c-a730-256a000a343d
+
+	/// raw, unique or core.
+	column 'Step Key'
+		dataType: string
+		isHidden
+		lineageTag: abdbb37e-6e96-5327-9b3e-e552bc2a5ff1
+		summarizeBy: none
+		sourceColumn: Step Key
+
+		annotation SummarizationSetBy = User
+
+	/// Funnel step.
+	column Step
+		dataType: string
+		lineageTag: 0f280370-f6da-5ffb-b972-e1e5ba770437
+		summarizeBy: none
+		sourceColumn: Step
+		sortByColumn: 'Step Order'
+
+		annotation SummarizationSetBy = User
+
+	/// Raw first.
+	column 'Step Order'
+		dataType: int64
+		isHidden
+		lineageTag: 08527f3b-49d6-53bd-9e3a-b7231bc284c7
+		summarizeBy: none
+		sourceColumn: Step Order
+
+		annotation SummarizationSetBy = User
+
+	/// Rows at this step (market_summary.json counts).
+	column Rows
+		dataType: int64
+		isHidden
+		lineageTag: 313503f0-d498-5cf2-be51-4ddacb3b663d
+		summarizeBy: sum
+		sourceColumn: Rows
+
+		annotation SummarizationSetBy = User
+
+	partition 'Population Funnel' = m
+		mode: import
+		source =
+				let
+					Source = Json.Document(File.Contents(ExportsPath & "market_summary.json"), 65001),
+					Counts = Source[counts],
+					Result = #table(type table [Step Key = text, Step = text, Step Order = Int64.Type, Rows = Int64.Type], {{"raw", "Raw rows, all sources", 1, Counts[raw_rows_all_sources]}, {"unique", "Unique postings after de-duplication", 2, Counts[canonical_groups_all]}, {"core", "Core data-role postings", 3, Counts[core_canonical]}})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

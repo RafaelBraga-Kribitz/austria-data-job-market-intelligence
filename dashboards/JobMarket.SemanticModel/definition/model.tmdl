@@ -1,0 +1,26 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+
+	annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Role Family'
+ref table State
+ref table Skill
+ref table 'Skill by Region'
+ref table 'Skill Stack'
+ref table 'Pay Floor by Family'
+ref table Seniority
+ref table 'Pay Floor by State'
+ref table 'Salary Evidence'
+ref table 'Decision Matrix'
+ref table 'Weighting Rank'
+ref table 'Capability Evidence'
+ref table Source
+ref table 'Title Precision'
+ref table 'Population Funnel'
+ref table Duplicates
+ref table Snapshot
+ref table Measures

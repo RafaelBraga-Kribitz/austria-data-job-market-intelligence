@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json",
+  "pageOrder": [
+    "p1-market-overview",
+    "p2-skills-stacks",
+    "p3-pay-floors",
+    "p4-demand-supply",
+    "p5-data-quality"
+  ],
+  "activePageName": "p1-market-overview"
+}

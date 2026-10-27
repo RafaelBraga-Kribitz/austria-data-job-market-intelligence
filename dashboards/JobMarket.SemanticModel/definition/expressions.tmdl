@@ -1,0 +1,6 @@
+/// Folder that holds the repository's public outputs: the folder with market_summary.json, supply_summary.json and the
+/// tables subfolder (outputs\tables\*.csv). Ends with a backslash. Change this one value to re-point every table, then refresh.
+expression ExportsPath = "C:\path\to\austria-data-job-market-intelligence\outputs\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: a06b1a2b-8f99-57a3-b6d6-73caac6b7e0d
+
+	annotation PBI_ResultType = Text

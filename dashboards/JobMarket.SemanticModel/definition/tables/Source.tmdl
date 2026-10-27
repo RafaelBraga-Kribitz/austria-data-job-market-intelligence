@@ -1,0 +1,84 @@
+/// Rows and core ads by posting source (outputs/tables/T01_source_coverage.csv) with the median posting age (T13b_posting_age_by_source.csv).
+table Source
+	lineageTag: 2e41510c-4485-50cf-8897-42e82580e535
+
+	/// Source key (eures, karriere, linkedin, jobsat, willhaben).
+	column 'Source Key'
+		dataType: string
+		isHidden
+		lineageTag: f6e57475-7ec9-50c7-8a1e-d55ddae5b54e
+		summarizeBy: none
+		sourceColumn: Source Key
+
+		annotation SummarizationSetBy = User
+
+	/// Posting source.
+	column Source
+		dataType: string
+		lineageTag: 4f878892-b11a-5b20-a659-1cc84731f35f
+		summarizeBy: none
+		sourceColumn: Source
+		sortByColumn: 'Source Order'
+
+		annotation SummarizationSetBy = User
+
+	/// Source with the most core ads first.
+	column 'Source Order'
+		dataType: int64
+		isHidden
+		lineageTag: 5fdc6758-a8f8-5f09-a5e8-bd6a4856fd6d
+		summarizeBy: none
+		sourceColumn: Source Order
+
+		annotation SummarizationSetBy = User
+
+	/// Rows collected from the source (all titles).
+	column 'Raw Rows'
+		dataType: int64
+		isHidden
+		lineageTag: c9893e90-9a07-53a3-be9a-17340b3afb21
+		summarizeBy: sum
+		sourceColumn: Raw Rows
+
+		annotation SummarizationSetBy = User
+
+	/// Canonical core ads attributed to the source after de-duplication.
+	column 'Core Postings'
+		dataType: int64
+		isHidden
+		lineageTag: 84dd2451-a90f-5bbe-aa8f-3c1814c604a7
+		summarizeBy: sum
+		sourceColumn: Core Postings
+
+		annotation SummarizationSetBy = User
+
+	/// Median days since first publication of the source's core ads (T13b).
+	column 'Median Posting Age Days'
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: d373b923-93f1-5e0d-a1b9-af171cdf46c8
+		summarizeBy: none
+		sourceColumn: Median Posting Age Days
+
+		annotation SummarizationSetBy = User
+
+	partition Source = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T01_source_coverage.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"source", type text}, {"rows", Int64.Type}, {"in_scope_canonical", Int64.Type}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"source", "Source Key"}, {"rows", "Raw Rows"}, {"in_scope_canonical", "Core Postings"}}),
+					Ages = Table.TransformColumnTypes(Table.PromoteHeaders(Csv.Document(File.Contents(ExportsPath & "tables\T13b_posting_age_by_source.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]), {{"50%", type number}}, "en-US"),
+					Joined = Table.NestedJoin(Renamed, {"Source Key"}, Ages, {"source"}, "A", JoinKind.LeftOuter),
+					Expanded = Table.ExpandTableColumn(Joined, "A", {"50%"}, {"Median Posting Age Days"}),
+					Labelled = Table.AddColumn(Expanded, "Source", each if [Source Key] = "eures" then "EURES / AMS" else if [Source Key] = "jobsat" then "jobs.at" else if [Source Key] = "karriere" then "karriere.at" else if [Source Key] = "linkedin" then "LinkedIn" else if [Source Key] = "willhaben" then "willhaben" else [Source Key], type text),
+					Sorted = Table.Sort(Labelled, {{"Core Postings", Order.Descending}, {"Source", Order.Ascending}}),
+					Indexed = Table.AddIndexColumn(Sorted, "Source Order", 1, 1, Int64.Type),
+					Result = Table.SelectColumns(Indexed, {"Source Key", "Source", "Source Order", "Raw Rows", "Core Postings", "Median Posting Age Days"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

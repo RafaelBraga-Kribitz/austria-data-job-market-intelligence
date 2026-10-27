@@ -1,0 +1,113 @@
+/// Share of ads mentioning a capability vs share of observed Austrian GitHub accounts showing it in a project (outputs/tables/DS10_demand_supply_capability_evidence.csv). Two universes, one taxonomy.
+table 'Capability Evidence'
+	lineageTag: f0b72b74-0139-5233-8107-514a1112c047
+
+	/// Capability of the shared capability map (config).
+	column Capability
+		dataType: string
+		lineageTag: 9d1ec8a1-c712-5b51-acb8-aeb05a1cb43a
+		summarizeBy: none
+		sourceColumn: Capability
+		sortByColumn: 'Demand Order'
+
+		annotation SummarizationSetBy = User
+
+	/// tool, technical, engineering, analytical, ai, business, domain or credential.
+	column 'Capability Group'
+		dataType: string
+		lineageTag: 19b7d840-0ddc-57ef-8eff-5de16ca3efeb
+		summarizeBy: none
+		sourceColumn: Capability Group
+
+		annotation SummarizationSetBy = User
+
+	/// Whether a public GitHub profile can show the capability at all.
+	column Observability
+		dataType: string
+		lineageTag: 1adff5ae-913c-595e-8fb1-36754c656150
+		summarizeBy: none
+		sourceColumn: Observability
+
+		annotation SummarizationSetBy = User
+
+	/// Share of core ads mentioning any skill of the capability.
+	column 'Demand Share'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: 96a8c17c-93a5-5e15-b4a5-dbace494f7a7
+		summarizeBy: none
+		sourceColumn: Demand Share
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads (demand denominator).
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: f06c40b9-249b-5fc0-a9ed-efd1052c9319
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	/// Share of observed accounts with a data signal that show the capability in a project.
+	column 'Project Share'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: 824b75c5-def3-540b-b90b-f7f9c8474e12
+		summarizeBy: none
+		sourceColumn: Project Share
+
+		annotation SummarizationSetBy = User
+
+	/// Austrian GitHub accounts with a data signal (supply denominator).
+	column 'Accounts Base'
+		dataType: int64
+		isHidden
+		lineageTag: 49a8c898-253e-5c1a-8ab9-9cee1fabe3f4
+		summarizeBy: none
+		sourceColumn: Accounts Base
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = most-demanded capability.
+	column 'Demand Order'
+		dataType: int64
+		isHidden
+		lineageTag: 1070f5b1-7fd9-5cde-98bd-cd6e7de3aff8
+		summarizeBy: none
+		sourceColumn: Demand Order
+
+		annotation SummarizationSetBy = User
+
+	/// Rank by demand among observable technical capabilities (groups tool, technical, engineering, analytical, ai); blank otherwise.
+	column 'Technical Demand Rank'
+		dataType: int64
+		lineageTag: 5c2f82f6-19e8-5b3d-8c87-2c38e3f2e868
+		summarizeBy: none
+		sourceColumn: Technical Demand Rank
+
+		annotation SummarizationSetBy = User
+
+	partition 'Capability Evidence' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\DS10_demand_supply_capability_evidence.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"category", type text}, {"group", type text}, {"observability", type text}, {"demand_share", type number}, {"demand_n", Int64.Type}, {"supply_project_share", type number}, {"supply_n", Int64.Type}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"category", "Capability"}, {"group", "Capability Group"}, {"observability", "Observability"}, {"demand_share", "Demand Share"}, {"demand_n", "Ads Base"}, {"supply_project_share", "Project Share"}, {"supply_n", "Accounts Base"}}),
+					Base = Table.SelectColumns(Renamed, {"Capability", "Capability Group", "Observability", "Demand Share", "Ads Base", "Project Share", "Accounts Base"}),
+					SortedAll = Table.Sort(Base, {{"Demand Share", Order.Descending}, {"Capability", Order.Ascending}}),
+					IndexedAll = Table.AddIndexColumn(SortedAll, "Demand Order", 1, 1, Int64.Type),
+					Technical = Table.SelectRows(IndexedAll, each [Observability] = "observable" and List.Contains({"tool", "technical", "engineering", "analytical", "ai"}, [Capability Group])),
+					TechRanked = Table.AddIndexColumn(Table.Sort(Technical, {{"Demand Share", Order.Descending}, {"Capability", Order.Ascending}}), "Technical Demand Rank", 1, 1, Int64.Type),
+					Joined = Table.NestedJoin(IndexedAll, {"Capability"}, Table.SelectColumns(TechRanked, {"Capability", "Technical Demand Rank"}), {"Capability"}, "R", JoinKind.LeftOuter),
+					Expanded = Table.ExpandTableColumn(Joined, "R", {"Technical Demand Rank"}),
+					Result = Table.TransformColumnTypes(Expanded, {{"Technical Demand Rank", Int64.Type}})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

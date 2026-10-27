@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p3-subtitle",
+  "position": {
+    "x": 24,
+    "y": 54,
+    "z": 1000,
+    "height": 32,
+    "width": 1232,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Beworbene Mindestgehälter nach Rollenfamilie, Seniorität und Bundesland: kollektivvertragliche Untergrenzen in Inseraten, keine tatsächlich bezahlten Gehälter.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'German subtitle: Beworbene Mindestgehälter nach Rollenfamilie, Seniorität und Bundesland: kollektivvertragliche Untergrenzen in Inseraten, keine tatsächlich bezahlten Gehälter.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

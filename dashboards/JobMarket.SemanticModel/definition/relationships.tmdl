@@ -1,0 +1,19 @@
+relationship d26146b7-cbea-5909-87a0-1e8d7ee9b3a7
+	fromColumn: 'Pay Floor by Family'.'Family Key'
+	toColumn: 'Role Family'.'Family Key'
+
+relationship 9a01315b-c24c-580d-8757-d72e525e6d07
+	fromColumn: 'Decision Matrix'.'Family Key'
+	toColumn: 'Role Family'.'Family Key'
+
+relationship 2c72af65-ea08-526c-a915-bca3e0dd58d8
+	fromColumn: 'Weighting Rank'.'Family Key'
+	toColumn: 'Role Family'.'Family Key'
+
+relationship 152cf025-613c-5b89-9d22-ef880ed6761e
+	fromColumn: 'Skill by Region'.Skill
+	toColumn: Skill.Skill
+
+relationship 26848df7-15a9-5e9d-b4ca-4977ed223ad8
+	fromColumn: 'Pay Floor by State'.State
+	toColumn: State.State
