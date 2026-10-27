@@ -47,6 +47,8 @@ def test_order_respects_data_dependencies():
     # the visual layer reads tables of every layer; the digest reads everything; tests come last
     must_precede += [(n, "make_visual_layer") for n in order[:pos["make_visual_layer"]]]
     must_precede += [("make_visual_layer", "embed_figures"), ("embed_figures", "digest"), ("digest", "pytest")]
+    # the dashboard twin reads the finished outputs of every layer and is rebuilt before the tests compare it with them
+    must_precede += [(n, "dashboard_html") for n in order[:pos["dashboard_html"]]] + [("dashboard_html", "pytest")]
     for a, b in must_precede:
         assert pos[a] < pos[b], f"{a} must run before {b}"
 
@@ -72,7 +74,7 @@ def test_targets_select_in_global_order():
     assert [s.name for s in R.select("all")] == [s.name for s in R.STEPS]
     l3 = [s.name for s in R.select("layer3")]
     assert l3 == ["demand_supply", "supply_figures", "export_supply_json"]
-    assert [s.name for s in R.select("all", "embed_figures")] == ["embed_figures", "digest", "pytest"]
+    assert [s.name for s in R.select("all", "embed_figures")] == ["embed_figures", "dashboard_html", "digest", "pytest"]
     with pytest.raises(SystemExit):
         R.select("layer1", "demand_supply")
 
