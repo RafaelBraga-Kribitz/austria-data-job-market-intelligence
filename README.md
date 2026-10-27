@@ -72,6 +72,10 @@ Vienna <!--m:vienna_core_primary_state-->315<!--/m--> of <!--m:core_n-->699<!--/
 | Auditor | [Data](#data), [Validation](#validation), [docs/data-quality.md](docs/data-quality.md), [docs/legal-and-publication-audit.md](docs/legal-and-publication-audit.md), [PUBLICATION_DECISION.md](PUBLICATION_DECISION.md), the export guard [src/publish/export_public.py](src/publish/export_public.py) |
 | AI agent | [AGENT_CONTEXT.md](AGENT_CONTEXT.md), then [outputs/visual_questions.json](outputs/visual_questions.json) |
 
+## Dashboard
+
+[`dashboards/`](dashboards/README.md) holds a five-page dashboard built twice from one page spec: a Power BI project in text form ([`JobMarket.pbip`](dashboards/JobMarket.pbip): TMDL semantic model, PBIR report, Braga theme) and a static HTML twin ([`dashboards/html/index.html`](dashboards/html/index.html), no network, light and dark). Pages: market overview, skills and stacks, advertised pay floors, demand vs supply, data quality and coverage, each with a German subtitle and the caveats next to its numbers. Both read only `outputs/`; a test checks that every field a visual uses exists in the model and that the HTML shows the source values. The Power BI file has not been opened in Desktop yet; the checklist for that step is in [dashboards/README.md](dashboards/README.md).
+
 ## Why this project
 
 I wanted to compare data-role paths from Graz with evidence, and the public sources I surveyed could not do that ([docs/research-landscape.md](docs/research-landscape.md)). The official series (AMS JobBarometer, Eurostat) count ads or vacancies by year or quarter in coarse occupation classes, or with no occupation at all. Public salary references are collective-agreement floors or self-reported surveys. No public dataset lists Austrian data-role ads with their skills, region, language requirement and advertised pay. This repository builds that layer from a one-day snapshot of ads and adds the other side of the market, what public portfolios in Austria actually show, so that a learning or portfolio choice can go where demand is high and visible evidence is rare. The <!--m:visual_questions_n-->45<!--/m--> decision charts are phrased as the questions behind that choice, for example "If I do not move from Graz, how much of the Austrian data market am I actually applying to?" ([docs/visual-decision-board.md](docs/visual-decision-board.md)). The personal profile they were computed with stays private; the public tree ships a neutral example profile ([config/profile.json](config/profile.json)), and the comparison method is in [docs/decision-framework.md](docs/decision-framework.md).
@@ -177,7 +181,7 @@ CAREER_SUPPLY_DEMAND_MAP.md     Layer 3 decision document
 AGENT_CONTEXT.md                context file for AI agents
 DECISION_LOG.md                 dated decision record (public entries)
 PUBLICATION_DECISION.md         publication-readiness conclusions, public/private boundary
-run_all.py                      single entry point: layer1 layer2 layer3 visual digest tests
+run_all.py                      single entry point: layer1 layer2 layer3 visual dashboard digest tests
 docs/                           methodology, data quality, limitations, legal audit, decision board
 config/                         role taxonomy, skill vocabulary, geography, capability map, example profile
 schemas/                        posting, supply and application-log schemas
@@ -189,6 +193,7 @@ src/reporting/                  digest and the metrics registry with its rendere
 src/publish/                    scanned public export
 outputs/tables/                 aggregated tables: T* JB* S* D* Q* (Layer 1), C* O* SQ* (Layer 2), DS* (Layer 3)
 outputs/figures/                BQ01–BQ45 as PNG plus sealed SVG; F*, SF*, DSF* are earlier exploratory PNGs
+dashboards/                     Power BI project (PBIP: TMDL + PBIR) and its static HTML twin, both read outputs/
 tests/                          pytest suite, one file per module family
 ```
 
@@ -201,6 +206,7 @@ tests/                          pytest suite, one file per module family
 | Statistics | numpy, scipy, scikit-learn | Wilson intervals and the D05 regression written out in numpy; scipy for seasonal confidence intervals; scikit-learn for the requirement clusters used as reading aids |
 | Charts | matplotlib + `src/viz` on bk-viz (Braga design system v2.1, BKribitz type) | One house style for all <!--m:visual_questions_n-->45<!--/m--> charts, SVG sealed by hash |
 | Collection | requests | Public collectors only: AMS JobBarometer pages and the Eurostat and GitHub APIs; the job-board collectors stay private |
+| Dashboard | Power BI (PBIP: TMDL + PBIR), static HTML | Model and report as reviewable text, checked against each other by a test; the HTML twin needs no Power BI and no network |
 | Tests | pytest | Rule tests, value checks of chart sentences, integrity checks |
 | Publication | `export_public.py` | Staging build with leak scans before any file reaches the public tree |
 

@@ -50,7 +50,8 @@ INCLUDE_FILES = [
 ]
 # copied when present (packaging and CI metadata)
 OPTIONAL_FILES = ["pyproject.toml", "run_all.py"]
-OPTIONAL_DIRS = [".github"]
+# dashboards/: the Power BI project (TMDL + PBIR text, no data) and its static HTML twin built from the aggregated outputs
+OPTIONAL_DIRS = [".github", "dashboards"]
 # the public .gitignore is purpose-written; the private one names private tools and folders and is never exported
 PUBLIC_GITIGNORE = "src/publish/public.gitignore"
 INCLUDE_DIRS = ["docs", "config", "schemas", "tests", "outputs/figures", "src/pipeline", "src/analysis",
