@@ -1,0 +1,81 @@
+/// Advertised annual minimum by primary state (outputs/tables/T09b_salary_by_state.csv).
+table 'Pay Floor by State'
+	lineageTag: 6ef47654-e46c-51b4-8295-5f50c62ec73b
+
+	/// Relates to State[State].
+	column State
+		dataType: string
+		isHidden
+		lineageTag: afd4e0f6-71a2-5621-87a5-539f1c12c992
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = User
+
+	/// Ads in the cell that state a pay figure.
+	column 'Ads With Figure'
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: d65a85a7-83c1-569a-bbfa-3d0ec56a5710
+		summarizeBy: sum
+		sourceColumn: Ads With Figure
+
+		annotation SummarizationSetBy = User
+
+	/// 25th percentile of the advertised annual minimum (monthly × 14), euro.
+	column 'Floor P25'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 498582d5-1248-5093-892d-35194ed0fa1e
+		summarizeBy: none
+		sourceColumn: Floor P25
+
+		annotation SummarizationSetBy = User
+
+	/// Median advertised annual minimum (monthly × 14), euro.
+	column 'Floor Median'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: 7be03f37-0efd-5b54-baa2-a07fa72c70f8
+		summarizeBy: none
+		sourceColumn: Floor Median
+
+		annotation SummarizationSetBy = User
+
+	/// 75th percentile of the advertised annual minimum, euro.
+	column 'Floor P75'
+		dataType: double
+		isHidden
+		formatString: €#,0
+		lineageTag: de64b802-a1c4-53d5-99a7-c779eb016fce
+		summarizeBy: none
+		sourceColumn: Floor P75
+
+		annotation SummarizationSetBy = User
+
+	/// 'n < 30: indicative' when fewer than 30 ads state a figure.
+	column 'Sample Size'
+		dataType: string
+		lineageTag: 5f29b440-daa5-5181-870f-99e053d9655e
+		summarizeBy: none
+		sourceColumn: Sample Size
+
+		annotation SummarizationSetBy = User
+
+	partition 'Pay Floor by State' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T09b_salary_by_state.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"state", type text}, {"n", type number}, {"min_p25", type number}, {"min_median", type number}, {"min_p75", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"state", "State"}, {"n", "Ads With Figure"}, {"min_p25", "Floor P25"}, {"min_median", "Floor Median"}, {"min_p75", "Floor P75"}}),
+					Flagged = Table.AddColumn(Renamed, "Sample Size", each if [Ads With Figure] < 30 then "n < 30: indicative" else "n >= 30", type text),
+					Result = Table.SelectColumns(Flagged, {"State", "Ads With Figure", "Floor P25", "Floor Median", "Floor P75", "Sample Size"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

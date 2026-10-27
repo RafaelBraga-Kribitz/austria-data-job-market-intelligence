@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p4-subtitle",
+  "position": {
+    "x": 24,
+    "y": 54,
+    "z": 1000,
+    "height": 32,
+    "width": 1232,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Was die Inserate verlangen, was öffentliche GitHub-Portfolios zeigen und wie stabil die Reihung der Rollenfamilien unter vier Gewichtungen bleibt.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'German subtitle: Was die Inserate verlangen, was öffentliche GitHub-Portfolios zeigen und wie stabil die Reihung der Rollenfamilien unter vier Gewichtungen bleibt.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

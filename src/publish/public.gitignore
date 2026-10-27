@@ -29,3 +29,7 @@ site_private/
 *.db
 *.sqlite
 *.sqlite3
+
+# Power BI Desktop local state of dashboards/JobMarket.pbip (per machine, binary cache): never versioned
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

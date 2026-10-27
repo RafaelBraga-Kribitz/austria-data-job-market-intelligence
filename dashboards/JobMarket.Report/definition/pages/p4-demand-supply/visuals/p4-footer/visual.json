@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p4-footer",
+  "position": {
+    "x": 24,
+    "y": 652,
+    "z": 10000,
+    "height": 60,
+    "width": 1232,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Sources: outputs/tables/DS10_demand_supply_capability_evidence.csv, outputs/tables/D01_decision_matrix.csv, outputs/tables/D02_sensitivity.csv. Tag: CALIBRATED (two universes joined on shared taxonomies). A share is the share of ads that mention an item, never a requirement; a posting is not a vacancy or a hire; no statement is causal. Limitations: docs/limitations.md. HTML twin: dashboards/html/index.html.",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sources: outputs/tables/DS10_demand_supply_capability_evidence.csv, outputs/tables/D01_decision_matrix.csv, outputs/tables/D02_sensitivity.csv. Tag: CALIBRATED (two universes joined on shared taxonomies). A share is the share of ads that mention an i'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

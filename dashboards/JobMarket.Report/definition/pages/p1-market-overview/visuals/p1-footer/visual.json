@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "p1-footer",
+  "position": {
+    "x": 24,
+    "y": 652,
+    "z": 9000,
+    "height": 60,
+    "width": 1232,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Sources: outputs/tables/T02_role_family_counts.csv, outputs/tables/T03a_state_counts.csv, outputs/market_summary.json. Tag: VERIFIED counts of a rule-based selection. A share is the share of ads that mention an item, never a requirement; a posting is not a vacancy or a hire; no statement is causal. Limitations: docs/limitations.md. HTML twin: dashboards/html/index.html.",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5A5C61",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sources: outputs/tables/T02_role_family_counts.csv, outputs/tables/T03a_state_counts.csv, outputs/market_summary.json. Tag: VERIFIED counts of a rule-based selection. A share is the share of ads that mention an item, never a requirement; a posting is'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

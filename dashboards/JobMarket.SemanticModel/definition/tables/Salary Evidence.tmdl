@@ -1,0 +1,37 @@
+/// What the pay figures in the ads are (outputs/tables/T09_salary_coverage.csv): counts per evidence type.
+table 'Salary Evidence'
+	lineageTag: 78de9c77-e7f4-5a23-b7d7-d53514e46330
+
+	/// Evidence type key, e.g. with_salary_figure, minimum_only_figures, with_range.
+	column Metric
+		dataType: string
+		lineageTag: 61173c35-b3f6-5797-ab48-4771a82c4dfb
+		summarizeBy: none
+		sourceColumn: Metric
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads (or figures) of that evidence type.
+	column Ads
+		dataType: double
+		isHidden
+		formatString: #,0
+		lineageTag: 67a5e609-e4ab-5cc2-8400-452fc2d897b5
+		summarizeBy: sum
+		sourceColumn: Ads
+
+		annotation SummarizationSetBy = User
+
+	partition 'Salary Evidence' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T09_salary_coverage.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"metric", type text}, {"count", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"metric", "Metric"}, {"count", "Ads"}}),
+					Result = Table.SelectColumns(Renamed, {"Metric", "Ads"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

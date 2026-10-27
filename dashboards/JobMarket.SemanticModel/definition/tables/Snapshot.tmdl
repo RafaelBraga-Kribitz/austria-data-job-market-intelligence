@@ -1,0 +1,37 @@
+/// Data vintages read from the outputs: demand = first collection timestamp of the posting snapshot (market_summary.json), supply = GitHub collection date (supply_summary.json).
+table Snapshot
+	lineageTag: a2843788-4ee2-5774-b8b9-e9ae12c30604
+
+	/// Date of the one-day posting snapshot.
+	column 'Demand Collected'
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: a3887fd1-4d9d-5674-8060-15be5e8f1c96
+		summarizeBy: none
+		sourceColumn: Demand Collected
+
+		annotation SummarizationSetBy = User
+
+	/// Date the GitHub supply collection started.
+	column 'Supply Collected'
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 6ad475d6-efb6-5377-8099-3d5b0c88ea31
+		summarizeBy: none
+		sourceColumn: Supply Collected
+
+		annotation SummarizationSetBy = User
+
+	partition Snapshot = m
+		mode: import
+		source =
+				let
+					Demand = Json.Document(File.Contents(ExportsPath & "market_summary.json"), 65001),
+					Supply = Json.Document(File.Contents(ExportsPath & "supply_summary.json"), 65001),
+					Result = #table(type table [Demand Collected = date, Supply Collected = date], {{Date.From(DateTimeZone.From(Demand[collected_at_range][min])), Date.From(Supply[collection_date])}})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

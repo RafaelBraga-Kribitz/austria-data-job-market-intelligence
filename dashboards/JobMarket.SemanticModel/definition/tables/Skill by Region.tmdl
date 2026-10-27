@@ -1,0 +1,78 @@
+/// Skill mentions split into Styria (any listed site) and the rest of Austria (outputs/tables/T05_skills_all_tech_by_styria.csv).
+table 'Skill by Region'
+	lineageTag: 9354482f-0d80-5e7c-b28e-56cca44e421f
+
+	/// 'Styria' (ads listing a Styrian site) or 'Rest of Austria'.
+	column Region
+		dataType: string
+		lineageTag: 574357ff-c103-5be9-b956-7599687f67d2
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = User
+
+	/// Skill name; relates to Skill[Skill].
+	column Skill
+		dataType: string
+		isHidden
+		lineageTag: 9ae1b109-708d-5cdc-bbed-aff754df12f7
+		summarizeBy: none
+		sourceColumn: Skill
+
+		annotation SummarizationSetBy = User
+
+	/// Ads of the region mentioning the skill.
+	column 'Ads Mentioning'
+		dataType: int64
+		isHidden
+		lineageTag: 7b5f39e6-52d8-5dab-b2d3-22eaf7dc30a6
+		summarizeBy: sum
+		sourceColumn: Ads Mentioning
+
+		annotation SummarizationSetBy = User
+
+	/// All ads of the region (the denominator of its shares).
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: 004d3c90-1fc7-5888-9c1c-8c58e072aec8
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	/// Wilson 95% lower bound.
+	column 'CI Low'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: bc445869-2e88-5a77-a707-aef2faa2ba68
+		summarizeBy: none
+		sourceColumn: CI Low
+
+		annotation SummarizationSetBy = User
+
+	/// Wilson 95% upper bound.
+	column 'CI High'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: 4350aec9-a809-5282-a69b-53259b16e77b
+		summarizeBy: none
+		sourceColumn: CI High
+
+		annotation SummarizationSetBy = User
+
+	partition 'Skill by Region' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T05_skills_all_tech_by_styria.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"styria_flag", type text}, {"skill", type text}, {"count", Int64.Type}, {"n", Int64.Type}, {"ci_low", type number}, {"ci_high", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"styria_flag", "Region"}, {"skill", "Skill"}, {"count", "Ads Mentioning"}, {"n", "Ads Base"}, {"ci_low", "CI Low"}, {"ci_high", "CI High"}}),
+					Result = Table.SelectColumns(Renamed, {"Region", "Skill", "Ads Mentioning", "Ads Base", "CI Low", "CI High"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

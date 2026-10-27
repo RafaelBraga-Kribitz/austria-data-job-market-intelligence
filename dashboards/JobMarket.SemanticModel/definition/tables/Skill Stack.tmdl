@@ -1,0 +1,58 @@
+/// Three-skill combinations named together in one ad (outputs/tables/T06b_top_stacks_size3.csv).
+table 'Skill Stack'
+	lineageTag: bc5cd03b-0ba7-5c0e-90ac-8b1533784aad
+
+	/// Three skills joined with ' + '.
+	column Stack
+		dataType: string
+		lineageTag: 32cb25cf-f44e-5ef0-91ef-f5cdf2d65686
+		summarizeBy: none
+		sourceColumn: Stack
+		sortByColumn: 'Stack Rank'
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = most frequent combination.
+	column 'Stack Rank'
+		dataType: int64
+		lineageTag: 2e632d20-7ece-5e6b-81c3-d00a954d49e1
+		summarizeBy: none
+		sourceColumn: Stack Rank
+
+		annotation SummarizationSetBy = User
+
+	/// Ads naming all three skills.
+	column Ads
+		dataType: int64
+		isHidden
+		lineageTag: b5d88517-70d9-5d02-9066-edeb555b9a63
+		summarizeBy: sum
+		sourceColumn: Ads
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads with a description.
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: e2f7d7c1-55a6-5299-91b7-89d3dd576b9f
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	partition 'Skill Stack' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T06b_top_stacks_size3.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"stack", type text}, {"count", Int64.Type}, {"n", Int64.Type}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"stack", "Stack"}, {"count", "Ads"}, {"n", "Ads Base"}}),
+					Sorted = Table.Sort(Renamed, {{"Ads", Order.Descending}, {"Stack", Order.Ascending}}),
+					Indexed = Table.AddIndexColumn(Sorted, "Stack Rank", 1, 1, Int64.Type),
+					Result = Table.SelectColumns(Indexed, {"Stack", "Stack Rank", "Ads", "Ads Base"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,455 @@
+/// Home table of every measure of the report (no data).
+table Measures
+	lineageTag: fbf61c16-f978-50b7-8e22-98572d8db274
+
+	/// Core data-role ads in the current filter (sum of T02 count). Unfiltered it equals market_summary.json counts.core_canonical (README marker core_n).
+	measure 'Core Ads' = SUM('Role Family'[Ads])
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 35c863f7-78e3-58ac-8f48-33d048ca372b
+
+	/// Share of all core ads that fall into the families in the filter (T02 share, recomputed from counts).
+	measure 'Core Ads Share' = DIVIDE([Core Ads], CALCULATE([Core Ads], REMOVEFILTERS('Role Family')))
+		formatString: 0 %
+		displayFolder: 1 Market
+		lineageTag: 67bfea5e-3a4e-577c-a4e2-6c122ec655f5
+
+	/// Core ads listing at least one Styrian site (location flag; multi-site ads count in every state). Unfiltered = market_summary.json counts.styria_core. Tentative: every Styria-only figure.
+	measure 'Styria Ads Any Site' = SUM('Role Family'[Ads Styria Any Site])
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 462f462b-f61f-5051-9ebd-c05bdee23341
+
+	/// Core ads by primary state, one state per ad (T03a count).
+	measure 'Ads by Primary State' = SUM('State'[Ads Primary State])
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 780f26be-86c7-5f4a-ab0b-3852b6c3b832
+
+	/// Share of all core ads whose primary state is in the filter (T03a share).
+	measure 'Ads Primary State Share' = DIVIDE([Ads by Primary State], CALCULATE([Ads by Primary State], REMOVEFILTERS('State')))
+		formatString: 0.0 %
+		displayFolder: 1 Market
+		lineageTag: d3a9da90-745c-5636-a9ea-6a13387702aa
+
+	/// Core ads whose primary state is Wien. Equals market_summary.json counts.vienna_core_primary_state.
+	measure 'Ads Vienna Primary State' = CALCULATE([Ads by Primary State], 'State'[State] = "Wien")
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: c9a0d48e-e36a-5ed2-845b-44027935cfc9
+
+	/// Wien's share of core ads by primary state (README marker vienna_share_core).
+	measure 'Vienna Share Primary State' = DIVIDE([Ads Vienna Primary State], CALCULATE([Ads by Primary State], REMOVEFILTERS('State')))
+		formatString: 0 %
+		displayFolder: 1 Market
+		lineageTag: 0c399410-73e4-5c40-9abe-6ef705d01ce0
+
+	/// Core ads whose primary state is Steiermark. Equals market_summary.json counts.styria_core_primary_state (README marker styria_core_primary_state).
+	measure 'Ads Styria Primary State' = CALCULATE([Ads by Primary State], 'State'[State] = "Steiermark")
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 65fb29b8-6e6b-504c-a9b8-2ce8d838bf69
+
+	/// Unique postings of all titles after de-duplication (market_summary.json counts.canonical_groups_all).
+	measure 'Unique Postings' = CALCULATE(SUM('Population Funnel'[Rows]), 'Population Funnel'[Step Key] = "unique")
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 60fb5d0e-2b37-5b7b-9420-2af9b5517b4a
+
+	/// Raw rows collected from all sources before de-duplication (market_summary.json counts.raw_rows_all_sources).
+	measure 'Raw Rows All Sources' = CALCULATE(SUM('Population Funnel'[Rows]), 'Population Funnel'[Step Key] = "raw")
+		formatString: #,0
+		displayFolder: 1 Market
+		lineageTag: 890c0f2e-195e-5581-a292-590682255b79
+
+	/// Date of the one-day posting snapshot, as text (market_summary.json collected_at_range.min).
+	measure 'Demand Snapshot' = FORMAT(MIN('Snapshot'[Demand Collected]), "yyyy-mm-dd")
+		displayFolder: 1 Market
+		lineageTag: 07199b41-2c70-5cfd-9515-60b0ad827d0a
+
+	/// Date the GitHub supply collection started, as text (supply_summary.json collection_date).
+	measure 'Supply Snapshot' = FORMAT(MIN('Snapshot'[Supply Collected]), "yyyy-mm-dd")
+		displayFolder: 1 Market
+		lineageTag: 275c51ab-2244-5096-afb7-701b05659fca
+
+	/// Reading note of the market page, with its numbers bound to the model.
+	measure 'Market Caveat' = "One day of open ads (" & [Demand Snapshot] & "), not yearly demand, vacancies or hires. Styria: " & FORMAT([Ads Styria Primary State], "#,0") & " ads by primary state, " & FORMAT([Styria Ads Any Site], "#,0") & " counting every listed site; every Styria-only figure is tentative. Families below 30 ads are shown but not ranked."
+		displayFolder: 1 Market
+		lineageTag: 769b06b3-8bb0-5d92-80ad-1245065da5fc
+
+	/// Small-sample flag of the family in context ('n < 30: indicative' or 'n >= 30').
+	measure 'Family Sample Flag' = IF(HASONEVALUE('Role Family'[Family]), SELECTEDVALUE('Role Family'[Sample Size]))
+		displayFolder: 1 Market
+		lineageTag: 6e062e2b-fbaa-53ae-81a7-474e29e17432
+
+	/// Share of core ads with a description that mention the skill (T05). Blank unless exactly one skill is in context. A mention is not a requirement.
+	measure 'Skill Share' = IF(HASONEVALUE('Skill'[Skill]), DIVIDE(SUM('Skill'[Ads Mentioning]), MAX('Skill'[Ads Base])))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: 9d650544-68a5-5a4b-b778-fad0594249df
+
+	/// Skill Share, shown only for the 15 most-mentioned skills nationally (display cut; the Skill table holds all).
+	measure 'Skill Share Top 15' =
+			VAR r = SELECTEDVALUE('Skill'[Skill Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 15, [Skill Share])
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: 042a902c-35cb-5515-873c-361897d8c49b
+
+	/// Lower bound of the Wilson 95% interval of Skill Share (T05 ci_low).
+	measure 'Skill CI Low' = IF(HASONEVALUE('Skill'[Skill]), MAX('Skill'[CI Low]))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: a73c0f24-b3cd-5445-ac14-d74d0289b06d
+
+	/// Upper bound of the Wilson 95% interval of Skill Share (T05 ci_high).
+	measure 'Skill CI High' = IF(HASONEVALUE('Skill'[Skill]), MAX('Skill'[CI High]))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: 5f8457d6-4825-524f-be37-4231013ed81c
+
+	/// Core ads with a description: the denominator of every text-derived share (README marker core_n_text_basis).
+	measure 'Text Basis Ads' = MAX('Skill'[Ads Base])
+		formatString: #,0
+		displayFolder: 2 Skills
+		lineageTag: 6437deee-d35c-570f-a672-05e992f687a2
+
+	/// Ads listing a Styrian site: the denominator of the Styrian skill shares (T05 by Styria n). Tentative.
+	measure 'Styria Basis Ads' = CALCULATE(MAX('Skill by Region'[Ads Base]), 'Skill by Region'[Region] = "Styria")
+		formatString: #,0
+		displayFolder: 2 Skills
+		lineageTag: 8c64f4dd-18b1-5d3d-8efb-4098d70d7c54
+
+	/// Share of Styrian ads (any listed site) mentioning the skill, for the national top 12. Tentative: n is the Styria Basis Ads.
+	measure 'Skill Share Styria' =
+			VAR r = SELECTEDVALUE('Skill'[Skill Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 12, CALCULATE(DIVIDE(SUM('Skill by Region'[Ads Mentioning]), MAX('Skill by Region'[Ads Base])), 'Skill by Region'[Region] = "Styria"))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: 4ebfca5a-4484-5dbd-90af-140a22e33af0
+
+	/// Share of the other core ads mentioning the skill, for the national top 12.
+	measure 'Skill Share Rest of Austria' =
+			VAR r = SELECTEDVALUE('Skill'[Skill Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 12, CALCULATE(DIVIDE(SUM('Skill by Region'[Ads Mentioning]), MAX('Skill by Region'[Ads Base])), 'Skill by Region'[Region] = "Rest of Austria"))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: eca49a70-89e4-5071-a373-d9fc894da5e9
+
+	/// Ads naming all three skills of the stack (T06b count).
+	measure 'Stack Ads' = SUM('Skill Stack'[Ads])
+		formatString: #,0
+		displayFolder: 2 Skills
+		lineageTag: a4515bbd-3ba5-57ba-a381-056ab47ce6ef
+
+	/// Stack Ads for the 10 most frequent stacks (display cut).
+	measure 'Stack Ads Top 10' =
+			VAR r = SELECTEDVALUE('Skill Stack'[Stack Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 10, [Stack Ads])
+		formatString: #,0
+		displayFolder: 2 Skills
+		lineageTag: 18fef4d2-82b4-5d71-8868-8e4c4901a805
+
+	/// Share of core ads naming all three skills (T06b share).
+	measure 'Stack Share' = IF(HASONEVALUE('Skill Stack'[Stack]), DIVIDE([Stack Ads], MAX('Skill Stack'[Ads Base])))
+		formatString: 0 %
+		displayFolder: 2 Skills
+		lineageTag: b03148ce-c569-5c2c-a6d7-e52b5f39f9ec
+
+	/// Ads naming the most frequent three-skill stack.
+	measure 'Top Stack Ads' = CALCULATE([Stack Ads], 'Skill Stack'[Stack Rank] = 1)
+		formatString: #,0
+		displayFolder: 2 Skills
+		lineageTag: 9e0e7db6-e014-5226-8d74-4e0b0d067bc0
+
+	/// Name of the most frequent three-skill stack.
+	measure 'Top Stack' = CALCULATE(SELECTEDVALUE('Skill Stack'[Stack]), 'Skill Stack'[Stack Rank] = 1)
+		displayFolder: 2 Skills
+		lineageTag: 4d21fb67-d770-5248-acd1-b596a0ab0f4e
+
+	/// Reading note of the skills page, with its numbers bound to the model.
+	measure 'Skills Caveat' = "Share of " & FORMAT([Text Basis Ads], "#,0") & " ads that mention a skill (rule-based text matching; skill recall not measured). A mention is not a requirement. Styria bars rest on " & FORMAT([Styria Basis Ads], "#,0") & " ads: read as counts and directions."
+		displayFolder: 2 Skills
+		lineageTag: ff95ecf7-0ae6-500f-83c9-7aaf57d0a17a
+
+	/// Core ads that state a pay figure (T09 with_salary_figure; README marker salary_with_salary_figure_n).
+	measure 'Ads Stating a Figure' = CALCULATE(SUM('Salary Evidence'[Ads]), 'Salary Evidence'[Metric] = "with_salary_figure")
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: a43fc881-1799-5f26-822f-71e8c0af775c
+
+	/// Figures that are a single collective-agreement minimum (T09 minimum_only_figures; README marker salary_minimum_only_n).
+	measure 'Minimum-only Figures' = CALCULATE(SUM('Salary Evidence'[Ads]), 'Salary Evidence'[Metric] = "minimum_only_figures")
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: 87daea3c-c97f-549b-9211-1e70b72fce6f
+
+	/// Ads stating a pay range (T09 with_range).
+	measure 'Ads Stating a Range' = CALCULATE(SUM('Salary Evidence'[Ads]), 'Salary Evidence'[Metric] = "with_range")
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: c311a01c-86c1-5c04-9874-3b1073a4c276
+
+	/// Ads stating a figure as a share of all core ads.
+	measure 'Share of Ads Stating a Figure' = DIVIDE([Ads Stating a Figure], CALCULATE([Core Ads], REMOVEFILTERS('Role Family')))
+		formatString: 0 %
+		displayFolder: 3 Pay
+		lineageTag: e17216fe-9c1c-5a93-8af3-cfa28e686986
+
+	/// Median advertised annual minimum (monthly × 14) of the family; a legal floor in ads, not pay. Blank for several families (medians do not add).
+	measure 'Median Floor by Family' = IF(HASONEVALUE('Pay Floor by Family'[Family Key]), MAX('Pay Floor by Family'[Floor Median]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: 0926d422-5183-56ea-9a23-2c23ae7ce643
+
+	/// 25th percentile of the family's advertised minimum.
+	measure 'Floor P25 by Family' = IF(HASONEVALUE('Pay Floor by Family'[Family Key]), MAX('Pay Floor by Family'[Floor P25]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: b1bca0c9-e6c7-547d-85d2-602b2dbac5df
+
+	/// 75th percentile of the family's advertised minimum.
+	measure 'Floor P75 by Family' = IF(HASONEVALUE('Pay Floor by Family'[Family Key]), MAX('Pay Floor by Family'[Floor P75]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: 7705526e-100a-524b-9ca9-72cb473c2ce8
+
+	/// Ads of the family that state a pay figure (the n of the median).
+	measure 'Ads With Figure by Family' = SUM('Pay Floor by Family'[Ads With Figure])
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: b4daba90-f50c-5ad2-a4ef-73fa55741737
+
+	/// 'n < 30: indicative' when fewer than 30 ads of the family state a figure.
+	measure 'Pay Sample Flag by Family' = IF(HASONEVALUE('Pay Floor by Family'[Family Key]), SELECTEDVALUE('Pay Floor by Family'[Sample Size]))
+		displayFolder: 3 Pay
+		lineageTag: 06fb374c-6cfe-5649-a744-f5d52e1062e9
+
+	/// Median advertised annual minimum by the seniority word in the title; a legal floor, not pay.
+	measure 'Median Floor by Seniority' = IF(HASONEVALUE('Seniority'[Seniority Key]), MAX('Seniority'[Floor Median]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: c633d459-c181-525c-90b0-806f33212a4c
+
+	/// Ads of the seniority class stating a figure.
+	measure 'Ads With Figure by Seniority' = SUM('Seniority'[Ads With Figure])
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: 642cb9e0-3f25-5344-9232-72424dabf080
+
+	/// 'n < 30: indicative' when fewer than 30 ads of the class state a figure.
+	measure 'Pay Sample Flag by Seniority' = IF(HASONEVALUE('Seniority'[Seniority Key]), SELECTEDVALUE('Seniority'[Sample Size]))
+		displayFolder: 3 Pay
+		lineageTag: d11e55de-6800-5231-94ae-1dcb326f11a1
+
+	/// Median advertised annual minimum by primary state; a legal floor, not pay.
+	measure 'Median Floor by State' = IF(HASONEVALUE('Pay Floor by State'[State]), MAX('Pay Floor by State'[Floor Median]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: 002853bd-81f8-5ec7-8422-cda9906b8655
+
+	/// 25th percentile by state.
+	measure 'Floor P25 by State' = IF(HASONEVALUE('Pay Floor by State'[State]), MAX('Pay Floor by State'[Floor P25]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: 117a3c0d-b8db-539e-af90-8970fa41ca15
+
+	/// 75th percentile by state.
+	measure 'Floor P75 by State' = IF(HASONEVALUE('Pay Floor by State'[State]), MAX('Pay Floor by State'[Floor P75]))
+		formatString: €#,0
+		displayFolder: 3 Pay
+		lineageTag: 77c1bf09-5668-5035-9dc3-139c12a452b6
+
+	/// Ads of the state stating a figure.
+	measure 'Ads With Figure by State' = SUM('Pay Floor by State'[Ads With Figure])
+		formatString: #,0
+		displayFolder: 3 Pay
+		lineageTag: 8e6453b1-6d6d-5ca3-bc90-2ff4e6fb604a
+
+	/// 'n < 30: indicative' when fewer than 30 ads of the state state a figure.
+	measure 'Pay Sample Flag by State' = IF(HASONEVALUE('Pay Floor by State'[State]), SELECTEDVALUE('Pay Floor by State'[Sample Size]))
+		displayFolder: 3 Pay
+		lineageTag: eee503fc-7f8b-564e-85c8-12e10e900040
+
+	/// Reading note of the pay page, with its numbers bound to the model.
+	measure 'Pay Caveat' = "Annual gross = monthly figure × 14. " & FORMAT([Minimum-only Figures], "#,0") & " of " & FORMAT([Ads Stating a Figure], "#,0") & " figures are a single collective-agreement minimum: a legal floor in the ad, not a salary. After controls for family, seniority and state most raw skill premiums are not distinguishable from zero (D05). Cells with n < 30 are indicative."
+		displayFolder: 3 Pay
+		lineageTag: edca0bd6-6621-5c81-b3fc-1abe84ad46a8
+
+	/// Share of core ads mentioning the capability (DS10 demand_share).
+	measure 'Capability Demand Share' = IF(HASONEVALUE('Capability Evidence'[Capability]), MAX('Capability Evidence'[Demand Share]))
+		formatString: 0 %
+		displayFolder: 4 Demand vs supply
+		lineageTag: 28b2aa07-dc87-5aa3-aa0e-900a456744c1
+
+	/// Share of observed Austrian GitHub accounts with a data signal that show the capability in a project (DS10 supply_project_share).
+	measure 'Capability Project Share' = IF(HASONEVALUE('Capability Evidence'[Capability]), MAX('Capability Evidence'[Project Share]))
+		formatString: 0 %
+		displayFolder: 4 Demand vs supply
+		lineageTag: e2bda333-76b1-561b-b89b-a82bcc93b1a4
+
+	/// Capability Demand Share for the 14 most-demanded observable technical capabilities (display cut).
+	measure 'Capability Demand Share Chart' =
+			VAR r = SELECTEDVALUE('Capability Evidence'[Technical Demand Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 14, [Capability Demand Share])
+		formatString: 0 %
+		displayFolder: 4 Demand vs supply
+		lineageTag: f38a0382-9276-5e45-9b09-6240b16cc3e6
+
+	/// Capability Project Share for the same 14 capabilities.
+	measure 'Capability Project Share Chart' =
+			VAR r = SELECTEDVALUE('Capability Evidence'[Technical Demand Rank])
+			RETURN IF(NOT ISBLANK(r) && r <= 14, [Capability Project Share])
+		formatString: 0 %
+		displayFolder: 4 Demand vs supply
+		lineageTag: 8f9e795a-c5b3-50a1-a490-341603060a9d
+
+	/// Austrian GitHub accounts with a data signal: the supply denominator (README marker supply_p_data_n).
+	measure 'Supply Basis Accounts' = MAX('Capability Evidence'[Accounts Base])
+		formatString: #,0
+		displayFolder: 4 Demand vs supply
+		lineageTag: 7ccb9fa9-45ca-557e-9722-423532c58094
+
+	/// Weighted score 0-1 under the default weights (D01). Ranks market attractiveness for one profile, not the probability of being hired.
+	measure 'Decision Score' = IF(HASONEVALUE('Decision Matrix'[Family Key]), MAX('Decision Matrix'[Default Score]))
+		formatString: 0.00
+		displayFolder: 4 Demand vs supply
+		lineageTag: e297ba8c-9cef-5450-b0f4-4744d4f7b989
+
+	/// Rank under the default weights (D01).
+	measure 'Decision Rank' = IF(HASONEVALUE('Decision Matrix'[Family Key]), MAX('Decision Matrix'[Default Rank]))
+		formatString: 0
+		displayFolder: 4 Demand vs supply
+		lineageTag: 86ae7bba-fcaa-5092-bfb9-cd9c1533fb62
+
+	/// Families in the top 3 under all four weightings with at least 30 ads in Austria and in Styria (docs/decision-framework.md). Zero on the current snapshot.
+	measure 'Families Robust in Top 3' = COALESCE(CALCULATE(COUNTROWS('Decision Matrix'), 'Decision Matrix'[Robust Top 3] = TRUE()), 0)
+		formatString: #,0
+		displayFolder: 4 Demand vs supply
+		lineageTag: 9faa501a-3a43-52df-9341-bd8473c0a759
+
+	/// Families that receive a score (at least 30 ads in Austria).
+	measure 'Scored Families' = COALESCE(CALCULATE(COUNTROWS('Decision Matrix'), NOT ISBLANK('Decision Matrix'[Default Score])), 0)
+		formatString: #,0
+		displayFolder: 4 Demand vs supply
+		lineageTag: 1ce5a4d2-ef38-5c73-8f77-dec3d1fddb5f
+
+	/// Rank of the family under the weighting in context (D02).
+	measure 'Rank under Weighting' = IF(HASONEVALUE('Weighting Rank'[Weighting]) && HASONEVALUE('Weighting Rank'[Family Key]), MAX('Weighting Rank'[Rank]))
+		formatString: 0
+		displayFolder: 4 Demand vs supply
+		lineageTag: 81452270-d77d-5862-bb80-ddbe6c8361dd
+
+	/// Reading note of the demand vs supply page, with its numbers bound to the model.
+	measure 'Supply Caveat' = "Two universes: " & FORMAT(CALCULATE([Core Ads], REMOVEFILTERS('Role Family')), "#,0") & " ads (" & [Demand Snapshot] & ") against " & FORMAT([Supply Basis Accounts], "#,0") & " GitHub accounts (" & [Supply Snapshot] & "); read orders of magnitude. GitHub cannot see Power BI, Excel or SAP work or private repositories. D01/D02 were scored with the author's own profile (D-026). " & FORMAT([Families Robust in Top 3], "#,0") & " families meet the robustness rule."
+		displayFolder: 4 Demand vs supply
+		lineageTag: 747695ba-9277-5f3e-bfd6-e166d5519be1
+
+	/// Overall strict title-classification precision after the D-012 audit (Q03c row ALL; README marker title_precision_strict_after).
+	measure 'Strict Precision After Audit' = CALCULATE(MAX('Title Precision'[Strict After]), 'Title Precision'[Family Key] = "ALL")
+		formatString: 0 %
+		displayFolder: 5 Quality
+		lineageTag: 49d78c19-5799-5c2f-90d4-689e48619ea1
+
+	/// Overall lenient precision after the audit (Q03c row ALL).
+	measure 'Lenient Precision After Audit' = CALCULATE(MAX('Title Precision'[Lenient After]), 'Title Precision'[Family Key] = "ALL")
+		formatString: 0 %
+		displayFolder: 5 Quality
+		lineageTag: f39c4ea7-ec44-5f04-a60a-4a78442fdc09
+
+	/// Hand-labelled titles in the precision audit (Q03c row ALL).
+	measure 'Titles Audited' = CALCULATE(SUM('Title Precision'[Titles Sampled]), 'Title Precision'[Family Key] = "ALL")
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 9f954571-a1e0-5ab8-8baf-af3f18bb1fa1
+
+	/// Strict precision of the family before the D-012 revision; blank for the overall row.
+	measure 'Strict Precision Before by Family' = IF(HASONEVALUE('Title Precision'[Family Key]) && SELECTEDVALUE('Title Precision'[Family Key]) <> "ALL", MAX('Title Precision'[Strict Before]))
+		formatString: 0 %
+		displayFolder: 5 Quality
+		lineageTag: 48ae2dab-ae9f-5e54-91e9-bc48f6e30ffb
+
+	/// Strict precision of the family after the D-012 revision; blank for the overall row.
+	measure 'Strict Precision After by Family' = IF(HASONEVALUE('Title Precision'[Family Key]) && SELECTEDVALUE('Title Precision'[Family Key]) <> "ALL", MAX('Title Precision'[Strict After]))
+		formatString: 0 %
+		displayFolder: 5 Quality
+		lineageTag: 9a1022c7-9b13-5a78-8456-2ef9f6f73bd8
+
+	/// Hand-labelled titles of the family.
+	measure 'Titles Sampled by Family' = SUM('Title Precision'[Titles Sampled])
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 2943b4bb-eecf-5d7e-a210-61ece0f2cff2
+
+	/// Sampled titles the revised rules keep in the family: the n behind Strict Precision After by Family.
+	measure 'Titles Kept by Family' = SUM('Title Precision'[Titles Kept])
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: a34ee19b-5571-5c64-ba03-2dc7ec4a6bef
+
+	/// Rows at the funnel step in context (bars are nested subsets; never add them).
+	measure 'Funnel Rows' = SUM('Population Funnel'[Rows])
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: b9fa0b97-8000-5657-aed6-a51053c5f6d2
+
+	/// Canonical core ads attributed to the source (T01 in_scope_canonical).
+	measure 'Core Ads by Source' = SUM('Source'[Core Postings])
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 3570fab3-6b34-5a72-94d9-92767fa5007c
+
+	/// Rows collected from the source (T01 rows).
+	measure 'Raw Rows by Source' = SUM('Source'[Raw Rows])
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 488d3fad-9040-58ea-a206-160535f2e3e7
+
+	/// Median days since first publication of the source's core ads (T13b).
+	measure 'Median Posting Age' = IF(HASONEVALUE('Source'[Source Key]), MAX('Source'[Median Posting Age Days]))
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 8aa5a55e-b4a7-5883-8e50-6c48617bf426
+
+	/// Posting sources in the snapshot (T01 rows).
+	measure 'Sources Collected' = COUNTROWS('Source')
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: f3fba215-6159-5525-9fd8-8227faec01a0
+
+	/// Core postings seen on two or more sources (Q04 cross_source_groups_core).
+	measure 'Core Ads on Several Sources' = CALCULATE(SUM('Duplicates'[Value]), 'Duplicates'[Metric] = "cross_source_groups_core")
+		formatString: #,0
+		displayFolder: 5 Quality
+		lineageTag: 96811fa3-db29-559e-bdd1-d56896e4dc60
+
+	/// Share of core postings seen on two or more sources (README marker core_multi_source_groups_share).
+	measure 'Core Ads on Several Sources Share' = DIVIDE([Core Ads on Several Sources], CALCULATE(SUM('Duplicates'[Value]), 'Duplicates'[Metric] = "core_groups"))
+		formatString: 0 %
+		displayFolder: 5 Quality
+		lineageTag: 536f8e6c-6bcf-5577-8036-3c35422a2596
+
+	/// Reading note of the quality page, with its numbers bound to the model.
+	measure 'Quality Caveat' = "Precision measured on " & FORMAT([Titles Audited], "#,0") & " hand-labelled titles; recall is not measured. StepStone.at, Indeed.at, hokify and Glassdoor were blocked; company career pages were not collected. Only " & FORMAT([Core Ads on Several Sources Share], "0 %") & " of core postings appear on more than one source."
+		displayFolder: 5 Quality
+		lineageTag: 98982fc6-2b0b-57cb-b66f-9ac5cb30d4fa
+
+	/// Placeholder column of the measure table.
+	column Marker
+		dataType: int64
+		isHidden
+		lineageTag: a409f697-e201-51ab-a75c-eb4602b5061b
+		summarizeBy: none
+		sourceColumn: Marker
+
+		annotation SummarizationSetBy = User
+
+	partition Measures = m
+		mode: import
+		source =
+				let
+					Result = #table(type table [Marker = Int64.Type], {})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

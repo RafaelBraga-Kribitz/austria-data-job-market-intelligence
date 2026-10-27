@@ -1,0 +1,70 @@
+/// Score and rank of each scored family under the four weightings (outputs/tables/D02_sensitivity.csv), unpivoted to one row per family and weighting.
+table 'Weighting Rank'
+	lineageTag: 6127430a-9c30-5a76-9e4e-5b739c35ece0
+
+	/// Relates to Role Family[Family Key].
+	column 'Family Key'
+		dataType: string
+		isHidden
+		lineageTag: 8b62a5ff-4f69-569c-bdbf-be3ea9cf11c4
+		summarizeBy: none
+		sourceColumn: Family Key
+
+		annotation SummarizationSetBy = User
+
+	/// Weighted score 0-1 under this weighting.
+	column Score
+		dataType: double
+		isHidden
+		formatString: 0.00
+		lineageTag: 557c0aff-a6d5-5409-b336-cedb0bd2ccbd
+		summarizeBy: none
+		sourceColumn: Score
+
+		annotation SummarizationSetBy = User
+
+	/// Rank of the family under this weighting (1 = first).
+	column Rank
+		dataType: int64
+		isHidden
+		lineageTag: 4e458802-dff5-5a6f-ab2e-008197aeb2ca
+		summarizeBy: none
+		sourceColumn: Rank
+
+		annotation SummarizationSetBy = User
+
+	/// Default, Geography first, Language first or Equal weights (docs/decision-framework.md).
+	column Weighting
+		dataType: string
+		lineageTag: 516c7c39-9a81-5365-893a-166aa0421de2
+		summarizeBy: none
+		sourceColumn: Weighting
+		sortByColumn: 'Weighting Order'
+
+		annotation SummarizationSetBy = User
+
+	/// Default first.
+	column 'Weighting Order'
+		dataType: int64
+		isHidden
+		lineageTag: 0d6fd06c-9b86-5139-b688-9c888537372a
+		summarizeBy: none
+		sourceColumn: Weighting Order
+
+		annotation SummarizationSetBy = User
+
+	partition 'Weighting Rank' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\D02_sensitivity.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"role_family", type text}, {"score_default", type number}, {"score_geography_first", type number}, {"score_language_first", type number}, {"score_equal", type number}, {"rank_default", Int64.Type}, {"rank_geography_first", Int64.Type}, {"rank_language_first", Int64.Type}, {"rank_equal", Int64.Type}}, "en-US"),
+					Combined = Table.Combine({Table.AddColumn(Table.RenameColumns(Table.SelectColumns(Typed, {"role_family", "score_default", "rank_default"}), {{"score_default", "Score"}, {"rank_default", "Rank"}}), "Weighting", each "Default", type text), Table.AddColumn(Table.RenameColumns(Table.SelectColumns(Typed, {"role_family", "score_geography_first", "rank_geography_first"}), {{"score_geography_first", "Score"}, {"rank_geography_first", "Rank"}}), "Weighting", each "Geography first", type text), Table.AddColumn(Table.RenameColumns(Table.SelectColumns(Typed, {"role_family", "score_language_first", "rank_language_first"}), {{"score_language_first", "Score"}, {"rank_language_first", "Rank"}}), "Weighting", each "Language first", type text), Table.AddColumn(Table.RenameColumns(Table.SelectColumns(Typed, {"role_family", "score_equal", "rank_equal"}), {{"score_equal", "Score"}, {"rank_equal", "Rank"}}), "Weighting", each "Equal weights", type text)}),
+					Ordered = Table.AddColumn(Combined, "Weighting Order", each if [Weighting] = "Default" then 1 else if [Weighting] = "Geography first" then 2 else if [Weighting] = "Language first" then 3 else if [Weighting] = "Equal weights" then 4 else 99, Int64.Type),
+					Keyed = Table.RenameColumns(Ordered, {{"role_family", "Family Key"}}),
+					Result = Table.TransformColumnTypes(Keyed, {{"Score", type number}, {"Rank", Int64.Type}})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

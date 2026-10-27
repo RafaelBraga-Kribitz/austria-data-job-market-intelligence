@@ -1,0 +1,93 @@
+/// Hand-labelled title audit (outputs/tables/Q03c_precision_summary.csv): strict and lenient precision before and after the D-012 rule revision. Row ALL = overall.
+table 'Title Precision'
+	lineageTag: 0eac805d-2d42-5c42-89a6-07056db15ecb
+
+	/// Role family key; ALL = the whole sample.
+	column 'Family Key'
+		dataType: string
+		isHidden
+		lineageTag: eeea5a79-ba96-55fc-ac90-c0b20b4b5e25
+		summarizeBy: none
+		sourceColumn: Family Key
+
+		annotation SummarizationSetBy = User
+
+	/// Role family display name ('All families' for the whole sample).
+	column Family
+		dataType: string
+		lineageTag: 11289fa7-1d13-51da-bc96-50bbde6a99b7
+		summarizeBy: none
+		sourceColumn: Family
+
+		annotation SummarizationSetBy = User
+
+	/// Hand-labelled titles in the audit sample.
+	column 'Titles Sampled'
+		dataType: int64
+		isHidden
+		lineageTag: ddfba8ba-e5bf-56a8-867d-4978a02dcb58
+		summarizeBy: sum
+		sourceColumn: Titles Sampled
+
+		annotation SummarizationSetBy = User
+
+	/// Sampled titles the revised (D-012) rules still assign to the family: the n of the 'after' precision.
+	column 'Titles Kept'
+		dataType: int64
+		isHidden
+		lineageTag: bc5ce956-3598-5621-b213-22d9ea6c595b
+		summarizeBy: sum
+		sourceColumn: Titles Kept
+
+		annotation SummarizationSetBy = User
+
+	/// Strict precision before the D-012 revision.
+	column 'Strict Before'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: e70fa6f6-f5a1-597e-90f2-0f0b6838e21e
+		summarizeBy: none
+		sourceColumn: Strict Before
+
+		annotation SummarizationSetBy = User
+
+	/// Strict precision after the D-012 revision.
+	column 'Strict After'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: a0d509d6-000a-50fc-a94c-cc575518f950
+		summarizeBy: none
+		sourceColumn: Strict After
+
+		annotation SummarizationSetBy = User
+
+	/// Lenient precision (borderline counted as correct) after the revision.
+	column 'Lenient After'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: 63fa8a7a-4414-5aa3-a5fa-8323ebc149fd
+		summarizeBy: none
+		sourceColumn: Lenient After
+
+		annotation SummarizationSetBy = User
+
+	partition 'Title Precision' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\Q03c_precision_summary.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"family", type text}, {"n_sampled", Int64.Type}, {"n_kept_after", Int64.Type}, {"precision_before_strict", type number}, {"precision_after_strict", type number}, {"precision_after_lenient", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"family", "Family Key"}, {"n_sampled", "Titles Sampled"}, {"n_kept_after", "Titles Kept"}, {"precision_before_strict", "Strict Before"}, {"precision_after_strict", "Strict After"}, {"precision_after_lenient", "Lenient After"}}),
+					Labels = Table.SelectColumns(Table.PromoteHeaders(Csv.Document(File.Contents(ExportsPath & "tables\DS01_demand_supply_role_families.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]), {"category", "label"}),
+					Joined = Table.NestedJoin(Renamed, {"Family Key"}, Labels, {"category"}, "L", JoinKind.LeftOuter),
+					Expanded = Table.ExpandTableColumn(Joined, "L", {"label"}, {"Label"}),
+					Labelled = Table.AddColumn(Expanded, "Family", each if [Label] <> null and [Label] <> "" then [Label] else if [Family Key] = "ALL" then "All families" else [Family Key], type text),
+					Result = Table.SelectColumns(Labelled, {"Family Key", "Family", "Titles Sampled", "Titles Kept", "Strict Before", "Strict After", "Lenient After"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

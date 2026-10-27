@@ -1,0 +1,80 @@
+/// Share of core ads mentioning each skill, with Wilson 95% interval (outputs/tables/T05_skills_all_tech.csv).
+table Skill
+	lineageTag: 322dffbf-c7cc-516f-a58a-ac7fd5d72265
+
+	/// Canonical skill name (config/skills_taxonomy.json).
+	column Skill
+		dataType: string
+		lineageTag: 80a4a415-ac8b-5adb-9d48-8f48db9b7f73
+		summarizeBy: none
+		sourceColumn: Skill
+		sortByColumn: 'Skill Rank'
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = most-mentioned skill nationally (ties by name).
+	column 'Skill Rank'
+		dataType: int64
+		lineageTag: 10366edc-7ca0-5c4c-95a8-79add6253332
+		summarizeBy: none
+		sourceColumn: Skill Rank
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads whose text mentions the skill.
+	column 'Ads Mentioning'
+		dataType: int64
+		isHidden
+		lineageTag: 6b1c5bcf-77a8-5c51-b7cc-160fe8f03f75
+		summarizeBy: sum
+		sourceColumn: Ads Mentioning
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads with a description (the text-derived denominator).
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: c1b0b467-ea23-58a7-b906-8ba75bbfd483
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	/// Lower bound of the Wilson 95% interval of the share.
+	column 'CI Low'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: dfe17b58-0103-548d-85c6-f4c1d69d8576
+		summarizeBy: none
+		sourceColumn: CI Low
+
+		annotation SummarizationSetBy = User
+
+	/// Upper bound of the Wilson 95% interval of the share.
+	column 'CI High'
+		dataType: double
+		isHidden
+		formatString: 0 %
+		lineageTag: 791766a6-cabd-5339-a56e-238edc57179f
+		summarizeBy: none
+		sourceColumn: CI High
+
+		annotation SummarizationSetBy = User
+
+	partition Skill = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T05_skills_all_tech.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"skill", type text}, {"count", Int64.Type}, {"n", Int64.Type}, {"ci_low", type number}, {"ci_high", type number}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"skill", "Skill"}, {"count", "Ads Mentioning"}, {"n", "Ads Base"}, {"ci_low", "CI Low"}, {"ci_high", "CI High"}}),
+					Sorted = Table.Sort(Renamed, {{"Ads Mentioning", Order.Descending}, {"Skill", Order.Ascending}}),
+					Indexed = Table.AddIndexColumn(Sorted, "Skill Rank", 1, 1, Int64.Type),
+					Result = Table.SelectColumns(Indexed, {"Skill", "Skill Rank", "Ads Mentioning", "Ads Base", "CI Low", "CI High"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,114 @@
+/// One row per core role family (outputs/tables/T02_role_family_counts.csv), labelled from DS01. Dimension for the family tables.
+table 'Role Family'
+	lineageTag: bf43d8b9-1c4e-532a-98a6-c683f16f041e
+
+	/// Taxonomy key of the role family (config/role_taxonomy.json).
+	column 'Family Key'
+		dataType: string
+		isHidden
+		lineageTag: e8ecc519-85d7-557c-ac39-7846329ec58f
+		summarizeBy: none
+		sourceColumn: Family Key
+
+		annotation SummarizationSetBy = User
+
+	/// Display name of the role family.
+	column Family
+		dataType: string
+		lineageTag: 97af9359-042b-5a2a-9f7b-f32c49466aa5
+		summarizeBy: none
+		sourceColumn: Family
+		sortByColumn: 'Family Order'
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = family with the most core ads.
+	column 'Family Order'
+		dataType: int64
+		isHidden
+		lineageTag: cacf8b43-c18e-5a43-b444-2512bb0c0278
+		summarizeBy: none
+		sourceColumn: Family Order
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads in the family (T02 count).
+	column Ads
+		dataType: int64
+		isHidden
+		lineageTag: ddaf54be-0031-51ea-bb3a-f6f15227acc9
+		summarizeBy: sum
+		sourceColumn: Ads
+
+		annotation SummarizationSetBy = User
+
+	/// All core ads (T02 n), the denominator of the family share.
+	column 'Ads Base'
+		dataType: int64
+		isHidden
+		lineageTag: abfaa3a2-ee52-569a-a393-4a6a3446fb58
+		summarizeBy: none
+		sourceColumn: Ads Base
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads listing at least one Styrian site (location flag; multi-site ads count in every state).
+	column 'Ads Styria Any Site'
+		dataType: int64
+		isHidden
+		lineageTag: 7d62464a-abbe-580d-8841-f4dbc9de2081
+		summarizeBy: sum
+		sourceColumn: Ads Styria Any Site
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads listing a site in the Graz commuting area (config/geo.json).
+	column 'Ads Graz Area Any Site'
+		dataType: int64
+		isHidden
+		lineageTag: 3b16f4c5-7b78-5829-ae9e-bd87f4091b71
+		summarizeBy: sum
+		sourceColumn: Ads Graz Area Any Site
+
+		annotation SummarizationSetBy = User
+
+	/// Core ads listing at least one Vienna site.
+	column 'Ads Vienna Any Site'
+		dataType: int64
+		isHidden
+		lineageTag: c4c19d38-d9f1-5304-9438-70161446ef08
+		summarizeBy: sum
+		sourceColumn: Ads Vienna Any Site
+
+		annotation SummarizationSetBy = User
+
+	/// 'n < 30: indicative' when the family has fewer than 30 core ads (docs/limitations.md item 9).
+	column 'Sample Size'
+		dataType: string
+		lineageTag: 45fb5ee5-350d-57bf-89ba-66dee1473739
+		summarizeBy: none
+		sourceColumn: Sample Size
+
+		annotation SummarizationSetBy = User
+
+	partition 'Role Family' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\T02_role_family_counts.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"role_family", type text}, {"count", Int64.Type}, {"n", Int64.Type}, {"styria_count", Int64.Type}, {"graz_area_count", Int64.Type}, {"vienna_count", Int64.Type}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"count", "Ads"}, {"n", "Ads Base"}, {"styria_count", "Ads Styria Any Site"}, {"graz_area_count", "Ads Graz Area Any Site"}, {"vienna_count", "Ads Vienna Any Site"}}),
+					Labels = Table.SelectColumns(Table.PromoteHeaders(Csv.Document(File.Contents(ExportsPath & "tables\DS01_demand_supply_role_families.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]), {"category", "label"}),
+					Joined = Table.NestedJoin(Renamed, {"role_family"}, Labels, {"category"}, "L", JoinKind.LeftOuter),
+					Expanded = Table.ExpandTableColumn(Joined, "L", {"label"}, {"Label"}),
+					Labelled = Table.AddColumn(Expanded, "Family", each if [Label] <> null and [Label] <> "" then [Label] else [role_family], type text),
+					Sorted = Table.Sort(Labelled, {{"Ads", Order.Descending}, {"role_family", Order.Ascending}}),
+					Indexed = Table.AddIndexColumn(Sorted, "Family Order", 1, 1, Int64.Type),
+					Flagged = Table.AddColumn(Indexed, "Sample Size", each if [Ads] < 30 then "n < 30: indicative" else "n >= 30", type text),
+					Keyed = Table.RenameColumns(Flagged, {{"role_family", "Family Key"}}),
+					Result = Table.SelectColumns(Keyed, {"Family Key", "Family", "Family Order", "Ads", "Ads Base", "Ads Styria Any Site", "Ads Graz Area Any Site", "Ads Vienna Any Site", "Sample Size"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table

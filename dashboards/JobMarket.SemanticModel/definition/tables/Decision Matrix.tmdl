@@ -1,0 +1,87 @@
+/// Transparent weighted-sum score per role family under the default weights (outputs/tables/D01_decision_matrix.csv; docs/decision-framework.md).
+table 'Decision Matrix'
+	lineageTag: 1a9920d9-895e-5ee8-884d-95fd60e576af
+
+	/// Relates to Role Family[Family Key].
+	column 'Family Key'
+		dataType: string
+		isHidden
+		lineageTag: 047245b2-9bde-54da-a3b1-05349f4358cf
+		summarizeBy: none
+		sourceColumn: Family Key
+
+		annotation SummarizationSetBy = User
+
+	/// V1: core ads in Austria.
+	column 'Ads Austria'
+		dataType: int64
+		isHidden
+		lineageTag: d7230ff8-9682-5b7c-8051-25c4e7ac31fe
+		summarizeBy: sum
+		sourceColumn: Ads Austria
+
+		annotation SummarizationSetBy = User
+
+	/// V2: core ads listing a Styrian site.
+	column 'Ads Styria'
+		dataType: int64
+		isHidden
+		lineageTag: d366b291-2a90-5f21-8d53-4ed83cd1a306
+		summarizeBy: sum
+		sourceColumn: Ads Styria
+
+		annotation SummarizationSetBy = User
+
+	/// Weighted score 0-1 under the default weights; blank = family not scored (fewer than 30 ads).
+	column 'Default Score'
+		dataType: double
+		isHidden
+		formatString: 0.00
+		lineageTag: f257a6c2-bcad-5ef0-b775-8fdce000349e
+		summarizeBy: none
+		sourceColumn: Default Score
+
+		annotation SummarizationSetBy = User
+
+	/// Rank under the default weights.
+	column 'Default Rank'
+		dataType: double
+		isHidden
+		formatString: 0
+		lineageTag: f0b87be2-cf2a-5267-8bd3-472315c78b45
+		summarizeBy: none
+		sourceColumn: Default Rank
+
+		annotation SummarizationSetBy = User
+
+	/// D01 small_sample_flag: fewer than 30 ads in Austria or fewer than 10 in Styria.
+	column 'Small Sample'
+		dataType: boolean
+		lineageTag: 70209112-e442-5a5a-8e00-0fcbd4b1cad2
+		summarizeBy: none
+		sourceColumn: Small Sample
+
+		annotation SummarizationSetBy = User
+
+	/// Top 3 under all four weightings AND at least 30 ads in Austria and in Styria.
+	column 'Robust Top 3'
+		dataType: boolean
+		lineageTag: 273508fd-0e0e-5b53-a180-ec4ffb9cc08d
+		summarizeBy: none
+		sourceColumn: Robust Top 3
+
+		annotation SummarizationSetBy = User
+
+	partition 'Decision Matrix' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(ExportsPath & "tables\D01_decision_matrix.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"role_family", type text}, {"V1_postings_at", Int64.Type}, {"V2_postings_styria", Int64.Type}, {"score_default", type number}, {"rank_default", type number}, {"small_sample_flag", type logical}, {"robust_top3", type logical}}, "en-US"),
+					Renamed = Table.RenameColumns(Typed, {{"role_family", "Family Key"}, {"V1_postings_at", "Ads Austria"}, {"V2_postings_styria", "Ads Styria"}, {"score_default", "Default Score"}, {"rank_default", "Default Rank"}, {"small_sample_flag", "Small Sample"}, {"robust_top3", "Robust Top 3"}}),
+					Result = Table.SelectColumns(Renamed, {"Family Key", "Ads Austria", "Ads Styria", "Default Score", "Default Rank", "Small Sample", "Robust Top 3"})
+				in
+					Result
+
+	annotation PBI_ResultType = Table
