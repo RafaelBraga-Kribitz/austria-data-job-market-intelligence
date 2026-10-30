@@ -64,6 +64,10 @@ Vienna holds <!--m:vienna_core_primary_state-->315<!--/m--> of <!--m:core_n-->69
 
 *Does a named skill raise the advertised pay floor? Squares show the raw difference in the advertised minimum. Dots show the difference after controls for role family, seniority and state. For most skills, the interval after controls crosses zero. After a correction for testing many skills at once, no skill clears zero. Takeaway: the role family and the seniority label set the advertised floor, not the tool in the ad. Model: a regression on the log of the advertised minimum; association, not causation.*
 
+## Why this project exists
+
+A data-job seeker in Graz could not see which data roles, regions and skills Austrian ads ask for. Portfolio hours risked going to the wrong skills. The intended value is avoided rework: project hours aimed at skills the ads name. The pre-build evaluation expected €738 of avoided rework against a total cost of €1,323, at the market cost of the role this work needs. It fails the financial hurdle (0.56×, against 4×). Observed result: Not yet measured. Details: [economic evaluation](docs/economic-evaluation.md).
+
 ## Start here
 
 | Audience | Start here |
