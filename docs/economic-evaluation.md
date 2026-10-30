@@ -1,59 +1,60 @@
 # Economic evaluation: Austria Data-Job Market Intelligence
 
-Pre-build scenario exercise · evaluation date 2026-09-16 · method v2.0 · cost basis v1.1 ([COST_BASIS.md](https://github.com/RafaelBraga-Kribitz/braga-portfolio-docs/blob/main/docs/value-evaluation/COST_BASIS.md))
+Pre-build scenario exercise · evaluation date 2026-09-16 · method v2.0 · cost basis v1.2 ([COST_BASIS.md](https://github.com/RafaelBraga-Kribitz/braga-portfolio-docs/blob/main/docs/value-evaluation/COST_BASIS.md))
 
 ## Decision
 
-A data-job seeker in Graz decides which roles, regions and skills to target and which skills the next portfolio projects show; a dataset of Austrian data-role ads pays if it avoids rework, that is, project hours spent showing skills the market does not ask for.
+A data-job seeker in Graz decides which roles, regions, tools and skills to prepare for. Could better market evidence prevent months of preparation for the wrong path, and is a full research system better than a focused manual study?
 
 ## Assumptions
 
-* Target region and role families: Greater Graz first, data roles in Austria [sourced: `config/profile.json` at 6a256e0].
-* Public series count ads by year and coarse occupation; none lists skills, German requirement and pay per ad in Styria [sourced: `docs/research-landscape.md` §1 at 6a256e0].
-* Baseline: reading job boards by hand, about 8 h per cycle [assumption].
-* Planned portfolio work: three projects of about 60 h, 180 h [estimate: earlier projects took 36–84 h, cost-basis hours table].
-* Horizon: one six-month search cycle [assumption].
-* Rate: €45 per hour all-in, the market cost of the role this work needs (advertised minimum, ADJMI snapshot 2026-10-18): data engineering, seniority unspecified. Avoided hours count at the same rate.
-* Best alternative: hand-tag about 50 ads in a spreadsheet, about 6 h (€270) [estimate].
+* Target: data roles in Austria, Greater Graz first [sourced: `config/profile.json` at 6a256e0].
+* Public series count ads by year and coarse occupation; none lists skills, German requirement or pay per ad in Styria [sourced: `docs/research-landscape.md` §1 at 6a256e0].
+* Wrong-path risk is real: preparation had already gone into a tool and applications without market evidence, a Tableau dashboard and applications filtered out by applicant-tracking systems (ATS) [sourced: owner statement 2026-10-30; [Tableau Public dashboard](https://public.tableau.com/app/profile/rafael.braga.kribitz/viz/HumanoidRoboticsTCO/Dashboard1)].
+* A month of earlier employment is valued at €4,170: the midpoint of the AMS collective-agreement entry floor for Data Scientist, €2,800–4,350 a month × 14, ÷ 12. This is a market floor, not a salary expectation [sourced: `docs/research-landscape.md` §1.4 at 6a256e0]. If unemployment benefit is paid meanwhile, only the difference counts.
+* The wrong path is measured once, through employment timing; rework hours are not counted again.
+* Baseline: job boards read by hand. Alternatives: a focused study (about 50 hand-tagged ads plus the AMS series, 40 h) or the full system. Horizon: one 12-month job search.
 
 ## Scenarios
 
-| Scenario | Outcome | Hours avoided | Value | Probability |
+State of the existing plan, months of employment lost without research, and months each option recovers [assumptions].
+
+| State of the plan | Probability | Lost without research | Focused gains | Full gains |
 |---|---|---|---|---|
-| Redirects the plan | 30 % of the 180 h aimed at the wrong skills | 54 h | €2,430 | 0.20 [assumption: career change, no per-ad data] |
-| Refines one project | 10 % of the hours change emphasis | 18 h | €810 | 0.30 [assumption] |
-| Confirms the plan | Only manual reading saved | 8 h | €360 | 0.25 [assumption] |
-| Not used | Answer late or ignored | 0 h | €0 | 0.15 [assumption] |
-| Misleads | Rule-based tags steer a project wrong | −18 h | −€810 | 0.10 [assumption: recall unmeasured] |
+| On target | 0.15 | 0 | 0 | 0 |
+| Partly off: one tool or skill wrong | 0.35 | 2 | 1 | 1.5 |
+| Substantially off: role family, region, language or ATS keywords | 0.30 | 6 | 3 | 4.5 |
+| Severe: a year lost before the course changes | 0.10 | 12 | 6 | 9 |
+| Research misleads | 0.10 | — | −0.5 | −1 |
 
-Probabilities include adoption.
+## Expected value and cost
 
-## Value and cost
+- Cost of not knowing: 0.35 × 2 + 0.30 × 6 + 0.10 × 12 = 3.7 months, **€15.4k**, the upper bound on what research is worth.
+- Focused study: 1.8 months, **€7.5k**. Full system: 2.7 months, **€11.2k**.
 
-Expected gross value = 0.20 × 2,430 + 0.30 × 810 + 0.25 × 360 + 0.15 × 0 − 0.10 × 810 = **€738** (16 h of avoided rework).
+Rate: €45 per active hour, the market cost of the role this work needs (data engineering, advertised minimum, ADJMI snapshot 2026-10-18; ADJMI = Austria Data-Job Market Intelligence). Hours: owner scope estimate, 240 h, including first-year maintenance [estimate]. Hosting €0.
 
-Total cost = build hours × €45 + maintenance (10 % of build hours a year, for half a year); hosting €0.
-
-| Case | Hours | Build | Maintenance | Total cost | Multiple |
-|---|---|---|---|---|---|
-| Central | 28 h | €1,260 | €63 | €1,323 | 0.56× |
-| 0.5× hours | 14 h | €630 | €32 | €662 | 1.1× |
-| 1.5× hours | 42 h | €1,890 | €95 | €1,985 | 0.37× |
+| Case | Full system: hours · cost · multiple | Focused study: hours · cost · multiple |
+|---|---|---|
+| Central | 240 · €10,800 · 1.0× | 40 · €1,800 · 4.2× |
+| 0.5× hours | 120 · €5,400 · 2.1× | 20 · €900 · 8.3× |
+| 1.5× hours | 360 · €16,200 · 0.69× | 60 · €2,700 · 2.8× |
 
 ## Verdict
 
-**fails financial hurdle** at 0.56× central, against 4×.
+**Fails financial hurdle** for the full system as built: 1.0× central, 0.81× at a rate 30 % higher (the inputs are floors). The focused study passes at the central case, 4.2×, and fails at 1.5× hours or a 30 % higher rate (3.3×).
 
-* Maximum affordable cost: €738 / 4 = **€180**, about 4 h.
-* Break-even driver, expected avoided rework: 29 h for 1×, 118 h for 4× (two thirds of the planned hours).
-* Rate check: at a rate 30 % higher (€58), value and cost scale together; the central multiple stays 0.56×.
-* Earlier earnings are not monetised: hiring evidence is shared across the portfolio and is not added here.
-* Reverses if two thirds of the planned project hours are expected to be redirected, or if the planned project work is about eight times larger (about 1,450 h) at the same shares.
+- Maximum affordable cost of the full system: €11.2k ÷ 4 = **€2.8k**.
+- Break-even driver, expected months gained: 2.6 for 1×, 10.4 for 4×. Even preventing the worst case recovers at most 9 months in that state, so on one job search the full system cannot reach 4×.
+- Decision advantage: the focused study nets +€5.7k; the full system +€0.4k.
+
+Reversing assumptions:
+
+1. The full system serves more than one decision: later project selection, or other job seekers. Together, the extra uses must add about 7.7 months' worth of expected gain to reach 4×.
+2. The focused study runs past about 42 h.
 
 ## Recommendation
 
-**smaller version**: hand-tag a sample of ads within about 4 h. A full pipeline built for other portfolio reasons keeps this verdict.
-
-Measure: active hours from the first private commit, project hours redirected by the data (decision-log entries), applications and responses by family and region (`schemas/application_log_schema.md`), weeks to first offer.
+**Smaller version**: the focused study first; extend only if it shows the plan is substantially off. Measure: hours; decisions changed (log entries); preparation hours redirected; applications and responses by family and region (`schemas/application_log_schema.md`); months to first offer.
 
 Actuals and lessons: [lessons-learned.md](lessons-learned.md).

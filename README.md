@@ -66,7 +66,7 @@ Vienna holds <!--m:vienna_core_primary_state-->315<!--/m--> of <!--m:core_n-->69
 
 ## Why this project exists
 
-A data-job seeker in Graz could not see which data roles, regions and skills Austrian ads ask for. Portfolio hours risked going to the wrong skills. The intended value is avoided rework: project hours aimed at skills the ads name. The pre-build evaluation expected €738 of avoided rework against a total cost of €1,323, at the market cost of the role this work needs. It fails the financial hurdle (0.56×, against 4×). Observed result: Not yet measured. Details: [economic evaluation](docs/economic-evaluation.md).
+A data-job seeker in Graz could not see which roles, regions and skills Austrian ads ask for. Preparing for the wrong path can cost months of employment, up to a lost year. The pre-build evaluation put that cost of not knowing at about €15k, and expected the full system to recover €11.2k against a cost of €10,800. That is 1.0×, so it fails the financial hurdle; a 40-hour focused study passes at 4.2×. Observed result: Not yet measured. Details: [economic evaluation](docs/economic-evaluation.md).
 
 ## Start here
 
