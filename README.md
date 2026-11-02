@@ -6,7 +6,7 @@
 
 [![tests](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/tests.yml)
 [![README quality gate](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml/badge.svg)](https://github.com/RafaelBraga-Kribitz/austria-data-job-market-intelligence/actions/workflows/readme-quality.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-5A5C61?labelColor=26282C)](LICENSE)
+[![Licence: MIT](https://img.shields.io/badge/license-MIT-5A5C61?labelColor=26282C)](LICENSE)
 [![Docs and aggregates: CC BY 4.0](https://img.shields.io/badge/docs%20%26%20aggregates-CC%20BY%204.0-5A5C61?labelColor=26282C)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-5A5C61?labelColor=26282C)](requirements.txt)
 [![Status: Complete](https://img.shields.io/badge/status-Complete-5A5C61?labelColor=26282C)](#status)
@@ -272,7 +272,7 @@ Tests gate the findings: they compare each chart sentence with its source table.
 
 All three evidence parts (employer demand, candidate supply and the gap between them) and the <!--m:visual_questions_n-->45<!--/m--> charts exist and pass their tests. Demand snapshot <!--m:_meta.demand_vintage-->2026-10-18<!--/m-->, supply snapshot <!--m:_meta.supply_vintage-->2026-09-17<!--/m-->. Next milestone: a second supply snapshot, to give the candidate-supply data a time axis.
 
-## License
+## Licence
 
 Code (`src/`, `tests/`, `config/`): MIT. Documents and aggregated outputs (tables, JSON summaries, figures, digest): CC BY 4.0. Eurostat raw data: Commission reuse policy, attribution required. Tables derived from the Stack Overflow survey: produced works of Open Database License (ODbL) data. Vendored Lato fonts: SIL OFL 1.1. No licence is granted for third-party content. The exact split is in [LICENSE](LICENSE). Cite as in [CITATION.cff](CITATION.cff); there is no DOI (digital object identifier).
 
