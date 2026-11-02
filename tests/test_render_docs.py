@@ -194,3 +194,32 @@ def test_living_documents_are_current_against_the_registry_built_from_the_output
     stale = [(f, s["stale"][:3]) for f, s in result["files"].items() if s["stale"]]
     assert result["errors"] == [], result["errors"][:5]
     assert stale == [], f"documents out of date: run python src/reporting/metrics_registry.py && python src/reporting/render_docs.py -- {stale[:2]}"
+
+
+@pytest.mark.parametrize(
+    ('filename', 'money', 'regions', 'precision'),
+    [
+        ('README.pt-BR.md', '€47,8 mil', 'Estíria (+34 %) e Viena (+15 %)', '92,5 %'),
+        ('README.de-AT.md', '€47,8 Tsd.', 'Steiermark (+34 %) und Wien (+15 %)', '92,5 %'),
+    ],
+)
+def test_localized_readme_markers_follow_source_values(tmp_path, filename, money, regions, precision):
+    metrics = {
+        **METRICS,
+        'jb_growing_regions': {'value': 'Styria (+34 %) and Vienna (+15 %)',
+                               'display': 'Styria (+34 %) and Vienna (+15 %)', 'unit': 'text'},
+        'supply_precision_project_lenient': {'value': 0.925, 'display': '92.5 %', 'unit': 'share'},
+    }
+    original = ('Localized prose stays intact.\n' + m('floor_analytics_eur', money) + '\n'
+                + m('jb_growing_regions', regions) + '\n'
+                + m('supply_precision_project_lenient', precision, 'pct1') + '\n')
+    root = write_tree(tmp_path, {filename: original}, metrics)
+    result = rd.process(root, metrics, check=True)
+    assert result['errors'] == []
+    assert result['stale_total'] == 0
+    metrics['floor_analytics_eur'] = {'value': 52000.0, 'display': '€52.0k', 'unit': 'eur'}
+    assert rd.process(root, metrics, check=True)['stale_total'] == 1
+    rd.process(root, metrics, check=False)
+    expected = original.replace(money, '€52,0 mil' if filename.endswith('pt-BR.md') else '€52,0 Tsd.')
+    assert (root / filename).read_text(encoding='utf-8') == expected
+    assert rd.process(root, metrics, check=True)['stale_total'] == 0
