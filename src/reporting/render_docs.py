@@ -68,6 +68,7 @@ MARKER_RE = re.compile(r"<!--m:([A-Za-z_][A-Za-z0-9_.]*)(?::([A-Za-z0-9_+]+))?--
 OPEN_RE = re.compile(r"<!--m:")
 FENCE_RE = re.compile(r"^(```|~~~).*?^\1[^\n]*$", re.S | re.M)
 INLINE_RE = re.compile(r"`[^`\n]+`")
+README_LOCALES = {"README.pt-BR.md": "pt-BR", "README.de-AT.md": "de-AT"}
 
 
 def masked_spans(text: str) -> list[tuple[int, int]]:
@@ -87,7 +88,7 @@ def is_excluded(rel: str) -> str | None:
     return None
 
 
-def resolve(key: str, fmt: str | None, metrics: dict) -> str:
+def _resolve_english(key: str, fmt: str | None, metrics: dict) -> str:
     """The text a marker must carry. Raises KeyError / ValueError for an unknown key or format."""
     if fmt is not None and not (fmt in KNOWN_FORMATS or re.fullmatch(r"\+\d+d", fmt)):
         raise ValueError(f"unknown format {fmt!r} (known: {' '.join(KNOWN_FORMATS)} and +Nd)")
@@ -104,7 +105,28 @@ def resolve(key: str, fmt: str | None, metrics: dict) -> str:
     return entry["display"] if fmt is None else fmt_value(entry["value"], entry["unit"], fmt)
 
 
-def render_text(text: str, metrics: dict) -> tuple[str, dict]:
+def resolve(key: str, fmt: str | None, metrics: dict, *, locale: str = "en-UK") -> str:
+    """Render the same authoritative value using the README's language conventions."""
+    display = _resolve_english(key, fmt, metrics)
+    if locale == "en-UK":
+        return display
+    if locale not in README_LOCALES.values():
+        raise ValueError(f"unknown README locale {locale!r}")
+    if key == "jb_growing_regions":
+        names = {"pt-BR": {"Styria": "Estíria", "Vienna": "Viena", "Upper Austria": "Alta Áustria"},
+                 "de-AT": {"Styria": "Steiermark", "Vienna": "Wien", "Upper Austria": "Oberösterreich"}}
+        for english, translated in names[locale].items():
+            display = display.replace(english, translated)
+        return display.replace("none of ", "nenhuma de " if locale == "pt-BR" else "keine der Regionen ").replace(
+            " and ", " e " if locale == "pt-BR" else " und ")
+    unit = "date" if key.startswith("_meta.") else metrics[key]["unit"]
+    if unit not in {"text", "date"}:
+        display = re.sub(r"(?<=\d)[.,](?=\d)", lambda match: "," if match[0] == "." else ".", display)
+        display = re.sub(r"(?<=\d)k$", " mil" if locale == "pt-BR" else " Tsd.", display)
+    return display
+
+
+def render_text(text: str, metrics: dict, *, locale: str = "en-UK") -> tuple[str, dict]:
     """Return (new_text, stats). stats: markers, stale (list of (key, old, new)), errors (list of strings)."""
     stats = {"markers": 0, "stale": [], "errors": []}
     spans = masked_spans(text)
@@ -117,7 +139,7 @@ def render_text(text: str, metrics: dict) -> tuple[str, dict]:
         key, fmt, old = m.group(1), m.group(2), m.group(3)
         stats["markers"] += 1
         try:
-            new = resolve(key, fmt, metrics)
+            new = resolve(key, fmt, metrics, locale=locale)
         except (KeyError, ValueError) as exc:
             line = text.count("\n", 0, m.start()) + 1
             stats["errors"].append(f"line {line}: {exc.args[0] if exc.args else exc}")
@@ -168,7 +190,8 @@ def process(root: Path, metrics: dict, *, check: bool) -> dict:
         if reason:
             result["errors"].append(f"{rel}: contains metric markers but is on the EXCLUDE list ({reason})")
             continue
-        new_text, stats = render_text(text, metrics)
+        locale = README_LOCALES.get(rel, "en-UK")
+        new_text, stats = render_text(text, metrics, locale=locale)
         result["files"][rel] = stats
         result["markers_total"] += stats["markers"]
         result["stale_total"] += len(stats["stale"])

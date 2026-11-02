@@ -1,5 +1,7 @@
 [🇧🇷 PT-BR](README.pt-BR.md) · [🇬🇧 EN-UK](README.md) · [🇦🇹 DE-AT](README.de-AT.md)
 
+<!-- Metric markers use outputs/metrics.json; their display locale follows the README filename. -->
+
 # Austria Data-Job Market Intelligence
 
 ![Austria Data-Job Market Intelligence: Austrian data-role job ads against public GitHub evidence, which skills the ads mention, which ones portfolios rarely show, and where the jobs are.](docs/assets/hero.png)
