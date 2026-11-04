@@ -29,10 +29,10 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 57.972969 252.875 
-L 672.12 252.875 
-L 672.12 94.44 
-L 57.972969 94.44 
+    <path d="M 72.73 236.82 
+L 672.12 236.82 
+L 672.12 125.64 
+L 72.73 125.64 
 z
 " style="fill: #e4e6ea"/>
    </g>
@@ -41,7 +41,7 @@ z
      <g id="line2d_1"/>
      <g id="text_1">
       <!-- 2020 -->
-      <g style="fill: #5a5c61" transform="translate(44.772969 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(59.53 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-109" d="M 320 0 
 Q 320 480 470 867 
@@ -119,7 +119,7 @@ z
      <g id="line2d_2"/>
      <g id="text_2">
       <!-- 2021 -->
-      <g style="fill: #5a5c61" transform="translate(137.825549 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(150.346667 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-108" d="M 1818 0 
 L 1818 3366 
@@ -152,7 +152,7 @@ z
      <g id="line2d_3"/>
      <g id="text_3">
       <!-- 2022 -->
-      <g style="fill: #5a5c61" transform="translate(230.87813 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(241.163333 253.875) scale(0.11 -0.11)">
        <use xlink:href="#BKribitzMono-Regular-109"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(60 0)"/>
        <use xlink:href="#BKribitzMono-Regular-109" transform="translate(120 0)"/>
@@ -164,7 +164,7 @@ z
      <g id="line2d_4"/>
      <g id="text_4">
       <!-- 2023 -->
-      <g style="fill: #5a5c61" transform="translate(323.93071 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(331.98 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-10a" d="M 1882 -102 
 Q 1146 -102 749 253 
@@ -216,7 +216,7 @@ z
      <g id="line2d_5"/>
      <g id="text_5">
       <!-- 2024 -->
-      <g style="fill: #5a5c61" transform="translate(416.983291 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(422.796667 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-10b" d="M 2483 0 
 L 2483 986 
@@ -249,7 +249,7 @@ z
      <g id="line2d_6"/>
      <g id="text_6">
       <!-- 2025 -->
-      <g style="fill: #5a5c61" transform="translate(510.035871 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(513.613333 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-10c" d="M 1907 -102 
 Q 1466 -102 1136 58 
@@ -295,7 +295,7 @@ z
      <g id="line2d_7"/>
      <g id="text_7">
       <!-- 2026 -->
-      <g style="fill: #5a5c61" transform="translate(603.088452 269.93) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(604.43 253.875) scale(0.11 -0.11)">
        <defs>
         <path id="BKribitzMono-Regular-10d" d="M 1933 -102 
 Q 1421 -102 1059 131 
@@ -348,7 +348,7 @@ z
     </g>
     <g id="text_8">
      <!-- Year -->
-     <g style="fill: #5a5c61" transform="translate(354.063672 290.23) scale(0.11 -0.11)">
+     <g style="fill: #5a5c61" transform="translate(361.442187 274.175) scale(0.11 -0.11)">
       <defs>
        <path id="BKribitz-Regular-77" d="M 1568 0 
 L 1568 1856 
@@ -460,14 +460,14 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_8">
-      <path d="M 57.972969 224.849585 
-L 672.12 224.849585 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
+      <path d="M 72.73 217.153477 
+L 672.12 217.153477 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
      </g>
      <g id="line2d_9"/>
      <g id="text_9">
       <!-- 100 -->
-      <g style="fill: #5a5c61" transform="translate(32.172969 230.377085) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(46.93 222.680977) scale(0.11 -0.11)">
        <use xlink:href="#BKribitzMono-Regular-108"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(60 0)"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(120 0)"/>
@@ -476,14 +476,14 @@ L 672.12 224.849585
     </g>
     <g id="ytick_2">
      <g id="line2d_10">
-      <path d="M 57.972969 187.146592 
-L 672.12 187.146592 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
+      <path d="M 72.73 190.695821 
+L 672.12 190.695821 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
      </g>
      <g id="line2d_11"/>
      <g id="text_10">
       <!-- 150 -->
-      <g style="fill: #5a5c61" transform="translate(32.172969 192.674092) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(46.93 196.223321) scale(0.11 -0.11)">
        <use xlink:href="#BKribitzMono-Regular-108"/>
        <use xlink:href="#BKribitzMono-Regular-10c" transform="translate(60 0)"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(120 0)"/>
@@ -492,14 +492,14 @@ L 672.12 187.146592
     </g>
     <g id="ytick_3">
      <g id="line2d_12">
-      <path d="M 57.972969 149.4436 
-L 672.12 149.4436 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
+      <path d="M 72.73 164.238165 
+L 672.12 164.238165 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
      </g>
      <g id="line2d_13"/>
      <g id="text_11">
       <!-- 200 -->
-      <g style="fill: #5a5c61" transform="translate(32.172969 154.9711) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(46.93 169.765665) scale(0.11 -0.11)">
        <use xlink:href="#BKribitzMono-Regular-109"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(60 0)"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(120 0)"/>
@@ -508,14 +508,14 @@ L 672.12 149.4436
     </g>
     <g id="ytick_4">
      <g id="line2d_14">
-      <path d="M 57.972969 111.740607 
-L 672.12 111.740607 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
+      <path d="M 72.73 137.780509 
+L 672.12 137.780509 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #c2c4ca; stroke-width: 0.75"/>
      </g>
      <g id="line2d_15"/>
      <g id="text_12">
       <!-- 250 -->
-      <g style="fill: #5a5c61" transform="translate(32.172969 117.268107) scale(0.11 -0.11)">
+      <g style="fill: #5a5c61" transform="translate(46.93 143.308009) scale(0.11 -0.11)">
        <use xlink:href="#BKribitzMono-Regular-109"/>
        <use xlink:href="#BKribitzMono-Regular-10c" transform="translate(60 0)"/>
        <use xlink:href="#BKribitzMono-Regular-107" transform="translate(120 0)"/>
@@ -523,8 +523,8 @@ L 672.12 111.740607
      </g>
     </g>
     <g id="text_13">
-     <!-- Yearly ads, 2020 = 100 -->
-     <g style="fill: #5a5c61" transform="translate(22.927969 230.922813) rotate(-90) scale(0.11 -0.11)">
+     <!-- Yearly ads, -->
+     <g style="fill: #5a5c61" transform="translate(23.385 207.892969) rotate(-90) scale(0.11 -0.11)">
       <defs>
        <path id="BKribitz-Regular-be" d="M 1178 0 
 Q 883 0 697 153 
@@ -634,6 +634,22 @@ L 621 -998
 L 301 -998 
 z
 " transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#BKribitz-Regular-77"/>
+      <use xlink:href="#BKribitz-Regular-98" transform="translate(50.59375 0)"/>
+      <use xlink:href="#BKribitz-Regular-81" transform="translate(107.09375 0)"/>
+      <use xlink:href="#BKribitz-Regular-d8" transform="translate(161.78125 0)"/>
+      <use xlink:href="#BKribitz-Regular-be" transform="translate(196.6875 0)"/>
+      <use xlink:href="#BKribitz-Regular-f8" transform="translate(220.984375 0)"/>
+      <use xlink:href="#BKribitz-Regular-154" transform="translate(274.6875 0)"/>
+      <use xlink:href="#BKribitz-Regular-81" transform="translate(299.6875 0)"/>
+      <use xlink:href="#BKribitz-Regular-94" transform="translate(354.1875 0)"/>
+      <use xlink:href="#BKribitz-Regular-dc" transform="translate(412.6875 0)"/>
+      <use xlink:href="#BKribitz-Regular-15c" transform="translate(464.6875 0)"/>
+     </g>
+     <!-- 2020 = 100 -->
+     <g style="fill: #5a5c61" transform="translate(37.685 210.457344) rotate(-90) scale(0.11 -0.11)">
+      <defs>
        <path id="BKribitz-Regular-10f" d="M 384 0 
 Q 384 480 534 867 
 Q 685 1254 1065 1606 
@@ -727,39 +743,27 @@ L 1203 0
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#BKribitz-Regular-77"/>
-      <use xlink:href="#BKribitz-Regular-98" transform="translate(50.59375 0)"/>
-      <use xlink:href="#BKribitz-Regular-81" transform="translate(107.09375 0)"/>
-      <use xlink:href="#BKribitz-Regular-d8" transform="translate(161.78125 0)"/>
-      <use xlink:href="#BKribitz-Regular-be" transform="translate(196.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-f8" transform="translate(220.984375 0)"/>
-      <use xlink:href="#BKribitz-Regular-154" transform="translate(274.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-81" transform="translate(299.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-94" transform="translate(354.1875 0)"/>
-      <use xlink:href="#BKribitz-Regular-dc" transform="translate(412.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-15c" transform="translate(464.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-154" transform="translate(484.78125 0)"/>
-      <use xlink:href="#BKribitz-Regular-10f" transform="translate(509.78125 0)"/>
-      <use xlink:href="#BKribitz-Regular-10d" transform="translate(571.6875 0)"/>
-      <use xlink:href="#BKribitz-Regular-10f" transform="translate(637.984375 0)"/>
-      <use xlink:href="#BKribitz-Regular-10d" transform="translate(699.890625 0)"/>
-      <use xlink:href="#BKribitz-Regular-154" transform="translate(766.1875 0)"/>
-      <use xlink:href="#BKribitz-Regular-1a6" transform="translate(791.1875 0)"/>
-      <use xlink:href="#BKribitz-Regular-154" transform="translate(845.1875 0)"/>
-      <use xlink:href="#BKribitz-Regular-10e" transform="translate(870.1875 0)"/>
-      <use xlink:href="#BKribitz-Regular-10d" transform="translate(907.59375 0)"/>
-      <use xlink:href="#BKribitz-Regular-10d" transform="translate(974.890625 0)"/>
+      <use xlink:href="#BKribitz-Regular-10f"/>
+      <use xlink:href="#BKribitz-Regular-10d" transform="translate(61.90625 0)"/>
+      <use xlink:href="#BKribitz-Regular-10f" transform="translate(128.203125 0)"/>
+      <use xlink:href="#BKribitz-Regular-10d" transform="translate(190.109375 0)"/>
+      <use xlink:href="#BKribitz-Regular-154" transform="translate(256.40625 0)"/>
+      <use xlink:href="#BKribitz-Regular-1a6" transform="translate(281.40625 0)"/>
+      <use xlink:href="#BKribitz-Regular-154" transform="translate(335.40625 0)"/>
+      <use xlink:href="#BKribitz-Regular-10e" transform="translate(360.40625 0)"/>
+      <use xlink:href="#BKribitz-Regular-10d" transform="translate(397.8125 0)"/>
+      <use xlink:href="#BKribitz-Regular-10d" transform="translate(465.109375 0)"/>
      </g>
     </g>
    </g>
    <g id="line2d_16">
-    <path d="M 57.972969 224.849585 
-L 151.025549 204.644045 
-L 244.07813 175.807253 
-L 337.13071 214.412942 
-L 430.183291 233.975465 
-L 523.235871 245.673409 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #26282c; stroke-width: 1.6"/>
+    <path d="M 72.73 217.153477 
+L 163.546667 202.974464 
+L 254.363333 182.738566 
+L 345.18 209.829678 
+L 435.996667 223.557462 
+L 526.813333 231.766364 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #26282c; stroke-width: 1.6"/>
     <defs>
      <path id="m59b9b7b2c7" d="M 0 2 
 C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
@@ -773,23 +777,23 @@ C -1.03916 1.789267 -0.530406 2 0 2
 z
 " style="stroke: #26282c"/>
     </defs>
-    <g clip-path="url(#pc74b84146d)">
-     <use xlink:href="#m59b9b7b2c7" x="57.972969" y="224.849585" style="fill: #26282c; stroke: #26282c"/>
-     <use xlink:href="#m59b9b7b2c7" x="151.025549" y="204.644045" style="fill: #26282c; stroke: #26282c"/>
-     <use xlink:href="#m59b9b7b2c7" x="244.07813" y="175.807253" style="fill: #26282c; stroke: #26282c"/>
-     <use xlink:href="#m59b9b7b2c7" x="337.13071" y="214.412942" style="fill: #26282c; stroke: #26282c"/>
-     <use xlink:href="#m59b9b7b2c7" x="430.183291" y="233.975465" style="fill: #26282c; stroke: #26282c"/>
-     <use xlink:href="#m59b9b7b2c7" x="523.235871" y="245.673409" style="fill: #26282c; stroke: #26282c"/>
+    <g clip-path="url(#p79971b6227)">
+     <use xlink:href="#m59b9b7b2c7" x="72.73" y="217.153477" style="fill: #26282c; stroke: #26282c"/>
+     <use xlink:href="#m59b9b7b2c7" x="163.546667" y="202.974464" style="fill: #26282c; stroke: #26282c"/>
+     <use xlink:href="#m59b9b7b2c7" x="254.363333" y="182.738566" style="fill: #26282c; stroke: #26282c"/>
+     <use xlink:href="#m59b9b7b2c7" x="345.18" y="209.829678" style="fill: #26282c; stroke: #26282c"/>
+     <use xlink:href="#m59b9b7b2c7" x="435.996667" y="223.557462" style="fill: #26282c; stroke: #26282c"/>
+     <use xlink:href="#m59b9b7b2c7" x="526.813333" y="231.766364" style="fill: #26282c; stroke: #26282c"/>
     </g>
    </g>
    <g id="line2d_17">
-    <path d="M 57.972969 224.849585 
-L 151.025549 180.219655 
-L 244.07813 132.056523 
-L 337.13071 163.390453 
-L 430.183291 193.143739 
-L 523.235871 213.320186 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #5a5c61; stroke-width: 1.6"/>
+    <path d="M 72.73 217.153477 
+L 163.546667 185.834919 
+L 254.363333 152.036977 
+L 345.18 174.025214 
+L 435.996667 194.904252 
+L 526.813333 209.062849 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #5a5c61; stroke-width: 1.6"/>
     <defs>
      <path id="me57eddee88" d="M 0 2 
 C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
@@ -803,23 +807,23 @@ C -1.03916 1.789267 -0.530406 2 0 2
 z
 " style="stroke: #5a5c61"/>
     </defs>
-    <g clip-path="url(#pc74b84146d)">
-     <use xlink:href="#me57eddee88" x="57.972969" y="224.849585" style="fill: #5a5c61; stroke: #5a5c61"/>
-     <use xlink:href="#me57eddee88" x="151.025549" y="180.219655" style="fill: #5a5c61; stroke: #5a5c61"/>
-     <use xlink:href="#me57eddee88" x="244.07813" y="132.056523" style="fill: #5a5c61; stroke: #5a5c61"/>
-     <use xlink:href="#me57eddee88" x="337.13071" y="163.390453" style="fill: #5a5c61; stroke: #5a5c61"/>
-     <use xlink:href="#me57eddee88" x="430.183291" y="193.143739" style="fill: #5a5c61; stroke: #5a5c61"/>
-     <use xlink:href="#me57eddee88" x="523.235871" y="213.320186" style="fill: #5a5c61; stroke: #5a5c61"/>
+    <g clip-path="url(#p79971b6227)">
+     <use xlink:href="#me57eddee88" x="72.73" y="217.153477" style="fill: #5a5c61; stroke: #5a5c61"/>
+     <use xlink:href="#me57eddee88" x="163.546667" y="185.834919" style="fill: #5a5c61; stroke: #5a5c61"/>
+     <use xlink:href="#me57eddee88" x="254.363333" y="152.036977" style="fill: #5a5c61; stroke: #5a5c61"/>
+     <use xlink:href="#me57eddee88" x="345.18" y="174.025214" style="fill: #5a5c61; stroke: #5a5c61"/>
+     <use xlink:href="#me57eddee88" x="435.996667" y="194.904252" style="fill: #5a5c61; stroke: #5a5c61"/>
+     <use xlink:href="#me57eddee88" x="526.813333" y="209.062849" style="fill: #5a5c61; stroke: #5a5c61"/>
     </g>
    </g>
    <g id="line2d_18">
-    <path d="M 57.972969 224.849585 
-L 151.025549 177.047576 
-L 244.07813 101.641591 
-L 337.13071 173.456815 
-L 430.183291 210.48654 
-L 523.235871 233.15322 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #9ea0a5; stroke-width: 1.6"/>
+    <path d="M 72.73 217.153477 
+L 163.546667 183.608948 
+L 254.363333 130.693636 
+L 345.18 181.089172 
+L 435.996667 207.074369 
+L 526.813333 222.98046 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #9ea0a5; stroke-width: 1.6"/>
     <defs>
      <path id="m5b80957cc7" d="M 0 2 
 C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
@@ -833,23 +837,23 @@ C -1.03916 1.789267 -0.530406 2 0 2
 z
 " style="stroke: #9ea0a5"/>
     </defs>
-    <g clip-path="url(#pc74b84146d)">
-     <use xlink:href="#m5b80957cc7" x="57.972969" y="224.849585" style="fill: #9ea0a5; stroke: #9ea0a5"/>
-     <use xlink:href="#m5b80957cc7" x="151.025549" y="177.047576" style="fill: #9ea0a5; stroke: #9ea0a5"/>
-     <use xlink:href="#m5b80957cc7" x="244.07813" y="101.641591" style="fill: #9ea0a5; stroke: #9ea0a5"/>
-     <use xlink:href="#m5b80957cc7" x="337.13071" y="173.456815" style="fill: #9ea0a5; stroke: #9ea0a5"/>
-     <use xlink:href="#m5b80957cc7" x="430.183291" y="210.48654" style="fill: #9ea0a5; stroke: #9ea0a5"/>
-     <use xlink:href="#m5b80957cc7" x="523.235871" y="233.15322" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+    <g clip-path="url(#p79971b6227)">
+     <use xlink:href="#m5b80957cc7" x="72.73" y="217.153477" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+     <use xlink:href="#m5b80957cc7" x="163.546667" y="183.608948" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+     <use xlink:href="#m5b80957cc7" x="254.363333" y="130.693636" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+     <use xlink:href="#m5b80957cc7" x="345.18" y="181.089172" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+     <use xlink:href="#m5b80957cc7" x="435.996667" y="207.074369" style="fill: #9ea0a5; stroke: #9ea0a5"/>
+     <use xlink:href="#m5b80957cc7" x="526.813333" y="222.98046" style="fill: #9ea0a5; stroke: #9ea0a5"/>
     </g>
    </g>
    <g id="line2d_19">
-    <path d="M 57.972969 224.849585 
-L 151.025549 210.037695 
-L 244.07813 157.859446 
-L 337.13071 207.00799 
-L 430.183291 209.027793 
-L 523.235871 199.265411 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke: #2f4be0; stroke-width: 2.6"/>
+    <path d="M 72.73 217.153477 
+L 163.546667 206.759397 
+L 254.363333 170.143891 
+L 345.18 204.633336 
+L 435.996667 206.05071 
+L 526.813333 199.200067 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke: #2f4be0; stroke-width: 2.6"/>
     <defs>
      <path id="mae364ac266" d="M 0 2 
 C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
@@ -863,33 +867,33 @@ C -1.03916 1.789267 -0.530406 2 0 2
 z
 " style="stroke: #2f4be0"/>
     </defs>
-    <g clip-path="url(#pc74b84146d)">
-     <use xlink:href="#mae364ac266" x="57.972969" y="224.849585" style="fill: #2f4be0; stroke: #2f4be0"/>
-     <use xlink:href="#mae364ac266" x="151.025549" y="210.037695" style="fill: #2f4be0; stroke: #2f4be0"/>
-     <use xlink:href="#mae364ac266" x="244.07813" y="157.859446" style="fill: #2f4be0; stroke: #2f4be0"/>
-     <use xlink:href="#mae364ac266" x="337.13071" y="207.00799" style="fill: #2f4be0; stroke: #2f4be0"/>
-     <use xlink:href="#mae364ac266" x="430.183291" y="209.027793" style="fill: #2f4be0; stroke: #2f4be0"/>
-     <use xlink:href="#mae364ac266" x="523.235871" y="199.265411" style="fill: #2f4be0; stroke: #2f4be0"/>
+    <g clip-path="url(#p79971b6227)">
+     <use xlink:href="#mae364ac266" x="72.73" y="217.153477" style="fill: #2f4be0; stroke: #2f4be0"/>
+     <use xlink:href="#mae364ac266" x="163.546667" y="206.759397" style="fill: #2f4be0; stroke: #2f4be0"/>
+     <use xlink:href="#mae364ac266" x="254.363333" y="170.143891" style="fill: #2f4be0; stroke: #2f4be0"/>
+     <use xlink:href="#mae364ac266" x="345.18" y="204.633336" style="fill: #2f4be0; stroke: #2f4be0"/>
+     <use xlink:href="#mae364ac266" x="435.996667" y="206.05071" style="fill: #2f4be0; stroke: #2f4be0"/>
+     <use xlink:href="#mae364ac266" x="526.813333" y="199.200067" style="fill: #2f4be0; stroke: #2f4be0"/>
     </g>
    </g>
    <g id="line2d_20">
-    <path d="M 57.972969 224.849585 
-L 672.12 224.849585 
-" clip-path="url(#pc74b84146d)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: #9ea0a5; stroke-width: 0.8"/>
+    <path d="M 72.73 217.153477 
+L 672.12 217.153477 
+" clip-path="url(#p79971b6227)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: #9ea0a5; stroke-width: 0.8"/>
    </g>
    <g id="patch_3">
-    <path d="M 57.972969 252.875 
-L 57.972969 94.44 
+    <path d="M 72.73 236.82 
+L 72.73 125.64 
 " style="fill: none; stroke: #9ea0a5; stroke-width: 0.75; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 57.972969 252.875 
-L 672.12 252.875 
+    <path d="M 72.73 236.82 
+L 672.12 236.82 
 " style="fill: none; stroke: #9ea0a5; stroke-width: 0.75; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_14">
     <!--  Österreich 72 -->
-    <g style="fill: #5a5c61" transform="translate(523.235871 249.045909) scale(0.095 -0.095)">
+    <g style="fill: #5a5c61" transform="translate(526.813333 235.138864) scale(0.095 -0.095)">
      <defs>
       <path id="BKribitzMono-Regular-144" transform="scale(0.015625)"/>
       <path id="BKribitzMono-Regular-4b" d="M 1920 -102 
@@ -1147,7 +1151,7 @@ z
    </g>
    <g id="text_15">
     <!--  Wien 115 -->
-    <g style="fill: #5a5c61" transform="translate(523.235871 216.692686) scale(0.095 -0.095)">
+    <g style="fill: #5a5c61" transform="translate(526.813333 212.435349) scale(0.095 -0.095)">
      <defs>
       <path id="BKribitzMono-Regular-73" d="M 691 0 
 L 192 4544 
@@ -1205,7 +1209,7 @@ z
    </g>
    <g id="text_16">
     <!--  Oberösterreich 89 -->
-    <g style="fill: #5a5c61" transform="translate(523.235871 236.52572) scale(0.095 -0.095)">
+    <g style="fill: #5a5c61" transform="translate(526.813333 226.35296) scale(0.095 -0.095)">
      <defs>
       <path id="BKribitzMono-Regular-48" d="M 1920 -102 
 Q 1382 -102 1008 173 
@@ -1416,7 +1420,7 @@ z
    </g>
    <g id="text_17">
     <!--  Steiermark 134 -->
-    <g style="fill: #26282c" transform="translate(523.235871 202.637911) scale(0.095 -0.095)">
+    <g style="fill: #26282c" transform="translate(526.813333 202.572567) scale(0.095 -0.095)">
      <defs>
       <path id="BKribitzMono-Regular-5a" d="M 1990 -102 
 Q 1510 -102 1139 96 
@@ -1570,13 +1574,13 @@ z
    </g>
   </g>
   <g id="line2d_21">
-   <path d="M 6.84 312.555 
-L 677.16 312.555 
+   <path d="M 6.84 296.5 
+L 677.16 296.5 
 " style="fill: none; stroke: #26282c; stroke-width: 0.75"/>
   </g>
   <g id="text_18">
-   <!-- Austria's data-ad flow is -28% vs 2020 and Vienna -48% vs its peak -->
-   <g style="fill: #26282c" transform="translate(6.84 29.999375) scale(0.2 -0.2)">
+   <!-- Austria's data-ad flow is -28% vs 2020 - Styria's change since 2020 -->
+   <g style="fill: #26282c" transform="translate(6.84 29.879062) scale(0.2 -0.2)">
     <defs>
      <path id="BKribitz-Bold-1" d="M 122 0 
 L 1760 4544 
@@ -2026,204 +2030,6 @@ L 1792 832
 Q 1978 717 2221 717 
 z
 " transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-c4" d="M 422 0 
-L 422 3430 
-L 1286 3430 
-L 1325 2426 
-L 1203 2458 
-Q 1254 2842 1411 3072 
-Q 1568 3302 1805 3404 
-Q 2042 3507 2323 3507 
-Q 2694 3507 2953 3347 
-Q 3213 3187 3350 2896 
-Q 3488 2605 3488 2208 
-L 3488 0 
-L 2528 0 
-L 2528 1888 
-Q 2528 2163 2483 2355 
-Q 2438 2547 2323 2646 
-Q 2208 2746 2003 2746 
-Q 1702 2746 1542 2525 
-Q 1382 2304 1382 1888 
-L 1382 0 
-L 422 0 
-z
-" transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-73" d="M 1760 0 
-L 122 4544 
-L 1126 4544 
-L 2336 1094 
-L 3546 4544 
-L 4550 4544 
-L 2906 0 
-L 1760 0 
-z
-" transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-98" d="M 1965 -77 
-Q 1440 -77 1053 144 
-Q 666 365 451 768 
-Q 237 1171 237 1715 
-Q 237 2259 451 2659 
-Q 666 3059 1050 3283 
-Q 1434 3507 1958 3507 
-Q 2470 3507 2848 3283 
-Q 3226 3059 3434 2643 
-Q 3642 2227 3642 1651 
-L 3642 1459 
-L 1229 1459 
-Q 1248 1050 1449 851 
-Q 1651 653 1984 653 
-Q 2227 653 2390 755 
-Q 2554 858 2624 1069 
-L 3590 1011 
-Q 3456 499 3021 211 
-Q 2586 -77 1965 -77 
-z
-M 1229 2048 
-L 2656 2048 
-Q 2637 2426 2448 2611 
-Q 2259 2797 1958 2797 
-Q 1658 2797 1462 2601 
-Q 1267 2406 1229 2048 
-z
-" transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-111" d="M 2413 0 
-L 2413 864 
-L 154 864 
-L 154 1638 
-L 2227 4544 
-L 3386 4544 
-L 3386 1683 
-L 3917 1683 
-L 3917 864 
-L 3386 864 
-L 3386 0 
-L 2413 0 
-z
-M 1184 1683 
-L 2413 1683 
-L 2413 3347 
-L 1184 1683 
-z
-" transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-d5" d="M 422 -960 
-L 422 3430 
-L 1344 3430 
-L 1363 2707 
-L 1286 2739 
-Q 1414 3110 1702 3308 
-Q 1990 3507 2374 3507 
-Q 2854 3507 3174 3270 
-Q 3494 3034 3657 2627 
-Q 3821 2221 3821 1715 
-Q 3821 1216 3657 806 
-Q 3494 397 3171 160 
-Q 2848 -77 2368 -77 
-Q 2118 -77 1900 16 
-Q 1683 109 1526 275 
-Q 1370 442 1299 672 
-L 1382 723 
-L 1382 -960 
-L 422 -960 
-z
-M 2106 659 
-Q 2445 659 2640 940 
-Q 2835 1222 2835 1715 
-Q 2835 2208 2640 2489 
-Q 2445 2771 2106 2771 
-Q 1882 2771 1718 2652 
-Q 1555 2534 1468 2297 
-Q 1382 2061 1382 1715 
-Q 1382 1370 1468 1133 
-Q 1555 896 1718 777 
-Q 1882 659 2106 659 
-z
-" transform="scale(0.015625)"/>
-     <path id="BKribitz-Bold-bb" d="M 422 0 
-L 422 4544 
-L 1382 4544 
-L 1382 2022 
-L 2656 3430 
-L 3808 3430 
-L 2477 2016 
-L 3846 0 
-L 2797 0 
-L 1856 1472 
-L 1382 966 
-L 1382 0 
-L 422 0 
-z
-" transform="scale(0.015625)"/>
-    </defs>
-    <use xlink:href="#BKribitz-Bold-1"/>
-    <use xlink:href="#BKribitz-Bold-e8" transform="translate(70.796875 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(130.5 0)"/>
-    <use xlink:href="#BKribitz-Bold-e3" transform="translate(184.90625 0)"/>
-    <use xlink:href="#BKribitz-Bold-d8" transform="translate(229.90625 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(270 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(297.09375 0)"/>
-    <use xlink:href="#BKribitz-Bold-181" transform="translate(356.5 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(375.796875 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(432.796875 0)"/>
-    <use xlink:href="#BKribitz-Bold-94" transform="translate(455.59375 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(518 0)"/>
-    <use xlink:href="#BKribitz-Bold-e3" transform="translate(573 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(616.703125 0)"/>
-    <use xlink:href="#BKribitz-Bold-16c" transform="translate(676.109375 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(717.8125 0)"/>
-    <use xlink:href="#BKribitz-Bold-94" transform="translate(776.21875 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(839.625 0)"/>
-    <use xlink:href="#BKribitz-Bold-104" transform="translate(862.421875 0)"/>
-    <use xlink:href="#BKribitz-Bold-ca" transform="translate(935.828125 0)"/>
-    <use xlink:href="#BKribitz-Bold-f5" transform="translate(994.71875 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(1079.625 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(1102.421875 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(1129.515625 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(1186.515625 0)"/>
-    <use xlink:href="#BKribitz-Bold-16c" transform="translate(1209.3125 0)"/>
-    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1251.015625 0)"/>
-    <use xlink:href="#BKribitz-Bold-115" transform="translate(1316.3125 0)"/>
-    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(1382.71875 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(1465.21875 0)"/>
-    <use xlink:href="#BKribitz-Bold-f4" transform="translate(1488.015625 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(1546.125 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(1603.125 0)"/>
-    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1625.921875 0)"/>
-    <use xlink:href="#BKribitz-Bold-10d" transform="translate(1691.21875 0)"/>
-    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1760.515625 0)"/>
-    <use xlink:href="#BKribitz-Bold-10d" transform="translate(1825.8125 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(1895.109375 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(1917.90625 0)"/>
-    <use xlink:href="#BKribitz-Bold-c4" transform="translate(1977.3125 0)"/>
-    <use xlink:href="#BKribitz-Bold-94" transform="translate(2037.109375 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(2100.515625 0)"/>
-    <use xlink:href="#BKribitz-Bold-73" transform="translate(2123.3125 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(2193.609375 0)"/>
-    <use xlink:href="#BKribitz-Bold-98" transform="translate(2220.703125 0)"/>
-    <use xlink:href="#BKribitz-Bold-c4" transform="translate(2280.203125 0)"/>
-    <use xlink:href="#BKribitz-Bold-c4" transform="translate(2339.890625 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(2399.6875 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(2459.09375 0)"/>
-    <use xlink:href="#BKribitz-Bold-16c" transform="translate(2481.890625 0)"/>
-    <use xlink:href="#BKribitz-Bold-111" transform="translate(2524.59375 0)"/>
-    <use xlink:href="#BKribitz-Bold-115" transform="translate(2590.1875 0)"/>
-    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(2656.59375 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(2739.09375 0)"/>
-    <use xlink:href="#BKribitz-Bold-f4" transform="translate(2761.890625 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2820 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(2877 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(2899.796875 0)"/>
-    <use xlink:href="#BKribitz-Bold-e3" transform="translate(2924.984375 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2968.078125 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(3025.078125 0)"/>
-    <use xlink:href="#BKribitz-Bold-d5" transform="translate(3047.875 0)"/>
-    <use xlink:href="#BKribitz-Bold-98" transform="translate(3110.28125 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(3170.375 0)"/>
-    <use xlink:href="#BKribitz-Bold-bb" transform="translate(3228.984375 0)"/>
-   </g>
-   <!-- - Styria is +34% vs 2020 -->
-   <g style="fill: #26282c" transform="translate(6.84 61.199375) scale(0.2 -0.2)">
-    <defs>
      <path id="BKribitz-Bold-5b" d="M 2272 -102 
 Q 1683 -102 1260 96 
 Q 838 294 601 652 
@@ -2282,6 +2088,227 @@ Q 1747 -960 1357 -960
 L 704 -960 
 z
 " transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-8e" d="M 1978 -77 
+Q 1453 -77 1062 144 
+Q 672 365 454 768 
+Q 237 1171 237 1715 
+Q 237 2259 454 2659 
+Q 672 3059 1062 3283 
+Q 1453 3507 1978 3507 
+Q 2432 3507 2793 3347 
+Q 3155 3187 3379 2886 
+Q 3603 2586 3654 2163 
+L 2662 2118 
+Q 2618 2438 2435 2601 
+Q 2253 2765 1978 2765 
+Q 1619 2765 1420 2489 
+Q 1222 2214 1222 1715 
+Q 1222 1216 1420 937 
+Q 1619 659 1978 659 
+Q 2253 659 2438 828 
+Q 2624 998 2662 1344 
+L 3654 1306 
+Q 3610 883 3389 572 
+Q 3168 262 2806 92 
+Q 2445 -77 1978 -77 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-a9" d="M 422 0 
+L 422 4544 
+L 1382 4544 
+L 1382 2630 
+L 1254 2630 
+Q 1306 2931 1456 3123 
+Q 1606 3315 1833 3411 
+Q 2061 3507 2330 3507 
+Q 2714 3507 2970 3340 
+Q 3226 3174 3357 2880 
+Q 3488 2586 3488 2208 
+L 3488 0 
+L 2528 0 
+L 2528 1978 
+Q 2528 2362 2409 2554 
+Q 2291 2746 2010 2746 
+Q 1715 2746 1548 2547 
+Q 1382 2349 1382 1952 
+L 1382 0 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-c4" d="M 422 0 
+L 422 3430 
+L 1286 3430 
+L 1325 2426 
+L 1203 2458 
+Q 1254 2842 1411 3072 
+Q 1568 3302 1805 3404 
+Q 2042 3507 2323 3507 
+Q 2694 3507 2953 3347 
+Q 3213 3187 3350 2896 
+Q 3488 2605 3488 2208 
+L 3488 0 
+L 2528 0 
+L 2528 1888 
+Q 2528 2163 2483 2355 
+Q 2438 2547 2323 2646 
+Q 2208 2746 2003 2746 
+Q 1702 2746 1542 2525 
+Q 1382 2304 1382 1888 
+L 1382 0 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-a2" d="M 1958 -1037 
+Q 1466 -1037 1136 -915 
+Q 806 -794 611 -576 
+Q 416 -358 339 -77 
+L 1325 -6 
+Q 1376 -173 1520 -269 
+Q 1664 -365 1958 -365 
+Q 2304 -365 2486 -201 
+Q 2669 -38 2669 320 
+L 2669 685 
+Q 2547 448 2278 304 
+Q 2010 160 1677 160 
+Q 1254 160 928 368 
+Q 602 576 419 950 
+Q 237 1325 237 1830 
+Q 237 2323 419 2700 
+Q 602 3078 925 3292 
+Q 1248 3507 1664 3507 
+Q 2042 3507 2301 3340 
+Q 2560 3174 2694 2899 
+L 2694 3430 
+L 3635 3430 
+L 3635 339 
+Q 3635 -122 3424 -426 
+Q 3213 -730 2835 -883 
+Q 2458 -1037 1958 -1037 
+z
+M 1952 870 
+Q 2285 870 2480 1126 
+Q 2675 1382 2675 1837 
+Q 2675 2138 2588 2355 
+Q 2502 2573 2339 2688 
+Q 2176 2803 1952 2803 
+Q 1606 2803 1414 2540 
+Q 1222 2278 1222 1837 
+Q 1222 1389 1420 1129 
+Q 1619 870 1952 870 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-98" d="M 1965 -77 
+Q 1440 -77 1053 144 
+Q 666 365 451 768 
+Q 237 1171 237 1715 
+Q 237 2259 451 2659 
+Q 666 3059 1050 3283 
+Q 1434 3507 1958 3507 
+Q 2470 3507 2848 3283 
+Q 3226 3059 3434 2643 
+Q 3642 2227 3642 1651 
+L 3642 1459 
+L 1229 1459 
+Q 1248 1050 1449 851 
+Q 1651 653 1984 653 
+Q 2227 653 2390 755 
+Q 2554 858 2624 1069 
+L 3590 1011 
+Q 3456 499 3021 211 
+Q 2586 -77 1965 -77 
+z
+M 1229 2048 
+L 2656 2048 
+Q 2637 2426 2448 2611 
+Q 2259 2797 1958 2797 
+Q 1658 2797 1462 2601 
+Q 1267 2406 1229 2048 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#BKribitz-Bold-1"/>
+    <use xlink:href="#BKribitz-Bold-e8" transform="translate(70.796875 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(130.5 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(184.90625 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(229.90625 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(270 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(297.09375 0)"/>
+    <use xlink:href="#BKribitz-Bold-181" transform="translate(356.5 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(375.796875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(432.796875 0)"/>
+    <use xlink:href="#BKribitz-Bold-94" transform="translate(455.59375 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(518 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(573 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(616.703125 0)"/>
+    <use xlink:href="#BKribitz-Bold-16c" transform="translate(676.109375 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(717.8125 0)"/>
+    <use xlink:href="#BKribitz-Bold-94" transform="translate(776.21875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(839.625 0)"/>
+    <use xlink:href="#BKribitz-Bold-104" transform="translate(862.421875 0)"/>
+    <use xlink:href="#BKribitz-Bold-ca" transform="translate(935.828125 0)"/>
+    <use xlink:href="#BKribitz-Bold-f5" transform="translate(994.71875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1079.625 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(1102.421875 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(1129.515625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1186.515625 0)"/>
+    <use xlink:href="#BKribitz-Bold-16c" transform="translate(1209.3125 0)"/>
+    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1251.015625 0)"/>
+    <use xlink:href="#BKribitz-Bold-115" transform="translate(1316.3125 0)"/>
+    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(1382.71875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1465.21875 0)"/>
+    <use xlink:href="#BKribitz-Bold-f4" transform="translate(1488.015625 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(1546.125 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1603.125 0)"/>
+    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1625.921875 0)"/>
+    <use xlink:href="#BKribitz-Bold-10d" transform="translate(1691.21875 0)"/>
+    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1760.515625 0)"/>
+    <use xlink:href="#BKribitz-Bold-10d" transform="translate(1825.8125 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1895.109375 0)"/>
+    <use xlink:href="#BKribitz-Bold-16c" transform="translate(1917.90625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1959.609375 0)"/>
+    <use xlink:href="#BKribitz-Bold-5b" transform="translate(1982.40625 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(2048.296875 0)"/>
+    <use xlink:href="#BKribitz-Bold-f8" transform="translate(2091.59375 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(2147.984375 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(2188.078125 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(2215.171875 0)"/>
+    <use xlink:href="#BKribitz-Bold-181" transform="translate(2274.578125 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2293.875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2350.875 0)"/>
+    <use xlink:href="#BKribitz-Bold-8e" transform="translate(2373.671875 0)"/>
+    <use xlink:href="#BKribitz-Bold-a9" transform="translate(2432.46875 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(2492.265625 0)"/>
+    <use xlink:href="#BKribitz-Bold-c4" transform="translate(2551.671875 0)"/>
+    <use xlink:href="#BKribitz-Bold-a2" transform="translate(2611.46875 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(2673.875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2734.375 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2757.171875 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(2813.171875 0)"/>
+    <use xlink:href="#BKribitz-Bold-c4" transform="translate(2841.859375 0)"/>
+    <use xlink:href="#BKribitz-Bold-8e" transform="translate(2901.65625 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(2960.453125 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(3020.953125 0)"/>
+    <use xlink:href="#BKribitz-Bold-10f" transform="translate(3043.75 0)"/>
+    <use xlink:href="#BKribitz-Bold-10d" transform="translate(3109.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-10f" transform="translate(3178.34375 0)"/>
+    <use xlink:href="#BKribitz-Bold-10d" transform="translate(3243.640625 0)"/>
+   </g>
+   <!-- is uncertain: +34% raw, -9% with unplaced ads spread over the -->
+   <g style="fill: #26282c" transform="translate(6.84 61.119687) scale(0.2 -0.2)">
+    <defs>
+     <path id="BKribitz-Bold-15d" d="M 474 0 
+L 474 979 
+L 1517 979 
+L 1517 0 
+L 474 0 
+z
+M 474 2278 
+L 474 3257 
+L 1517 3257 
+L 1517 2278 
+L 474 2278 
+z
+" transform="scale(0.015625)"/>
      <path id="BKribitz-Bold-1a2" d="M 1434 269 
 L 1434 3405 
 L 2214 3405 
@@ -2331,36 +2358,197 @@ Q 3430 224 3027 61
 Q 2624 -102 2074 -102 
 z
 " transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-111" d="M 2413 0 
+L 2413 864 
+L 154 864 
+L 154 1638 
+L 2227 4544 
+L 3386 4544 
+L 3386 1683 
+L 3917 1683 
+L 3917 864 
+L 3386 864 
+L 3386 0 
+L 2413 0 
+z
+M 1184 1683 
+L 2413 1683 
+L 2413 3347 
+L 1184 1683 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-15c" d="M 307 -1011 
+L 653 0 
+L 237 0 
+L 237 979 
+L 1280 979 
+L 1280 102 
+L 832 -1011 
+L 307 -1011 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-116" d="M 1875 -102 
+Q 1242 -102 851 189 
+Q 461 480 301 1024 
+L 1229 1082 
+Q 1299 896 1459 797 
+Q 1619 698 1875 698 
+Q 2349 698 2576 1050 
+Q 2803 1402 2810 2221 
+L 2931 2163 
+Q 2765 1824 2464 1651 
+Q 2163 1478 1734 1478 
+Q 1280 1478 941 1667 
+Q 602 1856 410 2201 
+Q 218 2547 218 3002 
+Q 218 3507 429 3875 
+Q 640 4243 1027 4444 
+Q 1414 4646 1920 4646 
+Q 2541 4646 2947 4387 
+Q 3354 4128 3555 3635 
+Q 3757 3142 3757 2432 
+Q 3757 1837 3645 1366 
+Q 3533 896 3302 569 
+Q 3072 243 2717 70 
+Q 2362 -102 1875 -102 
+z
+M 1946 2176 
+Q 2182 2176 2358 2278 
+Q 2534 2381 2630 2566 
+Q 2726 2752 2726 3014 
+Q 2726 3270 2636 3465 
+Q 2547 3661 2374 3766 
+Q 2202 3872 1958 3872 
+Q 1722 3872 1549 3766 
+Q 1376 3661 1283 3469 
+Q 1190 3277 1190 3021 
+Q 1190 2758 1286 2572 
+Q 1382 2387 1548 2281 
+Q 1715 2176 1946 2176 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-d5" d="M 422 -960 
+L 422 3430 
+L 1344 3430 
+L 1363 2707 
+L 1286 2739 
+Q 1414 3110 1702 3308 
+Q 1990 3507 2374 3507 
+Q 2854 3507 3174 3270 
+Q 3494 3034 3657 2627 
+Q 3821 2221 3821 1715 
+Q 3821 1216 3657 806 
+Q 3494 397 3171 160 
+Q 2848 -77 2368 -77 
+Q 2118 -77 1900 16 
+Q 1683 109 1526 275 
+Q 1370 442 1299 672 
+L 1382 723 
+L 1382 -960 
+L 422 -960 
+z
+M 2106 659 
+Q 2445 659 2640 940 
+Q 2835 1222 2835 1715 
+Q 2835 2208 2640 2489 
+Q 2445 2771 2106 2771 
+Q 1882 2771 1718 2652 
+Q 1555 2534 1468 2297 
+Q 1382 2061 1382 1715 
+Q 1382 1370 1468 1133 
+Q 1555 896 1718 777 
+Q 1882 659 2106 659 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitz-Bold-be" d="M 1318 0 
+Q 896 0 659 211 
+Q 422 422 422 896 
+L 422 4544 
+L 1382 4544 
+L 1382 998 
+Q 1382 845 1452 781 
+Q 1523 717 1658 717 
+L 1888 717 
+L 1888 0 
+L 1318 0 
+z
+" transform="scale(0.015625)"/>
     </defs>
-    <use xlink:href="#BKribitz-Bold-16c"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(41.703125 0)"/>
-    <use xlink:href="#BKribitz-Bold-5b" transform="translate(64.5 0)"/>
-    <use xlink:href="#BKribitz-Bold-e3" transform="translate(130.390625 0)"/>
-    <use xlink:href="#BKribitz-Bold-f8" transform="translate(173.6875 0)"/>
-    <use xlink:href="#BKribitz-Bold-d8" transform="translate(230.078125 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(270.171875 0)"/>
-    <use xlink:href="#BKribitz-Bold-81" transform="translate(297.265625 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(356.671875 0)"/>
-    <use xlink:href="#BKribitz-Bold-ac" transform="translate(379.46875 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(406.5625 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(463.5625 0)"/>
-    <use xlink:href="#BKribitz-Bold-1a2" transform="translate(486.359375 0)"/>
-    <use xlink:href="#BKribitz-Bold-110" transform="translate(543.359375 0)"/>
-    <use xlink:href="#BKribitz-Bold-111" transform="translate(608.359375 0)"/>
-    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(671.953125 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(754.453125 0)"/>
-    <use xlink:href="#BKribitz-Bold-f4" transform="translate(777.25 0)"/>
-    <use xlink:href="#BKribitz-Bold-dc" transform="translate(835.359375 0)"/>
-    <use xlink:href="#BKribitz-Bold-154" transform="translate(892.359375 0)"/>
-    <use xlink:href="#BKribitz-Bold-10f" transform="translate(915.15625 0)"/>
-    <use xlink:href="#BKribitz-Bold-10d" transform="translate(980.453125 0)"/>
-    <use xlink:href="#BKribitz-Bold-10f" transform="translate(1049.75 0)"/>
-    <use xlink:href="#BKribitz-Bold-10d" transform="translate(1115.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(27.09375 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(84.09375 0)"/>
+    <use xlink:href="#BKribitz-Bold-e8" transform="translate(106.890625 0)"/>
+    <use xlink:href="#BKribitz-Bold-c4" transform="translate(167.59375 0)"/>
+    <use xlink:href="#BKribitz-Bold-8e" transform="translate(227.390625 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(286.1875 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(345.6875 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(384.984375 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(428.6875 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(487.296875 0)"/>
+    <use xlink:href="#BKribitz-Bold-c4" transform="translate(515.984375 0)"/>
+    <use xlink:href="#BKribitz-Bold-15d" transform="translate(577.078125 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(608.171875 0)"/>
+    <use xlink:href="#BKribitz-Bold-1a2" transform="translate(630.96875 0)"/>
+    <use xlink:href="#BKribitz-Bold-110" transform="translate(687.96875 0)"/>
+    <use xlink:href="#BKribitz-Bold-111" transform="translate(752.96875 0)"/>
+    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(816.5625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(899.0625 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(921.859375 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(960.953125 0)"/>
+    <use xlink:href="#BKribitz-Bold-f5" transform="translate(1016.953125 0)"/>
+    <use xlink:href="#BKribitz-Bold-15c" transform="translate(1096.65625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1120.25 0)"/>
+    <use xlink:href="#BKribitz-Bold-16c" transform="translate(1143.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-116" transform="translate(1184.75 0)"/>
+    <use xlink:href="#BKribitz-Bold-1b8" transform="translate(1247.84375 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1330.34375 0)"/>
+    <use xlink:href="#BKribitz-Bold-f5" transform="translate(1353.140625 0)"/>
+    <use xlink:href="#BKribitz-Bold-ac" transform="translate(1437.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(1462.234375 0)"/>
+    <use xlink:href="#BKribitz-Bold-a9" transform="translate(1505.640625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(1566.734375 0)"/>
+    <use xlink:href="#BKribitz-Bold-e8" transform="translate(1589.53125 0)"/>
+    <use xlink:href="#BKribitz-Bold-c4" transform="translate(1650.234375 0)"/>
+    <use xlink:href="#BKribitz-Bold-d5" transform="translate(1709.921875 0)"/>
+    <use xlink:href="#BKribitz-Bold-be" transform="translate(1772.828125 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(1803.921875 0)"/>
+    <use xlink:href="#BKribitz-Bold-8e" transform="translate(1862.328125 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(1921.125 0)"/>
+    <use xlink:href="#BKribitz-Bold-94" transform="translate(1980.625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2044.03125 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(2066.828125 0)"/>
+    <use xlink:href="#BKribitz-Bold-94" transform="translate(2125.234375 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2187.640625 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2244.640625 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(2267.4375 0)"/>
+    <use xlink:href="#BKribitz-Bold-d5" transform="translate(2323.4375 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(2385.84375 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(2424.34375 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(2484.4375 0)"/>
+    <use xlink:href="#BKribitz-Bold-94" transform="translate(2542.84375 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2606.25 0)"/>
+    <use xlink:href="#BKribitz-Bold-ca" transform="translate(2629.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-f4" transform="translate(2687.9375 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(2746.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-d8" transform="translate(2805.546875 0)"/>
+    <use xlink:href="#BKribitz-Bold-154" transform="translate(2848.046875 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(2870.84375 0)"/>
+    <use xlink:href="#BKribitz-Bold-a9" transform="translate(2914.25 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(2974.046875 0)"/>
+   </g>
+   <!-- states -->
+   <g style="fill: #26282c" transform="translate(6.84 93.14) scale(0.2 -0.2)">
+    <use xlink:href="#BKribitz-Bold-dc"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(54.40625 0)"/>
+    <use xlink:href="#BKribitz-Bold-81" transform="translate(98.109375 0)"/>
+    <use xlink:href="#BKribitz-Bold-e3" transform="translate(153.109375 0)"/>
+    <use xlink:href="#BKribitz-Bold-98" transform="translate(196.203125 0)"/>
+    <use xlink:href="#BKribitz-Bold-dc" transform="translate(255.703125 0)"/>
    </g>
   </g>
   <g id="text_19">
    <!-- Source: AMS JobBarometer yearly ad counts 2020-2025, occupation class 'Data Scientist (m/w)'. Styria 224 (2020) → 423 -->
-   <g style="fill: #5a5c61" transform="translate(6.84 328.415352) scale(0.095 -0.095)">
+   <g style="fill: #5a5c61" transform="translate(6.84 312.360352) scale(0.095 -0.095)">
     <defs>
      <path id="BKribitzMono-Regular-c8" d="M 1920 -77 
 Q 1453 -77 1104 140 
@@ -2855,9 +3043,75 @@ z
     <use xlink:href="#BKribitzMono-Regular-109" transform="translate(6900 0)"/>
     <use xlink:href="#BKribitzMono-Regular-10a" transform="translate(6960 0)"/>
    </g>
-   <!-- (peak) → 300 (2025). Units: index, 2020 = 100 (yearly advertisement counts). AMS occupation class, coarser than this -->
-   <g style="fill: #5a5c61" transform="translate(6.84 344.470352) scale(0.095 -0.095)">
+   <!-- (peak) → 300 (2025). Ads in no named state: 38% of the Austria total in 2020, 9% in 2025. Units: index, 2020 = 100 -->
+   <g style="fill: #5a5c61" transform="translate(6.84 328.415352) scale(0.095 -0.095)">
     <defs>
+     <path id="BKribitzMono-Regular-1a0" d="M 986 2342 
+Q 602 2342 333 2633 
+Q 64 2925 64 3469 
+Q 64 4019 333 4307 
+Q 602 4595 986 4595 
+Q 1370 4595 1638 4307 
+Q 1907 4019 1907 3469 
+Q 1907 2925 1638 2633 
+Q 1370 2342 986 2342 
+z
+M 986 2739 
+Q 1197 2739 1321 2931 
+Q 1446 3123 1446 3469 
+Q 1446 3814 1321 4006 
+Q 1197 4198 986 4198 
+Q 774 4198 649 4006 
+Q 525 3814 525 3469 
+Q 525 3123 649 2931 
+Q 774 2739 986 2739 
+z
+M 314 0 
+L 3040 4544 
+L 3526 4544 
+L 800 0 
+L 314 0 
+z
+M 2854 -51 
+Q 2470 -51 2201 240 
+Q 1933 531 1933 1075 
+Q 1933 1626 2201 1914 
+Q 2470 2202 2854 2202 
+Q 3238 2202 3507 1914 
+Q 3776 1626 3776 1075 
+Q 3776 531 3507 240 
+Q 3238 -51 2854 -51 
+z
+M 2854 346 
+Q 3066 346 3190 538 
+Q 3315 730 3315 1075 
+Q 3315 1421 3190 1613 
+Q 3066 1805 2854 1805 
+Q 2643 1805 2518 1613 
+Q 2394 1421 2394 1075 
+Q 2394 730 2518 538 
+Q 2643 346 2854 346 
+z
+" transform="scale(0.015625)"/>
+     <path id="BKribitzMono-Regular-a0" d="M 1357 0 
+L 1357 3610 
+Q 1357 4064 1590 4304 
+Q 1824 4544 2304 4544 
+L 3392 4544 
+L 3392 4070 
+L 2304 4070 
+Q 2106 4070 2000 3945 
+Q 1894 3821 1894 3610 
+L 1894 0 
+L 1357 0 
+z
+M 448 2918 
+L 448 3392 
+L 3328 3392 
+L 3328 2918 
+L 448 2918 
+z
+" transform="scale(0.015625)"/>
      <path id="BKribitzMono-Regular-66" d="M 1920 -102 
 Q 1203 -102 793 352 
 Q 384 806 384 1587 
@@ -2903,16 +3157,6 @@ L 3328 1005
 L 512 1005 
 z
 " transform="scale(0.015625)"/>
-     <path id="BKribitzMono-Regular-f2" d="M 1581 0 
-L 320 3392 
-L 909 3392 
-L 1920 550 
-L 2931 3392 
-L 3520 3392 
-L 2259 0 
-L 1581 0 
-z
-" transform="scale(0.015625)"/>
     </defs>
     <use xlink:href="#BKribitzMono-Regular-15b"/>
     <use xlink:href="#BKribitzMono-Regular-d3" transform="translate(60 0)"/>
@@ -2935,105 +3179,113 @@ z
     <use xlink:href="#BKribitzMono-Regular-15c" transform="translate(1080 0)"/>
     <use xlink:href="#BKribitzMono-Regular-148" transform="translate(1140 0)"/>
     <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1200 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-66" transform="translate(1260 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1320 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(1380 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(1440 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(1500 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-14a" transform="translate(1560 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-1" transform="translate(1260 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(1320 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(1380 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1440 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(1500 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1560 0)"/>
     <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1620 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(1680 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1740 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(1800 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(1860 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f5" transform="translate(1920 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-149" transform="translate(1980 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2040 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(2100 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(2160 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(2220 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(2280 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2340 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-18d" transform="translate(2400 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2460 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-108" transform="translate(2520 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(2580 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(2640 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2700 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-15b" transform="translate(2760 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(2820 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(2880 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(2940 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(3000 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(3060 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(3120 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3180 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(3240 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(3300 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f2" transform="translate(3360 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(3420 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(3480 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1680 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(1740 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1800 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1860 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(1920 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c1" transform="translate(1980 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(2040 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(2100 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2160 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(2220 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(2280 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(2340 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(2400 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(2460 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-14a" transform="translate(2520 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2580 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-10a" transform="translate(2640 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-10f" transform="translate(2700 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-1a0" transform="translate(2760 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2820 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(2880 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-a0" transform="translate(2940 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3000 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3060 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(3120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(3180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-1" transform="translate(3300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(3360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(3420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(3540 0)"/>
     <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(3600 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(3660 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(3720 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c1" transform="translate(3780 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(3840 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(3900 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3960 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4020 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(4080 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(4140 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(4200 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(4260 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(4320 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(4380 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-15c" transform="translate(4440 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(4500 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4560 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-1" transform="translate(4620 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-41" transform="translate(4680 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-5a" transform="translate(4740 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(3660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3720 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3780 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(3840 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3900 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(3960 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(4020 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4080 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(4140 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(4200 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4260 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(4320 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(4380 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(4440 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(4500 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-149" transform="translate(4560 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4620 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-110" transform="translate(4680 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-1a0" transform="translate(4740 0)"/>
     <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4800 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(4860 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(4920 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(4980 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(5040 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-d3" transform="translate(5100 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(5160 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(5220 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(5280 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(5340 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(5400 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5460 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(5520 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(5580 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(5640 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(5700 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(5760 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-149" transform="translate(5820 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5880 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(5940 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(6000 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(6060 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(6120 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(6180 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(6240 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(6300 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6360 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(6420 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(6480 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(6540 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(6600 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6660 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(6720 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(6780 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(6840 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(6900 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(4860 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(4920 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4980 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(5040 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(5100 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(5160 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-10c" transform="translate(5220 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(5280 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5340 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-66" transform="translate(5400 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(5460 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(5520 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(5580 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(5640 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-14a" transform="translate(5700 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5760 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(5820 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(5880 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(5940 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(6000 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f5" transform="translate(6060 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-149" transform="translate(6120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(6240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(6300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-109" transform="translate(6360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(6420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-18d" transform="translate(6540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6600 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-108" transform="translate(6660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(6720 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-107" transform="translate(6780 0)"/>
    </g>
-   <!-- project's title taxonomy. -->
-   <g style="fill: #5a5c61" transform="translate(6.84 360.396953) scale(0.095 -0.095)">
+   <!-- (yearly advertisement counts). AMS occupation class, coarser than this project's title taxonomy. The Styria line is -->
+   <g style="fill: #5a5c61" transform="translate(6.84 344.470352) scale(0.095 -0.095)">
     <defs>
+     <path id="BKribitzMono-Regular-f2" d="M 1581 0 
+L 320 3392 
+L 909 3392 
+L 1920 550 
+L 2931 3392 
+L 3520 3392 
+L 2259 0 
+L 1581 0 
+z
+" transform="scale(0.015625)"/>
      <path id="BKribitzMono-Regular-b5" d="M 704 -960 
 L 704 -486 
 L 1779 -486 
@@ -3056,38 +3308,156 @@ L 2810 3923
 L 2246 3923 
 z
 " transform="scale(0.015625)"/>
+     <path id="BKribitzMono-Regular-61" d="M 1645 0 
+L 1645 4006 
+L 256 4006 
+L 256 4544 
+L 3584 4544 
+L 3584 4006 
+L 2195 4006 
+L 2195 0 
+L 1645 0 
+z
+" transform="scale(0.015625)"/>
     </defs>
-    <use xlink:href="#BKribitzMono-Regular-d3"/>
-    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(60 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(120 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-b5" transform="translate(180 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(240 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(300 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(360 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-16c" transform="translate(420 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(480 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(540 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(600 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-15b"/>
+    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(60 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-93" transform="translate(540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f2" transform="translate(600 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(720 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(780 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(840 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(900 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(960 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c1" transform="translate(1020 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(1080 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1140 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(1200 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1260 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(1320 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(1380 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(1440 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1500 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(1560 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(1620 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-15c" transform="translate(1680 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(1740 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(1800 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-1" transform="translate(1860 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-41" transform="translate(1920 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-5a" transform="translate(1980 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2040 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(2100 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(2160 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(2220 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(2280 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d3" transform="translate(2340 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(2400 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(2460 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(2520 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(2580 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(2640 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(2700 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(2760 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(2820 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(2880 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(2940 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(3000 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-149" transform="translate(3060 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(3180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(3240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(3300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(3360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(3420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(3480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(3540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3600 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(3720 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(3780 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(3840 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(3900 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(3960 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(4020 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(4080 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(4140 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4200 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d3" transform="translate(4260 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(4320 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(4380 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-b5" transform="translate(4440 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(4500 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(4560 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(4620 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-16c" transform="translate(4680 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(4740 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(4800 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(4860 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(4920 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(4980 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(5040 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(5100 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5160 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(5220 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(5280 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f5" transform="translate(5340 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(5400 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(5460 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(5520 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c1" transform="translate(5580 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(5640 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(5700 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(5760 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-61" transform="translate(5820 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(5880 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(5940 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6000 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-5a" transform="translate(6060 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(6120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(6180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(6240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(6300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(6360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(6480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(6540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(6600 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(6660 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(6720 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-ab" transform="translate(6780 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-da" transform="translate(6840 0)"/>
+   </g>
+   <!-- the raw count. -->
+   <g style="fill: #5a5c61" transform="translate(6.84 361.047852) scale(0.095 -0.095)">
+    <use xlink:href="#BKribitzMono-Regular-e1"/>
+    <use xlink:href="#BKribitzMono-Regular-a8" transform="translate(60 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(120 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(180 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-d6" transform="translate(240 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(300 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-f3" transform="translate(360 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(420 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-8d" transform="translate(480 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(540 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-e6" transform="translate(600 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(660 0)"/>
     <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(720 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-bc" transform="translate(780 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-97" transform="translate(840 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-144" transform="translate(900 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-e1" transform="translate(960 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-80" transform="translate(1020 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f5" transform="translate(1080 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(1140 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c2" transform="translate(1200 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c8" transform="translate(1260 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-c1" transform="translate(1320 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-f6" transform="translate(1380 0)"/>
-    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(1440 0)"/>
+    <use xlink:href="#BKribitzMono-Regular-148" transform="translate(780 0)"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pc74b84146d">
-   <rect x="57.972969" y="94.44" width="614.147031" height="158.435"/>
+  <clipPath id="p79971b6227">
+   <rect x="72.73" y="125.64" width="599.39" height="111.18"/>
   </clipPath>
  </defs>
 </svg>
