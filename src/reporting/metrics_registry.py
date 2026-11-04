@@ -1065,6 +1065,92 @@ def pay_and_work(reg: Registry) -> None:
     _ = core
 
 
+def unplaced_ads_keys(reg: Registry, rows: list[dict], ds: list[dict], years: list[int]) -> None:
+    """Ads the AMS cannot assign to a state (P-02).
+
+    The AMS method paper (Methodenpaper v1.2, section 3.1.6) says some ads cannot be assigned to a state, so the Austria
+    total can exceed the sum of the states. The gap is the Austria total minus the states that the table publishes. It
+    also holds ads in any state AMS withholds under 20 ads, and all ads of a class whose states are all withheld. The reason why the gap shrinks over the years is not
+    established. So the Styrian change since the first year is uncertain, and only a window that starts after the
+    gap has shrunk is a stable reading.
+    """
+    if not ds or not years:
+        return
+    y0, y1 = years[0], years[-1]
+    src_t = "outputs/tables/JB01_yearly_counts_long.csv"
+    cav = ("the gap holds ads that AMS cannot assign to a state (Methodenpaper v1.2, section 3.1.6), plus ads in a state "
+           "AMS withholds under 20 ads; the reason for the change over the years is not established")
+
+    def ads(beruf: str, bl: str, y: int) -> float | None:
+        for r in rows:
+            if r["beruf"] == beruf and r["bl"] == bl and int(r["year"]) == y:
+                return _f(r["ads"])
+        return None
+
+    def named(beruf: str, y: int) -> float | None:
+        vals = [_f(r["ads"]) for r in rows if r["beruf"] == beruf and r["bl"] != "AT" and int(r["year"]) == y]
+        return float(sum(v for v in vals if v is not None)) if vals else None
+
+    def gap(beruf: str, y: int) -> float | None:
+        at, st = ads(beruf, "AT", y), named(beruf, y)
+        return 1 - st / at if at and st is not None else None
+
+    cls = "Data Scientist (m/w)"
+    for y in years:
+        g = gap(cls, y)
+        if g is not None:
+            reg.add(f"jb_data_scientist_unplaced_share__{y}", g, "share", n=ads(cls, "AT", y),
+                    denominator="Austria's online ads in the class, that year",
+                    source=f"{src_t}:1-sum(ads[bl!=AT])/ads[AT][Data Scientist, {y}]",
+                    definition=f"share of the class's Austria total that no published state holds, {y}", caveat=cav,
+                    display=f"{_num(g * 100, 1)} %")
+    # sensitivity reading: spread the unplaced ads over the states in proportion to their named ads (not a measurement)
+    sty0, sty1 = ads(cls, "AT22", y0), ads(cls, "AT22", y1)
+    g0, g1 = gap(cls, y0), gap(cls, y1)
+    if sty0 and sty1 and g0 is not None and g1 is not None and g0 < 1 and g1 < 1:
+        alloc = (sty1 / (1 - g1)) / (sty0 / (1 - g0)) - 1
+        reg.add("jb_data_scientist_change_allocated__styria", alloc, "share",
+                source=f"{src_t}:ads[AT22]*ads[AT]/sum(ads[bl!=AT]) {y1} / {y0} - 1 [Data Scientist]",
+                definition=f"sensitivity reading, not a measurement: Styria's change {y0}->{y1} when unplaced ads are spread over the states in proportion to their named ads",
+                caveat=cav, display=f"{'+' if alloc >= 0 else '−'}{_num(abs(alloc) * 100, 0)} %")
+    # stable window: from the Austria peak year to the latest year, after the gap has shrunk
+    at_vals = {y: ads(cls, "AT", y) for y in years if ads(cls, "AT", y) is not None}
+    if at_vals:
+        peak_y = max(at_vals, key=lambda y: at_vals[y])
+        if peak_y != y1:
+            for key, label, a, b in (("styria", "Styria", ads(cls, "AT22", peak_y), ads(cls, "AT22", y1)),
+                                     ("named_states", "the sum of the published states", named(cls, peak_y), named(cls, y1))):
+                if a and b:
+                    reg.add(f"jb_data_scientist_change_from_austria_peak__{key}", b / a - 1, "share",
+                            source=f"{src_t}:ads[{y1}]/ads[{peak_y}]-1 [Data Scientist, {label}; {peak_y} = Austria peak year]",
+                            definition=f"change of the class's online ads from the Austria peak year ({peak_y}) to {y1}, {label}",
+                            caveat="official yearly flow of a coarse AMS occupation class, not our titles",
+                            display=f"{'+' if b / a - 1 >= 0 else '−'}{_num(abs(b / a - 1) * 100, 0)} %")
+            if ads(cls, "AT22", peak_y):
+                reg.add("jb_data_scientist_ads_at_austria_peak__styria", ads(cls, "AT22", peak_y), "count",
+                        source=f"{src_t}:ads[AT22, {peak_y}] [Data Scientist]",
+                        definition=f"Styria's online ads in the class in the Austria peak year ({peak_y})")
+    # class-wide: is the fall of the gap specific to this class?
+    classes = sorted({r["beruf"] for r in rows})
+    both = [(c, gap(c, y0), gap(c, y1)) for c in classes if gap(c, y0) is not None and gap(c, y1) is not None]
+    if both:
+        def median(xs: list[float]) -> float:
+            xs = sorted(xs)
+            m = len(xs) // 2
+            return xs[m] if len(xs) % 2 else (xs[m - 1] + xs[m]) / 2
+        for lab, idx, y in (("first", 1, y0), ("latest", 2, y1)):
+            med = median([t[idx] for t in both])
+            reg.add(f"jb_unplaced_share_median__{lab}", med, "share", n=len(both), denominator="occupation classes with a gap in both years",
+                    source=f"{src_t}:median over classes of 1-sum(ads[bl!=AT])/ads[AT], {y}",
+                    definition=f"median over all AMS occupation classes of the share of the Austria total that no published state holds, {y}",
+                    caveat=cav, display=f"{_num(med * 100, 1)} %")
+        reg.add("jb_unplaced_classes_n", len(both), "count", source=f"{src_t}:classes with a gap in {y0} and {y1}",
+                definition="occupation classes in the JobBarometer table with a gap value in the first and the latest year")
+        reg.add("jb_unplaced_lower_n", sum(1 for t in both if t[2] < t[1]), "count", n=len(both),
+                denominator="occupation classes with a gap in both years", source=f"{src_t}:classes where the gap in {y1} is below the gap in {y0}",
+                definition="occupation classes whose gap share is lower in the latest year than in the first year", caveat=cav)
+
+
 def official_and_seasonality(reg: Registry) -> None:
     rows = reg.table("JB01_yearly_counts_long")
     ds = [r for r in rows if r["beruf"] == "Data Scientist (m/w)"]
@@ -1092,7 +1178,9 @@ def official_and_seasonality(reg: Registry) -> None:
             a, b = val(bl, y0), val(bl, y1)
             if a and b:
                 reg.add(f"jb_data_scientist_change__{tag}", b / a - 1, "share", source=f"outputs/tables/JB01_yearly_counts_long.csv:ads[{y1}]/ads[{y0}]-1 [Data Scientist, {bl}]",
-                        definition=f"change of the class's online ads {y0}->{y1}, {tag}", display=f"{'+' if b/a-1 >= 0 else '−'}{_num(abs(b/a-1)*100, 0)} %")
+                        definition=f"change of the class's online ads {y0}->{y1}, {tag}", display=f"{'+' if b/a-1 >= 0 else '−'}{_num(abs(b/a-1)*100, 0)} %",
+                        caveat=("" if bl == "AT" else "uncertain for one state: ads that AMS cannot assign to a state were a much larger share of the Austria total in the first year "
+                                "(see jb_data_scientist_unplaced_share__*), so quote it with jb_data_scientist_change_allocated__styria and the window from the peak"))
             vals = [val(bl, y) for y in years if val(bl, y) is not None]
             if vals:
                 peak = max(vals)
@@ -1106,6 +1194,7 @@ def official_and_seasonality(reg: Registry) -> None:
         reg.add("jb_data_scientist_styria_share_of_austria", (val("AT22", y1) or 0) / val("AT", y1) if val("AT", y1) else None, "share",
                 source=f"outputs/tables/JB01_yearly_counts_long.csv:ads[AT22]/ads[AT][{y1}]", n=val("AT", y1), denominator="Austria's online ads in the class, latest year",
                 definition="Styria's share of the official yearly flow of 'Data Scientist' ads (JB05)", caveat="official yearly flow; compare with the snapshot share only with the basis stated", display=None)
+    unplaced_ads_keys(reg, rows, ds, years)
     # JB05 for the class: related classes (latest year, change vs 2020)
     for r in reg.table("JB05_styria_vs_austria"):
         t = slug(r["beruf"])

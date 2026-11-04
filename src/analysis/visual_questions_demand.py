@@ -241,36 +241,51 @@ def bq02():
     vie_now, vie_peak = wide["Wien"].iloc[-1], wide["Wien"].max()
     vie_peak_year = int(wide["Wien"].idxmax())
     at_now, at_2020 = wide["Österreich"].iloc[-1], wide["Österreich"].iloc[0]
-    # which large regions are above their first-year level is computed, so the sentence cannot go stale when a region crosses 100
-    above = sorted(((c, n) for c, n in (("Steiermark", "Styria"), ("Wien", "Vienna"), ("Oberösterreich", "Upper Austria"))
-                    if wide[c].iloc[-1] > wide[c].iloc[0]), key=lambda t: -(wide[t[0]].iloc[-1] / wide[t[0]].iloc[0]))
-    above_txt = (join_words(f"{n} ({wide[c].iloc[-1] / wide[c].iloc[0] - 1:+.0%})" for c, n in above)
-                 if above else f"none of Styria, Vienna and Upper Austria")
+    # Ads that AMS cannot assign to a state (Methodenpaper v1.2, section 3.1.6) are in the Austria total but in no state.
+    # Their share fell from the first to the latest year, so a change since the first year is uncertain for one state.
+    full = ds.pivot_table(index="year", columns="bundesland", values="ads", aggfunc="sum")
+    named = full.drop(columns="Österreich").sum(axis=1)
+    gap = 1 - named / full["Österreich"]
+    gap_first, gap_last = gap.iloc[0], gap.iloc[-1]
+    # sensitivity reading, not a measurement: spread the unplaced ads over the states in proportion to their named ads
+    sty_alloc = (sty_now / (1 - gap_last)) / (sty_2020 / (1 - gap_first)) - 1
+    # stable reading: from the Austria peak year, after the gap has shrunk
+    at_peak_year = int(full["Österreich"].idxmax())
+    sty_at_peak = full.loc[at_peak_year, "Steiermark"]
+    sty_stable = sty_now / sty_at_peak - 1
+    named_stable = named.iloc[-1] / named.loc[at_peak_year] - 1
+    at_stable = at_now / full.loc[at_peak_year, "Österreich"] - 1
     finalise(
         fig,
-        title=f"Austria's data-ad flow is {at_now / at_2020 - 1:+.0%} vs {y_base} and Vienna "
-              f"{vie_now / vie_peak - 1:+.0%} vs its peak - Styria is {sty_now / sty_2020 - 1:+.0%} vs {y_base}",
+        title=f"Austria's data-ad flow is {at_now / at_2020 - 1:+.0%} vs {y_base} - Styria's change since {y_base} is uncertain: "
+              f"{sty_now / sty_2020 - 1:+.0%} raw, {sty_alloc:+.0%} with unplaced ads spread over the states",
         source=AMS_SOURCE,
         units=f"index, {y_base} = 100 (yearly advertisement counts)",
-        n=f"Styria {int(sty_2020)} ({y_base}) → {int(sty_peak)} (peak) → {int(sty_now)} ({y_last})",
-        note="AMS occupation class, coarser than this project's title taxonomy.",
+        n=f"Styria {int(sty_2020)} ({y_base}) → {int(sty_peak)} (peak) → {int(sty_now)} ({y_last}). "
+          f"Ads in no named state: {gap_first:.0%} of the Austria total in {y_base}, {gap_last:.0%} in {y_last}",
+        note="AMS occupation class, coarser than this project's title taxonomy. The Styria line is the raw count.",
     )
     return Spec(
         chart_id="BQ02_regional_trend",
         question="Is the Graz market growing or shrinking while I spend a year preparing?",
-        answer=f"On the official yearly series Styria is {sty_now / sty_2020 - 1:+.0%} against {y_base} "
-               f"({int(sty_2020)} → {int(sty_now)} ads) while Austria is {at_now / at_2020 - 1:+.0%} and Vienna is "
-               f"{vie_now / vie_peak - 1:+.0%} off its {vie_peak_year} peak; large regions above their {y_base} level: {above_txt}.",
+        answer=f"Austria's yearly ads in the AMS Data Scientist class are {at_now / at_2020 - 1:+.0%} against {y_base}. "
+               f"Styria's change since {y_base} is uncertain: {sty_now / sty_2020 - 1:+.0%} raw ({int(sty_2020)} → {int(sty_now)} ads), "
+               f"{sty_alloc:+.0%} if the ads with no named state are spread over the states in proportion. "
+               f"Those ads were {gap_first:.0%} of the Austria total in {y_base} and {gap_last:.0%} in {y_last}. "
+               f"Read from the {at_peak_year} peak to {y_last}, the picture is stable: Styria {sty_stable:+.0%} "
+               f"({int(sty_at_peak)} → {int(sty_now)}), the sum of the named states {named_stable:+.0%}, Austria {at_stable:+.0%}.",
         relationship="trend over time",
         mark="multi_line",
         data_signature="bivariate-dual",
         tables=["JB01_yearly_counts_long.csv"],
         units=f"index, {y_base} = 100",
-        caveat="A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; "
-               "counts advertisements, not hires.",
+        caveat="A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy. "
+               "It counts advertisements, not hires. AMS says some ads cannot be assigned to a state (Methodenpaper v1.2, section 3.1.6), "
+               "so the Austria total can exceed the sum of the states. The reason why their share fell is not established. "
+               "The spread of unplaced ads is a sensitivity reading, not a measurement.",
         anchors=[
             ("docs/market-guide.md", "after_heading", "## 12. Time dimension (T13, JB01)"),
-            ("CAREER_DECISION_MAP.md", "after_match", "Large regions above their "),
+            ("CAREER_DECISION_MAP.md", "after_match", "Ads with no named state"),
         ],
     ), fig
 

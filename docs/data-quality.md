@@ -139,6 +139,6 @@ The raw and processed files contain named contact persons, e-mail addresses and 
 
 ## 11. What this dataset can and cannot say
 
-Can (robust): ranking of role families and titles; ranking and approximate level of the top-10 technologies; German-vs-English posting split; that certifications and PhDs are rarely requested; Vienna dominance; advertised salary floors by family/seniority; the official yearly trend and Styria's share from JobBarometer.
+Can (robust): ranking of role families and titles; ranking and approximate level of the top-10 technologies; German-vs-English posting split; that certifications and PhDs are rarely requested; Vienna dominance; advertised salary floors by family/seniority; the official yearly trend for Austria and Styria's share from JobBarometer. Not robust: Styria's change since <!--m:jobbarometer_year_first-->2020<!--/m-->, because ads with no named state fell from <!--m:jb_data_scientist_unplaced_share__2020-->37.9 %<!--/m--> to <!--m:jb_data_scientist_unplaced_share__2025-->9.0 %<!--/m--> of the Austria total.
 
 Cannot (or only tentatively): exact Styrian percentages (n = <!--m:styria_core_flag-->68<!--/m-->); marketing/product-analytics profiles (n ≤ <!--m:marketing_analytics_n-->18<!--/m-->); anything about StepStone-only employers; hiring outcomes; whether stated German levels are negotiable; remote-days norms; actual pay; year-over-year change in *our* snapshot (single run).

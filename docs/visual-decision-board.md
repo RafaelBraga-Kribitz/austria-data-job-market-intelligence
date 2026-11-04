@@ -9,7 +9,7 @@ Every finding in this project that bears on a decision, stated as the question i
 | # | Question | Answer in one line | Chart |
 |---|---|---|---|
 | [BQ01](#bq01-reachable-market) | If I do not move from Graz, how much of the Austrian data market am I actually applying to? | By primary state, Styria holds 62 of 699 open core postings (8.9%); 54 of them are inside the Graz commuting area, against 315 in Vienna (45%). | `horizontal_bar` |
-| [BQ02](#bq02-regional-trend) | Is the Graz market growing or shrinking while I spend a year preparing? | On the official yearly series Styria is +34% against 2020 (224 → 300 ads) while Austria is -28% and Vienna is -48% off its 2022 peak; large regions above their 2020 level: Styria (+34%) and Vienna (+15%). | `multi_line` |
+| [BQ02](#bq02-regional-trend) | Is the Graz market growing or shrinking while I spend a year preparing? | Austria's yearly ads in the AMS Data Scientist class are -28% against 2020. Styria's change since 2020 is uncertain: +34% raw (224 → 300 ads), -9% if the ads with no named state are spread over the states in proportion. Those ads were 38% of the Austria total in 2020 and 9% in 2025. Read from the 2022 peak to 2025, the picture is stable: Styria -29% (423 → 300), the sum of the named states -55%, Austria -56%. | `multi_line` |
 | [BQ03](#bq03-seasonality) | Should I time my applications by season, or does the cycle swamp the calendar? | Q4 runs 2%-7% below an average quarter in every sector and Q1 is usually the strongest, but between-year swings are 19-49× the seasonal swing - use Oct-Dec to build and be ready in January, do not wait for a month. | `error_bars` |
 | [BQ04](#bq04-styria-employers) | Which Styrian employers actually advertise data roles - who is on my realistic target list? | 32 named employers carry 56 of the 68 ads that list a Styrian site; Magna International leads with 5, and 11 of the largest 14 advertise analytics, BI or business-analysis roles rather than only engineering. | `horizontal_bar` |
 | [BQ05](#bq05-family-choice) | Which role family gives me the most openings for the smallest structural gap? | Data analytics has 87% of its top-15 skills inside my profile with 107 Austrian and 9 Styrian postings, while Data science offers 176 postings at only 53% overlap. | `bubble` |
@@ -76,7 +76,7 @@ By primary state, Styria holds 62 of 699 open core postings (8.9%); 54 of them a
 
 **Q. Is the Graz market growing or shrinking while I spend a year preparing?**
 
-On the official yearly series Styria is +34% against 2020 (224 → 300 ads) while Austria is -28% and Vienna is -48% off its 2022 peak; large regions above their 2020 level: Styria (+34%) and Vienna (+15%).
+Austria's yearly ads in the AMS Data Scientist class are -28% against 2020. Styria's change since 2020 is uncertain: +34% raw (224 → 300 ads), -9% if the ads with no named state are spread over the states in proportion. Those ads were 38% of the Austria total in 2020 and 9% in 2025. Read from the 2022 peak to 2025, the picture is stable: Styria -29% (423 → 300), the sum of the named states -55%, Austria -56%.
 
 [![BQ02_regional_trend](../outputs/figures/BQ02_regional_trend.png)](../outputs/figures/BQ02_regional_trend.png)
 
@@ -84,7 +84,7 @@ On the official yearly series Styria is +34% against 2020 (224 → 300 ads) whil
 
 *Built from:* `JB01_yearly_counts_long.csv`
 
-*Read with:* A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; counts advertisements, not hires.
+*Read with:* A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy. It counts advertisements, not hires. AMS says some ads cannot be assigned to a state (Methodenpaper v1.2, section 3.1.6), so the Austria total can exceed the sum of the states. The reason why their share fell is not established. The spread of unplaced ads is a sensitivity reading, not a measurement.
 
 *Attached in:* `docs/market-guide.md`, `CAREER_DECISION_MAP.md`
 

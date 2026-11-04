@@ -34,17 +34,17 @@ figures:
     path: outputs/figures/BQ02_regional_trend.svg
     png: outputs/figures/BQ02_regional_trend.png
     question: "Is the Graz market growing or shrinking while I spend a year preparing?"
-    answer: "On the official yearly series Styria is +34% against 2020 (224 → 300 ads) while Austria is -28% and Vienna is -48% off its 2022 peak; large regions above their 2020 level: Styria (+34%) and Vienna (+15%)."
+    answer: "Austria's yearly ads in the AMS Data Scientist class are -28% against 2020. Styria's change since 2020 is uncertain: +34% raw (224 → 300 ads), -9% if the ads with no named state are spread over the states in proportion. Those ads were 38% of the Austria total in 2020 and 9% in 2025. Read from the 2022 peak to 2025, the picture is stable: Styria -29% (423 → 300), the sum of the named states -55%, Austria -56%."
     relationship: "trend over time"
     mark: multi_line
     data_signature: bivariate-dual
     units: "index, 2020 = 100"
     tables: [JB01_yearly_counts_long.csv]
-    caveat: "A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy; counts advertisements, not hires."
-    svg_sha256: sha256:407d33cdf9abe27f4c23c3c5f83d52c67a15655ca556ab0fc334f8a3323d6bce
+    caveat: "A coarse AMS occupation class ('Data Scientist (m/w)'), not this project's title taxonomy. It counts advertisements, not hires. AMS says some ads cannot be assigned to a state (Methodenpaper v1.2, section 3.1.6), so the Austria total can exceed the sum of the states. The reason why their share fell is not established. The spread of unplaced ads is a sensitivity reading, not a measurement."
+    svg_sha256: sha256:8f9404f8e4fafb4465c0b3b456b29ac70b540c1d024f9fee8d2dabd1dc0227c6
     anchors:
       - { doc: docs/market-guide.md, mode: after_heading, key: "## 12. Time dimension (T13, JB01)" }
-      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "Large regions above their " }
+      - { doc: CAREER_DECISION_MAP.md, mode: after_match, key: "Ads with no named state" }
   - chart_id: BQ03_seasonality
     path: outputs/figures/BQ03_seasonality.svg
     png: outputs/figures/BQ03_seasonality.png
