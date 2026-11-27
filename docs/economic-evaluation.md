@@ -10,7 +10,7 @@ A data-job seeker in Graz decides which roles, regions, tools and skills to prep
 
 * Target: data roles in Austria, Greater Graz first [sourced: `config/profile.json` at 6a256e0].
 * Public series count ads by year and coarse occupation; none lists skills, German requirement or pay per ad in Styria [sourced: `docs/research-landscape.md` §1 at 6a256e0].
-* Wrong-path risk is real: preparation had already gone into a tool and applications without market evidence, a Tableau dashboard and applications filtered out by applicant-tracking systems (ATS) [sourced: owner statement 2026-10-30; [Tableau Public dashboard](https://public.tableau.com/app/profile/rafael.braga.kribitz/viz/HumanoidRoboticsTCO/Dashboard1)].
+* Wrong-path risk is real: preparation had already gone into a tool and applications without market evidence, and a Tableau dashboard [sourced: owner statement 2026-10-30; [Tableau Public dashboard](https://public.tableau.com/app/profile/rafael.braga.kribitz/viz/HumanoidRoboticsTCO/Dashboard1)].
 * A month of earlier employment is valued at €4,170: the midpoint of the AMS collective-agreement entry floor for Data Scientist, €2,800–4,350 a month × 14, ÷ 12. This is a market floor, not a salary expectation [sourced: `docs/research-landscape.md` §1.4 at 6a256e0]. If unemployment benefit is paid meanwhile, only the difference counts.
 * The wrong path is measured once, through employment timing; rework hours are not counted again.
 * Baseline: job boards read by hand. Alternatives: a focused study (about 50 hand-tagged ads plus the AMS series, 40 h) or the full system. Horizon: one 12-month job search.
