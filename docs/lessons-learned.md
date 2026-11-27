@@ -9,7 +9,7 @@ Expectations come from the [economic evaluation](economic-evaluation.md).
 | Effort | 240 h central (120 to 360 h), owner scope estimate | Unmeasured: no time log. Commit days × 4 h gives 28 h and commit sessions 9 h; the first public commit holds a whole private build (220 files) | cost basis v1.2, hours table; commit 6a256e0 |
 | Total cost | €10,800 central (focused study: €1,800) | Unmeasured | cost basis v1.2 |
 | Technical performance | Rule-based tags good enough to rank skills and regions | Title precision 83 % strict, 95 % lenient on a hand-labelled sample; skill recall unmeasured | `docs/original-specification-audit.md`; README, Known limits |
-| Adoption | The data sets the next projects' skills | Targeting decisions cite it (Graz plus Vienna hybrid, English-written ads, SQL over a modelled schema) | [viability review](https://github.com/RafaelBraga-Kribitz/braga-portfolio-docs/blob/main/docs/viability/austria-data-job-market-intelligence.md) |
+| Adoption | The data sets the next projects' skills | Targeting decisions cite it (Graz plus Vienna hybrid, English-written ads, SQL over a modelled schema) | viability review (private) |
 | Operational outcome | 2.7 months earlier employment (full system) | Unmeasured | viability review |
 | Attributable value | €11.2k expected (full); €7.5k (focused) | Unmeasured | — |
 
