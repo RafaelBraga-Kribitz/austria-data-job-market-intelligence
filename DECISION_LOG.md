@@ -60,7 +60,7 @@ Analytical and engineering decisions, in chronological order. Each entry: what w
 
 ## D-010 · 2026-09-16 · Repository location
 
-**Decided.** The repository lives at C:\Users\Benutzer1\Dev\austria-data-job-market-intelligence (moved out of the session scratch workspace, which is deleted with the session).
+**Decided.** Keep the working repository in a persistent checkout outside the temporary session workspace.
 
 ## D-011 · 2026-09-16 · Extraction fixes after first full-data audit
 
